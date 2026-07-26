@@ -1,0 +1,2 @@
+export function regressionGate(results:{id:string;critical:boolean;pass:boolean}[]){const failed=results.filter(x=>x.critical&&!x.pass);return{ok:failed.length===0,failed:failed.map(x=>x.id)};}
+export function controlledImprovement(input:{benchmarkPass:boolean;approved:boolean;canaryPass:boolean}){return{activate:input.benchmarkPass&&input.approved&&input.canaryPass,required:['benchmark','approval','canary','rollback']};}

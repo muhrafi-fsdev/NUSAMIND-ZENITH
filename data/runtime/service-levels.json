@@ -1,0 +1,23 @@
+{
+  "ticketFields": [
+    "category",
+    "priority",
+    "issue",
+    "request",
+    "evidence",
+    "actionsTaken"
+  ],
+  "auditFields": [
+    "timestamp",
+    "actor",
+    "result",
+    "slaState"
+  ],
+  "handoffFields": [
+    "reason",
+    "risk",
+    "summary",
+    "evidence",
+    "unresolvedQuestions"
+  ]
+}

@@ -1,0 +1,994 @@
+[
+  {
+    "upgradeId": "N1-MIG-001",
+    "sourceGroup": "All references",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "https://www.promptingguide.ai/research; https://www.promptingguide.ai/prompts; https://www.promptingguide.ai/agents; https://www.promptingguide.ai/models; https://github.com/decolua/9router; https://github.com/anomalyco/opencode; https://opencode.ai/docs/; https://github.com/shadcn-ui/ui; https://github.com/browser-use/browser-use; https://github.com/mattpocock/skills; https://github.com/farhanashrafdev/90DaysOfCyberSecurity; https://github.com/CarterPerez-dev/Cybersecurity-Projects; https://github.com/jivoi/awesome-ml-for-cybersecurity; https://github.com/redhuntlabs/Awesome-Asset-Discovery; User-provided image: The Agentic AI Knowledge Graph; User-provided image: The LLM Application Iceberg; User-provided image: AI Agent Project Structure Example"
+  },
+  {
+    "upgradeId": "N1-MIG-002",
+    "sourceGroup": "All references",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "ACTIVE",
+    "source": "https://www.promptingguide.ai/research; https://www.promptingguide.ai/prompts; https://www.promptingguide.ai/agents; https://www.promptingguide.ai/models; https://github.com/decolua/9router; https://github.com/anomalyco/opencode; https://opencode.ai/docs/; https://github.com/shadcn-ui/ui; https://github.com/browser-use/browser-use; https://github.com/mattpocock/skills; https://github.com/farhanashrafdev/90DaysOfCyberSecurity; https://github.com/CarterPerez-dev/Cybersecurity-Projects; https://github.com/jivoi/awesome-ml-for-cybersecurity; https://github.com/redhuntlabs/Awesome-Asset-Discovery; User-provided image: The Agentic AI Knowledge Graph; User-provided image: The LLM Application Iceberg; User-provided image: AI Agent Project Structure Example"
+  },
+  {
+    "upgradeId": "N1-MIG-003",
+    "sourceGroup": "Agentic Knowledge Graph",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "User-provided image: The Agentic AI Knowledge Graph"
+  },
+  {
+    "upgradeId": "N1-MIG-004",
+    "sourceGroup": "LLM Application Iceberg",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "User-provided image: The LLM Application Iceberg"
+  },
+  {
+    "upgradeId": "N1-MIG-005",
+    "sourceGroup": "AI Agent Project Structure",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "User-provided image: AI Agent Project Structure Example"
+  },
+  {
+    "upgradeId": "N1-MIG-006",
+    "sourceGroup": "Release governance",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "User instruction"
+  },
+  {
+    "upgradeId": "N1-MIG-007",
+    "sourceGroup": "Prompting Guide — ART",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "PROTOTYPE",
+    "source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "upgradeId": "N1-MIG-008",
+    "sourceGroup": "Prompting Guide — PAL",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "https://www.promptingguide.ai/research; https://www.promptingguide.ai/prompts"
+  },
+  {
+    "upgradeId": "N1-MIG-010",
+    "sourceGroup": "Prompting Guide — Context Engineering",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://www.promptingguide.ai/agents"
+  },
+  {
+    "upgradeId": "N1-MIG-011",
+    "sourceGroup": "Prompt Hub",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "https://www.promptingguide.ai/prompts"
+  },
+  {
+    "upgradeId": "N1-MIG-012",
+    "sourceGroup": "Model Prompting Guides",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://www.promptingguide.ai/models"
+  },
+  {
+    "upgradeId": "N1-MIG-013",
+    "sourceGroup": "Prompting Guide — Synthetic Data",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "PROTOTYPE",
+    "source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "upgradeId": "N1-MIG-014",
+    "sourceGroup": "Trustworthiness and Bias",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://www.promptingguide.ai/research; https://www.promptingguide.ai/prompts"
+  },
+  {
+    "upgradeId": "N1-MIG-015",
+    "sourceGroup": "AI Workflows vs Agents",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://www.promptingguide.ai/agents"
+  },
+  {
+    "upgradeId": "N1-MIG-017",
+    "sourceGroup": "9router",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/decolua/9router"
+  },
+  {
+    "upgradeId": "N1-MIG-018",
+    "sourceGroup": "9router",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "PROTOTYPE",
+    "source": "https://github.com/decolua/9router"
+  },
+  {
+    "upgradeId": "N1-MIG-019",
+    "sourceGroup": "9router",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/decolua/9router"
+  },
+  {
+    "upgradeId": "N1-MIG-020",
+    "sourceGroup": "9router",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/decolua/9router"
+  },
+  {
+    "upgradeId": "N1-MIG-021",
+    "sourceGroup": "9router",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/decolua/9router"
+  },
+  {
+    "upgradeId": "N1-MIG-022",
+    "sourceGroup": "9router",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/decolua/9router"
+  },
+  {
+    "upgradeId": "N1-MIG-023",
+    "sourceGroup": "9router",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/decolua/9router"
+  },
+  {
+    "upgradeId": "N1-MIG-024",
+    "sourceGroup": "9router",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/decolua/9router"
+  },
+  {
+    "upgradeId": "N1-MIG-025",
+    "sourceGroup": "9router",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/decolua/9router"
+  },
+  {
+    "upgradeId": "N1-MIG-026",
+    "sourceGroup": "9router",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "PROTOTYPE",
+    "source": "https://github.com/decolua/9router"
+  },
+  {
+    "upgradeId": "N1-MIG-027",
+    "sourceGroup": "OpenCode",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://opencode.ai/docs/; https://github.com/mattpocock/skills"
+  },
+  {
+    "upgradeId": "N1-MIG-028",
+    "sourceGroup": "OpenCode",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/anomalyco/opencode; https://opencode.ai/docs/"
+  },
+  {
+    "upgradeId": "N1-MIG-029",
+    "sourceGroup": "OpenCode",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://opencode.ai/docs/"
+  },
+  {
+    "upgradeId": "N1-MIG-030",
+    "sourceGroup": "OpenCode",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/anomalyco/opencode; https://opencode.ai/docs/"
+  },
+  {
+    "upgradeId": "N1-MIG-031",
+    "sourceGroup": "OpenCode",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "PROTOTYPE",
+    "source": "https://opencode.ai/docs/"
+  },
+  {
+    "upgradeId": "N1-MIG-032",
+    "sourceGroup": "OpenCode",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "ACTIVE",
+    "source": "https://opencode.ai/docs/"
+  },
+  {
+    "upgradeId": "N1-MIG-033",
+    "sourceGroup": "OpenCode",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "ACTIVE",
+    "source": "https://opencode.ai/docs/"
+  },
+  {
+    "upgradeId": "N1-MIG-036",
+    "sourceGroup": "OpenCode",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "PROTOTYPE",
+    "source": "https://opencode.ai/docs/"
+  },
+  {
+    "upgradeId": "N1-MIG-037",
+    "sourceGroup": "Matt Pocock Skills",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/mattpocock/skills"
+  },
+  {
+    "upgradeId": "N1-MIG-038",
+    "sourceGroup": "Matt Pocock Skills",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/mattpocock/skills"
+  },
+  {
+    "upgradeId": "N1-MIG-039",
+    "sourceGroup": "Matt Pocock Skills",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/mattpocock/skills"
+  },
+  {
+    "upgradeId": "N1-MIG-041",
+    "sourceGroup": "Matt Pocock Skills",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/mattpocock/skills"
+  },
+  {
+    "upgradeId": "N1-MIG-042",
+    "sourceGroup": "Matt Pocock Skills",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/mattpocock/skills"
+  },
+  {
+    "upgradeId": "N1-MIG-043",
+    "sourceGroup": "Matt Pocock Skills",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/mattpocock/skills"
+  },
+  {
+    "upgradeId": "N1-MIG-044",
+    "sourceGroup": "Matt Pocock Skills",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/mattpocock/skills"
+  },
+  {
+    "upgradeId": "N1-MIG-046",
+    "sourceGroup": "Browser-use",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/browser-use/browser-use"
+  },
+  {
+    "upgradeId": "N1-MIG-047",
+    "sourceGroup": "Browser-use",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "PROTOTYPE",
+    "source": "https://github.com/browser-use/browser-use"
+  },
+  {
+    "upgradeId": "N1-MIG-048",
+    "sourceGroup": "Browser-use",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "PROTOTYPE",
+    "source": "https://github.com/browser-use/browser-use"
+  },
+  {
+    "upgradeId": "N1-MIG-049",
+    "sourceGroup": "Browser-use",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/browser-use/browser-use"
+  },
+  {
+    "upgradeId": "N1-MIG-050",
+    "sourceGroup": "Browser-use",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/browser-use/browser-use"
+  },
+  {
+    "upgradeId": "N1-MIG-051",
+    "sourceGroup": "Browser-use",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "PROTOTYPE",
+    "source": "https://github.com/browser-use/browser-use"
+  },
+  {
+    "upgradeId": "N1-MIG-053",
+    "sourceGroup": "Browser-use",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/browser-use/browser-use"
+  },
+  {
+    "upgradeId": "N1-MIG-054",
+    "sourceGroup": "Browser-use",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/browser-use/browser-use"
+  },
+  {
+    "upgradeId": "N1-MIG-055",
+    "sourceGroup": "Browser-use",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/browser-use/browser-use"
+  },
+  {
+    "upgradeId": "N1-MIG-056",
+    "sourceGroup": "shadcn/ui",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/shadcn-ui/ui"
+  },
+  {
+    "upgradeId": "N1-MIG-057",
+    "sourceGroup": "shadcn/ui",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/shadcn-ui/ui"
+  },
+  {
+    "upgradeId": "N1-MIG-058",
+    "sourceGroup": "shadcn/ui",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "PROTOTYPE",
+    "source": "https://github.com/shadcn-ui/ui"
+  },
+  {
+    "upgradeId": "N1-MIG-059",
+    "sourceGroup": "shadcn/ui",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/shadcn-ui/ui"
+  },
+  {
+    "upgradeId": "N1-MIG-060",
+    "sourceGroup": "shadcn/ui",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/shadcn-ui/ui"
+  },
+  {
+    "upgradeId": "N1-MIG-061",
+    "sourceGroup": "shadcn/ui",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/shadcn-ui/ui"
+  },
+  {
+    "upgradeId": "N1-MIG-062",
+    "sourceGroup": "90DaysOfCyberSecurity",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/farhanashrafdev/90DaysOfCyberSecurity; https://github.com/CarterPerez-dev/Cybersecurity-Projects"
+  },
+  {
+    "upgradeId": "N1-MIG-063",
+    "sourceGroup": "90DaysOfCyberSecurity",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/farhanashrafdev/90DaysOfCyberSecurity"
+  },
+  {
+    "upgradeId": "N1-MIG-064",
+    "sourceGroup": "90DaysOfCyberSecurity",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "PROTOTYPE",
+    "source": "https://github.com/farhanashrafdev/90DaysOfCyberSecurity"
+  },
+  {
+    "upgradeId": "N1-MIG-065",
+    "sourceGroup": "Cybersecurity Projects",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/CarterPerez-dev/Cybersecurity-Projects"
+  },
+  {
+    "upgradeId": "N1-MIG-066",
+    "sourceGroup": "Cybersecurity Projects",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/CarterPerez-dev/Cybersecurity-Projects"
+  },
+  {
+    "upgradeId": "N1-MIG-067",
+    "sourceGroup": "Cybersecurity Projects",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/CarterPerez-dev/Cybersecurity-Projects"
+  },
+  {
+    "upgradeId": "N1-MIG-068",
+    "sourceGroup": "Cybersecurity Projects",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/CarterPerez-dev/Cybersecurity-Projects"
+  },
+  {
+    "upgradeId": "N1-MIG-069",
+    "sourceGroup": "Cybersecurity Projects",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "PROTOTYPE",
+    "source": "https://github.com/CarterPerez-dev/Cybersecurity-Projects"
+  },
+  {
+    "upgradeId": "N1-MIG-070",
+    "sourceGroup": "Cybersecurity Projects",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/CarterPerez-dev/Cybersecurity-Projects"
+  },
+  {
+    "upgradeId": "N1-MIG-071",
+    "sourceGroup": "Cybersecurity Projects",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/CarterPerez-dev/Cybersecurity-Projects"
+  },
+  {
+    "upgradeId": "N1-MIG-072",
+    "sourceGroup": "Cybersecurity Projects",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "PROTOTYPE",
+    "source": "https://github.com/CarterPerez-dev/Cybersecurity-Projects"
+  },
+  {
+    "upgradeId": "N1-MIG-075",
+    "sourceGroup": "ML for Cybersecurity",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/jivoi/awesome-ml-for-cybersecurity"
+  },
+  {
+    "upgradeId": "N1-MIG-076",
+    "sourceGroup": "ML for Cybersecurity",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/jivoi/awesome-ml-for-cybersecurity"
+  },
+  {
+    "upgradeId": "N1-MIG-078",
+    "sourceGroup": "ML for Cybersecurity",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/jivoi/awesome-ml-for-cybersecurity"
+  },
+  {
+    "upgradeId": "N1-MIG-079",
+    "sourceGroup": "ML for Cybersecurity",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/jivoi/awesome-ml-for-cybersecurity"
+  },
+  {
+    "upgradeId": "N1-MIG-081",
+    "sourceGroup": "Awesome Asset Discovery",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/redhuntlabs/Awesome-Asset-Discovery"
+  },
+  {
+    "upgradeId": "N1-MIG-082",
+    "sourceGroup": "Awesome Asset Discovery",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "PROTOTYPE",
+    "source": "https://github.com/redhuntlabs/Awesome-Asset-Discovery; User-provided image: The Agentic AI Knowledge Graph"
+  },
+  {
+    "upgradeId": "N1-MIG-083",
+    "sourceGroup": "Awesome Asset Discovery",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/redhuntlabs/Awesome-Asset-Discovery"
+  },
+  {
+    "upgradeId": "N1-MIG-084",
+    "sourceGroup": "Awesome Asset Discovery",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "PROTOTYPE",
+    "source": "https://github.com/redhuntlabs/Awesome-Asset-Discovery"
+  },
+  {
+    "upgradeId": "N1-MIG-085",
+    "sourceGroup": "Awesome Asset Discovery",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/redhuntlabs/Awesome-Asset-Discovery; User-provided image: The LLM Application Iceberg"
+  },
+  {
+    "upgradeId": "N1-MIG-087",
+    "sourceGroup": "Edition integration",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "All approved references"
+  },
+  {
+    "upgradeId": "N1-MIG-089",
+    "sourceGroup": "Executable evaluation",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "All approved references"
+  },
+  {
+    "upgradeId": "N1-MIG-090",
+    "sourceGroup": "Web and CLI Runtime",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "User-provided image: AI Agent Project Structure Example"
+  },
+  {
+    "upgradeId": "N1-MIG-091",
+    "sourceGroup": "Security regression",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "All approved references"
+  },
+  {
+    "upgradeId": "N1-MIG-092",
+    "sourceGroup": "Release",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "All approved references and user instruction"
+  },
+  {
+    "upgradeId": "N1-CORE-001",
+    "sourceGroup": "Uploaded project baseline",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "Uploaded project: nusamind-apex-r13.49.1-cybersecurity-only(1).zip"
+  },
+  {
+    "upgradeId": "N1-CORE-002",
+    "sourceGroup": "Release governance",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "ACTIVE",
+    "source": "Uploaded project: nusamind-apex-r13.49.1-cybersecurity-only(1).zip"
+  },
+  {
+    "upgradeId": "N1-CORE-003",
+    "sourceGroup": "Version migration",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "Uploaded project: nusamind-apex-r13.49.1-cybersecurity-only(1).zip"
+  },
+  {
+    "upgradeId": "N1-CORE-004",
+    "sourceGroup": "API architecture",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://opencode.ai/docs/; Uploaded project: nusamind-apex-r13.49.1-cybersecurity-only(1).zip"
+  },
+  {
+    "upgradeId": "N1-CORE-005",
+    "sourceGroup": "Runtime profiles",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "Uploaded project: nusamind-apex-r13.49.1-cybersecurity-only(1).zip"
+  },
+  {
+    "upgradeId": "N1-CORE-006",
+    "sourceGroup": "Distribution",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "Uploaded project: nusamind-apex-r13.49.1-cybersecurity-only(1).zip"
+  },
+  {
+    "upgradeId": "N1-CORE-007",
+    "sourceGroup": "Scope cancellation",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "Uploaded project: nusamind-apex-r13.49.1-cybersecurity-only(1).zip"
+  },
+  {
+    "upgradeId": "N1-CORE-008",
+    "sourceGroup": "n8n postponement",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "User instruction"
+  },
+  {
+    "upgradeId": "N1-CORE-009",
+    "sourceGroup": "UI governance",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/shadcn-ui/ui; Uploaded project: nusamind-apex-r13.49.1-cybersecurity-only(1).zip"
+  },
+  {
+    "upgradeId": "N1-CORE-010",
+    "sourceGroup": "Package hygiene",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "Uploaded project: nusamind-apex-r13.49.1-cybersecurity-only(1).zip"
+  },
+  {
+    "upgradeId": "N1-INTEL-001",
+    "sourceGroup": "Agentic AI Knowledge Graph",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://www.promptingguide.ai/agents; https://github.com/decolua/9router"
+  },
+  {
+    "upgradeId": "N1-INTEL-002",
+    "sourceGroup": "Prompting Guide",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://www.promptingguide.ai/research; https://www.promptingguide.ai/prompts"
+  },
+  {
+    "upgradeId": "N1-INTEL-003",
+    "sourceGroup": "Agentic Knowledge Graph",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "https://www.promptingguide.ai/research; User-provided Agentic Knowledge Graph"
+  },
+  {
+    "upgradeId": "N1-INTEL-004",
+    "sourceGroup": "LLM Application Iceberg",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://www.promptingguide.ai/research; User-provided LLM Application Iceberg"
+  },
+  {
+    "upgradeId": "N1-INTEL-005",
+    "sourceGroup": "Agentic memory",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "User-provided Agentic Knowledge Graph"
+  },
+  {
+    "upgradeId": "N1-INTEL-006",
+    "sourceGroup": "Advanced reasoning",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "PROTOTYPE",
+    "source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "upgradeId": "N1-INTEL-008",
+    "sourceGroup": "Trustworthiness",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "upgradeId": "N1-INTEL-009",
+    "sourceGroup": "Model prompting guides",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://www.promptingguide.ai/models; https://www.promptingguide.ai/prompts"
+  },
+  {
+    "upgradeId": "N1-RAG-001",
+    "sourceGroup": "Agentic RAG",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://www.promptingguide.ai/agents; User-provided Agentic Knowledge Graph"
+  },
+  {
+    "upgradeId": "N1-RAG-002",
+    "sourceGroup": "Graph RAG",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "PROTOTYPE",
+    "source": "User-provided Agentic Knowledge Graph"
+  },
+  {
+    "upgradeId": "N1-RAG-003",
+    "sourceGroup": "Data governance",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/jivoi/awesome-ml-for-cybersecurity; User-provided LLM Application Iceberg"
+  },
+  {
+    "upgradeId": "N1-RAG-004",
+    "sourceGroup": "Research reliability",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "upgradeId": "N1-RAG-005",
+    "sourceGroup": "RAG pipeline",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "User-provided LLM Application Iceberg"
+  },
+  {
+    "upgradeId": "N1-RAG-006",
+    "sourceGroup": "Adaptive retrieval",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "upgradeId": "N1-RAG-007",
+    "sourceGroup": "Knowledge lifecycle",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "User-provided LLM Application Iceberg"
+  },
+  {
+    "upgradeId": "N1-RAG-008",
+    "sourceGroup": "Deep research",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/mattpocock/skills; https://www.promptingguide.ai/agents"
+  },
+  {
+    "upgradeId": "N1-ENG-001",
+    "sourceGroup": "OpenCode",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/anomalyco/opencode; https://opencode.ai/docs/"
+  },
+  {
+    "upgradeId": "N1-ENG-002",
+    "sourceGroup": "Engineering evaluation",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/anomalyco/opencode"
+  },
+  {
+    "upgradeId": "N1-ENG-003",
+    "sourceGroup": "Git workflow",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "PROTOTYPE",
+    "source": "https://github.com/anomalyco/opencode; https://github.com/mattpocock/skills"
+  },
+  {
+    "upgradeId": "N1-ENG-004",
+    "sourceGroup": "Software supply chain",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/CarterPerez-dev/Cybersecurity-Projects; https://opencode.ai/docs/"
+  },
+  {
+    "upgradeId": "N1-ENG-006",
+    "sourceGroup": "Debugging",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/mattpocock/skills; https://github.com/anomalyco/opencode"
+  },
+  {
+    "upgradeId": "N1-ENG-007",
+    "sourceGroup": "Documentation intelligence",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/mattpocock/skills; https://opencode.ai/docs/"
+  },
+  {
+    "upgradeId": "N1-ENG-008",
+    "sourceGroup": "Release engineering",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/mattpocock/skills; https://github.com/anomalyco/opencode"
+  },
+  {
+    "upgradeId": "N1-BROWSE-001",
+    "sourceGroup": "Browser-use",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/browser-use/browser-use"
+  },
+  {
+    "upgradeId": "N1-BROWSE-002",
+    "sourceGroup": "Browser-use",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "PROTOTYPE",
+    "source": "https://github.com/browser-use/browser-use; https://github.com/jivoi/awesome-ml-for-cybersecurity"
+  },
+  {
+    "upgradeId": "N1-BROWSE-003",
+    "sourceGroup": "Browser QA",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/browser-use/browser-use; https://github.com/shadcn-ui/ui"
+  },
+  {
+    "upgradeId": "N1-BROWSE-004",
+    "sourceGroup": "Browser safety",
+    "coverageBefore": "NOT_COVERED",
+    "gap": "MISSING",
+    "targetStatus": "PROTOTYPE",
+    "source": "https://github.com/browser-use/browser-use"
+  },
+  {
+    "upgradeId": "N1-BROWSE-005",
+    "sourceGroup": "Multimodal reasoning",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/browser-use/browser-use; User-provided Agentic Knowledge Graph"
+  },
+  {
+    "upgradeId": "N1-CYBER-001",
+    "sourceGroup": "Cybersecurity references",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "https://github.com/CarterPerez-dev/Cybersecurity-Projects; https://github.com/redhuntlabs/Awesome-Asset-Discovery"
+  },
+  {
+    "upgradeId": "N1-CYBER-002",
+    "sourceGroup": "90DaysOfCyberSecurity",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/farhanashrafdev/90DaysOfCyberSecurity; https://github.com/CarterPerez-dev/Cybersecurity-Projects"
+  },
+  {
+    "upgradeId": "N1-CYBER-003",
+    "sourceGroup": "ML for Cybersecurity",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "PROTOTYPE",
+    "source": "https://github.com/farhanashrafdev/90DaysOfCyberSecurity; https://github.com/jivoi/awesome-ml-for-cybersecurity"
+  },
+  {
+    "upgradeId": "N1-CYBER-004",
+    "sourceGroup": "Cybersecurity Projects",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/CarterPerez-dev/Cybersecurity-Projects; https://github.com/redhuntlabs/Awesome-Asset-Discovery"
+  },
+  {
+    "upgradeId": "N1-CYBER-005",
+    "sourceGroup": "Cybersecurity Projects",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "BENCHMARKED",
+    "source": "https://github.com/CarterPerez-dev/Cybersecurity-Projects; https://github.com/anomalyco/opencode"
+  },
+  {
+    "upgradeId": "N1-EVAL-001",
+    "sourceGroup": "Evaluation systems",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "https://www.promptingguide.ai/research; https://github.com/anomalyco/opencode"
+  },
+  {
+    "upgradeId": "N1-EVAL-002",
+    "sourceGroup": "Release governance",
+    "coverageBefore": "PARTIAL",
+    "gap": "PARTIAL",
+    "targetStatus": "ACTIVE",
+    "source": "All approved references and uploaded project"
+  }
+]

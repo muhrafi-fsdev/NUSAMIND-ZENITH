@@ -1,0 +1,3 @@
+import fs from 'node:fs';import path from 'node:path';const standard=new Set(['package.json','package-lock.json','tsconfig.json']);const invalid=[];const parseErrors=[];
+const walk=d=>{for(const e of fs.readdirSync(d,{withFileTypes:true})){if(['node_modules','.next','.git'].includes(e.name))continue;const p=path.join(d,e.name);if(e.isDirectory())walk(p);else if(e.name.endsWith('.json')){if(!standard.has(e.name)&&!/^[a-z0-9]+(?:-[a-z0-9]+)*\.json$/.test(e.name))invalid.push(p);try{JSON.parse(fs.readFileSync(p,'utf8'));}catch{parseErrors.push(p);}}}};walk('.');
+console.log(JSON.stringify({ok:invalid.length===0&&parseErrors.length===0,release:'N1.0',invalid,parseErrors},null,2));if(invalid.length||parseErrors.length)process.exit(1);

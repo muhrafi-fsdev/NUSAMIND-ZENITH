@@ -1,0 +1,202 @@
+[
+  {
+    "test_id": "KB-001",
+    "domain": "General",
+    "difficulty": "Foundational",
+    "target_versions": "Swift, Zenith, Apex",
+    "test_prompt_or_condition": "Jelaskan perbedaan cuaca dan iklim.",
+    "required_behavior": "Jawaban benar, Bahasa Indonesia, contoh jelas.",
+    "forbidden_behavior": "Mencampur cuaca dengan perubahan iklim.",
+    "criticality": "Medium"
+  },
+  {
+    "test_id": "KB-002",
+    "domain": "Indonesia",
+    "difficulty": "Intermediate",
+    "target_versions": "Zenith, Apex",
+    "test_prompt_or_condition": "Jelaskan struktur umum pendidikan tinggi Indonesia dan istilah SKS.",
+    "required_behavior": "Konteks Indonesia dan istilah tepat.",
+    "forbidden_behavior": "Menggunakan sistem negara lain tanpa penjelasan.",
+    "criticality": "High"
+  },
+  {
+    "test_id": "KB-003",
+    "domain": "Mathematics",
+    "difficulty": "Advanced",
+    "target_versions": "Zenith, Apex",
+    "test_prompt_or_condition": "Selesaikan recurrence non-standar dan jelaskan metode.",
+    "required_behavior": "Metode dan hasil terverifikasi.",
+    "forbidden_behavior": "Mengarang Master Theorem yang tidak berlaku.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "KB-004",
+    "domain": "Coding",
+    "difficulty": "Intermediate",
+    "target_versions": "Zenith, Apex",
+    "test_prompt_or_condition": "Project Next.js gagal karena import/export mismatch.",
+    "required_behavior": "Analisis source dan versi framework.",
+    "forbidden_behavior": "Jawaban generik tanpa membaca evidence.",
+    "criticality": "High"
+  },
+  {
+    "test_id": "KB-005",
+    "domain": "Networking",
+    "difficulty": "Intermediate",
+    "target_versions": "Swift, Zenith, Apex",
+    "test_prompt_or_condition": "Bedakan throughput, bandwidth, dan goodput.",
+    "required_behavior": "Definisi dan contoh akurat.",
+    "forbidden_behavior": "Menyamakan ketiganya.",
+    "criticality": "High"
+  },
+  {
+    "test_id": "KB-006",
+    "domain": "Telecom",
+    "difficulty": "Advanced",
+    "target_versions": "Zenith, Apex",
+    "test_prompt_or_condition": "Hitung link budget dan validasi dB/dBm.",
+    "required_behavior": "Unit dan formula benar.",
+    "forbidden_behavior": "Mengalikan dBm dengan dB.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "KB-007",
+    "domain": "IoT",
+    "difficulty": "Intermediate",
+    "target_versions": "Zenith, Apex",
+    "test_prompt_or_condition": "Rancang fail-safe pompa ESP32 saat sensor error.",
+    "required_behavior": "State, safety, dan recovery jelas.",
+    "forbidden_behavior": "Pompa tetap menyala saat sensor gagal.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "KB-008",
+    "domain": "Data Engineering",
+    "difficulty": "Intermediate",
+    "target_versions": "Zenith, Apex",
+    "test_prompt_or_condition": "Jelaskan bronze-silver-gold dan data quality gates.",
+    "required_behavior": "Pipeline dan tujuan tiap layer benar.",
+    "forbidden_behavior": "Hanya definisi tanpa alur.",
+    "criticality": "High"
+  },
+  {
+    "test_id": "KB-009",
+    "domain": "AI/Data",
+    "difficulty": "Advanced",
+    "target_versions": "Apex",
+    "test_prompt_or_condition": "Bandingkan FTS5, embeddings, dan reranker untuk RAG.",
+    "required_behavior": "Trade-off dan arsitektur grounded.",
+    "forbidden_behavior": "Mengklaim embedding selalu lebih baik.",
+    "criticality": "High"
+  },
+  {
+    "test_id": "KB-010",
+    "domain": "Insurance",
+    "difficulty": "Advanced",
+    "target_versions": "Zenith, Apex",
+    "test_prompt_or_condition": "Analisis combined ratio 108% tetapi laba bersih positif.",
+    "required_behavior": "Underwriting, investasi, reserve, sustainability.",
+    "forbidden_behavior": "Menyatakan perusahaan pasti sehat/tidak sehat.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "KB-011",
+    "domain": "Finance",
+    "difficulty": "Intermediate",
+    "target_versions": "Zenith, Apex",
+    "test_prompt_or_condition": "Hitung margin dan jelaskan basis denominator.",
+    "required_behavior": "Formula dan denominator benar.",
+    "forbidden_behavior": "Menggunakan denominator yang salah tanpa catatan.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "KB-012",
+    "domain": "Religion",
+    "difficulty": "Advanced",
+    "target_versions": "Zenith, Apex",
+    "test_prompt_or_condition": "Bandingkan QS 2:256 dan ayat konflik.",
+    "required_behavior": "Context, scope, source, no false naskh.",
+    "forbidden_behavior": "Ayat/hadis/source palsu.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "KB-013",
+    "domain": "Customer Service",
+    "difficulty": "Intermediate",
+    "target_versions": "Zenith, Apex",
+    "test_prompt_or_condition": "Pelanggan marah dan mengancam pengacara.",
+    "required_behavior": "Empati, status, handoff, no promise.",
+    "forbidden_behavior": "Menjanjikan klaim selesai.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "KB-014",
+    "domain": "Everyday",
+    "difficulty": "Foundational",
+    "target_versions": "Swift, Zenith, Apex",
+    "test_prompt_or_condition": "Wi-Fi hanya bermasalah pada satu aplikasi.",
+    "required_behavior": "Troubleshooting terurut dan aman.",
+    "forbidden_behavior": "Langsung reset sistem tanpa diagnosis.",
+    "criticality": "High"
+  },
+  {
+    "test_id": "KB-015",
+    "domain": "Freshness",
+    "difficulty": "Advanced",
+    "target_versions": "Zenith, Apex",
+    "test_prompt_or_condition": "File diunggah hari ini tetapi kontennya regulasi lama.",
+    "required_behavior": "Gunakan content/effective date, bukan upload date.",
+    "forbidden_behavior": "Menyebutnya terbaru karena metadata file.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "KB-016",
+    "domain": "Knowledge Gap",
+    "difficulty": "Expert",
+    "target_versions": "Swift, Zenith, Apex",
+    "test_prompt_or_condition": "Tanyakan subdomain sangat niche dengan satu source lemah.",
+    "required_behavior": "Deteksi gap dan tidak mengarang.",
+    "forbidden_behavior": "Confidence tinggi/claim unsupported.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "KB-017",
+    "domain": "Dedup",
+    "difficulty": "Expert",
+    "target_versions": "Apex",
+    "test_prompt_or_condition": "Tiga artikel menyalin satu sumber primer.",
+    "required_behavior": "Lineage terdeteksi dan evidence tidak dihitung tiga.",
+    "forbidden_behavior": "Menganggap independen.",
+    "criticality": "High"
+  },
+  {
+    "test_id": "KB-018",
+    "domain": "Conflict",
+    "difficulty": "Expert",
+    "target_versions": "Apex",
+    "test_prompt_or_condition": "Dua official source berbeda karena yurisdiksi.",
+    "required_behavior": "Pisahkan jurisdiction dan scope.",
+    "forbidden_behavior": "Memilih satu secara universal.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "KB-019",
+    "domain": "Teaching",
+    "difficulty": "Intermediate",
+    "target_versions": "Zenith, Apex",
+    "test_prompt_or_condition": "User salah paham korelasi dan kausalitas.",
+    "required_behavior": "Deteksi miskonsepsi dan beri contoh.",
+    "forbidden_behavior": "Sekadar memberi definisi.",
+    "criticality": "High"
+  },
+  {
+    "test_id": "KB-020",
+    "domain": "Rollback",
+    "difficulty": "System",
+    "target_versions": "Apex",
+    "test_prompt_or_condition": "Batch baru menurunkan benchmark finance 20%.",
+    "required_behavior": "Block/rollback batch dan restore index.",
+    "forbidden_behavior": "Tetap aktif karena record lebih banyak.",
+    "criticality": "Critical"
+  }
+]

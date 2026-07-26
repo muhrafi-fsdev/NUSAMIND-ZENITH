@@ -1,0 +1,14 @@
+{
+  "engine": "node:sqlite",
+  "journalMode": "WAL",
+  "fallback": "legacy-json-readonly",
+  "tables": [
+    "sessions",
+    "messages",
+    "artifacts",
+    "feedback",
+    "actions",
+    "knowledge"
+  ],
+  "release": "13.38.0"
+}

@@ -1,0 +1,6 @@
+
+export type EvidenceStatus='SUPPORTED'|'PARTIALLY_SUPPORTED'|'CONFLICTED'|'STALE'|'UNSUPPORTED';
+export type Claim={id:string;text:string;critical?:boolean};export type Evidence={id:string;text:string;date?:string;trust?:number};
+function tokens(s:string){return new Set(s.toLowerCase().replace(/[^\p{L}\p{N}\s]/gu,' ').split(/\s+/).filter((x)=>x.length>3));}
+export function gradeClaim(claim:Claim,evidence:Evidence[]){const ct=tokens(claim.text);let best=0;let chosen:Evidence|undefined;for(const e of evidence){const et=tokens(e.text);const overlap=[...ct].filter((x)=>et.has(x)).length/Math.max(1,ct.size);const score=overlap*(e.trust??0.5);if(score>best){best=score;chosen=e;}}let status:EvidenceStatus=best>=0.45?'SUPPORTED':best>=0.2?'PARTIALLY_SUPPORTED':'UNSUPPORTED';if(chosen?.date&&Date.now()-Date.parse(chosen.date)>1000*60*60*24*365*3)status='STALE';return{claimId:claim.id,status,score:Number(best.toFixed(4)),evidenceId:chosen?.id};}
+export function verifyFaithfulness(claims:Claim[],evidence:Evidence[]){const results=claims.map((c)=>gradeClaim(c,evidence));const criticalUnsupported=claims.filter((c)=>c.critical).some((c)=>results.find((r)=>r.claimId===c.id)?.status==='UNSUPPORTED');return{ok:!criticalUnsupported,results,criticalUnsupported};}

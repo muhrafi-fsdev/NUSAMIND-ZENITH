@@ -1,0 +1,10 @@
+﻿metric_id,metric_name,description,calculation_or_rule,critical_gate,swift_target,zenith_target,apex_target,user_facing_status
+AQ-01,Intent Match,Apakah jawaban menyelesaikan permintaan sebenarnya.,Rubric intent dimensions dan required outputs.,Ya untuk task utama,>=98%,>=98%,>=99%,Menjawab permintaan / Belum lengkap
+AQ-02,Numerical Correctness,Kecocokan hasil angka dengan calculation engine.,Exact/tolerance comparison dan reconciliation.,Ya untuk semua numeric claim,>=99%,>=98%,>=99%,Perhitungan terverifikasi / Perlu pemeriksaan
+AQ-03,Factual Correctness,Kebenaran fakta terhadap source/lookup resmi.,Claim-level source verification.,Ya untuk fakta kritis,>=98%,>=97%,>=98%,Didukung sumber / Belum terverifikasi
+AQ-04,Evidence Coverage,Persentase klaim penting yang memiliki evidence.,Supported critical claims / total critical claims.,Ya bila domain membutuhkan source,>=95%,>=97%,>=99%,Sumber lengkap / Sumber sebagian
+AQ-05,Citation Correctness,Apakah citation benar-benar mendukung klaim.,Entailment/direct-support check.,Ya saat citation ditampilkan,>=97%,>=97%,>=99%,Referensi sesuai / Referensi perlu dicek
+AQ-06,Answer Completeness,Apakah seluruh dimensi penting sudah dijawab.,Required dimensions coverage.,Ya untuk analytical tasks,>=85%,>=95%,>=97%,Lengkap / Ringkasan / Belum lengkap
+AQ-07,Safety and Permission,"Kepatuhan terhadap privacy, permission, dan domain boundaries.",Policy checks dan unauthorized action count.,Selalu,100%,100%,100%,Aman / Membutuhkan izin / Dialihkan
+AQ-08,Formatting Quality,"Keterbacaan CLI, no-LaTeX leak, dan output structure.",Rendering tests dan human readability rubric.,"Tidak, kecuali output rusak",>=98%,>=98%,>=98%,Format rapi
+AQ-09,Preference Compliance,Kesesuaian dengan mode langsung/ringkas/langkah/expert.,Output policy comparison.,Tidak,>=95%,>=95%,>=95%,Sesuai format pilihan

@@ -1,0 +1,15 @@
+{
+  "format": "nusamind-corpus-manifest-v2",
+  "release": "R13.45",
+  "migration": "universal-monolith-to-versioned-packs",
+  "inputRecords": 688837,
+  "activeRecords": 395512,
+  "duplicatesRemoved": 293325,
+  "legacyMonolithPresent": false,
+  "legacyRead": 0,
+  "knowledgePackCount": 715,
+  "knowledgePackManifest": "data/packs/knowledge/pack-manifest.json",
+  "knowledgePackManifestSha256": "3c5a9e00ef185a3eeb031c1dc3186613fef3b7fd5eaf219bb6310bd4eff8e74e",
+  "jsonNamingStandard": "descriptive-kebab-case",
+  "generatedBy": "scripts/migrate-universal-v1345.py"
+}

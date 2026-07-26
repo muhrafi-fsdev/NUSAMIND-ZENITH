@@ -1,0 +1,272 @@
+[
+  {
+    "id": "herb-001",
+    "common_name": "Kunyit",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-002",
+    "common_name": "Jahe",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-003",
+    "common_name": "Temulawak",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-004",
+    "common_name": "Kencur",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-005",
+    "common_name": "Sambiloto",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-006",
+    "common_name": "Meniran",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-007",
+    "common_name": "Daun sirih",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-008",
+    "common_name": "Kayu manis",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-009",
+    "common_name": "Cengkeh",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-010",
+    "common_name": "Serai",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-011",
+    "common_name": "Pegagan",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-012",
+    "common_name": "Lidah buaya",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-013",
+    "common_name": "Daun kelor",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-014",
+    "common_name": "Mengkudu",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-015",
+    "common_name": "Jintan hitam",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-016",
+    "common_name": "Bawang putih",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-017",
+    "common_name": "Ginseng",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-018",
+    "common_name": "Echinacea",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-019",
+    "common_name": "Valerian",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-020",
+    "common_name": "Chamomile",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-021",
+    "common_name": "Licorice",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-022",
+    "common_name": "St John wort",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-023",
+    "common_name": "Ginkgo biloba",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-024",
+    "common_name": "Milk thistle",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-025",
+    "common_name": "Peppermint",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-026",
+    "common_name": "Adas",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-027",
+    "common_name": "Rosella",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-028",
+    "common_name": "Mahkota dewa",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-029",
+    "common_name": "Brotowali",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "herb-030",
+    "common_name": "Pasak bumi",
+    "record_type": "traditional_medicine",
+    "natural_not_always_safe": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  }
+]

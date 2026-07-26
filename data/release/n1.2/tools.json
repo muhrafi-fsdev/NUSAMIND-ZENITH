@@ -1,0 +1,34 @@
+[
+  {
+    "id": "automatic-git-push",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "force-push-with-lease",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "controlled-destructive-action",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "credential-vault",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "external-workspace-edit",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "unverified-mcp-quarantine",
+    "status": "ACTIVE_WITH_SANDBOX"
+  },
+  {
+    "id": "autonomous-deployment",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "extended-agent-loop",
+    "status": "ACTIVE"
+  }
+]

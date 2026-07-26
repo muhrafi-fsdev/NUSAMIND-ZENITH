@@ -1,0 +1,42 @@
+{
+  "release": "N1.1",
+  "semver": "1.1.0",
+  "edition": "zenith",
+  "name": "Developer Intelligence",
+  "inspiration": "OpenCode architectural patterns reimplemented for NusaMind; no OpenCode source copied",
+  "features": [
+    "project-intelligence",
+    "mode-controller",
+    "permission-engine",
+    "tool-registry",
+    "skill-runtime-v2",
+    "checkpoint-rollback",
+    "selective-lsp",
+    "verification-pipeline",
+    "doom-loop-guard",
+    "context-ranking"
+  ],
+  "limits": {
+    "boost": 1250,
+    "modes": [
+      "ASK",
+      "PLAN",
+      "BUILD",
+      "REVIEW",
+      "REPAIR"
+    ],
+    "maxSkills": 3,
+    "maxSteps": 10,
+    "write": true,
+    "parallel": 2
+  },
+  "exclusions": [
+    "automatic-git-push",
+    "force-push",
+    "arbitrary-shell",
+    "unverified-mcp",
+    "autonomous-deployment",
+    "external-workspace-edit",
+    "credential-access"
+  ]
+}

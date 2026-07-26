@@ -1,0 +1,23 @@
+[
+  {
+    "assumption_id": "DIST-V1348-01",
+    "distribution_decision": "node_modules is intentionally excluded from every V13.48 ZIP",
+    "validation_prerequisite": "Node.js >=22; package.json and package-lock.json; npm ci",
+    "correct_interpretation": "The ZIP is intentionally lightweight and dependencies are installed after extraction.",
+    "incorrect_interpretation": "The project is broken because node_modules is missing."
+  },
+  {
+    "assumption_id": "DIST-V1348-02",
+    "distribution_decision": "UI is preserved while backend structure is migrated",
+    "validation_prerequisite": "Visual regression and CLI compatibility tests",
+    "correct_interpretation": "V13.48 is an architecture and runtime update.",
+    "incorrect_interpretation": "V13.48 includes a UI redesign."
+  },
+  {
+    "assumption_id": "DIST-V1348-03",
+    "distribution_decision": "n8n integration is postponed and excluded",
+    "validation_prerequisite": "Manifest and source scan show zero active n8n integration modules",
+    "correct_interpretation": "V13.48 focuses only on the three user-provided references.",
+    "incorrect_interpretation": "Webhook, MCP, or n8n workflow support is part of V13.48."
+  }
+]

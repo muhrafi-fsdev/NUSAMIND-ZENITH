@@ -1,0 +1,1 @@
+import { securityStatus } from '@/lib/security-center';export const runtime='nodejs';export const dynamic='force-dynamic';export async function GET(){return Response.json({ok:true,...securityStatus()});}

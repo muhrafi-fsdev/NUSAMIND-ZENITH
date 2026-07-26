@@ -1,0 +1,301 @@
+text,label
+Debug error TypeScript di Next.js,coding
+Tolong Debug error TypeScript di Next.js,coding
+Saya ingin Debug error TypeScript di Next.js,coding
+Bisakah kamu Debug error TypeScript di Next.js,coding
+Kenapa npm run build gagal,coding
+Tolong Kenapa npm run build gagal,coding
+Saya ingin Kenapa npm run build gagal,coding
+Bisakah kamu Kenapa npm run build gagal,coding
+Buat API route React,coding
+Tolong Buat API route React,coding
+Saya ingin Buat API route React,coding
+Bisakah kamu Buat API route React,coding
+Perbaiki kode Python ini,coding
+Tolong Perbaiki kode Python ini,coding
+Saya ingin Perbaiki kode Python ini,coding
+Bisakah kamu Perbaiki kode Python ini,coding
+Cek bug database dan server,coding
+Tolong Cek bug database dan server,coding
+Saya ingin Cek bug database dan server,coding
+Bisakah kamu Cek bug database dan server,coding
+Latih model machine learning,ai_ml
+Tolong Latih model machine learning,ai_ml
+Saya ingin Latih model machine learning,ai_ml
+Bisakah kamu Latih model machine learning,ai_ml
+Buat embedding untuk RAG,ai_ml
+Tolong Buat embedding untuk RAG,ai_ml
+Saya ingin Buat embedding untuk RAG,ai_ml
+Bisakah kamu Buat embedding untuk RAG,ai_ml
+Evaluasi dataset fine tuning,ai_ml
+Tolong Evaluasi dataset fine tuning,ai_ml
+Saya ingin Evaluasi dataset fine tuning,ai_ml
+Bisakah kamu Evaluasi dataset fine tuning,ai_ml
+Jelaskan LoRA dan QLoRA,ai_ml
+Tolong Jelaskan LoRA dan QLoRA,ai_ml
+Saya ingin Jelaskan LoRA dan QLoRA,ai_ml
+Bisakah kamu Jelaskan LoRA dan QLoRA,ai_ml
+Buat classifier intent,ai_ml
+Tolong Buat classifier intent,ai_ml
+Saya ingin Buat classifier intent,ai_ml
+Bisakah kamu Buat classifier intent,ai_ml
+Bagaimana prosedur klaim asuransi mobil,insurance
+Tolong Bagaimana prosedur klaim asuransi mobil,insurance
+Saya ingin Bagaimana prosedur klaim asuransi mobil,insurance
+Bisakah kamu Bagaimana prosedur klaim asuransi mobil,insurance
+Hitung premi dan refund polis,insurance
+Tolong Hitung premi dan refund polis,insurance
+Saya ingin Hitung premi dan refund polis,insurance
+Bisakah kamu Hitung premi dan refund polis,insurance
+Dokumen klaim belum lengkap,insurance
+Tolong Dokumen klaim belum lengkap,insurance
+Saya ingin Dokumen klaim belum lengkap,insurance
+Bisakah kamu Dokumen klaim belum lengkap,insurance
+Apa arti endorsement polis,insurance
+Tolong Apa arti endorsement polis,insurance
+Saya ingin Apa arti endorsement polis,insurance
+Bisakah kamu Apa arti endorsement polis,insurance
+Analisis reserve dan IBNR,insurance
+Tolong Analisis reserve dan IBNR,insurance
+Saya ingin Analisis reserve dan IBNR,insurance
+Bisakah kamu Analisis reserve dan IBNR,insurance
+Analisis saham dan risiko investasi,finance
+Tolong Analisis saham dan risiko investasi,finance
+Saya ingin Analisis saham dan risiko investasi,finance
+Bisakah kamu Analisis saham dan risiko investasi,finance
+Hitung rasio keuangan,finance
+Tolong Hitung rasio keuangan,finance
+Saya ingin Hitung rasio keuangan,finance
+Bisakah kamu Hitung rasio keuangan,finance
+Apa dampak inflasi,finance
+Tolong Apa dampak inflasi,finance
+Saya ingin Apa dampak inflasi,finance
+Bisakah kamu Apa dampak inflasi,finance
+Analisis cash flow perusahaan,finance
+Tolong Analisis cash flow perusahaan,finance
+Saya ingin Analisis cash flow perusahaan,finance
+Bisakah kamu Analisis cash flow perusahaan,finance
+Jelaskan obligasi dan yield,finance
+Tolong Jelaskan obligasi dan yield,finance
+Saya ingin Jelaskan obligasi dan yield,finance
+Bisakah kamu Jelaskan obligasi dan yield,finance
+Jelaskan tafsir ayat Al-Quran,religion
+Tolong Jelaskan tafsir ayat Al-Quran,religion
+Saya ingin Jelaskan tafsir ayat Al-Quran,religion
+Bisakah kamu Jelaskan tafsir ayat Al-Quran,religion
+Apa hukum zakat,religion
+Tolong Apa hukum zakat,religion
+Saya ingin Apa hukum zakat,religion
+Bisakah kamu Apa hukum zakat,religion
+Bandingkan pendapat fiqih,religion
+Tolong Bandingkan pendapat fiqih,religion
+Saya ingin Bandingkan pendapat fiqih,religion
+Bisakah kamu Bandingkan pendapat fiqih,religion
+Cari hadis tentang sabar,religion
+Tolong Cari hadis tentang sabar,religion
+Saya ingin Cari hadis tentang sabar,religion
+Bisakah kamu Cari hadis tentang sabar,religion
+Jelaskan konteks surah,religion
+Tolong Jelaskan konteks surah,religion
+Saya ingin Jelaskan konteks surah,religion
+Bisakah kamu Jelaskan konteks surah,religion
+Apa gejala penyakit ini,health
+Tolong Apa gejala penyakit ini,health
+Saya ingin Apa gejala penyakit ini,health
+Bisakah kamu Apa gejala penyakit ini,health
+Jelaskan risiko obat,health
+Tolong Jelaskan risiko obat,health
+Saya ingin Jelaskan risiko obat,health
+Bisakah kamu Jelaskan risiko obat,health
+Informasi pengobatan modern,health
+Tolong Informasi pengobatan modern,health
+Saya ingin Informasi pengobatan modern,health
+Bisakah kamu Informasi pengobatan modern,health
+Kapan harus menemui dokter,health
+Tolong Kapan harus menemui dokter,health
+Saya ingin Kapan harus menemui dokter,health
+Bisakah kamu Kapan harus menemui dokter,health
+Analisis data kesehatan,health
+Tolong Analisis data kesehatan,health
+Saya ingin Analisis data kesehatan,health
+Bisakah kamu Analisis data kesehatan,health
+Hitung power link budget GPON,telecom
+Tolong Hitung power link budget GPON,telecom
+Saya ingin Hitung power link budget GPON,telecom
+Bisakah kamu Hitung power link budget GPON,telecom
+Jelaskan modulasi QPSK,telecom
+Tolong Jelaskan modulasi QPSK,telecom
+Saya ingin Jelaskan modulasi QPSK,telecom
+Bisakah kamu Jelaskan modulasi QPSK,telecom
+Analisis bandwidth fiber optik,telecom
+Tolong Analisis bandwidth fiber optik,telecom
+Saya ingin Analisis bandwidth fiber optik,telecom
+Bisakah kamu Analisis bandwidth fiber optik,telecom
+Buat desain antena RF,telecom
+Tolong Buat desain antena RF,telecom
+Saya ingin Buat desain antena RF,telecom
+Bisakah kamu Buat desain antena RF,telecom
+Hitung redaman FTTH,telecom
+Tolong Hitung redaman FTTH,telecom
+Saya ingin Hitung redaman FTTH,telecom
+Bisakah kamu Hitung redaman FTTH,telecom
+Kenapa DNS tidak bisa diakses,networking
+Tolong Kenapa DNS tidak bisa diakses,networking
+Saya ingin Kenapa DNS tidak bisa diakses,networking
+Bisakah kamu Kenapa DNS tidak bisa diakses,networking
+Konfigurasi router dan switch,networking
+Tolong Konfigurasi router dan switch,networking
+Saya ingin Konfigurasi router dan switch,networking
+Bisakah kamu Konfigurasi router dan switch,networking
+Analisis IP address,networking
+Tolong Analisis IP address,networking
+Saya ingin Analisis IP address,networking
+Bisakah kamu Analisis IP address,networking
+Troubleshoot jaringan WiFi,networking
+Tolong Troubleshoot jaringan WiFi,networking
+Saya ingin Troubleshoot jaringan WiFi,networking
+Bisakah kamu Troubleshoot jaringan WiFi,networking
+Jelaskan TCP dan UDP,networking
+Tolong Jelaskan TCP dan UDP,networking
+Saya ingin Jelaskan TCP dan UDP,networking
+Bisakah kamu Jelaskan TCP dan UDP,networking
+Bersihkan dataset CSV,data
+Tolong Bersihkan dataset CSV,data
+Saya ingin Bersihkan dataset CSV,data
+Bisakah kamu Bersihkan dataset CSV,data
+Buat pipeline ETL Airflow,data
+Tolong Buat pipeline ETL Airflow,data
+Saya ingin Buat pipeline ETL Airflow,data
+Bisakah kamu Buat pipeline ETL Airflow,data
+Query database SQL,data
+Tolong Query database SQL,data
+Saya ingin Query database SQL,data
+Bisakah kamu Query database SQL,data
+Analisis file Excel,data
+Tolong Analisis file Excel,data
+Saya ingin Analisis file Excel,data
+Bisakah kamu Analisis file Excel,data
+Transformasi bronze ke silver,data
+Tolong Transformasi bronze ke silver,data
+Saya ingin Transformasi bronze ke silver,data
+Bisakah kamu Transformasi bronze ke silver,data
+Pelanggan komplain layanan lambat,customer_service
+Tolong Pelanggan komplain layanan lambat,customer_service
+Saya ingin Pelanggan komplain layanan lambat,customer_service
+Bisakah kamu Pelanggan komplain layanan lambat,customer_service
+Buat respons customer service,customer_service
+Tolong Buat respons customer service,customer_service
+Saya ingin Buat respons customer service,customer_service
+Bisakah kamu Buat respons customer service,customer_service
+Tiket perlu eskalasi,customer_service
+Tolong Tiket perlu eskalasi,customer_service
+Saya ingin Tiket perlu eskalasi,customer_service
+Bisakah kamu Tiket perlu eskalasi,customer_service
+Pelanggan marah soal klaim,customer_service
+Tolong Pelanggan marah soal klaim,customer_service
+Saya ingin Pelanggan marah soal klaim,customer_service
+Bisakah kamu Pelanggan marah soal klaim,customer_service
+Ringkas percakapan CS,customer_service
+Tolong Ringkas percakapan CS,customer_service
+Saya ingin Ringkas percakapan CS,customer_service
+Bisakah kamu Ringkas percakapan CS,customer_service
+Bantu kerjakan tugas kuliah,education
+Tolong Bantu kerjakan tugas kuliah,education
+Saya ingin Bantu kerjakan tugas kuliah,education
+Bisakah kamu Bantu kerjakan tugas kuliah,education
+Jelaskan materi probabilitas,education
+Tolong Jelaskan materi probabilitas,education
+Saya ingin Jelaskan materi probabilitas,education
+Bisakah kamu Jelaskan materi probabilitas,education
+Buat laporan praktikum,education
+Tolong Buat laporan praktikum,education
+Saya ingin Buat laporan praktikum,education
+Bisakah kamu Buat laporan praktikum,education
+Buat soal latihan,education
+Tolong Buat soal latihan,education
+Saya ingin Buat soal latihan,education
+Bisakah kamu Buat soal latihan,education
+Jelaskan konsep secara bertahap,education
+Tolong Jelaskan konsep secara bertahap,education
+Saya ingin Jelaskan konsep secara bertahap,education
+Bisakah kamu Jelaskan konsep secara bertahap,education
+Perbaiki CV untuk magang,career
+Tolong Perbaiki CV untuk magang,career
+Saya ingin Perbaiki CV untuk magang,career
+Bisakah kamu Perbaiki CV untuk magang,career
+Persiapan interview helpdesk,career
+Tolong Persiapan interview helpdesk,career
+Saya ingin Persiapan interview helpdesk,career
+Bisakah kamu Persiapan interview helpdesk,career
+Rekomendasi pekerjaan IT,career
+Tolong Rekomendasi pekerjaan IT,career
+Saya ingin Rekomendasi pekerjaan IT,career
+Bisakah kamu Rekomendasi pekerjaan IT,career
+Buat surat lamaran,career
+Tolong Buat surat lamaran,career
+Saya ingin Buat surat lamaran,career
+Bisakah kamu Buat surat lamaran,career
+Nilai kecocokan karier,career
+Tolong Nilai kecocokan karier,career
+Saya ingin Nilai kecocokan karier,career
+Bisakah kamu Nilai kecocokan karier,career
+Jelaskan isi kontrak,legal
+Tolong Jelaskan isi kontrak,legal
+Saya ingin Jelaskan isi kontrak,legal
+Bisakah kamu Jelaskan isi kontrak,legal
+Apa arti pasal ini,legal
+Tolong Apa arti pasal ini,legal
+Saya ingin Apa arti pasal ini,legal
+Bisakah kamu Apa arti pasal ini,legal
+Informasi hukum umum,legal
+Tolong Informasi hukum umum,legal
+Saya ingin Informasi hukum umum,legal
+Bisakah kamu Informasi hukum umum,legal
+Analisis risiko perjanjian,legal
+Tolong Analisis risiko perjanjian,legal
+Saya ingin Analisis risiko perjanjian,legal
+Bisakah kamu Analisis risiko perjanjian,legal
+Jelaskan aturan perlindungan data,legal
+Tolong Jelaskan aturan perlindungan data,legal
+Saya ingin Jelaskan aturan perlindungan data,legal
+Bisakah kamu Jelaskan aturan perlindungan data,legal
+Saya sedang sedih dan ingin curhat,companion
+Tolong Saya sedang sedih dan ingin curhat,companion
+Saya ingin Saya sedang sedih dan ingin curhat,companion
+Bisakah kamu Saya sedang sedih dan ingin curhat,companion
+Saya cemas menghadapi presentasi,companion
+Tolong Saya cemas menghadapi presentasi,companion
+Saya ingin Saya cemas menghadapi presentasi,companion
+Bisakah kamu Saya cemas menghadapi presentasi,companion
+Temani saya ngobrol,companion
+Tolong Temani saya ngobrol,companion
+Saya ingin Temani saya ngobrol,companion
+Bisakah kamu Temani saya ngobrol,companion
+Saya kesal dan tidak mood,companion
+Tolong Saya kesal dan tidak mood,companion
+Saya ingin Saya kesal dan tidak mood,companion
+Bisakah kamu Saya kesal dan tidak mood,companion
+Saya introvert dan gugup,companion
+Tolong Saya introvert dan gugup,companion
+Saya ingin Saya introvert dan gugup,companion
+Bisakah kamu Saya introvert dan gugup,companion
+Apa ibu kota Indonesia,general
+Tolong Apa ibu kota Indonesia,general
+Saya ingin Apa ibu kota Indonesia,general
+Bisakah kamu Apa ibu kota Indonesia,general
+Jelaskan topik ini,general
+Tolong Jelaskan topik ini,general
+Saya ingin Jelaskan topik ini,general
+Bisakah kamu Jelaskan topik ini,general
+Berikan ringkasan singkat,general
+Tolong Berikan ringkasan singkat,general
+Saya ingin Berikan ringkasan singkat,general
+Bisakah kamu Berikan ringkasan singkat,general
+Bantu saya membuat rencana,general
+Tolong Bantu saya membuat rencana,general
+Saya ingin Bantu saya membuat rencana,general
+Bisakah kamu Bantu saya membuat rencana,general
+Apa manfaat teknologi,general
+Tolong Apa manfaat teknologi,general
+Saya ingin Apa manfaat teknologi,general
+Bisakah kamu Apa manfaat teknologi,general

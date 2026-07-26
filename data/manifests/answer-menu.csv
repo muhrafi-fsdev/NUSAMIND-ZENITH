@@ -1,0 +1,11 @@
+﻿menu_order,menu_item,submenu_order,submenu_item,setting_id,swift_behavior,zenith_behavior,apex_behavior,default_value,expected_effect,guardrail
+10,Format Jawaban,1,Otomatis,answer_mode_auto,Direct/ringkas otomatis,Ringkas atau langkah sesuai intent,Ringkas eksekutif + detail relevan,Aktif,Sistem memilih kedalaman dan format terbaik.,Tidak boleh menyembunyikan peringatan kritis.
+10,Format Jawaban,2,Jawaban Langsung,answer_mode_direct,Hasil + rumus satu baris,Hasil + rumus + catatan,Kesimpulan + angka kunci,Tidak aktif,Hasil akhir muncul paling atas.,Asumsi kritis tetap ditampilkan.
+10,Format Jawaban,3,Langkah demi Langkah,answer_mode_steps,Langkah sangat singkat,"Data, rumus, substitusi, hasil",Metode terstruktur tanpa chain-of-thought privat,Tidak aktif,Penjelasan kalkulasi lebih edukatif.,Tidak membuat langkah yang tidak benar-benar digunakan.
+10,Format Jawaban,4,Mendalam / Expert,answer_mode_expert,Eskalasi,Detail menengah,"Analisis, sensitivity, risk, assumptions",Apex saja,Jawaban kompleks lebih lengkap.,Tidak menampilkan private chain-of-thought.
+10,Format Jawaban,5,Plain Text CLI,output_plain_text,Plain text,Plain text,Plain text,Default CLI,Tidak ada LaTeX mentah atau markdown rumit.,Code block asli tetap dipertahankan.
+10,Format Jawaban,6,Markdown,output_markdown,Markdown sederhana,Markdown terstruktur,Markdown laporan,Tidak aktif,Cocok untuk web atau file dokumentasi.,Tabel lebar harus punya fallback.
+10,Format Jawaban,7,LaTeX,output_latex,Formula sederhana,Formula dan langkah,Formula akademik,Hanya atas permintaan,Menghasilkan LaTeX ketika benar-benar diperlukan.,Tidak boleh aktif otomatis pada CLI.
+10,Format Jawaban,8,Siap Disalin,output_copy_ready,Tanpa dekorasi,Struktur bersih,Laporan bersih,Tidak aktif,Output mudah disalin ke tugas atau laporan.,Sumber dan disclaimer penting tidak dihapus.
+10,Format Jawaban,9,Lebar Terminal,terminal_width_mode,Compact,Adaptive,Adaptive + table fallback,Auto-detect,Tabel dan rumus tidak terpotong.,Jangan menyembunyikan kolom kritis.
+10,Format Jawaban,0,Kembali,back,Kembali,Kembali,Kembali,,Kembali ke menu sebelumnya.,Tidak mengubah setting.

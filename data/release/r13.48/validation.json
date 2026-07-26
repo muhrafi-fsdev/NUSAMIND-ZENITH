@@ -1,0 +1,69 @@
+{
+  "release": "R13.48",
+  "edition": "zenith",
+  "status": "PASSED",
+  "upgradeItems": 79,
+  "topCategories": 869,
+  "topCategoryBoost": 390,
+  "topCategoryMinDelta": 390,
+  "allTopCategoriesRaised": true,
+  "ui": {
+    "changed": false,
+    "checksumFiles": 5,
+    "mismatch": []
+  },
+  "jsonNaming": {
+    "standard": "simple-kebab-case",
+    "maxStem": 24,
+    "filesBeforeValidation": 290,
+    "invalid": [],
+    "files": 291
+  },
+  "validation": {
+    "npmCi": true,
+    "typescript": true,
+    "nextBuild": true,
+    "runtimeStatus": true,
+    "graphIntegrity": true,
+    "dependencyGraph": true,
+    "lockfileIntegrity": true,
+    "executableBenchmark": {
+      "passed": 29,
+      "total": 29
+    },
+    "zipIntegrity": "PASSED",
+    "preliminaryZipSha256": "70e8a47957f1399880a124732f59009d51f70fd56df990ab57e214a1f018f18d",
+    "preliminaryZipBytes": 15685551
+  },
+  "cleanup": {
+    "nodeModulesExcluded": true,
+    "nextBuildExcluded": true,
+    "runtimeStorageExcluded": true,
+    "oldR1347ReleaseScriptsRemoved": true,
+    "cacheAndTempExcluded": true,
+    "removedGeneratedArtifacts": [
+      ".next",
+      "node_modules",
+      "tsconfig.tsbuildinfo"
+    ]
+  },
+  "scope": {
+    "n8nActive": false,
+    "n8nPostponed": true,
+    "backendOnly": true
+  },
+  "truthfulness": {
+    "liveQwenBenchmark": "NOT_RUN",
+    "visionModel": "PROTOTYPE",
+    "graphRag": "PROTOTYPE",
+    "agenticRag": "DISABLED",
+    "selfImprovement": "DISABLED",
+    "rawChainOfThoughtStored": false
+  },
+  "architecture": {
+    "migrationMode": "compatibility-bridge",
+    "capabilityNodes": 25,
+    "capabilityEdges": 30,
+    "modularPackages": 12
+  }
+}

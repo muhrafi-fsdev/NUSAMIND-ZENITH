@@ -1,0 +1,10 @@
+{
+  "feedback": "verified-only",
+  "states": [
+    "pending",
+    "verified",
+    "rejected"
+  ],
+  "autoFactPromotion": false,
+  "release": "13.38.0"
+}

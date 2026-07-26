@@ -1,0 +1,11 @@
+{
+  "canonical": "N1.0",
+  "semver": "1.0.0",
+  "aliases": [
+    "R13.49.1",
+    "V13.49.2",
+    "13.49.1",
+    "13.49.2"
+  ],
+  "compatibility": "read-only import/log aliases; new artifacts must use N1.0"
+}

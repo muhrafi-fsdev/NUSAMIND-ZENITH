@@ -1,0 +1,10 @@
+# NusaMind AI Project Contract — N1.0
+
+- Edition: NusaMind Zenith
+- Canonical version: N1.0 / semver 1.0.0.
+- Distribution: local Next.js web and PowerShell CLI only.
+- Windows EXE/Electron packaging is cancelled; n8n is postponed.
+- Main UI structure, colors, navigation, and components are checksum-locked.
+- Agent, browser, engineering, and cybersecurity operations remain edition-bounded, permission-gated, audited, and verified.
+- ACTIVE means backed by runtime/configuration and release checks; PROTOTYPE is never promoted automatically.
+- Raw hidden chain-of-thought is not stored. Only concise decisions, evidence, and verified outcomes may be persisted.

@@ -1,0 +1,24 @@
+{
+  "requiredFields": [
+    "claim",
+    "source",
+    "location",
+    "supportLevel",
+    "confidence",
+    "conflictStatus"
+  ],
+  "supportLevels": [
+    "canonical",
+    "direct",
+    "corroborated",
+    "interpretive",
+    "unverified"
+  ],
+  "forbid": [
+    "invented_verse",
+    "invented_hadith_number",
+    "unsupported_grade",
+    "final_personal_fatwa",
+    "sectarian_attack"
+  ]
+}

@@ -1,0 +1,2 @@
+import {gradeEvidence} from './evidence-grader-v2';
+export function verifyMedicalClaim(input:{claim:string;sources:Array<{sourceType?:string;peerReviewed?:boolean;guideline?:boolean;systematicReview?:boolean;randomized?:boolean}>}){const grades=input.sources.map(gradeEvidence);const best=grades.sort().at(-1)||'E0';const forbidden=/\b(pasti sembuh|100% aman|tanpa efek samping|pengganti dokter)\b/i.test(input.claim);return{verified:!forbidden&&best!=='E0',bestGrade:best,forbiddenClaim:forbidden,needsProfessionalReview:forbidden||best<'E4'};}

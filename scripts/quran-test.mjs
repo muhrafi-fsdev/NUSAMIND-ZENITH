@@ -1,0 +1,11 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+const root = process.cwd();
+const quran = JSON.parse(await fs.readFile(path.join(root, 'data', 'quran', 'ayah-idx.json'), 'utf-8'));
+const fatihah = quran.filter((a) => Number(a.suraId) === 1).sort((a, b) => Number(a.verseID) - Number(b.verseID));
+const text = fatihah.map((a) => `${a.verseID}. ${a.ayahText}\nLatin: ${a.readText}\nTerjemah: ${a.indoText}`).join('\n\n');
+const must = ['bismillāhir-raḥmānir-raḥīm', 'al-ḥamdu lillāhi rabbil', "iyyāka na'budu", 'ṣirāṭallażīna'];
+const missing = must.filter((term) => !text.toLowerCase().includes(term.toLowerCase()));
+const forbidden = ['qul huwallāhu', 'alif lām mīm', 'yasin'].filter((term) => text.toLowerCase().includes(term.toLowerCase()));
+console.log({ surah: 'Al-Fatihah', ayahCount: fatihah.length, missing, forbidden, passed: missing.length === 0 && forbidden.length === 0 });
+if (missing.length || forbidden.length) process.exit(1);

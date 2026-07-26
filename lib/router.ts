@@ -1,0 +1,3 @@
+export type TaskRoute={edition:'swift'|'zenith'|'apex';depth:'direct'|'balanced'|'deep';reason:string};
+export function routeTask(message:string):TaskRoute{const text=message.toLowerCase();const complex=/multi[- ]?file|codebase|audit|research|rollback|arsitektur|debug.*backend|langkah demi langkah|deep/i.test(text);const medium=/pdf|xlsx|spreadsheet|gambar|bandingkan|debug|analisis/i.test(text);if(complex)return {edition:'apex',depth:'deep',reason:'Task kompleks/multi-step.'};if(medium)return {edition:'zenith',depth:'balanced',reason:'Task dokumen/analisis harian.'};return {edition:'swift',depth:'direct',reason:'Task sederhana/direct.'};}
+export const activeEdition='apex' as const;

@@ -1,0 +1,17 @@
+{
+  "release": "R13.47",
+  "model": "qwen2.5:7b",
+  "family": "Qwen",
+  "status": "CONFIGURED",
+  "chatTemplate": "ollama-qwen",
+  "toolCallFormat": "json",
+  "safeContextWindow": 16384,
+  "thinkingSupport": false,
+  "quantization": "runtime-detected",
+  "knownFailures": [
+    "invalid tool name",
+    "malformed JSON",
+    "context-position degradation"
+  ],
+  "liveProfilePath": "storage/model-profiles/qwen-live.json"
+}

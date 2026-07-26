@@ -1,0 +1,21 @@
+{
+  "release": "R13.42",
+  "edition": "apex",
+  "mode": "expert-graph",
+  "domainCount": 20,
+  "pipelineStages": 13,
+  "menuItems": 11,
+  "benchmarkCases": 20,
+  "importMode": "reviewer",
+  "lifecycle": [
+    "IMPORTED",
+    "VALIDATED",
+    "REVIEW_REQUIRED",
+    "VERIFIED",
+    "ACTIVE",
+    "DEPRECATED",
+    "REJECTED",
+    "QUARANTINED"
+  ],
+  "uiChanged": false
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "project_category": "Foundational Defensive Tools",
+    "adoption_status": "ADOPT",
+    "examples_or_patterns": "Hash identification, header auditing, policy checks",
+    "nusaMind_use": "Learning and read-only audit skills",
+    "required_mode": "LEARN/DEFENSIVE_ANALYSIS",
+    "guardrail": "No credential recovery",
+    "source_url": "https://github.com/CarterPerez-dev/Cybersecurity-Projects"
+  },
+  {
+    "project_category": "Log and SIEM Projects",
+    "adoption_status": "ADOPT",
+    "examples_or_patterns": "Log normalization, correlation, dashboards",
+    "nusaMind_use": "Defensive analysis and evaluation datasets",
+    "required_mode": "DEFENSIVE_ANALYSIS",
+    "guardrail": "Evidence required",
+    "source_url": "https://github.com/CarterPerez-dev/Cybersecurity-Projects"
+  },
+  {
+    "project_category": "Secure Configuration Projects",
+    "adoption_status": "ADOPT_WITH_REVIEW",
+    "examples_or_patterns": "Firewall and container audit",
+    "nusaMind_use": "Read-only configuration reviewer",
+    "required_mode": "DEFENSIVE_ANALYSIS",
+    "guardrail": "No automatic system changes",
+    "source_url": "https://github.com/CarterPerez-dev/Cybersecurity-Projects"
+  },
+  {
+    "project_category": "AI Security Projects",
+    "adoption_status": "ADOPT",
+    "examples_or_patterns": "Prompt injection firewall patterns",
+    "nusaMind_use": "Security regression cases",
+    "required_mode": "LAB_ONLY/DEFENSIVE_ANALYSIS",
+    "guardrail": "Mock tools and data",
+    "source_url": "https://github.com/CarterPerez-dev/Cybersecurity-Projects"
+  },
+  {
+    "project_category": "Keylogging/Credential Capture",
+    "adoption_status": "BLOCK",
+    "examples_or_patterns": "Keylogger-like projects",
+    "nusaMind_use": "High-level educational explanation only",
+    "required_mode": "BLOCKED",
+    "guardrail": "No runtime implementation",
+    "source_url": "https://github.com/CarterPerez-dev/Cybersecurity-Projects"
+  },
+  {
+    "project_category": "Payload Obfuscation/AV Evasion",
+    "adoption_status": "BLOCK",
+    "examples_or_patterns": "Obfuscation and evasion projects",
+    "nusaMind_use": "Threat-awareness summaries only",
+    "required_mode": "BLOCKED",
+    "guardrail": "No code or operational workflow",
+    "source_url": "https://github.com/CarterPerez-dev/Cybersecurity-Projects"
+  },
+  {
+    "project_category": "Exploit Frameworks",
+    "adoption_status": "REFERENCE_ONLY",
+    "examples_or_patterns": "Exploit development architecture",
+    "nusaMind_use": "Threat modeling and defensive detection concepts",
+    "required_mode": "LAB_ONLY",
+    "guardrail": "No real-target execution",
+    "source_url": "https://github.com/CarterPerez-dev/Cybersecurity-Projects"
+  },
+  {
+    "project_category": "DDoS/Abuse Testing",
+    "adoption_status": "BLOCK_BY_DEFAULT",
+    "examples_or_patterns": "Stress and abuse tools",
+    "nusaMind_use": "Defensive rate-limit design only",
+    "required_mode": "BLOCKED",
+    "guardrail": "No traffic generation against external targets",
+    "source_url": "https://github.com/CarterPerez-dev/Cybersecurity-Projects"
+  }
+]

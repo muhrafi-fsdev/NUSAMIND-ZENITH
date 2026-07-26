@@ -1,0 +1,1 @@
+import {n1ContractEvaluation} from '@/packages/n1-runtime'; import {RELEASE} from '@/lib/release'; export const runtime='nodejs'; export const dynamic='force-dynamic'; export async function GET(){return Response.json({ok:true,release:RELEASE.label,edition:RELEASE.edition,benchmarkType:'CONTRACT_AND_POLICY',...n1ContractEvaluation()});}

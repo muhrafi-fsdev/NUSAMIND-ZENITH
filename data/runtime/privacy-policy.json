@@ -1,0 +1,12 @@
+{
+  "release": "13.38.0",
+  "edition": "apex",
+  "defaultReadOnly": true,
+  "internalMode": true,
+  "internalRoleRequired": true,
+  "writeConfirmation": true,
+  "audit": true,
+  "piiMask": true,
+  "claimDecisionForbidden": true,
+  "fraudManipulationForbidden": true
+}

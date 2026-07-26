@@ -1,0 +1,2985 @@
+[
+  {
+    "id": "v13_2_food_nasi_goreng",
+    "title": "Nasi goreng",
+    "category": "Makanan & Kuliner",
+    "text": "Nasi goreng adalah makanan Indonesia berbasis nasi yang ditumis dengan bumbu seperti bawang merah, bawang putih, kecap, cabai, telur, ayam, seafood, atau sayuran. Kalau user minta ide makan cepat, nasi goreng cocok karena bahan fleksibel. Jawaban harus bisa menyesuaikan: resep sederhana, variasi pedas, versi anak kos, atau estimasi kalori secara umum tanpa klaim medis.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan",
+      "kuliner",
+      "resep",
+      "food",
+      "nasi_goreng",
+      "nasi goreng"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_food_rendang",
+    "title": "Rendang",
+    "category": "Makanan & Kuliner",
+    "text": "Rendang adalah masakan Minangkabau berbahan daging yang dimasak lama dengan santan dan rempah sampai bumbu meresap. Kalau user bertanya resep, jelaskan teknik memasak pelan, menjaga santan agar tidak pecah, dan koreksi rasa. Jangan menyebut rendang sebagai makanan instan karena prosesnya memang lama.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan",
+      "kuliner",
+      "resep",
+      "food",
+      "rendang",
+      "rendang"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_food_soto",
+    "title": "Soto",
+    "category": "Makanan & Kuliner",
+    "text": "Soto adalah sup khas Indonesia dengan banyak variasi seperti soto ayam, soto Betawi, soto Lamongan, dan coto Makassar. Jawaban harus menanyakan atau menyebut variasi jika user tidak spesifik. Komponen umum: kuah berbumbu, protein, pelengkap, sambal, jeruk nipis, dan taburan.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan",
+      "kuliner",
+      "resep",
+      "food",
+      "soto",
+      "soto"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_food_bakso",
+    "title": "Bakso",
+    "category": "Makanan & Kuliner",
+    "text": "Bakso adalah bola daging yang biasa disajikan dengan kuah kaldu, mi, bihun, tahu, pangsit, dan sambal. Kalau user minta rekomendasi makanan hujan atau malam, bakso relevan. Untuk keamanan makanan, tekankan kebersihan, kematangan, dan kualitas daging.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan",
+      "kuliner",
+      "resep",
+      "food",
+      "bakso",
+      "bakso"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_food_mie_instan",
+    "title": "Mie instan",
+    "category": "Makanan & Kuliner",
+    "text": "Mie instan praktis tetapi sebaiknya tidak dijadikan makanan utama terlalu sering. Jawaban yang baik memberi tips membuatnya lebih seimbang: tambah telur, sayur, protein, dan kurangi bumbu jika ingin lebih ringan. Jangan memberi klaim kesehatan berlebihan.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan",
+      "kuliner",
+      "resep",
+      "food",
+      "mie_instan",
+      "mie instan"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_food_ayam_geprek",
+    "title": "Ayam geprek",
+    "category": "Makanan & Kuliner",
+    "text": "Ayam geprek adalah ayam goreng tepung yang digeprek dengan sambal. Cocok untuk jawaban soal makanan pedas, menu kampus, atau ide jualan. Jika user minta resep, jelaskan bagian ayam, tepung, sambal bawang, dan cara menjaga ayam tetap renyah.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan",
+      "kuliner",
+      "resep",
+      "food",
+      "ayam_geprek",
+      "ayam geprek"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_food_seblak",
+    "title": "Seblak",
+    "category": "Makanan & Kuliner",
+    "text": "Seblak adalah makanan pedas khas Sunda/Jawa Barat berbahan kerupuk basah dengan bumbu kencur, cabai, bawang, dan isian seperti telur, bakso, sosis, atau ceker. Jika user bertanya makanan viral/pedas, seblak sering relevan, tapi jangan klaim sedang viral tanpa data terbaru.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan",
+      "kuliner",
+      "resep",
+      "food",
+      "seblak",
+      "seblak"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_food_sate",
+    "title": "Sate",
+    "category": "Makanan & Kuliner",
+    "text": "Sate adalah potongan daging yang ditusuk dan dibakar, lalu disajikan dengan bumbu kacang atau kecap. Variasi populer: sate ayam, sate kambing, sate Padang, dan sate taichan. Untuk rekomendasi, sesuaikan dengan selera pedas, gurih, atau ringan.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan",
+      "kuliner",
+      "resep",
+      "food",
+      "sate",
+      "sate"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_food_gado_gado",
+    "title": "Gado-gado",
+    "category": "Makanan & Kuliner",
+    "text": "Gado-gado adalah makanan sayur dengan bumbu kacang, sering disebut salad khas Indonesia. Cocok untuk user yang minta makanan lebih ringan atau banyak sayur. Jawaban bisa menyebut lontong, telur, tahu, tempe, dan kerupuk sebagai pelengkap.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan",
+      "kuliner",
+      "resep",
+      "food",
+      "gado_gado",
+      "gado-gado"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_food_ramen",
+    "title": "Ramen",
+    "category": "Makanan & Kuliner",
+    "text": "Ramen adalah hidangan mi Jepang dengan kuah seperti shoyu, miso, shio, atau tonkotsu. Jika user bertanya rekomendasi ramen, bedakan kuah ringan vs creamy. Jika user muslim bertanya halal, sarankan cek sertifikasi/komposisi karena beberapa ramen memakai kaldu babi atau mirin.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan",
+      "kuliner",
+      "resep",
+      "food",
+      "ramen",
+      "ramen"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_food_sushi",
+    "title": "Sushi",
+    "category": "Makanan & Kuliner",
+    "text": "Sushi adalah makanan Jepang berbasis nasi berbumbu cuka dengan topping seperti ikan, telur, sayur, atau seafood. Untuk pemula, rekomendasikan sushi matang seperti tamago, kani, ebi, atau chicken roll. Untuk keamanan, seafood mentah harus segar dan berasal dari tempat tepercaya.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan",
+      "kuliner",
+      "resep",
+      "food",
+      "sushi",
+      "sushi"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_food_pasta",
+    "title": "Pasta",
+    "category": "Makanan & Kuliner",
+    "text": "Pasta adalah makanan Italia berbahan gandum durum dengan banyak bentuk seperti spaghetti, penne, fettuccine, dan macaroni. Saus umum: bolognese, carbonara, aglio olio, pesto, dan marinara. Jawaban resep harus menjelaskan al dente, garam air rebusan, dan emulsi saus.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan",
+      "kuliner",
+      "resep",
+      "food",
+      "pasta",
+      "pasta"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_food_burger",
+    "title": "Burger",
+    "category": "Makanan & Kuliner",
+    "text": "Burger terdiri dari roti bun, patty, sayur, saus, dan topping. Jika user minta ide jualan, burger mudah dimodifikasi: mini burger, chicken burger, beef burger, atau burger lokal dengan sambal. Tekankan keseimbangan rasa: gurih, asam, manis, segar, dan tekstur.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan",
+      "kuliner",
+      "resep",
+      "food",
+      "burger",
+      "burger"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_food_salad",
+    "title": "Salad",
+    "category": "Makanan & Kuliner",
+    "text": "Salad adalah campuran sayur/buah/protein dengan dressing. Untuk jawaban diet, jangan memberi klaim medis; cukup jelaskan salad bisa membantu menambah serat jika komposisi dan dressing seimbang.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan",
+      "kuliner",
+      "resep",
+      "food",
+      "salad",
+      "salad"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_food_meal_prep",
+    "title": "Meal prep",
+    "category": "Makanan & Kuliner",
+    "text": "Meal prep adalah menyiapkan makanan untuk beberapa hari agar hemat waktu dan lebih teratur. Menu ideal mengandung karbohidrat, protein, sayur, dan saus terpisah agar tidak cepat lembek. Jawaban harus memberi contoh praktis sesuai budget.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan",
+      "kuliner",
+      "resep",
+      "food",
+      "meal_prep",
+      "meal prep"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_drink_air_putih",
+    "title": "Air putih",
+    "category": "Minuman",
+    "text": "Air putih membantu hidrasi harian. Kalau user bertanya minuman sehat, jawab secara umum: minum cukup sesuai aktivitas, cuaca, dan kondisi tubuh. Jangan memberi angka medis mutlak untuk semua orang.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "minuman",
+      "drink",
+      "beverage",
+      "resep",
+      "air_putih",
+      "air putih"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_drink_kopi_susu",
+    "title": "Kopi susu",
+    "category": "Minuman",
+    "text": "Kopi susu populer karena kombinasi pahit kopi, creamy susu, dan manis gula aren/sirup. Kalau user minta resep, jelaskan espresso/cold brew, susu, es, dan pemanis. Jika sensitif kafein, sarankan kurangi porsi.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "minuman",
+      "drink",
+      "beverage",
+      "resep",
+      "kopi_susu",
+      "kopi susu"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_drink_banana_milk_coffee",
+    "title": "Banana milk coffee",
+    "category": "Minuman",
+    "text": "Banana milk coffee adalah tren minuman yang memadukan banana milk dengan iced coffee/cold brew. Sumber tren 2026 mencatat popularitasnya dipicu budaya Korea, TikTok, dan variasi susu pisang. Jawaban harus menyebut ini sebagai tren yang dapat berubah dan tidak mengklaim selalu viral tanpa data terbaru.",
+    "source": "Vogue, 2026-07-06, banana milk coffee trend",
+    "tags": [
+      "minuman",
+      "drink",
+      "beverage",
+      "resep",
+      "banana_milk_coffee",
+      "banana milk coffee"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_drink_matcha_latte",
+    "title": "Matcha latte",
+    "category": "Minuman",
+    "text": "Matcha latte adalah minuman dari bubuk teh hijau Jepang dan susu. Rasanya earthy, creamy, dan sedikit pahit. Tips: gunakan matcha culinary/ceremonial sesuai kebutuhan, saring bubuk, larutkan dengan sedikit air hangat, lalu tambah susu.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "minuman",
+      "drink",
+      "beverage",
+      "resep",
+      "matcha_latte",
+      "matcha latte"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_drink_thai_tea",
+    "title": "Thai tea",
+    "category": "Minuman",
+    "text": "Thai tea adalah teh Thailand yang umumnya manis dan creamy karena susu kental manis/evaporated milk. Jika user minta versi lebih ringan, sarankan kurangi gula dan susu kental.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "minuman",
+      "drink",
+      "beverage",
+      "resep",
+      "thai_tea",
+      "thai tea"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_drink_es_teh",
+    "title": "Es teh",
+    "category": "Minuman",
+    "text": "Es teh adalah minuman sederhana yang populer di Indonesia. Variasi: lemon tea, lychee tea, teh tarik, es teh manis, atau unsweetened tea. Untuk ide jualan, perhatikan konsistensi rasa, es, kemasan, dan harga.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "minuman",
+      "drink",
+      "beverage",
+      "resep",
+      "es_teh",
+      "es teh"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_drink_soda_gembira",
+    "title": "Soda gembira",
+    "category": "Minuman",
+    "text": "Soda gembira adalah minuman Indonesia berbahan soda, susu kental manis, sirup, dan es. Cocok dijelaskan sebagai minuman manis segar, biasanya disajikan dingin. Jangan menyebutnya minuman sehat; posisikan sebagai minuman sesekali.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "minuman",
+      "drink",
+      "beverage",
+      "resep",
+      "soda_gembira",
+      "soda gembira"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_drink_smoothie",
+    "title": "Smoothie",
+    "category": "Minuman",
+    "text": "Smoothie adalah minuman kental dari buah/sayur yang diblender dengan susu/yogurt/air. Untuk jawaban menu sehat, tekankan bahan utuh dan gula tambahan yang tidak berlebihan.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "minuman",
+      "drink",
+      "beverage",
+      "resep",
+      "smoothie",
+      "smoothie"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_drink_mocktail",
+    "title": "Mocktail",
+    "category": "Minuman",
+    "text": "Mocktail adalah minuman campuran tanpa alkohol dengan kombinasi buah, sirup, soda, teh, atau rempah. Cocok untuk ide acara, cafe, atau minuman aesthetic. Jelaskan layer warna, garnish, dan keseimbangan rasa.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "minuman",
+      "drink",
+      "beverage",
+      "resep",
+      "mocktail",
+      "mocktail"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_drink_jamu",
+    "title": "Jamu",
+    "category": "Minuman",
+    "text": "Jamu adalah minuman herbal tradisional Indonesia seperti kunyit asam, beras kencur, temulawak, atau wedang jahe. Jawaban harus hati-hati: jamu bisa menjadi tradisi/minuman herbal, tetapi bukan pengganti konsultasi medis.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "minuman",
+      "drink",
+      "beverage",
+      "resep",
+      "jamu",
+      "jamu"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_caption_aesthetic",
+    "title": "Caption aesthetic",
+    "category": "Caption & Status",
+    "text": "Caption aesthetic biasanya singkat, puitis, dan visual. Contoh: 'pelan-pelan, tapi tetap jalan.' Cocok untuk foto langit, kopi, senja, perjalanan, atau mood tenang. Jawaban harus memberi beberapa opsi sesuai vibe.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "caption",
+      "status",
+      "instagram",
+      "wa",
+      "kata kata",
+      "aesthetic"
+    ],
+    "confidence": 0.91
+  },
+  {
+    "id": "v13_2_caption_lucu",
+    "title": "Caption lucu",
+    "category": "Caption & Status",
+    "text": "Caption lucu menggunakan humor ringan dan relatable. Contoh: 'hidup kadang loading, tapi tetap online.' Cocok untuk status santai dan konten harian. Jangan terlalu kasar kecuali user minta gaya sangat gaul.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "caption",
+      "status",
+      "instagram",
+      "wa",
+      "kata kata",
+      "lucu"
+    ],
+    "confidence": 0.91
+  },
+  {
+    "id": "v13_2_caption_bijak",
+    "title": "Caption bijak",
+    "category": "Caption & Status",
+    "text": "Caption bijak memberi refleksi singkat. Contoh: 'yang pelan bukan berarti tertinggal.' Cocok untuk status motivasi, perjalanan, atau proses belajar.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "caption",
+      "status",
+      "instagram",
+      "wa",
+      "kata kata",
+      "bijak"
+    ],
+    "confidence": 0.91
+  },
+  {
+    "id": "v13_2_caption_jualan",
+    "title": "Caption jualan",
+    "category": "Caption & Status",
+    "text": "Caption jualan harus punya hook, manfaat, bukti, CTA, dan bahasa yang jelas. Struktur: masalah, solusi, keunggulan, promo/urgensi, ajakan tindakan.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "caption",
+      "status",
+      "instagram",
+      "wa",
+      "kata kata",
+      "jualan"
+    ],
+    "confidence": 0.91
+  },
+  {
+    "id": "v13_2_caption_instagram",
+    "title": "Caption Instagram",
+    "category": "Caption & Status",
+    "text": "Caption Instagram sebaiknya punya hook di kalimat pertama, isi yang relate, emoji secukupnya, dan CTA. Untuk konten profesional, hindari emoji berlebihan.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "caption",
+      "status",
+      "instagram",
+      "wa",
+      "kata kata",
+      "instagram"
+    ],
+    "confidence": 0.91
+  },
+  {
+    "id": "v13_2_caption_whatsapp",
+    "title": "Status WhatsApp",
+    "category": "Caption & Status",
+    "text": "Status WhatsApp cocok dibuat singkat, natural, dan tidak terlalu formal. Format bisa berupa satu kalimat, quotes, update kegiatan, atau promosi kecil.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "caption",
+      "status",
+      "instagram",
+      "wa",
+      "kata kata",
+      "whatsapp"
+    ],
+    "confidence": 0.91
+  },
+  {
+    "id": "v13_2_caption_magang",
+    "title": "Caption magang",
+    "category": "Caption & Status",
+    "text": "Caption magang bisa menekankan proses belajar, pengalaman, dan rasa syukur. Contoh: 'Belajar bukan cuma dari kelas, tapi juga dari meja kerja dan obrolan kecil di kantor.'",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "caption",
+      "status",
+      "instagram",
+      "wa",
+      "kata kata",
+      "magang"
+    ],
+    "confidence": 0.91
+  },
+  {
+    "id": "v13_2_caption_coding",
+    "title": "Caption coding",
+    "category": "Caption & Status",
+    "text": "Caption coding bisa berisi humor error, progress project, atau motivasi developer. Contoh: 'ngoding dulu, paniknya belakangan.'",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "caption",
+      "status",
+      "instagram",
+      "wa",
+      "kata kata",
+      "coding"
+    ],
+    "confidence": 0.91
+  },
+  {
+    "id": "v13_2_caption_makanan",
+    "title": "Caption makanan",
+    "category": "Caption & Status",
+    "text": "Caption makanan sebaiknya menonjolkan rasa, suasana, dan ajakan. Contoh: 'satu suap, mood langsung pulih.'",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "caption",
+      "status",
+      "instagram",
+      "wa",
+      "kata kata",
+      "makanan"
+    ],
+    "confidence": 0.91
+  },
+  {
+    "id": "v13_2_caption_travel",
+    "title": "Caption jalan-jalan",
+    "category": "Caption & Status",
+    "text": "Caption travel menonjolkan tempat, suasana, dan pengalaman. Contoh: 'jalan sebentar, pikiran ikut lega.'",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "caption",
+      "status",
+      "instagram",
+      "wa",
+      "kata kata",
+      "travel"
+    ],
+    "confidence": 0.91
+  },
+  {
+    "id": "v13_2_entertainment_mall",
+    "title": "Mall",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Mall cocok untuk hiburan indoor: makan, nonton, belanja, nongkrong, arcade, atau jalan santai. Jika user minta rekomendasi tempat, tanyakan lokasi, budget, dan preferensi suasana.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hiburan",
+      "tempat",
+      "jalan jalan",
+      "wisata",
+      "entertainment",
+      "mall"
+    ],
+    "confidence": 0.87
+  },
+  {
+    "id": "v13_2_entertainment_bioskop",
+    "title": "Bioskop",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Bioskop cocok untuk hiburan santai. Jawaban bisa memberi tips memilih film, jam sepi, kursi nyaman, dan estimasi budget. Untuk jadwal film terbaru, AI harus minta user cek aplikasi resmi/bioskop karena jadwal berubah.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hiburan",
+      "tempat",
+      "jalan jalan",
+      "wisata",
+      "entertainment",
+      "bioskop"
+    ],
+    "confidence": 0.87
+  },
+  {
+    "id": "v13_2_entertainment_museum",
+    "title": "Museum",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Museum cocok untuk hiburan edukatif, sejarah, seni, dan foto. Jawaban harus menyesuaikan: museum sejarah, seni, teknologi, atau budaya. Untuk jam buka/tiket, sarankan cek situs resmi karena bisa berubah.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hiburan",
+      "tempat",
+      "jalan jalan",
+      "wisata",
+      "entertainment",
+      "museum"
+    ],
+    "confidence": 0.87
+  },
+  {
+    "id": "v13_2_entertainment_taman",
+    "title": "Taman kota",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Taman kota cocok untuk jogging, piknik, foto, baca buku, atau healing murah. Sebutkan faktor keamanan, cuaca, akses transportasi, dan jam ramai.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hiburan",
+      "tempat",
+      "jalan jalan",
+      "wisata",
+      "entertainment",
+      "taman"
+    ],
+    "confidence": 0.87
+  },
+  {
+    "id": "v13_2_entertainment_cafe",
+    "title": "Cafe",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Cafe bisa untuk nongkrong, kerja, meeting, atau foto. Rekomendasi cafe harus mempertimbangkan WiFi, colokan, noise, harga, parkir, dan menu. Jika user minta cafe dekat lokasi, butuh info lokasi terkini.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hiburan",
+      "tempat",
+      "jalan jalan",
+      "wisata",
+      "entertainment",
+      "cafe"
+    ],
+    "confidence": 0.87
+  },
+  {
+    "id": "v13_2_entertainment_arcade",
+    "title": "Arcade",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Arcade cocok untuk hiburan game fisik seperti rhythm game, racing, claw machine, dan shooting. Sarankan bawa budget top-up dan pilih jam tidak terlalu ramai.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hiburan",
+      "tempat",
+      "jalan jalan",
+      "wisata",
+      "entertainment",
+      "arcade"
+    ],
+    "confidence": 0.87
+  },
+  {
+    "id": "v13_2_entertainment_karaoke",
+    "title": "Karaoke",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Karaoke cocok untuk hiburan bareng teman. Tips: pilih paket sesuai jumlah orang, cek fasilitas ruangan, dan pastikan lagu yang diinginkan tersedia.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hiburan",
+      "tempat",
+      "jalan jalan",
+      "wisata",
+      "entertainment",
+      "karaoke"
+    ],
+    "confidence": 0.87
+  },
+  {
+    "id": "v13_2_entertainment_pantai",
+    "title": "Pantai",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Pantai cocok untuk wisata alam, foto, kuliner laut, dan santai. Jawaban harus menyinggung cuaca, ombak, keamanan, sunscreen, sampah, dan waktu terbaik.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hiburan",
+      "tempat",
+      "jalan jalan",
+      "wisata",
+      "entertainment",
+      "pantai"
+    ],
+    "confidence": 0.87
+  },
+  {
+    "id": "v13_2_entertainment_gunung",
+    "title": "Wisata gunung",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Wisata gunung perlu persiapan fisik, cuaca, rute, izin, air, pakaian, dan safety. Jangan menyarankan pendakian tanpa persiapan.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hiburan",
+      "tempat",
+      "jalan jalan",
+      "wisata",
+      "entertainment",
+      "gunung"
+    ],
+    "confidence": 0.87
+  },
+  {
+    "id": "v13_2_entertainment_event",
+    "title": "Event lokal",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Event lokal seperti konser, festival makanan, pameran, atau bazar bersifat berubah cepat. Untuk info hari ini, AI harus menyarankan cek sumber terbaru seperti situs resmi, Instagram penyelenggara, atau ticketing platform.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hiburan",
+      "tempat",
+      "jalan jalan",
+      "wisata",
+      "entertainment",
+      "event"
+    ],
+    "confidence": 0.87
+  },
+  {
+    "id": "v13_2_history_metode_sejarah",
+    "title": "Cara memahami sejarah",
+    "category": "Sejarah",
+    "text": "Sejarah sebaiknya dipahami lewat konteks waktu, tempat, tokoh, sebab-akibat, sumber primer/sekunder, dan dampak. Jawaban sejarah harus membedakan fakta, interpretasi, dan opini.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "sejarah",
+      "history",
+      "timeline",
+      "metode_sejarah"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_history_indonesia_merdeka",
+    "title": "Kemerdekaan Indonesia",
+    "category": "Sejarah",
+    "text": "Indonesia memproklamasikan kemerdekaan pada 17 Agustus 1945. Tokoh utama proklamasi adalah Soekarno dan Mohammad Hatta. Untuk pertanyaan detail, jelaskan latar belakang Jepang menyerah, Rengasdengklok, teks proklamasi, dan pengakuan internasional.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "sejarah",
+      "history",
+      "timeline",
+      "indonesia_merdeka"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_history_majapahit",
+    "title": "Kerajaan Majapahit",
+    "category": "Sejarah",
+    "text": "Majapahit adalah kerajaan besar di Nusantara abad ke-13 hingga ke-16. Sering dikaitkan dengan Hayam Wuruk dan Gajah Mada. Jawaban harus hati-hati karena banyak bagian sejarah bersumber dari naskah dan interpretasi.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "sejarah",
+      "history",
+      "timeline",
+      "majapahit"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_history_sriwijaya",
+    "title": "Kerajaan Sriwijaya",
+    "category": "Sejarah",
+    "text": "Sriwijaya adalah kerajaan maritim kuat di Sumatra yang berperan dalam perdagangan dan penyebaran Buddha di Asia Tenggara. Jika user bertanya lokasi, jelaskan bahwa pusatnya sering dikaitkan dengan Palembang dan jaringan maritim.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "sejarah",
+      "history",
+      "timeline",
+      "sriwijaya"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_history_revolusi_industri",
+    "title": "Revolusi Industri",
+    "category": "Sejarah",
+    "text": "Revolusi Industri adalah perubahan besar dari produksi manual ke mesin, dimulai di Inggris abad ke-18. Dampaknya mencakup pabrik, urbanisasi, transportasi, kapitalisme industri, dan perubahan sosial.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "sejarah",
+      "history",
+      "timeline",
+      "revolusi_industri"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_history_perang_dunia_2",
+    "title": "Perang Dunia II",
+    "category": "Sejarah",
+    "text": "Perang Dunia II berlangsung 1939–1945 dan melibatkan blok Sekutu dan Poros. Jawaban ringkas harus menyebut invasi Jerman ke Polandia, Holocaust, perang Pasifik, bom atom Hiroshima/Nagasaki, dan pembentukan PBB.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "sejarah",
+      "history",
+      "timeline",
+      "perang_dunia_2"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_history_sejarah_komputer",
+    "title": "Sejarah komputer",
+    "category": "Sejarah",
+    "text": "Komputer berkembang dari alat hitung mekanik, mesin tabulasi, komputer tabung vakum, transistor, integrated circuit, microprocessor, PC, internet, hingga komputasi mobile dan AI. Jawaban bisa dibuat timeline.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "sejarah",
+      "history",
+      "timeline",
+      "sejarah_komputer"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_history_sejarah_internet",
+    "title": "Sejarah internet",
+    "category": "Sejarah",
+    "text": "Internet berawal dari riset jaringan komputer seperti ARPANET, lalu berkembang lewat TCP/IP, web, browser, search engine, media sosial, cloud, dan aplikasi mobile. Bedakan internet dan World Wide Web.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "sejarah",
+      "history",
+      "timeline",
+      "sejarah_internet"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_electronics_baterai_laptop",
+    "title": "Baterai laptop",
+    "category": "Elektronik & Gadget",
+    "text": "Baterai laptop umumnya lithium-ion. Tips umum: hindari panas berlebih, jangan sering dipakai sampai 0%, gunakan charger original/berkualitas, dan aktifkan battery conservation jika tersedia. Jawaban tidak boleh mengklaim semua laptop sama.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik",
+      "gadget",
+      "laptop",
+      "hardware",
+      "baterai_laptop"
+    ],
+    "confidence": 0.89
+  },
+  {
+    "id": "v13_2_electronics_charger_type_c",
+    "title": "USB-C dan charger",
+    "category": "Elektronik & Gadget",
+    "text": "USB-C adalah bentuk konektor, bukan otomatis berarti charger cepat atau Thunderbolt. Daya tergantung USB Power Delivery, kabel, adaptor, dan dukungan perangkat. Jelaskan bedanya konektor, protokol, dan watt.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik",
+      "gadget",
+      "laptop",
+      "hardware",
+      "charger_type_c"
+    ],
+    "confidence": 0.89
+  },
+  {
+    "id": "v13_2_electronics_monitor",
+    "title": "Monitor",
+    "category": "Elektronik & Gadget",
+    "text": "Saat memilih monitor, perhatikan ukuran, resolusi, refresh rate, panel, response time, port, ergonomi, dan color accuracy. Untuk gaming, refresh rate dan VRR penting; untuk desain, akurasi warna lebih penting.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik",
+      "gadget",
+      "laptop",
+      "hardware",
+      "monitor"
+    ],
+    "confidence": 0.89
+  },
+  {
+    "id": "v13_2_electronics_smartphone",
+    "title": "Smartphone",
+    "category": "Elektronik & Gadget",
+    "text": "Saat memilih smartphone, lihat chipset, RAM, storage, kamera, baterai, update software, layar, dan kebutuhan user. Jangan hanya menilai dari megapixel kamera.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik",
+      "gadget",
+      "laptop",
+      "hardware",
+      "smartphone"
+    ],
+    "confidence": 0.89
+  },
+  {
+    "id": "v13_2_electronics_wifi_router",
+    "title": "Router WiFi",
+    "category": "Elektronik & Gadget",
+    "text": "Router WiFi memengaruhi jangkauan, stabilitas, dan kecepatan lokal. Faktor penting: standar WiFi, posisi router, interferensi, jumlah perangkat, kanal, dan kualitas ISP.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik",
+      "gadget",
+      "laptop",
+      "hardware",
+      "wifi_router"
+    ],
+    "confidence": 0.89
+  },
+  {
+    "id": "v13_2_electronics_ssd_hdd",
+    "title": "SSD vs HDD",
+    "category": "Elektronik & Gadget",
+    "text": "SSD lebih cepat dan tahan guncangan dibanding HDD, cocok untuk OS dan aplikasi. HDD lebih murah per GB, cocok untuk arsip besar. Untuk laptop modern, SSD sangat berpengaruh pada responsivitas.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik",
+      "gadget",
+      "laptop",
+      "hardware",
+      "ssd_hdd"
+    ],
+    "confidence": 0.89
+  },
+  {
+    "id": "v13_2_electronics_ram",
+    "title": "RAM",
+    "category": "Elektronik & Gadget",
+    "text": "RAM menyimpan data sementara saat aplikasi berjalan. Kurang RAM membuat multitasking berat dan sistem sering paging ke storage. Untuk coding/AI lokal, RAM lebih besar membantu stabilitas.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik",
+      "gadget",
+      "laptop",
+      "hardware",
+      "ram"
+    ],
+    "confidence": 0.89
+  },
+  {
+    "id": "v13_2_electronics_gpu",
+    "title": "GPU",
+    "category": "Elektronik & Gadget",
+    "text": "GPU mempercepat rendering grafis, gaming, video editing, dan komputasi AI tertentu. Untuk model lokal, VRAM bisa menentukan ukuran model yang nyaman dijalankan.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik",
+      "gadget",
+      "laptop",
+      "hardware",
+      "gpu"
+    ],
+    "confidence": 0.89
+  },
+  {
+    "id": "v13_2_electronics_thermal",
+    "title": "Thermal throttling",
+    "category": "Elektronik & Gadget",
+    "text": "Thermal throttling terjadi saat CPU/GPU menurunkan performa karena suhu tinggi. Solusi: bersihkan debu, pastikan airflow, gunakan mode performance dengan bijak, ganti thermal paste jika perlu, dan jangan menutup ventilasi.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik",
+      "gadget",
+      "laptop",
+      "hardware",
+      "thermal"
+    ],
+    "confidence": 0.89
+  },
+  {
+    "id": "v13_2_electronics_headset",
+    "title": "Headset dan audio",
+    "category": "Elektronik & Gadget",
+    "text": "Saat memilih headset, perhatikan kenyamanan, kualitas mic, latency, isolasi suara, kabel/wireless, dan daya tahan baterai. Untuk gaming kompetitif, latency dan imaging audio penting.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik",
+      "gadget",
+      "laptop",
+      "hardware",
+      "headset"
+    ],
+    "confidence": 0.89
+  },
+  {
+    "id": "v13_2_animals_kucing",
+    "title": "Kucing",
+    "category": "Hewan",
+    "text": "Kucing butuh makanan sesuai usia, air bersih, litter box, vaksinasi, stimulasi bermain, dan pemeriksaan jika ada gejala sakit. Jangan memberi obat manusia tanpa dokter hewan.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hewan",
+      "animal",
+      "peliharaan",
+      "pet",
+      "kucing"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_animals_anjing",
+    "title": "Anjing",
+    "category": "Hewan",
+    "text": "Anjing butuh latihan, sosialisasi, makanan sesuai ukuran/usia, vaksin, dan aktivitas fisik. Ras berbeda punya kebutuhan energi dan grooming berbeda.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hewan",
+      "animal",
+      "peliharaan",
+      "pet",
+      "anjing"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_animals_ikan_hias",
+    "title": "Ikan hias",
+    "category": "Hewan",
+    "text": "Memelihara ikan hias perlu memperhatikan ukuran akuarium, siklus nitrogen, filter, suhu, pH, dan kompatibilitas spesies. Jangan langsung memasukkan banyak ikan ke akuarium baru.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hewan",
+      "animal",
+      "peliharaan",
+      "pet",
+      "ikan_hias"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_animals_burung",
+    "title": "Burung peliharaan",
+    "category": "Hewan",
+    "text": "Burung peliharaan butuh kandang bersih, pakan sesuai jenis, interaksi, pencahayaan, dan keamanan dari asap/kimia. Gejala lemas atau bulu kusam perlu perhatian.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hewan",
+      "animal",
+      "peliharaan",
+      "pet",
+      "burung"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_animals_hamster",
+    "title": "Hamster",
+    "category": "Hewan",
+    "text": "Hamster aktif malam hari, butuh kandang cukup luas, bedding aman, roda lari, makanan seimbang, dan tempat bersembunyi. Jangan memandikan hamster dengan air kecuali kondisi khusus.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hewan",
+      "animal",
+      "peliharaan",
+      "pet",
+      "hamster"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_animals_reptil",
+    "title": "Reptil peliharaan",
+    "category": "Hewan",
+    "text": "Reptil seperti gecko/kura-kura/ular butuh suhu, kelembapan, UVB, pakan, dan habitat spesifik. Jawaban harus menyarankan riset spesies karena kebutuhan tiap reptil sangat berbeda.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hewan",
+      "animal",
+      "peliharaan",
+      "pet",
+      "reptil"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_animals_ayam",
+    "title": "Ayam",
+    "category": "Hewan",
+    "text": "Ayam peliharaan/ternak butuh pakan, air, kandang kering, sirkulasi udara, vaksinasi, dan kebersihan. Untuk gejala penyakit, sarankan dokter hewan/petugas ternak.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hewan",
+      "animal",
+      "peliharaan",
+      "pet",
+      "ayam"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_animals_kelinci",
+    "title": "Kelinci",
+    "category": "Hewan",
+    "text": "Kelinci butuh hay/rumput berkualitas, air, ruang gerak, dan lingkungan tenang. Gigi kelinci terus tumbuh sehingga butuh makanan berserat. Jangan memberi makanan manis berlebihan.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hewan",
+      "animal",
+      "peliharaan",
+      "pet",
+      "kelinci"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_plants_monstera",
+    "title": "Monstera",
+    "category": "Tumbuhan & Gardening",
+    "text": "Monstera menyukai cahaya terang tidak langsung, media porous, dan penyiraman saat bagian atas media mulai kering. Daun kuning bisa karena overwatering, kurang cahaya, atau akar bermasalah.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tumbuhan",
+      "tanaman",
+      "plant",
+      "gardening",
+      "monstera"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_plants_sirih_gading",
+    "title": "Sirih gading",
+    "category": "Tumbuhan & Gardening",
+    "text": "Sirih gading mudah dirawat, tahan cahaya sedang, dan bisa ditanam di air atau media tanah. Cocok untuk pemula. Jangan terlalu sering disiram jika media masih basah.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tumbuhan",
+      "tanaman",
+      "plant",
+      "gardening",
+      "sirih_gading"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_plants_sansevieria",
+    "title": "Lidah mertua",
+    "category": "Tumbuhan & Gardening",
+    "text": "Sansevieria tahan kering dan cocok untuk pemula. Butuh cahaya cukup dan penyiraman jarang. Masalah utama biasanya akar busuk karena media terlalu basah.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tumbuhan",
+      "tanaman",
+      "plant",
+      "gardening",
+      "sansevieria"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_plants_kaktus",
+    "title": "Kaktus",
+    "category": "Tumbuhan & Gardening",
+    "text": "Kaktus butuh cahaya kuat, media sangat porous, dan penyiraman jarang. Jika diletakkan indoor gelap, pertumbuhannya bisa memanjang tidak sehat.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tumbuhan",
+      "tanaman",
+      "plant",
+      "gardening",
+      "kaktus"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_plants_anggrek",
+    "title": "Anggrek",
+    "category": "Tumbuhan & Gardening",
+    "text": "Anggrek butuh sirkulasi udara, cahaya tidak langsung, media khusus, dan penyiraman sesuai kelembapan. Akar yang sehat biasanya hijau/perak dan tidak busuk.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tumbuhan",
+      "tanaman",
+      "plant",
+      "gardening",
+      "anggrek"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_plants_cabai",
+    "title": "Tanaman cabai",
+    "category": "Tumbuhan & Gardening",
+    "text": "Cabai butuh matahari cukup, media subur, drainase baik, dan penyiraman teratur. Hama umum: kutu putih, trips, tungau, dan lalat buah.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tumbuhan",
+      "tanaman",
+      "plant",
+      "gardening",
+      "cabai"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_plants_tomat",
+    "title": "Tanaman tomat",
+    "category": "Tumbuhan & Gardening",
+    "text": "Tomat butuh sinar matahari, ajir/penyangga, nutrisi seimbang, dan penyiraman konsisten. Buah pecah sering terkait penyiraman tidak stabil.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tumbuhan",
+      "tanaman",
+      "plant",
+      "gardening",
+      "tomat"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_plants_urban_farming",
+    "title": "Urban farming",
+    "category": "Tumbuhan & Gardening",
+    "text": "Urban farming adalah menanam di ruang terbatas seperti balkon, halaman kecil, polybag, atau hidroponik. Cocok untuk sayur cepat panen seperti kangkung, bayam, selada, cabai, dan daun bawang.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tumbuhan",
+      "tanaman",
+      "plant",
+      "gardening",
+      "urban_farming"
+    ],
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_2_coding_debugging_framework",
+    "title": "Debugging sistematis",
+    "category": "Coding & Software Engineering",
+    "text": "Debugging yang baik dimulai dari membaca error lengkap, menentukan lokasi error, reproduksi masalah, isolasi penyebab, perbaikan kecil, lalu validasi. Jangan langsung ganti banyak file sekaligus.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "coding",
+      "debugging",
+      "software",
+      "programming",
+      "debugging_framework"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_coding_api_contract",
+    "title": "API contract",
+    "category": "Coding & Software Engineering",
+    "text": "API contract adalah kesepakatan request/response antara frontend dan backend. Jika AI menjawab API error, periksa URL, method, headers, body, status code, dan bentuk JSON.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "coding",
+      "debugging",
+      "software",
+      "programming",
+      "api_contract"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_coding_frontend_blank",
+    "title": "Blank putih frontend",
+    "category": "Coding & Software Engineering",
+    "text": "Blank putih pada web biasanya karena error JavaScript, import salah, environment variable hilang, hydration error, atau API gagal. Langkah awal: buka DevTools Console dan terminal server.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "coding",
+      "debugging",
+      "software",
+      "programming",
+      "frontend_blank"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_coding_typescript_error",
+    "title": "TypeScript error",
+    "category": "Coding & Software Engineering",
+    "text": "TypeScript membantu menemukan error tipe sebelum runtime. Jika error tipe muncul, baca expected vs received type, cek interface, optional chaining, null/undefined, dan tipe response API.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "coding",
+      "debugging",
+      "software",
+      "programming",
+      "typescript_error"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_coding_security_basics",
+    "title": "Keamanan aplikasi web",
+    "category": "Coding & Software Engineering",
+    "text": "Keamanan dasar web mencakup validasi input, sanitasi output, prepared statement, password hashing, CSRF protection, rate limiting, dan menyimpan secret hanya di server.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "coding",
+      "debugging",
+      "software",
+      "programming",
+      "security_basics"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_coding_logging",
+    "title": "Logging aplikasi",
+    "category": "Coding & Software Engineering",
+    "text": "Logging membantu debug produksi. Catat timestamp, route, status code, error message, user/session id aman, latency, dan correlation id. Jangan log password/API key.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "coding",
+      "debugging",
+      "software",
+      "programming",
+      "logging"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_coding_testing",
+    "title": "Testing aplikasi",
+    "category": "Coding & Software Engineering",
+    "text": "Testing bisa berupa unit test, integration test, e2e test, dan manual QA. Untuk AI, tambahkan golden evaluation set dan feedback user.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "coding",
+      "debugging",
+      "software",
+      "programming",
+      "testing"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_coding_deployment",
+    "title": "Deployment checklist",
+    "category": "Coding & Software Engineering",
+    "text": "Checklist deploy: environment variables, build berhasil, database migration, asset/public path, health endpoint, log, rollback plan, dan monitoring.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "coding",
+      "debugging",
+      "software",
+      "programming",
+      "deployment"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_2_trend_trend_guard",
+    "title": "Menjawab tren viral",
+    "category": "Trend Viral & Current Snapshot",
+    "text": "Tren viral berubah sangat cepat. Jika user bertanya tren hari ini atau yang sedang viral sekarang, jawaban harus menyebut bahwa data lokal hanya snapshot dan menyarankan cek sumber real-time. Jika ada konteks current knowledge, gunakan sebagai contoh, bukan klaim mutlak.",
+    "source": "Current trend research snapshot 2026-07-07; Vogue/TechRadar/The Verge/Firecrawl/Web search",
+    "tags": [
+      "trend",
+      "viral",
+      "current",
+      "2026",
+      "sosial media",
+      "trend_guard"
+    ],
+    "confidence": 0.78
+  },
+  {
+    "id": "v13_2_trend_banana_milk_coffee_2026",
+    "title": "Banana milk coffee trend 2026",
+    "category": "Trend Viral & Current Snapshot",
+    "text": "Snapshot 7 Juli 2026: Vogue melaporkan banana milk coffee sedang naik sebagai minuman manis-creamy yang terinspirasi Korean banana milk dan viral di media sosial. Gunakan sebagai contoh tren minuman, tetapi beri catatan bahwa tren bisa berubah.",
+    "source": "Current trend research snapshot 2026-07-07; Vogue/TechRadar/The Verge/Firecrawl/Web search",
+    "tags": [
+      "trend",
+      "viral",
+      "current",
+      "2026",
+      "sosial media",
+      "banana_milk_coffee_2026"
+    ],
+    "confidence": 0.78
+  },
+  {
+    "id": "v13_2_trend_viral_food_festival_2026",
+    "title": "Viral food festival trend",
+    "category": "Trend Viral & Current Snapshot",
+    "text": "Snapshot Juli 2026: pemberitaan tentang Viral Food Festival di Toowoomba menyoroti makanan visual dari TikTok/Instagram, influencer, dan hiburan keluarga. Gunakan sebagai contoh bagaimana makanan viral sering didorong visual, influencer, dan event experience.",
+    "source": "Current trend research snapshot 2026-07-07; Vogue/TechRadar/The Verge/Firecrawl/Web search",
+    "tags": [
+      "trend",
+      "viral",
+      "current",
+      "2026",
+      "sosial media",
+      "viral_food_festival_2026"
+    ],
+    "confidence": 0.78
+  },
+  {
+    "id": "v13_2_trend_tech_gadgets_2026",
+    "title": "Gadget 2026 snapshot",
+    "category": "Trend Viral & Current Snapshot",
+    "text": "Snapshot pertengahan 2026: ringkasan TechRadar menyoroti gadget dari fitness tracker, laptop, smartphone flagship, kamera mirrorless, drone, audio, home battery, kipas, dan OLED TV. Gunakan untuk menjawab tren elektronik secara umum, jangan klaim ranking final sepanjang tahun.",
+    "source": "Current trend research snapshot 2026-07-07; Vogue/TechRadar/The Verge/Firecrawl/Web search",
+    "tags": [
+      "trend",
+      "viral",
+      "current",
+      "2026",
+      "sosial media",
+      "tech_gadgets_2026"
+    ],
+    "confidence": 0.78
+  },
+  {
+    "id": "v13_2_trend_ai_social_trend",
+    "title": "AI-generated entertainment",
+    "category": "Trend Viral & Current Snapshot",
+    "text": "Pada 2026, konten AI-generated di media sosial menjadi fenomena tersendiri. Contoh yang banyak dibahas adalah microdrama AI seperti Fruit Love Island. Jawaban harus membedakan hiburan AI kreatif, kualitas konten, dan isu etika/AI slop.",
+    "source": "Current trend research snapshot 2026-07-07; Vogue/TechRadar/The Verge/Firecrawl/Web search",
+    "tags": [
+      "trend",
+      "viral",
+      "current",
+      "2026",
+      "sosial media",
+      "ai_social_trend"
+    ],
+    "confidence": 0.78
+  },
+  {
+    "id": "v13_2_trend_nostalgia_2016",
+    "title": "Trend nostalgia 2016",
+    "category": "Trend Viral & Current Snapshot",
+    "text": "Pada awal 2026, tren nostalgia 2016 banyak muncul di media sosial. Ciri umumnya: filter Snapchat lama, warna oversaturated, foto lama, meme/tantangan era 2016, dan lagu/estetika yang comeback. Gunakan sebagai contoh tren budaya internet.",
+    "source": "Current trend research snapshot 2026-07-07; Vogue/TechRadar/The Verge/Firecrawl/Web search",
+    "tags": [
+      "trend",
+      "viral",
+      "current",
+      "2026",
+      "sosial media",
+      "nostalgia_2016"
+    ],
+    "confidence": 0.78
+  },
+  {
+    "id": "v13_2_breadth_001_sarapan",
+    "title": "Panduan menjawab pertanyaan tentang sarapan",
+    "category": "Makanan & Kuliner",
+    "text": "Jika user bertanya tentang sarapan, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan & kuliner",
+      "sarapan",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_002_makan_siang",
+    "title": "Panduan menjawab pertanyaan tentang makan siang",
+    "category": "Makanan & Kuliner",
+    "text": "Jika user bertanya tentang makan siang, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan & kuliner",
+      "makan siang",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_003_makan_malam",
+    "title": "Panduan menjawab pertanyaan tentang makan malam",
+    "category": "Makanan & Kuliner",
+    "text": "Jika user bertanya tentang makan malam, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan & kuliner",
+      "makan malam",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_004_bekal",
+    "title": "Panduan menjawab pertanyaan tentang bekal",
+    "category": "Makanan & Kuliner",
+    "text": "Jika user bertanya tentang bekal, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan & kuliner",
+      "bekal",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_005_cemilan",
+    "title": "Panduan menjawab pertanyaan tentang cemilan",
+    "category": "Makanan & Kuliner",
+    "text": "Jika user bertanya tentang cemilan, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan & kuliner",
+      "cemilan",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_006_ide_jualan_makanan",
+    "title": "Panduan menjawab pertanyaan tentang ide jualan makanan",
+    "category": "Makanan & Kuliner",
+    "text": "Jika user bertanya tentang ide jualan makanan, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan & kuliner",
+      "ide jualan makanan",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_007_makanan_pedas",
+    "title": "Panduan menjawab pertanyaan tentang makanan pedas",
+    "category": "Makanan & Kuliner",
+    "text": "Jika user bertanya tentang makanan pedas, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan & kuliner",
+      "makanan pedas",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_008_makanan_hemat",
+    "title": "Panduan menjawab pertanyaan tentang makanan hemat",
+    "category": "Makanan & Kuliner",
+    "text": "Jika user bertanya tentang makanan hemat, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan & kuliner",
+      "makanan hemat",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_009_makanan_anak_kos",
+    "title": "Panduan menjawab pertanyaan tentang makanan anak kos",
+    "category": "Makanan & Kuliner",
+    "text": "Jika user bertanya tentang makanan anak kos, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan & kuliner",
+      "makanan anak kos",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_010_menu_kantor",
+    "title": "Panduan menjawab pertanyaan tentang menu kantor",
+    "category": "Makanan & Kuliner",
+    "text": "Jika user bertanya tentang menu kantor, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan & kuliner",
+      "menu kantor",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_011_masakan_rumahan",
+    "title": "Panduan menjawab pertanyaan tentang masakan rumahan",
+    "category": "Makanan & Kuliner",
+    "text": "Jika user bertanya tentang masakan rumahan, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan & kuliner",
+      "masakan rumahan",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_012_street_food",
+    "title": "Panduan menjawab pertanyaan tentang street food",
+    "category": "Makanan & Kuliner",
+    "text": "Jika user bertanya tentang street food, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "makanan & kuliner",
+      "street food",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_013_kopi",
+    "title": "Panduan menjawab pertanyaan tentang kopi",
+    "category": "Minuman",
+    "text": "Jika user bertanya tentang kopi, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "minuman",
+      "kopi",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_014_teh",
+    "title": "Panduan menjawab pertanyaan tentang teh",
+    "category": "Minuman",
+    "text": "Jika user bertanya tentang teh, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "minuman",
+      "teh",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_015_mocktail",
+    "title": "Panduan menjawab pertanyaan tentang mocktail",
+    "category": "Minuman",
+    "text": "Jika user bertanya tentang mocktail, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "minuman",
+      "mocktail",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_016_smoothie",
+    "title": "Panduan menjawab pertanyaan tentang smoothie",
+    "category": "Minuman",
+    "text": "Jika user bertanya tentang smoothie, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "minuman",
+      "smoothie",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_017_minuman_segar",
+    "title": "Panduan menjawab pertanyaan tentang minuman segar",
+    "category": "Minuman",
+    "text": "Jika user bertanya tentang minuman segar, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "minuman",
+      "minuman segar",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_018_minuman_hangat",
+    "title": "Panduan menjawab pertanyaan tentang minuman hangat",
+    "category": "Minuman",
+    "text": "Jika user bertanya tentang minuman hangat, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "minuman",
+      "minuman hangat",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_019_ide_jualan_minuman",
+    "title": "Panduan menjawab pertanyaan tentang ide jualan minuman",
+    "category": "Minuman",
+    "text": "Jika user bertanya tentang ide jualan minuman, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "minuman",
+      "ide jualan minuman",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_020_minuman_buka_puasa",
+    "title": "Panduan menjawab pertanyaan tentang minuman buka puasa",
+    "category": "Minuman",
+    "text": "Jika user bertanya tentang minuman buka puasa, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "minuman",
+      "minuman buka puasa",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_021_minuman_cafe",
+    "title": "Panduan menjawab pertanyaan tentang minuman cafe",
+    "category": "Minuman",
+    "text": "Jika user bertanya tentang minuman cafe, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "minuman",
+      "minuman cafe",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_022_minuman_aesthetic",
+    "title": "Panduan menjawab pertanyaan tentang minuman aesthetic",
+    "category": "Minuman",
+    "text": "Jika user bertanya tentang minuman aesthetic, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "minuman",
+      "minuman aesthetic",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_023_caption_aesthetic",
+    "title": "Panduan menjawab pertanyaan tentang caption aesthetic",
+    "category": "Caption & Status",
+    "text": "Jika user bertanya tentang caption aesthetic, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "caption & status",
+      "caption aesthetic",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_024_caption_lucu",
+    "title": "Panduan menjawab pertanyaan tentang caption lucu",
+    "category": "Caption & Status",
+    "text": "Jika user bertanya tentang caption lucu, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "caption & status",
+      "caption lucu",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_025_caption_galau",
+    "title": "Panduan menjawab pertanyaan tentang caption galau",
+    "category": "Caption & Status",
+    "text": "Jika user bertanya tentang caption galau, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "caption & status",
+      "caption galau",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_026_caption_semangat",
+    "title": "Panduan menjawab pertanyaan tentang caption semangat",
+    "category": "Caption & Status",
+    "text": "Jika user bertanya tentang caption semangat, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "caption & status",
+      "caption semangat",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_027_caption_kerja",
+    "title": "Panduan menjawab pertanyaan tentang caption kerja",
+    "category": "Caption & Status",
+    "text": "Jika user bertanya tentang caption kerja, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "caption & status",
+      "caption kerja",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_028_caption_magang",
+    "title": "Panduan menjawab pertanyaan tentang caption magang",
+    "category": "Caption & Status",
+    "text": "Jika user bertanya tentang caption magang, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "caption & status",
+      "caption magang",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_029_caption_makanan",
+    "title": "Panduan menjawab pertanyaan tentang caption makanan",
+    "category": "Caption & Status",
+    "text": "Jika user bertanya tentang caption makanan, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "caption & status",
+      "caption makanan",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_030_caption_coding",
+    "title": "Panduan menjawab pertanyaan tentang caption coding",
+    "category": "Caption & Status",
+    "text": "Jika user bertanya tentang caption coding, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "caption & status",
+      "caption coding",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_031_status_wa_santai",
+    "title": "Panduan menjawab pertanyaan tentang status WA santai",
+    "category": "Caption & Status",
+    "text": "Jika user bertanya tentang status WA santai, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "caption & status",
+      "status wa santai",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_032_bio_instagram",
+    "title": "Panduan menjawab pertanyaan tentang bio Instagram",
+    "category": "Caption & Status",
+    "text": "Jika user bertanya tentang bio Instagram, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "caption & status",
+      "bio instagram",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_033_mall",
+    "title": "Panduan menjawab pertanyaan tentang mall",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Jika user bertanya tentang mall, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tempat hiburan & lifestyle",
+      "mall",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_034_cafe",
+    "title": "Panduan menjawab pertanyaan tentang cafe",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Jika user bertanya tentang cafe, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tempat hiburan & lifestyle",
+      "cafe",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_035_bioskop",
+    "title": "Panduan menjawab pertanyaan tentang bioskop",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Jika user bertanya tentang bioskop, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tempat hiburan & lifestyle",
+      "bioskop",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_036_museum",
+    "title": "Panduan menjawab pertanyaan tentang museum",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Jika user bertanya tentang museum, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tempat hiburan & lifestyle",
+      "museum",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_037_taman",
+    "title": "Panduan menjawab pertanyaan tentang taman",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Jika user bertanya tentang taman, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tempat hiburan & lifestyle",
+      "taman",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_038_pantai",
+    "title": "Panduan menjawab pertanyaan tentang pantai",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Jika user bertanya tentang pantai, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tempat hiburan & lifestyle",
+      "pantai",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_039_karaoke",
+    "title": "Panduan menjawab pertanyaan tentang karaoke",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Jika user bertanya tentang karaoke, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tempat hiburan & lifestyle",
+      "karaoke",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_040_arcade",
+    "title": "Panduan menjawab pertanyaan tentang arcade",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Jika user bertanya tentang arcade, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tempat hiburan & lifestyle",
+      "arcade",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_041_event",
+    "title": "Panduan menjawab pertanyaan tentang event",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Jika user bertanya tentang event, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tempat hiburan & lifestyle",
+      "event",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_042_healing_murah",
+    "title": "Panduan menjawab pertanyaan tentang healing murah",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Jika user bertanya tentang healing murah, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tempat hiburan & lifestyle",
+      "healing murah",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_043_jalan_jalan_malam",
+    "title": "Panduan menjawab pertanyaan tentang jalan-jalan malam",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Jika user bertanya tentang jalan-jalan malam, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tempat hiburan & lifestyle",
+      "jalan-jalan malam",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_044_date_idea",
+    "title": "Panduan menjawab pertanyaan tentang date idea",
+    "category": "Tempat Hiburan & Lifestyle",
+    "text": "Jika user bertanya tentang date idea, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tempat hiburan & lifestyle",
+      "date idea",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_045_sejarah_indonesia",
+    "title": "Panduan menjawab pertanyaan tentang sejarah Indonesia",
+    "category": "Sejarah",
+    "text": "Jika user bertanya tentang sejarah Indonesia, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "sejarah",
+      "sejarah indonesia",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_046_kerajaan_nusantara",
+    "title": "Panduan menjawab pertanyaan tentang kerajaan Nusantara",
+    "category": "Sejarah",
+    "text": "Jika user bertanya tentang kerajaan Nusantara, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "sejarah",
+      "kerajaan nusantara",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_047_revolusi_industri",
+    "title": "Panduan menjawab pertanyaan tentang revolusi industri",
+    "category": "Sejarah",
+    "text": "Jika user bertanya tentang revolusi industri, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "sejarah",
+      "revolusi industri",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_048_perang_dunia",
+    "title": "Panduan menjawab pertanyaan tentang perang dunia",
+    "category": "Sejarah",
+    "text": "Jika user bertanya tentang perang dunia, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "sejarah",
+      "perang dunia",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_049_sejarah_komputer",
+    "title": "Panduan menjawab pertanyaan tentang sejarah komputer",
+    "category": "Sejarah",
+    "text": "Jika user bertanya tentang sejarah komputer, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "sejarah",
+      "sejarah komputer",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_050_sejarah_internet",
+    "title": "Panduan menjawab pertanyaan tentang sejarah internet",
+    "category": "Sejarah",
+    "text": "Jika user bertanya tentang sejarah internet, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "sejarah",
+      "sejarah internet",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_051_metode_sejarah",
+    "title": "Panduan menjawab pertanyaan tentang metode sejarah",
+    "category": "Sejarah",
+    "text": "Jika user bertanya tentang metode sejarah, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "sejarah",
+      "metode sejarah",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_052_tokoh_sejarah",
+    "title": "Panduan menjawab pertanyaan tentang tokoh sejarah",
+    "category": "Sejarah",
+    "text": "Jika user bertanya tentang tokoh sejarah, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "sejarah",
+      "tokoh sejarah",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_053_laptop",
+    "title": "Panduan menjawab pertanyaan tentang laptop",
+    "category": "Elektronik & Gadget",
+    "text": "Jika user bertanya tentang laptop, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik & gadget",
+      "laptop",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_054_smartphone",
+    "title": "Panduan menjawab pertanyaan tentang smartphone",
+    "category": "Elektronik & Gadget",
+    "text": "Jika user bertanya tentang smartphone, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik & gadget",
+      "smartphone",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_055_monitor",
+    "title": "Panduan menjawab pertanyaan tentang monitor",
+    "category": "Elektronik & Gadget",
+    "text": "Jika user bertanya tentang monitor, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik & gadget",
+      "monitor",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_056_router",
+    "title": "Panduan menjawab pertanyaan tentang router",
+    "category": "Elektronik & Gadget",
+    "text": "Jika user bertanya tentang router, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik & gadget",
+      "router",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_057_charger",
+    "title": "Panduan menjawab pertanyaan tentang charger",
+    "category": "Elektronik & Gadget",
+    "text": "Jika user bertanya tentang charger, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik & gadget",
+      "charger",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_058_baterai",
+    "title": "Panduan menjawab pertanyaan tentang baterai",
+    "category": "Elektronik & Gadget",
+    "text": "Jika user bertanya tentang baterai, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik & gadget",
+      "baterai",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_059_ssd",
+    "title": "Panduan menjawab pertanyaan tentang SSD",
+    "category": "Elektronik & Gadget",
+    "text": "Jika user bertanya tentang SSD, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik & gadget",
+      "ssd",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_060_ram",
+    "title": "Panduan menjawab pertanyaan tentang RAM",
+    "category": "Elektronik & Gadget",
+    "text": "Jika user bertanya tentang RAM, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik & gadget",
+      "ram",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_061_gpu",
+    "title": "Panduan menjawab pertanyaan tentang GPU",
+    "category": "Elektronik & Gadget",
+    "text": "Jika user bertanya tentang GPU, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik & gadget",
+      "gpu",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_062_headset",
+    "title": "Panduan menjawab pertanyaan tentang headset",
+    "category": "Elektronik & Gadget",
+    "text": "Jika user bertanya tentang headset, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik & gadget",
+      "headset",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_063_kamera",
+    "title": "Panduan menjawab pertanyaan tentang kamera",
+    "category": "Elektronik & Gadget",
+    "text": "Jika user bertanya tentang kamera, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik & gadget",
+      "kamera",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_064_smartwatch",
+    "title": "Panduan menjawab pertanyaan tentang smartwatch",
+    "category": "Elektronik & Gadget",
+    "text": "Jika user bertanya tentang smartwatch, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "elektronik & gadget",
+      "smartwatch",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_065_kucing",
+    "title": "Panduan menjawab pertanyaan tentang kucing",
+    "category": "Hewan",
+    "text": "Jika user bertanya tentang kucing, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hewan",
+      "kucing",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_066_anjing",
+    "title": "Panduan menjawab pertanyaan tentang anjing",
+    "category": "Hewan",
+    "text": "Jika user bertanya tentang anjing, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hewan",
+      "anjing",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_067_ikan_hias",
+    "title": "Panduan menjawab pertanyaan tentang ikan hias",
+    "category": "Hewan",
+    "text": "Jika user bertanya tentang ikan hias, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hewan",
+      "ikan hias",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_068_burung",
+    "title": "Panduan menjawab pertanyaan tentang burung",
+    "category": "Hewan",
+    "text": "Jika user bertanya tentang burung, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hewan",
+      "burung",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_069_hamster",
+    "title": "Panduan menjawab pertanyaan tentang hamster",
+    "category": "Hewan",
+    "text": "Jika user bertanya tentang hamster, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hewan",
+      "hamster",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_070_kelinci",
+    "title": "Panduan menjawab pertanyaan tentang kelinci",
+    "category": "Hewan",
+    "text": "Jika user bertanya tentang kelinci, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hewan",
+      "kelinci",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_071_ayam",
+    "title": "Panduan menjawab pertanyaan tentang ayam",
+    "category": "Hewan",
+    "text": "Jika user bertanya tentang ayam, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hewan",
+      "ayam",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_072_reptil",
+    "title": "Panduan menjawab pertanyaan tentang reptil",
+    "category": "Hewan",
+    "text": "Jika user bertanya tentang reptil, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hewan",
+      "reptil",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_073_hewan_peliharaan",
+    "title": "Panduan menjawab pertanyaan tentang hewan peliharaan",
+    "category": "Hewan",
+    "text": "Jika user bertanya tentang hewan peliharaan, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "hewan",
+      "hewan peliharaan",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_074_monstera",
+    "title": "Panduan menjawab pertanyaan tentang monstera",
+    "category": "Tumbuhan & Gardening",
+    "text": "Jika user bertanya tentang monstera, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tumbuhan & gardening",
+      "monstera",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_075_sirih_gading",
+    "title": "Panduan menjawab pertanyaan tentang sirih gading",
+    "category": "Tumbuhan & Gardening",
+    "text": "Jika user bertanya tentang sirih gading, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tumbuhan & gardening",
+      "sirih gading",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_076_kaktus",
+    "title": "Panduan menjawab pertanyaan tentang kaktus",
+    "category": "Tumbuhan & Gardening",
+    "text": "Jika user bertanya tentang kaktus, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tumbuhan & gardening",
+      "kaktus",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_077_anggrek",
+    "title": "Panduan menjawab pertanyaan tentang anggrek",
+    "category": "Tumbuhan & Gardening",
+    "text": "Jika user bertanya tentang anggrek, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tumbuhan & gardening",
+      "anggrek",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_078_cabai",
+    "title": "Panduan menjawab pertanyaan tentang cabai",
+    "category": "Tumbuhan & Gardening",
+    "text": "Jika user bertanya tentang cabai, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tumbuhan & gardening",
+      "cabai",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_079_tomat",
+    "title": "Panduan menjawab pertanyaan tentang tomat",
+    "category": "Tumbuhan & Gardening",
+    "text": "Jika user bertanya tentang tomat, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tumbuhan & gardening",
+      "tomat",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_080_urban_farming",
+    "title": "Panduan menjawab pertanyaan tentang urban farming",
+    "category": "Tumbuhan & Gardening",
+    "text": "Jika user bertanya tentang urban farming, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tumbuhan & gardening",
+      "urban farming",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_081_hidroponik",
+    "title": "Panduan menjawab pertanyaan tentang hidroponik",
+    "category": "Tumbuhan & Gardening",
+    "text": "Jika user bertanya tentang hidroponik, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tumbuhan & gardening",
+      "hidroponik",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_082_tanaman_indoor",
+    "title": "Panduan menjawab pertanyaan tentang tanaman indoor",
+    "category": "Tumbuhan & Gardening",
+    "text": "Jika user bertanya tentang tanaman indoor, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "tumbuhan & gardening",
+      "tanaman indoor",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_083_debugging",
+    "title": "Panduan menjawab pertanyaan tentang debugging",
+    "category": "Coding & Software Engineering",
+    "text": "Jika user bertanya tentang debugging, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "coding & software engineering",
+      "debugging",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_084_next_js",
+    "title": "Panduan menjawab pertanyaan tentang Next.js",
+    "category": "Coding & Software Engineering",
+    "text": "Jika user bertanya tentang Next.js, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "coding & software engineering",
+      "next.js",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_085_react",
+    "title": "Panduan menjawab pertanyaan tentang React",
+    "category": "Coding & Software Engineering",
+    "text": "Jika user bertanya tentang React, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "coding & software engineering",
+      "react",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_086_node_js",
+    "title": "Panduan menjawab pertanyaan tentang Node.js",
+    "category": "Coding & Software Engineering",
+    "text": "Jika user bertanya tentang Node.js, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "coding & software engineering",
+      "node.js",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_087_php",
+    "title": "Panduan menjawab pertanyaan tentang PHP",
+    "category": "Coding & Software Engineering",
+    "text": "Jika user bertanya tentang PHP, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "coding & software engineering",
+      "php",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_088_mysql",
+    "title": "Panduan menjawab pertanyaan tentang MySQL",
+    "category": "Coding & Software Engineering",
+    "text": "Jika user bertanya tentang MySQL, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "coding & software engineering",
+      "mysql",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_089_api",
+    "title": "Panduan menjawab pertanyaan tentang API",
+    "category": "Coding & Software Engineering",
+    "text": "Jika user bertanya tentang API, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "coding & software engineering",
+      "api",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_090_security",
+    "title": "Panduan menjawab pertanyaan tentang security",
+    "category": "Coding & Software Engineering",
+    "text": "Jika user bertanya tentang security, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "coding & software engineering",
+      "security",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_091_deployment",
+    "title": "Panduan menjawab pertanyaan tentang deployment",
+    "category": "Coding & Software Engineering",
+    "text": "Jika user bertanya tentang deployment, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "coding & software engineering",
+      "deployment",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_092_testing",
+    "title": "Panduan menjawab pertanyaan tentang testing",
+    "category": "Coding & Software Engineering",
+    "text": "Jika user bertanya tentang testing, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "coding & software engineering",
+      "testing",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_093_git",
+    "title": "Panduan menjawab pertanyaan tentang Git",
+    "category": "Coding & Software Engineering",
+    "text": "Jika user bertanya tentang Git, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "coding & software engineering",
+      "git",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_094_typescript",
+    "title": "Panduan menjawab pertanyaan tentang TypeScript",
+    "category": "Coding & Software Engineering",
+    "text": "Jika user bertanya tentang TypeScript, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "coding & software engineering",
+      "typescript",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_095_sains",
+    "title": "Panduan menjawab pertanyaan tentang sains",
+    "category": "Pengetahuan Umum",
+    "text": "Jika user bertanya tentang sains, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "pengetahuan umum",
+      "sains",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_096_geografi",
+    "title": "Panduan menjawab pertanyaan tentang geografi",
+    "category": "Pengetahuan Umum",
+    "text": "Jika user bertanya tentang geografi, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "pengetahuan umum",
+      "geografi",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_097_ekonomi_dasar",
+    "title": "Panduan menjawab pertanyaan tentang ekonomi dasar",
+    "category": "Pengetahuan Umum",
+    "text": "Jika user bertanya tentang ekonomi dasar, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "pengetahuan umum",
+      "ekonomi dasar",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_098_komunikasi",
+    "title": "Panduan menjawab pertanyaan tentang komunikasi",
+    "category": "Pengetahuan Umum",
+    "text": "Jika user bertanya tentang komunikasi, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "pengetahuan umum",
+      "komunikasi",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_099_belajar_efektif",
+    "title": "Panduan menjawab pertanyaan tentang belajar efektif",
+    "category": "Pengetahuan Umum",
+    "text": "Jika user bertanya tentang belajar efektif, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "pengetahuan umum",
+      "belajar efektif",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_100_manajemen_waktu",
+    "title": "Panduan menjawab pertanyaan tentang manajemen waktu",
+    "category": "Pengetahuan Umum",
+    "text": "Jika user bertanya tentang manajemen waktu, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "pengetahuan umum",
+      "manajemen waktu",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_101_kebiasaan_sehat",
+    "title": "Panduan menjawab pertanyaan tentang kebiasaan sehat",
+    "category": "Pengetahuan Umum",
+    "text": "Jika user bertanya tentang kebiasaan sehat, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "pengetahuan umum",
+      "kebiasaan sehat",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_102_transportasi",
+    "title": "Panduan menjawab pertanyaan tentang transportasi",
+    "category": "Pengetahuan Umum",
+    "text": "Jika user bertanya tentang transportasi, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "pengetahuan umum",
+      "transportasi",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_2_breadth_103_cuaca",
+    "title": "Panduan menjawab pertanyaan tentang cuaca",
+    "category": "Pengetahuan Umum",
+    "text": "Jika user bertanya tentang cuaca, NusaMind AI harus menjawab sesuai tujuan user: definisi jika user minta pengertian, rekomendasi jika user minta saran, langkah jika user minta cara, dan perbandingan jika user menanyakan bedanya. Untuk topik yang berubah cepat seperti harga, jadwal, tempat terbaru, atau tren viral hari ini, jelaskan bahwa data dapat berubah dan sarankan cek sumber terbaru. Jawaban harus praktis, tidak melenceng, dan memakai bahasa Indonesia yang natural.",
+    "source": "NusaMind Universal Daily Knowledge V13.2",
+    "tags": [
+      "pengetahuan umum",
+      "cuaca",
+      "universal",
+      "alignment",
+      "v13.2"
+    ],
+    "confidence": 0.84
+  }
+]

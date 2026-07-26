@@ -1,0 +1,114 @@
+[
+  {
+    "state_order": "1",
+    "state_name": "ANALYZING",
+    "description": "Read repository and collect evidence",
+    "allowed_actions": "READ_CODE and safe diagnostics",
+    "exit_condition": "Scope identified",
+    "failure_transition": "FAILED/NEEDS_CONTEXT"
+  },
+  {
+    "state_order": "2",
+    "state_name": "PLANNED",
+    "description": "Create bounded implementation plan",
+    "allowed_actions": "No writes",
+    "exit_condition": "Plan validated",
+    "failure_transition": "FAILED"
+  },
+  {
+    "state_order": "3",
+    "state_name": "WAITING_APPROVAL",
+    "description": "Wait for write or risky command approval",
+    "allowed_actions": "Read only",
+    "exit_condition": "Approved/rejected",
+    "failure_transition": "CANCELLED"
+  },
+  {
+    "state_order": "4",
+    "state_name": "CHECKPOINTED",
+    "description": "Save base state and rollback target",
+    "allowed_actions": "Metadata/checksum only",
+    "exit_condition": "Checkpoint verified",
+    "failure_transition": "FAILED"
+  },
+  {
+    "state_order": "5",
+    "state_name": "PATCHING",
+    "description": "Apply minimal approved patches",
+    "allowed_actions": "WRITE_CODE in scope",
+    "exit_condition": "All patches applied",
+    "failure_transition": "ROLLBACK_PENDING"
+  },
+  {
+    "state_order": "6",
+    "state_name": "TYPECHECKING",
+    "description": "Run type/static checks",
+    "allowed_actions": "Approved commands",
+    "exit_condition": "Checks pass",
+    "failure_transition": "REPAIRING"
+  },
+  {
+    "state_order": "7",
+    "state_name": "TESTING",
+    "description": "Run targeted/regression tests",
+    "allowed_actions": "Approved tests",
+    "exit_condition": "Tests pass",
+    "failure_transition": "REPAIRING"
+  },
+  {
+    "state_order": "8",
+    "state_name": "REPAIRING",
+    "description": "Fix bounded verification failures",
+    "allowed_actions": "Patch original scope only",
+    "exit_condition": "Pass/retry exhausted",
+    "failure_transition": "ROLLBACK_PENDING"
+  },
+  {
+    "state_order": "9",
+    "state_name": "REVIEWING",
+    "description": "Review final diff and risks",
+    "allowed_actions": "Read diff and context",
+    "exit_condition": "No critical findings",
+    "failure_transition": "REPAIRING"
+  },
+  {
+    "state_order": "10",
+    "state_name": "VERIFIED",
+    "description": "All postconditions passed",
+    "allowed_actions": "Report only",
+    "exit_condition": "Report saved",
+    "failure_transition": "None"
+  },
+  {
+    "state_order": "11",
+    "state_name": "ROLLBACK_PENDING",
+    "description": "Restore safe state",
+    "allowed_actions": "Rollback approved patches",
+    "exit_condition": "Base restored",
+    "failure_transition": "FAILED"
+  },
+  {
+    "state_order": "12",
+    "state_name": "ROLLED_BACK",
+    "description": "Rollback verified",
+    "allowed_actions": "Report only",
+    "exit_condition": "Report saved",
+    "failure_transition": "None"
+  },
+  {
+    "state_order": "13",
+    "state_name": "FAILED",
+    "description": "Task cannot safely continue",
+    "allowed_actions": "No side effects",
+    "exit_condition": "Handoff saved",
+    "failure_transition": "None"
+  },
+  {
+    "state_order": "14",
+    "state_name": "CANCELLED",
+    "description": "User or policy stopped task",
+    "allowed_actions": "No side effects",
+    "exit_condition": "Cancellation recorded",
+    "failure_transition": "None"
+  }
+]

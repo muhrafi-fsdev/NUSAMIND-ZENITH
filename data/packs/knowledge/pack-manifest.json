@@ -1,0 +1,4303 @@
+{
+  "format": "nusamind-knowledge-pack-v1",
+  "release": "R13.45",
+  "source": "data/core/universal-knowledge.json",
+  "sourceRemoved": true,
+  "legacyRead": 0,
+  "inputRecords": 688837,
+  "records": 395512,
+  "duplicatesRemoved": 293325,
+  "packCount": 715,
+  "packs": [
+    {
+      "file": "academic-and-internship.jsonl",
+      "records": 10,
+      "sha256": "2cf33b4f135028899b4040d4faeed8894a76a64313c8c7aa1c1361d81786b9ab",
+      "bytes": 3812
+    },
+    {
+      "file": "academic-productivity-query-variants.jsonl",
+      "records": 10,
+      "sha256": "69cd3bc41272bca99342d3a133314682a094f5ac2bdbe38e508adb4549ce8884",
+      "bytes": 5730
+    },
+    {
+      "file": "academic-productivity.jsonl",
+      "records": 10,
+      "sha256": "9f9ecfe0523ecfcd204fdd7fc2a76495a242b824f7512398591ad8d0636ee1c3",
+      "bytes": 5552
+    },
+    {
+      "file": "academic-writing.jsonl",
+      "records": 1,
+      "sha256": "4131071239c45a1513023312a2a7df459d5acc7138b1e16f958345a982d0feea",
+      "bytes": 676
+    },
+    {
+      "file": "advanced-programming-multi-language.jsonl",
+      "records": 40,
+      "sha256": "1f068360a4c971c4bdc8c88672616e7dea5610eb41a753fd2c795ba669a32cf7",
+      "bytes": 44943
+    },
+    {
+      "file": "agama-dan-al-qur-an-guardrail.jsonl",
+      "records": 6,
+      "sha256": "808ede1b8f9d3b627ee052586cc769411789ae91a1083d527203ea90cbd270f9",
+      "bytes": 4995
+    },
+    {
+      "file": "agama-dan-al-qur-an.jsonl",
+      "records": 12,
+      "sha256": "0c1ba87c2fb2a712f7ec3a61a98e6293c8980fe3130870c5fac2129e7016cfab",
+      "bytes": 13045
+    },
+    {
+      "file": "agentic-ai-trends-2026.jsonl",
+      "records": 1,
+      "sha256": "55a917857472551f7eb64d31d924652bac34e931f6657e0c626994413e5061c4",
+      "bytes": 1983
+    },
+    {
+      "file": "ai-current-knowledge-2026.jsonl",
+      "records": 1,
+      "sha256": "7d3aeb7d5dd4602f13ff9cb93b3f769a5987c3989d3f0d32d6bdb26288e15679",
+      "bytes": 736
+    },
+    {
+      "file": "ai-dan-machine-learning-guardrail.jsonl",
+      "records": 7,
+      "sha256": "f0d78d6e60a93f515880b7bf4f9a040790d6785b329ef503b653c50b5b5bfb0a",
+      "bytes": 5983
+    },
+    {
+      "file": "ai-dan-machine-learning.jsonl",
+      "records": 14,
+      "sha256": "71f94cee4a54d6a84e48c2b93a53a6ccc57b42eea2294204b8fd2505297f823f",
+      "bytes": 15631
+    },
+    {
+      "file": "ai-engineering-lanjut.jsonl",
+      "records": 40,
+      "sha256": "550f1d966f962dbd8d0898df76d73a95ea6bc5442636d449070b66dd2f39b0b0",
+      "bytes": 41623
+    },
+    {
+      "file": "ai-engineering.jsonl",
+      "records": 3357,
+      "sha256": "2a61afd8698ebf2ab3ad8c4dc24cb63b95b07dafcedd3c04ecc81f8581ade12e",
+      "bytes": 1723384
+    },
+    {
+      "file": "ai-evaluation.jsonl",
+      "records": 1,
+      "sha256": "0bcb16f9910b4488855d025478bf0efc595b0e7939da663764f1344974c9c6c7",
+      "bytes": 380
+    },
+    {
+      "file": "ai-first-development.jsonl",
+      "records": 1,
+      "sha256": "f0fd1d3e676ac7113d99b035bff22a7650b5847b55dbaec341c98bfd42cc5ff8",
+      "bytes": 871
+    },
+    {
+      "file": "ai-local-engineering.jsonl",
+      "records": 30,
+      "sha256": "9749ab266a7c1c6ac06a29a0fa24c522d4e338e5c2ecc344d2aa601cc4baac47",
+      "bytes": 25716
+    },
+    {
+      "file": "ai-memory.jsonl",
+      "records": 1,
+      "sha256": "588f2720d62fb2652596da6921fe8cfa4854a1921c49915680c5367d257e49f5",
+      "bytes": 360
+    },
+    {
+      "file": "ai-production.jsonl",
+      "records": 2,
+      "sha256": "32608866eb2cbbbdaf71ad0fa2d3964459fbf17c9600f515e254a2ba4c8bf817",
+      "bytes": 752
+    },
+    {
+      "file": "ai-rag-llm-query-variants.jsonl",
+      "records": 3302,
+      "sha256": "e14f2ab801699b82a633bb36c0e89d7cbb933dc5e842ceb336a5b22b96ea8528",
+      "bytes": 1810776
+    },
+    {
+      "file": "ai-rag-llm.jsonl",
+      "records": 3302,
+      "sha256": "349a9c97eb7c29dea26ca13bea44a884f8059a7d2794715053711cec76541742",
+      "bytes": 1637701
+    },
+    {
+      "file": "ai-safety.jsonl",
+      "records": 1,
+      "sha256": "429bb040050d1388e23e51e77cfb35d59c24222da2ddadb36f154aed6796be4c",
+      "bytes": 381
+    },
+    {
+      "file": "ai-security.jsonl",
+      "records": 1,
+      "sha256": "713590835f86392cae3e8108e47c323d0d9fca51fe760eec1411c4d7063cbabb",
+      "bytes": 697
+    },
+    {
+      "file": "ai-trends-2026.jsonl",
+      "records": 1,
+      "sha256": "8cda1d7cd7f09ea2553eaf2d72725c19edb74a95504fecea16fcde8011328e06",
+      "bytes": 1369
+    },
+    {
+      "file": "akademik-mahasiswa-guardrail.jsonl",
+      "records": 3,
+      "sha256": "de8d670bfebcfbe296de01ea541d454f2edfe226b440be164c091d2e793cf8e7",
+      "bytes": 2467
+    },
+    {
+      "file": "akademik-mahasiswa.jsonl",
+      "records": 6,
+      "sha256": "d4a247bdfe8f67221f37cc8aee234a301948a98f4db2507fa11efc184905c7a6",
+      "bytes": 6713
+    },
+    {
+      "file": "backend-api-engineering.jsonl",
+      "records": 30,
+      "sha256": "71dc881655551f3fb56d4f7822e03e4ea5b8918c8dc8d3075689401e26439eb0",
+      "bytes": 26046
+    },
+    {
+      "file": "bahasa-indonesia-guardrail.jsonl",
+      "records": 2,
+      "sha256": "d99d03a7ca832948a71b9dc5ffafd2ae8748190a90ce48dc256c7a4d9cf51d7d",
+      "bytes": 1697
+    },
+    {
+      "file": "bahasa-indonesia.jsonl",
+      "records": 4,
+      "sha256": "ad0c92e117e79bbb09ace8fe575b18288de040ee486eab39cba75c8b5c79b45c",
+      "bytes": 4344
+    },
+    {
+      "file": "brand-identity.jsonl",
+      "records": 1,
+      "sha256": "ecd8d53391aa340a0083adc4fd31b02064dc0cc60bd50d251c5b8f3d20c44a17",
+      "bytes": 521
+    },
+    {
+      "file": "caption---status.jsonl",
+      "records": 20,
+      "sha256": "3a093ac7fce834b722fcacd0a5a5ac248fc28ac75365f2af0fc0c0232e110f45",
+      "bytes": 11610
+    },
+    {
+      "file": "cloud-devops-q-a.jsonl",
+      "records": 10,
+      "sha256": "9701509d700971ea307a615677662c6c83e357c1fbfa0fba6a2594c3c04f5078",
+      "bytes": 5012
+    },
+    {
+      "file": "cloud-devops.jsonl",
+      "records": 10,
+      "sha256": "f5bd3810c928d89cd2fe8a5dc78fcc953e9c293d20a35a57b109c809b8220869",
+      "bytes": 4565
+    },
+    {
+      "file": "coding---software-engineering.jsonl",
+      "records": 20,
+      "sha256": "710f8e0b07bf3488b77f5898763ec70bb9277bdc1ab45e076b905e7016ff23dc",
+      "bytes": 12642
+    },
+    {
+      "file": "coding-best-practices.jsonl",
+      "records": 1,
+      "sha256": "ce1cff2047b731259e76cd8ebef5b4717cfec9171cee434de38fd2c1b2860055",
+      "bytes": 625
+    },
+    {
+      "file": "coding-debugging.jsonl",
+      "records": 3407,
+      "sha256": "d0d407dd387e358786d5b870b5f92cdedc61a1c34538ab67c52b58191e3950db",
+      "bytes": 1796949
+    },
+    {
+      "file": "coding-fullstack.jsonl",
+      "records": 3617,
+      "sha256": "c4abb8280d23ce8ff1f90c20f9885e947f8753fc53fb4014588ce0eda4e33a11",
+      "bytes": 1952790
+    },
+    {
+      "file": "coding-fundamentals-advanced.jsonl",
+      "records": 30,
+      "sha256": "aee85dc0665ab8631bb268699388cb6de11dfe3cbe9491eaf507dfcb05529d03",
+      "bytes": 26466
+    },
+    {
+      "file": "coding-fundamentals-query-variants.jsonl",
+      "records": 10,
+      "sha256": "a055ff4d318dcfa4a3256bcd075dc8bf327fee20622fc466b2611546ec9e7518",
+      "bytes": 5398
+    },
+    {
+      "file": "coding-fundamentals.jsonl",
+      "records": 10,
+      "sha256": "514a2f54ad64ed0e75c3ec6db6eb44620a5dab49b261092ed23ead65e35811f0",
+      "bytes": 5354
+    },
+    {
+      "file": "coding.jsonl",
+      "records": 2,
+      "sha256": "a449218f1c4c05f7f8a6ade1f139ec6b97351e1f3f0c0844f16e61b3ba872e8a",
+      "bytes": 766
+    },
+    {
+      "file": "companion-and-communication.jsonl",
+      "records": 10,
+      "sha256": "aaeeac37885dc4db1ec1e287cce0730f8bebaf435879c8f47f9f1b698a82bbaf",
+      "bytes": 3591
+    },
+    {
+      "file": "conversation.jsonl",
+      "records": 4,
+      "sha256": "03ab7e5b47bf27a5adb768fbfddb4f344c12346db8649647878fc4e5311b925d",
+      "bytes": 1325
+    },
+    {
+      "file": "critical-programming-debugging.jsonl",
+      "records": 40,
+      "sha256": "6f7ae294ea36176ae211061c9a81cc348554958696fe89961cc7767eacaba234",
+      "bytes": 43143
+    },
+    {
+      "file": "cybersecurity-dasar-aman.jsonl",
+      "records": 30,
+      "sha256": "a00b26a384763e345f099ee17ff9840006daa8986ecb0ba6d62bee0937044fdc",
+      "bytes": 26196
+    },
+    {
+      "file": "cybersecurity-essentials-q-a.jsonl",
+      "records": 10,
+      "sha256": "8c645a89dd26d39c380ded1e8b2cfb18064e6da50f36afc4ff7e07f91ddf6648",
+      "bytes": 5396
+    },
+    {
+      "file": "cybersecurity-essentials.jsonl",
+      "records": 10,
+      "sha256": "89630825dedd46a65e7102e73b997528c82017bd6a1e13eb62b23840e1ad1567",
+      "bytes": 5279
+    },
+    {
+      "file": "cybersecurity.jsonl",
+      "records": 1,
+      "sha256": "5c176be6a0b99de1fc6d5ab4e574e8c458c8a6995aa4b9cb3ee231ca4382dfc4",
+      "bytes": 599
+    },
+    {
+      "file": "daily-assistant-query-variants.jsonl",
+      "records": 10,
+      "sha256": "3e34adcfd8be3a080ff44bc76e41be14b7770b4789575c11089c2afe0267a564",
+      "bytes": 5726
+    },
+    {
+      "file": "daily-assistant.jsonl",
+      "records": 10,
+      "sha256": "d87764351e0203e3efc9739f9413bd0385608518d3832dbc261ff1eda03752fb",
+      "bytes": 5392
+    },
+    {
+      "file": "data-analytics-q-a.jsonl",
+      "records": 10,
+      "sha256": "74f30f28771b0c8afcd5cdb114e96a424854f23fa7423f8fea97bab676d4e574",
+      "bytes": 5072
+    },
+    {
+      "file": "data-analytics.jsonl",
+      "records": 10,
+      "sha256": "bd6c36bbfb51e304d712e3c728cbb0b15c3c956dcfd276e04054d08fd5a888b3",
+      "bytes": 4701
+    },
+    {
+      "file": "data-engineering-ai-guardrail.jsonl",
+      "records": 3,
+      "sha256": "077ffc844d7f1612fa70b5d14fef206846dd59542ad00252269b14b5c205161f",
+      "bytes": 2522
+    },
+    {
+      "file": "data-engineering-ai.jsonl",
+      "records": 6,
+      "sha256": "7deb955c8c6a1c1ad99c3622b6ce5b5c6c2b631c71b8a3ebbe9bdd04c7b04b4b",
+      "bytes": 6688
+    },
+    {
+      "file": "database-practical-sql.jsonl",
+      "records": 30,
+      "sha256": "21e79ddd2ce26cde9450da879cd232904e0d32c942d03e5a648a2bf2c3f8b034",
+      "bytes": 26136
+    },
+    {
+      "file": "database-sql-query-variants.jsonl",
+      "records": 10,
+      "sha256": "e948fe6f8833b743b69da5aaa043be278e966d58279377e2d438c7391e5b50c2",
+      "bytes": 5548
+    },
+    {
+      "file": "database-sql.jsonl",
+      "records": 10,
+      "sha256": "fdfcd08fdb8aa2b1b8fdfe9bd190cf7b8388f2727f73f6d059781188064f2860",
+      "bytes": 5108
+    },
+    {
+      "file": "dataset-quality-guardrail.jsonl",
+      "records": 2,
+      "sha256": "0d605fb35a612929378298b7d3ebbb76181e03fb0460f020bdce7a89811a31a2",
+      "bytes": 1644
+    },
+    {
+      "file": "dataset-quality.jsonl",
+      "records": 4,
+      "sha256": "95d810d6ce44571ca36dccbc1c32a5e47fbc6303b7d66689101103bbebe94ae9",
+      "bytes": 4348
+    },
+    {
+      "file": "deployment.jsonl",
+      "records": 2,
+      "sha256": "93bcdb9ab700e0d39b73ec197a85ec691f01e200ac971989707d18961e7994c6",
+      "bytes": 734
+    },
+    {
+      "file": "devops-local-to-production.jsonl",
+      "records": 30,
+      "sha256": "682f0720f5732e0945f23641d9c8dda98ba82c68f25099d8a1ebec74b8986907",
+      "bytes": 26886
+    },
+    {
+      "file": "dokumentasi-website-guardrail.jsonl",
+      "records": 4,
+      "sha256": "06e7d9848adca341f76fe50b245372f3145af90e37f5ee14d6b2e5c6e04d44f1",
+      "bytes": 3276
+    },
+    {
+      "file": "dokumentasi-website.jsonl",
+      "records": 8,
+      "sha256": "dd600f7eb3be36050118538592d7b34bc08cf421b33c30bfb9637ee114bb253a",
+      "bytes": 8566
+    },
+    {
+      "file": "elektronik---gadget.jsonl",
+      "records": 22,
+      "sha256": "8bacc103847aa7426b9c9b80ca3401e0da27a1d975d4b54c47053c8aa89bcd31",
+      "bytes": 13249
+    },
+    {
+      "file": "fullstack-architecture.jsonl",
+      "records": 1,
+      "sha256": "b584119c49ee214bbf46ac1908b2ff1c37394e406f530b7e437e47c4827ae0dc",
+      "bytes": 770
+    },
+    {
+      "file": "general-knowledge-science-query-variants.jsonl",
+      "records": 10,
+      "sha256": "1511e9a87e53b80c9608eccb202f9c47ccd2fa6bffce8dae8846248373e553fb",
+      "bytes": 5994
+    },
+    {
+      "file": "general-knowledge-science.jsonl",
+      "records": 10,
+      "sha256": "b0d413c1fece5f76554aef61f820c3746de0ea572e71c32b86ab532fcfe556fb",
+      "bytes": 5710
+    },
+    {
+      "file": "general-tech-concepts-q-a.jsonl",
+      "records": 10,
+      "sha256": "c81f20b4eb9801b20e03a7b1ea47ac8ca6f51908b9d0c937b6727466e05f5898",
+      "bytes": 5322
+    },
+    {
+      "file": "general-tech-concepts.jsonl",
+      "records": 10,
+      "sha256": "883ba762099fa8f14311602dd8bcc322660e41c059e831956ed616a1c50f6272",
+      "bytes": 4830
+    },
+    {
+      "file": "general.jsonl",
+      "records": 1,
+      "sha256": "76358741c592ba7e6980ce24da7a1ae837f01f222e98944c8d5193b8aa777178",
+      "bytes": 236
+    },
+    {
+      "file": "generative-ai-frameworks-2026.jsonl",
+      "records": 3,
+      "sha256": "9234267c32fe18c8e7348e0dc4aa810323bafdfd70a78ebf291d396dba5e150a",
+      "bytes": 3537
+    },
+    {
+      "file": "git-github-query-variants.jsonl",
+      "records": 10,
+      "sha256": "027ac4ded0cbaa29025f55b5846cbb5a4f94fc01ffdb234c9832ef5dd9c5e49f",
+      "bytes": 5400
+    },
+    {
+      "file": "git-github.jsonl",
+      "records": 10,
+      "sha256": "e487a8c3da8427da66ce4cde0101c21818bb6ec87185152fe21945f77eeca22c",
+      "bytes": 4935
+    },
+    {
+      "file": "guardrail-dan-keamanan-guardrail.jsonl",
+      "records": 2,
+      "sha256": "57ef307e1486440075a7254230957cb32a42b95bfdc0c5e481a0e288df584a59",
+      "bytes": 1708
+    },
+    {
+      "file": "guardrail-dan-keamanan.jsonl",
+      "records": 4,
+      "sha256": "1a3b2c79e9d956bc1d27e52866d98458e3e592eda4b74a7c2407ea57394d2580",
+      "bytes": 4481
+    },
+    {
+      "file": "hardware-troubleshooting.jsonl",
+      "records": 1,
+      "sha256": "6c757f68eaa78d7587cf2784fa48168ce67958be74db5f5dd56ff3bf007dce0d",
+      "bytes": 679
+    },
+    {
+      "file": "hewan.jsonl",
+      "records": 17,
+      "sha256": "66127ac79dd532d01fe4b1df345e1676cc36d1e2432a078c3a6c515928d9e3c7",
+      "bytes": 9517
+    },
+    {
+      "file": "indonesia-dan-nusantara-guardrail.jsonl",
+      "records": 2,
+      "sha256": "d54096307f93f724bf3e750d00d0d489cbad121d1adec687ef0e757f4a6f4e09",
+      "bytes": 1723
+    },
+    {
+      "file": "indonesia-dan-nusantara.jsonl",
+      "records": 4,
+      "sha256": "563601f542f750e0167b3f9331ab68a0287e5329a238c08691f7a06fbd1ac40e",
+      "bytes": 4364
+    },
+    {
+      "file": "internship.jsonl",
+      "records": 3407,
+      "sha256": "899bb6c2c68f2aa020edd04575b0de579cdb1e9c5fca2df90f1fdfea6b3514ff",
+      "bytes": 1710073
+    },
+    {
+      "file": "iot.jsonl",
+      "records": 1,
+      "sha256": "e32758fea53e9742547453e4e0b2934110af304ae78e26e812bd94d1f6db68a4",
+      "bytes": 657
+    },
+    {
+      "file": "it-helpdesk-internship.jsonl",
+      "records": 30,
+      "sha256": "027a60b5ce712a9285dd48b303557044e99413330508d8b6cf59ee8c3ec5a2a6",
+      "bytes": 25896
+    },
+    {
+      "file": "it-kerja-dan-helpdesk.jsonl",
+      "records": 40,
+      "sha256": "02b9d6de61a000c8ca3c353341557a539e5430e0e1a59bcdbd6fddcefc74be0b",
+      "bytes": 41063
+    },
+    {
+      "file": "it-support.jsonl",
+      "records": 1,
+      "sha256": "d431d7a03541dee6322af54b2f5bb464ef0105d1053935a734ee142ed289f96f",
+      "bytes": 624
+    },
+    {
+      "file": "javascript-debugging-query-variants.jsonl",
+      "records": 10,
+      "sha256": "bd72279a9fa490d48d3cfc19b6ae3dfac8c3ff4b9d09d98e77b1cbe7e4b41039",
+      "bytes": 6276
+    },
+    {
+      "file": "javascript-debugging.jsonl",
+      "records": 10,
+      "sha256": "0d3727868c1059449c10c56d1435ad0c8b2ffa6860706a57f181b02c429ee903",
+      "bytes": 5866
+    },
+    {
+      "file": "javascript-typescript-deepening.jsonl",
+      "records": 30,
+      "sha256": "0bf4777d54efdbeda59768d2e40e2ee29068445e147379ba75dc568e3b8af8da",
+      "bytes": 26736
+    },
+    {
+      "file": "kehidupan-harian-guardrail.jsonl",
+      "records": 4,
+      "sha256": "7b170b294a4778727c8150867fff7eaecf7f60a2e731737caa514e54d277882d",
+      "bytes": 3387
+    },
+    {
+      "file": "kehidupan-harian.jsonl",
+      "records": 8,
+      "sha256": "01e9d9892d6835ed74221368376ecdf4eba194f08f7eeee9610c02ba8c45e858",
+      "bytes": 8792
+    },
+    {
+      "file": "kuliah-akademik-it.jsonl",
+      "records": 30,
+      "sha256": "97245fa29bf47bbd92a1107f936bae164f4934f5e929dd620772e0e1817698b9",
+      "bytes": 24726
+    },
+    {
+      "file": "kuliah-dan-laporan-teknis.jsonl",
+      "records": 40,
+      "sha256": "7806ef5c0e04bc164ee77925c7a4332ba95d6ecf4af6d98c1c11418ad44db355",
+      "bytes": 41103
+    },
+    {
+      "file": "language-understanding-v12.jsonl",
+      "records": 2817,
+      "sha256": "9cfc32f4b69de474c5fc233a8aeabbd46301efab246e312c4612a452b6a2a80d",
+      "bytes": 1517001
+    },
+    {
+      "file": "language-understanding.jsonl",
+      "records": 6,
+      "sha256": "9bbb2565f7acd7c4721079a259503dfbfe422b6a2278e29f6de2eebbeba5de55",
+      "bytes": 3317
+    },
+    {
+      "file": "local-ai.jsonl",
+      "records": 3,
+      "sha256": "1b59a718e197ce9a607bd2cd3eac5573821535b9430300566a57afdea19458fa",
+      "bytes": 1443
+    },
+    {
+      "file": "magang-dan-dunia-kerja-guardrail.jsonl",
+      "records": 3,
+      "sha256": "e2d709d39fdfd0a651fd7dc7e5d3ad04725f9c88f1632dc9cddd1da3222478c7",
+      "bytes": 2563
+    },
+    {
+      "file": "magang-dan-dunia-kerja.jsonl",
+      "records": 6,
+      "sha256": "0893559460475dbbcd0b0c43b241c14d5a0e885e3b62955953577b54f25f49bb",
+      "bytes": 6780
+    },
+    {
+      "file": "makanan---kuliner.jsonl",
+      "records": 27,
+      "sha256": "5ee8505d087341f351549a13338b2885652c7a7123ef933cf21293813d743815",
+      "bytes": 16435
+    },
+    {
+      "file": "matematika-akademik-terapan.jsonl",
+      "records": 40,
+      "sha256": "f66b1ea2307e9fd9e6ba71cb79645c8f3a3683118c5c56d3e7a38b6d4246b53d",
+      "bytes": 42383
+    },
+    {
+      "file": "math-academic.jsonl",
+      "records": 3407,
+      "sha256": "a0892cac65d772719f897b043de6f26dd2094afb16e93475fdf29680d9d4f237",
+      "bytes": 1742542
+    },
+    {
+      "file": "math-logic-q-a.jsonl",
+      "records": 10,
+      "sha256": "d89eaf169f9db20584788f1e0ce5934a2dc12788c919bf82a22bd8beb1bb27a9",
+      "bytes": 5012
+    },
+    {
+      "file": "math-logic.jsonl",
+      "records": 10,
+      "sha256": "3409cd1445ec1fe37df2f6f549894b0972fee09ca178ac13bbd94559bd2a9b90",
+      "bytes": 4516
+    },
+    {
+      "file": "minuman.jsonl",
+      "records": 20,
+      "sha256": "a5efea573bf593e263e5cbd0bc203903f2c39e3bb82894f5c1147ee7734bffc1",
+      "bytes": 11852
+    },
+    {
+      "file": "mobile-android-q-a.jsonl",
+      "records": 10,
+      "sha256": "74d75f78071460b478bf09206ff1eea05cf8b86c3a056859e93f008ddfd6e5b8",
+      "bytes": 5136
+    },
+    {
+      "file": "mobile-android.jsonl",
+      "records": 10,
+      "sha256": "fb9c84eb03979f91d9fb54e6743f0377a381c6e7e6dfc8d5cbf34ea10052a062",
+      "bytes": 4748
+    },
+    {
+      "file": "mode-jawaban-guardrail.jsonl",
+      "records": 4,
+      "sha256": "727904c0808349a7c7b80492937adbb7f3b7b6cc3c8cefc09c34b9d084ee234d",
+      "bytes": 3200
+    },
+    {
+      "file": "mode-jawaban.jsonl",
+      "records": 8,
+      "sha256": "714353e156d028de5fa49ae81d50680e496d02698baaa95f13e9808440484b98",
+      "bytes": 8489
+    },
+    {
+      "file": "monitoring-ai-guardrail.jsonl",
+      "records": 3,
+      "sha256": "fb0e9d0a17a83a3be5ef6488f14779231ab8293d8ec160f5f6d036f4c3de7547",
+      "bytes": 2445
+    },
+    {
+      "file": "monitoring-ai.jsonl",
+      "records": 6,
+      "sha256": "f289d6a58545a4c425859610ada2635737c7d34c6d52bc378f51887e85605570",
+      "bytes": 6529
+    },
+    {
+      "file": "networking-windows-hardware-query-varian.jsonl",
+      "records": 10,
+      "sha256": "f745309e5414228c5c61bb6d786b7d5576e580fc89e923ecf71ac976cceaac45",
+      "bytes": 5934
+    },
+    {
+      "file": "networking-windows-hardware.jsonl",
+      "records": 10,
+      "sha256": "294c892bdd799f72da8a2826e135ddc814d5fb5c8d2a30489739d5de4f321c8b",
+      "bytes": 5729
+    },
+    {
+      "file": "networking.jsonl",
+      "records": 3407,
+      "sha256": "b4c7ab14db79ed3c823c94927243dbd73f339ad958bb2fb81b17e5fb6dac5696",
+      "bytes": 1706046
+    },
+    {
+      "file": "next-js-react-query-variants.jsonl",
+      "records": 10,
+      "sha256": "04e33b399da5ef8136518ece5b0a1e3fd2cef27d454ce6ec9f31fdb0a92cb018",
+      "bytes": 5842
+    },
+    {
+      "file": "next-js-react.jsonl",
+      "records": 10,
+      "sha256": "ca7cdca306452792c6097fe97d04879572faa4a21e47c00e17495f84b2e8ea9d",
+      "bytes": 5442
+    },
+    {
+      "file": "next-js.jsonl",
+      "records": 1,
+      "sha256": "9fdac674f7e0b205dd12ed5a1d6a38f255f3734989026dcafed2d5cf66cdbb6d",
+      "bytes": 601
+    },
+    {
+      "file": "node-backend-api-query-variants.jsonl",
+      "records": 10,
+      "sha256": "68735708c5989382fafbafa6d5189aa7077940e20c47df556a86cf802738cfb6",
+      "bytes": 5548
+    },
+    {
+      "file": "node-backend-api.jsonl",
+      "records": 10,
+      "sha256": "b7584e7346763136b80c1ba63e31b99c571993e173d872a699075afac4edc57d",
+      "bytes": 5323
+    },
+    {
+      "file": "nusamind-product-knowledge.jsonl",
+      "records": 40,
+      "sha256": "fa38fd67e8c13bd6e4adf658f818f6853a7b6d04b54c73f95315fed403ec1253",
+      "bytes": 41943
+    },
+    {
+      "file": "nusantara-ai-project-knowledge.jsonl",
+      "records": 5,
+      "sha256": "82c4f81131f9ec7d8c19885070a1c708677dd1a93200f83913bb35ce42e6e9ab",
+      "bytes": 2156
+    },
+    {
+      "file": "office-productivity-q-a.jsonl",
+      "records": 10,
+      "sha256": "0de43f4a9cec51fbea361c68d73196b1c90155249d3f9653eae08fe5c463f719",
+      "bytes": 5298
+    },
+    {
+      "file": "office-productivity.jsonl",
+      "records": 10,
+      "sha256": "defb9ebede650a76b47740c60b928f5f70867822feb841d6c627903b37ce581c",
+      "bytes": 4909
+    },
+    {
+      "file": "pemahaman-bahasa-user.jsonl",
+      "records": 40,
+      "sha256": "9c5f64abe589de1bbae40c33f04ed6fbf57842ccedc4a39f3218679486cc773a",
+      "bytes": 40583
+    },
+    {
+      "file": "pengetahuan-umum-guardrail.jsonl",
+      "records": 4,
+      "sha256": "789b1df3dabece352de2be8cdbbcb3e3e29b2c215714764bb7e9b42dfc91f80f",
+      "bytes": 3357
+    },
+    {
+      "file": "pengetahuan-umum.jsonl",
+      "records": 17,
+      "sha256": "1f80751bf75a856487edcd58989ca6848da118ee1cf9d621d400a29f0c16498d",
+      "bytes": 15619
+    },
+    {
+      "file": "percakapan-dasar-guardrail.jsonl",
+      "records": 4,
+      "sha256": "8c95089c787c9159bebebc972d59a4ff0fd159981e23dacd304ca30223da0c15",
+      "bytes": 3317
+    },
+    {
+      "file": "percakapan-dasar.jsonl",
+      "records": 8,
+      "sha256": "534dd798f4cf3bfd1966067a0f1b5289a81ff051bc1cbe68b70153434089e1c0",
+      "bytes": 8517
+    },
+    {
+      "file": "php-laragon-query-variants.jsonl",
+      "records": 10,
+      "sha256": "270a497daa40a9a2d225b3b2bb5a92fbea7ff1c4dc6009f9988367db9edf4740",
+      "bytes": 5566
+    },
+    {
+      "file": "php-laragon.jsonl",
+      "records": 10,
+      "sha256": "3503dccea52447084bfdbb66ea4f6f2275b1a046fc64d439ee8e804a6981efe9",
+      "bytes": 5140
+    },
+    {
+      "file": "phrasing-expansion---tech.jsonl",
+      "records": 3617,
+      "sha256": "55c593d0b35c54feed89d3e3568fb36a6396df62d70a709e4ee93b8fa52f7ae4",
+      "bytes": 2068860
+    },
+    {
+      "file": "production-architecture.jsonl",
+      "records": 3302,
+      "sha256": "5381a33ec65fe752ed0cd7279dc241e4340c51296e186a5daebafcd277fa7fd7",
+      "bytes": 1781914
+    },
+    {
+      "file": "programming-languages.jsonl",
+      "records": 2,
+      "sha256": "e9e91eeaeb2544865ba7246f71cbea5648db6d1b883cb4f009719c55ec0f7a96",
+      "bytes": 2129
+    },
+    {
+      "file": "quran-mode-language-variants.jsonl",
+      "records": 2676,
+      "sha256": "bf542e1c6156128b05ebc8ed40b2b9cefd940037a5007948b676c97981a2dc21",
+      "bytes": 1406072
+    },
+    {
+      "file": "quran-safety.jsonl",
+      "records": 1,
+      "sha256": "378c583ae2f326ff524ec4d22f6d61e9795697a131b79ec7ad8bd6457e2418b7",
+      "bytes": 693
+    },
+    {
+      "file": "react-next-js-production.jsonl",
+      "records": 30,
+      "sha256": "9ed11db2dcea87ab8a425dc8db4fa9248169b2f4989449159fe6d76403672b53",
+      "bytes": 26376
+    },
+    {
+      "file": "safety---accuracy.jsonl",
+      "records": 1,
+      "sha256": "0dd427c47d29fd822623667c7cf1a0d2b2bcdf12bd0a7ec0724ae57ffffe9ed4",
+      "bytes": 538
+    },
+    {
+      "file": "safety-general.jsonl",
+      "records": 3,
+      "sha256": "08c833bca100a0899fc93b1af0783f762b10c75b0cb4b34ee8d3475e2f656f2c",
+      "bytes": 1122
+    },
+    {
+      "file": "sains-dasar-dan-terapan.jsonl",
+      "records": 40,
+      "sha256": "2331d09d42b86490397594bb0d52a37188e371952db5fecbc90fc8fc60a7ab7f",
+      "bytes": 40543
+    },
+    {
+      "file": "secure-coding.jsonl",
+      "records": 1,
+      "sha256": "bc42a131f71035e61f33a50ae5faf2b7e2edb1be3abb6e8cefb9b9270969ddb8",
+      "bytes": 665
+    },
+    {
+      "file": "sejarah.jsonl",
+      "records": 16,
+      "sha256": "3c89b715ebc60fee7535b64688e0b283cc230873a9562e6092818bce95356b16",
+      "bytes": 9575
+    },
+    {
+      "file": "sumber-data-guardrail.jsonl",
+      "records": 2,
+      "sha256": "0414476d9ddf62815a5130228587f0cc6c953ad124771291bb1ec630e21e4681",
+      "bytes": 1585
+    },
+    {
+      "file": "sumber-data.jsonl",
+      "records": 4,
+      "sha256": "8beef013cb08bec454e6bb7c6248b3f85ca569588ba3b3dfa0fcdb46dd416e57",
+      "bytes": 4304
+    },
+    {
+      "file": "teknologi-guardrail.jsonl",
+      "records": 5,
+      "sha256": "78c091ab790915c68b69d3746db40e79708c845a3f9c205c72d8977e43c478e3",
+      "bytes": 4076
+    },
+    {
+      "file": "teknologi.jsonl",
+      "records": 10,
+      "sha256": "0b4fb7fbcc9392ed60690b6c8fcdf563d348330c3bcc6b29c92f9dd39ae44c8e",
+      "bytes": 10595
+    },
+    {
+      "file": "telekomunikasi-dan-jaringan.jsonl",
+      "records": 40,
+      "sha256": "5c6ce94b4ddbcefa94755ad6c05e623fb9915449b8354de9ecd187f29be6eedb",
+      "bytes": 42023
+    },
+    {
+      "file": "tempat-hiburan---lifestyle.jsonl",
+      "records": 22,
+      "sha256": "d701d05af3b66e9e89c6ca8428957e2539b1e19d7e5cc80a4aaa267ff1313605",
+      "bytes": 13456
+    },
+    {
+      "file": "trend-viral---current-snapshot.jsonl",
+      "records": 6,
+      "sha256": "0040479ab0d13f4633ca7c3a98cfef01e665d88d731562a2f7d38b1399121d56",
+      "bytes": 3472
+    },
+    {
+      "file": "tumbuhan---gardening.jsonl",
+      "records": 17,
+      "sha256": "831574cf56bdf65ec90d35dd8e49b7fa0ecc30960a418444322e16d17db411fb",
+      "bytes": 9942
+    },
+    {
+      "file": "universal-mode-language-variants.jsonl",
+      "records": 2676,
+      "sha256": "fa0647141918d26cdf9b870d0a6bfbb5e6a07d6f1179063c0fbe8bf7867fc587",
+      "bytes": 1442405
+    },
+    {
+      "file": "v13-10-agama-guarded-knowledge.jsonl",
+      "records": 180,
+      "sha256": "be91f413d92685b565aa20f9e4169d20535aff7154351e0f0c2cdb76cec493d5",
+      "bytes": 89012
+    },
+    {
+      "file": "v13-10-agama-safe-context.jsonl",
+      "records": 3226,
+      "sha256": "9fab0f018019d9caa0d1cd3facae8f2ce98f154e270a6c993a9f38bfa15ba6fe",
+      "bytes": 1641598
+    },
+    {
+      "file": "v13-10-integrasi-cross-domain.jsonl",
+      "records": 100,
+      "sha256": "563f847e6e8ffac968279fb717d0c514cf276eb46ff9a6b7a385f76ca3f471b6",
+      "bytes": 52595
+    },
+    {
+      "file": "v13-10-integrated-safety-routing.jsonl",
+      "records": 3086,
+      "sha256": "0847c955b21cd6e2c76fbe42d824e15279311445b5139caf244535128c8a9363",
+      "bytes": 1617133
+    },
+    {
+      "file": "v13-10-knowledge-system-governance.jsonl",
+      "records": 100,
+      "sha256": "56dd8d52f9d7ea17e264c8da650c9fb371e0ebb4579e5cfbcb1a825015b4452a",
+      "bytes": 51717
+    },
+    {
+      "file": "v13-10-machine-learning-deep-pipeline.jsonl",
+      "records": 3306,
+      "sha256": "57da0f294f93e7b8c106787f4dbcd4fcc0749c1d34145841abae5e74c6f1766b",
+      "bytes": 1806744
+    },
+    {
+      "file": "v13-10-machine-learning-system.jsonl",
+      "records": 248,
+      "sha256": "28caa2d2fce3f75ec30231c7cccaac73d7025ecd2eed53a6b08d8d3d1e517b19",
+      "bytes": 134310
+    },
+    {
+      "file": "v13-10-makanan-minuman-lifestyle.jsonl",
+      "records": 180,
+      "sha256": "574079d389c6f5fd8830ebadf7bc852ed2c946d44d23e46366867d32797f6f36",
+      "bytes": 96312
+    },
+    {
+      "file": "v13-10-makanan-minuman-safe-lifestyle.jsonl",
+      "records": 3026,
+      "sha256": "7bda33d93303cc37d430cdd263668595a5fa2e811f08b7ec8f3c0d8dfd09be1e",
+      "bytes": 1617405
+    },
+    {
+      "file": "v13-10-ml-agama-politik-uud-evaluation-r.jsonl",
+      "records": 2336,
+      "sha256": "91465fd047b59a4163b86668769f1c6b617a15c4b30e4ba6a497ca0d8149e1da",
+      "bytes": 1206893
+    },
+    {
+      "file": "v13-10-pemrograman-advanced-reliability.jsonl",
+      "records": 3326,
+      "sha256": "1ba7d91fc5f365eec26802533c0e7b81877960e6d1448db6ee847e51af7b3ee6",
+      "bytes": 1861076
+    },
+    {
+      "file": "v13-10-pemrograman-advanced-safe-code.jsonl",
+      "records": 200,
+      "sha256": "b2a958b6cc7ee9f381eefcf4ec37f7d8776313f0954dc701949f1a3e96fbb285",
+      "bytes": 106356
+    },
+    {
+      "file": "v13-10-politik-netral-demokrasi.jsonl",
+      "records": 3066,
+      "sha256": "25da7dd3e9badce4378f74dd655e437c2aef5bc2a290c6a8a263049697b51834",
+      "bytes": 1582876
+    },
+    {
+      "file": "v13-10-politik-netral-fact-check.jsonl",
+      "records": 160,
+      "sha256": "29f357202f20fdb1cff0b948e0ec471b8792c524164c8147da77478a077a2ea6",
+      "bytes": 83124
+    },
+    {
+      "file": "v13-10-scenario-policy-answer-alignment.jsonl",
+      "records": 3266,
+      "sha256": "166b32fa5549831308b731534fc7ac3d0f99dab8c881216853ee7e3a50431137",
+      "bytes": 1795709
+    },
+    {
+      "file": "v13-10-uu-uud-legal-literacy.jsonl",
+      "records": 3246,
+      "sha256": "8ffdf194fb670550f31ee23865d61506b1df5ea9913a16e204f0e88bbc60688c",
+      "bytes": 1645984
+    },
+    {
+      "file": "v13-11-bahasa-interaksi-natural.jsonl",
+      "records": 3841,
+      "sha256": "25a4537d99ae04ba5f570405362dbc02acbb7a8b054ada415433140f70feed87",
+      "bytes": 2331070
+    },
+    {
+      "file": "v13-11-integrasi-math-bahasa-trend.jsonl",
+      "records": 3081,
+      "sha256": "9e8de9a20f22c31f7049b9aed46a896cdc73cc1068fef4645ef5e83a4650ccb6",
+      "bytes": 1685111
+    },
+    {
+      "file": "v13-11-matematika-deep-reasoning.jsonl",
+      "records": 3957,
+      "sha256": "3bc6c911925feb3e0ee040bb607cd7ed6eee617ceb529f38506449f963ccb768",
+      "bytes": 2468227
+    },
+    {
+      "file": "v13-11-math-language-trend-evaluation-ru.jsonl",
+      "records": 3600,
+      "sha256": "66c8e244a4aafb2a1e1613f60f32c05d8d2e06c5e0ac5b4e2f29470a529aa46f",
+      "bytes": 2139433
+    },
+    {
+      "file": "v13-11-scenario-math-language-trend-alig.jsonl",
+      "records": 3406,
+      "sha256": "48521d60cd3469205ad01b724196ea1e41c7ee3100c55f00efcb8033a585e0fc",
+      "bytes": 2013855
+    },
+    {
+      "file": "v13-11-tren-viral-safe-reasoning.jsonl",
+      "records": 3721,
+      "sha256": "9e18f6ae967ae4951e0bc7a8351226e610057163af28912b7f9bf8cf4121d550",
+      "bytes": 2248814
+    },
+    {
+      "file": "v13-14-analisis-coding---architecture-re.jsonl",
+      "records": 1400,
+      "sha256": "cf4879a50244f44344c6f739de2f23e2b4d2e6b549dac52a3c2370241a4f60e8",
+      "bytes": 1330573
+    },
+    {
+      "file": "v13-14-analisis-coding.jsonl",
+      "records": 100,
+      "sha256": "140fef38f05e95c9a17f5c06ca6a3a799897435f524de685320f02984fc6819c",
+      "bytes": 67511
+    },
+    {
+      "file": "v13-14-bahasa-user-multi-bahasa.jsonl",
+      "records": 1400,
+      "sha256": "b6aab8c3c5c3f9c3c060465e8a83682915c261c6b26fbaebae0ef35f7bc6f36b",
+      "bytes": 1246853
+    },
+    {
+      "file": "v13-14-bahasa-user.jsonl",
+      "records": 40,
+      "sha256": "61303fce5b21de5f6116193a7bf96501694083c686e4a517096b366e64e7801a",
+      "bytes": 27062
+    },
+    {
+      "file": "v13-14-critical-thinking-dan-kritik.jsonl",
+      "records": 200,
+      "sha256": "1e86590b95986f2f368bf4c60418eb664aa2dc3e1e3739b3e396000da7f5bf89",
+      "bytes": 146822
+    },
+    {
+      "file": "v13-14-debugging---bug-hunting-aman.jsonl",
+      "records": 1400,
+      "sha256": "285b5e3a616985cbb7e20fe04c3f4bdc51245c65bb7f6a4e636800e2e80780bc",
+      "bytes": 1282693
+    },
+    {
+      "file": "v13-14-debugging.jsonl",
+      "records": 100,
+      "sha256": "52ec4127e0465b907bc4c6afbc4f1e59b1bbe1f9c6952883c1aee3ee9a8dd903",
+      "bytes": 66807
+    },
+    {
+      "file": "v13-14-dunia-kerja---kompetensi.jsonl",
+      "records": 1400,
+      "sha256": "f55164877314a49e100a077791ebde9dfad4bc4fadf8f66fc40ea04fa9d4a41e",
+      "bytes": 1249233
+    },
+    {
+      "file": "v13-14-dunia-kerja.jsonl",
+      "records": 160,
+      "sha256": "c96229aacb7d850dcb804d7bab51256f10d36eb6337fc9779e61c062adefa379",
+      "bytes": 110688
+    },
+    {
+      "file": "v13-14-fisika-kimia-sains-terapan.jsonl",
+      "records": 1400,
+      "sha256": "b34acee0c7b6daa593000577f9d943164b254643b23785325441f09a5fad20a2",
+      "bytes": 1257493
+    },
+    {
+      "file": "v13-14-fisika.jsonl",
+      "records": 100,
+      "sha256": "177754658f8a382a8db0e3b1c66bda7a5d3492d8aea1303fc106e51ec0a86c1d",
+      "bytes": 66011
+    },
+    {
+      "file": "v13-14-integrasi.jsonl",
+      "records": 100,
+      "sha256": "13690df0d048a9b59402232c442695478c6cc886a07adf328d965e31695af166",
+      "bytes": 67547
+    },
+    {
+      "file": "v13-14-it-dan-komputer.jsonl",
+      "records": 60,
+      "sha256": "ae5c007c8b21f07c2b823a2adba2a99267a95f4e4d1e3cf77020e99fffa9dac0",
+      "bytes": 42333
+    },
+    {
+      "file": "v13-14-it-jaringan-komputer.jsonl",
+      "records": 1400,
+      "sha256": "156e847b99924f4c9022efa84a440e934826a4da40b356c763cf368ee816377e",
+      "bytes": 1225993
+    },
+    {
+      "file": "v13-14-jaringan-komputer.jsonl",
+      "records": 100,
+      "sha256": "bae7fbe3f551042957dc43ad5d62da697cd474fbbb6c8a1e4e7a9e3a5a718150",
+      "bytes": 69899
+    },
+    {
+      "file": "v13-14-kimia.jsonl",
+      "records": 80,
+      "sha256": "06b0a64fea027160a43064042d7ab46653757938fbc4d7e12b90506b66e1de7e",
+      "bytes": 51624
+    },
+    {
+      "file": "v13-14-kritik-kerja-it-debugging-sains-b.jsonl",
+      "records": 1200,
+      "sha256": "6b76e6aab5beb4339584e744553a31ac6e071233af42ae0d3f1ac5ecc53f3698",
+      "bytes": 801693
+    },
+    {
+      "file": "v13-14-kritik-konstruktif---critical-thi.jsonl",
+      "records": 1400,
+      "sha256": "dc0155f113e0662748d01904b71f1e4f3b5d623d4e0655c6cd5c36b860f941a7",
+      "bytes": 1331273
+    },
+    {
+      "file": "v13-14-multi-bahasa.jsonl",
+      "records": 40,
+      "sha256": "443c9fe2bb2335727205d183538554e050a2106f0dcce20758790c406faff477",
+      "bytes": 28042
+    },
+    {
+      "file": "v13-14-perkuliahan---akademik.jsonl",
+      "records": 1400,
+      "sha256": "411920a760ae59a409ecb173f674964d033e91ce566a4b171f87cafd61d686fe",
+      "bytes": 1231453
+    },
+    {
+      "file": "v13-14-perkuliahan.jsonl",
+      "records": 100,
+      "sha256": "bd5ef59e9183072767aaca0230b246ece48b5356b62933191b5f55c46642ab14",
+      "bytes": 67027
+    },
+    {
+      "file": "v13-14-safety-dan-etika-interaksi.jsonl",
+      "records": 100,
+      "sha256": "f3df631665a575c6cce76a76c4ede42271f8199df24c208e1bc8d2dec7df8715",
+      "bytes": 70315
+    },
+    {
+      "file": "v13-14-safety-etika-interaksi.jsonl",
+      "records": 1400,
+      "sha256": "11c06eb7d49a39502007acb7550651a9381c8331c9cba911507fd469d218bcdd",
+      "bytes": 1234533
+    },
+    {
+      "file": "v13-14-scenario-safe-critique-work-codin.jsonl",
+      "records": 9600,
+      "sha256": "ad08b44fca4c3cb1369306de2a29be0bc7d9836e75618b9bf6570f99a3894a46",
+      "bytes": 6966300
+    },
+    {
+      "file": "v13-14-teman-akrab-roasting-aman.jsonl",
+      "records": 1400,
+      "sha256": "07ab884330041e2238a9da35570ff48342a4879924174c15b83f2f583e07450f",
+      "bytes": 1263933
+    },
+    {
+      "file": "v13-14-teman-akrab-user.jsonl",
+      "records": 60,
+      "sha256": "9fca7553939c5d25a478636809309647bac9d5a2575efee5847e7de5352acf29",
+      "bytes": 41081
+    },
+    {
+      "file": "v13-15-agriculture-forestry-sustainabili.jsonl",
+      "records": 900,
+      "sha256": "424f8137887d277ea915857d3352b257022e863370a477bd95fea866c35541a4",
+      "bytes": 534942
+    },
+    {
+      "file": "v13-15-bisnis-dan-akuntansi-playbooks.jsonl",
+      "records": 9,
+      "sha256": "e6c808a36da780ea14daaa6562d80a2bea77c9be37caa12286e758a571c46760",
+      "bytes": 4194
+    },
+    {
+      "file": "v13-15-bisnis-dan-akuntansi.jsonl",
+      "records": 30,
+      "sha256": "46c8c1279dd43161e1444415e5d920c4a8d8a82bdc9735aef9a5db48541d4b7a",
+      "bytes": 19023
+    },
+    {
+      "file": "v13-15-blockchain-playbooks.jsonl",
+      "records": 9,
+      "sha256": "1283be29d7de969976aa7cac7bc53ac04cd97d718758ce89f7db1dbe07d564b3",
+      "bytes": 3981
+    },
+    {
+      "file": "v13-15-blockchain.jsonl",
+      "records": 30,
+      "sha256": "7acd6ee8d1d46c4b8372c27fef1130d193819601826e2396270d62e67a7f9039",
+      "bytes": 17603
+    },
+    {
+      "file": "v13-15-critical-thinking-playbooks.jsonl",
+      "records": 12,
+      "sha256": "55d5caa5d5e9bdbadda8bc572e2143b4a4de1a2cc1a14753eddb8be1cf71c2ce",
+      "bytes": 5532
+    },
+    {
+      "file": "v13-15-critical-thinking.jsonl",
+      "records": 40,
+      "sha256": "4785c470f34a15564c6928c87ff02ef7f93bf0015936289e72657a43c765bf68",
+      "bytes": 24154
+    },
+    {
+      "file": "v13-15-film--anime--donghua--animasi-pla.jsonl",
+      "records": 9,
+      "sha256": "a8875c7ac39b1e4ccaaa135648ac87cd1014d32e433543837b4b4cb544536dda",
+      "bytes": 4377
+    },
+    {
+      "file": "v13-15-film--anime--donghua--animasi.jsonl",
+      "records": 30,
+      "sha256": "f3ac28b165dc527242d8d6253d63af1956a88da77c1a1f64b75b1d265b6884ad",
+      "bytes": 20203
+    },
+    {
+      "file": "v13-15-film-anime-donghua-animation.jsonl",
+      "records": 900,
+      "sha256": "e9a5d0d94ae11e7278590c15399e85d9aa4e8602c41d769a6f1392e5fea8c74e",
+      "bytes": 520857
+    },
+    {
+      "file": "v13-15-gundam---pop-culture-knowledge.jsonl",
+      "records": 1800,
+      "sha256": "534b1d7941cf577c11f57e504359ae18e5d40dcf0247f82c40ad75f46840b119",
+      "bytes": 1053458
+    },
+    {
+      "file": "v13-15-gundam-playbooks.jsonl",
+      "records": 12,
+      "sha256": "dba1036fd316f58b8525a44af784b95657989e490446739fbc13dc37118350de",
+      "bytes": 5586
+    },
+    {
+      "file": "v13-15-gundam.jsonl",
+      "records": 40,
+      "sha256": "c6b1cd8f23cf7723bcd4bd8c27ec66369f5777ca3939af2f6401791bd4e2620a",
+      "bytes": 24234
+    },
+    {
+      "file": "v13-15-hukum-playbooks.jsonl",
+      "records": 9,
+      "sha256": "e15db92ab82761b45c720c6d1069d41dd0619f1887ab2e236a38e163e7bbb29f",
+      "bytes": 4026
+    },
+    {
+      "file": "v13-15-hukum.jsonl",
+      "records": 30,
+      "sha256": "414286a22aef15bc93d460102c0d9d6a7399489d2aa5a16623d2c33e1f7502fb",
+      "bytes": 17593
+    },
+    {
+      "file": "v13-15-iot-finance-cyber-integrated.jsonl",
+      "records": 2850,
+      "sha256": "46d042702c6182fb7dc8b391a7f8fefa876e45af263130634f5b3d1d526bf5a6",
+      "bytes": 1495293
+    },
+    {
+      "file": "v13-15-iot-playbooks.jsonl",
+      "records": 12,
+      "sha256": "4ef6881c679e8ca0319f168e7772d1e77b908cb76dcb9f7d04c22f2ffb412e5c",
+      "bytes": 5325
+    },
+    {
+      "file": "v13-15-iot.jsonl",
+      "records": 40,
+      "sha256": "7f18020665b4d9b0a8f0ee9e74f1cc76ee32af7fc5ca10df46b714c91f068d76",
+      "bytes": 22354
+    },
+    {
+      "file": "v13-15-keamanan-data-dan-cybersecurity-p.jsonl",
+      "records": 12,
+      "sha256": "ee5cdb3b0a65c54f2e27c979834002b14b223fd868d89696d37f29e7f6d35462",
+      "bytes": 5949
+    },
+    {
+      "file": "v13-15-keamanan-data-dan-cybersecurity.jsonl",
+      "records": 40,
+      "sha256": "65ddb50a2a403cb50d1a7d14f8ff6dbf46fb6b9193cbd4daefb3c41d869fc163",
+      "bytes": 27604
+    },
+    {
+      "file": "v13-15-kehutanan-playbooks.jsonl",
+      "records": 6,
+      "sha256": "59d716924f93f2beaddbdf6d310d1340b496ca8fff85865fe877462495a25860",
+      "bytes": 2688
+    },
+    {
+      "file": "v13-15-kehutanan.jsonl",
+      "records": 20,
+      "sha256": "5fd124215592b672adc0b525b3aa166266031532ef11969cc310e12dc7331bc0",
+      "bytes": 12222
+    },
+    {
+      "file": "v13-15-keuangan-playbooks.jsonl",
+      "records": 6,
+      "sha256": "3b79ea03ba6b5356e3063fb35045281e500769e636127e8861651dcf9b27615d",
+      "bytes": 2763
+    },
+    {
+      "file": "v13-15-keuangan.jsonl",
+      "records": 20,
+      "sha256": "6d3a919cf3113f8133148723b4baae8c6771908ed4ef27fc634e1724d148b7b5",
+      "bytes": 12822
+    },
+    {
+      "file": "v13-15-kualifikasi-dunia-kerja-playbooks.jsonl",
+      "records": 12,
+      "sha256": "7965fe8d6a34c3322baeffe3cbd564cf09dfe9ebd48a019b92bce56c6046481f",
+      "bytes": 5793
+    },
+    {
+      "file": "v13-15-kualifikasi-dunia-kerja.jsonl",
+      "records": 40,
+      "sha256": "5ecaa5b2d7b3e4d262374b28251456c8c10eff8d2f255eeb5455c6388485a5e8",
+      "bytes": 25474
+    },
+    {
+      "file": "v13-15-law-business-accounting-finance.jsonl",
+      "records": 1400,
+      "sha256": "8b33b7910e1e8bf7ba4f27e415cc9cffb39a86a21010595bdd41d863725b43a9",
+      "bytes": 820693
+    },
+    {
+      "file": "v13-15-machine-learning-playbooks.jsonl",
+      "records": 15,
+      "sha256": "219cf3dcd35718dab25daad3f7c8b2d9d9e2bdea740c2c9fdc65f4097d265244",
+      "bytes": 6939
+    },
+    {
+      "file": "v13-15-machine-learning.jsonl",
+      "records": 50,
+      "sha256": "104a311608bba3d709059bd2de4a447540b69525ee472cf60b11486282180b09",
+      "bytes": 30495
+    },
+    {
+      "file": "v13-15-matematika-playbooks.jsonl",
+      "records": 9,
+      "sha256": "82cc6b381816a1e968d9ea0e5346f61a8909be6c8577859afcfe89b489f8a775",
+      "bytes": 4017
+    },
+    {
+      "file": "v13-15-matematika.jsonl",
+      "records": 30,
+      "sha256": "415c25b6b76059d052be2f703faf54045be416d9edd589a7837b69f032825700",
+      "bytes": 17523
+    },
+    {
+      "file": "v13-15-ml-practical---feedback-learning.jsonl",
+      "records": 2650,
+      "sha256": "0bdd6244fa6554950b3b05f6e17136bee7f0a41010a2070151be8bd048d1ddde",
+      "bytes": 1416645
+    },
+    {
+      "file": "v13-15-pemrograman-playbooks.jsonl",
+      "records": 15,
+      "sha256": "411a1a770086956cd68a9c47b221324757b761b8ec53ffedafa2d3737a9880d1",
+      "bytes": 6885
+    },
+    {
+      "file": "v13-15-pemrograman.jsonl",
+      "records": 50,
+      "sha256": "8e74577c00a70c733db82c21735a339d98279236a425d54a7aac874d3db344ab",
+      "bytes": 30075
+    },
+    {
+      "file": "v13-15-pertanian-playbooks.jsonl",
+      "records": 6,
+      "sha256": "0b5b5cf02f1d0a12e6812ce3fb75ed730517673c4af6136c89f865f6ea99e4df",
+      "bytes": 2661
+    },
+    {
+      "file": "v13-15-pertanian.jsonl",
+      "records": 20,
+      "sha256": "bdc5637583c56453114618857363672a72970a3d88aec6e7cc614d725e177849",
+      "bytes": 12092
+    },
+    {
+      "file": "v13-15-prompting---friendly-interaction.jsonl",
+      "records": 1000,
+      "sha256": "5c9737c54e0356f2098b3d81c595a52d839a06a33330bbf0d1a689d706cb2d9a",
+      "bytes": 587583
+    },
+    {
+      "file": "v13-15-prompting-ai-playbooks.jsonl",
+      "records": 6,
+      "sha256": "d65a0a33dad049fced32a1cdb62c11e8d4bed263498466cc739d6c04457c848b",
+      "bytes": 2796
+    },
+    {
+      "file": "v13-15-prompting-ai.jsonl",
+      "records": 20,
+      "sha256": "d112ed01a1666041b8965080d7ac34e0c647fd7ce9d7218cebb3565235100dc7",
+      "bytes": 12502
+    },
+    {
+      "file": "v13-15-rumus-word-dan-excel-playbooks.jsonl",
+      "records": 12,
+      "sha256": "77c703c5c2ddf108b9dd4788ac683bfde9ba0e007d75bb3071919060c5ab5dbf",
+      "bytes": 5619
+    },
+    {
+      "file": "v13-15-rumus-word-dan-excel.jsonl",
+      "records": 40,
+      "sha256": "00b3403f24fa4bb4c7cfc9ebdd7ebf2c51f7715a0dd16319f9fd0936b4b8ca2e",
+      "bytes": 26214
+    },
+    {
+      "file": "v13-15-scenario-gundam-ml-iot-finance-cy.jsonl",
+      "records": 2617,
+      "sha256": "ab1d2eb8496f9da6a26e0962349b1c71d8cca79751d569caab5ee5a5498fc065",
+      "bytes": 1137365
+    },
+    {
+      "file": "v13-15-scenario-support-solution-alignme.jsonl",
+      "records": 2617,
+      "sha256": "538b85fa49308a7123051365deeaddff8d1ae13180d479f6ea020de363ba7e5b",
+      "bytes": 1094602
+    },
+    {
+      "file": "v13-15-scenario-work-productivity-coding.jsonl",
+      "records": 2616,
+      "sha256": "5301ebc847ec3b83d462d08f394e221bba64813d89150167961572b78c81ec30",
+      "bytes": 1109246
+    },
+    {
+      "file": "v13-15-solusi-curhat---coaching.jsonl",
+      "records": 3300,
+      "sha256": "aa56fa4166fb0064cfeef47fa166b3ed2be572b7f494ea309020407cc6db3de6",
+      "bytes": 1586727
+    },
+    {
+      "file": "v13-15-telekomunikasi-playbooks.jsonl",
+      "records": 9,
+      "sha256": "ae563991606e8578ec81bc9e6790f000d4afe4e2d2d4f8c1a804bdfd09087b24",
+      "bytes": 4080
+    },
+    {
+      "file": "v13-15-telekomunikasi.jsonl",
+      "records": 30,
+      "sha256": "e3d51c03e9229e804e1e82021cec487de4f0c243a71a807715efb647a7c72c88",
+      "bytes": 18333
+    },
+    {
+      "file": "v13-15-teman-akrab-playbooks.jsonl",
+      "records": 3,
+      "sha256": "22f842e425c92089850795fe438e02575a725b95570f0ec75e3d6fb7cf2cf853",
+      "bytes": 1380
+    },
+    {
+      "file": "v13-15-teman-akrab.jsonl",
+      "records": 10,
+      "sha256": "e98895554f270cc7efb3a622d3dc520ab16ac6aa33d234f8d5e6c5aa9dd6bbc4",
+      "bytes": 6211
+    },
+    {
+      "file": "v13-15-teman-curhat-dan-solusi-playbooks.jsonl",
+      "records": 15,
+      "sha256": "83ddbac5b08c31a07983422ccf4f465c45e0e26baaf145bd4731026f4991a2d9",
+      "bytes": 7239
+    },
+    {
+      "file": "v13-15-teman-curhat-dan-solusi.jsonl",
+      "records": 50,
+      "sha256": "86e991ba14652c69e13e34b5975e91a48bb6204d24fb97b48a60846d565d502d",
+      "bytes": 32295
+    },
+    {
+      "file": "v13-15-word-excel-formula-productivity.jsonl",
+      "records": 1200,
+      "sha256": "821d5d58aa717da4af84e9aa44a7b6074155ef30362882156fc4d7ab95dcadbe",
+      "bytes": 685593
+    },
+    {
+      "file": "v13-15-work-it-career-readiness.jsonl",
+      "records": 1800,
+      "sha256": "4552398bd70efd2f33757c2eca6e65acd4cdcb0a5f2a9db4f9e4857d167b82a8",
+      "bytes": 976293
+    },
+    {
+      "file": "v13-16-aksesibilitas-advanced.jsonl",
+      "records": 24,
+      "sha256": "bb928ca3e0bf3ad83bfc83136ff9dd4aa0f9e51604bef6a5d822decc93caf938",
+      "bytes": 16974
+    },
+    {
+      "file": "v13-16-akuntansi---analitik-bisnis.jsonl",
+      "records": 474,
+      "sha256": "2977e1cece6e0cd5c5e1508fb91aa7ca6d3a20b1a96dd35cf199308b06247fad",
+      "bytes": 159294
+    },
+    {
+      "file": "v13-16-artificial-intelligence-advanced.jsonl",
+      "records": 60,
+      "sha256": "99ecf98b5bc49bde5ac7c32af523df517d875109067039a81b5fa448eb54143f",
+      "bytes": 45939
+    },
+    {
+      "file": "v13-16-command-penting-advanced.jsonl",
+      "records": 84,
+      "sha256": "f7037c03a991c0d4468be76c1d6498403bf866819da3395724cf244119fed7a4",
+      "bytes": 62229
+    },
+    {
+      "file": "v13-16-cyber-security-advanced.jsonl",
+      "records": 24,
+      "sha256": "4a15fc27610788522961c916407bcd3d218b79f54b6daffd88af4e6e894fe0e7",
+      "bytes": 17178
+    },
+    {
+      "file": "v13-16-dkv-advanced.jsonl",
+      "records": 24,
+      "sha256": "d7a038e3b80f48b1b698ccf76c8b0e6407d075b920dffdd52da24b1110d773b6",
+      "bytes": 17370
+    },
+    {
+      "file": "v13-16-fikih-ibadah-muamalah.jsonl",
+      "records": 948,
+      "sha256": "6e9a6a57978c07e3e8760d17fb2c2c478a733ab1f935eb2db80374c577f9de75",
+      "bytes": 304974
+    },
+    {
+      "file": "v13-16-hadits---ulumul-hadits.jsonl",
+      "records": 936,
+      "sha256": "d31aa0dc264d464e594e09f8ab19c78cb8fb18eac6f157f9518ec5106849b42e",
+      "bytes": 297975
+    },
+    {
+      "file": "v13-16-human-resource---talent-growth.jsonl",
+      "records": 24,
+      "sha256": "9c41049bc73e19c704118364e5598f46d987a29f726c6a30fdd0ff6bb254d1b0",
+      "bytes": 17526
+    },
+    {
+      "file": "v13-16-ide-konten-advanced.jsonl",
+      "records": 24,
+      "sha256": "b44448c837ced3dad4f130232c7c45f92c82a5c66e2d25ce41efa880698eb046",
+      "bytes": 17370
+    },
+    {
+      "file": "v13-16-informatika-advanced.jsonl",
+      "records": 12,
+      "sha256": "ee2e2a4383aa3eabc1d3adc86be8f241eda1642858817e449b3c4cdedcfc93e8",
+      "bytes": 8715
+    },
+    {
+      "file": "v13-16-ips-advanced.jsonl",
+      "records": 48,
+      "sha256": "87001150fd0d3dbdb167c892453d2648729167d67afb7c10e0355fa47d4840e4",
+      "bytes": 32376
+    },
+    {
+      "file": "v13-16-keamanan-data-advanced.jsonl",
+      "records": 12,
+      "sha256": "5859b0e6bfd2c10fd23930e1f3816dbc000634e415de6a423211b3c481c6617a",
+      "bytes": 8535
+    },
+    {
+      "file": "v13-16-kelola-anggaran-advanced.jsonl",
+      "records": 24,
+      "sha256": "27fa4b9a3e55fd6fc5e17e4291f5d45a9108d020aa8078d54866c64b3c606b0c",
+      "bytes": 17598
+    },
+    {
+      "file": "v13-16-keuangan-personal---risk.jsonl",
+      "records": 924,
+      "sha256": "8b68fa27099112af281bfac314b2315c74c207a4889e380832fa5acbedc49109",
+      "bytes": 291816
+    },
+    {
+      "file": "v13-16-manajemen-operasional---strategi.jsonl",
+      "records": 462,
+      "sha256": "b8f5e445b6081212ee226f7081085cec76483ad07558f75968f5c9a527c76182",
+      "bytes": 155295
+    },
+    {
+      "file": "v13-16-matematika-deep-problem-solving.jsonl",
+      "records": 972,
+      "sha256": "a14cef30b5f3630a858df1490743250cd9243c4af7a87ca475181898ff74d3fc",
+      "bytes": 337788
+    },
+    {
+      "file": "v13-16-pengelolaan-informasi-advanced.jsonl",
+      "records": 24,
+      "sha256": "6e11e62e6e3143e10ec560ad412064a544d6c74e82ac15cb15843e98fbf7227b",
+      "bytes": 18150
+    },
+    {
+      "file": "v13-16-perfilman-advanced.jsonl",
+      "records": 36,
+      "sha256": "204101622b3fcbd89e591ba91eacd6bc4232dfd19cf8db315f5b927fc35c755a",
+      "bytes": 26025
+    },
+    {
+      "file": "v13-16-sistem-informasi-advanced.jsonl",
+      "records": 24,
+      "sha256": "c99d65c781e28a05b67724ef008da70587e60753b8f9e16bb322dedcc64eb0bf",
+      "bytes": 18006
+    },
+    {
+      "file": "v13-16-sumber-daya-alam-advanced.jsonl",
+      "records": 24,
+      "sha256": "e1eea8643cc3cca891ce902598813557eefcaf32f26d479e2138f6d055d4d09b",
+      "bytes": 17850
+    },
+    {
+      "file": "v13-16-telekomunikasi-advanced.jsonl",
+      "records": 48,
+      "sha256": "fe9d72ce2211a719ba0cedea0617ddbec2f0e7fe83811da61d064f47265bf1bf",
+      "bytes": 33348
+    },
+    {
+      "file": "v13-17-adaptive-memory-user-context.jsonl",
+      "records": 540,
+      "sha256": "3676052156caae20d2a1c104ec5cb819ee57931e1adfe158dd7e64581a28da75",
+      "bytes": 211398
+    },
+    {
+      "file": "v13-17-antariksa---space-science.jsonl",
+      "records": 540,
+      "sha256": "cf74b9f311a1dc1a29912635aee9a19e4a4c2d0d235889c8cad9f33a13215280",
+      "bytes": 203193
+    },
+    {
+      "file": "v13-17-bahasa-user-adaptive-understandin.jsonl",
+      "records": 525,
+      "sha256": "360ac38bd2c205247b0cedc9816d27c9c08d3f56ad0b1fb9c1ee1f5f78c470f7",
+      "bytes": 203517
+    },
+    {
+      "file": "v13-17-hadits-fikih-source-safe-reasonin.jsonl",
+      "records": 525,
+      "sha256": "53e6c21151be3a869ef16ba71cdb158cdada0f3c9bf0621ab7bb85a781e49f0a",
+      "bytes": 205392
+    },
+    {
+      "file": "v13-17-logika-matematika-formal-reasonin.jsonl",
+      "records": 570,
+      "sha256": "2639aae12aa8b34b2f4b1ce90248c9fbddd37bd84d2db932b7e27e3283e53387",
+      "bytes": 241395
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---aksesibilitas-.jsonl",
+      "records": 20,
+      "sha256": "cafddfde6b4bad30cdb3611c6be2ddc69ef1f0e3716e788bde3115df5df65278",
+      "bytes": 15851
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---akurasi-jawaba.jsonl",
+      "records": 20,
+      "sha256": "cb2ca00689a33098c6dd01391757081bf52876de33fac1906c68ac486323254c",
+      "bytes": 16311
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---arsitektur-loc.jsonl",
+      "records": 20,
+      "sha256": "ea2c5dcd8fd661e995be167a236339100f687d8778fda357b8cf60553b1de05f",
+      "bytes": 17851
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---bahasa-user.jsonl",
+      "records": 20,
+      "sha256": "a6b04b8084943808346cf378da2f35335cb74a45a44130940896466e9e0136c9",
+      "bytes": 17051
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---command-pentin.jsonl",
+      "records": 20,
+      "sha256": "4c802f390ebbaa7470fceb05809e9676028ee6ebb0354d389944b640a5374616",
+      "bytes": 16711
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---cybersecurity-.jsonl",
+      "records": 20,
+      "sha256": "95981d78ae2271cd948436bd898e59227c0e8442fabf98ff3ae29c6e41e92db9",
+      "bytes": 18751
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---domain-agama.jsonl",
+      "records": 20,
+      "sha256": "df89a2e941bd77c903e51659b411bca5a12089266b271df3cfdf79a820d301ad",
+      "bytes": 17991
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---domain-tambaha.jsonl",
+      "records": 20,
+      "sha256": "f6969ea2809a5cf23646e1fd25129cd9f8935a8357225a02e29d5ff2008ae1af",
+      "bytes": 17611
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---evaluation-sys.jsonl",
+      "records": 20,
+      "sha256": "87aebe09df713c9f7ee1b5934b28783735ddb2ad06bf8d86f90ef6207a644236",
+      "bytes": 15751
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---guardrail-ai.jsonl",
+      "records": 20,
+      "sha256": "cdfa4e644ad72cf11e568999416b6885a45966349d43294b0b43238f1028824d",
+      "bytes": 17991
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---informasi-dan-.jsonl",
+      "records": 20,
+      "sha256": "bd01aa5a79bb69773166e468e702348ff524c82d26f30fb4a6911ee4d4d3cf88",
+      "bytes": 17971
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---keuangan-dan-a.jsonl",
+      "records": 20,
+      "sha256": "149ad0585f3ddfee02a0a76925067f918e41ea824ea23d4864316f123add51ea",
+      "bytes": 17511
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---level-kecerdas.jsonl",
+      "records": 20,
+      "sha256": "12c2fa2d8123224a1c3fd09ee0cf3892be09397f31701308b8ce14d57918ed53",
+      "bytes": 17491
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---logging-dan-mo.jsonl",
+      "records": 20,
+      "sha256": "d1cd9b4c2314d6d68ff0c393cc7093c19cd79a01a1474a819dec70cd806eb948",
+      "bytes": 14531
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---machine-learni.jsonl",
+      "records": 20,
+      "sha256": "ee75e3bce4752b5be36e9764b0c781019cf6729dbad0cb08efeca3c58d328644",
+      "bytes": 17831
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---matematika-dan.jsonl",
+      "records": 20,
+      "sha256": "3c7e21ea51b9c633fbeb11b856fa20f0c63784f470f8a430b92f51d87e4cac04",
+      "bytes": 17511
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---memory-user.jsonl",
+      "records": 20,
+      "sha256": "086cd2a9ab97851b198503099a2730e1b3dee648ad1b0893586348349a566547",
+      "bytes": 17311
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---multimodal-fil.jsonl",
+      "records": 20,
+      "sha256": "d2b72611ea641172cca6f1ed9672e0af03e196af23c2dc8472f051e9c1b1e930",
+      "bytes": 17691
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---programming-da.jsonl",
+      "records": 20,
+      "sha256": "0775ff11c3404ede4518c58a882a65cb698f7f65c51552d66199243f665c81c9",
+      "bytes": 17831
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---prompting-ai.jsonl",
+      "records": 20,
+      "sha256": "d0275ceb8d0a9366c25fba48b3653b676890c73ca5e696c21ff5213e92419bbf",
+      "bytes": 16791
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---rag-dan-knowle.jsonl",
+      "records": 20,
+      "sha256": "9367a6d4ff960aa6742fd72c73882fb104bcfb79466c886cae717e84acb1fcbd",
+      "bytes": 18171
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---roadmap-ekseku.jsonl",
+      "records": 20,
+      "sha256": "48d124af8358c54ad88f3cf37d827d757e8664fd30bfd66b321690341ac119cf",
+      "bytes": 15071
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---session-persis.jsonl",
+      "records": 20,
+      "sha256": "2b793ab7c19ab42c07cf2224204ff4e08a71c7603a461a155a8b69a235a3b8c6",
+      "bytes": 17271
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---telekomunikasi.jsonl",
+      "records": 20,
+      "sha256": "33ecc5dcd4b721b068604f58363e4e41a51c49de9dc8ce152e2012f4e0a11d39",
+      "bytes": 17771
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---teman-akrab-da.jsonl",
+      "records": 20,
+      "sha256": "b7ba6fbef7bc2efe7cfaf90f7e2752a9b058a663b33bb79a98085e86e3e40e14",
+      "bytes": 16651
+    },
+    {
+      "file": "v13-17-roadmap-maksimal---tren-viral-dan.jsonl",
+      "records": 20,
+      "sha256": "9e68a2362a0ab24d5204b89de704fdbbed6b1de39633bd900e1f1a52d48388da",
+      "bytes": 17371
+    },
+    {
+      "file": "v13-17-telekomunikasi-advanced-network-r.jsonl",
+      "records": 570,
+      "sha256": "e5d637cf787f17d108c04401819c5e377eac45819574178e906515ec1135a9fd",
+      "bytes": 242790
+    },
+    {
+      "file": "v13-17-teman-akrab-empathic-companion.jsonl",
+      "records": 510,
+      "sha256": "7a3bea93521a8b135572c5d5cd99512a03f75061b9c581e5810532cf8d9fd9d1",
+      "bytes": 189396
+    },
+    {
+      "file": "v13-18-cli-auto-save-session.jsonl",
+      "records": 14,
+      "sha256": "18f09256de38b13762bf06cbb7fad6e3aee4a0fa081840b2c7dbf021abf971d9",
+      "bytes": 14607
+    },
+    {
+      "file": "v13-18-cli-backup-dan-restore-cli.jsonl",
+      "records": 14,
+      "sha256": "090e681d798f0ddea73571415201b1e53bc79898637bc96ee5491eee217f03ef",
+      "bytes": 14929
+    },
+    {
+      "file": "v13-18-cli-cli-prompt-display.jsonl",
+      "records": 14,
+      "sha256": "db8b14ec0f0e1e0246e681a38470fd86ecea0eb84e981f5dbdf9d567345c3b21",
+      "bytes": 12871
+    },
+    {
+      "file": "v13-18-cli-cli-safety-layer.jsonl",
+      "records": 14,
+      "sha256": "2676756bf15525611bb4d0f0c93acb707606917b7e07926b6696643d88d9aaf4",
+      "bytes": 14985
+    },
+    {
+      "file": "v13-18-cli-code-review-mode.jsonl",
+      "records": 14,
+      "sha256": "23e881d19eb318ac0e7fbc40fd8fab328047a37f28f32882c6271ea57d47d947",
+      "bytes": 16329
+    },
+    {
+      "file": "v13-18-cli-config-file.jsonl",
+      "records": 14,
+      "sha256": "740b68144fc98a158afc2c754cf17d9d4932a94c53edebd1d5dad05cb7967bff",
+      "bytes": 13977
+    },
+    {
+      "file": "v13-18-cli-debug-mode-developer.jsonl",
+      "records": 14,
+      "sha256": "c67d044ba7fa452ff570554367962cb6742ca07e3c88d2a449380f25d6907895",
+      "bytes": 14145
+    },
+    {
+      "file": "v13-18-cli-evaluation-command.jsonl",
+      "records": 14,
+      "sha256": "285886ef6cd50048fb07ba5d76ef450733f386d52116560546e090e6dfcc6801",
+      "bytes": 14859
+    },
+    {
+      "file": "v13-18-cli-export-output.jsonl",
+      "records": 14,
+      "sha256": "c46b045f04a54abf1ee31b58045409d662aaacca81e2e80482606da8244d275c",
+      "bytes": 14817
+    },
+    {
+      "file": "v13-18-cli-file-input.jsonl",
+      "records": 14,
+      "sha256": "ad0347e212e14e724c09d51aa336087dd66a7d3d3d70a9b27ac3172461bf9e85",
+      "bytes": 15811
+    },
+    {
+      "file": "v13-18-cli-level-kecerdasan.jsonl",
+      "records": 14,
+      "sha256": "88f00336b142ba0f9e87f3979df169b9af804c24d6a2435401b6b49d4318b068",
+      "bytes": 15027
+    },
+    {
+      "file": "v13-18-cli-logging-dan-monitoring.jsonl",
+      "records": 14,
+      "sha256": "c2fc658e1bc500d878ab232e093313d1167837cb9dc7a55b9bd92b140a652805",
+      "bytes": 13417
+    },
+    {
+      "file": "v13-18-cli-markdown-rendering.jsonl",
+      "records": 14,
+      "sha256": "cf7dbc17f255dc246c35960e8f8a1d81497657e7a95996215720b3ec45e689d5",
+      "bytes": 12773
+    },
+    {
+      "file": "v13-18-cli-memory-control.jsonl",
+      "records": 14,
+      "sha256": "ab32461051e0881cfdb27ada4a692a9ac7b6528c26a84440c9c7b1d86b70b1ad",
+      "bytes": 15335
+    },
+    {
+      "file": "v13-18-cli-offline-mode.jsonl",
+      "records": 14,
+      "sha256": "b66cc1096b2a7ef833f55f006656d80163df179de81c2281e9e322bec99ca6df",
+      "bytes": 13935
+    },
+    {
+      "file": "v13-18-cli-persona-mode.jsonl",
+      "records": 14,
+      "sha256": "3f0d06e08c00e262a0b9a1f3b15ae48196d35a27e951e67e02ded25419bfc7d4",
+      "bytes": 15601
+    },
+    {
+      "file": "v13-18-cli-prompt-template-cli.jsonl",
+      "records": 14,
+      "sha256": "5565e1f972f3c2736f72434c8313d9dbc282df2a8f6b6a532b9777e8456ceb5d",
+      "bytes": 14943
+    },
+    {
+      "file": "v13-18-cli-quick-action-command.jsonl",
+      "records": 14,
+      "sha256": "0b41a1f6acedddaa94dfd131368dacf6f7a4723a406fc5f19bfddb69e012a849",
+      "bytes": 14005
+    },
+    {
+      "file": "v13-18-cli-rag-status.jsonl",
+      "records": 14,
+      "sha256": "3f4e18618e9f728a967a4e4ec2eff75a7e9f601133e3e50dda83c27f9b5d390d",
+      "bytes": 14271
+    },
+    {
+      "file": "v13-18-cli-safe-command-suggestion.jsonl",
+      "records": 14,
+      "sha256": "d7ae1a34ab5dc8ca39c0978ff6a709c02c84e43d1a64d93292956ef084bb0e2e",
+      "bytes": 15195
+    },
+    {
+      "file": "v13-18-cli-slash-command-system.jsonl",
+      "records": 14,
+      "sha256": "2245e80bd0d3d1de09015628c5d464a20e670fe392b556a709ab1676eba4285d",
+      "bytes": 16357
+    },
+    {
+      "file": "v13-18-cli-source-viewer.jsonl",
+      "records": 14,
+      "sha256": "3e98c9cb8fa2eef487b6674e828b9cb6c998a9cf60bed7af43c4e80c9088f29d",
+      "bytes": 14047
+    },
+    {
+      "file": "v13-18-cli-streaming-response.jsonl",
+      "records": 14,
+      "sha256": "eb906b4737fa0e5bc6cc743c67edc294061bb90d77b0d06d1fe70a12ea7d7748",
+      "bytes": 13809
+    },
+    {
+      "file": "v13-18-cli-struktur-folder-cli.jsonl",
+      "records": 14,
+      "sha256": "5a7091de1d37d81e88e0638595f034aedebc713d2c6cd12f0fe2bcedec33383f",
+      "bytes": 15727
+    },
+    {
+      "file": "v13-18-cli-terminal-ux.jsonl",
+      "records": 14,
+      "sha256": "75c3e8b8b1d39a09b233d2034b4d81be0eb9d7f2a4a233e9f47ce0b2aad2d789",
+      "bytes": 13305
+    },
+    {
+      "file": "v13-18-cli-workspace-project.jsonl",
+      "records": 14,
+      "sha256": "708bfebe2a92955bf4d7c99ccd834785b15a3e6e0024ce00b0ae5458c33ca4ac",
+      "bytes": 16259
+    },
+    {
+      "file": "v13-20-max-agama.jsonl",
+      "records": 3643,
+      "sha256": "e774d67699020a63a94581f7ef6be3ee74bb69513af048754717de4c1a2a421a",
+      "bytes": 2185476
+    },
+    {
+      "file": "v13-20-max-artifact.jsonl",
+      "records": 3643,
+      "sha256": "ab7cfa51795e85fe4d4954733cb258d9b33e56fd70cf50020681a76af8222108",
+      "bytes": 1999684
+    },
+    {
+      "file": "v13-20-max-cli-debug.jsonl",
+      "records": 3643,
+      "sha256": "57971f1f6d9d6cc89260bc397c3c23d262013919ba996889b24d9e73fd5a651d",
+      "bytes": 2130832
+    },
+    {
+      "file": "v13-20-max-coding.jsonl",
+      "records": 3643,
+      "sha256": "63315b997ad38d21cf98ff97ad4fc6e185414259711fcfbf4540bfd23ed00607",
+      "bytes": 2072540
+    },
+    {
+      "file": "v13-20-max-communication-system.jsonl",
+      "records": 3643,
+      "sha256": "1ac6c06667add36887b7b8bdd54eae45091bf280e1d0e10a995db23f58a3a6cb",
+      "bytes": 2258335
+    },
+    {
+      "file": "v13-20-max-deep-ml.jsonl",
+      "records": 3643,
+      "sha256": "2ad1e6eaa000358e54d96064cefbc62626758476609ee724c68ba358d5984e23",
+      "bytes": 2116256
+    },
+    {
+      "file": "v13-20-max-document-ai.jsonl",
+      "records": 3643,
+      "sha256": "1fc0e61ef0dcc9e272e63350c2a0bbc78514e38f9c893df17e33cf08df92e26b",
+      "bytes": 2141760
+    },
+    {
+      "file": "v13-20-max-evaluation.jsonl",
+      "records": 3643,
+      "sha256": "8bd51235dd51b483d65afd1ab5bcfe2f9851484ce88be1ea4b18d8415e9dea64",
+      "bytes": 1981468
+    },
+    {
+      "file": "v13-20-max-fisika.jsonl",
+      "records": 3643,
+      "sha256": "a2914a4eaf95214ac56189ab9fdbeb893cce015f09fa743fce5ef9dca0ff7a58",
+      "bytes": 2057969
+    },
+    {
+      "file": "v13-20-max-guardrail.jsonl",
+      "records": 3643,
+      "sha256": "aaca58118872a49fc2f737ae72a2a66c409f27290ac3a7ba943bd13e3a59a096",
+      "bytes": 2119903
+    },
+    {
+      "file": "v13-20-max-iot.jsonl",
+      "records": 3643,
+      "sha256": "72cb1aca9d23790acedbae6db66de11ed8157f2d84cd4c9e3ce18ed3474680c5",
+      "bytes": 2043398
+    },
+    {
+      "file": "v13-20-max-kimia.jsonl",
+      "records": 3643,
+      "sha256": "38ef7657edcfcf593bb72ca01372738003d221499522fa2dbcdb782913020c18",
+      "bytes": 2087114
+    },
+    {
+      "file": "v13-20-max-long-context.jsonl",
+      "records": 3643,
+      "sha256": "f69f45783f97a43f8ab99334b05d226f6f7bdf012ae57bbda9f90b681622c221",
+      "bytes": 2057968
+    },
+    {
+      "file": "v13-20-max-matematika.jsonl",
+      "records": 3643,
+      "sha256": "bd9cadc535435506a1affaead7847410b8823ee35c1982c71967dbd3f7eada8b",
+      "bytes": 2174545
+    },
+    {
+      "file": "v13-20-max-memory.jsonl",
+      "records": 3643,
+      "sha256": "bd717951805f5c84fbef4cde29d6f72ae22f0e6d5e5528a9c5609e7afe8691ae",
+      "bytes": 2134471
+    },
+    {
+      "file": "v13-20-max-multi-domain.jsonl",
+      "records": 3643,
+      "sha256": "de6a32a8a3eb6df40c9a61a4ff7d19aa7af0dbf8a202b98ee03578aa2d73c67a",
+      "bytes": 2098045
+    },
+    {
+      "file": "v13-20-max-output-format.jsonl",
+      "records": 3643,
+      "sha256": "b75c4357ffb28d86caf5c0c26d4ac4af2dad81995cc09cb8a8e9f38d5d472e4f",
+      "bytes": 2098045
+    },
+    {
+      "file": "v13-20-max-performance.jsonl",
+      "records": 3643,
+      "sha256": "68235623f142843114e53ab1176b9d1643080ed3929f7412ea5913e766e3d216",
+      "bytes": 1999684
+    },
+    {
+      "file": "v13-20-max-rag.jsonl",
+      "records": 3643,
+      "sha256": "b30d37da5c27af3cfe19640754c3c3d6902a2a1589d67aef262f656120172c79",
+      "bytes": 1977821
+    },
+    {
+      "file": "v13-20-max-research.jsonl",
+      "records": 3643,
+      "sha256": "4f9efd2a33afb2fa31b3d144573a52476d44271e82d43dd4138aa77bdba9ca4b",
+      "bytes": 2025184
+    },
+    {
+      "file": "v13-20-max-revision.jsonl",
+      "records": 3643,
+      "sha256": "e1c0775a9b9cd28108e0d4797d377b9571c7bdb58479ef211ff7a9db88e310e0",
+      "bytes": 2039757
+    },
+    {
+      "file": "v13-20-max-security.jsonl",
+      "records": 3643,
+      "sha256": "345c42aacc8796fb23d534a5c6c23fa970d6231b97b0048abfb3820618e36531",
+      "bytes": 2047039
+    },
+    {
+      "file": "v13-20-max-self-verification.jsonl",
+      "records": 3643,
+      "sha256": "0b3e85c529fcc760aab4b096d394549afebe744635fe56563be4ae7ff4ac834e",
+      "bytes": 2025185
+    },
+    {
+      "file": "v13-20-max-session.jsonl",
+      "records": 3643,
+      "sha256": "e1acce1682eb4003e75c4e38854a2d80cc601ce544fd739a96c1386d82754bf1",
+      "bytes": 2189116
+    },
+    {
+      "file": "v13-20-max-source-ranking.jsonl",
+      "records": 3643,
+      "sha256": "0ebb51f8e5b103cc3067f79786518e9209fcc8b55471a5638558fca83057d30a",
+      "bytes": 2021537
+    },
+    {
+      "file": "v13-20-max-telekomunikasi.jsonl",
+      "records": 3643,
+      "sha256": "95254ddb14d0445ca38639988c434bc8d3f7d2b6d5ec4502360510ce18b682de",
+      "bytes": 2189118
+    },
+    {
+      "file": "v13-20-max-thinking-core.jsonl",
+      "records": 3643,
+      "sha256": "31ee293daee99420f3ab61c0011188ea5028cacf7e93a20f7e0f407b64e0dcad",
+      "bytes": 2210973
+    },
+    {
+      "file": "v13-20-max-workspace.jsonl",
+      "records": 3643,
+      "sha256": "843c386a9c0d5025b6290cdc560a29ebca9f8500332d220c6bcb6fca10eff74c",
+      "bytes": 2017899
+    },
+    {
+      "file": "v13-4-alignment-cara-berpikir.jsonl",
+      "records": 10,
+      "sha256": "2cfd86b89f8164eb3dc066322a84c7c67c33d94c2f9525c49b712f7172ff63c3",
+      "bytes": 9474
+    },
+    {
+      "file": "v13-4-alignment-data---ai.jsonl",
+      "records": 9,
+      "sha256": "7455ec631993b16494b4f891a47333757042f11289a114a521cc812904d2d7b6",
+      "bytes": 8330
+    },
+    {
+      "file": "v13-4-alignment-devops.jsonl",
+      "records": 7,
+      "sha256": "c5f94c97ad76951c411b03bec0bacc94080f1d4d60dab927ba1b9e926daca012",
+      "bytes": 6414
+    },
+    {
+      "file": "v13-4-alignment-domain-it.jsonl",
+      "records": 8,
+      "sha256": "1280416459f17602b3c92d1369bab1f5ee529e58b01b236a62e902eec35917b2",
+      "bytes": 7422
+    },
+    {
+      "file": "v13-4-alignment-fullstack.jsonl",
+      "records": 5,
+      "sha256": "49a1408cf3f300ea15512fa755d6eacaf291e07d000be281764a516b0cce2bdb",
+      "bytes": 4620
+    },
+    {
+      "file": "v13-4-alignment-gaya-jawaban-ai.jsonl",
+      "records": 6,
+      "sha256": "1516ea924a50286ff4fb336396d17b51438a45125f2e98a03297076dde24a49c",
+      "bytes": 5704
+    },
+    {
+      "file": "v13-4-alignment-it-fundamental.jsonl",
+      "records": 10,
+      "sha256": "c183c1593fa7c4a48db4edf3d3973b4002995909b8c9d2f43afd50212692a39b",
+      "bytes": 9442
+    },
+    {
+      "file": "v13-4-alignment-it-maturity.jsonl",
+      "records": 5,
+      "sha256": "3e139e42b62050913a0420ac1f81fe4d6230315e9481c3b6a7edceb19deebaae",
+      "bytes": 4684
+    },
+    {
+      "file": "v13-4-alignment-karier-it.jsonl",
+      "records": 5,
+      "sha256": "f10f7ed83c2759f49ceb12d2635d6b03823b29304a0db922dde4e808da64d9b4",
+      "bytes": 4783
+    },
+    {
+      "file": "v13-4-alignment-kerja-it.jsonl",
+      "records": 9,
+      "sha256": "06c05113f259760c72dcd9c193e3124823648ad66c4f22d6e824252bb1735b25",
+      "bytes": 8321
+    },
+    {
+      "file": "v13-4-alignment-kuliah.jsonl",
+      "records": 8,
+      "sha256": "0807201e031682f4367c9189d2c89cb15e732d0c457dfece217622f002e1f338",
+      "bytes": 7291
+    },
+    {
+      "file": "v13-4-alignment-latihan-praktik.jsonl",
+      "records": 5,
+      "sha256": "52491cc26369de7a7b8912247489290c6ea8d6c83d572112e3a6ddedb5aa701c",
+      "bytes": 4778
+    },
+    {
+      "file": "v13-4-alignment-pengetahuan-umum-terpaka.jsonl",
+      "records": 4,
+      "sha256": "bd62ed136e728a593eaeed5b1e33797a9fff662b0fc46587f4cedb9cb70bd8e1",
+      "bytes": 3963
+    },
+    {
+      "file": "v13-4-alignment-programming.jsonl",
+      "records": 12,
+      "sha256": "501ae7ee29c52dc4fae87de7ea60493381ce62aca990c538a41a08ec929c0838",
+      "bytes": 11178
+    },
+    {
+      "file": "v13-4-alignment-security.jsonl",
+      "records": 5,
+      "sha256": "96459a3cd8cf83d0c545028fabdbae434f4dcf38fab2bc685cc35a84a2813bcc",
+      "bytes": 4636
+    },
+    {
+      "file": "v13-4-alignment-sistem-knowledge.jsonl",
+      "records": 7,
+      "sha256": "5b49fb5c1a6ca26f7deec12c1f29861c18ea75a25e67f13ef145af635d94d804",
+      "bytes": 6654
+    },
+    {
+      "file": "v13-4-alignment-troubleshooting.jsonl",
+      "records": 5,
+      "sha256": "78e8d07b82c206c15f150eb36e6792c52b4e1ee3cc4db9b4af4346eb76bbbf4d",
+      "bytes": 4783
+    },
+    {
+      "file": "v13-4-cara-berpikir.jsonl",
+      "records": 10,
+      "sha256": "72fdb01ed1b648450f0c3dd59d45b939f6a7db0c36ab91fb4b37f780a7db2b95",
+      "bytes": 9699
+    },
+    {
+      "file": "v13-4-data---ai.jsonl",
+      "records": 9,
+      "sha256": "c128cb76e93f30a2d67947e88c4d84a82abd9f5f996e1c6fcb7c60e9a2222495",
+      "bytes": 8448
+    },
+    {
+      "file": "v13-4-devops.jsonl",
+      "records": 7,
+      "sha256": "2743c28eb957d5e0386534388458eaa742ff40ef64eadb2f05b07533d5cbcb8b",
+      "bytes": 6419
+    },
+    {
+      "file": "v13-4-domain-it.jsonl",
+      "records": 8,
+      "sha256": "5cd002273d5e2e313cfd798d3e835ea6b3b961a79ec73170eb5456b0cd774bab",
+      "bytes": 7557
+    },
+    {
+      "file": "v13-4-fullstack.jsonl",
+      "records": 5,
+      "sha256": "88b4a996d23037a74fd7419b8da38ae224eb8f11d16f154d0e5b63629524ae9e",
+      "bytes": 4641
+    },
+    {
+      "file": "v13-4-gaya-jawaban-ai.jsonl",
+      "records": 6,
+      "sha256": "0f2ad0ed8844f13066255878c8f31bfe80eb57a3b2d796ee40f708a3fb0c323d",
+      "bytes": 5722
+    },
+    {
+      "file": "v13-4-it-fundamental.jsonl",
+      "records": 10,
+      "sha256": "0db2fd0dca2836d97c181979dda4a82be8129d360e898b536132c5e916555577",
+      "bytes": 9550
+    },
+    {
+      "file": "v13-4-it-maturity.jsonl",
+      "records": 5,
+      "sha256": "d2ac89329c889291b933b6299f464cfea599583b19397cc3d77b163169aa1db0",
+      "bytes": 4748
+    },
+    {
+      "file": "v13-4-karier-it.jsonl",
+      "records": 5,
+      "sha256": "e610a54b4840af0dab7b24bbf6995ca6e78b1e1d2f127a632422a45b789b15f2",
+      "bytes": 4791
+    },
+    {
+      "file": "v13-4-kerja-it.jsonl",
+      "records": 9,
+      "sha256": "498efc56d90ce32f525437969696494753152295131c937228689fed580c66d9",
+      "bytes": 8456
+    },
+    {
+      "file": "v13-4-kuliah.jsonl",
+      "records": 8,
+      "sha256": "bc3770b1332605cd11f268efcd7b110306334c35e28ba405c90a020551f31fa2",
+      "bytes": 7394
+    },
+    {
+      "file": "v13-4-latihan-praktik.jsonl",
+      "records": 5,
+      "sha256": "d626b875cae248aeafe020c05ade89a8c12d8251d73611e8b517a18167d0d68e",
+      "bytes": 4714
+    },
+    {
+      "file": "v13-4-pengetahuan-umum-terpakai.jsonl",
+      "records": 4,
+      "sha256": "29c1f8058aa5e0de375dd75c686b018f098a120ff7272470167ab22ebe1dccbe",
+      "bytes": 4069
+    },
+    {
+      "file": "v13-4-praktik-ai-debugging.jsonl",
+      "records": 2,
+      "sha256": "dc69d05313c18ad9b7457fe5316fd580d39aaaf9572411a1ad66c2e39cbfe37a",
+      "bytes": 2092
+    },
+    {
+      "file": "v13-4-praktik-ai-ethics.jsonl",
+      "records": 1,
+      "sha256": "12e6105b9ae939a5a9bac3a917a8700102ab584aac50edb5e6d6c174bd0b2e7f",
+      "bytes": 1005
+    },
+    {
+      "file": "v13-4-praktik-ai-project.jsonl",
+      "records": 3,
+      "sha256": "bf81f1399266ad3e42e089f3c00503976ccb9a0821ed59154f1ef0d533b22ecd",
+      "bytes": 3019
+    },
+    {
+      "file": "v13-4-praktik-akademik.jsonl",
+      "records": 5,
+      "sha256": "942cf56656473ec961af47e94ea6beb388c757fa250458fc3fbd47b41d4a8739",
+      "bytes": 4951
+    },
+    {
+      "file": "v13-4-praktik-appsec.jsonl",
+      "records": 2,
+      "sha256": "054fba1f1fba8f8fc851a90441b8c5cd521094a1d10a4881d65ad2efb803e236",
+      "bytes": 1987
+    },
+    {
+      "file": "v13-4-praktik-architecture.jsonl",
+      "records": 2,
+      "sha256": "a7311434d18ae88b2939ca67ecd7b26484913224b29f62697829c8851aa9b585",
+      "bytes": 2030
+    },
+    {
+      "file": "v13-4-praktik-backend.jsonl",
+      "records": 2,
+      "sha256": "213c61fe74015f0ae158c87bf25b973ecef0ed4e5d066674789de4832f946147",
+      "bytes": 2024
+    },
+    {
+      "file": "v13-4-praktik-ci-cd.jsonl",
+      "records": 1,
+      "sha256": "2d988b83ccf41ecab75cd5cbf45e85ac74de813a0cc11b24d13ad8eccfbc871a",
+      "bytes": 986
+    },
+    {
+      "file": "v13-4-praktik-cloud.jsonl",
+      "records": 2,
+      "sha256": "277ea77c9a614f557bb23ea9cb54486b67d495744fdd26f255e703517e5d6390",
+      "bytes": 1974
+    },
+    {
+      "file": "v13-4-praktik-communication.jsonl",
+      "records": 6,
+      "sha256": "b6bf916565187773a100178edac038bbee8ed589e0be0426489f84d647c1f68c",
+      "bytes": 5888
+    },
+    {
+      "file": "v13-4-praktik-container.jsonl",
+      "records": 1,
+      "sha256": "f0d8d067b1e38eb31019252ea46aed5eca8254dbc004317d70ea7649ab2371d4",
+      "bytes": 975
+    },
+    {
+      "file": "v13-4-praktik-cybersecurity.jsonl",
+      "records": 1,
+      "sha256": "78a56d14240d430057fc7e1a6f65005a8285d29474fb37c357bc5f4a165dd5bb",
+      "bytes": 1039
+    },
+    {
+      "file": "v13-4-praktik-daily-tech-literacy.jsonl",
+      "records": 1,
+      "sha256": "329d5538d26e9ee1022eae8ac8b0252fe3bf4ae19a7545633dd502d27d74b346",
+      "bytes": 994
+    },
+    {
+      "file": "v13-4-praktik-dasar-coding.jsonl",
+      "records": 2,
+      "sha256": "e7771f8a842899989f0e0ebc6941bb2c24959d298a6dc66329500682b717ed27",
+      "bytes": 2034
+    },
+    {
+      "file": "v13-4-praktik-data-engineering.jsonl",
+      "records": 2,
+      "sha256": "13c2c8d35e791d9428ac759131ca98d222de2d52b07dbc9be817d2dd874fada5",
+      "bytes": 2028
+    },
+    {
+      "file": "v13-4-praktik-data-pipeline.jsonl",
+      "records": 1,
+      "sha256": "d121363d2dd21bf41c1d22336a9dc08482dc2ea80d1f8514252ec37fa3678cb1",
+      "bytes": 1002
+    },
+    {
+      "file": "v13-4-praktik-data-visualization.jsonl",
+      "records": 1,
+      "sha256": "233c6958a3db2664f28f04f7260e52f7f0eede26c0b30a8eb9752d6eae28c83d",
+      "bytes": 1014
+    },
+    {
+      "file": "v13-4-praktik-database.jsonl",
+      "records": 3,
+      "sha256": "80412a588822431a4b340bc3e6638741994af843905a13a87cf8430a63ae413e",
+      "bytes": 3003
+    },
+    {
+      "file": "v13-4-praktik-dataset-design.jsonl",
+      "records": 7,
+      "sha256": "4416592ad715967de80a6651f7d8c3ce18c436082fe8ff5625fbe696ced938f9",
+      "bytes": 6977
+    },
+    {
+      "file": "v13-4-praktik-deployment.jsonl",
+      "records": 1,
+      "sha256": "556bbbfa67622024e39aae4549dbf8e5dcd673bf6d8adff60046b7abf8c8c956",
+      "bytes": 1006
+    },
+    {
+      "file": "v13-4-praktik-ethical-problem-solving.jsonl",
+      "records": 1,
+      "sha256": "b47fa83130394c217e51fabc46a827ad5ebb1e17caa0328b2a1055eb730bc589",
+      "bytes": 1068
+    },
+    {
+      "file": "v13-4-praktik-evaluation.jsonl",
+      "records": 1,
+      "sha256": "b0d62babac4c2b91abc6988c98291a6086d4f40521970fd37fa36e0cf7cb0be3",
+      "bytes": 987
+    },
+    {
+      "file": "v13-4-praktik-frontend.jsonl",
+      "records": 3,
+      "sha256": "5526c4844871e864e836fda134c1b6e96bf568a493c6cf65f3160094d31c5547",
+      "bytes": 3057
+    },
+    {
+      "file": "v13-4-praktik-iot.jsonl",
+      "records": 1,
+      "sha256": "122b84d82d01825b0465c2f5c1c4668b7efa73b19f1e8f30d5e8d652419adf6c",
+      "bytes": 992
+    },
+    {
+      "file": "v13-4-praktik-it-support.jsonl",
+      "records": 5,
+      "sha256": "a2c920756be5377907f67f376b0ea1c7eaa723c4973f6be5a3d734aefc2d4954",
+      "bytes": 5055
+    },
+    {
+      "file": "v13-4-praktik-jaringan.jsonl",
+      "records": 3,
+      "sha256": "7a9e3c73413ec2469fdef0dfa8bdd545b67bc1f1fdfadfee36489a83d7e15ef1",
+      "bytes": 3084
+    },
+    {
+      "file": "v13-4-praktik-komputer.jsonl",
+      "records": 3,
+      "sha256": "0cea834f35bcf7404a8244865735c8f1265253278c454076caf07399b7cf5b9c",
+      "bytes": 3012
+    },
+    {
+      "file": "v13-4-praktik-learning-roadmap.jsonl",
+      "records": 3,
+      "sha256": "2a5bcd769add15c03ca5b375f1b5f616455231e7bc58816e3c1fe87610ccd07b",
+      "bytes": 2991
+    },
+    {
+      "file": "v13-4-praktik-llm-lokal.jsonl",
+      "records": 3,
+      "sha256": "7b9a863e5ed79f70df5d1e9aa4f309f579d1b44b4ddde2d39ad5f5a5210c231d",
+      "bytes": 3032
+    },
+    {
+      "file": "v13-4-praktik-matematika.jsonl",
+      "records": 2,
+      "sha256": "215addbdcae9a9f433eb38aa13feedfcce96cfba2ece2549c7057df6a4b4dc89",
+      "bytes": 1950
+    },
+    {
+      "file": "v13-4-praktik-monitoring.jsonl",
+      "records": 1,
+      "sha256": "b0da6e6ee7f5e7c7549c8aeabf771e5feab2172af653f1ce44604489716a83cc",
+      "bytes": 1004
+    },
+    {
+      "file": "v13-4-praktik-networking.jsonl",
+      "records": 1,
+      "sha256": "5939994e11780ba634968a85348a1975abb02a8f3d62d0f831f56196d566dde6",
+      "bytes": 971
+    },
+    {
+      "file": "v13-4-praktik-office-productivity.jsonl",
+      "records": 1,
+      "sha256": "a9c52887c91d1c37f9b393bace584b3b98b0eb186414a3a4c41cd65dc35facb7",
+      "bytes": 1014
+    },
+    {
+      "file": "v13-4-praktik-operational-security.jsonl",
+      "records": 1,
+      "sha256": "8b62d9bd63983419d1cad4e4f06f10a261169d504f1ae77a02ac3e2807b0582c",
+      "bytes": 1023
+    },
+    {
+      "file": "v13-4-praktik-operations.jsonl",
+      "records": 3,
+      "sha256": "ad8d61fe1873a35b223a3d7f4fb336db34f8564392730fc6d77a50f667abde3c",
+      "bytes": 2939
+    },
+    {
+      "file": "v13-4-praktik-performance.jsonl",
+      "records": 1,
+      "sha256": "5e253c4d62e9366bdd9e410088c4dc0c13f12087fba6ec3c3e6bb8b1416ec0af",
+      "bytes": 999
+    },
+    {
+      "file": "v13-4-praktik-portfolio.jsonl",
+      "records": 1,
+      "sha256": "e310e66f3c5557a1c823f9162580af105c148299b4480b6441e14a69dfe27034",
+      "bytes": 1037
+    },
+    {
+      "file": "v13-4-praktik-privacy.jsonl",
+      "records": 1,
+      "sha256": "5f23c3fb1a5e47f0e6c261774711f79045a76176e9dc9a8222e3d65fd8b4b144",
+      "bytes": 999
+    },
+    {
+      "file": "v13-4-praktik-professional-english-it.jsonl",
+      "records": 1,
+      "sha256": "9a0dc9539df66b46e1edc6d92683eeda3e2606bbdb2e557ef09e5b155f4b7603",
+      "bytes": 1002
+    },
+    {
+      "file": "v13-4-praktik-project-based-learning.jsonl",
+      "records": 5,
+      "sha256": "835e23171c7ac426c7d929ff75f089d1e2629f810f37001acd2c524fb52dfea6",
+      "bytes": 5073
+    },
+    {
+      "file": "v13-4-praktik-project.jsonl",
+      "records": 1,
+      "sha256": "cddd1b73b43fb7ea19cdaa98a236e76a18f01fe3c8e6f88f62b9d428a6a2bba3",
+      "bytes": 983
+    },
+    {
+      "file": "v13-4-praktik-rag.jsonl",
+      "records": 2,
+      "sha256": "9b5b40593f76d56bda92fc4c350687d62dc42d628538c191d31f53a5530ff4f4",
+      "bytes": 2092
+    },
+    {
+      "file": "v13-4-praktik-reasoning.jsonl",
+      "records": 10,
+      "sha256": "83bd01b895187e57876d574b7bf6bbcb51d7fb7a8143eb8b8e6dcbf3765e3b7f",
+      "bytes": 10544
+    },
+    {
+      "file": "v13-4-praktik-responsible-ai.jsonl",
+      "records": 1,
+      "sha256": "484efb217ec2bcfc294da6d9dd59e02027523c8ba120caa57b00b2b72a9131fe",
+      "bytes": 1005
+    },
+    {
+      "file": "v13-4-praktik-software-engineering.jsonl",
+      "records": 5,
+      "sha256": "87d504420e68dc55b170ed1e8902896530b6aa23fc66d36deb26d4d1e53cc726",
+      "bytes": 4975
+    },
+    {
+      "file": "v13-4-praktik-stack.jsonl",
+      "records": 5,
+      "sha256": "d4d4751ce09d83efefcd0689ed3417fd771f3630f46d1cfa600dec5cc31549e0",
+      "bytes": 4949
+    },
+    {
+      "file": "v13-4-praktik-version-control.jsonl",
+      "records": 1,
+      "sha256": "6b1d61ea3cde84d6b26f9e79baa7570280840036061bd47ee24ad25d9e346614",
+      "bytes": 991
+    },
+    {
+      "file": "v13-4-praktik-web-debugging.jsonl",
+      "records": 2,
+      "sha256": "6bf17bf4e8f32f1a78ee7a75d11ef16163c39bd41be268e6187fe4e94469860e",
+      "bytes": 2034
+    },
+    {
+      "file": "v13-4-praktik-web.jsonl",
+      "records": 1,
+      "sha256": "fcf2f1b4b7ae1f00a4d7caf98e9a11f06b010b95f382c65d4600978199a9740c",
+      "bytes": 954
+    },
+    {
+      "file": "v13-4-praktik-work-habit.jsonl",
+      "records": 1,
+      "sha256": "5fb7b22651c46059baf986dd6c0152bc1b4030fa5a540b3a2cce0a4feb6d59c3",
+      "bytes": 1031
+    },
+    {
+      "file": "v13-4-praktik-workplace.jsonl",
+      "records": 4,
+      "sha256": "d44dca1162da7741c7d3c64c4a854adcbba27e22e1c312272cf3d0990da61891",
+      "bytes": 4022
+    },
+    {
+      "file": "v13-4-programming.jsonl",
+      "records": 12,
+      "sha256": "82d3a2e568e002ca438ce620deaf0498481ad7f342db90333fe39b62207691bf",
+      "bytes": 11205
+    },
+    {
+      "file": "v13-4-security.jsonl",
+      "records": 5,
+      "sha256": "e2f77daa7a3320a42b4bd4a3e4b830a15b73fe1881bb37b588c3abadb8a8fd69",
+      "bytes": 4784
+    },
+    {
+      "file": "v13-4-sistem-knowledge.jsonl",
+      "records": 7,
+      "sha256": "5d690e2c89fad671248ade0c62417510a8117d19760e88e6d5de9a18fae6584d",
+      "bytes": 6632
+    },
+    {
+      "file": "v13-4-template-ai-debugging.jsonl",
+      "records": 2,
+      "sha256": "2afdd7559c7d78f11271b4186719f7692575547f8032f3db01e4ff73df261881",
+      "bytes": 1857
+    },
+    {
+      "file": "v13-4-template-ai-ethics.jsonl",
+      "records": 1,
+      "sha256": "c93a5ffa1d33c9cc67ec5671ec15ed1786931c622cf1ec6199afdc401572d8bf",
+      "bytes": 922
+    },
+    {
+      "file": "v13-4-template-ai-project.jsonl",
+      "records": 3,
+      "sha256": "6c93fcc408cfa01d912c8f51349eb1bc2cca01a399efc8743311aede5add58a6",
+      "bytes": 2718
+    },
+    {
+      "file": "v13-4-template-akademik.jsonl",
+      "records": 5,
+      "sha256": "2ae8d5275fa9234ceffdb01de9e72cdad3543596ae4a94dbe524f03674432f8a",
+      "bytes": 4483
+    },
+    {
+      "file": "v13-4-template-appsec.jsonl",
+      "records": 2,
+      "sha256": "1ae4206149ec75155157e8a6ad3a981205b8fe97caaa76a3972419f44d7db31a",
+      "bytes": 1664
+    },
+    {
+      "file": "v13-4-template-architecture.jsonl",
+      "records": 2,
+      "sha256": "c4b764b6fe46542609b418ee038165d6097ca084e162c05cd7663bd590d37ad4",
+      "bytes": 1778
+    },
+    {
+      "file": "v13-4-template-backend.jsonl",
+      "records": 2,
+      "sha256": "27ebd02b54e7990489ae2d4e93a8a3c4536d2b795ce3e39322320f8f268982b1",
+      "bytes": 1708
+    },
+    {
+      "file": "v13-4-template-ci-cd.jsonl",
+      "records": 1,
+      "sha256": "214726ebf6f8e44af614e768e7bdc52209904d9d20c9addcb17fc39877896e34",
+      "bytes": 880
+    },
+    {
+      "file": "v13-4-template-cloud.jsonl",
+      "records": 2,
+      "sha256": "831bf2dcdf7930d9b5fa6e78955b6e0df86ed740860b72cae66b74d3b6b8cc8c",
+      "bytes": 1792
+    },
+    {
+      "file": "v13-4-template-communication.jsonl",
+      "records": 6,
+      "sha256": "d6153908b8c7e4c2a773b3e6dfd9fd61c61474b00e4a376b7ff670d756df3d96",
+      "bytes": 5429
+    },
+    {
+      "file": "v13-4-template-container.jsonl",
+      "records": 1,
+      "sha256": "82e83d73298af2448e8bd26cdc2112a4257bb149a131e4fbf9af31131c09927b",
+      "bytes": 878
+    },
+    {
+      "file": "v13-4-template-cybersecurity.jsonl",
+      "records": 1,
+      "sha256": "1220b582ea57d7e56f7024883f6e08198c4d11975cd80d43c2ccf9e7050fc7b5",
+      "bytes": 957
+    },
+    {
+      "file": "v13-4-template-daily-tech-literacy.jsonl",
+      "records": 1,
+      "sha256": "fceae85efede907dd80fd408f9f74d7d47bf1a192e63a4ebb43a77eefbeda087",
+      "bytes": 925
+    },
+    {
+      "file": "v13-4-template-dasar-coding.jsonl",
+      "records": 2,
+      "sha256": "395f222cd9550637d4a224b8c67920fb517e7bd39ed35acb09b86afb236da072",
+      "bytes": 1794
+    },
+    {
+      "file": "v13-4-template-data-engineering.jsonl",
+      "records": 2,
+      "sha256": "544e6708f5004b5951fb6707fc3ab76633d773930f9362b287bffc7f1342ed8a",
+      "bytes": 1832
+    },
+    {
+      "file": "v13-4-template-data-pipeline.jsonl",
+      "records": 1,
+      "sha256": "c51d4df52de5046a2880212f43147e7d17a6fe6846d99341b290bedcfe57f361",
+      "bytes": 902
+    },
+    {
+      "file": "v13-4-template-data-visualization.jsonl",
+      "records": 1,
+      "sha256": "60d04a9cf6328454c4d3c75851a6bfc553dfcfef818045e384a4f89b0bb494cf",
+      "bytes": 927
+    },
+    {
+      "file": "v13-4-template-database.jsonl",
+      "records": 3,
+      "sha256": "3562e7787c981e2d7da085f43eff2e3f1c67b81763c005e2ac0ff058d6335acc",
+      "bytes": 2691
+    },
+    {
+      "file": "v13-4-template-dataset-design.jsonl",
+      "records": 7,
+      "sha256": "3203a729db7a90ee7f916df63d0b683139c58fad72d4092ee5d020fb764d536a",
+      "bytes": 6337
+    },
+    {
+      "file": "v13-4-template-deployment.jsonl",
+      "records": 1,
+      "sha256": "f21d07f5ef0ff8267b465f10df280ca67e34ecec417380ffd42e7cdcc3e7b610",
+      "bytes": 919
+    },
+    {
+      "file": "v13-4-template-ethical-problem-solving.jsonl",
+      "records": 1,
+      "sha256": "263114fe54982d7aac1034c36662685af29b037754631526cf1099f21b7a433f",
+      "bytes": 999
+    },
+    {
+      "file": "v13-4-template-evaluation.jsonl",
+      "records": 1,
+      "sha256": "1a54ac63d88baca5eef09579f6df731bc25d2e8b21c661cb112eea08de140e93",
+      "bytes": 878
+    },
+    {
+      "file": "v13-4-template-frontend.jsonl",
+      "records": 3,
+      "sha256": "248d14c3e26e4bb22347178b509afa85a840fe81c58b75692e8779d2dca7d38a",
+      "bytes": 2737
+    },
+    {
+      "file": "v13-4-template-iot.jsonl",
+      "records": 1,
+      "sha256": "0882f09adda4d9260fe3c9721a89c710b593d647414cedc75a4c6e2085830edb",
+      "bytes": 890
+    },
+    {
+      "file": "v13-4-template-it-support.jsonl",
+      "records": 5,
+      "sha256": "c889c092a0be8259981e72621c3ef82ad01c92cb27d940489831101dc2371b05",
+      "bytes": 4484
+    },
+    {
+      "file": "v13-4-template-jaringan.jsonl",
+      "records": 3,
+      "sha256": "3cfefb02e4357f52f23562faae5ba45d10c2569195dc8873be6fa4cec7505eda",
+      "bytes": 2674
+    },
+    {
+      "file": "v13-4-template-komputer.jsonl",
+      "records": 3,
+      "sha256": "708e053f83ddc4be0dad31232783ebd49b9a42673150f756ff3ad061670645ae",
+      "bytes": 2710
+    },
+    {
+      "file": "v13-4-template-learning-roadmap.jsonl",
+      "records": 3,
+      "sha256": "aaa5c8a27a22dcfdd2c012025abb5c31651457efcffd2ee4518d1dd7fb499a61",
+      "bytes": 2674
+    },
+    {
+      "file": "v13-4-template-llm-lokal.jsonl",
+      "records": 3,
+      "sha256": "c846536418f1ba183999f08f46ddee2e786b97903bea6e51de2a2cf62bebac3e",
+      "bytes": 2674
+    },
+    {
+      "file": "v13-4-template-matematika.jsonl",
+      "records": 2,
+      "sha256": "5dea621daa94ace9df5145637048b9acb58ce37aaa6b0b78dffd222162cb2ef3",
+      "bytes": 1751
+    },
+    {
+      "file": "v13-4-template-monitoring.jsonl",
+      "records": 1,
+      "sha256": "c3f8e950d89d0d2eb11e854f523af02c4a0d52756bf04a14e85f739b2b80c07e",
+      "bytes": 863
+    },
+    {
+      "file": "v13-4-template-networking.jsonl",
+      "records": 1,
+      "sha256": "d5bdc3d18b3d695575041ab30bb6d2d144ee56e43b09401b42064bb7faac6bee",
+      "bytes": 866
+    },
+    {
+      "file": "v13-4-template-office-productivity.jsonl",
+      "records": 1,
+      "sha256": "4379adf52036b83144479b139c320ad027ece5682cb693ebb64425a533f6cbc7",
+      "bytes": 929
+    },
+    {
+      "file": "v13-4-template-operational-security.jsonl",
+      "records": 1,
+      "sha256": "c8439ac523278be4f7d60e5a98a6b4ec8233235483ddd0d0f592660ad9ddbe68",
+      "bytes": 902
+    },
+    {
+      "file": "v13-4-template-operations.jsonl",
+      "records": 3,
+      "sha256": "43085acbf9a7a4373832acb624dca935813fcd639acd6546ee7f651c22fda21a",
+      "bytes": 2623
+    },
+    {
+      "file": "v13-4-template-performance.jsonl",
+      "records": 1,
+      "sha256": "8390f182c440ab1acc782d74554ff398699744564586bf37eebf4a803940bf49",
+      "bytes": 897
+    },
+    {
+      "file": "v13-4-template-portfolio.jsonl",
+      "records": 1,
+      "sha256": "9a725afc982d60cbb3c9ee270bdba4e346483796e428c803903f08ebecee8dd5",
+      "bytes": 941
+    },
+    {
+      "file": "v13-4-template-privacy.jsonl",
+      "records": 1,
+      "sha256": "c046783d302474cc3bc6c1253e22a68c5e29b211554a91a2a1ce7d340fdb0b86",
+      "bytes": 904
+    },
+    {
+      "file": "v13-4-template-professional-english-it.jsonl",
+      "records": 1,
+      "sha256": "a28942fbd39fab4817e3e0cc4ee1c0c96932f8930f8ec0492d3be081a89bdd8b",
+      "bytes": 930
+    },
+    {
+      "file": "v13-4-template-project-based-learning.jsonl",
+      "records": 5,
+      "sha256": "333a47d78dea2c7657c7952fd79ed1833dc9cc7e0d44974631afd0fe21726a81",
+      "bytes": 4609
+    },
+    {
+      "file": "v13-4-template-project.jsonl",
+      "records": 1,
+      "sha256": "d2ad5e1b3734b3331833675a0b20283144e4bfce3ac61660ccd4b55d214a3e40",
+      "bytes": 862
+    },
+    {
+      "file": "v13-4-template-rag.jsonl",
+      "records": 2,
+      "sha256": "0dfc7683b620ec8a889687e27f4f08af1bb83f6f57910f773ced455c12bc6b12",
+      "bytes": 1852
+    },
+    {
+      "file": "v13-4-template-reasoning.jsonl",
+      "records": 10,
+      "sha256": "8d73eb3429eb0ea70d7ed76c3ad850a793349c9681e4b67b8b9e51867593b5b1",
+      "bytes": 9138
+    },
+    {
+      "file": "v13-4-template-responsible-ai.jsonl",
+      "records": 1,
+      "sha256": "83836b3cf7693a0975658183edc215a1619c09cce1e21bef193c8fca0b4a1319",
+      "bytes": 916
+    },
+    {
+      "file": "v13-4-template-software-engineering.jsonl",
+      "records": 5,
+      "sha256": "2d565aeec48e2946004e9fca06bc7536ea4919cd9dcc1a84bd889353ed15f5ec",
+      "bytes": 4346
+    },
+    {
+      "file": "v13-4-template-stack.jsonl",
+      "records": 5,
+      "sha256": "221345f81a1c496ef6dc8640dd63f88365176ef857e20fc24cbe93636619fb53",
+      "bytes": 4531
+    },
+    {
+      "file": "v13-4-template-version-control.jsonl",
+      "records": 1,
+      "sha256": "db883bda624bc7898e1c8fbae226373ca351277174f2fb4ec75ad462691b600f",
+      "bytes": 916
+    },
+    {
+      "file": "v13-4-template-web-debugging.jsonl",
+      "records": 2,
+      "sha256": "ff9d78293aa9277f322fabb9e5a7f32d0f1706a773d961b9ca9569c2b51168cd",
+      "bytes": 1854
+    },
+    {
+      "file": "v13-4-template-web.jsonl",
+      "records": 1,
+      "sha256": "80734dcad4021fefa184a582abc28d9f2db66981697b1bc7560ffaa6b729e974",
+      "bytes": 875
+    },
+    {
+      "file": "v13-4-template-work-habit.jsonl",
+      "records": 1,
+      "sha256": "a2fff4696a74a0b8ca3c53486e7bb3d1487b77909a7ff8eac642f948d7754619",
+      "bytes": 896
+    },
+    {
+      "file": "v13-4-template-workplace.jsonl",
+      "records": 4,
+      "sha256": "a68a127eb47abffcd240030c279a3089ae4573b4222f0aba95fe825d4fc1f3e7",
+      "bytes": 3610
+    },
+    {
+      "file": "v13-4-troubleshooting.jsonl",
+      "records": 5,
+      "sha256": "19cb06c2de7bf73b6cc0b0c7be5a3f527c50793614d6723d2429882e1b93b4af",
+      "bytes": 4785
+    },
+    {
+      "file": "v13-5-bash-terminal.jsonl",
+      "records": 5,
+      "sha256": "e7329beb5681643837d2c117599e27c1ab8f586221978c6efe7487dc0475acf3",
+      "bytes": 9018
+    },
+    {
+      "file": "v13-5-c---net.jsonl",
+      "records": 5,
+      "sha256": "6dfe36a1ff8759226e43e70c4305d30ec69c42285002d5c482f629b6e4159eef",
+      "bytes": 8433
+    },
+    {
+      "file": "v13-5-c-c.jsonl",
+      "records": 5,
+      "sha256": "c9e71d54d7c3eb1f1446d4d7b574efd302d7ae9335068cb05d0621e36578d87b",
+      "bytes": 8853
+    },
+    {
+      "file": "v13-5-css.jsonl",
+      "records": 10,
+      "sha256": "a4c00afcedaf94f14c117e6bf8c3a3ed98a9008a88458453d4d812fceb837860",
+      "bytes": 18066
+    },
+    {
+      "file": "v13-5-go.jsonl",
+      "records": 5,
+      "sha256": "520e7abc75923bf52bfc72a724f1bbb7120ddd9d5d2b8af7cf19df960fe9fec5",
+      "bytes": 8248
+    },
+    {
+      "file": "v13-5-html.jsonl",
+      "records": 5,
+      "sha256": "ca24127a88128792e0e31aede182a0bd2ea5c4b8bc298e65347334fcb4b7fc51",
+      "bytes": 8593
+    },
+    {
+      "file": "v13-5-integrasi-knowledge.jsonl",
+      "records": 35,
+      "sha256": "f54294ba4701cbe39d74eeeb6306e9d5592c7d9d90ef8e099a623f48b2a409a9",
+      "bytes": 65401
+    },
+    {
+      "file": "v13-5-java.jsonl",
+      "records": 10,
+      "sha256": "8f22d8b47efc0a74149ae815ff112419850ffab2a70b082e63881ac04de9fa54",
+      "bytes": 18161
+    },
+    {
+      "file": "v13-5-javascript.jsonl",
+      "records": 5,
+      "sha256": "9e24c151f93b87a04583f185a28b2585fae99880a919f4841f44906194ea6f1e",
+      "bytes": 9053
+    },
+    {
+      "file": "v13-5-kotlin-swift-dart.jsonl",
+      "records": 5,
+      "sha256": "943c6da4022ab353c74cc4522c6e9984a2de2f84313a274fc030fde67559285b",
+      "bytes": 9448
+    },
+    {
+      "file": "v13-5-matematika---sains.jsonl",
+      "records": 2782,
+      "sha256": "1fa4eb65b9cbdc2669a1b61b7da0180612daac975ab6266dd22b45606d8df222",
+      "bytes": 1573549
+    },
+    {
+      "file": "v13-5-next-js.jsonl",
+      "records": 5,
+      "sha256": "9d68189e27bd24673f0cdee2dd5539e89d3d6e2e6a3d1f0eee8d0a621bbd846e",
+      "bytes": 9308
+    },
+    {
+      "file": "v13-5-node-js.jsonl",
+      "records": 5,
+      "sha256": "5a56b2deea9241325429cbab9f4b1015041494e79163d3f2f7236e700022d024",
+      "bytes": 8943
+    },
+    {
+      "file": "v13-5-pemahaman-bahasa-user.jsonl",
+      "records": 55,
+      "sha256": "d77cb6d887cbb9dfbfa58f79c4f347d2a5a72a644a90d2912d09016b289177b4",
+      "bytes": 101078
+    },
+    {
+      "file": "v13-5-pemrograman-kritis.jsonl",
+      "records": 30,
+      "sha256": "aca7a4824a74022559f23b360214ad10bde8044785a959d5a542b8bbe6ed2c79",
+      "bytes": 55573
+    },
+    {
+      "file": "v13-5-pemrograman-multi-bahasa.jsonl",
+      "records": 40,
+      "sha256": "73cd06ed5174a000b545cdb028e9fe57510cf911d838c8a1c1d401082ae1e3f1",
+      "bytes": 84494
+    },
+    {
+      "file": "v13-5-php.jsonl",
+      "records": 10,
+      "sha256": "7d5544fc8becbe144b452c994ce13eb1bfa4fca37013674b944fedba33c17466",
+      "bytes": 18216
+    },
+    {
+      "file": "v13-5-playbook-ai-data.jsonl",
+      "records": 1,
+      "sha256": "46f60beefe7c20bccfd566f187022986deabf2258c94230171de6de9cc654ed4",
+      "bytes": 2112
+    },
+    {
+      "file": "v13-5-playbook-api---json.jsonl",
+      "records": 1,
+      "sha256": "cedb5479becef3f75d05da282bb1d3d74bab81d6f6b3a90f9e97b5debf79df80",
+      "bytes": 2221
+    },
+    {
+      "file": "v13-5-playbook-architecture.jsonl",
+      "records": 1,
+      "sha256": "4d6c022a1bb230fc0a9956720470b3daecb235f5df715b87a1254b7e9489f372",
+      "bytes": 2222
+    },
+    {
+      "file": "v13-5-playbook-automation.jsonl",
+      "records": 1,
+      "sha256": "159f509e3c5e03c622b2306a0f5a57085f5af682ed6b37c680875e53c2b4d51a",
+      "bytes": 2101
+    },
+    {
+      "file": "v13-5-playbook-backend-cloud.jsonl",
+      "records": 1,
+      "sha256": "c58a6bff664817c8b383693144b6eaa5ca08f22d8bed22705d586bf06e795690",
+      "bytes": 1936
+    },
+    {
+      "file": "v13-5-playbook-backend-desktop.jsonl",
+      "records": 1,
+      "sha256": "662242900cdeea45486d25d3f6236a7b3009ec8ad0af05599cdf6013b6bc6727",
+      "bytes": 2011
+    },
+    {
+      "file": "v13-5-playbook-backend-oop.jsonl",
+      "records": 2,
+      "sha256": "bd142b7a34d68221ca6b1a8dbc7330624574e8a2b957247a33de0979f611cd76",
+      "bytes": 4205
+    },
+    {
+      "file": "v13-5-playbook-backend-runtime.jsonl",
+      "records": 1,
+      "sha256": "caa42b2871fd01d6c7b16bfb69d4fb8cc297b2143bf7c55b2329e4fad02f7ff0",
+      "bytes": 2121
+    },
+    {
+      "file": "v13-5-playbook-backend-scripting.jsonl",
+      "records": 1,
+      "sha256": "bea21e03c3ec60f639c867edb243b94c3264ae2573c49b64862094814a15625d",
+      "bytes": 2061
+    },
+    {
+      "file": "v13-5-playbook-backend-web.jsonl",
+      "records": 2,
+      "sha256": "d68fa0db7d78c5ce0836af9b5a62aec7ef15442d81857ead53cfae27a31fd3d0",
+      "bytes": 4269
+    },
+    {
+      "file": "v13-5-playbook-code-debugging.jsonl",
+      "records": 1,
+      "sha256": "d4a17c95d99a1059cce0845dd879539b6ed039ee70bf547e0f4c3ecfa830df4c",
+      "bytes": 2252
+    },
+    {
+      "file": "v13-5-playbook-code-refactoring.jsonl",
+      "records": 1,
+      "sha256": "8b317ac967afd23efc3989ad1c4963d3d6f003236303667fe50657539d4e54f3",
+      "bytes": 2236
+    },
+    {
+      "file": "v13-5-playbook-code-understanding.jsonl",
+      "records": 1,
+      "sha256": "a915951d753488387e5cc8be2a1c62b9648bcfeb6db64bb7e2724080a55f529c",
+      "bytes": 2202
+    },
+    {
+      "file": "v13-5-playbook-dasar-pemrograman.jsonl",
+      "records": 6,
+      "sha256": "7ab8c3a1c5aca2e7fd97ff2186b1882712482dbf53056bbae0020400be709ac4",
+      "bytes": 14289
+    },
+    {
+      "file": "v13-5-playbook-dasar-telekomunikasi.jsonl",
+      "records": 1,
+      "sha256": "6f925a62281f5f3629062f7d5612928d14b3472db3edb22cbebdc5efa1d2484a",
+      "bytes": 2184
+    },
+    {
+      "file": "v13-5-playbook-database-language.jsonl",
+      "records": 1,
+      "sha256": "ddb4328979b67ffbab0475a542b92af55e3fa482d2a6872de2103f246a89aee9",
+      "bytes": 2140
+    },
+    {
+      "file": "v13-5-playbook-fisika.jsonl",
+      "records": 6,
+      "sha256": "ae4dd7932ba6d773488372be1bd8c8551c395e7bdd10b5b1d49b552c79c10a8a",
+      "bytes": 12644
+    },
+    {
+      "file": "v13-5-playbook-framework-comparison.jsonl",
+      "records": 1,
+      "sha256": "e8d1f5c7d760e5b9f41be6eeb14e52a9922e52592376cf085592d27eac6e385b",
+      "bytes": 2281
+    },
+    {
+      "file": "v13-5-playbook-ftth-gpon.jsonl",
+      "records": 2,
+      "sha256": "4c1a044f6d8a7e57730518aafde731d1db670cd4d93c6e6b7738884173c1cdac",
+      "bytes": 4350
+    },
+    {
+      "file": "v13-5-playbook-fullstack-react.jsonl",
+      "records": 1,
+      "sha256": "610a5f0c2d4b9facc714a7678491a4e0956729281dcdd6f0cd5a14480a6dd4e1",
+      "bytes": 2221
+    },
+    {
+      "file": "v13-5-playbook-general-purpose-ai.jsonl",
+      "records": 1,
+      "sha256": "4d147734b515a2c64beb25dd59515ab1ef6bd3d7a05e175208e8d0340b219c74",
+      "bytes": 2135
+    },
+    {
+      "file": "v13-5-playbook-iot-m2m.jsonl",
+      "records": 1,
+      "sha256": "fb92c0dc704851cb94bee2b12493fd412178ccbbbd8fdff1f2e268c2696f361e",
+      "bytes": 2174
+    },
+    {
+      "file": "v13-5-playbook-jaringan-packet.jsonl",
+      "records": 1,
+      "sha256": "0eff4eac17be0e9b35a4c369616db4f3bdf0f14fa4d000876f1fe69a289fe08f",
+      "bytes": 2123
+    },
+    {
+      "file": "v13-5-playbook-keamanan-telekomunikasi.jsonl",
+      "records": 1,
+      "sha256": "f5a101d58700f591ff0d29af4af33a7706936439e24f3a043e8c09866125720f",
+      "bytes": 2269
+    },
+    {
+      "file": "v13-5-playbook-kimia.jsonl",
+      "records": 5,
+      "sha256": "31a2952325d0a38122330e32e64ef124798f987b4dd6e9659e3f5dcee22cf7ae",
+      "bytes": 10497
+    },
+    {
+      "file": "v13-5-playbook-learning-strategy.jsonl",
+      "records": 1,
+      "sha256": "e94fc4ac2984ee7123452c73b6a75ab96068f6159bc7a74c64be72180589b20a",
+      "bytes": 2237
+    },
+    {
+      "file": "v13-5-playbook-low-level-programming.jsonl",
+      "records": 1,
+      "sha256": "a63170b72e095070c2cab9d94d589289ab444a8e92e65f856e68ad695a911673",
+      "bytes": 2152
+    },
+    {
+      "file": "v13-5-playbook-matematika.jsonl",
+      "records": 10,
+      "sha256": "289d117ad831908515cc218b1855eedc44f5a5ea5a7cd08712abc6f3fd97d318",
+      "bytes": 21248
+    },
+    {
+      "file": "v13-5-playbook-media-transmisi.jsonl",
+      "records": 2,
+      "sha256": "7e0eba68c785d4140349d1b22029873be4005af7b8508ce39de05d09083f2481",
+      "bytes": 4274
+    },
+    {
+      "file": "v13-5-playbook-metode-berpikir.jsonl",
+      "records": 7,
+      "sha256": "71544b3240c4d27f890ea6d8fc516b7d1444776f2c55720070bc166c881c8c4b",
+      "bytes": 14592
+    },
+    {
+      "file": "v13-5-playbook-mobile-programming.jsonl",
+      "records": 1,
+      "sha256": "69d4def8771d04d37e328ebd4a28e2e5c4163a97d1498b64080f96c5bd510085",
+      "bytes": 2267
+    },
+    {
+      "file": "v13-5-playbook-network-modernization.jsonl",
+      "records": 1,
+      "sha256": "261f2a6208531aaab87329184f0fa7a87b69bfa0f78a4a602f14722738913548",
+      "bytes": 2184
+    },
+    {
+      "file": "v13-5-playbook-nlp-ux.jsonl",
+      "records": 10,
+      "sha256": "a53072072432ebb8e7687b66215e8979c9d12aef3bc72b00f89057f572ee33f3",
+      "bytes": 21150
+    },
+    {
+      "file": "v13-5-playbook-numerical-accuracy.jsonl",
+      "records": 1,
+      "sha256": "30434efecfb602c86bf080ee12e12451e68a20570c688074231a0e0ecad8a484",
+      "bytes": 2245
+    },
+    {
+      "file": "v13-5-playbook-praktikum-telekomunikasi.jsonl",
+      "records": 1,
+      "sha256": "3697fa1f565ee1ab0ada63611a7c5d276764b78681bd52166618473bf539f3e3",
+      "bytes": 2213
+    },
+    {
+      "file": "v13-5-playbook-problem-solving---semua-d.jsonl",
+      "records": 1,
+      "sha256": "ff69542cd599138101524b7277324ff4013ba54b9156eced37086f27f3208141",
+      "bytes": 2376
+    },
+    {
+      "file": "v13-5-playbook-programming---fisika.jsonl",
+      "records": 1,
+      "sha256": "658e295553e7e159d469c6cc1780d31e3a1e039d2b5faeec166c55bc302c4203",
+      "bytes": 2209
+    },
+    {
+      "file": "v13-5-playbook-programming---kimia.jsonl",
+      "records": 1,
+      "sha256": "8bf9cafeaab4d56d79f99fd9c7253ebada544bfa5a68600a8f3e16771ef8880c",
+      "bytes": 2140
+    },
+    {
+      "file": "v13-5-playbook-programming---matematika.jsonl",
+      "records": 1,
+      "sha256": "ced462ed7d9e5d33636adb5e83915de0fe4633f1d589f7f92601f30013e15c3b",
+      "bytes": 2194
+    },
+    {
+      "file": "v13-5-playbook-rf-dan-antena.jsonl",
+      "records": 2,
+      "sha256": "8fffb42f5250c44017274be2f0d8ab37718c3bd69377e0bda535293602da1176",
+      "bytes": 4160
+    },
+    {
+      "file": "v13-5-playbook-security-code-review.jsonl",
+      "records": 1,
+      "sha256": "dfb0461922f677b53e62f50be33758a283ecc394f39abdd82df69d0cd893f67c",
+      "bytes": 2213
+    },
+    {
+      "file": "v13-5-playbook-seluler.jsonl",
+      "records": 2,
+      "sha256": "a0339e745c88bf82b6256eb4dad69bfd1f851387939d6ac853d44eabb1af13dc",
+      "bytes": 4071
+    },
+    {
+      "file": "v13-5-playbook-sinyal-dan-sistem.jsonl",
+      "records": 3,
+      "sha256": "8d4703abdc10ccc7fba932a63376818a10cf42278d5fa887785eb6cfc0fce78a",
+      "bytes": 6294
+    },
+    {
+      "file": "v13-5-playbook-standar-dan-regulasi.jsonl",
+      "records": 1,
+      "sha256": "b07cd8a388c122044f790541ce7be7a39edefeb4aaef5e38d537071c56a8fb8a",
+      "bytes": 2268
+    },
+    {
+      "file": "v13-5-playbook-struktur-web.jsonl",
+      "records": 1,
+      "sha256": "d93cc1647a7db494642b652e8ee3b4b5f2ee01fffb28270c39bc547b04ab8e58",
+      "bytes": 2017
+    },
+    {
+      "file": "v13-5-playbook-styling-dan-layout.jsonl",
+      "records": 2,
+      "sha256": "ac05739eed8a0a0e25ab58bfdbeea2eee9bae02266dd7df1586158bb72007726",
+      "bytes": 4292
+    },
+    {
+      "file": "v13-5-playbook-systems-programming.jsonl",
+      "records": 1,
+      "sha256": "1d5f4d6d1198831a89434e45641b82e539cadd43b84e0e5ecd5539714034fd05",
+      "bytes": 2079
+    },
+    {
+      "file": "v13-5-playbook-telekomunikasi---matemati.jsonl",
+      "records": 1,
+      "sha256": "b5ab8971c32bf7d775bdd6a9ee663df1e815be99f1e210fcc5b87fbfe8dc34fb",
+      "bytes": 2158
+    },
+    {
+      "file": "v13-5-playbook-telekomunikasi---programm.jsonl",
+      "records": 1,
+      "sha256": "0badbd5cf63b474cc56cf68449dc221db44737fe157f9b5bb3fba151471e889c",
+      "bytes": 2349
+    },
+    {
+      "file": "v13-5-playbook-teori-informasi.jsonl",
+      "records": 1,
+      "sha256": "22423cb18afbb6ca9f5ba61fb6cc9b3ccc379ee1146eebc089ff0cd55438e803",
+      "bytes": 2086
+    },
+    {
+      "file": "v13-5-playbook-testing.jsonl",
+      "records": 1,
+      "sha256": "0da84b2cf02da00ea1332bc1278b6185a68e046f55d0032d0dfd04f1cb5cba1e",
+      "bytes": 2062
+    },
+    {
+      "file": "v13-5-playbook-user-feedback-learning.jsonl",
+      "records": 1,
+      "sha256": "a488196c98d842b9becdbe843e7a8ad84e1fe90460bba53d02f270bf6d46eb3c",
+      "bytes": 2249
+    },
+    {
+      "file": "v13-5-playbook-user-language---programmi.jsonl",
+      "records": 1,
+      "sha256": "bb0b51e2953c8220c1cf37804495f29bbf3ab4c9e419931ff9c6a2fb92cd0d6a",
+      "bytes": 2359
+    },
+    {
+      "file": "v13-5-playbook-web-programming.jsonl",
+      "records": 2,
+      "sha256": "23ad0933aaea079fe05084d5b18ef26b63712d4418dd921f31bab49378b4b945",
+      "bytes": 4384
+    },
+    {
+      "file": "v13-5-problem-solving.jsonl",
+      "records": 40,
+      "sha256": "ea931f50bb7ba7d9aa4c2d9deaee7dfa85f8f6f340f08aec3d10d4124943344f",
+      "bytes": 71869
+    },
+    {
+      "file": "v13-5-python.jsonl",
+      "records": 10,
+      "sha256": "8605e0b649ad56b5305e7245e7e79381489674514cd79ae86ad34ae07e462b35",
+      "bytes": 18096
+    },
+    {
+      "file": "v13-5-ruby.jsonl",
+      "records": 5,
+      "sha256": "c7f4b74c3b095e416b2e80fab52206f62d6df60b6f675c1e4a0a4dfaa9cbdf41",
+      "bytes": 8943
+    },
+    {
+      "file": "v13-5-rust.jsonl",
+      "records": 5,
+      "sha256": "053b6f378430f852a49c92608e45ad7eb3247173b22295cf7b7bc45b5e8e0059",
+      "bytes": 8628
+    },
+    {
+      "file": "v13-5-sql.jsonl",
+      "records": 5,
+      "sha256": "efb4e4b65cd42eed85fd2e8155452d3444a9ce7df460de4cf4717a99f6562069",
+      "bytes": 9218
+    },
+    {
+      "file": "v13-5-telekomunikasi.jsonl",
+      "records": 3251,
+      "sha256": "c18db3515b0958f5d946f32b96e5b2ad817b3f44750fe9bddfc873711a1f574a",
+      "bytes": 1800254
+    },
+    {
+      "file": "v13-5-typescript.jsonl",
+      "records": 5,
+      "sha256": "2d31e80e8599eb13cf69e761b12dbc10e2355ef77a66de8bfadeb210590d6a32",
+      "bytes": 9263
+    },
+    {
+      "file": "v13-6-bug-hunting---debugging-teliti.jsonl",
+      "records": 2795,
+      "sha256": "199701634634cc09c13bc0f37737e51c71459b367ed0d06b09e4309aea3b0abc",
+      "bytes": 1782790
+    },
+    {
+      "file": "v13-6-bug-report---qa.jsonl",
+      "records": 60,
+      "sha256": "333c42434a1b809eeac81f914e812d2d5927e40360768384145d0532c817fc4b",
+      "bytes": 68691
+    },
+    {
+      "file": "v13-6-critical-thinking-pemrograman.jsonl",
+      "records": 2829,
+      "sha256": "8772cbcb3e670deb10583e72032384339221f21caef9d1f90b36726f5b75565d",
+      "bytes": 1857934
+    },
+    {
+      "file": "v13-6-decision---trade-off.jsonl",
+      "records": 60,
+      "sha256": "feaff9ece6d7bffc66efea8d03f6aae01db9fd1b2c66f1b231912ee6f656634a",
+      "bytes": 69171
+    },
+    {
+      "file": "v13-6-evaluation-advanced-programming-re.jsonl",
+      "records": 19,
+      "sha256": "a082882eff85d04b88cb50aa9987aab68b2e8f46a2342fc45834d3a0b4d25a0a",
+      "bytes": 21047
+    },
+    {
+      "file": "v13-6-evaluation-bug-hunting.jsonl",
+      "records": 16,
+      "sha256": "f80d16be29072e50ffa84655faa2d9e6c0e9fbd937397feb5d91361a70f0be16",
+      "bytes": 16910
+    },
+    {
+      "file": "v13-6-evaluation-cross-domain-reasoning.jsonl",
+      "records": 5,
+      "sha256": "5678c198fed0e860c8e14f5940867970b2fdfcb45835268f4f9136414a70e2df",
+      "bytes": 5358
+    },
+    {
+      "file": "v13-6-evaluation-fashion-literacy.jsonl",
+      "records": 9,
+      "sha256": "e848bec547d649645b57bd98893389c02e7ba14cb885d582483841cdaedf1a3a",
+      "bytes": 9366
+    },
+    {
+      "file": "v13-6-evaluation-ips-terpadu.jsonl",
+      "records": 9,
+      "sha256": "fa8efcd0a8009865fd39e4a28007536b9e5398382b9a449a5836021559620996",
+      "bytes": 9349
+    },
+    {
+      "file": "v13-6-evaluation-thinking-framework.jsonl",
+      "records": 10,
+      "sha256": "1e1a2a46013787998c9bc3da58c6553a38efa611b451152af33a83debdf9219c",
+      "bytes": 10479
+    },
+    {
+      "file": "v13-6-evaluation-user-language-understan.jsonl",
+      "records": 5,
+      "sha256": "b407033fde01b1efd1efcb00aede7f38ace0b7bf94886c87ec57dfcc2e27fbcc",
+      "bytes": 5221
+    },
+    {
+      "file": "v13-6-integrasi-kemampuan.jsonl",
+      "records": 2666,
+      "sha256": "d0401146710f12e79b6229d23fc2e8e34fade74ec5e829ad4db3363cb5b27a8e",
+      "bytes": 1446258
+    },
+    {
+      "file": "v13-6-jawaban-sesuai-pertanyaan.jsonl",
+      "records": 60,
+      "sha256": "4e77cafb2a31dd7465b1a6d6d428b7518f6a10ed4152512a8cf5f87dd0d1879e",
+      "bytes": 71811
+    },
+    {
+      "file": "v13-6-pemahaman-user.jsonl",
+      "records": 2666,
+      "sha256": "4bd368629b6731295f43a64df15bafd825e05fb6368339f0281ac4ef527ba977",
+      "bytes": 1400209
+    },
+    {
+      "file": "v13-6-pemikiran-kritis-umum.jsonl",
+      "records": 2721,
+      "sha256": "b08155b85bf5de483c50c310e1ed2352f585d6a1b1a1ad5737008dc8d79a1a57",
+      "bytes": 1560504
+    },
+    {
+      "file": "v13-6-pengetahuan-fashion.jsonl",
+      "records": 3213,
+      "sha256": "02c2700ddcba2ce89d809f505484de9aa32a41f99f3d5afda79f21809d8d8b49",
+      "bytes": 1833380
+    },
+    {
+      "file": "v13-6-pengetahuan-ips.jsonl",
+      "records": 3213,
+      "sha256": "0ec8d6590cd9bf9b4cbf7f324cd36debc91e54828ccd5d6d8babdec64b197e19",
+      "bytes": 1798414
+    },
+    {
+      "file": "v13-6-playbook-advanced-programming-reas.jsonl",
+      "records": 19,
+      "sha256": "cf7a1cfd451b14d194f90701f1a964a4dd71da39e479cdad07fe5d08a4c7d12b",
+      "bytes": 25879
+    },
+    {
+      "file": "v13-6-playbook-bug-hunting.jsonl",
+      "records": 16,
+      "sha256": "514f9e1eb648996c6f519157087bbec16bd09df1b657d70581bfeb937bf19fe5",
+      "bytes": 20699
+    },
+    {
+      "file": "v13-6-playbook-cross-domain-reasoning.jsonl",
+      "records": 5,
+      "sha256": "115d42aa195d749411a365b4e8eff152ca3893a84932c2b0149240b0cde27ea0",
+      "bytes": 6485
+    },
+    {
+      "file": "v13-6-playbook-fashion-literacy.jsonl",
+      "records": 9,
+      "sha256": "301842bf71fb84f7bec36d96caa44e0c6960ef7e79c49f1b0efb94548042c98e",
+      "bytes": 11433
+    },
+    {
+      "file": "v13-6-playbook-ips-terpadu.jsonl",
+      "records": 9,
+      "sha256": "02742250a75fa49211c11cd46328463df45005a7283bc26acf8a9d9de8f5fdc0",
+      "bytes": 11227
+    },
+    {
+      "file": "v13-6-playbook-thinking-framework.jsonl",
+      "records": 10,
+      "sha256": "df8b4673d0d6d4d1ba56f3bf07882895a0df3df38538e962d39457a613053fc3",
+      "bytes": 12735
+    },
+    {
+      "file": "v13-6-playbook-user-language-understandi.jsonl",
+      "records": 5,
+      "sha256": "8a3bd17c26d851b65ded674fcce22b5f43b4154a401f23fc588f6e58c9e2b7dc",
+      "bytes": 6399
+    },
+    {
+      "file": "v13-6-scenario-answer-alignment.jsonl",
+      "records": 2997,
+      "sha256": "9d35a1277c90e2015266b1f1a6c4d7636fcd9965bf72cf05961ddd745208afcd",
+      "bytes": 1691214
+    },
+    {
+      "file": "v13-7-academic-file-qa.jsonl",
+      "records": 103,
+      "sha256": "eb5060dec71bd61a673dc457f760e1571737b23f60402748c47416a60869bf3e",
+      "bytes": 101079
+    },
+    {
+      "file": "v13-7-document-rag---chunking.jsonl",
+      "records": 103,
+      "sha256": "43dedf1e0fbd3c645a49a3c95d7559bb949d525d0923bc82a44b0ebac567519d",
+      "bytes": 103822
+    },
+    {
+      "file": "v13-7-document-understanding.jsonl",
+      "records": 1990,
+      "sha256": "c611ef93eaa83bf352ca19a71ccd662c80f5de934fd2a7b8216fa0af426bf0b2",
+      "bytes": 1059828
+    },
+    {
+      "file": "v13-7-evaluasi-fitur-file.jsonl",
+      "records": 30,
+      "sha256": "36001b10421318c924467a1dbccda4931175852ccea71be7ad22b6f51de32970",
+      "bytes": 71640
+    },
+    {
+      "file": "v13-7-file-aware-intent-router.jsonl",
+      "records": 1240,
+      "sha256": "c3141eea47ad1e1acae2c1565f5f0ad77876f9987a1ab30e81ec7f6f5f72361e",
+      "bytes": 788645
+    },
+    {
+      "file": "v13-7-file-feature-implementation.jsonl",
+      "records": 75,
+      "sha256": "fae252fadd6071b12322bef0eaac64ba82856b3022846d96f39494e1a641f6f0",
+      "bytes": 83349
+    },
+    {
+      "file": "v13-7-file-qa-evaluation-keterangan-pena.jsonl",
+      "records": 4,
+      "sha256": "58b569594942965de86211ff755079c6e1cf9e113a2a16f4368d14beb0259986",
+      "bytes": 4595
+    },
+    {
+      "file": "v13-7-file-qa-evaluation-upgrade-dokumen.jsonl",
+      "records": 1,
+      "sha256": "b1f950248acf9bdb24d40b9707da61bf9e821be01afd0210b70b017952f4b443",
+      "bytes": 989
+    },
+    {
+      "file": "v13-7-file-qa-evaluation-upgrade-evaluas.jsonl",
+      "records": 1,
+      "sha256": "c020d0c8fdbdcc5c77955c7ef74c0090a5821c8e9ca61fd2534a3e285fdaa1e7",
+      "bytes": 1049
+    },
+    {
+      "file": "v13-7-file-qa-evaluation-upgrade-gambar.jsonl",
+      "records": 1,
+      "sha256": "4bf8013dd9d5a9db60d6df88ea6f0d63839d4d9e69528a3e53f02be1c8a44120",
+      "bytes": 1009
+    },
+    {
+      "file": "v13-7-file-qa-evaluation-upgrade-pipelin.jsonl",
+      "records": 1,
+      "sha256": "801260ec99f09deaca1251464aaf8cfd6c7377b4afe219138d80a050ffe21ccb",
+      "bytes": 1047
+    },
+    {
+      "file": "v13-7-file-qa-evaluation-upgrade-use-cas.jsonl",
+      "records": 7,
+      "sha256": "6fa5ec0316e4fe860c5746a018e04589fa4d9094e8d7cfabd26e56410f226ca2",
+      "bytes": 7267
+    },
+    {
+      "file": "v13-7-file-security---privacy.jsonl",
+      "records": 103,
+      "sha256": "422a045d37a5f4ceab9b025f8f468e0b6e408a13353320523bf5ee38dd5428be",
+      "bytes": 105322
+    },
+    {
+      "file": "v13-7-file-security-keterangan-penambaha.jsonl",
+      "records": 4,
+      "sha256": "02c78ef61408fbadac6c38a3f16c7a2c81230e5a7c05e97bbcfb9a1eda62eef3",
+      "bytes": 4591
+    },
+    {
+      "file": "v13-7-file-security-upgrade-dokumen.jsonl",
+      "records": 1,
+      "sha256": "cb159c2132db8497f3d032e6e9b53221b0dd3204d4f53667c71b22ded5eb456f",
+      "bytes": 1043
+    },
+    {
+      "file": "v13-7-file-security-upgrade-evaluasi.jsonl",
+      "records": 1,
+      "sha256": "ba7aaf9ee994111d3d5b6225b7ee896cff009d7cd30660eb55f7da2c80bf40f3",
+      "bytes": 1072
+    },
+    {
+      "file": "v13-7-file-security-upgrade-gambar.jsonl",
+      "records": 1,
+      "sha256": "d9ef904410d9461f826b2412a41d453e5209ed9cac0230a9ec8d3b57975efdb5",
+      "bytes": 1039
+    },
+    {
+      "file": "v13-7-file-security-upgrade-pipeline-mul.jsonl",
+      "records": 1,
+      "sha256": "e73b829bd591068af096b17b80371140a5bf7d4f5aaf49581883cc3afa2167a9",
+      "bytes": 1103
+    },
+    {
+      "file": "v13-7-file-security-upgrade-use-case.jsonl",
+      "records": 7,
+      "sha256": "56dcc5cab293ca0885249899dac8eff38a83a3b0613d2ee1a932bdecf3a92f8d",
+      "bytes": 7581
+    },
+    {
+      "file": "v13-7-file-understanding-scenario.jsonl",
+      "records": 2997,
+      "sha256": "abc27ebf4cc602ddd577207e2508d8f3fdd917b24f0961a84708271967a0cf82",
+      "bytes": 1667411
+    },
+    {
+      "file": "v13-7-file-upload-playbook-keterangan-pe.jsonl",
+      "records": 4,
+      "sha256": "725a7d3a1d0c78ee14d9fc56fffdf1ee91141258fc2c6e7ff66e56e7095afb84",
+      "bytes": 5832
+    },
+    {
+      "file": "v13-7-file-upload-playbook-upgrade-dokum.jsonl",
+      "records": 1,
+      "sha256": "3e05908e9034088791c29a2a67719bd8e2532cf01be4357708b71392a9c1d779",
+      "bytes": 1281
+    },
+    {
+      "file": "v13-7-file-upload-playbook-upgrade-evalu.jsonl",
+      "records": 1,
+      "sha256": "831d489b227d2bb9cace9cdfbe05e2bb61ddacfc1fde1450726f9ae761c3ad31",
+      "bytes": 1221
+    },
+    {
+      "file": "v13-7-file-upload-playbook-upgrade-gamba.jsonl",
+      "records": 1,
+      "sha256": "7c666ac8381d3156a9acf8b4b6cd33988ff6385962dd8957c5c88f4e2d6959b2",
+      "bytes": 1232
+    },
+    {
+      "file": "v13-7-file-upload-playbook-upgrade-pipel.jsonl",
+      "records": 1,
+      "sha256": "497708b01c9df9eb4f5fb7bfd2bd20411693bad11489939d4b77c990fd5adcd5",
+      "bytes": 1263
+    },
+    {
+      "file": "v13-7-file-upload-playbook-upgrade-use-c.jsonl",
+      "records": 7,
+      "sha256": "6ce7736b5898d67764d086321735b6838e732dea7f81ef127d664f6e726c3001",
+      "bytes": 8939
+    },
+    {
+      "file": "v13-7-fitur-upload-gambar-dan-dokumen.jsonl",
+      "records": 10,
+      "sha256": "143dd2c3fb66e67ac3b1ed7609d32e9c62dd168f2866e9056922cd817dc7095a",
+      "bytes": 32760
+    },
+    {
+      "file": "v13-7-format-dokumen-yang-didukung.jsonl",
+      "records": 10,
+      "sha256": "7b4b19c76b79783eda6ac2b6a42ff3234bc129f2294d9f4ebf4672884755a8f3",
+      "bytes": 29990
+    },
+    {
+      "file": "v13-7-format-gambar-yang-didukung.jsonl",
+      "records": 10,
+      "sha256": "a27724258f8007b2d3d5905442f0266d8686d8ddca7bf9e80cb1ba4ba258ab1c",
+      "bytes": 28100
+    },
+    {
+      "file": "v13-7-image-understanding.jsonl",
+      "records": 1990,
+      "sha256": "39f627b39bf7db044009e6fc1a072b1479e377d2cfda6f1fed27270162761040",
+      "bytes": 1039140
+    },
+    {
+      "file": "v13-7-mode-jawaban-berdasarkan-file.jsonl",
+      "records": 10,
+      "sha256": "339e217f95a16d748f160a9a9c87dcf8d2d643c74750c2bced7eed2ba473e81a",
+      "bytes": 27670
+    },
+    {
+      "file": "v13-7-multimodal-answer-alignment.jsonl",
+      "records": 75,
+      "sha256": "e552a35bb157e1d4196b2f11bcfbffbcd8f3d61ce3ae9bf59e633d669c38bf28",
+      "bytes": 83199
+    },
+    {
+      "file": "v13-7-ocr---visual-qa.jsonl",
+      "records": 103,
+      "sha256": "afb814abcf578eaccb22ca9e7a374b631033af2524730ab8bab74d40cb6164db",
+      "bytes": 101277
+    },
+    {
+      "file": "v13-7-pipeline-multimodal.jsonl",
+      "records": 2581,
+      "sha256": "f68efc741f6d9dc9546ec240330b1365cc3754d2030daf2ca5758a1e1fcf2fc8",
+      "bytes": 1400663
+    },
+    {
+      "file": "v13-7-screenshot-debugging.jsonl",
+      "records": 85,
+      "sha256": "09285b179587cf1f4cf5c1c1041ab3db5d21cc7e82e5edda3a3ccfa7facdd8e9",
+      "bytes": 89585
+    },
+    {
+      "file": "v13-7-table---spreadsheet-analysis.jsonl",
+      "records": 103,
+      "sha256": "6a8e105dc2efaab57b5b366336eb0ee6d3bc4a1fb92a34ad08a84a3c9a58f919",
+      "bytes": 106997
+    },
+    {
+      "file": "v13-7-upload-dokumen.jsonl",
+      "records": 2671,
+      "sha256": "46959bf8c627451d6ac7e419e7ce8d12edf18aebc0312c7371d11826ecd02ae2",
+      "bytes": 1543447
+    },
+    {
+      "file": "v13-7-upload-gambar---dokumen.jsonl",
+      "records": 2571,
+      "sha256": "13b58b02d8c5ebf647aaf43c97a412989ff6d9cd57f2629f621538648763ceb1",
+      "bytes": 1309870
+    },
+    {
+      "file": "v13-7-upload-gambar.jsonl",
+      "records": 2631,
+      "sha256": "ba2c9f76d4d366a9a7f8440bed6950c5782ecc0bac03eff33f1cc003677b5dda",
+      "bytes": 1456746
+    },
+    {
+      "file": "v13-7-use-case-akademik.jsonl",
+      "records": 20,
+      "sha256": "ee568b7abce4ce04cc4ac86f16068f47a0cb3318a748cc8b4dc1ee0e1f57feba",
+      "bytes": 48210
+    },
+    {
+      "file": "v13-7-use-case-data.jsonl",
+      "records": 10,
+      "sha256": "770b5c657e3825c6314d752a0bfee67c22185845bb72799f317e800f691ac69a",
+      "bytes": 24330
+    },
+    {
+      "file": "v13-7-use-case-dokumen-kerja.jsonl",
+      "records": 10,
+      "sha256": "12278ade04f9f11ea8a9152d391785700a0b633805925663a0fbe42773843148",
+      "bytes": 23750
+    },
+    {
+      "file": "v13-7-use-case-fashion.jsonl",
+      "records": 10,
+      "sha256": "fd1778cfd10ed70b3cd2d7163c4403ee87ba90073e075beb1411762b1f8a456e",
+      "bytes": 24790
+    },
+    {
+      "file": "v13-7-use-case-ips.jsonl",
+      "records": 10,
+      "sha256": "5233b41946fc1eb4c4189f4a058cdc1fde76907e82f22c6b8fe65a20d601a0f8",
+      "bytes": 23970
+    },
+    {
+      "file": "v13-7-use-case-it.jsonl",
+      "records": 20,
+      "sha256": "a93c5905f5ea15ed414d4599ebf7f61b661ee01fa20af53bcee72c2c23986a16",
+      "bytes": 48210
+    },
+    {
+      "file": "v13-7-use-case-telekomunikasi.jsonl",
+      "records": 10,
+      "sha256": "160968a66f79bbf8a9d85411d0e6b2e726ca3268a83bf463fc215d1338a465de",
+      "bytes": 24770
+    },
+    {
+      "file": "v13-8-academic-file-accuracy.jsonl",
+      "records": 2506,
+      "sha256": "52d7aa619ea836f6d8783528a99372993383e07c608f40168fd44b8620ae1df8",
+      "bytes": 1236429
+    },
+    {
+      "file": "v13-8-accuracy-evaluation-akurasi-dokume.jsonl",
+      "records": 15,
+      "sha256": "e520017b0f6691ce8833607aa8688f8becc3b18135d50a13f15143df775cf873",
+      "bytes": 16575
+    },
+    {
+      "file": "v13-8-accuracy-evaluation-akurasi-gambar.jsonl",
+      "records": 15,
+      "sha256": "67543f54f38f018d47447d568953f91c74cc5d5f33e8c29d00c29f344fe1630f",
+      "bytes": 16752
+    },
+    {
+      "file": "v13-8-accuracy-evaluation-evaluasi-akura.jsonl",
+      "records": 10,
+      "sha256": "ccf3cbc12ec91139be86acbaa99b984538f437c5f6f218be62babc84a6cacb95",
+      "bytes": 10901
+    },
+    {
+      "file": "v13-8-accuracy-evaluation-keamanan-dan-p.jsonl",
+      "records": 5,
+      "sha256": "d9264614b7159e3d54b73d43a3ffae6959f0dfa0a6db0515769d05250004dd4c",
+      "bytes": 5510
+    },
+    {
+      "file": "v13-8-accuracy-evaluation-keterangan-fit.jsonl",
+      "records": 3,
+      "sha256": "dbf6a96787153f017599ea8fee75565392d61508cbfbf7c4321b3e55c3873e01",
+      "bytes": 3609
+    },
+    {
+      "file": "v13-8-accuracy-evaluation-pipeline-akura.jsonl",
+      "records": 10,
+      "sha256": "e0ebc226f548560bf07710c13403295facf724ba62eba746604c3bac8e4706a6",
+      "bytes": 10827
+    },
+    {
+      "file": "v13-8-accuracy-evaluation-rubric.jsonl",
+      "records": 2897,
+      "sha256": "770c09283965fc555ebe4b93d85e9b680f6e3999fba69e806c10ba4d9e91397d",
+      "bytes": 1483192
+    },
+    {
+      "file": "v13-8-accurate-file-reading-playbook-aku.jsonl",
+      "records": 30,
+      "sha256": "7097120dfe3bbb1f6d2cb24c9ffe0cda910e52ac925b65356ea2c93ed91b69cb",
+      "bytes": 40048
+    },
+    {
+      "file": "v13-8-accurate-file-reading-playbook-eva.jsonl",
+      "records": 10,
+      "sha256": "aef27db46a3bf3b7bd83c8f7335464cb176a09184801bb3d78b3a86193279f22",
+      "bytes": 13962
+    },
+    {
+      "file": "v13-8-accurate-file-reading-playbook-kea.jsonl",
+      "records": 5,
+      "sha256": "7d59bd7e326e91851c7a0afb9b3597d7e74a58119145252e001fffea676f8e8a",
+      "bytes": 7020
+    },
+    {
+      "file": "v13-8-accurate-file-reading-playbook-ket.jsonl",
+      "records": 3,
+      "sha256": "fc3f32bb3f4a08462cedc81bb360a1f8c52453dba0d359f218e318bc9dde7acc",
+      "bytes": 4448
+    },
+    {
+      "file": "v13-8-accurate-file-reading-playbook-pip.jsonl",
+      "records": 10,
+      "sha256": "4abeba175af46724fe354697cf0a3911df1367b9d753d0c53639fccd091e7e9e",
+      "bytes": 14035
+    },
+    {
+      "file": "v13-8-akurasi-baca-dokumen.jsonl",
+      "records": 2506,
+      "sha256": "d096bb07966ca08b85b0522d45e9a2d2d93c4c8b170c961ead7ba3def4f75c34",
+      "bytes": 1220763
+    },
+    {
+      "file": "v13-8-akurasi-baca-gambar.jsonl",
+      "records": 2506,
+      "sha256": "6a1022bbcaa238f60784b6f9530de75a41848f79f291e23254d3e34d336c6bca",
+      "bytes": 1211886
+    },
+    {
+      "file": "v13-8-akurasi-dokumen.jsonl",
+      "records": 2666,
+      "sha256": "abbf52ed0996283c486c3139bd521f636bfcfad92e1a731876e6ed47bc9137ba",
+      "bytes": 1744702
+    },
+    {
+      "file": "v13-8-akurasi-gambar.jsonl",
+      "records": 2666,
+      "sha256": "f4c96dea6eff9e339e649f40f0d59a0480753c4f8d6b7f286bf3f6cd162c873b",
+      "bytes": 1735713
+    },
+    {
+      "file": "v13-8-document-rag-accuracy.jsonl",
+      "records": 2506,
+      "sha256": "578d6cd35d2bbe2a6545ed12ced4973d2aedfb1b1cd8f57523346675db68b4ed",
+      "bytes": 1227388
+    },
+    {
+      "file": "v13-8-evaluasi-akurasi.jsonl",
+      "records": 2576,
+      "sha256": "8377607ba52bf0b7fc73b4f96a733e0c05ed91a41035b8d912bf953951db32a9",
+      "bytes": 1547078
+    },
+    {
+      "file": "v13-8-evidence-citation-engine.jsonl",
+      "records": 2506,
+      "sha256": "e0ca1737ac740f2afbdbea95080fb47d4a19204bb121b9e9f29e84516d949112",
+      "bytes": 1246985
+    },
+    {
+      "file": "v13-8-evidence-grounding-akurasi-dokumen.jsonl",
+      "records": 15,
+      "sha256": "66709bfeb6c37ed9ce5451187d5593918fb4bdae426e35e86ca47cc3d73bf814",
+      "bytes": 15925
+    },
+    {
+      "file": "v13-8-evidence-grounding-akurasi-gambar.jsonl",
+      "records": 15,
+      "sha256": "6d53ad09bf0277d8a239e2c49339bd2a81d4bc1bd4850aaa388b3779611a972f",
+      "bytes": 16053
+    },
+    {
+      "file": "v13-8-evidence-grounding-evaluasi-akuras.jsonl",
+      "records": 10,
+      "sha256": "6133faa657b7b2c0106318930d0cb41ff28986507ddb92526874e0ee735568e2",
+      "bytes": 10552
+    },
+    {
+      "file": "v13-8-evidence-grounding-keamanan-dan-pr.jsonl",
+      "records": 5,
+      "sha256": "d8c119b2c73b16eacc4cb067c341ea3a5079774954cda9bece164efdf205dd16",
+      "bytes": 5389
+    },
+    {
+      "file": "v13-8-evidence-grounding-keterangan-fitu.jsonl",
+      "records": 3,
+      "sha256": "600e230a5a001c88defdae702f3e864d1867cbae3f01f2fa6db8bd965c98bec6",
+      "bytes": 3232
+    },
+    {
+      "file": "v13-8-evidence-grounding-pipeline-akuras.jsonl",
+      "records": 10,
+      "sha256": "6378849bfac50a5db800bb3f073d1b028055a05efe4e249332ec4167fd306cf6",
+      "bytes": 10557
+    },
+    {
+      "file": "v13-8-file-accuracy-scenario.jsonl",
+      "records": 3957,
+      "sha256": "9aa25bd160b2012ab4bc379b784b4b0332085adc526614c415d4c5eff7cf47e0",
+      "bytes": 2205707
+    },
+    {
+      "file": "v13-8-file-evaluation-dataset.jsonl",
+      "records": 2461,
+      "sha256": "f2390691d359eefac637405f7502b78651771ae0e399a015dfde3b67cf0aad5f",
+      "bytes": 1218671
+    },
+    {
+      "file": "v13-8-file-privacy-security-akurasi-doku.jsonl",
+      "records": 15,
+      "sha256": "ee8772f73fa562b7327fb506b53a9775df1986646c61a201923f321818699939",
+      "bytes": 15511
+    },
+    {
+      "file": "v13-8-file-privacy-security-akurasi-gamb.jsonl",
+      "records": 15,
+      "sha256": "aa7480a30afe3dbbb2a273f7cef2145d4063c958b0d21363fdcc5ea5fd44c736",
+      "bytes": 15603
+    },
+    {
+      "file": "v13-8-file-privacy-security-evaluasi-aku.jsonl",
+      "records": 10,
+      "sha256": "1e272546b0c3e7285669dbaa7103df1f336ca1071b1ffacdd7f1c43036e7b29a",
+      "bytes": 10307
+    },
+    {
+      "file": "v13-8-file-privacy-security-keamanan-dan.jsonl",
+      "records": 5,
+      "sha256": "9627964f10c67e1f6579d7c73a1b4c8451f5a565bbc769f885cf77db35d6bb5d",
+      "bytes": 5272
+    },
+    {
+      "file": "v13-8-file-privacy-security-keterangan-f.jsonl",
+      "records": 3,
+      "sha256": "553f3a46296783995b0c5ceec856ae8fcc1562b3dd437ab5cb33a4443ce534a6",
+      "bytes": 3143
+    },
+    {
+      "file": "v13-8-file-privacy-security-pipeline-aku.jsonl",
+      "records": 10,
+      "sha256": "c667fc88466350b46084620d4ffaeeb096db0a12bc4290d987da6d5ce2333c2f",
+      "bytes": 10212
+    },
+    {
+      "file": "v13-8-file-quality-gate-akurasi-dokumen.jsonl",
+      "records": 15,
+      "sha256": "9a3796be89152479cc3b88ec6d9e9fb583670472ae509df0343f2d9964c2fb1d",
+      "bytes": 15812
+    },
+    {
+      "file": "v13-8-file-quality-gate-akurasi-gambar.jsonl",
+      "records": 15,
+      "sha256": "8084c2663781bf55245aca722a55a4dbe595d371de744bb71dcff5568ac3e8f4",
+      "bytes": 15918
+    },
+    {
+      "file": "v13-8-file-quality-gate-evaluasi-akurasi.jsonl",
+      "records": 10,
+      "sha256": "da3565beece8dd9f0f6b97209519cd8044e1c11b566782ba18f608f76b102775",
+      "bytes": 10473
+    },
+    {
+      "file": "v13-8-file-quality-gate-keamanan-dan-pri.jsonl",
+      "records": 5,
+      "sha256": "39372e09756e10c248a6d22edece595872ea8c3b943f0889443454f2774b092c",
+      "bytes": 5344
+    },
+    {
+      "file": "v13-8-file-quality-gate-keterangan-fitur.jsonl",
+      "records": 3,
+      "sha256": "93e2e57ce9fe44524d5ddfe277a334de170c96af205c4ce7f4ecf01a927cc3cd",
+      "bytes": 3205
+    },
+    {
+      "file": "v13-8-file-quality-gate-pipeline-akurasi.jsonl",
+      "records": 10,
+      "sha256": "878642ee59da037c80a0845ea3a8e8efa705d4e4d40894b776cafd91a45ff1af",
+      "bytes": 10467
+    },
+    {
+      "file": "v13-8-keamanan-dan-privasi-akurasi.jsonl",
+      "records": 2005,
+      "sha256": "5b752b88fe74dce9ff762a119af85c2ce4ed8d2573ffb71d81ab3c50fa1ca69e",
+      "bytes": 1246890
+    },
+    {
+      "file": "v13-8-keterangan-fitur.jsonl",
+      "records": 54,
+      "sha256": "5d194a363689d8d9cc1f604c03a82386a8121288ea49ea74abbb35c1f83c47c8",
+      "bytes": 156303
+    },
+    {
+      "file": "v13-8-multimodal-confidence-calibration.jsonl",
+      "records": 2461,
+      "sha256": "c0dddccc3d911881c5c4198c4a2efc15bf23665d7afc1af5dc9499c3674ee034",
+      "bytes": 1289585
+    },
+    {
+      "file": "v13-8-no-hallucination-file-policy.jsonl",
+      "records": 2061,
+      "sha256": "d9ee34aa1205e46a4c70dc3bd476fe580649787698dca8235a9b5ef17105be7a",
+      "bytes": 1143101
+    },
+    {
+      "file": "v13-8-ocr-quality---error-correction.jsonl",
+      "records": 2506,
+      "sha256": "6f1885243354d950e274a7f6032abeab14b2ccacd02e3543054ad22f99949746",
+      "bytes": 1287675
+    },
+    {
+      "file": "v13-8-parser-implementation.jsonl",
+      "records": 2461,
+      "sha256": "dcf14199d94e414b29c4ce49e1271849b831abe6335fa46eff5d8e9e36c0a91a",
+      "bytes": 1200761
+    },
+    {
+      "file": "v13-8-pipeline-akurasi.jsonl",
+      "records": 2576,
+      "sha256": "3741322881b62d01778be611d52c4c232318f1b311a2898943d61b3a56420482",
+      "bytes": 1549052
+    },
+    {
+      "file": "v13-8-privacy-safe-file-analysis.jsonl",
+      "records": 2461,
+      "sha256": "d6a531eded2c9c8f2dcdc740822fa76bf943f37a365bf41ca9f741a4d0eb0833",
+      "bytes": 1243639
+    },
+    {
+      "file": "v13-8-screenshot-debug-accuracy.jsonl",
+      "records": 2506,
+      "sha256": "96e75cfed6e33899644ff807a2bd54fc3fe95e0bfd61a21837cff7721ba65a19",
+      "bytes": 1259544
+    },
+    {
+      "file": "v13-8-table-chart-graph-accuracy.jsonl",
+      "records": 2506,
+      "sha256": "a381d2bcd8d8711d058c5019e591984d7fc482669f181aaf9ccd31a68e9c2fae",
+      "bytes": 1266443
+    },
+    {
+      "file": "v13-8-user-friendly-file-answering.jsonl",
+      "records": 2061,
+      "sha256": "f4ed5a586d1cd8bab584c00d4f9c9ee8f689cc23c78063537e28c7b6a028db6a",
+      "bytes": 1144529
+    },
+    {
+      "file": "v13-9-brainstorming-berdasarkan-level.jsonl",
+      "records": 2451,
+      "sha256": "7dcc311cafdb041786d8c26de4be638afe9481ef0daa9f6c9f1c5bbd890e9dc2",
+      "bytes": 1224653
+    },
+    {
+      "file": "v13-9-database-schema-chat.jsonl",
+      "records": 2450,
+      "sha256": "96429c02446b7ba1f673de9dee8d782a9c8d6c49c3866b2cfc19af0c4da0ffae",
+      "bytes": 1145762
+    },
+    {
+      "file": "v13-9-deep-session-pin-persistence.jsonl",
+      "records": 2361,
+      "sha256": "498eb16bd4a43d256604065a3cabc39853cacc62867e91e6bdb0451087e1603e",
+      "bytes": 1146238
+    },
+    {
+      "file": "v13-9-evaluasi-level.jsonl",
+      "records": 18,
+      "sha256": "806c6e0cfd59fce48c23a0beabc7369768983cc5646d0af97b53bee5cdc63adf",
+      "bytes": 10160
+    },
+    {
+      "file": "v13-9-evaluasi-pin.jsonl",
+      "records": 18,
+      "sha256": "e228985f715cc9a304728c8611f17eba2fd24733a5452d70add7e55b4c0123a4",
+      "bytes": 9920
+    },
+    {
+      "file": "v13-9-evaluasi-session.jsonl",
+      "records": 18,
+      "sha256": "d594e4378611aa4b2bd9e747d80e72d8977afb88242bd9dae25ca196899d88a8",
+      "bytes": 10377
+    },
+    {
+      "file": "v13-9-evaluation-session-pin-level.jsonl",
+      "records": 2360,
+      "sha256": "cc2b614040d0a9e7c24a47bc955e1b5d40ba264b1d389ad7e6644bdad8a6633b",
+      "bytes": 1148665
+    },
+    {
+      "file": "v13-9-intelligence-level-system.jsonl",
+      "records": 2379,
+      "sha256": "3459e389647061922801362efb185fa27189c18f2b0dd8d84905579263996105",
+      "bytes": 1143019
+    },
+    {
+      "file": "v13-9-level-kecerdasan-ai.jsonl",
+      "records": 90,
+      "sha256": "f4b7bc01cb9aee1cedfb8ee97a420edc7bc174e87b1b4cc529cdad39f0a86b42",
+      "bytes": 53020
+    },
+    {
+      "file": "v13-9-pinned-session.jsonl",
+      "records": 2433,
+      "sha256": "84d9d1b4c7ea490df10ca9dc5b9675d9c13c06d6ad24019c2e06b0c6818cb0b1",
+      "bytes": 1084433
+    },
+    {
+      "file": "v13-9-prompt-profile-intelligence.jsonl",
+      "records": 2450,
+      "sha256": "dbb434612dd4af5314ca69ac00623888cee928d1afe5a52b2fec7ff4b2b116a1",
+      "bytes": 1190581
+    },
+    {
+      "file": "v13-9-scenario-level-answer-alignment.jsonl",
+      "records": 2361,
+      "sha256": "33955d3fd3f7ec0349901d80324bbf95096fee32c053955690d5ef27bdf94b73",
+      "bytes": 1163758
+    },
+    {
+      "file": "v13-9-session-persistence.jsonl",
+      "records": 2451,
+      "sha256": "b6604d08fc727d7e7be3e625f9a3443e6c5b7911e74f6237e4e72976dcb84030",
+      "bytes": 1139743
+    },
+    {
+      "file": "v13-9-smart-routing-intelligence-level.jsonl",
+      "records": 2414,
+      "sha256": "13d34ba88213e4240863c4acaea6a5c918ba9de404d15c26c51554692da96873",
+      "bytes": 1214613
+    },
+    {
+      "file": "v13-9-ui-ux-level-session-pin.jsonl",
+      "records": 2450,
+      "sha256": "8a708d45c475839b77db623253dae449b204b1448be01dbcbb9a920b1026b715",
+      "bytes": 1160670
+    },
+    {
+      "file": "web-development-trends-2026.jsonl",
+      "records": 4,
+      "sha256": "368f116555d2e13c6299d9fb8ca8054d6d96b6676930bf2e16efb0e478050852",
+      "bytes": 3789
+    },
+    {
+      "file": "windows-laptop-networking.jsonl",
+      "records": 10,
+      "sha256": "435ed4cf4a3f167f1c95e28629ad4bcca9b284500c05c0378849006584455388",
+      "bytes": 3912
+    },
+    {
+      "file": "windows-laptop.jsonl",
+      "records": 3407,
+      "sha256": "118b677ba9443b4ba7b52ec80ed974bef3e9b8654bf0dfa53f48d9cef2c3bfb3",
+      "bytes": 1754054
+    },
+    {
+      "file": "windows-optimization.jsonl",
+      "records": 1,
+      "sha256": "ac0bfa8ca6ecbb3643e5abca27ed16e49ba700b489e9575bcc1827e4528c277e",
+      "bytes": 656
+    },
+    {
+      "file": "workflow-ai.jsonl",
+      "records": 8,
+      "sha256": "fa4c678356e5f54eb09ce5c3573966a7a9beda0c9c10dd5a3ea1816445daa9e2",
+      "bytes": 5756
+    },
+    {
+      "file": "workflow-mode-language-variants.jsonl",
+      "records": 2676,
+      "sha256": "c212189ec64ca12af9668d61bacb18bc2a437e4802d0a71f26fb37187f5077f6",
+      "bytes": 1435929
+    },
+    {
+      "file": "writing-communication-q-a.jsonl",
+      "records": 10,
+      "sha256": "b3829157bc4bfc6075cf6cd79de00fa04f6a54082de97f623e63d72a5611aeca",
+      "bytes": 5434
+    },
+    {
+      "file": "writing-communication.jsonl",
+      "records": 10,
+      "sha256": "f663fc3df661a72f47107bdf160435c74342a567c4b82396b5ca36fbdb9a9bb7",
+      "bytes": 4975
+    }
+  ]
+}

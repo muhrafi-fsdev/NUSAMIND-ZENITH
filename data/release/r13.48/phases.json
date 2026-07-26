@@ -1,0 +1,74 @@
+[
+  {
+    "phase_order": "1",
+    "phase_name": "Release Foundation and Scope Lock",
+    "main_goal": "Remove n8n, preserve UI, clean ZIP validation",
+    "completion_definition": "Scope, clean install, manifest and regression gate pass",
+    "release_blocker": "Yes",
+    "primary_reference": "User-provided image: The Agentic AI Knowledge Graph; User-provided image: The LLM Application Iceberg; User-provided image: AI Agent Project Structure Example"
+  },
+  {
+    "phase_order": "2",
+    "phase_name": "Modular Runtime Architecture",
+    "main_goal": "Split apps, services, packages, data, tests and enforce boundaries",
+    "completion_definition": "No circular dependencies or forbidden imports",
+    "release_blocker": "Yes",
+    "primary_reference": "User-provided image: AI Agent Project Structure Example"
+  },
+  {
+    "phase_order": "3",
+    "phase_name": "Agentic Capability Knowledge Graph",
+    "main_goal": "Nodes, edges, readiness, traversal, edition, policy and benchmark links",
+    "completion_definition": "Capability graph integrity gate passes",
+    "release_blocker": "Yes",
+    "primary_reference": "User-provided image: The Agentic AI Knowledge Graph"
+  },
+  {
+    "phase_order": "4",
+    "phase_name": "Unified Retrieval and Memory",
+    "main_goal": "Classical/Graph/Agentic RAG and memory hierarchy",
+    "completion_definition": "Retrieval and memory critical tests pass",
+    "release_blocker": "Yes",
+    "primary_reference": "User-provided image: The Agentic AI Knowledge Graph"
+  },
+  {
+    "phase_order": "5",
+    "phase_name": "Agent Pattern Runtime",
+    "main_goal": "ReAct, planner-executor, multi-agent, tools, reflection and recovery",
+    "completion_definition": "False success and duplicate side effect equal zero",
+    "release_blocker": "Yes",
+    "primary_reference": "User-provided image: The Agentic AI Knowledge Graph"
+  },
+  {
+    "phase_order": "6",
+    "phase_name": "Production Governance and Observability",
+    "main_goal": "Confidence, policy, audit, evaluation, monitoring, resource, permissions and privacy",
+    "completion_definition": "Critical governance bypass equals zero",
+    "release_blocker": "Yes",
+    "primary_reference": "User-provided image: The Agentic AI Knowledge Graph; User-provided image: The LLM Application Iceberg"
+  },
+  {
+    "phase_order": "7",
+    "phase_name": "Hidden LLM Infrastructure",
+    "main_goal": "Prompts, system, chunking, embeddings, indexes, context, model selection, feedback and fallback",
+    "completion_definition": "Hidden infrastructure readiness matches runtime",
+    "release_blocker": "Yes",
+    "primary_reference": "User-provided image: The LLM Application Iceberg"
+  },
+  {
+    "phase_order": "8",
+    "phase_name": "Frontier and Controlled Improvement",
+    "main_goal": "Learning loops, multimodal, workflow scale, canary and self-improvement safeguards",
+    "completion_definition": "No unapproved self-modification or raw CoT storage",
+    "release_blocker": "Apex/Zenith capability",
+    "primary_reference": "User-provided image: The Agentic AI Knowledge Graph"
+  },
+  {
+    "phase_order": "9",
+    "phase_name": "Edition Integration and Release",
+    "main_goal": "Swift, Zenith, Apex profiles, clean ZIP and grand gate",
+    "completion_definition": "All edition critical cases pass",
+    "release_blocker": "Yes",
+    "primary_reference": "User-provided image: The Agentic AI Knowledge Graph; User-provided image: The LLM Application Iceberg; User-provided image: AI Agent Project Structure Example"
+  }
+]

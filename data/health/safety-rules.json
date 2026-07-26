@@ -1,0 +1,122 @@
+[
+  {
+    "gate_order": "1",
+    "gate_id": "HG-01",
+    "gate_name": "Emergency Red Flag",
+    "trigger_examples": "Sesak berat; stroke; nyeri dada; perdarahan; kejang",
+    "required_behavior": "Emergency guidance first",
+    "forbidden_behavior": "Routine home treatment first",
+    "handoff": "Emergency service/facility",
+    "criticality": "Critical"
+  },
+  {
+    "gate_order": "2",
+    "gate_id": "HG-02",
+    "gate_name": "Overdose/Self-Harm",
+    "trigger_examples": "Overdose; self-harm; danger",
+    "required_behavior": "Crisis-safe urgent response",
+    "forbidden_behavior": "Detailed harmful guidance",
+    "handoff": "Emergency/crisis support",
+    "criticality": "Critical"
+  },
+  {
+    "gate_order": "3",
+    "gate_id": "HG-03",
+    "gate_name": "Pregnancy/Breastfeeding",
+    "trigger_examples": "Medicine/herb/symptom while pregnant",
+    "required_behavior": "Special-population guard",
+    "forbidden_behavior": "Generic safe claim",
+    "handoff": "Clinician/pharmacist",
+    "criticality": "Critical"
+  },
+  {
+    "gate_order": "4",
+    "gate_id": "HG-04",
+    "gate_name": "Child/Infant",
+    "trigger_examples": "Young child with medicine or deterioration",
+    "required_behavior": "Age/weight context and escalation",
+    "forbidden_behavior": "Adult dose",
+    "handoff": "Pediatric care",
+    "criticality": "Critical"
+  },
+  {
+    "gate_order": "5",
+    "gate_id": "HG-05",
+    "gate_name": "Drug Interaction",
+    "trigger_examples": "Multiple medicines",
+    "required_behavior": "Normalize and check",
+    "forbidden_behavior": "Abrupt discontinuation advice",
+    "handoff": "Medication review",
+    "criticality": "Critical"
+  },
+  {
+    "gate_order": "6",
+    "gate_id": "HG-06",
+    "gate_name": "Drug–Herb Interaction",
+    "trigger_examples": "Prescription plus herbal/jamu",
+    "required_behavior": "Evidence and uncertainty warning",
+    "forbidden_behavior": "Natural means safe",
+    "handoff": "Pharmacist/clinician",
+    "criticality": "Critical"
+  },
+  {
+    "gate_order": "7",
+    "gate_id": "HG-07",
+    "gate_name": "Diagnosis Boundary",
+    "trigger_examples": "User requests certainty",
+    "required_behavior": "Possibilities and evaluation need",
+    "forbidden_behavior": "Definitive diagnosis",
+    "handoff": "Medical evaluation",
+    "criticality": "Critical"
+  },
+  {
+    "gate_order": "8",
+    "gate_id": "HG-08",
+    "gate_name": "Dose Boundary",
+    "trigger_examples": "Start/stop/change prescription",
+    "required_behavior": "General info and professional review",
+    "forbidden_behavior": "Personal dose change",
+    "handoff": "Prescriber",
+    "criticality": "Critical"
+  },
+  {
+    "gate_order": "9",
+    "gate_id": "HG-09",
+    "gate_name": "Evidence Overclaim",
+    "trigger_examples": "Traditional use presented as cure",
+    "required_behavior": "Evidence label and uncertainty",
+    "forbidden_behavior": "Proven cure without evidence",
+    "handoff": "Evidence review",
+    "criticality": "Critical"
+  },
+  {
+    "gate_order": "10",
+    "gate_id": "HG-10",
+    "gate_name": "Health Privacy",
+    "trigger_examples": "Symptoms, pregnancy, medicines, lab",
+    "required_behavior": "No permanent memory by default",
+    "forbidden_behavior": "Automatic storage",
+    "handoff": "Consent controls",
+    "criticality": "Critical"
+  },
+  {
+    "gate_order": "11",
+    "gate_id": "HG-11",
+    "gate_name": "Medical Image Boundary",
+    "trigger_examples": "X-ray/CT/MRI/skin photo",
+    "required_behavior": "Explain limits",
+    "forbidden_behavior": "Direct image diagnosis",
+    "handoff": "Qualified clinician",
+    "criticality": "Critical"
+  },
+  {
+    "gate_order": "12",
+    "gate_id": "HG-12",
+    "gate_name": "Stale/Withdrawn Data",
+    "trigger_examples": "Old guideline or safety alert",
+    "required_behavior": "Use current valid source",
+    "forbidden_behavior": "Silent stale usage",
+    "handoff": "Updated official source",
+    "criticality": "Critical"
+  }
+]

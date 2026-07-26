@@ -1,0 +1,130 @@
+[
+  {
+    "phase_order": "1",
+    "phase_name": "Phase 0 — N1.0 Versioning and Distribution Reset",
+    "track": "SIGNIFICANT_N1_0",
+    "upgrade_count": "10",
+    "primary_goal": "Rename the platform, repair drift, cancel EXE, lock n8n/UI, and build reproducible Web/CLI distribution.",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "2",
+    "phase_name": "Phase 1 — Reference Gap Audit and Change Impact",
+    "track": "MIGRATED_FROM_V13.49.2",
+    "upgrade_count": "6",
+    "primary_goal": "Migrate and rebenchmark all V13.49.2 updates under N1.0.",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "3",
+    "phase_name": "Phase 2 — Prompt, Reasoning and Deep-Agent Completion",
+    "track": "MIGRATED_FROM_V13.49.2",
+    "upgrade_count": "10",
+    "primary_goal": "Migrate and rebenchmark all V13.49.2 updates under N1.0.",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "4",
+    "phase_name": "Phase 3 — Model Gateway Quota, Account and Compatibility Completion",
+    "track": "MIGRATED_FROM_V13.49.2",
+    "upgrade_count": "10",
+    "primary_goal": "Migrate and rebenchmark all V13.49.2 updates under N1.0.",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "5",
+    "phase_name": "Phase 4 — Engineering Intelligence, Sessions and Skill Workflows",
+    "track": "MIGRATED_FROM_V13.49.2",
+    "upgrade_count": "19",
+    "primary_goal": "Migrate and rebenchmark all V13.49.2 updates under N1.0.",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "6",
+    "phase_name": "Phase 5 — Browser Intelligence, Profiles and Replay",
+    "track": "MIGRATED_FROM_V13.49.2",
+    "upgrade_count": "10",
+    "primary_goal": "Migrate and rebenchmark all V13.49.2 updates under N1.0.",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "7",
+    "phase_name": "Phase 6 — Optional Developer UI Component Governance",
+    "track": "MIGRATED_FROM_V13.49.2",
+    "upgrade_count": "6",
+    "primary_goal": "Migrate and rebenchmark all V13.49.2 updates under N1.0.",
+    "release_blocker": "No—optional dashboard"
+  },
+  {
+    "phase_order": "8",
+    "phase_name": "Phase 7 — Cybersecurity Curriculum and Defensive Project Completion",
+    "track": "MIGRATED_FROM_V13.49.2",
+    "upgrade_count": "13",
+    "primary_goal": "Migrate and rebenchmark all V13.49.2 updates under N1.0.",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "9",
+    "phase_name": "Phase 8 — Security ML and Authorized Attack-Surface Completion",
+    "track": "MIGRATED_FROM_V13.49.2",
+    "upgrade_count": "11",
+    "primary_goal": "Migrate and rebenchmark all V13.49.2 updates under N1.0.",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "10",
+    "phase_name": "Phase 9 — Edition Integration, Regression and Release",
+    "track": "MIGRATED_FROM_V13.49.2",
+    "upgrade_count": "7",
+    "primary_goal": "Migrate and rebenchmark all V13.49.2 updates under N1.0.",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "11",
+    "phase_name": "Phase 10 — Unified Intelligence Fabric",
+    "track": "SIGNIFICANT_N1_0",
+    "upgrade_count": "10",
+    "primary_goal": "Unify orchestration, reasoning, evidence, freshness, memory, uncertainty and controlled improvement.",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "12",
+    "phase_name": "Phase 11 — Retrieval, Data and Knowledge Excellence",
+    "track": "SIGNIFICANT_N1_0",
+    "upgrade_count": "8",
+    "primary_goal": "Improve retrieval planning, entity resolution, lineage, structural chunking and knowledge lifecycle.",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "13",
+    "phase_name": "Phase 12 — Engineering Agent 2.0",
+    "track": "SIGNIFICANT_N1_0",
+    "upgrade_count": "8",
+    "primary_goal": "Fuse code graph/LSP, test impact, Git, dependencies, refactoring, debugging and documentation.",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "14",
+    "phase_name": "Phase 13 — Browser and Multimodal Research 2.0",
+    "track": "SIGNIFICANT_N1_0",
+    "upgrade_count": "5",
+    "primary_goal": "Create evidence-oriented research, web datasets, QA, dry-run and multimodal alignment.",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "15",
+    "phase_name": "Phase 14 — Cybersecurity Fusion 2.0",
+    "track": "SIGNIFICANT_N1_0",
+    "upgrade_count": "5",
+    "primary_goal": "Unify controls, SOC timeline, network triage, email defense and supply-chain risk.",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "16",
+    "phase_name": "Phase 15 — Production and Evaluation 2.0",
+    "track": "SIGNIFICANT_N1_0",
+    "upgrade_count": "2",
+    "primary_goal": "Reduce benchmark variance and enforce the N1.0 grand gate.",
+    "release_blocker": "Yes"
+  }
+]

@@ -1,0 +1,13 @@
+services:
+  quran-ai:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      AI_PROVIDER: ollama
+      OLLAMA_BASE_URL: http://host.docker.internal:11434/api
+      OLLAMA_MODEL: qwen2.5:7b
+      OLLAMA_CODER_MODEL: qwen2.5-coder:7b
+      ADMIN_TOKEN: change-this-local-admin-token
+    volumes:
+      - ./storage:/app/storage

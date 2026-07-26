@@ -1,0 +1,6 @@
+import fs from 'node:fs/promises'; import path from 'node:path';
+const data=path.join(process.cwd(),'data');
+async function walk(dir){const out=[];for(const e of await fs.readdir(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())out.push(...await walk(p));else if(e.name.endsWith('.json'))out.push(p);}return out;}
+async function boundaryOk(p,size){const fd=await fs.open(p,'r');try{const n=Math.min(size,4096);const head=Buffer.alloc(n),tail=Buffer.alloc(n);await fd.read(head,0,n,0);await fd.read(tail,0,n,Math.max(0,size-n));const h=head.toString('utf8').replace(/^\uFEFF/,'').trimStart()[0];const t=tail.toString('utf8').trimEnd().slice(-1);return ['[','{'].includes(h)&&[']','}'].includes(t);}finally{await fd.close();}}
+let files=0,records=0,invalid=0,largeFiles=0;for(const p of await walk(data)){files++;try{const stat=await fs.stat(p);if(stat.size>64*1024*1024){largeFiles++;if(!await boundaryOk(p,stat.size))invalid++;continue;}const x=JSON.parse(await fs.readFile(p,'utf8'));if(Array.isArray(x))records+=x.length;else if(x&&Array.isArray(x.items))records+=x.items.length;}catch{invalid++;}}
+console.log({ok:invalid===0,jsonFiles:files,recordsScanned:records,largeFilesStreamChecked:largeFiles,invalid,structure:'semantic-data-layout'});if(invalid)process.exitCode=1;

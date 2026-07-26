@@ -1,0 +1,51 @@
+[
+  {
+    "phase_order": "1",
+    "phase_name": "Runtime Truthfulness",
+    "main_goal": "Executable tests, honest status, Qwen profiling, clean-install validation",
+    "completion_definition": "No source-presence test and npm ci/check/build validation passes",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "2",
+    "phase_name": "Advanced Prompt Strategies",
+    "main_goal": "Meta, Active-Prompt, stimulus, self-consistency, tree and graph runtime",
+    "completion_definition": "Every ACTIVE strategy has runtime benchmark",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "3",
+    "phase_name": "Token and Context Intelligence",
+    "main_goal": "Tokenizer budgets, packing, compression, position and freshness",
+    "completion_definition": "Token overflow and critical evidence loss equal zero",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "4",
+    "phase_name": "Reflexive Agent Intelligence",
+    "main_goal": "Actor/evaluator/reflection, lessons, replanning and security",
+    "completion_definition": "Repeated failure decreases and no raw CoT stored",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "5",
+    "phase_name": "Agentic RAG",
+    "main_goal": "Need retrieval, decomposition, gaps, multi-hop, entailment and source graph",
+    "completion_definition": "Unsupported critical RAG claim equals zero",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "6",
+    "phase_name": "Multimodal Intelligence",
+    "main_goal": "Visual evidence, charts, tables, diagrams, screenshots and security",
+    "completion_definition": "Unsupported critical visual claim equals zero",
+    "release_blocker": "Zenith/Apex capability"
+  },
+  {
+    "phase_order": "7",
+    "phase_name": "Data and Evaluation",
+    "main_goal": "Diversity, active learning, judges, Pareto, canary, editions and release",
+    "completion_definition": "All edition critical cases pass",
+    "release_blocker": "Yes"
+  }
+]

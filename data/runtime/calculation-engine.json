@@ -1,0 +1,40 @@
+{
+  "release": "13.40.0",
+  "edition": "apex",
+  "engine": "deterministic-v2",
+  "precision": "scaled-bigint-6dp",
+  "plainTextDefault": true,
+  "finalAnswerFirst": true,
+  "rawLatexBlocked": true,
+  "latexExplicitOnly": true,
+  "localeNormalizer": "id-ID+international",
+  "unitAware": true,
+  "independentVerifier": true,
+  "statusLabels": [
+    "Perhitungan terverifikasi",
+    "Simulasi terverifikasi",
+    "Data belum lengkap"
+  ],
+  "templates": [
+    "math",
+    "finance",
+    "insurance",
+    "statistics",
+    "telecom",
+    "engineering"
+  ],
+  "answerModes": [
+    "auto",
+    "direct",
+    "steps",
+    "expert",
+    "plain",
+    "markdown",
+    "latex",
+    "copy"
+  ],
+  "terminalWidthFallback": 80,
+  "editionDepth": "expert",
+  "domainCount": 12,
+  "benchmarkCount": 12
+}

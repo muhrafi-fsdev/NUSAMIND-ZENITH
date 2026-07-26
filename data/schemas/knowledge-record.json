@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "nusamind://schemas/knowledge-record-v2",
+  "title": "NusaMind Knowledge Record V2",
+  "type": "object",
+  "required": [
+    "knowledge_id",
+    "domain",
+    "subdomain",
+    "language",
+    "title",
+    "content",
+    "source_id",
+    "source_type",
+    "source_rights",
+    "trust",
+    "verification",
+    "version",
+    "status",
+    "difficulty",
+    "allowed_editions",
+    "checksum"
+  ],
+  "properties": {
+    "knowledge_id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "domain": {
+      "type": "string",
+      "minLength": 2
+    },
+    "subdomain": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3
+    },
+    "content": {
+      "type": "string",
+      "minLength": 20
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "source_type": {
+      "type": "string"
+    },
+    "source_rights": {
+      "enum": [
+        "owned",
+        "licensed",
+        "public-domain",
+        "official",
+        "academic",
+        "user-provided"
+      ]
+    },
+    "trust": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "verification": {
+      "type": "string"
+    },
+    "content_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "effective_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "expires_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "version": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "IMPORTED",
+        "VALIDATED",
+        "REVIEW_REQUIRED",
+        "VERIFIED",
+        "ACTIVE",
+        "DEPRECATED",
+        "REJECTED",
+        "QUARANTINED"
+      ]
+    },
+    "deprecated": {
+      "type": "boolean"
+    },
+    "difficulty": {
+      "enum": [
+        "foundational",
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert",
+        "research"
+      ]
+    },
+    "allowed_editions": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "swift",
+          "zenith",
+          "apex"
+        ]
+      }
+    },
+    "checksum": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,17 @@
+{
+  "release": "R13.47",
+  "edition": "zenith",
+  "tokenBudget": 16384,
+  "tokenizer": "qwen-estimator-v1",
+  "prefixCache": true,
+  "semanticPacking": true,
+  "staleStateDetection": true,
+  "needleBenchmark": true,
+  "crossLanguage": [
+    "id",
+    "en",
+    "ar",
+    "code",
+    "json"
+  ]
+}

@@ -1,0 +1,1 @@
+import {runtimeManifestN1} from '@/lib/runtime-manifest-n1'; export const runtime='nodejs'; export const dynamic='force-dynamic'; export async function GET(){return Response.json({...runtimeManifestN1(),endpoints:['/api/n1/status','/api/n1/evaluate','/api/n1/orchestrate']});}

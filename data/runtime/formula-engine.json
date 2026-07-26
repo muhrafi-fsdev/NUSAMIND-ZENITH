@@ -1,0 +1,13 @@
+{
+  "release": "13.39.0",
+  "edition": "apex",
+  "plainText": true,
+  "finalAnswerFirst": true,
+  "rawLatexBlocked": true,
+  "templates": [
+    "math",
+    "finance",
+    "telecom"
+  ],
+  "detail": "expert-clean"
+}

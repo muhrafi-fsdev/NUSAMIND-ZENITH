@@ -1,0 +1,74 @@
+[
+  {
+    "gate_id": "GATE-01",
+    "gate_name": "Safety Gate",
+    "checks": "Harm, emergency, prohibited operations",
+    "block_condition": "Critical unsafe request/action",
+    "degraded_behavior": "Safe refusal or handoff",
+    "target_versions": "Swift, Zenith, Apex"
+  },
+  {
+    "gate_id": "GATE-02",
+    "gate_name": "Privacy Gate",
+    "checks": "PII, health data, retention, workspace scope",
+    "block_condition": "Unauthorized sensitive access/storage",
+    "degraded_behavior": "Redact or private session",
+    "target_versions": "Swift, Zenith, Apex"
+  },
+  {
+    "gate_id": "GATE-03",
+    "gate_name": "Permission Gate",
+    "checks": "User scopes and side effects",
+    "block_condition": "Missing required permission",
+    "degraded_behavior": "Deny or request approval",
+    "target_versions": "Swift, Zenith, Apex"
+  },
+  {
+    "gate_id": "GATE-04",
+    "gate_name": "Tool Gate",
+    "checks": "Schema, availability, risk, postcondition",
+    "block_condition": "Invalid or unauthorized tool",
+    "degraded_behavior": "Fallback/manual handoff",
+    "target_versions": "Swift, Zenith, Apex"
+  },
+  {
+    "gate_id": "GATE-05",
+    "gate_name": "Memory Gate",
+    "checks": "Consent, relevance, freshness, sensitivity",
+    "block_condition": "Unapproved/stale/private memory",
+    "degraded_behavior": "Session-only or omit memory",
+    "target_versions": "Swift, Zenith, Apex"
+  },
+  {
+    "gate_id": "GATE-06",
+    "gate_name": "Retrieval Gate",
+    "checks": "Source, freshness, injection, evidence support",
+    "block_condition": "Untrusted or unsupported critical evidence",
+    "degraded_behavior": "Uncertainty or retrieval fallback",
+    "target_versions": "Swift, Zenith, Apex"
+  },
+  {
+    "gate_id": "GATE-07",
+    "gate_name": "Multimodal Gate",
+    "checks": "Visual evidence, injection, unsupported claims",
+    "block_condition": "Critical visual claim without region support",
+    "degraded_behavior": "State uncertainty",
+    "target_versions": "Zenith, Apex"
+  },
+  {
+    "gate_id": "GATE-09",
+    "gate_name": "Resource Gate",
+    "checks": "RAM, latency, model calls, agent steps",
+    "block_condition": "Edition budget exceeded",
+    "degraded_behavior": "Degrade or escalate",
+    "target_versions": "Swift, Zenith, Apex"
+  },
+  {
+    "gate_id": "GATE-10",
+    "gate_name": "Release Gate",
+    "checks": "All critical module and edition benchmarks",
+    "block_condition": "Any critical failure",
+    "degraded_behavior": "Release blocked",
+    "target_versions": "Swift, Zenith, Apex"
+  }
+]

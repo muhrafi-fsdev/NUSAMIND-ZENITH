@@ -1,0 +1,206 @@
+{
+  "release": "13.38.0",
+  "edition": "apex",
+  "mode": "expert-desk",
+  "features": [
+    {
+      "id": "SHARED-1335-001",
+      "category": "CLI Menu",
+      "name": "Mode Chat Selector",
+      "risk": "Low"
+    },
+    {
+      "id": "SHARED-1335-002",
+      "category": "Context Isolation",
+      "name": "Separated Chat Context and Memory",
+      "risk": "High"
+    },
+    {
+      "id": "SHARED-1335-003",
+      "category": "Customer Service",
+      "name": "Customer Service Intent Classifier",
+      "risk": "Medium"
+    },
+    {
+      "id": "SHARED-1335-004",
+      "category": "Insurance Knowledge",
+      "name": "Insurance Product Knowledge Schema",
+      "risk": "Medium"
+    },
+    {
+      "id": "SHARED-1335-005",
+      "category": "Insurance Document",
+      "name": "Policy Document Understanding",
+      "risk": "High"
+    },
+    {
+      "id": "SHARED-1335-006",
+      "category": "Claims",
+      "name": "Claim Guidance Assistant",
+      "risk": "High"
+    },
+    {
+      "id": "SHARED-1335-007",
+      "category": "Claims",
+      "name": "Claim Document Checklist",
+      "risk": "High"
+    },
+    {
+      "id": "SHARED-1335-008",
+      "category": "Privacy",
+      "name": "Customer Verification and Data Privacy",
+      "risk": "Critical"
+    },
+    {
+      "id": "SHARED-1335-009",
+      "category": "Empathy",
+      "name": "Customer Empathy and De-escalation",
+      "risk": "Medium"
+    },
+    {
+      "id": "SHARED-1335-010",
+      "category": "Policy Boundary",
+      "name": "Firmness and Fraud-Safe Boundary",
+      "risk": "Critical"
+    },
+    {
+      "id": "SHARED-1335-011",
+      "category": "Ticketing",
+      "name": "Complaint Ticket and Case Summary",
+      "risk": "High"
+    },
+    {
+      "id": "SHARED-1335-012",
+      "category": "Handoff",
+      "name": "Human Agent Escalation",
+      "risk": "High"
+    },
+    {
+      "id": "SHARED-1335-013",
+      "category": "CRM Tools",
+      "name": "Customer Service Tool Registry",
+      "risk": "Critical"
+    },
+    {
+      "id": "SHARED-1335-014",
+      "category": "Audit and SLA",
+      "name": "Customer Service Audit and SLA Tracking",
+      "risk": "Medium"
+    },
+    {
+      "id": "SHARED-1335-015",
+      "category": "Evaluation",
+      "name": "Customer Service and Insurance Benchmark",
+      "risk": "Critical"
+    },
+    {
+      "id": "SHARED-1335-016",
+      "category": "Release",
+      "name": "V13.35 Release Gate",
+      "risk": "High"
+    },
+    {
+      "id": "APEX-1335-001",
+      "category": "Chat Mode",
+      "name": "Apex Insurance Expert Desk",
+      "risk": "High"
+    },
+    {
+      "id": "APEX-1335-002",
+      "category": "Supervisor Mode",
+      "name": "Apex Customer Service Supervisor Chat",
+      "risk": "Critical"
+    },
+    {
+      "id": "APEX-1335-003",
+      "category": "Policy Reasoning",
+      "name": "Apex Multi-Document Policy Reasoning",
+      "risk": "High"
+    },
+    {
+      "id": "APEX-1335-004",
+      "category": "Claim Analysis",
+      "name": "Apex Cross-Document Claim Timeline",
+      "risk": "High"
+    },
+    {
+      "id": "APEX-1335-005",
+      "category": "Inconsistency",
+      "name": "Apex Claim Inconsistency Detection",
+      "risk": "Critical"
+    },
+    {
+      "id": "APEX-1335-006",
+      "category": "Supervisor",
+      "name": "Apex Escalation Priority Analyzer",
+      "risk": "High"
+    },
+    {
+      "id": "APEX-1335-007",
+      "category": "Quality Assurance",
+      "name": "Apex Agent Response QA",
+      "risk": "High"
+    },
+    {
+      "id": "APEX-1335-008",
+      "category": "Root Cause",
+      "name": "Apex Service Failure RCA",
+      "risk": "High"
+    },
+    {
+      "id": "APEX-1335-009",
+      "category": "Fraud Safety",
+      "name": "Apex Fraud Indicator Review",
+      "risk": "Critical"
+    },
+    {
+      "id": "APEX-1335-010",
+      "category": "Research",
+      "name": "Apex Insurance Knowledge Synthesis",
+      "risk": "High"
+    },
+    {
+      "id": "APEX-1335-011",
+      "category": "Audit",
+      "name": "Apex Case Audit Trail Analyzer",
+      "risk": "High"
+    },
+    {
+      "id": "APEX-1335-012",
+      "category": "Coaching",
+      "name": "Apex Customer Service Coaching Assistant",
+      "risk": "Medium"
+    },
+    {
+      "id": "APEX-1335-013",
+      "category": "Security",
+      "name": "Apex Insurance Data Access Control",
+      "risk": "Critical"
+    },
+    {
+      "id": "APEX-1335-014",
+      "category": "Evaluation",
+      "name": "Apex Insurance Expert and Supervisor Benchmark",
+      "risk": "Critical"
+    }
+  ],
+  "privacy": {
+    "verifyBeforePersonalData": true,
+    "maskPii": true,
+    "minimumNecessary": true
+  },
+  "claims": {
+    "finalDecision": false,
+    "promisePayout": false,
+    "safeGuidance": true
+  },
+  "ticketing": {
+    "preview": true,
+    "confirmWrite": true,
+    "audit": true
+  },
+  "handoff": {
+    "onHumanRequest": true,
+    "criticalCases": true
+  }
+}

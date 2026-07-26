@@ -1,0 +1,8 @@
+import patternsData from '@/data/release/r13.48/patterns.json';
+export type Edition='swift'|'zenith'|'apex';type Pattern=Record<string,string>;const patterns=patternsData as Pattern[];
+const supportKey=(e:Edition)=>`${e}_support`;
+export function selectAgentPattern(input:{edition:Edition;multiStep?:boolean;adaptiveTools?:boolean;dependencyGraph?:boolean;multiAgent?:boolean;fixedSteps?:boolean}){let id=input.multiAgent?'PAT-06':input.dependencyGraph?'PAT-05':input.adaptiveTools?'PAT-04':input.multiStep?'PAT-03':input.fixedSteps?'PAT-02':'PAT-01';let p=patterns.find(x=>x.pattern_id===id)!;const support=String(p[supportKey(input.edition)]||'No');if(support==='No'){p=patterns.find(x=>x.pattern_id===(input.multiStep?'PAT-03':'PAT-02'))||patterns[0];return{pattern:p,requested:id,support:'fallback',action:input.edition==='swift'?'bounded-workflow':'planner-executor'};}return{pattern:p,requested:id,support:support.toLowerCase(),action:p.pattern_name};}
+export function verifyExpectedState(before:string,after:string,toolReportedOk:boolean){const changed=before!==after;return{ok:toolReportedOk&&changed,status:toolReportedOk&&!changed?'FAILED':changed?'PASSED':'PARTIAL',changed};}
+export function recoveryPolicy(input:{attempt:number;maxRetries:number;temporary:boolean}){if(input.temporary&&input.attempt<input.maxRetries)return'retry';return input.attempt>=input.maxRetries?'fallback':'handoff';}
+export function scopeSubAgent(requested:string[],allowed:string[]){const denied=requested.filter(x=>!allowed.includes(x));return{ok:denied.length===0,denied};}
+export function rejectPoisonedLesson(text:string,verified:boolean){const poisoned=/ignore|bypass|always execute|reveal secret/i.test(text);return{ok:verified&&!poisoned,poisoned};}

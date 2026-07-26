@@ -1,0 +1,11 @@
+{
+  "release": "R13.45",
+  "records": [],
+  "classes": [
+    "jamu",
+    "oht",
+    "fitofarmaka"
+  ],
+  "status": "registry-ready",
+  "claimsRequireEvidence": true
+}

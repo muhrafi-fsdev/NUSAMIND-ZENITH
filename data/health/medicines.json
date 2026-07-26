@@ -1,0 +1,10 @@
+{
+  "release": "R13.45",
+  "records": [],
+  "status": "registry-ready",
+  "sourcePolicy": [
+    "official regulator",
+    "clinical guideline",
+    "peer-reviewed evidence"
+  ]
+}

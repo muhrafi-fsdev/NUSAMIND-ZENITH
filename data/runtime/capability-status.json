@@ -1,0 +1,55 @@
+{
+  "release": "R13.43",
+  "edition": "apex",
+  "statuses": [
+    {
+      "status_code": "AVAILABLE",
+      "meaning": "Fitur tersedia dan semua dependency kritis sehat.",
+      "runtime_requirements": "Handler, endpoint, DB, dependency, permission policy, dan critical benchmark lulus.",
+      "menu_behavior": "Aktif dan dapat dipilih.",
+      "allowed_user_message": "Fitur tersedia.",
+      "prohibited_claim": "Tidak boleh menjanjikan hasil sebelum task selesai."
+    },
+    {
+      "status_code": "DEGRADED",
+      "meaning": "Fitur dapat digunakan sebagian dengan fallback/keterbatasan.",
+      "runtime_requirements": "Core handler sehat, tetapi parser/model/tool tambahan gagal atau benchmark sebagian turun.",
+      "menu_behavior": "Aktif dengan tanda peringatan.",
+      "allowed_user_message": "Fitur tersedia terbatas; kemampuan X belum aktif.",
+      "prohibited_claim": "Tidak boleh menyebut fitur bekerja penuh."
+    },
+    {
+      "status_code": "DISABLED",
+      "meaning": "Fitur sengaja dimatikan melalui konfigurasi/policy.",
+      "runtime_requirements": "Feature flag off atau security policy menonaktifkan.",
+      "menu_behavior": "Nonaktif dengan alasan.",
+      "allowed_user_message": "Fitur sedang dinonaktifkan.",
+      "prohibited_claim": "Tidak boleh mencoba bypass konfigurasi."
+    },
+    {
+      "status_code": "NOT_IMPLEMENTED",
+      "meaning": "Handler atau fungsi inti belum dibuat.",
+      "runtime_requirements": "Action registry tidak memiliki handler valid.",
+      "menu_behavior": "Tidak ditampilkan aktif.",
+      "allowed_user_message": "Fitur belum diimplementasikan.",
+      "prohibited_claim": "Tidak boleh memakai manifest sebagai bukti tersedia."
+    },
+    {
+      "status_code": "REQUIRES_PERMISSION",
+      "meaning": "Fitur sehat tetapi tindakan membutuhkan izin.",
+      "runtime_requirements": "Capability tersedia; scoped permission token belum ada.",
+      "menu_behavior": "Aktif dengan ikon kunci.",
+      "allowed_user_message": "Fitur membutuhkan izin untuk tool/path/action ini.",
+      "prohibited_claim": "Tidak boleh menaikkan izin otomatis."
+    },
+    {
+      "status_code": "UNAVAILABLE",
+      "meaning": "Dependency/runtime saat ini tidak tersedia.",
+      "runtime_requirements": "Endpoint, dependency, database, atau service gagal health check.",
+      "menu_behavior": "Nonaktif sementara.",
+      "allowed_user_message": "Fitur tidak tersedia saat ini; penyebab: ...",
+      "prohibited_claim": "Tidak boleh mengarang fallback yang tidak ada."
+    }
+  ],
+  "mlRuntimeRule": "AVAILABLE hanya jika /health sukses; DEGRADED memakai deterministic fallback; UNAVAILABLE tidak boleh diklaim aktif."
+}

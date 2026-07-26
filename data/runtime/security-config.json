@@ -1,0 +1,18 @@
+{
+  "release": "13.39.0",
+  "edition": "apex",
+  "mode": "full",
+  "mandatoryToken": true,
+  "scans": [
+    "secret",
+    "pii",
+    "magic-byte",
+    "mime",
+    "macro-indicator",
+    "archive-bomb",
+    "zip-slip"
+  ],
+  "quarantine": true,
+  "audit": true,
+  "privateMode": true
+}

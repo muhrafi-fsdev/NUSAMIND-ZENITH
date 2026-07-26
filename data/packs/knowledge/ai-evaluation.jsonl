@@ -1,0 +1,1 @@
+{"id":"v12_tech_card_005","type":"universal","title":"Golden Evaluation","category":"AI Evaluation","text":"Golden evaluation adalah kumpulan pertanyaan standar dengan ekspektasi jawaban. Dipakai untuk regression test setelah dataset, prompt, atau model berubah.","tags":["v12","ai-engineering","golden","evaluation"],"source":"V12 Built-in Advanced Knowledge","confidence":0.91}

@@ -1,0 +1,86 @@
+[
+  {
+    "document_id": "kb_al_quran_sumber_ajaran_islam",
+    "title": "Al-Quran Sebagai Sumber Ajaran Islam",
+    "category": "Sumber Ajaran Islam",
+    "source_file": "quran-source.pdf",
+    "source_path": "data/sources/quran-source.pdf",
+    "page_count": 21,
+    "chunk_count": 40,
+    "char_count": 26935,
+    "tags": [
+      "al-quran",
+      "sumber ajaran islam",
+      "akidah",
+      "syariah",
+      "akhlak"
+    ]
+  },
+  {
+    "document_id": "kb_ulumul_quran_pemula",
+    "title": "Buku Ulumul Quran untuk Pemula",
+    "category": "Ulumul Quran",
+    "source_file": "ulumul-quran.pdf",
+    "source_path": "data/sources/ulumul-quran.pdf",
+    "page_count": 125,
+    "chunk_count": 377,
+    "char_count": 292763,
+    "tags": [
+      "ulumul quran",
+      "wahyu",
+      "makkiyah",
+      "madaniyah",
+      "mushaf",
+      "tafsir"
+    ]
+  },
+  {
+    "document_id": "kb_makna_umum_kedudukan_al_quran",
+    "title": "Makna Umum Al-Quran dan Kedudukannya sebagai Sumber Ilmu Pengetahuan",
+    "category": "Makna dan Kedudukan Al-Quran",
+    "source_file": "quran-role.pdf",
+    "source_path": "data/sources/quran-role.pdf",
+    "page_count": 11,
+    "chunk_count": 45,
+    "char_count": 39130,
+    "tags": [
+      "makna al-quran",
+      "sumber ilmu",
+      "ilmu pengetahuan",
+      "teknologi"
+    ]
+  },
+  {
+    "document_id": "kb_bab_2_studi_al_quran",
+    "title": "Bab 2 Studi Al-Quran",
+    "category": "Studi Al-Quran",
+    "source_file": "quran-study.pdf",
+    "source_path": "data/sources/quran-study.pdf",
+    "page_count": 27,
+    "chunk_count": 73,
+    "char_count": 47932,
+    "tags": [
+      "studi al-quran",
+      "definisi al-quran",
+      "fungsi al-quran",
+      "kandungan al-quran"
+    ]
+  },
+  {
+    "document_id": "kb_studi_al_quran",
+    "title": "Studi Al-Quran",
+    "category": "Studi Al-Quran",
+    "source_file": "quran-basics.pdf",
+    "source_path": "data/sources/quran-basics.pdf",
+    "page_count": 179,
+    "chunk_count": 338,
+    "char_count": 245594,
+    "tags": [
+      "studi al-quran",
+      "sejarah al-quran",
+      "tafsir",
+      "mukjizat",
+      "kodifikasi"
+    ]
+  }
+]

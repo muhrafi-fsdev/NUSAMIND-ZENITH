@@ -1,0 +1,402 @@
+[
+  {
+    "id": "disease-001",
+    "name": "Hipertensi",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-002",
+    "name": "Diabetes melitus",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-003",
+    "name": "Asma",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-004",
+    "name": "Pneumonia",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-005",
+    "name": "Stroke",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-006",
+    "name": "Penyakit jantung koroner",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-007",
+    "name": "Gagal ginjal kronis",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-008",
+    "name": "Hepatitis",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-009",
+    "name": "Demam berdarah",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-010",
+    "name": "Tuberkulosis",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-011",
+    "name": "Anemia",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-012",
+    "name": "Migrain",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-013",
+    "name": "Gastritis",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-014",
+    "name": "GERD",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-015",
+    "name": "Alergi",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-016",
+    "name": "Influenza",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-017",
+    "name": "COVID-19",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-018",
+    "name": "Diare akut",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-019",
+    "name": "Dehidrasi",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-020",
+    "name": "Infeksi saluran kemih",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-021",
+    "name": "Osteoartritis",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-022",
+    "name": "Rheumatoid arthritis",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-023",
+    "name": "Epilepsi",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-024",
+    "name": "Hipotiroid",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-025",
+    "name": "Hipertiroid",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-026",
+    "name": "Malaria",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-027",
+    "name": "Campak",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-028",
+    "name": "Cacar air",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-029",
+    "name": "Sinusitis",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-030",
+    "name": "Bronkitis",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-031",
+    "name": "PPOK",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-032",
+    "name": "Gagal jantung",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-033",
+    "name": "Aritmia",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-034",
+    "name": "Batu ginjal",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-035",
+    "name": "Sirosis",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-036",
+    "name": "Pankreatitis",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-037",
+    "name": "Apendisitis",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-038",
+    "name": "Sepsis",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-039",
+    "name": "Meningitis",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  },
+  {
+    "id": "disease-040",
+    "name": "Preeklamsia",
+    "record_type": "disease",
+    "red_flags": [],
+    "diagnosis_boundary": true,
+    "review_status": "needs_review",
+    "evidence_grade": "E0",
+    "source_ids": []
+  }
+]

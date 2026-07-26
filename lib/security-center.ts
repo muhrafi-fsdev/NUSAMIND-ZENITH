@@ -1,0 +1,17 @@
+import path from 'node:path';
+import { randomUUID } from 'node:crypto';
+import { getDatabase } from './db';
+import { databaseStatus } from './db';
+
+export type SecurityFinding={kind:string;severity:'low'|'medium'|'high'|'critical';label:string;match?:string};
+const rules:[RegExp,string,SecurityFinding['severity']][]=[
+  [/(?:sk|pk)-[a-z0-9_-]{16,}/ig,'api_token','critical'],[/-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/g,'private_key','critical'],[/\b(?:password|passwd|secret|token|api[_-]?key)\s*[:=]\s*[^\s,;]{5,}/ig,'credential','high'],[/\b\d{16}\b/g,'card_or_id_number','high'],[/\b\d{3}-\d{2}-\d{4}\b/g,'national_id_pattern','medium'],[/\b[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}\b/g,'email','low'],[/\b(?:\+?62|0)8\d{8,12}\b/g,'phone','medium']
+];
+export function scanSensitiveText(text:string){const findings:SecurityFinding[]=[];for(const[r,label,severity]of rules){for(const m of text.matchAll(new RegExp(r.source,r.flags))){findings.push({kind:label,severity,label,match:'[redacted]'});if(findings.length>=100)break;}}return findings;}
+export function maskSensitive(text:string){let out=text;for(const[r,label]of rules)out=out.replace(new RegExp(r.source,r.flags),`[MASKED:${label}]`);return out;}
+export function recordSecurityEvent(event:string,status:string,detail:Record<string,unknown>={}){const db=getDatabase();db.prepare('INSERT INTO security_events(id,event,status,detail_json,created_at) VALUES(?,?,?,?,?)').run(`sec_${randomUUID()}`,event,status,JSON.stringify(detail),new Date().toISOString());}
+export function listSecurityEvents(limit=50){return getDatabase().prepare('SELECT id,event,status,detail_json,created_at FROM security_events ORDER BY created_at DESC LIMIT ?').all(Math.max(1,Math.min(limit,500)));}
+export function quarantineItem(input:{name:string;reason:string;severity:string;metadata?:Record<string,unknown>}){const id=`quar_${randomUUID()}`;getDatabase().prepare('INSERT INTO quarantine(id,name,reason,severity,status,metadata_json,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?)').run(id,input.name,input.reason,input.severity,'quarantined',JSON.stringify(input.metadata||{}),new Date().toISOString(),new Date().toISOString());recordSecurityEvent('quarantine.add','ok',{id,name:input.name,severity:input.severity});return id;}
+export function listQuarantine(limit=100){return getDatabase().prepare('SELECT id,name,reason,severity,status,metadata_json,created_at,updated_at FROM quarantine ORDER BY created_at DESC LIMIT ?').all(Math.max(1,Math.min(limit,500)));}
+export function updateQuarantine(id:string,status:'released'|'deleted'){const result=getDatabase().prepare('UPDATE quarantine SET status=?,updated_at=? WHERE id=?').run(status,new Date().toISOString(),id);recordSecurityEvent('quarantine.update',result.changes?'ok':'missing',{id,status});return result.changes>0;}
+export function securityStatus(){const db=getDatabase();const eventCount=Number((db.prepare('SELECT COUNT(*) n FROM security_events').get() as {n?:number})?.n||0);const quarantineCount=Number((db.prepare("SELECT COUNT(*) n FROM quarantine WHERE status='quarantined'").get() as {n?:number})?.n||0);const roots=(process.env.DESKTOP_ALLOWED_ROOTS||process.cwd()).split(';').filter(Boolean).map(p=>path.resolve(p));return{release:'R13.39',tokenConfigured:Boolean(process.env.DESKTOP_CONTROL_TOKEN||process.env.NUSAMIND_SECURITY_TOKEN),desktopEnabled:process.env.DESKTOP_CONTROL_ENABLED==='true',allowedRoots:roots,eventCount,quarantineCount,database:databaseStatus(),privateModeSupported:true};}

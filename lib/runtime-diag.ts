@@ -1,0 +1,2 @@
+import { capabilityStatusV2 } from './capability-v2'; import { databaseStatus } from './db'; import { retrievalV6Status } from './retrieval-v6'; import { getMlHealth } from './ml-client';
+export async function runtimeDiagnosticV1345(){const ml=await getMlHealth();return{ok:true,release:'R13.45',timestamp:new Date().toISOString(),capabilities:capabilityStatusV2(),database:databaseStatus(),retrieval:retrievalV6Status(),ml,claimsAreRuntimeChecked:true};}

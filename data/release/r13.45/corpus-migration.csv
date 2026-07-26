@@ -1,0 +1,11 @@
+﻿step_order,step_id,migration_step,required_checks,output,rollback_condition
+1,CM-01,Freeze legacy writes,Checksum and read-only policy,Frozen snapshot,Direct write detected
+2,CM-02,Streaming parse,"Encoding, malformed records, memory cap",Record stream,Parse loss too high
+3,CM-03,Normalize,"Language, dates, numbers, IDs",Canonical records,Meaning changed
+4,CM-04,Deduplicate,"Exact, normalized, semantic, lineage",Unique clusters,False merge high
+5,CM-05,Domain/source metadata,"Domain, source, trust, dates, difficulty",Knowledge V2 records,Critical metadata missing
+6,CM-06,SQLite and FTS5 import,"Transaction, schema, count reconciliation",SQLite/FTS5 corpus,Count/checksum mismatch
+7,CM-07,Embedding index,Model/version/dimensions/checksum,Embedding index,Coverage incomplete
+8,CM-08,Retrieval benchmark,"Precision, recall, MRR, latency",Validated V6 index,Below threshold
+9,CM-09,Runtime cutover,Trace uses V6; legacy disabled,Production V6,Regression detected
+10,CM-10,Pack split and archive,"Manifests, checksums, rollback",Core/knowledge/health packs,Lifecycle failure

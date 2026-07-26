@@ -1,0 +1,7 @@
+﻿status_code,meaning,runtime_requirements,menu_behavior,allowed_user_message,prohibited_claim
+AVAILABLE,Fitur tersedia dan semua dependency kritis sehat.,"Handler, endpoint, DB, dependency, permission policy, dan critical benchmark lulus.",Aktif dan dapat dipilih.,Fitur tersedia.,Tidak boleh menjanjikan hasil sebelum task selesai.
+DEGRADED,Fitur dapat digunakan sebagian dengan fallback/keterbatasan.,"Core handler sehat, tetapi parser/model/tool tambahan gagal atau benchmark sebagian turun.",Aktif dengan tanda peringatan.,Fitur tersedia terbatas; kemampuan X belum aktif.,Tidak boleh menyebut fitur bekerja penuh.
+DISABLED,Fitur sengaja dimatikan melalui konfigurasi/policy.,Feature flag off atau security policy menonaktifkan.,Nonaktif dengan alasan.,Fitur sedang dinonaktifkan.,Tidak boleh mencoba bypass konfigurasi.
+NOT_IMPLEMENTED,Handler atau fungsi inti belum dibuat.,Action registry tidak memiliki handler valid.,Tidak ditampilkan aktif.,Fitur belum diimplementasikan.,Tidak boleh memakai manifest sebagai bukti tersedia.
+REQUIRES_PERMISSION,Fitur sehat tetapi tindakan membutuhkan izin.,Capability tersedia; scoped permission token belum ada.,Aktif dengan ikon kunci.,Fitur membutuhkan izin untuk tool/path/action ini.,Tidak boleh menaikkan izin otomatis.
+UNAVAILABLE,Dependency/runtime saat ini tidak tersedia.,"Endpoint, dependency, database, atau service gagal health check.",Nonaktif sementara.,Fitur tidak tersedia saat ini; penyebab: ...,Tidak boleh mengarang fallback yang tidak ada.

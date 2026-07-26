@@ -1,0 +1,11 @@
+{
+  "naturalLanguageTools": true,
+  "default": "read-only",
+  "permissionExpiry": true,
+  "preview": true,
+  "backup": true,
+  "rollback": true,
+  "emergencyStop": true,
+  "release": "13.38.0",
+  "codingAgent": "supervised-autonomous"
+}

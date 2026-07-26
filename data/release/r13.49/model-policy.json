@@ -1,0 +1,82 @@
+[
+  {
+    "policy_id": "MG-01",
+    "dimension": "Task Type",
+    "checks": "Chat/code/vision/embedding/classification/verification",
+    "preferred_behavior": "Use benchmarked profile",
+    "fallback_behavior": "Compatible lower-cost profile",
+    "guardrail": "Do not route by name alone"
+  },
+  {
+    "policy_id": "MG-02",
+    "dimension": "Edition",
+    "checks": "Swift/Zenith/Apex limits",
+    "preferred_behavior": "Respect edition budget",
+    "fallback_behavior": "Escalate or degrade",
+    "guardrail": "No Apex route in Swift"
+  },
+  {
+    "policy_id": "MG-03",
+    "dimension": "Health",
+    "checks": "Availability/latency/errors/malformed output",
+    "preferred_behavior": "Avoid open circuit",
+    "fallback_behavior": "Probe and recover",
+    "guardrail": "No requests to unhealthy model"
+  },
+  {
+    "policy_id": "MG-04",
+    "dimension": "Tool Support",
+    "checks": "Tool schema and reliability",
+    "preferred_behavior": "Use compatible model",
+    "fallback_behavior": "Deterministic workflow",
+    "guardrail": "No incompatible fallback"
+  },
+  {
+    "policy_id": "MG-05",
+    "dimension": "Context",
+    "checks": "Reliable profiled context",
+    "preferred_behavior": "Use safe limit",
+    "fallback_behavior": "Compress or split",
+    "guardrail": "Do not trust advertised limit alone"
+  },
+  {
+    "policy_id": "MG-06",
+    "dimension": "Privacy",
+    "checks": "Private data and provider restrictions",
+    "preferred_behavior": "Use approved local model",
+    "fallback_behavior": "Ask approval",
+    "guardrail": "No external private-data route without permission"
+  },
+  {
+    "policy_id": "MG-07",
+    "dimension": "Resources",
+    "checks": "RAM/VRAM/calls/time",
+    "preferred_behavior": "Pareto-optimal route",
+    "fallback_behavior": "Smaller model or handoff",
+    "guardrail": "No unbounded retries"
+  },
+  {
+    "policy_id": "MG-08",
+    "dimension": "Quality",
+    "checks": "Task benchmark and quality floor",
+    "preferred_behavior": "Highest suitable within budget",
+    "fallback_behavior": "Mark DEGRADED",
+    "guardrail": "Fallback cannot silently reduce capability"
+  },
+  {
+    "policy_id": "MG-09",
+    "dimension": "Structured Output",
+    "checks": "JSON/schema reliability",
+    "preferred_behavior": "Profiled structured route",
+    "fallback_behavior": "Repair once/parser",
+    "guardrail": "Invalid output cannot enter tools"
+  },
+  {
+    "policy_id": "MG-10",
+    "dimension": "Verification",
+    "checks": "Critical task second check",
+    "preferred_behavior": "Deterministic/bounded verifier",
+    "fallback_behavior": "Human review",
+    "guardrail": "Model majority is not truth"
+  }
+]

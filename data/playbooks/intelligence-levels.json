@@ -1,0 +1,4758 @@
+[
+  {
+    "id": "v13_9_playbook_nuai-intel-000_01",
+    "category": "V13.9 Intelligence Level System",
+    "title": "Playbook profil_level: Tingkatan kecerdasan AI - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Menambahkan pilihan level kecerdasan agar user bisa memilih kedalaman jawaban, kecepatan, gaya berpikir, dan mode brainstorming"
+    ],
+    "diagnosis": [
+      "Setiap level mengatur prompt, retrieval depth, jumlah langkah analisis, model lokal yang dipakai, token budget, reranking, verifikasi, dan gaya jawaban",
+      "level_id, model_profile, temperature, max_tokens, retrieval_top_k, reasoning_depth, verification_passes, response_style"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Gunakan label UI konsisten. Disarankan nama teknis 'Thinking', tetapi alias 'Thingking' bisa diterima jika ingin mengikuti istilah user"
+    ],
+    "tags": [
+      "keterangan-fitur",
+      "tingkatan-kecerdasan-ai",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-intel-000_02",
+    "category": "V13.9 Intelligence Level System",
+    "title": "Playbook autosave_session: Tingkatan kecerdasan AI - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Menambahkan pilihan level kecerdasan agar user bisa memilih kedalaman jawaban, kecepatan, gaya berpikir, dan mode brainstorming"
+    ],
+    "diagnosis": [
+      "Setiap level mengatur prompt, retrieval depth, jumlah langkah analisis, model lokal yang dipakai, token budget, reranking, verifikasi, dan gaya jawaban",
+      "level_id, model_profile, temperature, max_tokens, retrieval_top_k, reasoning_depth, verification_passes, response_style"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Gunakan label UI konsisten. Disarankan nama teknis 'Thinking', tetapi alias 'Thingking' bisa diterima jika ingin mengikuti istilah user"
+    ],
+    "tags": [
+      "keterangan-fitur",
+      "tingkatan-kecerdasan-ai",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-intel-000_03",
+    "category": "V13.9 Intelligence Level System",
+    "title": "Playbook pin_session: Tingkatan kecerdasan AI - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Menambahkan pilihan level kecerdasan agar user bisa memilih kedalaman jawaban, kecepatan, gaya berpikir, dan mode brainstorming"
+    ],
+    "diagnosis": [
+      "Setiap level mengatur prompt, retrieval depth, jumlah langkah analisis, model lokal yang dipakai, token budget, reranking, verifikasi, dan gaya jawaban",
+      "level_id, model_profile, temperature, max_tokens, retrieval_top_k, reasoning_depth, verification_passes, response_style"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Gunakan label UI konsisten. Disarankan nama teknis 'Thinking', tetapi alias 'Thingking' bisa diterima jika ingin mengikuti istilah user"
+    ],
+    "tags": [
+      "keterangan-fitur",
+      "tingkatan-kecerdasan-ai",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-intel-000_04",
+    "category": "V13.9 Intelligence Level System",
+    "title": "Playbook brainstorming: Tingkatan kecerdasan AI - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Menambahkan pilihan level kecerdasan agar user bisa memilih kedalaman jawaban, kecepatan, gaya berpikir, dan mode brainstorming"
+    ],
+    "diagnosis": [
+      "Setiap level mengatur prompt, retrieval depth, jumlah langkah analisis, model lokal yang dipakai, token budget, reranking, verifikasi, dan gaya jawaban",
+      "level_id, model_profile, temperature, max_tokens, retrieval_top_k, reasoning_depth, verification_passes, response_style"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Gunakan label UI konsisten. Disarankan nama teknis 'Thinking', tetapi alias 'Thingking' bisa diterima jika ingin mengikuti istilah user"
+    ],
+    "tags": [
+      "keterangan-fitur",
+      "tingkatan-kecerdasan-ai",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-level-001_01",
+    "category": "V13.9 Level Kecerdasan AI",
+    "title": "Playbook profil_level: Profil level kecerdasan - Instant",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Mode tercepat untuk jawaban singkat tanpa analisis panjang"
+    ],
+    "diagnosis": [
+      "AI langsung menjawab inti, minim langkah, minim retrieval, tidak melakukan analisis mendalam kecuali perlu",
+      "reasoning_depth=low; retrieval_top_k=1-2; verification_passes=0-1; max_tokens=300-800; temperature=0.3-0.6"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Cocok sebagai default untuk chat ringan agar AI terasa responsif"
+    ],
+    "tags": [
+      "level-kecerdasan",
+      "profil-level-kecerdasan",
+      "instant",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-level-001_02",
+    "category": "V13.9 Level Kecerdasan AI",
+    "title": "Playbook autosave_session: Profil level kecerdasan - Instant",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Mode tercepat untuk jawaban singkat tanpa analisis panjang"
+    ],
+    "diagnosis": [
+      "AI langsung menjawab inti, minim langkah, minim retrieval, tidak melakukan analisis mendalam kecuali perlu",
+      "reasoning_depth=low; retrieval_top_k=1-2; verification_passes=0-1; max_tokens=300-800; temperature=0.3-0.6"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Cocok sebagai default untuk chat ringan agar AI terasa responsif"
+    ],
+    "tags": [
+      "level-kecerdasan",
+      "profil-level-kecerdasan",
+      "instant",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-level-001_03",
+    "category": "V13.9 Level Kecerdasan AI",
+    "title": "Playbook pin_session: Profil level kecerdasan - Instant",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Mode tercepat untuk jawaban singkat tanpa analisis panjang"
+    ],
+    "diagnosis": [
+      "AI langsung menjawab inti, minim langkah, minim retrieval, tidak melakukan analisis mendalam kecuali perlu",
+      "reasoning_depth=low; retrieval_top_k=1-2; verification_passes=0-1; max_tokens=300-800; temperature=0.3-0.6"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Cocok sebagai default untuk chat ringan agar AI terasa responsif"
+    ],
+    "tags": [
+      "level-kecerdasan",
+      "profil-level-kecerdasan",
+      "instant",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-level-001_04",
+    "category": "V13.9 Level Kecerdasan AI",
+    "title": "Playbook brainstorming: Profil level kecerdasan - Instant",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Mode tercepat untuk jawaban singkat tanpa analisis panjang"
+    ],
+    "diagnosis": [
+      "AI langsung menjawab inti, minim langkah, minim retrieval, tidak melakukan analisis mendalam kecuali perlu",
+      "reasoning_depth=low; retrieval_top_k=1-2; verification_passes=0-1; max_tokens=300-800; temperature=0.3-0.6"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Cocok sebagai default untuk chat ringan agar AI terasa responsif"
+    ],
+    "tags": [
+      "level-kecerdasan",
+      "profil-level-kecerdasan",
+      "instant",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-level-002_01",
+    "category": "V13.9 Level Kecerdasan AI",
+    "title": "Playbook profil_level: Profil level kecerdasan - Ordinary",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Mode standar untuk percakapan harian dengan jawaban cukup jelas tapi tidak terlalu panjang"
+    ],
+    "diagnosis": [
+      "AI memberi jawaban natural, cukup lengkap, tetapi belum masuk mode analisis berat",
+      "reasoning_depth=normal; retrieval_top_k=2-3; verification_passes=1; max_tokens=800-1500; temperature=0.4-0.7"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Ordinary bisa jadi default awal untuk mayoritas user"
+    ],
+    "tags": [
+      "level-kecerdasan",
+      "profil-level-kecerdasan",
+      "ordinary",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-level-002_02",
+    "category": "V13.9 Level Kecerdasan AI",
+    "title": "Playbook autosave_session: Profil level kecerdasan - Ordinary",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Mode standar untuk percakapan harian dengan jawaban cukup jelas tapi tidak terlalu panjang"
+    ],
+    "diagnosis": [
+      "AI memberi jawaban natural, cukup lengkap, tetapi belum masuk mode analisis berat",
+      "reasoning_depth=normal; retrieval_top_k=2-3; verification_passes=1; max_tokens=800-1500; temperature=0.4-0.7"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Ordinary bisa jadi default awal untuk mayoritas user"
+    ],
+    "tags": [
+      "level-kecerdasan",
+      "profil-level-kecerdasan",
+      "ordinary",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-level-002_03",
+    "category": "V13.9 Level Kecerdasan AI",
+    "title": "Playbook pin_session: Profil level kecerdasan - Ordinary",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Mode standar untuk percakapan harian dengan jawaban cukup jelas tapi tidak terlalu panjang"
+    ],
+    "diagnosis": [
+      "AI memberi jawaban natural, cukup lengkap, tetapi belum masuk mode analisis berat",
+      "reasoning_depth=normal; retrieval_top_k=2-3; verification_passes=1; max_tokens=800-1500; temperature=0.4-0.7"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Ordinary bisa jadi default awal untuk mayoritas user"
+    ],
+    "tags": [
+      "level-kecerdasan",
+      "profil-level-kecerdasan",
+      "ordinary",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-level-002_04",
+    "category": "V13.9 Level Kecerdasan AI",
+    "title": "Playbook brainstorming: Profil level kecerdasan - Ordinary",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Mode standar untuk percakapan harian dengan jawaban cukup jelas tapi tidak terlalu panjang"
+    ],
+    "diagnosis": [
+      "AI memberi jawaban natural, cukup lengkap, tetapi belum masuk mode analisis berat",
+      "reasoning_depth=normal; retrieval_top_k=2-3; verification_passes=1; max_tokens=800-1500; temperature=0.4-0.7"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Ordinary bisa jadi default awal untuk mayoritas user"
+    ],
+    "tags": [
+      "level-kecerdasan",
+      "profil-level-kecerdasan",
+      "ordinary",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-level-003_01",
+    "category": "V13.9 Level Kecerdasan AI",
+    "title": "Playbook profil_level: Profil level kecerdasan - Medium",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Mode seimbang antara kecepatan, akurasi, dan kedalaman analisis"
+    ],
+    "diagnosis": [
+      "AI menjawab dengan struktur: inti, alasan, langkah, contoh, dan saran lanjut bila perlu",
+      "reasoning_depth=medium; retrieval_top_k=3-5; verification_passes=1; max_tokens=1500-3000; temperature=0.3-0.6"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Medium cocok untuk default saat user bertanya teknis"
+    ],
+    "tags": [
+      "level-kecerdasan",
+      "profil-level-kecerdasan",
+      "medium",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-level-003_02",
+    "category": "V13.9 Level Kecerdasan AI",
+    "title": "Playbook autosave_session: Profil level kecerdasan - Medium",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Mode seimbang antara kecepatan, akurasi, dan kedalaman analisis"
+    ],
+    "diagnosis": [
+      "AI menjawab dengan struktur: inti, alasan, langkah, contoh, dan saran lanjut bila perlu",
+      "reasoning_depth=medium; retrieval_top_k=3-5; verification_passes=1; max_tokens=1500-3000; temperature=0.3-0.6"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Medium cocok untuk default saat user bertanya teknis"
+    ],
+    "tags": [
+      "level-kecerdasan",
+      "profil-level-kecerdasan",
+      "medium",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-level-003_03",
+    "category": "V13.9 Level Kecerdasan AI",
+    "title": "Playbook pin_session: Profil level kecerdasan - Medium",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Mode seimbang antara kecepatan, akurasi, dan kedalaman analisis"
+    ],
+    "diagnosis": [
+      "AI menjawab dengan struktur: inti, alasan, langkah, contoh, dan saran lanjut bila perlu",
+      "reasoning_depth=medium; retrieval_top_k=3-5; verification_passes=1; max_tokens=1500-3000; temperature=0.3-0.6"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Medium cocok untuk default saat user bertanya teknis"
+    ],
+    "tags": [
+      "level-kecerdasan",
+      "profil-level-kecerdasan",
+      "medium",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-level-003_04",
+    "category": "V13.9 Level Kecerdasan AI",
+    "title": "Playbook brainstorming: Profil level kecerdasan - Medium",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Mode seimbang antara kecepatan, akurasi, dan kedalaman analisis"
+    ],
+    "diagnosis": [
+      "AI menjawab dengan struktur: inti, alasan, langkah, contoh, dan saran lanjut bila perlu",
+      "reasoning_depth=medium; retrieval_top_k=3-5; verification_passes=1; max_tokens=1500-3000; temperature=0.3-0.6"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Medium cocok untuk default saat user bertanya teknis"
+    ],
+    "tags": [
+      "level-kecerdasan",
+      "profil-level-kecerdasan",
+      "medium",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-level-004_01",
+    "category": "V13.9 Level Kecerdasan AI",
+    "title": "Playbook profil_level: Profil level kecerdasan - High",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Mode analisis lebih dalam untuk kasus kompleks yang butuh ketelitian tinggi"
+    ],
+    "diagnosis": [
+      "AI melakukan analisis bertahap, membandingkan opsi, memberi risiko, solusi, dan evaluasi",
+      "reasoning_depth=high; retrieval_top_k=5-8; rerank=true; verification_passes=2; max_tokens=3000-6000; temperature=0.2-0.5"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "High sebaiknya dipilih manual atau otomatis saat AI mendeteksi kompleksitas tinggi"
+    ],
+    "tags": [
+      "level-kecerdasan",
+      "profil-level-kecerdasan",
+      "high",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-level-004_02",
+    "category": "V13.9 Level Kecerdasan AI",
+    "title": "Playbook autosave_session: Profil level kecerdasan - High",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Mode analisis lebih dalam untuk kasus kompleks yang butuh ketelitian tinggi"
+    ],
+    "diagnosis": [
+      "AI melakukan analisis bertahap, membandingkan opsi, memberi risiko, solusi, dan evaluasi",
+      "reasoning_depth=high; retrieval_top_k=5-8; rerank=true; verification_passes=2; max_tokens=3000-6000; temperature=0.2-0.5"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "High sebaiknya dipilih manual atau otomatis saat AI mendeteksi kompleksitas tinggi"
+    ],
+    "tags": [
+      "level-kecerdasan",
+      "profil-level-kecerdasan",
+      "high",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-level-004_03",
+    "category": "V13.9 Level Kecerdasan AI",
+    "title": "Playbook pin_session: Profil level kecerdasan - High",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Mode analisis lebih dalam untuk kasus kompleks yang butuh ketelitian tinggi"
+    ],
+    "diagnosis": [
+      "AI melakukan analisis bertahap, membandingkan opsi, memberi risiko, solusi, dan evaluasi",
+      "reasoning_depth=high; retrieval_top_k=5-8; rerank=true; verification_passes=2; max_tokens=3000-6000; temperature=0.2-0.5"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "High sebaiknya dipilih manual atau otomatis saat AI mendeteksi kompleksitas tinggi"
+    ],
+    "tags": [
+      "level-kecerdasan",
+      "profil-level-kecerdasan",
+      "high",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-level-004_04",
+    "category": "V13.9 Level Kecerdasan AI",
+    "title": "Playbook brainstorming: Profil level kecerdasan - High",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Mode analisis lebih dalam untuk kasus kompleks yang butuh ketelitian tinggi"
+    ],
+    "diagnosis": [
+      "AI melakukan analisis bertahap, membandingkan opsi, memberi risiko, solusi, dan evaluasi",
+      "reasoning_depth=high; retrieval_top_k=5-8; rerank=true; verification_passes=2; max_tokens=3000-6000; temperature=0.2-0.5"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "High sebaiknya dipilih manual atau otomatis saat AI mendeteksi kompleksitas tinggi"
+    ],
+    "tags": [
+      "level-kecerdasan",
+      "profil-level-kecerdasan",
+      "high",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-level-005_01",
+    "category": "V13.9 Level Kecerdasan AI",
+    "title": "Playbook profil_level: Profil level kecerdasan - Thinking",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Mode berpikir mendalam untuk masalah yang butuh penalaran multi-step, brainstorming besar, dan verifikasi ekstra"
+    ],
+    "diagnosis": [
+      "AI membuat rencana, memecah masalah, melakukan beberapa hipotesis, self-check, trade-off analysis, dan menghasilkan rekomendasi matang",
+      "reasoning_depth=deep; retrieval_top_k=8-12; rerank=true; verification_passes=2-3; max_tokens=5000-10000; temperature=0.2-0.8 sesuai brainstorm; multi_pass=true"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "UI boleh menampilkan label 'Thinking' agar profesional, dengan alias internal 'Thingking' jika user sudah terbiasa"
+    ],
+    "tags": [
+      "level-kecerdasan",
+      "profil-level-kecerdasan",
+      "thinking",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-level-005_02",
+    "category": "V13.9 Level Kecerdasan AI",
+    "title": "Playbook autosave_session: Profil level kecerdasan - Thinking",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Mode berpikir mendalam untuk masalah yang butuh penalaran multi-step, brainstorming besar, dan verifikasi ekstra"
+    ],
+    "diagnosis": [
+      "AI membuat rencana, memecah masalah, melakukan beberapa hipotesis, self-check, trade-off analysis, dan menghasilkan rekomendasi matang",
+      "reasoning_depth=deep; retrieval_top_k=8-12; rerank=true; verification_passes=2-3; max_tokens=5000-10000; temperature=0.2-0.8 sesuai brainstorm; multi_pass=true"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "UI boleh menampilkan label 'Thinking' agar profesional, dengan alias internal 'Thingking' jika user sudah terbiasa"
+    ],
+    "tags": [
+      "level-kecerdasan",
+      "profil-level-kecerdasan",
+      "thinking",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-level-005_03",
+    "category": "V13.9 Level Kecerdasan AI",
+    "title": "Playbook pin_session: Profil level kecerdasan - Thinking",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Mode berpikir mendalam untuk masalah yang butuh penalaran multi-step, brainstorming besar, dan verifikasi ekstra"
+    ],
+    "diagnosis": [
+      "AI membuat rencana, memecah masalah, melakukan beberapa hipotesis, self-check, trade-off analysis, dan menghasilkan rekomendasi matang",
+      "reasoning_depth=deep; retrieval_top_k=8-12; rerank=true; verification_passes=2-3; max_tokens=5000-10000; temperature=0.2-0.8 sesuai brainstorm; multi_pass=true"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "UI boleh menampilkan label 'Thinking' agar profesional, dengan alias internal 'Thingking' jika user sudah terbiasa"
+    ],
+    "tags": [
+      "level-kecerdasan",
+      "profil-level-kecerdasan",
+      "thinking",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-level-005_04",
+    "category": "V13.9 Level Kecerdasan AI",
+    "title": "Playbook brainstorming: Profil level kecerdasan - Thinking",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Mode berpikir mendalam untuk masalah yang butuh penalaran multi-step, brainstorming besar, dan verifikasi ekstra"
+    ],
+    "diagnosis": [
+      "AI membuat rencana, memecah masalah, melakukan beberapa hipotesis, self-check, trade-off analysis, dan menghasilkan rekomendasi matang",
+      "reasoning_depth=deep; retrieval_top_k=8-12; rerank=true; verification_passes=2-3; max_tokens=5000-10000; temperature=0.2-0.8 sesuai brainstorm; multi_pass=true"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "UI boleh menampilkan label 'Thinking' agar profesional, dengan alias internal 'Thingking' jika user sudah terbiasa"
+    ],
+    "tags": [
+      "level-kecerdasan",
+      "profil-level-kecerdasan",
+      "thinking",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-brain-001_01",
+    "category": "V13.9 Brainstorming Berdasarkan Level",
+    "title": "Playbook profil_level: Brainstorm berdasarkan level kecerdasan - Instant",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Brainstorm cepat"
+    ],
+    "diagnosis": [
+      "Generate cepat, no deep analysis",
+      "ideas_count=3-5; explanation=very_short; verification=none"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Cocok untuk eksplorasi cepat"
+    ],
+    "tags": [
+      "brainstorming-mode",
+      "brainstorm-berdasarkan-level-kecerdasan",
+      "instant",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-brain-001_02",
+    "category": "V13.9 Brainstorming Berdasarkan Level",
+    "title": "Playbook autosave_session: Brainstorm berdasarkan level kecerdasan - Instant",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Brainstorm cepat"
+    ],
+    "diagnosis": [
+      "Generate cepat, no deep analysis",
+      "ideas_count=3-5; explanation=very_short; verification=none"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Cocok untuk eksplorasi cepat"
+    ],
+    "tags": [
+      "brainstorming-mode",
+      "brainstorm-berdasarkan-level-kecerdasan",
+      "instant",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-brain-001_03",
+    "category": "V13.9 Brainstorming Berdasarkan Level",
+    "title": "Playbook pin_session: Brainstorm berdasarkan level kecerdasan - Instant",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Brainstorm cepat"
+    ],
+    "diagnosis": [
+      "Generate cepat, no deep analysis",
+      "ideas_count=3-5; explanation=very_short; verification=none"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Cocok untuk eksplorasi cepat"
+    ],
+    "tags": [
+      "brainstorming-mode",
+      "brainstorm-berdasarkan-level-kecerdasan",
+      "instant",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-brain-001_04",
+    "category": "V13.9 Brainstorming Berdasarkan Level",
+    "title": "Playbook brainstorming: Brainstorm berdasarkan level kecerdasan - Instant",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Brainstorm cepat"
+    ],
+    "diagnosis": [
+      "Generate cepat, no deep analysis",
+      "ideas_count=3-5; explanation=very_short; verification=none"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Cocok untuk eksplorasi cepat"
+    ],
+    "tags": [
+      "brainstorming-mode",
+      "brainstorm-berdasarkan-level-kecerdasan",
+      "instant",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-brain-002_01",
+    "category": "V13.9 Brainstorming Berdasarkan Level",
+    "title": "Playbook profil_level: Brainstorm berdasarkan level kecerdasan - Ordinary",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Brainstorm ringan"
+    ],
+    "diagnosis": [
+      "Generate ide + alasan singkat",
+      "ideas_count=5-8; explanation=short; clustering=false"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Baik untuk percakapan santai"
+    ],
+    "tags": [
+      "brainstorming-mode",
+      "brainstorm-berdasarkan-level-kecerdasan",
+      "ordinary",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-brain-002_02",
+    "category": "V13.9 Brainstorming Berdasarkan Level",
+    "title": "Playbook autosave_session: Brainstorm berdasarkan level kecerdasan - Ordinary",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Brainstorm ringan"
+    ],
+    "diagnosis": [
+      "Generate ide + alasan singkat",
+      "ideas_count=5-8; explanation=short; clustering=false"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Baik untuk percakapan santai"
+    ],
+    "tags": [
+      "brainstorming-mode",
+      "brainstorm-berdasarkan-level-kecerdasan",
+      "ordinary",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-brain-002_03",
+    "category": "V13.9 Brainstorming Berdasarkan Level",
+    "title": "Playbook pin_session: Brainstorm berdasarkan level kecerdasan - Ordinary",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Brainstorm ringan"
+    ],
+    "diagnosis": [
+      "Generate ide + alasan singkat",
+      "ideas_count=5-8; explanation=short; clustering=false"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Baik untuk percakapan santai"
+    ],
+    "tags": [
+      "brainstorming-mode",
+      "brainstorm-berdasarkan-level-kecerdasan",
+      "ordinary",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-brain-002_04",
+    "category": "V13.9 Brainstorming Berdasarkan Level",
+    "title": "Playbook brainstorming: Brainstorm berdasarkan level kecerdasan - Ordinary",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Brainstorm ringan"
+    ],
+    "diagnosis": [
+      "Generate ide + alasan singkat",
+      "ideas_count=5-8; explanation=short; clustering=false"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Baik untuk percakapan santai"
+    ],
+    "tags": [
+      "brainstorming-mode",
+      "brainstorm-berdasarkan-level-kecerdasan",
+      "ordinary",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-brain-003_01",
+    "category": "V13.9 Brainstorming Berdasarkan Level",
+    "title": "Playbook profil_level: Brainstorm berdasarkan level kecerdasan - Medium",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Brainstorm terstruktur"
+    ],
+    "diagnosis": [
+      "Generate ide + kategori + prioritas",
+      "ideas_count=8-12; clustering=true; priority=true; risks=light"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Cocok untuk roadmap CSV"
+    ],
+    "tags": [
+      "brainstorming-mode",
+      "brainstorm-berdasarkan-level-kecerdasan",
+      "medium",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-brain-003_02",
+    "category": "V13.9 Brainstorming Berdasarkan Level",
+    "title": "Playbook autosave_session: Brainstorm berdasarkan level kecerdasan - Medium",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Brainstorm terstruktur"
+    ],
+    "diagnosis": [
+      "Generate ide + kategori + prioritas",
+      "ideas_count=8-12; clustering=true; priority=true; risks=light"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Cocok untuk roadmap CSV"
+    ],
+    "tags": [
+      "brainstorming-mode",
+      "brainstorm-berdasarkan-level-kecerdasan",
+      "medium",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-brain-003_03",
+    "category": "V13.9 Brainstorming Berdasarkan Level",
+    "title": "Playbook pin_session: Brainstorm berdasarkan level kecerdasan - Medium",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Brainstorm terstruktur"
+    ],
+    "diagnosis": [
+      "Generate ide + kategori + prioritas",
+      "ideas_count=8-12; clustering=true; priority=true; risks=light"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Cocok untuk roadmap CSV"
+    ],
+    "tags": [
+      "brainstorming-mode",
+      "brainstorm-berdasarkan-level-kecerdasan",
+      "medium",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-brain-003_04",
+    "category": "V13.9 Brainstorming Berdasarkan Level",
+    "title": "Playbook brainstorming: Brainstorm berdasarkan level kecerdasan - Medium",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Brainstorm terstruktur"
+    ],
+    "diagnosis": [
+      "Generate ide + kategori + prioritas",
+      "ideas_count=8-12; clustering=true; priority=true; risks=light"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Cocok untuk roadmap CSV"
+    ],
+    "tags": [
+      "brainstorming-mode",
+      "brainstorm-berdasarkan-level-kecerdasan",
+      "medium",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-brain-004_01",
+    "category": "V13.9 Brainstorming Berdasarkan Level",
+    "title": "Playbook profil_level: Brainstorm berdasarkan level kecerdasan - High",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Brainstorm analitis"
+    ],
+    "diagnosis": [
+      "Generate + evaluate + rank",
+      "ideas_count=12-20; pros_cons=true; risk=true; ranking=true"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Cocok untuk rencana teknis"
+    ],
+    "tags": [
+      "brainstorming-mode",
+      "brainstorm-berdasarkan-level-kecerdasan",
+      "high",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-brain-004_02",
+    "category": "V13.9 Brainstorming Berdasarkan Level",
+    "title": "Playbook autosave_session: Brainstorm berdasarkan level kecerdasan - High",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Brainstorm analitis"
+    ],
+    "diagnosis": [
+      "Generate + evaluate + rank",
+      "ideas_count=12-20; pros_cons=true; risk=true; ranking=true"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Cocok untuk rencana teknis"
+    ],
+    "tags": [
+      "brainstorming-mode",
+      "brainstorm-berdasarkan-level-kecerdasan",
+      "high",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-brain-004_03",
+    "category": "V13.9 Brainstorming Berdasarkan Level",
+    "title": "Playbook pin_session: Brainstorm berdasarkan level kecerdasan - High",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Brainstorm analitis"
+    ],
+    "diagnosis": [
+      "Generate + evaluate + rank",
+      "ideas_count=12-20; pros_cons=true; risk=true; ranking=true"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Cocok untuk rencana teknis"
+    ],
+    "tags": [
+      "brainstorming-mode",
+      "brainstorm-berdasarkan-level-kecerdasan",
+      "high",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-brain-004_04",
+    "category": "V13.9 Brainstorming Berdasarkan Level",
+    "title": "Playbook brainstorming: Brainstorm berdasarkan level kecerdasan - High",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Brainstorm analitis"
+    ],
+    "diagnosis": [
+      "Generate + evaluate + rank",
+      "ideas_count=12-20; pros_cons=true; risk=true; ranking=true"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Cocok untuk rencana teknis"
+    ],
+    "tags": [
+      "brainstorming-mode",
+      "brainstorm-berdasarkan-level-kecerdasan",
+      "high",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-brain-005_01",
+    "category": "V13.9 Brainstorming Berdasarkan Level",
+    "title": "Playbook profil_level: Brainstorm berdasarkan level kecerdasan - Thinking",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Brainstorm mendalam"
+    ],
+    "diagnosis": [
+      "Divergent thinking lalu convergent ranking",
+      "ideas_count=20+; decision_matrix=true; multi_pass=true; assumptions=true; validation_plan=true"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Mode ini paling berat dan cocok untuk analisis strategis"
+    ],
+    "tags": [
+      "brainstorming-mode",
+      "brainstorm-berdasarkan-level-kecerdasan",
+      "thinking",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-brain-005_02",
+    "category": "V13.9 Brainstorming Berdasarkan Level",
+    "title": "Playbook autosave_session: Brainstorm berdasarkan level kecerdasan - Thinking",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Brainstorm mendalam"
+    ],
+    "diagnosis": [
+      "Divergent thinking lalu convergent ranking",
+      "ideas_count=20+; decision_matrix=true; multi_pass=true; assumptions=true; validation_plan=true"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Mode ini paling berat dan cocok untuk analisis strategis"
+    ],
+    "tags": [
+      "brainstorming-mode",
+      "brainstorm-berdasarkan-level-kecerdasan",
+      "thinking",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-brain-005_03",
+    "category": "V13.9 Brainstorming Berdasarkan Level",
+    "title": "Playbook pin_session: Brainstorm berdasarkan level kecerdasan - Thinking",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Brainstorm mendalam"
+    ],
+    "diagnosis": [
+      "Divergent thinking lalu convergent ranking",
+      "ideas_count=20+; decision_matrix=true; multi_pass=true; assumptions=true; validation_plan=true"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Mode ini paling berat dan cocok untuk analisis strategis"
+    ],
+    "tags": [
+      "brainstorming-mode",
+      "brainstorm-berdasarkan-level-kecerdasan",
+      "thinking",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-brain-005_04",
+    "category": "V13.9 Brainstorming Berdasarkan Level",
+    "title": "Playbook brainstorming: Brainstorm berdasarkan level kecerdasan - Thinking",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Brainstorm mendalam"
+    ],
+    "diagnosis": [
+      "Divergent thinking lalu convergent ranking",
+      "ideas_count=20+; decision_matrix=true; multi_pass=true; assumptions=true; validation_plan=true"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Mode ini paling berat dan cocok untuk analisis strategis"
+    ],
+    "tags": [
+      "brainstorming-mode",
+      "brainstorm-berdasarkan-level-kecerdasan",
+      "thinking",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-session-001_01",
+    "category": "V13.9 Session Persistence",
+    "title": "Playbook profil_level: Auto-save chat session - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Menyimpan chat session secara otomatis agar percakapan tidak hilang saat user refresh/browser tertutup"
+    ],
+    "diagnosis": [
+      "Simpan session_id di localStorage/cookie aman, simpan messages ke database, restore session saat halaman dibuka",
+      "autosave_interval=1-3 detik; debounce_input=true; local_draft=true; server_sync=true"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Simpan draft input user juga agar teks yang belum terkirim tidak hilang"
+    ],
+    "tags": [
+      "session-persistence",
+      "auto-save-chat-session",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-session-001_02",
+    "category": "V13.9 Session Persistence",
+    "title": "Playbook autosave_session: Auto-save chat session - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Menyimpan chat session secara otomatis agar percakapan tidak hilang saat user refresh/browser tertutup"
+    ],
+    "diagnosis": [
+      "Simpan session_id di localStorage/cookie aman, simpan messages ke database, restore session saat halaman dibuka",
+      "autosave_interval=1-3 detik; debounce_input=true; local_draft=true; server_sync=true"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Simpan draft input user juga agar teks yang belum terkirim tidak hilang"
+    ],
+    "tags": [
+      "session-persistence",
+      "auto-save-chat-session",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-session-001_03",
+    "category": "V13.9 Session Persistence",
+    "title": "Playbook pin_session: Auto-save chat session - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Menyimpan chat session secara otomatis agar percakapan tidak hilang saat user refresh/browser tertutup"
+    ],
+    "diagnosis": [
+      "Simpan session_id di localStorage/cookie aman, simpan messages ke database, restore session saat halaman dibuka",
+      "autosave_interval=1-3 detik; debounce_input=true; local_draft=true; server_sync=true"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Simpan draft input user juga agar teks yang belum terkirim tidak hilang"
+    ],
+    "tags": [
+      "session-persistence",
+      "auto-save-chat-session",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-session-001_04",
+    "category": "V13.9 Session Persistence",
+    "title": "Playbook brainstorming: Auto-save chat session - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Menyimpan chat session secara otomatis agar percakapan tidak hilang saat user refresh/browser tertutup"
+    ],
+    "diagnosis": [
+      "Simpan session_id di localStorage/cookie aman, simpan messages ke database, restore session saat halaman dibuka",
+      "autosave_interval=1-3 detik; debounce_input=true; local_draft=true; server_sync=true"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Simpan draft input user juga agar teks yang belum terkirim tidak hilang"
+    ],
+    "tags": [
+      "session-persistence",
+      "auto-save-chat-session",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-session-002_01",
+    "category": "V13.9 Session Persistence",
+    "title": "Playbook profil_level: Auto-restore last session - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Saat user membuka ulang website, session terakhir bisa dipulihkan otomatis"
+    ],
+    "diagnosis": [
+      "Cek last_session_id dari localStorage/backend, load pesan terakhir, tampilkan indikator restored",
+      "restore_strategy=last_active; max_restore_age_days=30; show_restore_notice=true"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Untuk user tanpa login, restore bisa lokal saja; untuk login, restore dari database"
+    ],
+    "tags": [
+      "session-persistence",
+      "auto-restore-last-session",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-session-002_02",
+    "category": "V13.9 Session Persistence",
+    "title": "Playbook autosave_session: Auto-restore last session - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Saat user membuka ulang website, session terakhir bisa dipulihkan otomatis"
+    ],
+    "diagnosis": [
+      "Cek last_session_id dari localStorage/backend, load pesan terakhir, tampilkan indikator restored",
+      "restore_strategy=last_active; max_restore_age_days=30; show_restore_notice=true"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Untuk user tanpa login, restore bisa lokal saja; untuk login, restore dari database"
+    ],
+    "tags": [
+      "session-persistence",
+      "auto-restore-last-session",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-session-002_03",
+    "category": "V13.9 Session Persistence",
+    "title": "Playbook pin_session: Auto-restore last session - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Saat user membuka ulang website, session terakhir bisa dipulihkan otomatis"
+    ],
+    "diagnosis": [
+      "Cek last_session_id dari localStorage/backend, load pesan terakhir, tampilkan indikator restored",
+      "restore_strategy=last_active; max_restore_age_days=30; show_restore_notice=true"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Untuk user tanpa login, restore bisa lokal saja; untuk login, restore dari database"
+    ],
+    "tags": [
+      "session-persistence",
+      "auto-restore-last-session",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-session-002_04",
+    "category": "V13.9 Session Persistence",
+    "title": "Playbook brainstorming: Auto-restore last session - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Saat user membuka ulang website, session terakhir bisa dipulihkan otomatis"
+    ],
+    "diagnosis": [
+      "Cek last_session_id dari localStorage/backend, load pesan terakhir, tampilkan indikator restored",
+      "restore_strategy=last_active; max_restore_age_days=30; show_restore_notice=true"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Untuk user tanpa login, restore bisa lokal saja; untuk login, restore dari database"
+    ],
+    "tags": [
+      "session-persistence",
+      "auto-restore-last-session",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-session-003_01",
+    "category": "V13.9 Session Persistence",
+    "title": "Playbook profil_level: Draft input autosave - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Menyimpan teks yang sedang diketik user sebelum dikirim"
+    ],
+    "diagnosis": [
+      "Simpan input box ke localStorage dengan debounce, hapus setelah pesan terkirim",
+      "draft_autosave_interval=500-1000ms; clear_after_send=true"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Tambahkan tombol clear draft"
+    ],
+    "tags": [
+      "session-persistence",
+      "draft-input-autosave",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-session-003_02",
+    "category": "V13.9 Session Persistence",
+    "title": "Playbook autosave_session: Draft input autosave - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Menyimpan teks yang sedang diketik user sebelum dikirim"
+    ],
+    "diagnosis": [
+      "Simpan input box ke localStorage dengan debounce, hapus setelah pesan terkirim",
+      "draft_autosave_interval=500-1000ms; clear_after_send=true"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Tambahkan tombol clear draft"
+    ],
+    "tags": [
+      "session-persistence",
+      "draft-input-autosave",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-session-003_03",
+    "category": "V13.9 Session Persistence",
+    "title": "Playbook pin_session: Draft input autosave - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Menyimpan teks yang sedang diketik user sebelum dikirim"
+    ],
+    "diagnosis": [
+      "Simpan input box ke localStorage dengan debounce, hapus setelah pesan terkirim",
+      "draft_autosave_interval=500-1000ms; clear_after_send=true"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Tambahkan tombol clear draft"
+    ],
+    "tags": [
+      "session-persistence",
+      "draft-input-autosave",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-session-003_04",
+    "category": "V13.9 Session Persistence",
+    "title": "Playbook brainstorming: Draft input autosave - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Menyimpan teks yang sedang diketik user sebelum dikirim"
+    ],
+    "diagnosis": [
+      "Simpan input box ke localStorage dengan debounce, hapus setelah pesan terkirim",
+      "draft_autosave_interval=500-1000ms; clear_after_send=true"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Tambahkan tombol clear draft"
+    ],
+    "tags": [
+      "session-persistence",
+      "draft-input-autosave",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-session-004_01",
+    "category": "V13.9 Session Persistence",
+    "title": "Playbook profil_level: Session title otomatis - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Membuat judul session otomatis dari isi percakapan pertama"
+    ],
+    "diagnosis": [
+      "Generate judul pendek setelah 1-3 pesan pertama, bisa diedit user",
+      "title_max_length=60; generate_after_messages=2; editable=true"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Jika chat berisi rahasia, gunakan judul generik"
+    ],
+    "tags": [
+      "session-persistence",
+      "session-title-otomatis",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-session-004_02",
+    "category": "V13.9 Session Persistence",
+    "title": "Playbook autosave_session: Session title otomatis - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Membuat judul session otomatis dari isi percakapan pertama"
+    ],
+    "diagnosis": [
+      "Generate judul pendek setelah 1-3 pesan pertama, bisa diedit user",
+      "title_max_length=60; generate_after_messages=2; editable=true"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Jika chat berisi rahasia, gunakan judul generik"
+    ],
+    "tags": [
+      "session-persistence",
+      "session-title-otomatis",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-session-004_03",
+    "category": "V13.9 Session Persistence",
+    "title": "Playbook pin_session: Session title otomatis - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Membuat judul session otomatis dari isi percakapan pertama"
+    ],
+    "diagnosis": [
+      "Generate judul pendek setelah 1-3 pesan pertama, bisa diedit user",
+      "title_max_length=60; generate_after_messages=2; editable=true"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Jika chat berisi rahasia, gunakan judul generik"
+    ],
+    "tags": [
+      "session-persistence",
+      "session-title-otomatis",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-session-004_04",
+    "category": "V13.9 Session Persistence",
+    "title": "Playbook brainstorming: Session title otomatis - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Membuat judul session otomatis dari isi percakapan pertama"
+    ],
+    "diagnosis": [
+      "Generate judul pendek setelah 1-3 pesan pertama, bisa diedit user",
+      "title_max_length=60; generate_after_messages=2; editable=true"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Jika chat berisi rahasia, gunakan judul generik"
+    ],
+    "tags": [
+      "session-persistence",
+      "session-title-otomatis",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-session-005_01",
+    "category": "V13.9 Session Persistence",
+    "title": "Playbook profil_level: Session search - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Menambahkan pencarian riwayat chat berdasarkan judul, isi pesan, tanggal, tag, dan pinned status"
+    ],
+    "diagnosis": [
+      "Index title dan message summary; filter pinned, date, level, project, file",
+      "search_index=true; filters=pinned,date,level,project; max_results=50"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Gunakan summary index agar pencarian cepat tanpa load semua pesan"
+    ],
+    "tags": [
+      "session-persistence",
+      "session-search",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-session-005_02",
+    "category": "V13.9 Session Persistence",
+    "title": "Playbook autosave_session: Session search - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Menambahkan pencarian riwayat chat berdasarkan judul, isi pesan, tanggal, tag, dan pinned status"
+    ],
+    "diagnosis": [
+      "Index title dan message summary; filter pinned, date, level, project, file",
+      "search_index=true; filters=pinned,date,level,project; max_results=50"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Gunakan summary index agar pencarian cepat tanpa load semua pesan"
+    ],
+    "tags": [
+      "session-persistence",
+      "session-search",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-session-005_03",
+    "category": "V13.9 Session Persistence",
+    "title": "Playbook pin_session: Session search - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Menambahkan pencarian riwayat chat berdasarkan judul, isi pesan, tanggal, tag, dan pinned status"
+    ],
+    "diagnosis": [
+      "Index title dan message summary; filter pinned, date, level, project, file",
+      "search_index=true; filters=pinned,date,level,project; max_results=50"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Gunakan summary index agar pencarian cepat tanpa load semua pesan"
+    ],
+    "tags": [
+      "session-persistence",
+      "session-search",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-session-005_04",
+    "category": "V13.9 Session Persistence",
+    "title": "Playbook brainstorming: Session search - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Menambahkan pencarian riwayat chat berdasarkan judul, isi pesan, tanggal, tag, dan pinned status"
+    ],
+    "diagnosis": [
+      "Index title dan message summary; filter pinned, date, level, project, file",
+      "search_index=true; filters=pinned,date,level,project; max_results=50"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Gunakan summary index agar pencarian cepat tanpa load semua pesan"
+    ],
+    "tags": [
+      "session-persistence",
+      "session-search",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-pin-001_01",
+    "category": "V13.9 Pinned Session",
+    "title": "Playbook profil_level: Pin session chat - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Menambahkan fitur pin/unpin pada session chat pilihan user"
+    ],
+    "diagnosis": [
+      "Tambahkan field pinned, pinned_at, pinned_order; tampilkan pinned session di atas daftar riwayat",
+      "pinned=true/false; pinned_order; max_pinned_optional=20"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Tambahkan ikon pin yang jelas dan status aktif"
+    ],
+    "tags": [
+      "pinned-session",
+      "pin-session-chat",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-pin-001_02",
+    "category": "V13.9 Pinned Session",
+    "title": "Playbook autosave_session: Pin session chat - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Menambahkan fitur pin/unpin pada session chat pilihan user"
+    ],
+    "diagnosis": [
+      "Tambahkan field pinned, pinned_at, pinned_order; tampilkan pinned session di atas daftar riwayat",
+      "pinned=true/false; pinned_order; max_pinned_optional=20"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Tambahkan ikon pin yang jelas dan status aktif"
+    ],
+    "tags": [
+      "pinned-session",
+      "pin-session-chat",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-pin-001_03",
+    "category": "V13.9 Pinned Session",
+    "title": "Playbook pin_session: Pin session chat - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Menambahkan fitur pin/unpin pada session chat pilihan user"
+    ],
+    "diagnosis": [
+      "Tambahkan field pinned, pinned_at, pinned_order; tampilkan pinned session di atas daftar riwayat",
+      "pinned=true/false; pinned_order; max_pinned_optional=20"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Tambahkan ikon pin yang jelas dan status aktif"
+    ],
+    "tags": [
+      "pinned-session",
+      "pin-session-chat",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-pin-001_04",
+    "category": "V13.9 Pinned Session",
+    "title": "Playbook brainstorming: Pin session chat - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Menambahkan fitur pin/unpin pada session chat pilihan user"
+    ],
+    "diagnosis": [
+      "Tambahkan field pinned, pinned_at, pinned_order; tampilkan pinned session di atas daftar riwayat",
+      "pinned=true/false; pinned_order; max_pinned_optional=20"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Tambahkan ikon pin yang jelas dan status aktif"
+    ],
+    "tags": [
+      "pinned-session",
+      "pin-session-chat",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-pin-002_01",
+    "category": "V13.9 Pinned Session",
+    "title": "Playbook profil_level: Pinned session grouping - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Mengelompokkan session pinned berdasarkan kategori atau project"
+    ],
+    "diagnosis": [
+      "Tambahkan tag project/category dan tampilkan group pinned",
+      "pin_groups=true; tags=project,category; drag_sort=true"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Kategori bisa manual atau rekomendasi yang perlu disetujui user"
+    ],
+    "tags": [
+      "pinned-session",
+      "pinned-session-grouping",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-pin-002_02",
+    "category": "V13.9 Pinned Session",
+    "title": "Playbook autosave_session: Pinned session grouping - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Mengelompokkan session pinned berdasarkan kategori atau project"
+    ],
+    "diagnosis": [
+      "Tambahkan tag project/category dan tampilkan group pinned",
+      "pin_groups=true; tags=project,category; drag_sort=true"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Kategori bisa manual atau rekomendasi yang perlu disetujui user"
+    ],
+    "tags": [
+      "pinned-session",
+      "pinned-session-grouping",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-pin-002_03",
+    "category": "V13.9 Pinned Session",
+    "title": "Playbook pin_session: Pinned session grouping - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Mengelompokkan session pinned berdasarkan kategori atau project"
+    ],
+    "diagnosis": [
+      "Tambahkan tag project/category dan tampilkan group pinned",
+      "pin_groups=true; tags=project,category; drag_sort=true"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Kategori bisa manual atau rekomendasi yang perlu disetujui user"
+    ],
+    "tags": [
+      "pinned-session",
+      "pinned-session-grouping",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-pin-002_04",
+    "category": "V13.9 Pinned Session",
+    "title": "Playbook brainstorming: Pinned session grouping - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Mengelompokkan session pinned berdasarkan kategori atau project"
+    ],
+    "diagnosis": [
+      "Tambahkan tag project/category dan tampilkan group pinned",
+      "pin_groups=true; tags=project,category; drag_sort=true"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Kategori bisa manual atau rekomendasi yang perlu disetujui user"
+    ],
+    "tags": [
+      "pinned-session",
+      "pinned-session-grouping",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-pin-003_01",
+    "category": "V13.9 Pinned Session",
+    "title": "Playbook profil_level: Pinned session note - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "User bisa menambahkan catatan kecil pada session yang dipin"
+    ],
+    "diagnosis": [
+      "Tambahkan pinned_note editable di session",
+      "note_max_length=200; editable=true"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Catatan sebaiknya opsional"
+    ],
+    "tags": [
+      "pinned-session",
+      "pinned-session-note",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-pin-003_02",
+    "category": "V13.9 Pinned Session",
+    "title": "Playbook autosave_session: Pinned session note - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "User bisa menambahkan catatan kecil pada session yang dipin"
+    ],
+    "diagnosis": [
+      "Tambahkan pinned_note editable di session",
+      "note_max_length=200; editable=true"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Catatan sebaiknya opsional"
+    ],
+    "tags": [
+      "pinned-session",
+      "pinned-session-note",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-pin-003_03",
+    "category": "V13.9 Pinned Session",
+    "title": "Playbook pin_session: Pinned session note - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "User bisa menambahkan catatan kecil pada session yang dipin"
+    ],
+    "diagnosis": [
+      "Tambahkan pinned_note editable di session",
+      "note_max_length=200; editable=true"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Catatan sebaiknya opsional"
+    ],
+    "tags": [
+      "pinned-session",
+      "pinned-session-note",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-pin-003_04",
+    "category": "V13.9 Pinned Session",
+    "title": "Playbook brainstorming: Pinned session note - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "User bisa menambahkan catatan kecil pada session yang dipin"
+    ],
+    "diagnosis": [
+      "Tambahkan pinned_note editable di session",
+      "note_max_length=200; editable=true"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Catatan sebaiknya opsional"
+    ],
+    "tags": [
+      "pinned-session",
+      "pinned-session-note",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-pin-004_01",
+    "category": "V13.9 Pinned Session",
+    "title": "Playbook profil_level: Auto-suggest pin - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "AI menyarankan user untuk pin session jika percakapan dianggap penting"
+    ],
+    "diagnosis": [
+      "AI mendeteksi importance score lalu menampilkan prompt kecil: 'Pin chat ini?'",
+      "importance_score_threshold=0.75; user_confirmation_required=true"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Fitur ini bisa dimatikan di settings"
+    ],
+    "tags": [
+      "pinned-session",
+      "auto-suggest-pin",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-pin-004_02",
+    "category": "V13.9 Pinned Session",
+    "title": "Playbook autosave_session: Auto-suggest pin - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "AI menyarankan user untuk pin session jika percakapan dianggap penting"
+    ],
+    "diagnosis": [
+      "AI mendeteksi importance score lalu menampilkan prompt kecil: 'Pin chat ini?'",
+      "importance_score_threshold=0.75; user_confirmation_required=true"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Fitur ini bisa dimatikan di settings"
+    ],
+    "tags": [
+      "pinned-session",
+      "auto-suggest-pin",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-pin-004_03",
+    "category": "V13.9 Pinned Session",
+    "title": "Playbook pin_session: Auto-suggest pin - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "AI menyarankan user untuk pin session jika percakapan dianggap penting"
+    ],
+    "diagnosis": [
+      "AI mendeteksi importance score lalu menampilkan prompt kecil: 'Pin chat ini?'",
+      "importance_score_threshold=0.75; user_confirmation_required=true"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Fitur ini bisa dimatikan di settings"
+    ],
+    "tags": [
+      "pinned-session",
+      "auto-suggest-pin",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-pin-004_04",
+    "category": "V13.9 Pinned Session",
+    "title": "Playbook brainstorming: Auto-suggest pin - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "AI menyarankan user untuk pin session jika percakapan dianggap penting"
+    ],
+    "diagnosis": [
+      "AI mendeteksi importance score lalu menampilkan prompt kecil: 'Pin chat ini?'",
+      "importance_score_threshold=0.75; user_confirmation_required=true"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Fitur ini bisa dimatikan di settings"
+    ],
+    "tags": [
+      "pinned-session",
+      "auto-suggest-pin",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-db-001_01",
+    "category": "V13.9 Database Schema Chat",
+    "title": "Playbook profil_level: Tabel ai_level_profiles - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Membuat tabel profil level kecerdasan untuk menyimpan konfigurasi tiap level"
+    ],
+    "diagnosis": [
+      "Tabel digunakan backend untuk menentukan model, prompt, token, retrieval, dan verifikasi",
+      "fields=id,name,alias,description,model_profile,max_tokens,temperature,retrieval_top_k,verification_passes"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Gunakan seed data default untuk 5 level"
+    ],
+    "tags": [
+      "database-schema",
+      "tabel-ai-level-profiles",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-db-001_02",
+    "category": "V13.9 Database Schema Chat",
+    "title": "Playbook autosave_session: Tabel ai_level_profiles - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Membuat tabel profil level kecerdasan untuk menyimpan konfigurasi tiap level"
+    ],
+    "diagnosis": [
+      "Tabel digunakan backend untuk menentukan model, prompt, token, retrieval, dan verifikasi",
+      "fields=id,name,alias,description,model_profile,max_tokens,temperature,retrieval_top_k,verification_passes"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Gunakan seed data default untuk 5 level"
+    ],
+    "tags": [
+      "database-schema",
+      "tabel-ai-level-profiles",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-db-001_03",
+    "category": "V13.9 Database Schema Chat",
+    "title": "Playbook pin_session: Tabel ai_level_profiles - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Membuat tabel profil level kecerdasan untuk menyimpan konfigurasi tiap level"
+    ],
+    "diagnosis": [
+      "Tabel digunakan backend untuk menentukan model, prompt, token, retrieval, dan verifikasi",
+      "fields=id,name,alias,description,model_profile,max_tokens,temperature,retrieval_top_k,verification_passes"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Gunakan seed data default untuk 5 level"
+    ],
+    "tags": [
+      "database-schema",
+      "tabel-ai-level-profiles",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-db-001_04",
+    "category": "V13.9 Database Schema Chat",
+    "title": "Playbook brainstorming: Tabel ai_level_profiles - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Membuat tabel profil level kecerdasan untuk menyimpan konfigurasi tiap level"
+    ],
+    "diagnosis": [
+      "Tabel digunakan backend untuk menentukan model, prompt, token, retrieval, dan verifikasi",
+      "fields=id,name,alias,description,model_profile,max_tokens,temperature,retrieval_top_k,verification_passes"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Gunakan seed data default untuk 5 level"
+    ],
+    "tags": [
+      "database-schema",
+      "tabel-ai-level-profiles",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-db-002_01",
+    "category": "V13.9 Database Schema Chat",
+    "title": "Playbook profil_level: Tabel chat_sessions - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Menambahkan field session untuk auto-save, restore, pin, judul, dan level default"
+    ],
+    "diagnosis": [
+      "Menyimpan metadata percakapan agar session tidak hilang saat refresh",
+      "fields=id,user_id,title,default_intelligence_level,pinned,pinned_at,last_active_at,created_at,updated_at"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Tambahkan soft delete agar session bisa dipulihkan jika tidak sengaja terhapus"
+    ],
+    "tags": [
+      "database-schema",
+      "tabel-chat-sessions",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-db-002_02",
+    "category": "V13.9 Database Schema Chat",
+    "title": "Playbook autosave_session: Tabel chat_sessions - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Menambahkan field session untuk auto-save, restore, pin, judul, dan level default"
+    ],
+    "diagnosis": [
+      "Menyimpan metadata percakapan agar session tidak hilang saat refresh",
+      "fields=id,user_id,title,default_intelligence_level,pinned,pinned_at,last_active_at,created_at,updated_at"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Tambahkan soft delete agar session bisa dipulihkan jika tidak sengaja terhapus"
+    ],
+    "tags": [
+      "database-schema",
+      "tabel-chat-sessions",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-db-002_03",
+    "category": "V13.9 Database Schema Chat",
+    "title": "Playbook pin_session: Tabel chat_sessions - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Menambahkan field session untuk auto-save, restore, pin, judul, dan level default"
+    ],
+    "diagnosis": [
+      "Menyimpan metadata percakapan agar session tidak hilang saat refresh",
+      "fields=id,user_id,title,default_intelligence_level,pinned,pinned_at,last_active_at,created_at,updated_at"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Tambahkan soft delete agar session bisa dipulihkan jika tidak sengaja terhapus"
+    ],
+    "tags": [
+      "database-schema",
+      "tabel-chat-sessions",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-db-002_04",
+    "category": "V13.9 Database Schema Chat",
+    "title": "Playbook brainstorming: Tabel chat_sessions - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Menambahkan field session untuk auto-save, restore, pin, judul, dan level default"
+    ],
+    "diagnosis": [
+      "Menyimpan metadata percakapan agar session tidak hilang saat refresh",
+      "fields=id,user_id,title,default_intelligence_level,pinned,pinned_at,last_active_at,created_at,updated_at"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Tambahkan soft delete agar session bisa dipulihkan jika tidak sengaja terhapus"
+    ],
+    "tags": [
+      "database-schema",
+      "tabel-chat-sessions",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-db-003_01",
+    "category": "V13.9 Database Schema Chat",
+    "title": "Playbook profil_level: Tabel chat_messages - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Menyimpan pesan user dan AI lengkap dengan level kecerdasan yang dipakai"
+    ],
+    "diagnosis": [
+      "Menyimpan percakapan secara stabil dan bisa dilanjutkan setelah refresh",
+      "fields=id,session_id,role,content,intelligence_level,metadata,created_at"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Gunakan pagination/lazy loading untuk session panjang"
+    ],
+    "tags": [
+      "database-schema",
+      "tabel-chat-messages",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-db-003_02",
+    "category": "V13.9 Database Schema Chat",
+    "title": "Playbook autosave_session: Tabel chat_messages - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Menyimpan pesan user dan AI lengkap dengan level kecerdasan yang dipakai"
+    ],
+    "diagnosis": [
+      "Menyimpan percakapan secara stabil dan bisa dilanjutkan setelah refresh",
+      "fields=id,session_id,role,content,intelligence_level,metadata,created_at"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Gunakan pagination/lazy loading untuk session panjang"
+    ],
+    "tags": [
+      "database-schema",
+      "tabel-chat-messages",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-db-003_03",
+    "category": "V13.9 Database Schema Chat",
+    "title": "Playbook pin_session: Tabel chat_messages - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Menyimpan pesan user dan AI lengkap dengan level kecerdasan yang dipakai"
+    ],
+    "diagnosis": [
+      "Menyimpan percakapan secara stabil dan bisa dilanjutkan setelah refresh",
+      "fields=id,session_id,role,content,intelligence_level,metadata,created_at"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Gunakan pagination/lazy loading untuk session panjang"
+    ],
+    "tags": [
+      "database-schema",
+      "tabel-chat-messages",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-db-003_04",
+    "category": "V13.9 Database Schema Chat",
+    "title": "Playbook brainstorming: Tabel chat_messages - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Menyimpan pesan user dan AI lengkap dengan level kecerdasan yang dipakai"
+    ],
+    "diagnosis": [
+      "Menyimpan percakapan secara stabil dan bisa dilanjutkan setelah refresh",
+      "fields=id,session_id,role,content,intelligence_level,metadata,created_at"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Gunakan pagination/lazy loading untuk session panjang"
+    ],
+    "tags": [
+      "database-schema",
+      "tabel-chat-messages",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-db-004_01",
+    "category": "V13.9 Database Schema Chat",
+    "title": "Playbook profil_level: Tabel chat_drafts - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Menyimpan draft input user yang belum dikirim"
+    ],
+    "diagnosis": [
+      "Menghindari kehilangan prompt panjang saat refresh",
+      "fields=session_id,user_id,draft_text,updated_at,expires_at"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Untuk guest user bisa pakai localStorage; untuk login bisa sync ke DB"
+    ],
+    "tags": [
+      "database-schema",
+      "tabel-chat-drafts",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-db-004_02",
+    "category": "V13.9 Database Schema Chat",
+    "title": "Playbook autosave_session: Tabel chat_drafts - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Menyimpan draft input user yang belum dikirim"
+    ],
+    "diagnosis": [
+      "Menghindari kehilangan prompt panjang saat refresh",
+      "fields=session_id,user_id,draft_text,updated_at,expires_at"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Untuk guest user bisa pakai localStorage; untuk login bisa sync ke DB"
+    ],
+    "tags": [
+      "database-schema",
+      "tabel-chat-drafts",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-db-004_03",
+    "category": "V13.9 Database Schema Chat",
+    "title": "Playbook pin_session: Tabel chat_drafts - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Menyimpan draft input user yang belum dikirim"
+    ],
+    "diagnosis": [
+      "Menghindari kehilangan prompt panjang saat refresh",
+      "fields=session_id,user_id,draft_text,updated_at,expires_at"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Untuk guest user bisa pakai localStorage; untuk login bisa sync ke DB"
+    ],
+    "tags": [
+      "database-schema",
+      "tabel-chat-drafts",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-db-004_04",
+    "category": "V13.9 Database Schema Chat",
+    "title": "Playbook brainstorming: Tabel chat_drafts - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Menyimpan draft input user yang belum dikirim"
+    ],
+    "diagnosis": [
+      "Menghindari kehilangan prompt panjang saat refresh",
+      "fields=session_id,user_id,draft_text,updated_at,expires_at"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Untuk guest user bisa pakai localStorage; untuk login bisa sync ke DB"
+    ],
+    "tags": [
+      "database-schema",
+      "tabel-chat-drafts",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-db-005_01",
+    "category": "V13.9 Database Schema Chat",
+    "title": "Playbook profil_level: Tabel brainstorm_sessions - Medium, High, Thinking",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Menyimpan hasil brainstorming, pilihan ide, matriks keputusan, dan follow-up"
+    ],
+    "diagnosis": [
+      "Agar brainstorming tidak hilang dan bisa dilanjutkan",
+      "fields=id,chat_session_id,level,goal,ideas_json,selected_idea,decision_matrix_json"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Cocok untuk mode High dan Thinking"
+    ],
+    "tags": [
+      "database-schema",
+      "tabel-brainstorm-sessions",
+      "medium-high-thinking",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-db-005_02",
+    "category": "V13.9 Database Schema Chat",
+    "title": "Playbook autosave_session: Tabel brainstorm_sessions - Medium, High, Thinking",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Menyimpan hasil brainstorming, pilihan ide, matriks keputusan, dan follow-up"
+    ],
+    "diagnosis": [
+      "Agar brainstorming tidak hilang dan bisa dilanjutkan",
+      "fields=id,chat_session_id,level,goal,ideas_json,selected_idea,decision_matrix_json"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Cocok untuk mode High dan Thinking"
+    ],
+    "tags": [
+      "database-schema",
+      "tabel-brainstorm-sessions",
+      "medium-high-thinking",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-db-005_03",
+    "category": "V13.9 Database Schema Chat",
+    "title": "Playbook pin_session: Tabel brainstorm_sessions - Medium, High, Thinking",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Menyimpan hasil brainstorming, pilihan ide, matriks keputusan, dan follow-up"
+    ],
+    "diagnosis": [
+      "Agar brainstorming tidak hilang dan bisa dilanjutkan",
+      "fields=id,chat_session_id,level,goal,ideas_json,selected_idea,decision_matrix_json"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Cocok untuk mode High dan Thinking"
+    ],
+    "tags": [
+      "database-schema",
+      "tabel-brainstorm-sessions",
+      "medium-high-thinking",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-db-005_04",
+    "category": "V13.9 Database Schema Chat",
+    "title": "Playbook brainstorming: Tabel brainstorm_sessions - Medium, High, Thinking",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Menyimpan hasil brainstorming, pilihan ide, matriks keputusan, dan follow-up"
+    ],
+    "diagnosis": [
+      "Agar brainstorming tidak hilang dan bisa dilanjutkan",
+      "fields=id,chat_session_id,level,goal,ideas_json,selected_idea,decision_matrix_json"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Cocok untuk mode High dan Thinking"
+    ],
+    "tags": [
+      "database-schema",
+      "tabel-brainstorm-sessions",
+      "medium-high-thinking",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-ui-001_01",
+    "category": "V13.9 UI UX Level Session Pin",
+    "title": "Playbook profil_level: Selector level kecerdasan - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Menambahkan dropdown/toggle level kecerdasan di area chat"
+    ],
+    "diagnosis": [
+      "Selector menyimpan pilihan per session dan bisa berubah per pesan",
+      "ui=dropdown_or_segmented_control; default=ordinary_or_medium; per_message_override=true"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Gunakan warna/ikon yang jelas tapi tidak terlalu ramai"
+    ],
+    "tags": [
+      "ui-ux",
+      "selector-level-kecerdasan",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-ui-001_02",
+    "category": "V13.9 UI UX Level Session Pin",
+    "title": "Playbook autosave_session: Selector level kecerdasan - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Menambahkan dropdown/toggle level kecerdasan di area chat"
+    ],
+    "diagnosis": [
+      "Selector menyimpan pilihan per session dan bisa berubah per pesan",
+      "ui=dropdown_or_segmented_control; default=ordinary_or_medium; per_message_override=true"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Gunakan warna/ikon yang jelas tapi tidak terlalu ramai"
+    ],
+    "tags": [
+      "ui-ux",
+      "selector-level-kecerdasan",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-ui-001_03",
+    "category": "V13.9 UI UX Level Session Pin",
+    "title": "Playbook pin_session: Selector level kecerdasan - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Menambahkan dropdown/toggle level kecerdasan di area chat"
+    ],
+    "diagnosis": [
+      "Selector menyimpan pilihan per session dan bisa berubah per pesan",
+      "ui=dropdown_or_segmented_control; default=ordinary_or_medium; per_message_override=true"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Gunakan warna/ikon yang jelas tapi tidak terlalu ramai"
+    ],
+    "tags": [
+      "ui-ux",
+      "selector-level-kecerdasan",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-ui-001_04",
+    "category": "V13.9 UI UX Level Session Pin",
+    "title": "Playbook brainstorming: Selector level kecerdasan - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Menambahkan dropdown/toggle level kecerdasan di area chat"
+    ],
+    "diagnosis": [
+      "Selector menyimpan pilihan per session dan bisa berubah per pesan",
+      "ui=dropdown_or_segmented_control; default=ordinary_or_medium; per_message_override=true"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Gunakan warna/ikon yang jelas tapi tidak terlalu ramai"
+    ],
+    "tags": [
+      "ui-ux",
+      "selector-level-kecerdasan",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-ui-002_01",
+    "category": "V13.9 UI UX Level Session Pin",
+    "title": "Playbook profil_level: Tooltip keterangan level - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Menampilkan keterangan masing-masing level cocok untuk apa"
+    ],
+    "diagnosis": [
+      "Tooltip/card kecil muncul saat hover/click level",
+      "tooltip_fields=description,best_for,speed,detail_level"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Tambahkan indikator trade-off: makin tinggi makin detail tapi lebih lambat"
+    ],
+    "tags": [
+      "ui-ux",
+      "tooltip-keterangan-level",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-ui-002_02",
+    "category": "V13.9 UI UX Level Session Pin",
+    "title": "Playbook autosave_session: Tooltip keterangan level - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Menampilkan keterangan masing-masing level cocok untuk apa"
+    ],
+    "diagnosis": [
+      "Tooltip/card kecil muncul saat hover/click level",
+      "tooltip_fields=description,best_for,speed,detail_level"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Tambahkan indikator trade-off: makin tinggi makin detail tapi lebih lambat"
+    ],
+    "tags": [
+      "ui-ux",
+      "tooltip-keterangan-level",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-ui-002_03",
+    "category": "V13.9 UI UX Level Session Pin",
+    "title": "Playbook pin_session: Tooltip keterangan level - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Menampilkan keterangan masing-masing level cocok untuk apa"
+    ],
+    "diagnosis": [
+      "Tooltip/card kecil muncul saat hover/click level",
+      "tooltip_fields=description,best_for,speed,detail_level"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Tambahkan indikator trade-off: makin tinggi makin detail tapi lebih lambat"
+    ],
+    "tags": [
+      "ui-ux",
+      "tooltip-keterangan-level",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-ui-002_04",
+    "category": "V13.9 UI UX Level Session Pin",
+    "title": "Playbook brainstorming: Tooltip keterangan level - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Menampilkan keterangan masing-masing level cocok untuk apa"
+    ],
+    "diagnosis": [
+      "Tooltip/card kecil muncul saat hover/click level",
+      "tooltip_fields=description,best_for,speed,detail_level"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Tambahkan indikator trade-off: makin tinggi makin detail tapi lebih lambat"
+    ],
+    "tags": [
+      "ui-ux",
+      "tooltip-keterangan-level",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-ui-003_01",
+    "category": "V13.9 UI UX Level Session Pin",
+    "title": "Playbook profil_level: Session sidebar persistent - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Menampilkan daftar session chat yang tersimpan di sidebar"
+    ],
+    "diagnosis": [
+      "Sidebar load session berdasarkan user_id/local session",
+      "show_pinned_first=true; lazy_load=true; search=true"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Untuk mobile, sidebar bisa jadi drawer"
+    ],
+    "tags": [
+      "ui-ux",
+      "session-sidebar-persistent",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-ui-003_02",
+    "category": "V13.9 UI UX Level Session Pin",
+    "title": "Playbook autosave_session: Session sidebar persistent - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Menampilkan daftar session chat yang tersimpan di sidebar"
+    ],
+    "diagnosis": [
+      "Sidebar load session berdasarkan user_id/local session",
+      "show_pinned_first=true; lazy_load=true; search=true"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Untuk mobile, sidebar bisa jadi drawer"
+    ],
+    "tags": [
+      "ui-ux",
+      "session-sidebar-persistent",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-ui-003_03",
+    "category": "V13.9 UI UX Level Session Pin",
+    "title": "Playbook pin_session: Session sidebar persistent - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Menampilkan daftar session chat yang tersimpan di sidebar"
+    ],
+    "diagnosis": [
+      "Sidebar load session berdasarkan user_id/local session",
+      "show_pinned_first=true; lazy_load=true; search=true"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Untuk mobile, sidebar bisa jadi drawer"
+    ],
+    "tags": [
+      "ui-ux",
+      "session-sidebar-persistent",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-ui-003_04",
+    "category": "V13.9 UI UX Level Session Pin",
+    "title": "Playbook brainstorming: Session sidebar persistent - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Menampilkan daftar session chat yang tersimpan di sidebar"
+    ],
+    "diagnosis": [
+      "Sidebar load session berdasarkan user_id/local session",
+      "show_pinned_first=true; lazy_load=true; search=true"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Untuk mobile, sidebar bisa jadi drawer"
+    ],
+    "tags": [
+      "ui-ux",
+      "session-sidebar-persistent",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-ui-004_01",
+    "category": "V13.9 UI UX Level Session Pin",
+    "title": "Playbook profil_level: Pin/unpin button - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Menambahkan tombol pin pada setiap session"
+    ],
+    "diagnosis": [
+      "Klik ikon pin mengubah status pinned dan sync ke backend",
+      "pin_icon=true; optimistic_update=true; server_confirm=true"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Gunakan ikon pin aktif/nonaktif yang jelas"
+    ],
+    "tags": [
+      "ui-ux",
+      "pin-unpin-button",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-ui-004_02",
+    "category": "V13.9 UI UX Level Session Pin",
+    "title": "Playbook autosave_session: Pin/unpin button - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Menambahkan tombol pin pada setiap session"
+    ],
+    "diagnosis": [
+      "Klik ikon pin mengubah status pinned dan sync ke backend",
+      "pin_icon=true; optimistic_update=true; server_confirm=true"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Gunakan ikon pin aktif/nonaktif yang jelas"
+    ],
+    "tags": [
+      "ui-ux",
+      "pin-unpin-button",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-ui-004_03",
+    "category": "V13.9 UI UX Level Session Pin",
+    "title": "Playbook pin_session: Pin/unpin button - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Menambahkan tombol pin pada setiap session"
+    ],
+    "diagnosis": [
+      "Klik ikon pin mengubah status pinned dan sync ke backend",
+      "pin_icon=true; optimistic_update=true; server_confirm=true"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Gunakan ikon pin aktif/nonaktif yang jelas"
+    ],
+    "tags": [
+      "ui-ux",
+      "pin-unpin-button",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-ui-004_04",
+    "category": "V13.9 UI UX Level Session Pin",
+    "title": "Playbook brainstorming: Pin/unpin button - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Menambahkan tombol pin pada setiap session"
+    ],
+    "diagnosis": [
+      "Klik ikon pin mengubah status pinned dan sync ke backend",
+      "pin_icon=true; optimistic_update=true; server_confirm=true"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Gunakan ikon pin aktif/nonaktif yang jelas"
+    ],
+    "tags": [
+      "ui-ux",
+      "pin-unpin-button",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-ui-005_01",
+    "category": "V13.9 UI UX Level Session Pin",
+    "title": "Playbook profil_level: Restore notification - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Menampilkan notifikasi saat chat berhasil dipulihkan setelah refresh"
+    ],
+    "diagnosis": [
+      "Toast/banner kecil: 'Session dipulihkan'",
+      "toast_duration=3s; include_session_title=true"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Opsional tapi meningkatkan UX"
+    ],
+    "tags": [
+      "ui-ux",
+      "restore-notification",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-ui-005_02",
+    "category": "V13.9 UI UX Level Session Pin",
+    "title": "Playbook autosave_session: Restore notification - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Menampilkan notifikasi saat chat berhasil dipulihkan setelah refresh"
+    ],
+    "diagnosis": [
+      "Toast/banner kecil: 'Session dipulihkan'",
+      "toast_duration=3s; include_session_title=true"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Opsional tapi meningkatkan UX"
+    ],
+    "tags": [
+      "ui-ux",
+      "restore-notification",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-ui-005_03",
+    "category": "V13.9 UI UX Level Session Pin",
+    "title": "Playbook pin_session: Restore notification - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Menampilkan notifikasi saat chat berhasil dipulihkan setelah refresh"
+    ],
+    "diagnosis": [
+      "Toast/banner kecil: 'Session dipulihkan'",
+      "toast_duration=3s; include_session_title=true"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Opsional tapi meningkatkan UX"
+    ],
+    "tags": [
+      "ui-ux",
+      "restore-notification",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-ui-005_04",
+    "category": "V13.9 UI UX Level Session Pin",
+    "title": "Playbook brainstorming: Restore notification - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Menampilkan notifikasi saat chat berhasil dipulihkan setelah refresh"
+    ],
+    "diagnosis": [
+      "Toast/banner kecil: 'Session dipulihkan'",
+      "toast_duration=3s; include_session_title=true"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Opsional tapi meningkatkan UX"
+    ],
+    "tags": [
+      "ui-ux",
+      "restore-notification",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-route-001_01",
+    "category": "V13.9 Smart Routing Intelligence Level",
+    "title": "Playbook profil_level: Auto-suggest intelligence level - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "AI menyarankan level yang cocok berdasarkan kompleksitas pertanyaan"
+    ],
+    "diagnosis": [
+      "Intent classifier dan complexity score sebelum generate jawaban",
+      "complexity_score=0-1; suggested_level; user_override=true"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Tampilkan saran level hanya jika berguna, jangan setiap pesan"
+    ],
+    "tags": [
+      "smart-routing",
+      "auto-suggest-intelligence-level",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-route-001_02",
+    "category": "V13.9 Smart Routing Intelligence Level",
+    "title": "Playbook autosave_session: Auto-suggest intelligence level - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "AI menyarankan level yang cocok berdasarkan kompleksitas pertanyaan"
+    ],
+    "diagnosis": [
+      "Intent classifier dan complexity score sebelum generate jawaban",
+      "complexity_score=0-1; suggested_level; user_override=true"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Tampilkan saran level hanya jika berguna, jangan setiap pesan"
+    ],
+    "tags": [
+      "smart-routing",
+      "auto-suggest-intelligence-level",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-route-001_03",
+    "category": "V13.9 Smart Routing Intelligence Level",
+    "title": "Playbook pin_session: Auto-suggest intelligence level - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "AI menyarankan level yang cocok berdasarkan kompleksitas pertanyaan"
+    ],
+    "diagnosis": [
+      "Intent classifier dan complexity score sebelum generate jawaban",
+      "complexity_score=0-1; suggested_level; user_override=true"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Tampilkan saran level hanya jika berguna, jangan setiap pesan"
+    ],
+    "tags": [
+      "smart-routing",
+      "auto-suggest-intelligence-level",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-route-001_04",
+    "category": "V13.9 Smart Routing Intelligence Level",
+    "title": "Playbook brainstorming: Auto-suggest intelligence level - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "AI menyarankan level yang cocok berdasarkan kompleksitas pertanyaan"
+    ],
+    "diagnosis": [
+      "Intent classifier dan complexity score sebelum generate jawaban",
+      "complexity_score=0-1; suggested_level; user_override=true"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Tampilkan saran level hanya jika berguna, jangan setiap pesan"
+    ],
+    "tags": [
+      "smart-routing",
+      "auto-suggest-intelligence-level",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-route-002_01",
+    "category": "V13.9 Smart Routing Intelligence Level",
+    "title": "Playbook profil_level: Auto-upgrade temporary - Instant, Ordinary, Medium",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Jika user memilih level rendah tapi pertanyaan sangat kompleks, AI bisa menawarkan naik level sementara"
+    ],
+    "diagnosis": [
+      "Prompt user: 'Pertanyaan ini cukup kompleks, mau pakai High?'",
+      "auto_upgrade=false_by_default; require_confirmation=true"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Bisa disediakan setting 'selalu izinkan auto-upgrade'"
+    ],
+    "tags": [
+      "smart-routing",
+      "auto-upgrade-temporary",
+      "instant-ordinary-medium",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-route-002_02",
+    "category": "V13.9 Smart Routing Intelligence Level",
+    "title": "Playbook autosave_session: Auto-upgrade temporary - Instant, Ordinary, Medium",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Jika user memilih level rendah tapi pertanyaan sangat kompleks, AI bisa menawarkan naik level sementara"
+    ],
+    "diagnosis": [
+      "Prompt user: 'Pertanyaan ini cukup kompleks, mau pakai High?'",
+      "auto_upgrade=false_by_default; require_confirmation=true"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Bisa disediakan setting 'selalu izinkan auto-upgrade'"
+    ],
+    "tags": [
+      "smart-routing",
+      "auto-upgrade-temporary",
+      "instant-ordinary-medium",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-route-002_03",
+    "category": "V13.9 Smart Routing Intelligence Level",
+    "title": "Playbook pin_session: Auto-upgrade temporary - Instant, Ordinary, Medium",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Jika user memilih level rendah tapi pertanyaan sangat kompleks, AI bisa menawarkan naik level sementara"
+    ],
+    "diagnosis": [
+      "Prompt user: 'Pertanyaan ini cukup kompleks, mau pakai High?'",
+      "auto_upgrade=false_by_default; require_confirmation=true"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Bisa disediakan setting 'selalu izinkan auto-upgrade'"
+    ],
+    "tags": [
+      "smart-routing",
+      "auto-upgrade-temporary",
+      "instant-ordinary-medium",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-route-002_04",
+    "category": "V13.9 Smart Routing Intelligence Level",
+    "title": "Playbook brainstorming: Auto-upgrade temporary - Instant, Ordinary, Medium",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Jika user memilih level rendah tapi pertanyaan sangat kompleks, AI bisa menawarkan naik level sementara"
+    ],
+    "diagnosis": [
+      "Prompt user: 'Pertanyaan ini cukup kompleks, mau pakai High?'",
+      "auto_upgrade=false_by_default; require_confirmation=true"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Bisa disediakan setting 'selalu izinkan auto-upgrade'"
+    ],
+    "tags": [
+      "smart-routing",
+      "auto-upgrade-temporary",
+      "instant-ordinary-medium",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-route-003_01",
+    "category": "V13.9 Smart Routing Intelligence Level",
+    "title": "Playbook profil_level: Per-message level override - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Level bisa berbeda untuk tiap pesan dalam session yang sama"
+    ],
+    "diagnosis": [
+      "Simpan intelligence_level di setiap message, bukan hanya session",
+      "message_level_override=true"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Session punya default, message bisa override"
+    ],
+    "tags": [
+      "smart-routing",
+      "per-message-level-override",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-route-003_02",
+    "category": "V13.9 Smart Routing Intelligence Level",
+    "title": "Playbook autosave_session: Per-message level override - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Level bisa berbeda untuk tiap pesan dalam session yang sama"
+    ],
+    "diagnosis": [
+      "Simpan intelligence_level di setiap message, bukan hanya session",
+      "message_level_override=true"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Session punya default, message bisa override"
+    ],
+    "tags": [
+      "smart-routing",
+      "per-message-level-override",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-route-003_03",
+    "category": "V13.9 Smart Routing Intelligence Level",
+    "title": "Playbook pin_session: Per-message level override - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Level bisa berbeda untuk tiap pesan dalam session yang sama"
+    ],
+    "diagnosis": [
+      "Simpan intelligence_level di setiap message, bukan hanya session",
+      "message_level_override=true"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Session punya default, message bisa override"
+    ],
+    "tags": [
+      "smart-routing",
+      "per-message-level-override",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-route-003_04",
+    "category": "V13.9 Smart Routing Intelligence Level",
+    "title": "Playbook brainstorming: Per-message level override - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Level bisa berbeda untuk tiap pesan dalam session yang sama"
+    ],
+    "diagnosis": [
+      "Simpan intelligence_level di setiap message, bukan hanya session",
+      "message_level_override=true"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Session punya default, message bisa override"
+    ],
+    "tags": [
+      "smart-routing",
+      "per-message-level-override",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-prompt-001_01",
+    "category": "V13.9 Prompt Profile Intelligence",
+    "title": "Playbook profil_level: Prompt Instant - Instant",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Membuat prompt khusus Instant agar jawaban cepat, langsung, dan singkat"
+    ],
+    "diagnosis": [
+      "System prompt: jawab inti dulu, maksimal beberapa poin, tanpa analisis panjang",
+      "max_sections=2; bullets_minimal=true; no_long_reasoning=true"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Pisahkan prompt dari kode agar mudah diubah"
+    ],
+    "tags": [
+      "prompt-profile",
+      "prompt-instant",
+      "instant",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-prompt-001_02",
+    "category": "V13.9 Prompt Profile Intelligence",
+    "title": "Playbook autosave_session: Prompt Instant - Instant",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Membuat prompt khusus Instant agar jawaban cepat, langsung, dan singkat"
+    ],
+    "diagnosis": [
+      "System prompt: jawab inti dulu, maksimal beberapa poin, tanpa analisis panjang",
+      "max_sections=2; bullets_minimal=true; no_long_reasoning=true"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Pisahkan prompt dari kode agar mudah diubah"
+    ],
+    "tags": [
+      "prompt-profile",
+      "prompt-instant",
+      "instant",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-prompt-001_03",
+    "category": "V13.9 Prompt Profile Intelligence",
+    "title": "Playbook pin_session: Prompt Instant - Instant",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Membuat prompt khusus Instant agar jawaban cepat, langsung, dan singkat"
+    ],
+    "diagnosis": [
+      "System prompt: jawab inti dulu, maksimal beberapa poin, tanpa analisis panjang",
+      "max_sections=2; bullets_minimal=true; no_long_reasoning=true"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Pisahkan prompt dari kode agar mudah diubah"
+    ],
+    "tags": [
+      "prompt-profile",
+      "prompt-instant",
+      "instant",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-prompt-001_04",
+    "category": "V13.9 Prompt Profile Intelligence",
+    "title": "Playbook brainstorming: Prompt Instant - Instant",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Membuat prompt khusus Instant agar jawaban cepat, langsung, dan singkat"
+    ],
+    "diagnosis": [
+      "System prompt: jawab inti dulu, maksimal beberapa poin, tanpa analisis panjang",
+      "max_sections=2; bullets_minimal=true; no_long_reasoning=true"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Pisahkan prompt dari kode agar mudah diubah"
+    ],
+    "tags": [
+      "prompt-profile",
+      "prompt-instant",
+      "instant",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-prompt-002_01",
+    "category": "V13.9 Prompt Profile Intelligence",
+    "title": "Playbook profil_level: Prompt Ordinary - Ordinary",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Membuat prompt standar untuk percakapan harian"
+    ],
+    "diagnosis": [
+      "System prompt: santai, sopan, ringkas-menengah, beri contoh jika membantu",
+      "max_sections=3; examples=optional; tone=friendly"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Cocok untuk default umum"
+    ],
+    "tags": [
+      "prompt-profile",
+      "prompt-ordinary",
+      "ordinary",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-prompt-002_02",
+    "category": "V13.9 Prompt Profile Intelligence",
+    "title": "Playbook autosave_session: Prompt Ordinary - Ordinary",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Membuat prompt standar untuk percakapan harian"
+    ],
+    "diagnosis": [
+      "System prompt: santai, sopan, ringkas-menengah, beri contoh jika membantu",
+      "max_sections=3; examples=optional; tone=friendly"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Cocok untuk default umum"
+    ],
+    "tags": [
+      "prompt-profile",
+      "prompt-ordinary",
+      "ordinary",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-prompt-002_03",
+    "category": "V13.9 Prompt Profile Intelligence",
+    "title": "Playbook pin_session: Prompt Ordinary - Ordinary",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Membuat prompt standar untuk percakapan harian"
+    ],
+    "diagnosis": [
+      "System prompt: santai, sopan, ringkas-menengah, beri contoh jika membantu",
+      "max_sections=3; examples=optional; tone=friendly"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Cocok untuk default umum"
+    ],
+    "tags": [
+      "prompt-profile",
+      "prompt-ordinary",
+      "ordinary",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-prompt-002_04",
+    "category": "V13.9 Prompt Profile Intelligence",
+    "title": "Playbook brainstorming: Prompt Ordinary - Ordinary",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Membuat prompt standar untuk percakapan harian"
+    ],
+    "diagnosis": [
+      "System prompt: santai, sopan, ringkas-menengah, beri contoh jika membantu",
+      "max_sections=3; examples=optional; tone=friendly"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Cocok untuk default umum"
+    ],
+    "tags": [
+      "prompt-profile",
+      "prompt-ordinary",
+      "ordinary",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-prompt-003_01",
+    "category": "V13.9 Prompt Profile Intelligence",
+    "title": "Playbook profil_level: Prompt Medium - Medium",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Membuat prompt seimbang untuk teknis ringan-menengah"
+    ],
+    "diagnosis": [
+      "System prompt: berikan inti, penyebab, langkah cek, solusi, dan validasi",
+      "sections=inti,penyebab,langkah,validasi; examples=true"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Baik untuk pertanyaan IT sehari-hari"
+    ],
+    "tags": [
+      "prompt-profile",
+      "prompt-medium",
+      "medium",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-prompt-003_02",
+    "category": "V13.9 Prompt Profile Intelligence",
+    "title": "Playbook autosave_session: Prompt Medium - Medium",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Membuat prompt seimbang untuk teknis ringan-menengah"
+    ],
+    "diagnosis": [
+      "System prompt: berikan inti, penyebab, langkah cek, solusi, dan validasi",
+      "sections=inti,penyebab,langkah,validasi; examples=true"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Baik untuk pertanyaan IT sehari-hari"
+    ],
+    "tags": [
+      "prompt-profile",
+      "prompt-medium",
+      "medium",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-prompt-003_03",
+    "category": "V13.9 Prompt Profile Intelligence",
+    "title": "Playbook pin_session: Prompt Medium - Medium",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Membuat prompt seimbang untuk teknis ringan-menengah"
+    ],
+    "diagnosis": [
+      "System prompt: berikan inti, penyebab, langkah cek, solusi, dan validasi",
+      "sections=inti,penyebab,langkah,validasi; examples=true"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Baik untuk pertanyaan IT sehari-hari"
+    ],
+    "tags": [
+      "prompt-profile",
+      "prompt-medium",
+      "medium",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-prompt-003_04",
+    "category": "V13.9 Prompt Profile Intelligence",
+    "title": "Playbook brainstorming: Prompt Medium - Medium",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Membuat prompt seimbang untuk teknis ringan-menengah"
+    ],
+    "diagnosis": [
+      "System prompt: berikan inti, penyebab, langkah cek, solusi, dan validasi",
+      "sections=inti,penyebab,langkah,validasi; examples=true"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Baik untuk pertanyaan IT sehari-hari"
+    ],
+    "tags": [
+      "prompt-profile",
+      "prompt-medium",
+      "medium",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-prompt-004_01",
+    "category": "V13.9 Prompt Profile Intelligence",
+    "title": "Playbook profil_level: Prompt High - High",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Membuat prompt analisis mendalam untuk masalah kompleks"
+    ],
+    "diagnosis": [
+      "System prompt: analisis bertahap, sebut asumsi, opsi solusi, risiko, dan test",
+      "sections=diagnosis,hypothesis,fix,risks,tests; verification=true"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Bisa lebih lambat dari Medium"
+    ],
+    "tags": [
+      "prompt-profile",
+      "prompt-high",
+      "high",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-prompt-004_02",
+    "category": "V13.9 Prompt Profile Intelligence",
+    "title": "Playbook autosave_session: Prompt High - High",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Membuat prompt analisis mendalam untuk masalah kompleks"
+    ],
+    "diagnosis": [
+      "System prompt: analisis bertahap, sebut asumsi, opsi solusi, risiko, dan test",
+      "sections=diagnosis,hypothesis,fix,risks,tests; verification=true"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Bisa lebih lambat dari Medium"
+    ],
+    "tags": [
+      "prompt-profile",
+      "prompt-high",
+      "high",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-prompt-004_03",
+    "category": "V13.9 Prompt Profile Intelligence",
+    "title": "Playbook pin_session: Prompt High - High",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Membuat prompt analisis mendalam untuk masalah kompleks"
+    ],
+    "diagnosis": [
+      "System prompt: analisis bertahap, sebut asumsi, opsi solusi, risiko, dan test",
+      "sections=diagnosis,hypothesis,fix,risks,tests; verification=true"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Bisa lebih lambat dari Medium"
+    ],
+    "tags": [
+      "prompt-profile",
+      "prompt-high",
+      "high",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-prompt-004_04",
+    "category": "V13.9 Prompt Profile Intelligence",
+    "title": "Playbook brainstorming: Prompt High - High",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Membuat prompt analisis mendalam untuk masalah kompleks"
+    ],
+    "diagnosis": [
+      "System prompt: analisis bertahap, sebut asumsi, opsi solusi, risiko, dan test",
+      "sections=diagnosis,hypothesis,fix,risks,tests; verification=true"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Bisa lebih lambat dari Medium"
+    ],
+    "tags": [
+      "prompt-profile",
+      "prompt-high",
+      "high",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-prompt-005_01",
+    "category": "V13.9 Prompt Profile Intelligence",
+    "title": "Playbook profil_level: Prompt Thinking - Thinking",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Membuat prompt deep thinking untuk brainstorming dan reasoning panjang"
+    ],
+    "diagnosis": [
+      "System prompt: pecah masalah, eksplorasi opsi, buat decision matrix, verifikasi, simpulkan rekomendasi",
+      "multi_pass=true; decision_matrix=true; assumptions=true; verification=true"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Gunakan 'Thinking' di UI agar terlihat profesional"
+    ],
+    "tags": [
+      "prompt-profile",
+      "prompt-thinking",
+      "thinking",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-prompt-005_02",
+    "category": "V13.9 Prompt Profile Intelligence",
+    "title": "Playbook autosave_session: Prompt Thinking - Thinking",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Membuat prompt deep thinking untuk brainstorming dan reasoning panjang"
+    ],
+    "diagnosis": [
+      "System prompt: pecah masalah, eksplorasi opsi, buat decision matrix, verifikasi, simpulkan rekomendasi",
+      "multi_pass=true; decision_matrix=true; assumptions=true; verification=true"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Gunakan 'Thinking' di UI agar terlihat profesional"
+    ],
+    "tags": [
+      "prompt-profile",
+      "prompt-thinking",
+      "thinking",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-prompt-005_03",
+    "category": "V13.9 Prompt Profile Intelligence",
+    "title": "Playbook pin_session: Prompt Thinking - Thinking",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Membuat prompt deep thinking untuk brainstorming dan reasoning panjang"
+    ],
+    "diagnosis": [
+      "System prompt: pecah masalah, eksplorasi opsi, buat decision matrix, verifikasi, simpulkan rekomendasi",
+      "multi_pass=true; decision_matrix=true; assumptions=true; verification=true"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Gunakan 'Thinking' di UI agar terlihat profesional"
+    ],
+    "tags": [
+      "prompt-profile",
+      "prompt-thinking",
+      "thinking",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-prompt-005_04",
+    "category": "V13.9 Prompt Profile Intelligence",
+    "title": "Playbook brainstorming: Prompt Thinking - Thinking",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Membuat prompt deep thinking untuk brainstorming dan reasoning panjang"
+    ],
+    "diagnosis": [
+      "System prompt: pecah masalah, eksplorasi opsi, buat decision matrix, verifikasi, simpulkan rekomendasi",
+      "multi_pass=true; decision_matrix=true; assumptions=true; verification=true"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Gunakan 'Thinking' di UI agar terlihat profesional"
+    ],
+    "tags": [
+      "prompt-profile",
+      "prompt-thinking",
+      "thinking",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-eval-001_01",
+    "category": "V13.9 Evaluasi Level",
+    "title": "Playbook profil_level: Benchmark per level - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Menguji pertanyaan yang sama di Instant, Ordinary, Medium, High, dan Thinking"
+    ],
+    "diagnosis": [
+      "Test set multi-intent: chat ringan, debugging, dokumen, brainstorming, matematika, coding",
+      "metrics=latency,accuracy,completeness,user_rating,token_usage"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Evaluasi wajib sebelum deploy fitur level"
+    ],
+    "tags": [
+      "evaluasi-level",
+      "benchmark-per-level",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-eval-001_02",
+    "category": "V13.9 Evaluasi Level",
+    "title": "Playbook autosave_session: Benchmark per level - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Menguji pertanyaan yang sama di Instant, Ordinary, Medium, High, dan Thinking"
+    ],
+    "diagnosis": [
+      "Test set multi-intent: chat ringan, debugging, dokumen, brainstorming, matematika, coding",
+      "metrics=latency,accuracy,completeness,user_rating,token_usage"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Evaluasi wajib sebelum deploy fitur level"
+    ],
+    "tags": [
+      "evaluasi-level",
+      "benchmark-per-level",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-eval-001_03",
+    "category": "V13.9 Evaluasi Level",
+    "title": "Playbook pin_session: Benchmark per level - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Menguji pertanyaan yang sama di Instant, Ordinary, Medium, High, dan Thinking"
+    ],
+    "diagnosis": [
+      "Test set multi-intent: chat ringan, debugging, dokumen, brainstorming, matematika, coding",
+      "metrics=latency,accuracy,completeness,user_rating,token_usage"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Evaluasi wajib sebelum deploy fitur level"
+    ],
+    "tags": [
+      "evaluasi-level",
+      "benchmark-per-level",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-eval-001_04",
+    "category": "V13.9 Evaluasi Level",
+    "title": "Playbook brainstorming: Benchmark per level - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Menguji pertanyaan yang sama di Instant, Ordinary, Medium, High, dan Thinking"
+    ],
+    "diagnosis": [
+      "Test set multi-intent: chat ringan, debugging, dokumen, brainstorming, matematika, coding",
+      "metrics=latency,accuracy,completeness,user_rating,token_usage"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Evaluasi wajib sebelum deploy fitur level"
+    ],
+    "tags": [
+      "evaluasi-level",
+      "benchmark-per-level",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-eval-002_01",
+    "category": "V13.9 Evaluasi Session",
+    "title": "Playbook profil_level: Refresh persistence test - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Menguji apakah session tetap aman saat refresh, close tab, internet putus, dan login ulang"
+    ],
+    "diagnosis": [
+      "Simulasi refresh pada beberapa kondisi",
+      "test_cases=refresh_mid_typing,refresh_after_answer,offline,login_restore"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Perlu idempotency key untuk pesan user agar tidak terkirim dobel"
+    ],
+    "tags": [
+      "evaluasi-session",
+      "refresh-persistence-test",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-eval-002_02",
+    "category": "V13.9 Evaluasi Session",
+    "title": "Playbook autosave_session: Refresh persistence test - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Menguji apakah session tetap aman saat refresh, close tab, internet putus, dan login ulang"
+    ],
+    "diagnosis": [
+      "Simulasi refresh pada beberapa kondisi",
+      "test_cases=refresh_mid_typing,refresh_after_answer,offline,login_restore"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Perlu idempotency key untuk pesan user agar tidak terkirim dobel"
+    ],
+    "tags": [
+      "evaluasi-session",
+      "refresh-persistence-test",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-eval-002_03",
+    "category": "V13.9 Evaluasi Session",
+    "title": "Playbook pin_session: Refresh persistence test - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Menguji apakah session tetap aman saat refresh, close tab, internet putus, dan login ulang"
+    ],
+    "diagnosis": [
+      "Simulasi refresh pada beberapa kondisi",
+      "test_cases=refresh_mid_typing,refresh_after_answer,offline,login_restore"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Perlu idempotency key untuk pesan user agar tidak terkirim dobel"
+    ],
+    "tags": [
+      "evaluasi-session",
+      "refresh-persistence-test",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-eval-002_04",
+    "category": "V13.9 Evaluasi Session",
+    "title": "Playbook brainstorming: Refresh persistence test - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Menguji apakah session tetap aman saat refresh, close tab, internet putus, dan login ulang"
+    ],
+    "diagnosis": [
+      "Simulasi refresh pada beberapa kondisi",
+      "test_cases=refresh_mid_typing,refresh_after_answer,offline,login_restore"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Perlu idempotency key untuk pesan user agar tidak terkirim dobel"
+    ],
+    "tags": [
+      "evaluasi-session",
+      "refresh-persistence-test",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-eval-003_01",
+    "category": "V13.9 Evaluasi Pin",
+    "title": "Playbook profil_level: Pinned session test - Semua Level",
+    "symptoms": [
+      "Jawaban terlalu panjang",
+      "Jawaban terlalu dangkal",
+      "Level tidak tersimpan",
+      "Menguji fitur pin session setelah refresh, login ulang, banyak session, dan urutan pin"
+    ],
+    "diagnosis": [
+      "Test pin/unpin, reorder, search pinned, filter pinned",
+      "test_cases=pin,unpin,reorder,refresh,search"
+    ],
+    "fixes": [
+      "Gunakan profil level",
+      "Tampilkan tooltip",
+      "Simpan per pesan",
+      "Gunakan optimistic UI dengan rollback jika request gagal"
+    ],
+    "tags": [
+      "evaluasi-pin",
+      "pinned-session-test",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-eval-003_02",
+    "category": "V13.9 Evaluasi Pin",
+    "title": "Playbook autosave_session: Pinned session test - Semua Level",
+    "symptoms": [
+      "Chat hilang saat refresh",
+      "Draft hilang",
+      "Session tertukar",
+      "Menguji fitur pin session setelah refresh, login ulang, banyak session, dan urutan pin"
+    ],
+    "diagnosis": [
+      "Test pin/unpin, reorder, search pinned, filter pinned",
+      "test_cases=pin,unpin,reorder,refresh,search"
+    ],
+    "fixes": [
+      "LocalStorage + backend storage",
+      "Update updatedAt",
+      "Batasi pesan lama",
+      "Gunakan optimistic UI dengan rollback jika request gagal"
+    ],
+    "tags": [
+      "evaluasi-pin",
+      "pinned-session-test",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-eval-003_03",
+    "category": "V13.9 Evaluasi Pin",
+    "title": "Playbook pin_session: Pinned session test - Semua Level",
+    "symptoms": [
+      "Pin hilang",
+      "Urutan pin berubah",
+      "User lupa topik",
+      "Menguji fitur pin session setelah refresh, login ulang, banyak session, dan urutan pin"
+    ],
+    "diagnosis": [
+      "Test pin/unpin, reorder, search pinned, filter pinned",
+      "test_cases=pin,unpin,reorder,refresh,search"
+    ],
+    "fixes": [
+      "Simpan pinned_at",
+      "Tampilkan note",
+      "Cari session",
+      "Gunakan optimistic UI dengan rollback jika request gagal"
+    ],
+    "tags": [
+      "evaluasi-pin",
+      "pinned-session-test",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_9_playbook_nuai-eval-003_04",
+    "category": "V13.9 Evaluasi Pin",
+    "title": "Playbook brainstorming: Pinned session test - Semua Level",
+    "symptoms": [
+      "Ide acak",
+      "Tidak ada prioritas",
+      "Tidak menjawab tujuan",
+      "Menguji fitur pin session setelah refresh, login ulang, banyak session, dan urutan pin"
+    ],
+    "diagnosis": [
+      "Test pin/unpin, reorder, search pinned, filter pinned",
+      "test_cases=pin,unpin,reorder,refresh,search"
+    ],
+    "fixes": [
+      "Pakai matriks keputusan",
+      "Sesuaikan dengan level",
+      "Tutup dengan rekomendasi",
+      "Gunakan optimistic UI dengan rollback jika request gagal"
+    ],
+    "tags": [
+      "evaluasi-pin",
+      "pinned-session-test",
+      "semua-level",
+      "v13-9"
+    ],
+    "source": "CSV V13.9 Intelligence Session Pin Playbook",
+    "confidence": 0.9
+  }
+]

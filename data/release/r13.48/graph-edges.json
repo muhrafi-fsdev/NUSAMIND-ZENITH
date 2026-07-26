@@ -1,0 +1,242 @@
+[
+  {
+    "edge_id": "EDGE-001",
+    "from_node": "NODE-CRAG",
+    "edge_type": "DEPENDS_ON",
+    "to_node": "NODE-EMBED",
+    "critical": "No",
+    "description": "Classical RAG can fallback to FTS when embedding unavailable."
+  },
+  {
+    "edge_id": "EDGE-002",
+    "from_node": "NODE-CRAG",
+    "edge_type": "VERIFIED_BY",
+    "to_node": "NODE-EVAL",
+    "critical": "Yes",
+    "description": "Retrieval quality must be benchmarked."
+  },
+  {
+    "edge_id": "EDGE-003",
+    "from_node": "NODE-GRAG",
+    "edge_type": "DEPENDS_ON",
+    "to_node": "NODE-CRAG",
+    "critical": "Yes",
+    "description": "Graph RAG reuses base retrieval records."
+  },
+  {
+    "edge_id": "EDGE-004",
+    "from_node": "NODE-GRAG",
+    "edge_type": "DEPENDS_ON",
+    "to_node": "NODE-CTXGRAPH",
+    "critical": "Yes",
+    "description": "Graph traversal required."
+  },
+  {
+    "edge_id": "EDGE-005",
+    "from_node": "NODE-ARAG",
+    "edge_type": "DEPENDS_ON",
+    "to_node": "NODE-GRAG",
+    "critical": "Yes",
+    "description": "Agentic RAG extends graph retrieval."
+  },
+  {
+    "edge_id": "EDGE-006",
+    "from_node": "NODE-ARAG",
+    "edge_type": "USES",
+    "to_node": "NODE-PLAN",
+    "critical": "Yes",
+    "description": "Query and retrieval plan are dependency-aware."
+  },
+  {
+    "edge_id": "EDGE-007",
+    "from_node": "NODE-REACT",
+    "edge_type": "USES",
+    "to_node": "NODE-TOOLS",
+    "critical": "Yes",
+    "description": "Actions use registered tools."
+  },
+  {
+    "edge_id": "EDGE-008",
+    "from_node": "NODE-REACT",
+    "edge_type": "VERIFIED_BY",
+    "to_node": "NODE-EVAL",
+    "critical": "Yes",
+    "description": "Trajectory and outcomes are evaluated."
+  },
+  {
+    "edge_id": "EDGE-009",
+    "from_node": "NODE-PLAN",
+    "edge_type": "USES",
+    "to_node": "NODE-TOOLROUTE",
+    "critical": "Yes",
+    "description": "Executor selects governed tools."
+  },
+  {
+    "edge_id": "EDGE-010",
+    "from_node": "NODE-MULTI",
+    "edge_type": "DEPENDS_ON",
+    "to_node": "NODE-PLAN",
+    "critical": "Yes",
+    "description": "Orchestrator requires planner-executor."
+  },
+  {
+    "edge_id": "EDGE-011",
+    "from_node": "NODE-MULTI",
+    "edge_type": "VERIFIED_BY",
+    "to_node": "NODE-EVAL",
+    "critical": "Yes",
+    "description": "Sub-agent output requires verification."
+  },
+  {
+    "edge_id": "EDGE-012",
+    "from_node": "NODE-REFLECT",
+    "edge_type": "READS_FROM",
+    "to_node": "NODE-EPISODIC",
+    "critical": "Yes",
+    "description": "Reflection uses verified episodes."
+  },
+  {
+    "edge_id": "EDGE-013",
+    "from_node": "NODE-REFLECT",
+    "edge_type": "VERIFIED_BY",
+    "to_node": "NODE-EVAL",
+    "critical": "Yes",
+    "description": "Lessons need evaluator evidence."
+  },
+  {
+    "edge_id": "EDGE-014",
+    "from_node": "NODE-LTM",
+    "edge_type": "REQUIRES_PERMISSION",
+    "to_node": "NODE-POLICY",
+    "critical": "Yes",
+    "description": "Persistent memory requires consent and policy."
+  },
+  {
+    "edge_id": "EDGE-015",
+    "from_node": "NODE-EPISODIC",
+    "edge_type": "WRITES_TO",
+    "to_node": "NODE-AUDIT",
+    "critical": "Yes",
+    "description": "Execution episodes link to audit events."
+  },
+  {
+    "edge_id": "EDGE-016",
+    "from_node": "NODE-TOOLS",
+    "edge_type": "REQUIRES_PERMISSION",
+    "to_node": "NODE-POLICY",
+    "critical": "Yes",
+    "description": "Tool calls require policy scopes."
+  },
+  {
+    "edge_id": "EDGE-017",
+    "from_node": "NODE-TOOLROUTE",
+    "edge_type": "DEPENDS_ON",
+    "to_node": "NODE-TOOLS",
+    "critical": "Yes",
+    "description": "Routing needs registry and contracts."
+  },
+  {
+    "edge_id": "EDGE-018",
+    "from_node": "NODE-CONFIDENCE",
+    "edge_type": "DEPENDS_ON",
+    "to_node": "NODE-EVAL",
+    "critical": "Yes",
+    "description": "Confidence uses verification results."
+  },
+  {
+    "edge_id": "EDGE-019",
+    "from_node": "NODE-CONFIDENCE",
+    "edge_type": "READS_FROM",
+    "to_node": "NODE-CRAG",
+    "critical": "No",
+    "description": "Evidence coverage contributes to confidence."
+  },
+  {
+    "edge_id": "EDGE-020",
+    "from_node": "NODE-AUDIT",
+    "edge_type": "READS_FROM",
+    "to_node": "NODE-TOOLS",
+    "critical": "Yes",
+    "description": "Tool actions must be auditable."
+  },
+  {
+    "edge_id": "EDGE-021",
+    "from_node": "NODE-AUDIT",
+    "edge_type": "READS_FROM",
+    "to_node": "NODE-PLAN",
+    "critical": "Yes",
+    "description": "Plan and decisions are traced."
+  },
+  {
+    "edge_id": "EDGE-022",
+    "from_node": "NODE-RESOURCE",
+    "edge_type": "READS_FROM",
+    "to_node": "NODE-LLM",
+    "critical": "Yes",
+    "description": "Model calls and resources are measured."
+  },
+  {
+    "edge_id": "EDGE-023",
+    "from_node": "NODE-SELFIMPROVE",
+    "edge_type": "DEPENDS_ON",
+    "to_node": "NODE-EVAL",
+    "critical": "Yes",
+    "description": "No improvement without benchmark."
+  },
+  {
+    "edge_id": "EDGE-024",
+    "from_node": "NODE-SELFIMPROVE",
+    "edge_type": "DEPENDS_ON",
+    "to_node": "NODE-AUDIT",
+    "critical": "Yes",
+    "description": "Candidate changes need trace."
+  },
+  {
+    "edge_id": "EDGE-025",
+    "from_node": "NODE-SELFIMPROVE",
+    "edge_type": "BLOCKED_BY",
+    "to_node": "NODE-POLICY",
+    "critical": "Yes",
+    "description": "Policy can block unsafe self-modification."
+  },
+  {
+    "edge_id": "EDGE-026",
+    "from_node": "NODE-MULTIMODAL",
+    "edge_type": "VERIFIED_BY",
+    "to_node": "NODE-EVAL",
+    "critical": "Yes",
+    "description": "Visual claims require evaluator."
+  },
+  {
+    "edge_id": "EDGE-027",
+    "from_node": "NODE-WORKFLOW",
+    "edge_type": "DEPENDS_ON",
+    "to_node": "NODE-PLAN",
+    "critical": "Yes",
+    "description": "Workflow graph uses planner-executor."
+  },
+  {
+    "edge_id": "EDGE-028",
+    "from_node": "NODE-WORKFLOW",
+    "edge_type": "DEPENDS_ON",
+    "to_node": "NODE-AUDIT",
+    "critical": "Yes",
+    "description": "Workflow execution must be audited."
+  },
+  {
+    "edge_id": "EDGE-029",
+    "from_node": "NODE-CONTEXT",
+    "edge_type": "READS_FROM",
+    "to_node": "NODE-STM",
+    "critical": "No",
+    "description": "Short-term state contributes to context."
+  },
+  {
+    "edge_id": "EDGE-030",
+    "from_node": "NODE-CONTEXT",
+    "edge_type": "READS_FROM",
+    "to_node": "NODE-LTM",
+    "critical": "No",
+    "description": "Approved long-term memory contributes when relevant."
+  }
+]

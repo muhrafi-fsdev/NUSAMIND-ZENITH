@@ -1,0 +1,138 @@
+[
+  {
+    "layer_id": "ICE-01",
+    "infrastructure_component": "Prompt Design",
+    "visible_user_capability": "Fast answers, content and code assistance",
+    "runtime_requirement": "Versioned prompts, benchmark, canary and rollback",
+    "critical_failure_behavior": "Disable candidate and restore baseline",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "layer_id": "ICE-02",
+    "infrastructure_component": "System Instructions",
+    "visible_user_capability": "Consistent chat behavior",
+    "runtime_requirement": "Instruction hierarchy and injection boundary",
+    "critical_failure_behavior": "Block external instruction override",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "layer_id": "ICE-03",
+    "infrastructure_component": "RAG Pipeline",
+    "visible_user_capability": "Q&A over data and grounded answers",
+    "runtime_requirement": "Chunking, retrieval, reranker, source policy and verifier",
+    "critical_failure_behavior": "Return uncertainty or fallback",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "layer_id": "ICE-04",
+    "infrastructure_component": "Embeddings",
+    "visible_user_capability": "Semantic search",
+    "runtime_requirement": "Compatible model, dimensions and index manifest",
+    "critical_failure_behavior": "Fallback to FTS",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "layer_id": "ICE-05",
+    "infrastructure_component": "Vector/Search Database",
+    "visible_user_capability": "Fast knowledge lookup",
+    "runtime_requirement": "Index health, checksum, record count and rollback",
+    "critical_failure_behavior": "Mark DEGRADED",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "layer_id": "ICE-06",
+    "infrastructure_component": "Chunking Strategy",
+    "visible_user_capability": "Document summaries and data QA",
+    "runtime_requirement": "Content-type-aware chunks and metadata",
+    "critical_failure_behavior": "Block index activation",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "layer_id": "ICE-07",
+    "infrastructure_component": "Context Management",
+    "visible_user_capability": "Personalized and relevant answers",
+    "runtime_requirement": "Token budget, relevance, conflict, freshness and compression",
+    "critical_failure_behavior": "Drop low-priority context only",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "layer_id": "ICE-08",
+    "infrastructure_component": "Model Selection",
+    "visible_user_capability": "Fast or deep responses",
+    "runtime_requirement": "Task-aware model/tool router and resource profile",
+    "critical_failure_behavior": "Fallback or escalate",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "layer_id": "ICE-09",
+    "infrastructure_component": "Hallucination Control",
+    "visible_user_capability": "Reliable answers",
+    "runtime_requirement": "Claim evidence, contradiction, numerical and date verification",
+    "critical_failure_behavior": "Remove unsupported claim",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "layer_id": "ICE-10",
+    "infrastructure_component": "Security Guardrails",
+    "visible_user_capability": "Safe user interaction",
+    "runtime_requirement": "Injection, secrets, paths, permissions and artifact security",
+    "critical_failure_behavior": "Block request/action",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "layer_id": "ICE-11",
+    "infrastructure_component": "User Permissions",
+    "visible_user_capability": "Controlled access",
+    "runtime_requirement": "Workspace scopes and side-effect permissions",
+    "critical_failure_behavior": "Deny unauthorized action",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "layer_id": "ICE-12",
+    "infrastructure_component": "Evaluation System",
+    "visible_user_capability": "Accurate and consistent behavior",
+    "runtime_requirement": "Executable tests and critical gates",
+    "critical_failure_behavior": "Release blocked",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "layer_id": "ICE-13",
+    "infrastructure_component": "Feedback Loop",
+    "visible_user_capability": "System improvement",
+    "runtime_requirement": "Redaction, regression, benchmark, review and canary",
+    "critical_failure_behavior": "No automatic activation",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "layer_id": "ICE-14",
+    "infrastructure_component": "Monitoring and Logs",
+    "visible_user_capability": "Stable application",
+    "runtime_requirement": "Metrics, audit, alerts and failure clusters",
+    "critical_failure_behavior": "Mark DEGRADED and alert",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "layer_id": "ICE-15",
+    "infrastructure_component": "Resource Management",
+    "visible_user_capability": "Responsive experience",
+    "runtime_requirement": "Latency, token, RAM, VRAM, cache and circuit breaker",
+    "critical_failure_behavior": "Fallback or handoff",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "layer_id": "ICE-16",
+    "infrastructure_component": "Fallback Handling",
+    "visible_user_capability": "Availability during failures",
+    "runtime_requirement": "Defined fallback hierarchy and truthful status",
+    "critical_failure_behavior": "Return DEGRADED response",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "layer_id": "ICE-17",
+    "infrastructure_component": "Compliance and Privacy",
+    "visible_user_capability": "Protected sensitive information",
+    "runtime_requirement": "Consent, retention, encryption, deletion and audit",
+    "critical_failure_behavior": "Block storage or access",
+    "target_editions": "Swift, Zenith, Apex"
+  }
+]

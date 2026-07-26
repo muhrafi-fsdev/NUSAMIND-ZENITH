@@ -1,0 +1,506 @@
+[
+  {
+    "id": "v13_1_playbook_001",
+    "title": "Next.js blank putih setelah npm run dev",
+    "category": "Universal Troubleshooting Playbook",
+    "symptoms": [
+      "Next.js blank putih setelah npm run dev",
+      "user memakai bahasa santai seperti kenapa, gimana, kok error, blank, ngawur"
+    ],
+    "diagnosis": [
+      "Cek console browser, terminal Next.js, error overlay, import path, hydration error, dan component client/server. Jika browser blank tapi terminal normal, buka DevTools Console dan lihat error pertama.",
+      "Tanyakan detail hanya jika error log/target belum jelas."
+    ],
+    "fixes": [
+      "Mulai dari cek status sistem, reproduksi error, baca log pertama, perbaiki penyebab utama, lalu validasi ulang.",
+      "Jangan memberikan jawaban melebar yang tidak sesuai error user."
+    ],
+    "keywords": [
+      "next.js",
+      "blank",
+      "putih",
+      "setelah",
+      "npm",
+      "run",
+      "dev"
+    ],
+    "source": "NusaMind Universal Playbook V13.1",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_playbook_002",
+    "title": "API route Next.js return 500",
+    "category": "Universal Troubleshooting Playbook",
+    "symptoms": [
+      "API route Next.js return 500",
+      "user memakai bahasa santai seperti kenapa, gimana, kok error, blank, ngawur"
+    ],
+    "diagnosis": [
+      "Cek stack trace terminal, validasi body, env variable, model/API service, dan try/catch. Jangan hanya lihat browser; error detail biasanya ada di terminal server.",
+      "Tanyakan detail hanya jika error log/target belum jelas."
+    ],
+    "fixes": [
+      "Mulai dari cek status sistem, reproduksi error, baca log pertama, perbaiki penyebab utama, lalu validasi ulang.",
+      "Jangan memberikan jawaban melebar yang tidak sesuai error user."
+    ],
+    "keywords": [
+      "api",
+      "route",
+      "next.js",
+      "return",
+      "500"
+    ],
+    "source": "NusaMind Universal Playbook V13.1",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_playbook_003",
+    "title": "Ollama tidak terhubung ke Next.js",
+    "category": "Universal Troubleshooting Playbook",
+    "symptoms": [
+      "Ollama tidak terhubung ke Next.js",
+      "user memakai bahasa santai seperti kenapa, gimana, kok error, blank, ngawur"
+    ],
+    "diagnosis": [
+      "Cek ollama serve, port 11434, OLLAMA_BASE_URL, ollama list, nama model di .env.local, dan restart npm run dev setelah env berubah.",
+      "Tanyakan detail hanya jika error log/target belum jelas."
+    ],
+    "fixes": [
+      "Mulai dari cek status sistem, reproduksi error, baca log pertama, perbaiki penyebab utama, lalu validasi ulang.",
+      "Jangan memberikan jawaban melebar yang tidak sesuai error user."
+    ],
+    "keywords": [
+      "ollama",
+      "tidak",
+      "terhubung",
+      "ke",
+      "next.js"
+    ],
+    "source": "NusaMind Universal Playbook V13.1",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_playbook_004",
+    "title": "AI menjawab tidak sesuai pertanyaan",
+    "category": "Universal Troubleshooting Playbook",
+    "symptoms": [
+      "AI menjawab tidak sesuai pertanyaan",
+      "user memakai bahasa santai seperti kenapa, gimana, kok error, blank, ngawur"
+    ],
+    "diagnosis": [
+      "Periksa intent router, retrieval top-k, prompt system, sumber RAG, dan apakah pertanyaan ambigu. Tambahkan golden test untuk pertanyaan tersebut lalu reindex knowledge.",
+      "Tanyakan detail hanya jika error log/target belum jelas."
+    ],
+    "fixes": [
+      "Mulai dari cek status sistem, reproduksi error, baca log pertama, perbaiki penyebab utama, lalu validasi ulang.",
+      "Jangan memberikan jawaban melebar yang tidak sesuai error user."
+    ],
+    "keywords": [
+      "ai",
+      "menjawab",
+      "tidak",
+      "sesuai",
+      "pertanyaan"
+    ],
+    "source": "NusaMind Universal Playbook V13.1",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_playbook_005",
+    "title": "RAG salah ambil dokumen",
+    "category": "Universal Troubleshooting Playbook",
+    "symptoms": [
+      "RAG salah ambil dokumen",
+      "user memakai bahasa santai seperti kenapa, gimana, kok error, blank, ngawur"
+    ],
+    "diagnosis": [
+      "Perbaiki metadata, tambahkan synonym/alias, gunakan hybrid retrieval, reranking, dan kurangi chunk terlalu panjang yang mencampur banyak topik.",
+      "Tanyakan detail hanya jika error log/target belum jelas."
+    ],
+    "fixes": [
+      "Mulai dari cek status sistem, reproduksi error, baca log pertama, perbaiki penyebab utama, lalu validasi ulang.",
+      "Jangan memberikan jawaban melebar yang tidak sesuai error user."
+    ],
+    "keywords": [
+      "rag",
+      "salah",
+      "ambil",
+      "dokumen"
+    ],
+    "source": "NusaMind Universal Playbook V13.1",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_playbook_006",
+    "title": "Dataset banyak tapi AI ngawur",
+    "category": "Universal Troubleshooting Playbook",
+    "symptoms": [
+      "Dataset banyak tapi AI ngawur",
+      "user memakai bahasa santai seperti kenapa, gimana, kok error, blank, ngawur"
+    ],
+    "diagnosis": [
+      "Banyak data tidak cukup. Data harus bersih, punya kategori, sumber, keyword, chunk pendek, golden test, dan retrieval yang mengambil konteks tepat.",
+      "Tanyakan detail hanya jika error log/target belum jelas."
+    ],
+    "fixes": [
+      "Mulai dari cek status sistem, reproduksi error, baca log pertama, perbaiki penyebab utama, lalu validasi ulang.",
+      "Jangan memberikan jawaban melebar yang tidak sesuai error user."
+    ],
+    "keywords": [
+      "dataset",
+      "banyak",
+      "tapi",
+      "ai",
+      "ngawur"
+    ],
+    "source": "NusaMind Universal Playbook V13.1",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_playbook_007",
+    "title": "Pertanyaan umum dijawab seperti Al-Quran",
+    "category": "Universal Troubleshooting Playbook",
+    "symptoms": [
+      "Pertanyaan umum dijawab seperti Al-Quran",
+      "user memakai bahasa santai seperti kenapa, gimana, kok error, blank, ngawur"
+    ],
+    "diagnosis": [
+      "Intent router terlalu sensitif ke Quran. Turunkan bobot kata umum seperti latin/terjemah jika tidak ada surah/ayat, dan prioritaskan Universal Mode untuk non-agama.",
+      "Tanyakan detail hanya jika error log/target belum jelas."
+    ],
+    "fixes": [
+      "Mulai dari cek status sistem, reproduksi error, baca log pertama, perbaiki penyebab utama, lalu validasi ulang.",
+      "Jangan memberikan jawaban melebar yang tidak sesuai error user."
+    ],
+    "keywords": [
+      "pertanyaan",
+      "umum",
+      "dijawab",
+      "seperti",
+      "al-quran"
+    ],
+    "source": "NusaMind Universal Playbook V13.1",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_playbook_008",
+    "title": "Pertanyaan Quran dijawab universal",
+    "category": "Universal Troubleshooting Playbook",
+    "symptoms": [
+      "Pertanyaan Quran dijawab universal",
+      "user memakai bahasa santai seperti kenapa, gimana, kok error, blank, ngawur"
+    ],
+    "diagnosis": [
+      "Tambahkan alias nama surah, kata ayat/surah, dan Quran Exact Guard agar pertanyaan teks ayat tidak dilempar ke model generatif.",
+      "Tanyakan detail hanya jika error log/target belum jelas."
+    ],
+    "fixes": [
+      "Mulai dari cek status sistem, reproduksi error, baca log pertama, perbaiki penyebab utama, lalu validasi ulang.",
+      "Jangan memberikan jawaban melebar yang tidak sesuai error user."
+    ],
+    "keywords": [
+      "pertanyaan",
+      "quran",
+      "dijawab",
+      "universal"
+    ],
+    "source": "NusaMind Universal Playbook V13.1",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_playbook_009",
+    "title": "Coding mode kurang kuat",
+    "category": "Universal Troubleshooting Playbook",
+    "symptoms": [
+      "Coding mode kurang kuat",
+      "user memakai bahasa santai seperti kenapa, gimana, kok error, blank, ngawur"
+    ],
+    "diagnosis": [
+      "Pastikan OLLAMA_CODER_MODEL memakai qwen2.5-coder:7b, tambah playbook error, dan uji dengan pertanyaan debugging nyata.",
+      "Tanyakan detail hanya jika error log/target belum jelas."
+    ],
+    "fixes": [
+      "Mulai dari cek status sistem, reproduksi error, baca log pertama, perbaiki penyebab utama, lalu validasi ulang.",
+      "Jangan memberikan jawaban melebar yang tidak sesuai error user."
+    ],
+    "keywords": [
+      "coding",
+      "mode",
+      "kurang",
+      "kuat"
+    ],
+    "source": "NusaMind Universal Playbook V13.1",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_playbook_010",
+    "title": "Memory tidak nyambung",
+    "category": "Universal Troubleshooting Playbook",
+    "symptoms": [
+      "Memory tidak nyambung",
+      "user memakai bahasa santai seperti kenapa, gimana, kok error, blank, ngawur"
+    ],
+    "diagnosis": [
+      "Cek sessionId, storage/memory, appendMessage, dan apakah session diganti/reset. Memory harus ringkasan penting, bukan semua chat mentah.",
+      "Tanyakan detail hanya jika error log/target belum jelas."
+    ],
+    "fixes": [
+      "Mulai dari cek status sistem, reproduksi error, baca log pertama, perbaiki penyebab utama, lalu validasi ulang.",
+      "Jangan memberikan jawaban melebar yang tidak sesuai error user."
+    ],
+    "keywords": [
+      "memory",
+      "tidak",
+      "nyambung"
+    ],
+    "source": "NusaMind Universal Playbook V13.1",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_playbook_011",
+    "title": "Dashboard monitoring kosong",
+    "category": "Universal Troubleshooting Playbook",
+    "symptoms": [
+      "Dashboard monitoring kosong",
+      "user memakai bahasa santai seperti kenapa, gimana, kok error, blank, ngawur"
+    ],
+    "diagnosis": [
+      "Monitoring baru terisi setelah ada interaksi. Cek storage/logs, endpoint /api/monitoring, dan apakah appendInteractionLog terpanggil.",
+      "Tanyakan detail hanya jika error log/target belum jelas."
+    ],
+    "fixes": [
+      "Mulai dari cek status sistem, reproduksi error, baca log pertama, perbaiki penyebab utama, lalu validasi ulang.",
+      "Jangan memberikan jawaban melebar yang tidak sesuai error user."
+    ],
+    "keywords": [
+      "dashboard",
+      "monitoring",
+      "kosong"
+    ],
+    "source": "NusaMind Universal Playbook V13.1",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_playbook_012",
+    "title": "Admin reindex gagal",
+    "category": "Universal Troubleshooting Playbook",
+    "symptoms": [
+      "Admin reindex gagal",
+      "user memakai bahasa santai seperti kenapa, gimana, kok error, blank, ngawur"
+    ],
+    "diagnosis": [
+      "Cek ADMIN_TOKEN, method POST, header Authorization, permission storage/index, dan format JSON dataset.",
+      "Tanyakan detail hanya jika error log/target belum jelas."
+    ],
+    "fixes": [
+      "Mulai dari cek status sistem, reproduksi error, baca log pertama, perbaiki penyebab utama, lalu validasi ulang.",
+      "Jangan memberikan jawaban melebar yang tidak sesuai error user."
+    ],
+    "keywords": [
+      "admin",
+      "reindex",
+      "gagal"
+    ],
+    "source": "NusaMind Universal Playbook V13.1",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_playbook_013",
+    "title": "CORS fetch API",
+    "category": "Universal Troubleshooting Playbook",
+    "symptoms": [
+      "CORS fetch API",
+      "user memakai bahasa santai seperti kenapa, gimana, kok error, blank, ngawur"
+    ],
+    "diagnosis": [
+      "CORS harus diselesaikan di server target. Di Next.js route handler, atur header hanya jika perlu dan jangan wildcard untuk credential.",
+      "Tanyakan detail hanya jika error log/target belum jelas."
+    ],
+    "fixes": [
+      "Mulai dari cek status sistem, reproduksi error, baca log pertama, perbaiki penyebab utama, lalu validasi ulang.",
+      "Jangan memberikan jawaban melebar yang tidak sesuai error user."
+    ],
+    "keywords": [
+      "cors",
+      "fetch",
+      "api"
+    ],
+    "source": "NusaMind Universal Playbook V13.1",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_playbook_014",
+    "title": "SQL injection login",
+    "category": "Universal Troubleshooting Playbook",
+    "symptoms": [
+      "SQL injection login",
+      "user memakai bahasa santai seperti kenapa, gimana, kok error, blank, ngawur"
+    ],
+    "diagnosis": [
+      "Gunakan prepared statement/parameterized query, hash password, rate limit login, dan jangan tampilkan detail error SQL ke user.",
+      "Tanyakan detail hanya jika error log/target belum jelas."
+    ],
+    "fixes": [
+      "Mulai dari cek status sistem, reproduksi error, baca log pertama, perbaiki penyebab utama, lalu validasi ulang.",
+      "Jangan memberikan jawaban melebar yang tidak sesuai error user."
+    ],
+    "keywords": [
+      "sql",
+      "injection",
+      "login"
+    ],
+    "source": "NusaMind Universal Playbook V13.1",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_playbook_015",
+    "title": "File .env kebaca frontend",
+    "category": "Universal Troubleshooting Playbook",
+    "symptoms": [
+      "File .env kebaca frontend",
+      "user memakai bahasa santai seperti kenapa, gimana, kok error, blank, ngawur"
+    ],
+    "diagnosis": [
+      "Hanya env dengan NEXT_PUBLIC yang masuk browser. Secret seperti API key, admin token, database password harus server-only.",
+      "Tanyakan detail hanya jika error log/target belum jelas."
+    ],
+    "fixes": [
+      "Mulai dari cek status sistem, reproduksi error, baca log pertama, perbaiki penyebab utama, lalu validasi ulang.",
+      "Jangan memberikan jawaban melebar yang tidak sesuai error user."
+    ],
+    "keywords": [
+      "file",
+      ".env",
+      "kebaca",
+      "frontend"
+    ],
+    "source": "NusaMind Universal Playbook V13.1",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_playbook_016",
+    "title": "Hydration error tanggal/random",
+    "category": "Universal Troubleshooting Playbook",
+    "symptoms": [
+      "Hydration error tanggal/random",
+      "user memakai bahasa santai seperti kenapa, gimana, kok error, blank, ngawur"
+    ],
+    "diagnosis": [
+      "Jangan render Date.now atau Math.random langsung berbeda server/client. Hitung di useEffect atau suppress dengan hati-hati.",
+      "Tanyakan detail hanya jika error log/target belum jelas."
+    ],
+    "fixes": [
+      "Mulai dari cek status sistem, reproduksi error, baca log pertama, perbaiki penyebab utama, lalu validasi ulang.",
+      "Jangan memberikan jawaban melebar yang tidak sesuai error user."
+    ],
+    "keywords": [
+      "hydration",
+      "error",
+      "tanggal",
+      "random"
+    ],
+    "source": "NusaMind Universal Playbook V13.1",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_playbook_017",
+    "title": "NPM ERESOLVE dependency conflict",
+    "category": "Universal Troubleshooting Playbook",
+    "symptoms": [
+      "NPM ERESOLVE dependency conflict",
+      "user memakai bahasa santai seperti kenapa, gimana, kok error, blank, ngawur"
+    ],
+    "diagnosis": [
+      "Baca package yang konflik, cek peer dependency, update versi, pakai npm install --legacy-peer-deps sementara, lalu rapikan package.json.",
+      "Tanyakan detail hanya jika error log/target belum jelas."
+    ],
+    "fixes": [
+      "Mulai dari cek status sistem, reproduksi error, baca log pertama, perbaiki penyebab utama, lalu validasi ulang.",
+      "Jangan memberikan jawaban melebar yang tidak sesuai error user."
+    ],
+    "keywords": [
+      "npm",
+      "eresolve",
+      "dependency",
+      "conflict"
+    ],
+    "source": "NusaMind Universal Playbook V13.1",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_playbook_018",
+    "title": "Port 3000 already in use",
+    "category": "Universal Troubleshooting Playbook",
+    "symptoms": [
+      "Port 3000 already in use",
+      "user memakai bahasa santai seperti kenapa, gimana, kok error, blank, ngawur"
+    ],
+    "diagnosis": [
+      "Matikan proses lama, pakai netstat/taskkill, atau jalankan Next.js di port lain dengan npm run dev -- -p 3001.",
+      "Tanyakan detail hanya jika error log/target belum jelas."
+    ],
+    "fixes": [
+      "Mulai dari cek status sistem, reproduksi error, baca log pertama, perbaiki penyebab utama, lalu validasi ulang.",
+      "Jangan memberikan jawaban melebar yang tidak sesuai error user."
+    ],
+    "keywords": [
+      "port",
+      "3000",
+      "already",
+      "in",
+      "use"
+    ],
+    "source": "NusaMind Universal Playbook V13.1",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_playbook_019",
+    "title": "Git push rejected",
+    "category": "Universal Troubleshooting Playbook",
+    "symptoms": [
+      "Git push rejected",
+      "user memakai bahasa santai seperti kenapa, gimana, kok error, blank, ngawur"
+    ],
+    "diagnosis": [
+      "Remote lebih baru dari lokal. Jalankan git pull --rebase, selesaikan conflict jika ada, lalu push ulang.",
+      "Tanyakan detail hanya jika error log/target belum jelas."
+    ],
+    "fixes": [
+      "Mulai dari cek status sistem, reproduksi error, baca log pertama, perbaiki penyebab utama, lalu validasi ulang.",
+      "Jangan memberikan jawaban melebar yang tidak sesuai error user."
+    ],
+    "keywords": [
+      "git",
+      "push",
+      "rejected"
+    ],
+    "source": "NusaMind Universal Playbook V13.1",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_playbook_020",
+    "title": "Website deploy beda dari local",
+    "category": "Universal Troubleshooting Playbook",
+    "symptoms": [
+      "Website deploy beda dari local",
+      "user memakai bahasa santai seperti kenapa, gimana, kok error, blank, ngawur"
+    ],
+    "diagnosis": [
+      "Cek env production, build log, case-sensitive path, API URL, static assets, node version, dan dependency yang tidak terkunci.",
+      "Tanyakan detail hanya jika error log/target belum jelas."
+    ],
+    "fixes": [
+      "Mulai dari cek status sistem, reproduksi error, baca log pertama, perbaiki penyebab utama, lalu validasi ulang.",
+      "Jangan memberikan jawaban melebar yang tidak sesuai error user."
+    ],
+    "keywords": [
+      "website",
+      "deploy",
+      "beda",
+      "dari",
+      "local"
+    ],
+    "source": "NusaMind Universal Playbook V13.1",
+    "confidence": 0.86
+  }
+]

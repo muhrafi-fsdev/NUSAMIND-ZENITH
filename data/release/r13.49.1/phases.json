@@ -1,0 +1,32 @@
+[
+  {
+    "phase_order": "1",
+    "phase_name": "Phase 9 — Cybersecurity Learning and Knowledge Packs",
+    "scope": "CYBERSECURITY_ONLY",
+    "status": "IMPLEMENTED_OR_GATED"
+  },
+  {
+    "phase_order": "2",
+    "phase_name": "Phase 10 — Defensive Security Project Skills",
+    "scope": "CYBERSECURITY_ONLY",
+    "status": "IMPLEMENTED_OR_GATED"
+  },
+  {
+    "phase_order": "3",
+    "phase_name": "Phase 11 — Machine Learning for Cybersecurity",
+    "scope": "CYBERSECURITY_ONLY",
+    "status": "IMPLEMENTED_OR_GATED"
+  },
+  {
+    "phase_order": "4",
+    "phase_name": "Phase 12 — Authorized Asset Discovery and Attack Surface Inventory",
+    "scope": "CYBERSECURITY_ONLY",
+    "status": "IMPLEMENTED_OR_GATED"
+  },
+  {
+    "phase_order": "5",
+    "phase_name": "Phase 13 — Cybersecurity Governance and Release",
+    "scope": "CYBERSECURITY_ONLY",
+    "status": "IMPLEMENTED_OR_GATED"
+  }
+]

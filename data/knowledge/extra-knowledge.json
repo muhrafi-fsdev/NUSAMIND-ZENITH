@@ -1,0 +1,4045 @@
+[
+  {
+    "id": "v13_1_current_ai_agentic_governance_2026",
+    "type": "universal",
+    "title": "Agentic AI butuh governance sebelum diskalakan",
+    "category": "AI Current Knowledge 2026",
+    "text": "Agentic AI adalah sistem AI yang dapat menjalankan tugas multi-langkah dengan pengawasan manusia minimal. Pada 2026, adopsinya cepat, tetapi governance, validasi output, data integrity, human oversight, dan accountability harus dibuat sebelum dipakai skala produksi. Untuk NusaMind AI, artinya tool calling, admin reindex, feedback loop, dan log harus punya batas izin yang jelas.",
+    "tags": [
+      "agentic ai",
+      "governance",
+      "ai risk",
+      "human oversight",
+      "accountability",
+      "2026",
+      "production ai"
+    ],
+    "source": "TechRadar 2026 / Info-Tech 2026 / Firecrawl 2026",
+    "confidence": 0.88
+  },
+  {
+    "id": "v13_1_current_ai_context_engineering_2026",
+    "type": "universal",
+    "title": "Context engineering lebih penting dari sekadar prompt panjang",
+    "category": "AI Engineering",
+    "text": "Context engineering berarti mengatur konteks yang masuk ke model: intent, memory, dokumen RAG, tool result, riwayat singkat, dan guardrails. Untuk AI lokal, kualitas konteks menentukan apakah jawaban sesuai pertanyaan. Jangan memasukkan semua dataset mentah; pilih top-k sumber paling relevan, kompres memory, dan pisahkan Quran Exact Guard dari Universal RAG.",
+    "tags": [
+      "context engineering",
+      "rag",
+      "prompt",
+      "memory",
+      "tool result",
+      "ai architecture",
+      "universal knowledge"
+    ],
+    "source": "Firecrawl 2026 trend synthesis",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_1_current_web_ai_first_2026",
+    "type": "universal",
+    "title": "AI-first development dalam web modern",
+    "category": "Web Development Trends 2026",
+    "text": "AI-first development berarti AI dipakai sebagai bagian dari siklus development: generate komponen, jelaskan kode, cari edge case, bantu debugging, dan membuat UI dinamis. Developer tetap bertindak sebagai arsitek yang menentukan batasan, validasi, security, dan kualitas output.",
+    "tags": [
+      "ai-first development",
+      "web development",
+      "frontend",
+      "debugging",
+      "developer workflow",
+      "2026"
+    ],
+    "source": "LogRocket 2025/2026 trend article",
+    "confidence": 0.87
+  },
+  {
+    "id": "v13_1_current_nextjs_metaframework_2026",
+    "type": "universal",
+    "title": "Next.js sebagai meta-framework fullstack",
+    "category": "Next.js",
+    "text": "Next.js dipakai sebagai meta-framework karena menyatukan routing, rendering, data fetching, API routes, caching, dan deployment. Untuk chatbot AI, Next.js cocok karena backend API dan frontend chat bisa berada dalam satu project, sementara model lokal berjalan lewat Ollama.",
+    "tags": [
+      "next.js",
+      "metaframework",
+      "app router",
+      "api route",
+      "fullstack",
+      "ollama",
+      "ai chatbot"
+    ],
+    "source": "LogRocket 2025/2026 + Next.js documentation knowledge",
+    "confidence": 0.87
+  },
+  {
+    "id": "v13_1_current_typescript_ai_coding_2026",
+    "type": "universal",
+    "title": "TypeScript membantu AI-assisted coding lebih aman",
+    "category": "Coding Best Practices",
+    "text": "TypeScript membantu menangkap banyak kesalahan tipe sebelum runtime. Dalam AI-assisted coding, type-checking membuat hasil kode dari AI lebih mudah divalidasi. Untuk project NusaMind AI, pakai TypeScript strict, schema Zod, dan tsc --noEmit untuk mencegah bug request body, response shape, atau tool parameter.",
+    "tags": [
+      "typescript",
+      "ai coding",
+      "type safety",
+      "zod",
+      "next.js",
+      "debugging",
+      "tsc"
+    ],
+    "source": "Nextage 2026 / AI SDK practice",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_current_api_security_2026",
+    "type": "universal",
+    "title": "API security harus security-first dan zero-trust",
+    "category": "Cybersecurity",
+    "text": "API modern harus menganggap semua request tidak tepercaya. Terapkan validasi input, authentication, authorization, rate limit, logging, CSRF/CORS sesuai kebutuhan, secret di server, dan audit admin endpoint. Admin reindex harus dilindungi token dan jangan diekspos tanpa kontrol.",
+    "tags": [
+      "api security",
+      "zero trust",
+      "rate limit",
+      "admin endpoint",
+      "csrf",
+      "cors",
+      "devsecops",
+      "owasp"
+    ],
+    "source": "2026 API security paper synthesis",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_current_prompt_injection_agentic_2026",
+    "type": "universal",
+    "title": "Prompt injection pada agentic coding assistant",
+    "category": "AI Security",
+    "text": "Prompt injection adalah risiko ketika input user, dokumen, web page, atau tool result mengandung instruksi jahat yang mencoba mengambil alih perilaku AI. Untuk AI dengan tool/file/API access, mitigasi harus berupa defense-in-depth: pisahkan instruksi sistem dari data, batasi tool permission, validasi output, audit log, dan jangan menjalankan perintah berbahaya otomatis.",
+    "tags": [
+      "prompt injection",
+      "agentic coding",
+      "ai security",
+      "tool permission",
+      "mcp",
+      "guardrails"
+    ],
+    "source": "2026 prompt injection SoK synthesis",
+    "confidence": 0.86
+  },
+  {
+    "id": "v13_1_current_ai_coding_security_awareness",
+    "type": "universal",
+    "title": "AI coding assistant menggeser keamanan dari preventif ke review",
+    "category": "Secure Coding",
+    "text": "AI coding assistant dapat membuat developer lebih fokus meninjau hasil daripada merancang security sejak awal. Saat meminta kode dari AI, sebutkan requirement keamanan sejak prompt awal: validasi input, prepared statement, auth, rate limit, error handling, dan jangan menyimpan secret di frontend.",
+    "tags": [
+      "ai coding assistant",
+      "secure coding",
+      "security review",
+      "prompting",
+      "vulnerability",
+      "code review"
+    ],
+    "source": "2026 AI coding security awareness paper synthesis",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_coding_fundamentals_001",
+    "type": "universal",
+    "title": "Coding Fundamentals: Variabel",
+    "category": "Coding Fundamentals",
+    "text": "Variabel adalah nama untuk menyimpan nilai. Gunakan nama jelas, tipe data sesuai, dan hindari global variable tanpa perlu. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "coding fundamentals",
+      "variabel",
+      "variabel",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_coding_fundamentals_001_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: variabel",
+    "category": "Coding Fundamentals Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu variabel; jelasin variabel; variabel itu maksudnya apa; kenapa variabel terjadi; cara mengatasi variabel. Jawabannya harus tetap fokus pada topik variabel, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "variabel",
+      "coding fundamentals"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_coding_fundamentals_002",
+    "type": "universal",
+    "title": "Coding Fundamentals: Array",
+    "category": "Coding Fundamentals",
+    "text": "Array menyimpan daftar nilai berurutan. Cocok untuk list data seperti users, products, atau messages. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "coding fundamentals",
+      "array",
+      "array",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_coding_fundamentals_002_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: array",
+    "category": "Coding Fundamentals Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu array; jelasin array; array itu maksudnya apa; kenapa array terjadi; cara mengatasi array. Jawabannya harus tetap fokus pada topik array, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "array",
+      "coding fundamentals"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_coding_fundamentals_003",
+    "type": "universal",
+    "title": "Coding Fundamentals: Object",
+    "category": "Coding Fundamentals",
+    "text": "Object menyimpan data berbentuk key-value. Cocok untuk entity seperti user dengan name, email, role. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "coding fundamentals",
+      "object",
+      "object",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_coding_fundamentals_003_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: object",
+    "category": "Coding Fundamentals Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu object; jelasin object; object itu maksudnya apa; kenapa object terjadi; cara mengatasi object. Jawabannya harus tetap fokus pada topik object, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "object",
+      "coding fundamentals"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_coding_fundamentals_004",
+    "type": "universal",
+    "title": "Coding Fundamentals: Function",
+    "category": "Coding Fundamentals",
+    "text": "Function membungkus logika agar bisa dipakai ulang. Buat function kecil yang punya satu tanggung jawab jelas. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "coding fundamentals",
+      "function",
+      "function",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_coding_fundamentals_004_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: function",
+    "category": "Coding Fundamentals Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu function; jelasin function; function itu maksudnya apa; kenapa function terjadi; cara mengatasi function. Jawabannya harus tetap fokus pada topik function, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "function",
+      "coding fundamentals"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_coding_fundamentals_005",
+    "type": "universal",
+    "title": "Coding Fundamentals: Scope",
+    "category": "Coding Fundamentals",
+    "text": "Scope menentukan area variabel bisa diakses. Bug scope sering muncul saat variabel dipakai di luar blok/function. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "coding fundamentals",
+      "scope",
+      "scope",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_coding_fundamentals_005_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: scope",
+    "category": "Coding Fundamentals Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu scope; jelasin scope; scope itu maksudnya apa; kenapa scope terjadi; cara mengatasi scope. Jawabannya harus tetap fokus pada topik scope, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "scope",
+      "coding fundamentals"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_coding_fundamentals_006",
+    "type": "universal",
+    "title": "Coding Fundamentals: Closure",
+    "category": "Coding Fundamentals",
+    "text": "Closure terjadi saat function mengingat variable dari scope luar walau function luarnya sudah selesai. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "coding fundamentals",
+      "closure",
+      "closure",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_coding_fundamentals_006_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: closure",
+    "category": "Coding Fundamentals Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu closure; jelasin closure; closure itu maksudnya apa; kenapa closure terjadi; cara mengatasi closure. Jawabannya harus tetap fokus pada topik closure, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "closure",
+      "coding fundamentals"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_coding_fundamentals_007",
+    "type": "universal",
+    "title": "Coding Fundamentals: Async Await",
+    "category": "Coding Fundamentals",
+    "text": "async/await membuat kode asynchronous lebih mudah dibaca. Selalu pakai try/catch untuk menangani error. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "coding fundamentals",
+      "async await",
+      "async",
+      "await",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_coding_fundamentals_007_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: async await",
+    "category": "Coding Fundamentals Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu async await; jelasin async await; async await itu maksudnya apa; kenapa async await terjadi; cara mengatasi async await. Jawabannya harus tetap fokus pada topik async await, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "async await",
+      "coding fundamentals"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_coding_fundamentals_008",
+    "type": "universal",
+    "title": "Coding Fundamentals: Promise",
+    "category": "Coding Fundamentals",
+    "text": "Promise mewakili hasil operasi asynchronous yang bisa pending, fulfilled, atau rejected. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "coding fundamentals",
+      "promise",
+      "promise",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_coding_fundamentals_008_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: promise",
+    "category": "Coding Fundamentals Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu promise; jelasin promise; promise itu maksudnya apa; kenapa promise terjadi; cara mengatasi promise. Jawabannya harus tetap fokus pada topik promise, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "promise",
+      "coding fundamentals"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_coding_fundamentals_009",
+    "type": "universal",
+    "title": "Coding Fundamentals: Error Handling",
+    "category": "Coding Fundamentals",
+    "text": "Error handling yang baik menjelaskan penyebab, memberi fallback, dan tidak membocorkan detail sensitif ke user. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "coding fundamentals",
+      "error handling",
+      "error",
+      "handling",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_coding_fundamentals_009_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: error handling",
+    "category": "Coding Fundamentals Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu error handling; jelasin error handling; error handling itu maksudnya apa; kenapa error handling terjadi; cara mengatasi error handling. Jawabannya harus tetap fokus pada topik error handling, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "error handling",
+      "coding fundamentals"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_coding_fundamentals_010",
+    "type": "universal",
+    "title": "Coding Fundamentals: Clean Code",
+    "category": "Coding Fundamentals",
+    "text": "Clean code berarti kode mudah dibaca, fungsi kecil, nama jelas, dan tidak duplikatif berlebihan. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "coding fundamentals",
+      "clean code",
+      "clean",
+      "code",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_coding_fundamentals_010_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: clean code",
+    "category": "Coding Fundamentals Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu clean code; jelasin clean code; clean code itu maksudnya apa; kenapa clean code terjadi; cara mengatasi clean code. Jawabannya harus tetap fokus pada topik clean code, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "clean code",
+      "coding fundamentals"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_javascript_debugging_001",
+    "type": "universal",
+    "title": "JavaScript Debugging: Cannot Read Properties Of Undefined",
+    "category": "JavaScript Debugging",
+    "text": "Error ini muncul karena properti diakses dari nilai undefined/null. Gunakan optional chaining, validasi data API, atau default value. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "javascript debugging",
+      "cannot read properties of undefined",
+      "cannot",
+      "read",
+      "properties",
+      "of",
+      "undefined",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_javascript_debugging_001_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: cannot read properties of undefined",
+    "category": "JavaScript Debugging Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu cannot read properties of undefined; jelasin cannot read properties of undefined; cannot read properties of undefined itu maksudnya apa; kenapa cannot read properties of undefined terjadi; cara mengatasi cannot read properties of undefined. Jawabannya harus tetap fokus pada topik cannot read properties of undefined, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "cannot read properties of undefined",
+      "javascript debugging"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_javascript_debugging_002",
+    "type": "universal",
+    "title": "JavaScript Debugging: Unexpected Token Json",
+    "category": "JavaScript Debugging",
+    "text": "JSON.parse gagal karena string bukan JSON valid. Cek response API, content-type, dan apakah server mengirim HTML error page. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "javascript debugging",
+      "unexpected token json",
+      "unexpected",
+      "token",
+      "json",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_javascript_debugging_002_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: unexpected token json",
+    "category": "JavaScript Debugging Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu unexpected token json; jelasin unexpected token json; unexpected token json itu maksudnya apa; kenapa unexpected token json terjadi; cara mengatasi unexpected token json. Jawabannya harus tetap fokus pada topik unexpected token json, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "unexpected token json",
+      "javascript debugging"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_javascript_debugging_003",
+    "type": "universal",
+    "title": "JavaScript Debugging: Event Listener Double",
+    "category": "JavaScript Debugging",
+    "text": "Event jalan berkali-kali biasanya karena listener dipasang berulang, component re-render, atau cleanup useEffect tidak ada. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "javascript debugging",
+      "event listener double",
+      "event",
+      "listener",
+      "double",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_javascript_debugging_003_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: event listener double",
+    "category": "JavaScript Debugging Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu event listener double; jelasin event listener double; event listener double itu maksudnya apa; kenapa event listener double terjadi; cara mengatasi event listener double. Jawabannya harus tetap fokus pada topik event listener double, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "event listener double",
+      "javascript debugging"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_javascript_debugging_004",
+    "type": "universal",
+    "title": "JavaScript Debugging: Cors Error",
+    "category": "JavaScript Debugging",
+    "text": "CORS terjadi saat browser menolak request lintas origin. Solusi ada di server: atur Access-Control-Allow-Origin, method, dan headers. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "javascript debugging",
+      "cors error",
+      "cors",
+      "error",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_javascript_debugging_004_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: cors error",
+    "category": "JavaScript Debugging Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu cors error; jelasin cors error; cors error itu maksudnya apa; kenapa cors error terjadi; cara mengatasi cors error. Jawabannya harus tetap fokus pada topik cors error, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "cors error",
+      "javascript debugging"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_javascript_debugging_005",
+    "type": "universal",
+    "title": "JavaScript Debugging: Localstorage Hilang",
+    "category": "JavaScript Debugging",
+    "text": "localStorage bisa tidak tersimpan jika code berjalan di server, mode private, key beda, atau data dihapus saat reload. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "javascript debugging",
+      "localStorage hilang",
+      "localStorage",
+      "hilang",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_javascript_debugging_005_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: localStorage hilang",
+    "category": "JavaScript Debugging Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu localStorage hilang; jelasin localStorage hilang; localStorage hilang itu maksudnya apa; kenapa localStorage hilang terjadi; cara mengatasi localStorage hilang. Jawabannya harus tetap fokus pada topik localStorage hilang, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "localStorage hilang",
+      "javascript debugging"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_javascript_debugging_006",
+    "type": "universal",
+    "title": "JavaScript Debugging: Fetch Gagal",
+    "category": "JavaScript Debugging",
+    "text": "Fetch gagal bisa karena URL salah, server mati, CORS, mixed content HTTP/HTTPS, atau response bukan JSON. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "javascript debugging",
+      "fetch gagal",
+      "fetch",
+      "gagal",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_javascript_debugging_006_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: fetch gagal",
+    "category": "JavaScript Debugging Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu fetch gagal; jelasin fetch gagal; fetch gagal itu maksudnya apa; kenapa fetch gagal terjadi; cara mengatasi fetch gagal. Jawabannya harus tetap fokus pada topik fetch gagal, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "fetch gagal",
+      "javascript debugging"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_javascript_debugging_007",
+    "type": "universal",
+    "title": "JavaScript Debugging: Map Is Not A Function",
+    "category": "JavaScript Debugging",
+    "text": "Error ini muncul saat .map dipanggil pada data yang bukan array. Cek bentuk response dan default-kan ke []. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "javascript debugging",
+      "map is not a function",
+      "map",
+      "is",
+      "not",
+      "a",
+      "function",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_javascript_debugging_007_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: map is not a function",
+    "category": "JavaScript Debugging Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu map is not a function; jelasin map is not a function; map is not a function itu maksudnya apa; kenapa map is not a function terjadi; cara mengatasi map is not a function. Jawabannya harus tetap fokus pada topik map is not a function, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "map is not a function",
+      "javascript debugging"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_javascript_debugging_008",
+    "type": "universal",
+    "title": "JavaScript Debugging: Nan Javascript",
+    "category": "JavaScript Debugging",
+    "text": "NaN muncul saat operasi matematika melibatkan nilai yang tidak bisa dikonversi ke number. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "javascript debugging",
+      "nan javascript",
+      "nan",
+      "javascript",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_javascript_debugging_008_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: nan javascript",
+    "category": "JavaScript Debugging Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu nan javascript; jelasin nan javascript; nan javascript itu maksudnya apa; kenapa nan javascript terjadi; cara mengatasi nan javascript. Jawabannya harus tetap fokus pada topik nan javascript, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "nan javascript",
+      "javascript debugging"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_javascript_debugging_009",
+    "type": "universal",
+    "title": "JavaScript Debugging: Undefined Output",
+    "category": "JavaScript Debugging",
+    "text": "Output undefined biasanya karena return tidak ada, properti tidak ditemukan, atau function asynchronous belum await. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "javascript debugging",
+      "undefined output",
+      "undefined",
+      "output",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_javascript_debugging_009_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: undefined output",
+    "category": "JavaScript Debugging Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu undefined output; jelasin undefined output; undefined output itu maksudnya apa; kenapa undefined output terjadi; cara mengatasi undefined output. Jawabannya harus tetap fokus pada topik undefined output, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "undefined output",
+      "javascript debugging"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_javascript_debugging_010",
+    "type": "universal",
+    "title": "JavaScript Debugging: Memory Leak Browser",
+    "category": "JavaScript Debugging",
+    "text": "Memory leak frontend bisa muncul dari event listener, interval, subscription, atau object besar yang tidak dibersihkan. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "javascript debugging",
+      "memory leak browser",
+      "memory",
+      "leak",
+      "browser",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_javascript_debugging_010_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: memory leak browser",
+    "category": "JavaScript Debugging Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu memory leak browser; jelasin memory leak browser; memory leak browser itu maksudnya apa; kenapa memory leak browser terjadi; cara mengatasi memory leak browser. Jawabannya harus tetap fokus pada topik memory leak browser, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "memory leak browser",
+      "javascript debugging"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_next.js_react_001",
+    "type": "universal",
+    "title": "Next.js React: Window Is Not Defined",
+    "category": "Next.js React",
+    "text": "Di Next.js, window tidak ada di server. Gunakan use client, cek typeof window, atau akses di useEffect. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "next.js react",
+      "window is not defined",
+      "window",
+      "is",
+      "not",
+      "defined",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_next.js_react_001_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: window is not defined",
+    "category": "Next.js React Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu window is not defined; jelasin window is not defined; window is not defined itu maksudnya apa; kenapa window is not defined terjadi; cara mengatasi window is not defined. Jawabannya harus tetap fokus pada topik window is not defined, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "window is not defined",
+      "next.js react"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_next.js_react_002",
+    "type": "universal",
+    "title": "Next.js React: Hydration Error",
+    "category": "Next.js React",
+    "text": "Hydration error terjadi saat HTML server berbeda dengan render client. Hindari Date.random langsung di render dan data dinamis yang tidak sinkron. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "next.js react",
+      "hydration error",
+      "hydration",
+      "error",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_next.js_react_002_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: hydration error",
+    "category": "Next.js React Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu hydration error; jelasin hydration error; hydration error itu maksudnya apa; kenapa hydration error terjadi; cara mengatasi hydration error. Jawabannya harus tetap fokus pada topik hydration error, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "hydration error",
+      "next.js react"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_next.js_react_003",
+    "type": "universal",
+    "title": "Next.js React: Use Client",
+    "category": "Next.js React",
+    "text": "use client diperlukan saat component memakai state, effect, event handler, browser API, atau library client-side. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "next.js react",
+      "use client",
+      "use",
+      "client",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_next.js_react_003_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: use client",
+    "category": "Next.js React Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu use client; jelasin use client; use client itu maksudnya apa; kenapa use client terjadi; cara mengatasi use client. Jawabannya harus tetap fokus pada topik use client, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "use client",
+      "next.js react"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_next.js_react_004",
+    "type": "universal",
+    "title": "Next.js React: Server Component",
+    "category": "Next.js React",
+    "text": "Server Component berjalan di server, cocok untuk fetch data dan render awal tanpa bundle JS besar ke client. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "next.js react",
+      "server component",
+      "server",
+      "component",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_next.js_react_004_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: server component",
+    "category": "Next.js React Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu server component; jelasin server component; server component itu maksudnya apa; kenapa server component terjadi; cara mengatasi server component. Jawabannya harus tetap fokus pada topik server component, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "server component",
+      "next.js react"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_next.js_react_005",
+    "type": "universal",
+    "title": "Next.js React: Client Component",
+    "category": "Next.js React",
+    "text": "Client Component berjalan di browser, cocok untuk interaksi, form, state, dan event handler. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "next.js react",
+      "client component",
+      "client",
+      "component",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_next.js_react_005_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: client component",
+    "category": "Next.js React Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu client component; jelasin client component; client component itu maksudnya apa; kenapa client component terjadi; cara mengatasi client component. Jawabannya harus tetap fokus pada topik client component, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "client component",
+      "next.js react"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_next.js_react_006",
+    "type": "universal",
+    "title": "Next.js React: Api Route",
+    "category": "Next.js React",
+    "text": "API route Next.js dipakai untuk backend endpoint seperti chat, login, upload, reindex, dan status sistem. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "next.js react",
+      "api route",
+      "api",
+      "route",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_next.js_react_006_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: api route",
+    "category": "Next.js React Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu api route; jelasin api route; api route itu maksudnya apa; kenapa api route terjadi; cara mengatasi api route. Jawabannya harus tetap fokus pada topik api route, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "api route",
+      "next.js react"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_next.js_react_007",
+    "type": "universal",
+    "title": "Next.js React: App Router",
+    "category": "Next.js React",
+    "text": "App Router memakai folder app, server component default, route handlers, layout, dan loading/error boundary. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "next.js react",
+      "app router",
+      "app",
+      "router",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_next.js_react_007_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: app router",
+    "category": "Next.js React Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu app router; jelasin app router; app router itu maksudnya apa; kenapa app router terjadi; cara mengatasi app router. Jawabannya harus tetap fokus pada topik app router, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "app router",
+      "next.js react"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_next.js_react_008",
+    "type": "universal",
+    "title": "Next.js React: Next Build Error",
+    "category": "Next.js React",
+    "text": "Build error biasanya karena type error, import server/client salah, env hilang, atau dependency tidak kompatibel. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "next.js react",
+      "next build error",
+      "next",
+      "build",
+      "error",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_next.js_react_008_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: next build error",
+    "category": "Next.js React Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu next build error; jelasin next build error; next build error itu maksudnya apa; kenapa next build error terjadi; cara mengatasi next build error. Jawabannya harus tetap fokus pada topik next build error, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "next build error",
+      "next.js react"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_next.js_react_009",
+    "type": "universal",
+    "title": "Next.js React: Blank Putih Nextjs",
+    "category": "Next.js React",
+    "text": "Blank putih bisa disebabkan runtime error client, hydration error, import salah, CSS/global error, atau response API gagal. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "next.js react",
+      "blank putih nextjs",
+      "blank",
+      "putih",
+      "nextjs",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_next.js_react_009_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: blank putih nextjs",
+    "category": "Next.js React Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu blank putih nextjs; jelasin blank putih nextjs; blank putih nextjs itu maksudnya apa; kenapa blank putih nextjs terjadi; cara mengatasi blank putih nextjs. Jawabannya harus tetap fokus pada topik blank putih nextjs, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "blank putih nextjs",
+      "next.js react"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_next.js_react_010",
+    "type": "universal",
+    "title": "Next.js React: Environment Variables Nextjs",
+    "category": "Next.js React",
+    "text": "Env server tidak boleh diawali NEXT_PUBLIC kecuali memang aman untuk browser. API key harus server-only. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "next.js react",
+      "environment variables nextjs",
+      "environment",
+      "variables",
+      "nextjs",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_next.js_react_010_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: environment variables nextjs",
+    "category": "Next.js React Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu environment variables nextjs; jelasin environment variables nextjs; environment variables nextjs itu maksudnya apa; kenapa environment variables nextjs terjadi; cara mengatasi environment variables nextjs. Jawabannya harus tetap fokus pada topik environment variables nextjs, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "environment variables nextjs",
+      "next.js react"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_node_backend_api_001",
+    "type": "universal",
+    "title": "Node Backend API: Rest Api",
+    "category": "Node Backend API",
+    "text": "REST API memakai endpoint dan HTTP method untuk mengelola resource. Gunakan status code tepat dan response JSON konsisten. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "node backend api",
+      "rest api",
+      "rest",
+      "api",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_node_backend_api_001_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: rest api",
+    "category": "Node Backend API Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu rest api; jelasin rest api; rest api itu maksudnya apa; kenapa rest api terjadi; cara mengatasi rest api. Jawabannya harus tetap fokus pada topik rest api, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "rest api",
+      "node backend api"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_node_backend_api_002",
+    "type": "universal",
+    "title": "Node Backend API: Status Code",
+    "category": "Node Backend API",
+    "text": "200 sukses, 201 created, 400 bad request, 401 belum login, 403 tidak punya izin, 404 tidak ditemukan, 500 error server. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "node backend api",
+      "status code",
+      "status",
+      "code",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_node_backend_api_002_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: status code",
+    "category": "Node Backend API Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu status code; jelasin status code; status code itu maksudnya apa; kenapa status code terjadi; cara mengatasi status code. Jawabannya harus tetap fokus pada topik status code, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "status code",
+      "node backend api"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_node_backend_api_003",
+    "type": "universal",
+    "title": "Node Backend API: Middleware",
+    "category": "Node Backend API",
+    "text": "Middleware adalah fungsi perantara untuk logging, auth, validasi, rate limit, atau parsing body sebelum handler utama. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "node backend api",
+      "middleware",
+      "middleware",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_node_backend_api_003_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: middleware",
+    "category": "Node Backend API Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu middleware; jelasin middleware; middleware itu maksudnya apa; kenapa middleware terjadi; cara mengatasi middleware. Jawabannya harus tetap fokus pada topik middleware, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "middleware",
+      "node backend api"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_node_backend_api_004",
+    "type": "universal",
+    "title": "Node Backend API: Request Validation",
+    "category": "Node Backend API",
+    "text": "Validasi request mencegah data rusak dan serangan. Gunakan schema seperti Zod/Joi dan return pesan error jelas. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "node backend api",
+      "request validation",
+      "request",
+      "validation",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_node_backend_api_004_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: request validation",
+    "category": "Node Backend API Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu request validation; jelasin request validation; request validation itu maksudnya apa; kenapa request validation terjadi; cara mengatasi request validation. Jawabannya harus tetap fokus pada topik request validation, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "request validation",
+      "node backend api"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_node_backend_api_005",
+    "type": "universal",
+    "title": "Node Backend API: Rate Limit",
+    "category": "Node Backend API",
+    "text": "Rate limit membatasi jumlah request agar API tidak diserang spam atau terlalu berat. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "node backend api",
+      "rate limit",
+      "rate",
+      "limit",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_node_backend_api_005_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: rate limit",
+    "category": "Node Backend API Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu rate limit; jelasin rate limit; rate limit itu maksudnya apa; kenapa rate limit terjadi; cara mengatasi rate limit. Jawabannya harus tetap fokus pada topik rate limit, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "rate limit",
+      "node backend api"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_node_backend_api_006",
+    "type": "universal",
+    "title": "Node Backend API: Auth Authorization",
+    "category": "Node Backend API",
+    "text": "Authentication membuktikan identitas user, authorization menentukan izin user boleh akses apa. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "node backend api",
+      "auth authorization",
+      "auth",
+      "authorization",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_node_backend_api_006_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: auth authorization",
+    "category": "Node Backend API Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu auth authorization; jelasin auth authorization; auth authorization itu maksudnya apa; kenapa auth authorization terjadi; cara mengatasi auth authorization. Jawabannya harus tetap fokus pada topik auth authorization, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "auth authorization",
+      "node backend api"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_node_backend_api_007",
+    "type": "universal",
+    "title": "Node Backend API: Jwt",
+    "category": "Node Backend API",
+    "text": "JWT adalah token berisi claims yang ditandatangani. Simpan aman, set expiry, dan jangan masukkan data sensitif. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "node backend api",
+      "jwt",
+      "jwt",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_node_backend_api_007_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: jwt",
+    "category": "Node Backend API Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu jwt; jelasin jwt; jwt itu maksudnya apa; kenapa jwt terjadi; cara mengatasi jwt. Jawabannya harus tetap fokus pada topik jwt, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "jwt",
+      "node backend api"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_node_backend_api_008",
+    "type": "universal",
+    "title": "Node Backend API: Session",
+    "category": "Node Backend API",
+    "text": "Session menyimpan status login di server atau storage. Cocok untuk aplikasi web yang butuh kontrol logout/server-side. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "node backend api",
+      "session",
+      "session",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_node_backend_api_008_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: session",
+    "category": "Node Backend API Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu session; jelasin session; session itu maksudnya apa; kenapa session terjadi; cara mengatasi session. Jawabannya harus tetap fokus pada topik session, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "session",
+      "node backend api"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_node_backend_api_009",
+    "type": "universal",
+    "title": "Node Backend API: Cors Backend",
+    "category": "Node Backend API",
+    "text": "CORS dikonfigurasi di backend. Jangan pakai wildcard untuk credential production. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "node backend api",
+      "cors backend",
+      "cors",
+      "backend",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_node_backend_api_009_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: cors backend",
+    "category": "Node Backend API Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu cors backend; jelasin cors backend; cors backend itu maksudnya apa; kenapa cors backend terjadi; cara mengatasi cors backend. Jawabannya harus tetap fokus pada topik cors backend, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "cors backend",
+      "node backend api"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_node_backend_api_010",
+    "type": "universal",
+    "title": "Node Backend API: Api Key Secret",
+    "category": "Node Backend API",
+    "text": "API key harus disimpan di server/env, bukan frontend atau repository publik. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "node backend api",
+      "api key secret",
+      "api",
+      "key",
+      "secret",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_node_backend_api_010_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: api key secret",
+    "category": "Node Backend API Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu api key secret; jelasin api key secret; api key secret itu maksudnya apa; kenapa api key secret terjadi; cara mengatasi api key secret. Jawabannya harus tetap fokus pada topik api key secret, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "api key secret",
+      "node backend api"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_database_sql_001",
+    "type": "universal",
+    "title": "Database SQL: Primary Key",
+    "category": "Database SQL",
+    "text": "Primary key adalah identitas unik row. Gunakan id stabil dan jangan duplikat. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "database sql",
+      "primary key",
+      "primary",
+      "key",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_database_sql_001_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: primary key",
+    "category": "Database SQL Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu primary key; jelasin primary key; primary key itu maksudnya apa; kenapa primary key terjadi; cara mengatasi primary key. Jawabannya harus tetap fokus pada topik primary key, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "primary key",
+      "database sql"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_database_sql_002",
+    "type": "universal",
+    "title": "Database SQL: Foreign Key",
+    "category": "Database SQL",
+    "text": "Foreign key menghubungkan tabel dan menjaga relasi data agar konsisten. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "database sql",
+      "foreign key",
+      "foreign",
+      "key",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_database_sql_002_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: foreign key",
+    "category": "Database SQL Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu foreign key; jelasin foreign key; foreign key itu maksudnya apa; kenapa foreign key terjadi; cara mengatasi foreign key. Jawabannya harus tetap fokus pada topik foreign key, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "foreign key",
+      "database sql"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_database_sql_003",
+    "type": "universal",
+    "title": "Database SQL: Index Database",
+    "category": "Database SQL",
+    "text": "Index mempercepat pencarian tapi menambah biaya write dan storage. Buat index pada kolom yang sering difilter/join. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "database sql",
+      "index database",
+      "index",
+      "database",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_database_sql_003_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: index database",
+    "category": "Database SQL Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu index database; jelasin index database; index database itu maksudnya apa; kenapa index database terjadi; cara mengatasi index database. Jawabannya harus tetap fokus pada topik index database, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "index database",
+      "database sql"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_database_sql_004",
+    "type": "universal",
+    "title": "Database SQL: Sql Injection",
+    "category": "Database SQL",
+    "text": "SQL injection dicegah dengan prepared statement, parameterized query, validasi input, dan least privilege. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "database sql",
+      "sql injection",
+      "sql",
+      "injection",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_database_sql_004_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: sql injection",
+    "category": "Database SQL Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu sql injection; jelasin sql injection; sql injection itu maksudnya apa; kenapa sql injection terjadi; cara mengatasi sql injection. Jawabannya harus tetap fokus pada topik sql injection, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "sql injection",
+      "database sql"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_database_sql_005",
+    "type": "universal",
+    "title": "Database SQL: Join Sql",
+    "category": "Database SQL",
+    "text": "JOIN menggabungkan data antar tabel. INNER hanya cocok, LEFT tetap ambil data kiri walau kanan kosong. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "database sql",
+      "join sql",
+      "join",
+      "sql",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_database_sql_005_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: join sql",
+    "category": "Database SQL Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu join sql; jelasin join sql; join sql itu maksudnya apa; kenapa join sql terjadi; cara mengatasi join sql. Jawabannya harus tetap fokus pada topik join sql, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "join sql",
+      "database sql"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_database_sql_006",
+    "type": "universal",
+    "title": "Database SQL: Normalisasi Database",
+    "category": "Database SQL",
+    "text": "Normalisasi mengurangi duplikasi data, tapi terlalu normal bisa membuat query kompleks. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "database sql",
+      "normalisasi database",
+      "normalisasi",
+      "database",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_database_sql_006_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: normalisasi database",
+    "category": "Database SQL Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu normalisasi database; jelasin normalisasi database; normalisasi database itu maksudnya apa; kenapa normalisasi database terjadi; cara mengatasi normalisasi database. Jawabannya harus tetap fokus pada topik normalisasi database, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "normalisasi database",
+      "database sql"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_database_sql_007",
+    "type": "universal",
+    "title": "Database SQL: Transaction",
+    "category": "Database SQL",
+    "text": "Transaction memastikan beberapa operasi database berhasil semua atau rollback semua. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "database sql",
+      "transaction",
+      "transaction",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_database_sql_007_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: transaction",
+    "category": "Database SQL Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu transaction; jelasin transaction; transaction itu maksudnya apa; kenapa transaction terjadi; cara mengatasi transaction. Jawabannya harus tetap fokus pada topik transaction, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "transaction",
+      "database sql"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_database_sql_008",
+    "type": "universal",
+    "title": "Database SQL: Duplicate Data",
+    "category": "Database SQL",
+    "text": "Data double bisa terjadi karena tidak ada unique constraint, request terkirim dua kali, atau logic insert tanpa cek. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "database sql",
+      "duplicate data",
+      "duplicate",
+      "data",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_database_sql_008_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: duplicate data",
+    "category": "Database SQL Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu duplicate data; jelasin duplicate data; duplicate data itu maksudnya apa; kenapa duplicate data terjadi; cara mengatasi duplicate data. Jawabannya harus tetap fokus pada topik duplicate data, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "duplicate data",
+      "database sql"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_database_sql_009",
+    "type": "universal",
+    "title": "Database SQL: Migration",
+    "category": "Database SQL",
+    "text": "Migration mencatat perubahan struktur database agar bisa dilacak, diulang, dan rollback. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "database sql",
+      "migration",
+      "migration",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_database_sql_009_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: migration",
+    "category": "Database SQL Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu migration; jelasin migration; migration itu maksudnya apa; kenapa migration terjadi; cara mengatasi migration. Jawabannya harus tetap fokus pada topik migration, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "migration",
+      "database sql"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_database_sql_010",
+    "type": "universal",
+    "title": "Database SQL: Backup Database",
+    "category": "Database SQL",
+    "text": "Backup database harus rutin, diuji restore-nya, dan disimpan terpisah dari server utama. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "database sql",
+      "backup database",
+      "backup",
+      "database",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_database_sql_010_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: backup database",
+    "category": "Database SQL Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu backup database; jelasin backup database; backup database itu maksudnya apa; kenapa backup database terjadi; cara mengatasi backup database. Jawabannya harus tetap fokus pada topik backup database, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "backup database",
+      "database sql"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_php_laragon_001",
+    "type": "universal",
+    "title": "PHP Laragon: Laragon Localhost",
+    "category": "PHP Laragon",
+    "text": "Laragon menjalankan Apache/Nginx, PHP, dan MySQL lokal. Pastikan service aktif dan folder ada di www. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "php laragon",
+      "laragon localhost",
+      "laragon",
+      "localhost",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_php_laragon_001_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: laragon localhost",
+    "category": "PHP Laragon Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu laragon localhost; jelasin laragon localhost; laragon localhost itu maksudnya apa; kenapa laragon localhost terjadi; cara mengatasi laragon localhost. Jawabannya harus tetap fokus pada topik laragon localhost, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "laragon localhost",
+      "php laragon"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_php_laragon_002",
+    "type": "universal",
+    "title": "PHP Laragon: Php Undefined Function",
+    "category": "PHP Laragon",
+    "text": "Undefined function biasanya karena extension belum aktif, file belum di-include, namespace salah, atau typo nama fungsi. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "php laragon",
+      "php undefined function",
+      "php",
+      "undefined",
+      "function",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_php_laragon_002_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: php undefined function",
+    "category": "PHP Laragon Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu php undefined function; jelasin php undefined function; php undefined function itu maksudnya apa; kenapa php undefined function terjadi; cara mengatasi php undefined function. Jawabannya harus tetap fokus pada topik php undefined function, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "php undefined function",
+      "php laragon"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_php_laragon_003",
+    "type": "universal",
+    "title": "PHP Laragon: Php Pdo Mysql",
+    "category": "PHP Laragon",
+    "text": "PDO membantu koneksi database dengan prepared statement agar lebih aman dari SQL injection. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "php laragon",
+      "php pdo mysql",
+      "php",
+      "pdo",
+      "mysql",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_php_laragon_003_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: php pdo mysql",
+    "category": "PHP Laragon Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu php pdo mysql; jelasin php pdo mysql; php pdo mysql itu maksudnya apa; kenapa php pdo mysql terjadi; cara mengatasi php pdo mysql. Jawabannya harus tetap fokus pada topik php pdo mysql, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "php pdo mysql",
+      "php laragon"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_php_laragon_004",
+    "type": "universal",
+    "title": "PHP Laragon: Php Session",
+    "category": "PHP Laragon",
+    "text": "Session PHP butuh session_start sebelum output HTML. Cek cookie, domain, dan path jika session hilang. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "php laragon",
+      "php session",
+      "php",
+      "session",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_php_laragon_004_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: php session",
+    "category": "PHP Laragon Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu php session; jelasin php session; php session itu maksudnya apa; kenapa php session terjadi; cara mengatasi php session. Jawabannya harus tetap fokus pada topik php session, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "php session",
+      "php laragon"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_php_laragon_005",
+    "type": "universal",
+    "title": "PHP Laragon: Php Upload File",
+    "category": "PHP Laragon",
+    "text": "Upload file harus validasi size, mime, extension, nama file, dan simpan di folder non-eksekusi jika bisa. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "php laragon",
+      "php upload file",
+      "php",
+      "upload",
+      "file",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_php_laragon_005_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: php upload file",
+    "category": "PHP Laragon Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu php upload file; jelasin php upload file; php upload file itu maksudnya apa; kenapa php upload file terjadi; cara mengatasi php upload file. Jawabannya harus tetap fokus pada topik php upload file, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "php upload file",
+      "php laragon"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_php_laragon_006",
+    "type": "universal",
+    "title": "PHP Laragon: Composer",
+    "category": "PHP Laragon",
+    "text": "Composer mengelola dependency PHP. Jalankan composer install jika folder vendor belum ada. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "php laragon",
+      "composer",
+      "composer",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_php_laragon_006_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: composer",
+    "category": "PHP Laragon Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu composer; jelasin composer; composer itu maksudnya apa; kenapa composer terjadi; cara mengatasi composer. Jawabannya harus tetap fokus pada topik composer, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "composer",
+      "php laragon"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_php_laragon_007",
+    "type": "universal",
+    "title": "PHP Laragon: Php Ini",
+    "category": "PHP Laragon",
+    "text": "php.ini mengatur extension, memory_limit, upload_max_filesize, timezone, dan konfigurasi runtime PHP. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "php laragon",
+      "php ini",
+      "php",
+      "ini",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_php_laragon_007_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: php ini",
+    "category": "PHP Laragon Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu php ini; jelasin php ini; php ini itu maksudnya apa; kenapa php ini terjadi; cara mengatasi php ini. Jawabannya harus tetap fokus pada topik php ini, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "php ini",
+      "php laragon"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_php_laragon_008",
+    "type": "universal",
+    "title": "PHP Laragon: Laragon Mysql",
+    "category": "PHP Laragon",
+    "text": "MySQL Laragon bisa diakses lewat phpMyAdmin/Adminer atau CLI. Cek port, user root, dan password. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "php laragon",
+      "laragon mysql",
+      "laragon",
+      "mysql",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_php_laragon_008_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: laragon mysql",
+    "category": "PHP Laragon Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu laragon mysql; jelasin laragon mysql; laragon mysql itu maksudnya apa; kenapa laragon mysql terjadi; cara mengatasi laragon mysql. Jawabannya harus tetap fokus pada topik laragon mysql, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "laragon mysql",
+      "php laragon"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_php_laragon_009",
+    "type": "universal",
+    "title": "PHP Laragon: Php Form Post",
+    "category": "PHP Laragon",
+    "text": "POST tidak masuk bisa karena method salah, name input kosong, enctype salah, atau action URL salah. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "php laragon",
+      "php form post",
+      "php",
+      "form",
+      "post",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_php_laragon_009_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: php form post",
+    "category": "PHP Laragon Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu php form post; jelasin php form post; php form post itu maksudnya apa; kenapa php form post terjadi; cara mengatasi php form post. Jawabannya harus tetap fokus pada topik php form post, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "php form post",
+      "php laragon"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_php_laragon_010",
+    "type": "universal",
+    "title": "PHP Laragon: Php Error Log",
+    "category": "PHP Laragon",
+    "text": "Aktifkan display_errors di local dan cek error_log untuk debugging PHP. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "php laragon",
+      "php error log",
+      "php",
+      "error",
+      "log",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_php_laragon_010_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: php error log",
+    "category": "PHP Laragon Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu php error log; jelasin php error log; php error log itu maksudnya apa; kenapa php error log terjadi; cara mengatasi php error log. Jawabannya harus tetap fokus pada topik php error log, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "php error log",
+      "php laragon"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_git_github_001",
+    "type": "universal",
+    "title": "Git GitHub: Git Init",
+    "category": "Git GitHub",
+    "text": "git init membuat repository lokal baru di folder project. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "git github",
+      "git init",
+      "git",
+      "init",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_git_github_001_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: git init",
+    "category": "Git GitHub Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu git init; jelasin git init; git init itu maksudnya apa; kenapa git init terjadi; cara mengatasi git init. Jawabannya harus tetap fokus pada topik git init, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "git init",
+      "git github"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_git_github_002",
+    "type": "universal",
+    "title": "Git GitHub: Git Add Commit Push",
+    "category": "Git GitHub",
+    "text": "git add memilih perubahan, commit menyimpan snapshot, push mengirim ke remote repository. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "git github",
+      "git add commit push",
+      "git",
+      "add",
+      "commit",
+      "push",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_git_github_002_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: git add commit push",
+    "category": "Git GitHub Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu git add commit push; jelasin git add commit push; git add commit push itu maksudnya apa; kenapa git add commit push terjadi; cara mengatasi git add commit push. Jawabannya harus tetap fokus pada topik git add commit push, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "git add commit push",
+      "git github"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_git_github_003",
+    "type": "universal",
+    "title": "Git GitHub: Merge Conflict",
+    "category": "Git GitHub",
+    "text": "Merge conflict terjadi saat dua perubahan menyentuh baris sama. Selesaikan manual lalu commit. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "git github",
+      "merge conflict",
+      "merge",
+      "conflict",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_git_github_003_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: merge conflict",
+    "category": "Git GitHub Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu merge conflict; jelasin merge conflict; merge conflict itu maksudnya apa; kenapa merge conflict terjadi; cara mengatasi merge conflict. Jawabannya harus tetap fokus pada topik merge conflict, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "merge conflict",
+      "git github"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_git_github_004",
+    "type": "universal",
+    "title": "Git GitHub: Gitignore",
+    "category": "Git GitHub",
+    "text": "gitignore mencegah file tertentu ikut ter-track, misalnya node_modules, .env, build output, dan log. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "git github",
+      "gitignore",
+      "gitignore",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_git_github_004_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: gitignore",
+    "category": "Git GitHub Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu gitignore; jelasin gitignore; gitignore itu maksudnya apa; kenapa gitignore terjadi; cara mengatasi gitignore. Jawabannya harus tetap fokus pada topik gitignore, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "gitignore",
+      "git github"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_git_github_005",
+    "type": "universal",
+    "title": "Git GitHub: Branch",
+    "category": "Git GitHub",
+    "text": "Branch memisahkan jalur kerja supaya fitur/bugfix tidak langsung mengganggu main. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "git github",
+      "branch",
+      "branch",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_git_github_005_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: branch",
+    "category": "Git GitHub Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu branch; jelasin branch; branch itu maksudnya apa; kenapa branch terjadi; cara mengatasi branch. Jawabannya harus tetap fokus pada topik branch, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "branch",
+      "git github"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_git_github_006",
+    "type": "universal",
+    "title": "Git GitHub: Rebase",
+    "category": "Git GitHub",
+    "text": "Rebase memindahkan commit di atas base baru. Riwayat lebih rapi, tapi hati-hati pada branch yang sudah dibagikan. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "git github",
+      "rebase",
+      "rebase",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_git_github_006_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: rebase",
+    "category": "Git GitHub Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu rebase; jelasin rebase; rebase itu maksudnya apa; kenapa rebase terjadi; cara mengatasi rebase. Jawabannya harus tetap fokus pada topik rebase, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "rebase",
+      "git github"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_git_github_007",
+    "type": "universal",
+    "title": "Git GitHub: Pull Request",
+    "category": "Git GitHub",
+    "text": "Pull request dipakai untuk review perubahan sebelum merge ke branch utama. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "git github",
+      "pull request",
+      "pull",
+      "request",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_git_github_007_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: pull request",
+    "category": "Git GitHub Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu pull request; jelasin pull request; pull request itu maksudnya apa; kenapa pull request terjadi; cara mengatasi pull request. Jawabannya harus tetap fokus pada topik pull request, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "pull request",
+      "git github"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_git_github_008",
+    "type": "universal",
+    "title": "Git GitHub: Undo Commit",
+    "category": "Git GitHub",
+    "text": "Undo commit bisa dengan revert untuk aman, atau reset untuk lokal. Pilih sesuai kondisi remote. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "git github",
+      "undo commit",
+      "undo",
+      "commit",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_git_github_008_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: undo commit",
+    "category": "Git GitHub Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu undo commit; jelasin undo commit; undo commit itu maksudnya apa; kenapa undo commit terjadi; cara mengatasi undo commit. Jawabannya harus tetap fokus pada topik undo commit, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "undo commit",
+      "git github"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_git_github_009",
+    "type": "universal",
+    "title": "Git GitHub: Git Push Rejected",
+    "category": "Git GitHub",
+    "text": "Push ditolak biasanya karena remote lebih baru. Pull/rebase dulu lalu push lagi. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "git github",
+      "git push rejected",
+      "git",
+      "push",
+      "rejected",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_git_github_009_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: git push rejected",
+    "category": "Git GitHub Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu git push rejected; jelasin git push rejected; git push rejected itu maksudnya apa; kenapa git push rejected terjadi; cara mengatasi git push rejected. Jawabannya harus tetap fokus pada topik git push rejected, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "git push rejected",
+      "git github"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_git_github_010",
+    "type": "universal",
+    "title": "Git GitHub: Secret Github",
+    "category": "Git GitHub",
+    "text": "Jangan upload .env, API key, token, database dump sensitif, atau private key ke GitHub. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "git github",
+      "secret github",
+      "secret",
+      "github",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_git_github_010_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: secret github",
+    "category": "Git GitHub Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu secret github; jelasin secret github; secret github itu maksudnya apa; kenapa secret github terjadi; cara mengatasi secret github. Jawabannya harus tetap fokus pada topik secret github, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "secret github",
+      "git github"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_ai_rag_llm_001",
+    "type": "universal",
+    "title": "AI RAG LLM: Rag",
+    "category": "AI RAG LLM",
+    "text": "RAG menggabungkan retrieval knowledge base dengan generasi model agar jawaban lebih grounded. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "ai rag llm",
+      "rag",
+      "rag",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_ai_rag_llm_001_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: rag",
+    "category": "AI RAG LLM Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu rag; jelasin rag; rag itu maksudnya apa; kenapa rag terjadi; cara mengatasi rag. Jawabannya harus tetap fokus pada topik rag, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "rag",
+      "ai rag llm"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_ai_rag_llm_002",
+    "type": "universal",
+    "title": "AI RAG LLM: Fine Tuning",
+    "category": "AI RAG LLM",
+    "text": "Fine-tuning melatih ulang perilaku model pada dataset khusus. Cocok untuk style/format/domain, tapi butuh data bersih. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "ai rag llm",
+      "fine tuning",
+      "fine",
+      "tuning",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_ai_rag_llm_002_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: fine tuning",
+    "category": "AI RAG LLM Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu fine tuning; jelasin fine tuning; fine tuning itu maksudnya apa; kenapa fine tuning terjadi; cara mengatasi fine tuning. Jawabannya harus tetap fokus pada topik fine tuning, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "fine tuning",
+      "ai rag llm"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_ai_rag_llm_003",
+    "type": "universal",
+    "title": "AI RAG LLM: Embedding",
+    "category": "AI RAG LLM",
+    "text": "Embedding mengubah teks menjadi vektor angka untuk mencari kemiripan makna. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "ai rag llm",
+      "embedding",
+      "embedding",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_ai_rag_llm_003_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: embedding",
+    "category": "AI RAG LLM Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu embedding; jelasin embedding; embedding itu maksudnya apa; kenapa embedding terjadi; cara mengatasi embedding. Jawabannya harus tetap fokus pada topik embedding, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "embedding",
+      "ai rag llm"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_ai_rag_llm_004",
+    "type": "universal",
+    "title": "AI RAG LLM: Vector Database",
+    "category": "AI RAG LLM",
+    "text": "Vector database menyimpan embedding dan memungkinkan semantic search cepat. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "ai rag llm",
+      "vector database",
+      "vector",
+      "database",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_ai_rag_llm_004_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: vector database",
+    "category": "AI RAG LLM Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu vector database; jelasin vector database; vector database itu maksudnya apa; kenapa vector database terjadi; cara mengatasi vector database. Jawabannya harus tetap fokus pada topik vector database, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "vector database",
+      "ai rag llm"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_ai_rag_llm_005",
+    "type": "universal",
+    "title": "AI RAG LLM: Hybrid Retrieval",
+    "category": "AI RAG LLM",
+    "text": "Hybrid retrieval menggabungkan keyword search dan semantic search agar recall dan presisi lebih seimbang. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "ai rag llm",
+      "hybrid retrieval",
+      "hybrid",
+      "retrieval",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_ai_rag_llm_005_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: hybrid retrieval",
+    "category": "AI RAG LLM Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu hybrid retrieval; jelasin hybrid retrieval; hybrid retrieval itu maksudnya apa; kenapa hybrid retrieval terjadi; cara mengatasi hybrid retrieval. Jawabannya harus tetap fokus pada topik hybrid retrieval, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "hybrid retrieval",
+      "ai rag llm"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_ai_rag_llm_006",
+    "type": "universal",
+    "title": "AI RAG LLM: Reranking",
+    "category": "AI RAG LLM",
+    "text": "Reranking menyusun ulang hasil retrieval agar dokumen paling relevan naik ke atas. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "ai rag llm",
+      "reranking",
+      "reranking",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_ai_rag_llm_006_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: reranking",
+    "category": "AI RAG LLM Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu reranking; jelasin reranking; reranking itu maksudnya apa; kenapa reranking terjadi; cara mengatasi reranking. Jawabannya harus tetap fokus pada topik reranking, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "reranking",
+      "ai rag llm"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_ai_rag_llm_007",
+    "type": "universal",
+    "title": "AI RAG LLM: Guardrails",
+    "category": "AI RAG LLM",
+    "text": "Guardrails adalah batasan sistem agar AI tidak mengarang, tidak membocorkan secret, dan tetap aman. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "ai rag llm",
+      "guardrails",
+      "guardrails",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_ai_rag_llm_007_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: guardrails",
+    "category": "AI RAG LLM Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu guardrails; jelasin guardrails; guardrails itu maksudnya apa; kenapa guardrails terjadi; cara mengatasi guardrails. Jawabannya harus tetap fokus pada topik guardrails, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "guardrails",
+      "ai rag llm"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_ai_rag_llm_008",
+    "type": "universal",
+    "title": "AI RAG LLM: Intent Router",
+    "category": "AI RAG LLM",
+    "text": "Intent router menentukan mode jawaban seperti Quran, coding, universal, companion, atau workflow. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "ai rag llm",
+      "intent router",
+      "intent",
+      "router",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_ai_rag_llm_008_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: intent router",
+    "category": "AI RAG LLM Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu intent router; jelasin intent router; intent router itu maksudnya apa; kenapa intent router terjadi; cara mengatasi intent router. Jawabannya harus tetap fokus pada topik intent router, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "intent router",
+      "ai rag llm"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_ai_rag_llm_009",
+    "type": "universal",
+    "title": "AI RAG LLM: Memory Ai",
+    "category": "AI RAG LLM",
+    "text": "Memory AI menyimpan ringkasan preferensi dan konteks penting, bukan semua percakapan mentah tanpa batas. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "ai rag llm",
+      "memory ai",
+      "memory",
+      "ai",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_ai_rag_llm_009_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: memory ai",
+    "category": "AI RAG LLM Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu memory ai; jelasin memory ai; memory ai itu maksudnya apa; kenapa memory ai terjadi; cara mengatasi memory ai. Jawabannya harus tetap fokus pada topik memory ai, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "memory ai",
+      "ai rag llm"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_ai_rag_llm_010",
+    "type": "universal",
+    "title": "AI RAG LLM: Evaluation Ai",
+    "category": "AI RAG LLM",
+    "text": "Evaluasi AI perlu golden set, skor relevansi, akurasi, kejelasan, dan cek halusinasi. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "ai rag llm",
+      "evaluation ai",
+      "evaluation",
+      "ai",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_ai_rag_llm_010_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: evaluation ai",
+    "category": "AI RAG LLM Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu evaluation ai; jelasin evaluation ai; evaluation ai itu maksudnya apa; kenapa evaluation ai terjadi; cara mengatasi evaluation ai. Jawabannya harus tetap fokus pada topik evaluation ai, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "evaluation ai",
+      "ai rag llm"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_ai_rag_llm_011",
+    "type": "universal",
+    "title": "AI RAG LLM: Prompt Injection",
+    "category": "AI RAG LLM",
+    "text": "Prompt injection mencoba menyisipkan instruksi jahat lewat input/dokumen. Pisahkan instruksi sistem dari data dan batasi tool. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "ai rag llm",
+      "prompt injection",
+      "prompt",
+      "injection",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_ai_rag_llm_011_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: prompt injection",
+    "category": "AI RAG LLM Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu prompt injection; jelasin prompt injection; prompt injection itu maksudnya apa; kenapa prompt injection terjadi; cara mengatasi prompt injection. Jawabannya harus tetap fokus pada topik prompt injection, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "prompt injection",
+      "ai rag llm"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_ai_rag_llm_012",
+    "type": "universal",
+    "title": "AI RAG LLM: Context Engineering",
+    "category": "AI RAG LLM",
+    "text": "Context engineering memilih konteks yang tepat untuk model: intent, memory, RAG, tools, dan batas keamanan. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "ai rag llm",
+      "context engineering",
+      "context",
+      "engineering",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_ai_rag_llm_012_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: context engineering",
+    "category": "AI RAG LLM Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu context engineering; jelasin context engineering; context engineering itu maksudnya apa; kenapa context engineering terjadi; cara mengatasi context engineering. Jawabannya harus tetap fokus pada topik context engineering, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "context engineering",
+      "ai rag llm"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_networking_windows_hardware_001",
+    "type": "universal",
+    "title": "Networking Windows Hardware: Ipconfig",
+    "category": "Networking Windows Hardware",
+    "text": "ipconfig menampilkan IP, gateway, dan DNS di Windows. Berguna untuk cek koneksi jaringan. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "networking windows hardware",
+      "ipconfig",
+      "ipconfig",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_networking_windows_hardware_001_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: ipconfig",
+    "category": "Networking Windows Hardware Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu ipconfig; jelasin ipconfig; ipconfig itu maksudnya apa; kenapa ipconfig terjadi; cara mengatasi ipconfig. Jawabannya harus tetap fokus pada topik ipconfig, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "ipconfig",
+      "networking windows hardware"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_networking_windows_hardware_002",
+    "type": "universal",
+    "title": "Networking Windows Hardware: Ping",
+    "category": "Networking Windows Hardware",
+    "text": "ping mengecek apakah host bisa dijangkau dan mengukur latency dasar. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "networking windows hardware",
+      "ping",
+      "ping",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_networking_windows_hardware_002_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: ping",
+    "category": "Networking Windows Hardware Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu ping; jelasin ping; ping itu maksudnya apa; kenapa ping terjadi; cara mengatasi ping. Jawabannya harus tetap fokus pada topik ping, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "ping",
+      "networking windows hardware"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_networking_windows_hardware_003",
+    "type": "universal",
+    "title": "Networking Windows Hardware: Tracert",
+    "category": "Networking Windows Hardware",
+    "text": "tracert menunjukkan jalur paket ke tujuan dan membantu mencari titik putus jaringan. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "networking windows hardware",
+      "tracert",
+      "tracert",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_networking_windows_hardware_003_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: tracert",
+    "category": "Networking Windows Hardware Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu tracert; jelasin tracert; tracert itu maksudnya apa; kenapa tracert terjadi; cara mengatasi tracert. Jawabannya harus tetap fokus pada topik tracert, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "tracert",
+      "networking windows hardware"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_networking_windows_hardware_004",
+    "type": "universal",
+    "title": "Networking Windows Hardware: Dns Error",
+    "category": "Networking Windows Hardware",
+    "text": "DNS error terjadi saat domain tidak bisa diterjemahkan ke IP. Coba flushdns, ganti DNS, atau cek router. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "networking windows hardware",
+      "dns error",
+      "dns",
+      "error",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_networking_windows_hardware_004_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: dns error",
+    "category": "Networking Windows Hardware Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu dns error; jelasin dns error; dns error itu maksudnya apa; kenapa dns error terjadi; cara mengatasi dns error. Jawabannya harus tetap fokus pada topik dns error, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "dns error",
+      "networking windows hardware"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_networking_windows_hardware_005",
+    "type": "universal",
+    "title": "Networking Windows Hardware: Wifi Putus Nyambung",
+    "category": "Networking Windows Hardware",
+    "text": "WiFi putus nyambung bisa karena driver, sinyal lemah, power saving, channel padat, atau router bermasalah. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "networking windows hardware",
+      "wifi putus nyambung",
+      "wifi",
+      "putus",
+      "nyambung",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_networking_windows_hardware_005_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: wifi putus nyambung",
+    "category": "Networking Windows Hardware Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu wifi putus nyambung; jelasin wifi putus nyambung; wifi putus nyambung itu maksudnya apa; kenapa wifi putus nyambung terjadi; cara mengatasi wifi putus nyambung. Jawabannya harus tetap fokus pada topik wifi putus nyambung, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "wifi putus nyambung",
+      "networking windows hardware"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_networking_windows_hardware_006",
+    "type": "universal",
+    "title": "Networking Windows Hardware: Ram Tinggi",
+    "category": "Networking Windows Hardware",
+    "text": "RAM tinggi bisa karena browser tab, startup app, service background, atau memory leak aplikasi. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "networking windows hardware",
+      "ram tinggi",
+      "ram",
+      "tinggi",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_networking_windows_hardware_006_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: ram tinggi",
+    "category": "Networking Windows Hardware Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu ram tinggi; jelasin ram tinggi; ram tinggi itu maksudnya apa; kenapa ram tinggi terjadi; cara mengatasi ram tinggi. Jawabannya harus tetap fokus pada topik ram tinggi, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "ram tinggi",
+      "networking windows hardware"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_networking_windows_hardware_007",
+    "type": "universal",
+    "title": "Networking Windows Hardware: Laptop Panas",
+    "category": "Networking Windows Hardware",
+    "text": "Laptop panas saat gaming bisa karena beban GPU/CPU, debu, airflow buruk, thermal paste, atau mode performance. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "networking windows hardware",
+      "laptop panas",
+      "laptop",
+      "panas",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_networking_windows_hardware_007_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: laptop panas",
+    "category": "Networking Windows Hardware Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu laptop panas; jelasin laptop panas; laptop panas itu maksudnya apa; kenapa laptop panas terjadi; cara mengatasi laptop panas. Jawabannya harus tetap fokus pada topik laptop panas, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "laptop panas",
+      "networking windows hardware"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_networking_windows_hardware_008",
+    "type": "universal",
+    "title": "Networking Windows Hardware: Monitor External",
+    "category": "Networking Windows Hardware",
+    "text": "Monitor external perlu cek kabel, refresh rate, port, driver GPU, dan setting display Windows. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "networking windows hardware",
+      "monitor external",
+      "monitor",
+      "external",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_networking_windows_hardware_008_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: monitor external",
+    "category": "Networking Windows Hardware Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu monitor external; jelasin monitor external; monitor external itu maksudnya apa; kenapa monitor external terjadi; cara mengatasi monitor external. Jawabannya harus tetap fokus pada topik monitor external, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "monitor external",
+      "networking windows hardware"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_networking_windows_hardware_009",
+    "type": "universal",
+    "title": "Networking Windows Hardware: Windows Update",
+    "category": "Networking Windows Hardware",
+    "text": "Windows update bisa memperbaiki bug tapi kadang memunculkan issue driver. Buat restore point sebelum update besar. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "networking windows hardware",
+      "windows update",
+      "windows",
+      "update",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_networking_windows_hardware_009_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: windows update",
+    "category": "Networking Windows Hardware Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu windows update; jelasin windows update; windows update itu maksudnya apa; kenapa windows update terjadi; cara mengatasi windows update. Jawabannya harus tetap fokus pada topik windows update, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "windows update",
+      "networking windows hardware"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_networking_windows_hardware_010",
+    "type": "universal",
+    "title": "Networking Windows Hardware: Terminal Font Rusak",
+    "category": "Networking Windows Hardware",
+    "text": "Font terminal rusak bisa karena font tidak mendukung glyph, encoding, tema prompt, atau Nerd Font belum dipasang. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "networking windows hardware",
+      "terminal font rusak",
+      "terminal",
+      "font",
+      "rusak",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_networking_windows_hardware_010_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: terminal font rusak",
+    "category": "Networking Windows Hardware Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu terminal font rusak; jelasin terminal font rusak; terminal font rusak itu maksudnya apa; kenapa terminal font rusak terjadi; cara mengatasi terminal font rusak. Jawabannya harus tetap fokus pada topik terminal font rusak, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "terminal font rusak",
+      "networking windows hardware"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_academic_productivity_001",
+    "type": "universal",
+    "title": "Academic Productivity: Laporan Magang",
+    "category": "Academic Productivity",
+    "text": "Laporan magang sebaiknya berisi identitas, profil instansi, kegiatan harian, analisis pekerjaan, kendala, solusi, dan kesimpulan. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "academic productivity",
+      "laporan magang",
+      "laporan",
+      "magang",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_academic_productivity_001_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: laporan magang",
+    "category": "Academic Productivity Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu laporan magang; jelasin laporan magang; laporan magang itu maksudnya apa; kenapa laporan magang terjadi; cara mengatasi laporan magang. Jawabannya harus tetap fokus pada topik laporan magang, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "laporan magang",
+      "academic productivity"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_academic_productivity_002",
+    "type": "universal",
+    "title": "Academic Productivity: Presentasi Ppt",
+    "category": "Academic Productivity",
+    "text": "Presentasi yang baik punya alur masalah, tujuan, metode, hasil, analisis, kesimpulan, dan visual yang tidak terlalu padat. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "academic productivity",
+      "presentasi ppt",
+      "presentasi",
+      "ppt",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_academic_productivity_002_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: presentasi ppt",
+    "category": "Academic Productivity Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu presentasi ppt; jelasin presentasi ppt; presentasi ppt itu maksudnya apa; kenapa presentasi ppt terjadi; cara mengatasi presentasi ppt. Jawabannya harus tetap fokus pada topik presentasi ppt, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "presentasi ppt",
+      "academic productivity"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_academic_productivity_003",
+    "type": "universal",
+    "title": "Academic Productivity: Essay",
+    "category": "Academic Productivity",
+    "text": "Essay perlu tesis utama, argumen, bukti, analisis, dan penutup yang menjawab pertanyaan. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "academic productivity",
+      "essay",
+      "essay",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_academic_productivity_003_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: essay",
+    "category": "Academic Productivity Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu essay; jelasin essay; essay itu maksudnya apa; kenapa essay terjadi; cara mengatasi essay. Jawabannya harus tetap fokus pada topik essay, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "essay",
+      "academic productivity"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_academic_productivity_004",
+    "type": "universal",
+    "title": "Academic Productivity: Ringkasan Materi",
+    "category": "Academic Productivity",
+    "text": "Ringkasan materi harus mengambil poin inti, istilah penting, rumus/konsep utama, dan contoh penerapan. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "academic productivity",
+      "ringkasan materi",
+      "ringkasan",
+      "materi",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_academic_productivity_004_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: ringkasan materi",
+    "category": "Academic Productivity Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu ringkasan materi; jelasin ringkasan materi; ringkasan materi itu maksudnya apa; kenapa ringkasan materi terjadi; cara mengatasi ringkasan materi. Jawabannya harus tetap fokus pada topik ringkasan materi, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "ringkasan materi",
+      "academic productivity"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_academic_productivity_005",
+    "type": "universal",
+    "title": "Academic Productivity: Quiz Pilihan Ganda",
+    "category": "Academic Productivity",
+    "text": "Untuk pilihan ganda, pahami kata kunci soal, eliminasi opsi salah, lalu pilih jawaban paling sesuai konsep. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "academic productivity",
+      "quiz pilihan ganda",
+      "quiz",
+      "pilihan",
+      "ganda",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_academic_productivity_005_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: quiz pilihan ganda",
+    "category": "Academic Productivity Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu quiz pilihan ganda; jelasin quiz pilihan ganda; quiz pilihan ganda itu maksudnya apa; kenapa quiz pilihan ganda terjadi; cara mengatasi quiz pilihan ganda. Jawabannya harus tetap fokus pada topik quiz pilihan ganda, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "quiz pilihan ganda",
+      "academic productivity"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_academic_productivity_006",
+    "type": "universal",
+    "title": "Academic Productivity: Flowchart",
+    "category": "Academic Productivity",
+    "text": "Flowchart menggambarkan proses memakai simbol start/end, process, decision, input/output, dan panah alur. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "academic productivity",
+      "flowchart",
+      "flowchart",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_academic_productivity_006_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: flowchart",
+    "category": "Academic Productivity Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu flowchart; jelasin flowchart; flowchart itu maksudnya apa; kenapa flowchart terjadi; cara mengatasi flowchart. Jawabannya harus tetap fokus pada topik flowchart, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "flowchart",
+      "academic productivity"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_academic_productivity_007",
+    "type": "universal",
+    "title": "Academic Productivity: Iot Project",
+    "category": "Academic Productivity",
+    "text": "Project IoT perlu sensor, mikrokontroler, aktuator, koneksi, backend, dashboard, dan skenario pengujian. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "academic productivity",
+      "iot project",
+      "iot",
+      "project",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_academic_productivity_007_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: iot project",
+    "category": "Academic Productivity Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu iot project; jelasin iot project; iot project itu maksudnya apa; kenapa iot project terjadi; cara mengatasi iot project. Jawabannya harus tetap fokus pada topik iot project, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "iot project",
+      "academic productivity"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_academic_productivity_008",
+    "type": "universal",
+    "title": "Academic Productivity: Ftth Gpon",
+    "category": "Academic Productivity",
+    "text": "FTTH GPON melibatkan OLT, ODC, ODP, ONT, splitter, link budget, rise time budget, dan BER. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "academic productivity",
+      "ftth gpon",
+      "ftth",
+      "gpon",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_academic_productivity_008_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: ftth gpon",
+    "category": "Academic Productivity Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu ftth gpon; jelasin ftth gpon; ftth gpon itu maksudnya apa; kenapa ftth gpon terjadi; cara mengatasi ftth gpon. Jawabannya harus tetap fokus pada topik ftth gpon, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "ftth gpon",
+      "academic productivity"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_academic_productivity_009",
+    "type": "universal",
+    "title": "Academic Productivity: Siskom",
+    "category": "Academic Productivity",
+    "text": "Sistem komunikasi sering membahas transmisi, kanal, modulasi, noise, bandwidth, dan performa sinyal. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "academic productivity",
+      "siskom",
+      "siskom",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_academic_productivity_009_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: siskom",
+    "category": "Academic Productivity Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu siskom; jelasin siskom; siskom itu maksudnya apa; kenapa siskom terjadi; cara mengatasi siskom. Jawabannya harus tetap fokus pada topik siskom, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "siskom",
+      "academic productivity"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_academic_productivity_010",
+    "type": "universal",
+    "title": "Academic Productivity: Debug Laporan",
+    "category": "Academic Productivity",
+    "text": "Jika laporan terasa kurang, cek kesesuaian format, kelengkapan data, analisis hasil, dan bukti lampiran. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "academic productivity",
+      "debug laporan",
+      "debug",
+      "laporan",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_academic_productivity_010_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: debug laporan",
+    "category": "Academic Productivity Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu debug laporan; jelasin debug laporan; debug laporan itu maksudnya apa; kenapa debug laporan terjadi; cara mengatasi debug laporan. Jawabannya harus tetap fokus pada topik debug laporan, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "debug laporan",
+      "academic productivity"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_general_knowledge_science_001",
+    "type": "universal",
+    "title": "General Knowledge Science: Metode Ilmiah",
+    "category": "General Knowledge Science",
+    "text": "Metode ilmiah mencakup observasi, pertanyaan, hipotesis, eksperimen, analisis data, dan kesimpulan. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "general knowledge science",
+      "metode ilmiah",
+      "metode",
+      "ilmiah",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_general_knowledge_science_001_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: metode ilmiah",
+    "category": "General Knowledge Science Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu metode ilmiah; jelasin metode ilmiah; metode ilmiah itu maksudnya apa; kenapa metode ilmiah terjadi; cara mengatasi metode ilmiah. Jawabannya harus tetap fokus pada topik metode ilmiah, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "metode ilmiah",
+      "general knowledge science"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_general_knowledge_science_002",
+    "type": "universal",
+    "title": "General Knowledge Science: Critical Thinking",
+    "category": "General Knowledge Science",
+    "text": "Critical thinking berarti memeriksa klaim, bukti, asumsi, bias, dan alternatif sebelum percaya. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "general knowledge science",
+      "critical thinking",
+      "critical",
+      "thinking",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_general_knowledge_science_002_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: critical thinking",
+    "category": "General Knowledge Science Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu critical thinking; jelasin critical thinking; critical thinking itu maksudnya apa; kenapa critical thinking terjadi; cara mengatasi critical thinking. Jawabannya harus tetap fokus pada topik critical thinking, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "critical thinking",
+      "general knowledge science"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_general_knowledge_science_003",
+    "type": "universal",
+    "title": "General Knowledge Science: Data Cleaning",
+    "category": "General Knowledge Science",
+    "text": "Data cleaning memperbaiki data kosong, duplikat, typo, format tidak konsisten, dan outlier yang tidak wajar. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "general knowledge science",
+      "data cleaning",
+      "data",
+      "cleaning",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_general_knowledge_science_003_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: data cleaning",
+    "category": "General Knowledge Science Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu data cleaning; jelasin data cleaning; data cleaning itu maksudnya apa; kenapa data cleaning terjadi; cara mengatasi data cleaning. Jawabannya harus tetap fokus pada topik data cleaning, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "data cleaning",
+      "general knowledge science"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_general_knowledge_science_004",
+    "type": "universal",
+    "title": "General Knowledge Science: Statistik Dasar",
+    "category": "General Knowledge Science",
+    "text": "Statistik dasar memakai mean, median, modus, range, varians, dan standar deviasi untuk memahami data. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "general knowledge science",
+      "statistik dasar",
+      "statistik",
+      "dasar",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_general_knowledge_science_004_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: statistik dasar",
+    "category": "General Knowledge Science Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu statistik dasar; jelasin statistik dasar; statistik dasar itu maksudnya apa; kenapa statistik dasar terjadi; cara mengatasi statistik dasar. Jawabannya harus tetap fokus pada topik statistik dasar, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "statistik dasar",
+      "general knowledge science"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_general_knowledge_science_005",
+    "type": "universal",
+    "title": "General Knowledge Science: Probabilitas",
+    "category": "General Knowledge Science",
+    "text": "Probabilitas mengukur kemungkinan kejadian antara 0 sampai 1. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "general knowledge science",
+      "probabilitas",
+      "probabilitas",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_general_knowledge_science_005_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: probabilitas",
+    "category": "General Knowledge Science Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu probabilitas; jelasin probabilitas; probabilitas itu maksudnya apa; kenapa probabilitas terjadi; cara mengatasi probabilitas. Jawabannya harus tetap fokus pada topik probabilitas, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "probabilitas",
+      "general knowledge science"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_general_knowledge_science_006",
+    "type": "universal",
+    "title": "General Knowledge Science: Energi Listrik",
+    "category": "General Knowledge Science",
+    "text": "Energi listrik dihitung dari daya dikali waktu. Satuan umum adalah watt-hour atau kilowatt-hour. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "general knowledge science",
+      "energi listrik",
+      "energi",
+      "listrik",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_general_knowledge_science_006_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: energi listrik",
+    "category": "General Knowledge Science Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu energi listrik; jelasin energi listrik; energi listrik itu maksudnya apa; kenapa energi listrik terjadi; cara mengatasi energi listrik. Jawabannya harus tetap fokus pada topik energi listrik, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "energi listrik",
+      "general knowledge science"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_general_knowledge_science_007",
+    "type": "universal",
+    "title": "General Knowledge Science: Internet",
+    "category": "General Knowledge Science",
+    "text": "Internet adalah jaringan global yang menghubungkan perangkat memakai protokol seperti IP, TCP, UDP, DNS, dan HTTP. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "general knowledge science",
+      "internet",
+      "internet",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_general_knowledge_science_007_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: internet",
+    "category": "General Knowledge Science Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu internet; jelasin internet; internet itu maksudnya apa; kenapa internet terjadi; cara mengatasi internet. Jawabannya harus tetap fokus pada topik internet, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "internet",
+      "general knowledge science"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_general_knowledge_science_008",
+    "type": "universal",
+    "title": "General Knowledge Science: Cloud Computing",
+    "category": "General Knowledge Science",
+    "text": "Cloud computing menyediakan server, storage, database, dan layanan komputasi lewat internet. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "general knowledge science",
+      "cloud computing",
+      "cloud",
+      "computing",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_general_knowledge_science_008_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: cloud computing",
+    "category": "General Knowledge Science Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu cloud computing; jelasin cloud computing; cloud computing itu maksudnya apa; kenapa cloud computing terjadi; cara mengatasi cloud computing. Jawabannya harus tetap fokus pada topik cloud computing, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "cloud computing",
+      "general knowledge science"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_general_knowledge_science_009",
+    "type": "universal",
+    "title": "General Knowledge Science: Privacy Data",
+    "category": "General Knowledge Science",
+    "text": "Privasi data berarti mengontrol data pribadi: apa yang dikumpulkan, dipakai untuk apa, disimpan di mana, dan siapa yang akses. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "general knowledge science",
+      "privacy data",
+      "privacy",
+      "data",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_general_knowledge_science_009_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: privacy data",
+    "category": "General Knowledge Science Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu privacy data; jelasin privacy data; privacy data itu maksudnya apa; kenapa privacy data terjadi; cara mengatasi privacy data. Jawabannya harus tetap fokus pada topik privacy data, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "privacy data",
+      "general knowledge science"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_general_knowledge_science_010",
+    "type": "universal",
+    "title": "General Knowledge Science: Bias Informasi",
+    "category": "General Knowledge Science",
+    "text": "Bias informasi muncul saat data/sumber tidak seimbang. Bandingkan beberapa sumber sebelum menyimpulkan. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "general knowledge science",
+      "bias informasi",
+      "bias",
+      "informasi",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_general_knowledge_science_010_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: bias informasi",
+    "category": "General Knowledge Science Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu bias informasi; jelasin bias informasi; bias informasi itu maksudnya apa; kenapa bias informasi terjadi; cara mengatasi bias informasi. Jawabannya harus tetap fokus pada topik bias informasi, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "bias informasi",
+      "general knowledge science"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_daily_assistant_001",
+    "type": "universal",
+    "title": "Daily Assistant: Atur Prioritas",
+    "category": "Daily Assistant",
+    "text": "Atur prioritas dengan membedakan urgent, important, bisa ditunda, dan bisa dihapus. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "daily assistant",
+      "atur prioritas",
+      "atur",
+      "prioritas",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_daily_assistant_001_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: atur prioritas",
+    "category": "Daily Assistant Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu atur prioritas; jelasin atur prioritas; atur prioritas itu maksudnya apa; kenapa atur prioritas terjadi; cara mengatasi atur prioritas. Jawabannya harus tetap fokus pada topik atur prioritas, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "atur prioritas",
+      "daily assistant"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_daily_assistant_002",
+    "type": "universal",
+    "title": "Daily Assistant: Belajar Coding",
+    "category": "Daily Assistant",
+    "text": "Belajar coding efektif dimulai dari konsep dasar, latihan kecil, project nyata, debugging, dan review ulang. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "daily assistant",
+      "belajar coding",
+      "belajar",
+      "coding",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_daily_assistant_002_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: belajar coding",
+    "category": "Daily Assistant Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu belajar coding; jelasin belajar coding; belajar coding itu maksudnya apa; kenapa belajar coding terjadi; cara mengatasi belajar coding. Jawabannya harus tetap fokus pada topik belajar coding, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "belajar coding",
+      "daily assistant"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_daily_assistant_003",
+    "type": "universal",
+    "title": "Daily Assistant: Overthinking",
+    "category": "Daily Assistant",
+    "text": "Saat overthinking, tulis masalahnya, pisahkan fakta dan asumsi, pilih satu aksi kecil, lalu evaluasi setelah selesai. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "daily assistant",
+      "overthinking",
+      "overthinking",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_daily_assistant_003_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: overthinking",
+    "category": "Daily Assistant Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu overthinking; jelasin overthinking; overthinking itu maksudnya apa; kenapa overthinking terjadi; cara mengatasi overthinking. Jawabannya harus tetap fokus pada topik overthinking, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "overthinking",
+      "daily assistant"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_daily_assistant_004",
+    "type": "universal",
+    "title": "Daily Assistant: Motivasi Belajar",
+    "category": "Daily Assistant",
+    "text": "Motivasi sering muncul setelah mulai. Mulai dari tugas kecil 10 menit lebih efektif daripada menunggu mood sempurna. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "daily assistant",
+      "motivasi belajar",
+      "motivasi",
+      "belajar",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_daily_assistant_004_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: motivasi belajar",
+    "category": "Daily Assistant Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu motivasi belajar; jelasin motivasi belajar; motivasi belajar itu maksudnya apa; kenapa motivasi belajar terjadi; cara mengatasi motivasi belajar. Jawabannya harus tetap fokus pada topik motivasi belajar, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "motivasi belajar",
+      "daily assistant"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_daily_assistant_005",
+    "type": "universal",
+    "title": "Daily Assistant: Komunikasi Kantor",
+    "category": "Daily Assistant",
+    "text": "Komunikasi kantor yang aman: sopan, jelas, ringkas, konfirmasi ulang jika ragu, dan jangan sok tahu. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "daily assistant",
+      "komunikasi kantor",
+      "komunikasi",
+      "kantor",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_daily_assistant_005_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: komunikasi kantor",
+    "category": "Daily Assistant Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu komunikasi kantor; jelasin komunikasi kantor; komunikasi kantor itu maksudnya apa; kenapa komunikasi kantor terjadi; cara mengatasi komunikasi kantor. Jawabannya harus tetap fokus pada topik komunikasi kantor, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "komunikasi kantor",
+      "daily assistant"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_daily_assistant_006",
+    "type": "universal",
+    "title": "Daily Assistant: Introvert Kerja",
+    "category": "Daily Assistant",
+    "text": "Introvert tetap bisa bekerja baik dengan persiapan, catatan pertanyaan, komunikasi tertulis, dan waktu recharge. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "daily assistant",
+      "introvert kerja",
+      "introvert",
+      "kerja",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_daily_assistant_006_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: introvert kerja",
+    "category": "Daily Assistant Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu introvert kerja; jelasin introvert kerja; introvert kerja itu maksudnya apa; kenapa introvert kerja terjadi; cara mengatasi introvert kerja. Jawabannya harus tetap fokus pada topik introvert kerja, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "introvert kerja",
+      "daily assistant"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_daily_assistant_007",
+    "type": "universal",
+    "title": "Daily Assistant: Rencana Harian",
+    "category": "Daily Assistant",
+    "text": "Rencana harian sederhana: tiga tugas utama, satu tugas ringan, satu waktu istirahat, dan evaluasi malam. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "daily assistant",
+      "rencana harian",
+      "rencana",
+      "harian",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_daily_assistant_007_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: rencana harian",
+    "category": "Daily Assistant Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu rencana harian; jelasin rencana harian; rencana harian itu maksudnya apa; kenapa rencana harian terjadi; cara mengatasi rencana harian. Jawabannya harus tetap fokus pada topik rencana harian, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "rencana harian",
+      "daily assistant"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_daily_assistant_008",
+    "type": "universal",
+    "title": "Daily Assistant: Bekal Kantor",
+    "category": "Daily Assistant",
+    "text": "Bekal kantor ideal praktis, tidak mudah tumpah, cukup protein, dan tidak terlalu bau menyengat. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "daily assistant",
+      "bekal kantor",
+      "bekal",
+      "kantor",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_daily_assistant_008_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: bekal kantor",
+    "category": "Daily Assistant Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu bekal kantor; jelasin bekal kantor; bekal kantor itu maksudnya apa; kenapa bekal kantor terjadi; cara mengatasi bekal kantor. Jawabannya harus tetap fokus pada topik bekal kantor, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "bekal kantor",
+      "daily assistant"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_daily_assistant_009",
+    "type": "universal",
+    "title": "Daily Assistant: Mood Buruk",
+    "category": "Daily Assistant",
+    "text": "Kalau mood buruk, validasi dulu perasaan, lakukan hal kecil yang bisa dikontrol, lalu jangan ambil keputusan besar saat emosi. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "daily assistant",
+      "mood buruk",
+      "mood",
+      "buruk",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_daily_assistant_009_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: mood buruk",
+    "category": "Daily Assistant Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu mood buruk; jelasin mood buruk; mood buruk itu maksudnya apa; kenapa mood buruk terjadi; cara mengatasi mood buruk. Jawabannya harus tetap fokus pada topik mood buruk, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "mood buruk",
+      "daily assistant"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  },
+  {
+    "id": "v13_1_daily_assistant_010",
+    "type": "universal",
+    "title": "Daily Assistant: Teman Ngobrol",
+    "category": "Daily Assistant",
+    "text": "Saat user butuh teman ngobrol, respons harus hangat, tidak menghakimi, dan membantu merapikan pikiran. Jika user bertanya dengan gaya santai atau typo, jawab sesuai inti pertanyaan: jelaskan penyebab utama, langkah praktis, dan cara mengecek hasilnya.",
+    "tags": [
+      "daily assistant",
+      "teman ngobrol",
+      "teman",
+      "ngobrol",
+      "universal",
+      "nusamind"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.84
+  },
+  {
+    "id": "v13_1_daily_assistant_010_variants",
+    "type": "universal",
+    "title": "Variasi pertanyaan: teman ngobrol",
+    "category": "Daily Assistant Query Variants",
+    "text": "Variasi pertanyaan user yang harus dipahami: apa itu teman ngobrol; jelasin teman ngobrol; teman ngobrol itu maksudnya apa; kenapa teman ngobrol terjadi; cara mengatasi teman ngobrol. Jawabannya harus tetap fokus pada topik teman ngobrol, jangan melebar ke topik lain.",
+    "tags": [
+      "query variant",
+      "bahasa santai",
+      "teman ngobrol",
+      "daily assistant"
+    ],
+    "source": "NusaMind Universal Expansion V13.1",
+    "confidence": 0.8
+  }
+]

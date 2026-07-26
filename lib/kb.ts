@@ -1,0 +1,2 @@
+import { getDatabase } from './db';
+export function setKnowledgeState(id:string,title:string,version:string,status:'active'|'deprecated'|'quarantined',checksum=''){getDatabase().prepare(`INSERT INTO knowledge(id,title,version,status,checksum,updated_at) VALUES(?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET title=excluded.title,version=excluded.version,status=excluded.status,checksum=excluded.checksum,updated_at=excluded.updated_at`).run(id,title,version,status,checksum,new Date().toISOString());return {id,status,version};}

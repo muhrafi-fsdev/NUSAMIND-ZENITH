@@ -1,0 +1,7 @@
+{
+  "targetedParsing": true,
+  "ocrFallback": true,
+  "confidenceRequired": true,
+  "noInventedText": true,
+  "release": "13.38.0"
+}

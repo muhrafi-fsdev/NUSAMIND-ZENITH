@@ -1,0 +1,7 @@
+﻿phase_order,phase_name,main_goal,completion_definition,release_blocker,primary_reference
+1,Prompt Platform Foundation,"Registry, compiler, lifecycle, Qwen adapter, trace",Semua prompt production versioned dan adapter Qwen lulus,Yes,https://www.promptingguide.ai/prompts; https://www.promptingguide.ai/models
+2,Adaptive Prompting and Context Engineering,"Strategy router, context layers, budgets, compression, recall",Strategy/context benchmark lulus per model,Yes,https://www.promptingguide.ai/research; https://www.promptingguide.ai/agents/context-engineering
+3,Workflow and Agent Execution,"Workflow-agent routing, tools, ReAct, planning, checkpoints, deep agents",Expected-state dan recovery tests lulus,Yes,https://www.promptingguide.ai/agents
+4,RAG Faithfulness and Security,"Faithfulness, evidence status, injection, leakage, permission",Critical adversarial attack success = 0,Yes,https://www.promptingguide.ai/research/rag; https://www.promptingguide.ai/prompts/adversarial-prompting/prompt-injection
+5,Prompt Evaluation and Research,"Prompt lab, optimizer, synthetic quality, trustworthiness, research registry",Frozen benchmark dan research gate lulus,Yes,https://www.promptingguide.ai/research
+6,Edition Integration and Release,"Swift/Zenith/Apex profiles, resource, manifest, grand gate",Seluruh edition critical case lulus,Yes,https://www.promptingguide.ai/agents; https://www.promptingguide.ai/models

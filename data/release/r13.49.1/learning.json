@@ -1,0 +1,83 @@
+[
+  {
+    "module_order": "1",
+    "module_name": "Networking Foundations",
+    "topics": "TCP/IP, DNS, routing, ports, protocols",
+    "recommended_mode": "LEARN",
+    "prerequisites": "Basic computer use",
+    "evidence_required": "Quiz and packet-flow explanation",
+    "source_url": "https://github.com/farhanashrafdev/90DaysOfCyberSecurity"
+  },
+  {
+    "module_order": "2",
+    "module_name": "Security Fundamentals",
+    "topics": "CIA, authentication, access control, risk, common threats",
+    "recommended_mode": "LEARN",
+    "prerequisites": "Networking Foundations",
+    "evidence_required": "Scenario quiz",
+    "source_url": "https://github.com/farhanashrafdev/90DaysOfCyberSecurity"
+  },
+  {
+    "module_order": "3",
+    "module_name": "Linux for Security",
+    "topics": "Shell, permissions, processes, logs, hardening basics",
+    "recommended_mode": "LEARN/LAB_ONLY",
+    "prerequisites": "Security Fundamentals",
+    "evidence_required": "Local lab artifact",
+    "source_url": "https://github.com/farhanashrafdev/90DaysOfCyberSecurity"
+  },
+  {
+    "module_order": "4",
+    "module_name": "Python for Defensive Security",
+    "topics": "Parsing, automation, APIs, log processing",
+    "recommended_mode": "LEARN/LAB_ONLY",
+    "prerequisites": "Programming basics",
+    "evidence_required": "Reviewed script and tests",
+    "source_url": "https://github.com/farhanashrafdev/90DaysOfCyberSecurity"
+  },
+  {
+    "module_order": "5",
+    "module_name": "Traffic Analysis",
+    "topics": "Wireshark, tcpdump, PCAP, IDS concepts",
+    "recommended_mode": "LEARN/LAB_ONLY",
+    "prerequisites": "Networking Foundations",
+    "evidence_required": "PCAP analysis report",
+    "source_url": "https://github.com/farhanashrafdev/90DaysOfCyberSecurity"
+  },
+  {
+    "module_order": "6",
+    "module_name": "Version Control and Secure Development",
+    "topics": "Git, commits, secrets, review",
+    "recommended_mode": "LEARN",
+    "prerequisites": "Basic coding",
+    "evidence_required": "Repository exercise",
+    "source_url": "https://github.com/farhanashrafdev/90DaysOfCyberSecurity"
+  },
+  {
+    "module_order": "7",
+    "module_name": "SIEM and Log Analysis",
+    "topics": "ELK, events, timeline, correlation",
+    "recommended_mode": "DEFENSIVE_ANALYSIS",
+    "prerequisites": "Linux and Traffic Analysis",
+    "evidence_required": "Evidence-backed finding",
+    "source_url": "https://github.com/farhanashrafdev/90DaysOfCyberSecurity"
+  },
+  {
+    "module_order": "8",
+    "module_name": "Cloud Security Foundations",
+    "topics": "AWS, Azure, GCP identity and exposure",
+    "recommended_mode": "LEARN/DEFENSIVE_ANALYSIS",
+    "prerequisites": "Security Fundamentals",
+    "evidence_required": "Configuration review",
+    "source_url": "https://github.com/farhanashrafdev/90DaysOfCyberSecurity"
+  },
+  {
+    "module_order": "9",
+    "module_name": "Ethical Security Lab",
+    "topics": "Controlled vulnerable apps, CTF, remediation",
+    "recommended_mode": "LAB_ONLY",
+    "prerequisites": "All foundations",
+    "evidence_required": "Lab scope and report",
+    "source_url": "https://github.com/farhanashrafdev/90DaysOfCyberSecurity"
+  }
+]

@@ -1,0 +1,1119 @@
+{
+  "release": "13.38.0",
+  "version": "13.38.0",
+  "edition": "apex",
+  "mode": "expert-supervisor",
+  "shared": 20,
+  "editionItems": 16,
+  "total": 36,
+  "limits": {
+    "maxScenarios": 8,
+    "maxWorkbookFiles": 10,
+    "maxDocuments": 20,
+    "detail": "expert-supervisor",
+    "reserveMethod": "triangle-sensitivity"
+  },
+  "features": [
+    {
+      "id": "SHARED-1336-001",
+      "priority": 1,
+      "scope": "Core",
+      "category": "CLI Menu",
+      "name": "Insurance Finance Chat Mode",
+      "objective": "Memisahkan chat keuangan asuransi dari customer service biasa.",
+      "capability": "Mengaktifkan calculator, formula registry, financial evidence, serta disclaimer khusus.",
+      "chatMode": "Customer Service Asuransi > Keuangan Klaim dan Premi",
+      "menu": "Menu Utama > Mode Chat > Customer Service Asuransi",
+      "sample": "Saya ingin menghitung pembayaran klaim saya.",
+      "behavior": "AI membuat session khusus insurance_finance dan tidak mencampurkan context dengan chat umum.",
+      "implementation": "Tambahkan session_mode_id insurance_finance dan finance_context_policy.",
+      "components": [
+        "CLI menu",
+        "mode registry",
+        "SQLite session",
+        "context isolation"
+      ],
+      "calculationScope": "Seluruh perhitungan keuangan asuransi sesuai batas version.",
+      "inputs": "Mode, version, tujuan perhitungan, dan sumber angka.",
+      "acceptance": "Mode terlihat jelas pada header dan context antar-mode tidak bocor.",
+      "metrics": [
+        "mode_selection_accuracy",
+        "cross_mode_leak_rate"
+      ],
+      "risk": "Medium",
+      "limit": "Kemampuan mengikuti Swift, Zenith, atau Apex.",
+      "guardrail": "Mode baru tidak menaikkan izin akses data secara otomatis."
+    },
+    {
+      "id": "SHARED-1336-002",
+      "priority": 2,
+      "scope": "Core",
+      "category": "Routing",
+      "name": "Insurance Financial Intent Router",
+      "objective": "Mengenali jenis pertanyaan keuangan asuransi secara tepat.",
+      "capability": "Mendeteksi premi, expected loss, deductible, limit, refund, underinsurance, ratio, reserve, reinsurance, solvency, liquidity, investasi, dan reconciliation.",
+      "chatMode": "Keuangan Klaim dan Premi",
+      "menu": "Insurance Finance Router",
+      "sample": "Kenapa klaim Rp20 juta hanya dibayar Rp15 juta?",
+      "behavior": "AI mengklasifikasikan sebagai claim_payment_breakdown dan meminta input yang diperlukan.",
+      "implementation": "Gunakan hierarchical routing: insurance > finance > intent > complexity > evidence requirement.",
+      "components": [
+        "Intent taxonomy",
+        "paraphrase tests",
+        "complexity classifier"
+      ],
+      "calculationScope": "Routing ke calculator atau analyzer yang sesuai.",
+      "inputs": "Jenis pertanyaan, tingkat kompleksitas, angka, polis, dan status resmi.",
+      "acceptance": "Minimal 97% intent utama dikenali pada benchmark.",
+      "metrics": [
+        "intent_accuracy",
+        "wrong_formula_route",
+        "clarification_accuracy"
+      ],
+      "risk": "Medium",
+      "limit": "Swift menerima intent dasar; Zenith/Apex menerima intent lebih kompleks.",
+      "guardrail": "Pertanyaan ambigu harus diklarifikasi sebelum menghitung."
+    },
+    {
+      "id": "SHARED-1336-003",
+      "priority": 3,
+      "scope": "Core",
+      "category": "Calculation",
+      "name": "Deterministic Insurance Calculator",
+      "objective": "Memindahkan perhitungan dari tebakan model ke engine deterministik.",
+      "capability": "Model memilih formula, calculator menghitung, verifier memeriksa, lalu AI menjelaskan.",
+      "chatMode": "Keuangan Klaim dan Premi",
+      "menu": "Insurance Calculator",
+      "sample": "Hitung combined ratio dari data ini.",
+      "behavior": "AI mengekstrak input, memilih formula resmi, menghitung secara deterministik, dan menunjukkan hasil.",
+      "implementation": "Bangun calculator berbasis decimal arithmetic, typed inputs, formula IDs, dan unit validation.",
+      "components": [
+        "Calculator engine",
+        "decimal library",
+        "formula registry",
+        "unit normalizer"
+      ],
+      "calculationScope": "Expected loss, premi, deductible, limit, underinsurance, ratio, reserve, reinsurance, solvency, return.",
+      "inputs": "Input angka, unit, basis persentase, periode, dan formula context.",
+      "acceptance": "Hasil hitung dasar harus identik dengan expected result pada golden set.",
+      "metrics": [
+        "numeric_accuracy",
+        "formula_selection_accuracy",
+        "unit_error_rate"
+      ],
+      "risk": "Critical",
+      "limit": "Depth calculator berbeda menurut version.",
+      "guardrail": "Jangan menggunakan floating-point mentah untuk nilai finansial penting."
+    },
+    {
+      "id": "SHARED-1336-004",
+      "priority": 4,
+      "scope": "Core",
+      "category": "Formula Governance",
+      "name": "Insurance Financial Formula Registry",
+      "objective": "Menyimpan formula, definisi, input, output, asumsi, dan versi secara terstruktur.",
+      "capability": "Setiap hasil dapat ditelusuri ke formula ID dan versi formula.",
+      "chatMode": "Keuangan Klaim dan Premi",
+      "menu": "Diagnostics > Formula",
+      "sample": "Rumus apa yang kamu gunakan?",
+      "behavior": "AI menunjukkan nama formula, variabel, basis, dan asumsi tanpa mengarang.",
+      "implementation": "Buat formula registry dengan formula_id, expression, variables, domain, jurisdiction_scope, effective_date, and tests.",
+      "components": [
+        "Formula database",
+        "version registry",
+        "test cases"
+      ],
+      "calculationScope": "Seluruh formula yang diizinkan pada NusaMind.",
+      "inputs": "Formula version, jurisdiction, periode, dan source bila regulasi.",
+      "acceptance": "Tidak ada formula aktif tanpa unit test dan metadata.",
+      "metrics": [
+        "formula_coverage",
+        "stale_formula_rate",
+        "test_pass_rate"
+      ],
+      "risk": "High",
+      "limit": "Swift memakai formula dasar; Apex dapat memakai model analitis kompleks.",
+      "guardrail": "Formula regulasi harus mempunyai yurisdiksi dan tanggal berlaku."
+    },
+    {
+      "id": "SHARED-1336-005",
+      "priority": 5,
+      "scope": "Core",
+      "category": "Input Validation",
+      "name": "Financial Input and Locale Normalizer",
+      "objective": "Mencegah salah membaca angka Indonesia dan format dokumen.",
+      "capability": "Mengenali Rp1.000.000, 1,000,000, 5%, 0,05, jutaan, miliar, tahunan, dan bulanan.",
+      "chatMode": "Keuangan Klaim dan Premi",
+      "menu": "Input Parser",
+      "sample": "Premi 2,5 juta dan margin 12 persen.",
+      "behavior": "AI menormalisasi nilai, menampilkan interpretasi, dan meminta klarifikasi jika format ambigu.",
+      "implementation": "Gunakan locale-aware parser, currency/unit detector, percentage basis, dan period normalizer.",
+      "components": [
+        "Locale parser",
+        "currency dictionary",
+        "unit registry"
+      ],
+      "calculationScope": "Semua input sebelum masuk calculator.",
+      "inputs": "Mata uang, separator, skala, periode, dan basis persen.",
+      "acceptance": "Tidak ada kesalahan faktor 1.000 atau perbedaan koma/titik pada test.",
+      "metrics": [
+        "locale_parse_accuracy",
+        "unit_normalization_accuracy"
+      ],
+      "risk": "High",
+      "limit": "Semua version memakai normalizer yang sama.",
+      "guardrail": "Interpretasi angka ambigu harus ditampilkan sebelum perhitungan."
+    },
+    {
+      "id": "SHARED-1336-006",
+      "priority": 6,
+      "scope": "Core",
+      "category": "Input Completeness",
+      "name": "Missing Financial Data Detector",
+      "objective": "Mencegah AI memberikan hasil final saat input tidak cukup.",
+      "capability": "AI membuat daftar data tersedia, data kurang, serta apakah simulasi masih mungkin.",
+      "chatMode": "Keuangan Klaim dan Premi",
+      "menu": "Pre-Calculation Check",
+      "sample": "Berapa nilai klaim yang akan saya terima?",
+      "behavior": "AI meminta limit, deductible, nilai kerugian, hasil survey, underinsurance, dan depresiasi bila relevan.",
+      "implementation": "Gunakan required-input schema per formula dan critical-input gate.",
+      "components": [
+        "Formula registry",
+        "evidence map",
+        "clarification templates"
+      ],
+      "calculationScope": "Seluruh formula dan analysis flow.",
+      "inputs": "Input wajib, optional, default yang sah, dan evidence status.",
+      "acceptance": "False-final-answer rate harus nol saat input kritis hilang.",
+      "metrics": [
+        "missing_input_recall",
+        "false_final_answer_rate",
+        "clarification_quality"
+      ],
+      "risk": "Critical",
+      "limit": "Swift meminta input minimum; Apex dapat menawarkan beberapa scenario.",
+      "guardrail": "Default tidak boleh dibuat untuk variabel yang dapat mengubah hasil material."
+    },
+    {
+      "id": "SHARED-1336-007",
+      "priority": 7,
+      "scope": "Core",
+      "category": "Claim Finance",
+      "name": "Claim Payment Breakdown Engine",
+      "objective": "Menjelaskan perbedaan antara kerugian, limit, deductible, depresiasi, underinsurance, approved, dan paid.",
+      "capability": "AI menghasilkan breakdown numerik serta status simulasi atau resmi.",
+      "chatMode": "Keuangan Klaim dan Premi",
+      "menu": "Klaim > Payment Breakdown",
+      "sample": "Kerugian Rp20 juta, limit Rp16 juta, deductible Rp1 juta.",
+      "behavior": "AI menghitung sesuai urutan aturan dan menampilkan setiap pengurang.",
+      "implementation": "Bangun ordered calculation pipeline dan component ledger.",
+      "components": [
+        "Calculator",
+        "policy evidence",
+        "claim data",
+        "component registry"
+      ],
+      "calculationScope": "Loss, claimed, covered, deductible, depreciation, proportional payment, limit, approved, paid.",
+      "inputs": "Nilai kerugian, polis, deductible, limit, hasil survey, pembayaran sebelumnya.",
+      "acceptance": "Breakdown harus menjumlah ke hasil akhir dan setiap komponen memiliki sumber.",
+      "metrics": [
+        "payment_accuracy",
+        "component_reconciliation",
+        "explanation_quality"
+      ],
+      "risk": "Critical",
+      "limit": "Swift dasar; Zenith multi-komponen; Apex cross-document.",
+      "guardrail": "Simulasi tidak boleh ditampilkan sebagai keputusan pembayaran resmi."
+    },
+    {
+      "id": "SHARED-1336-008",
+      "priority": 8,
+      "scope": "Core",
+      "category": "Premium",
+      "name": "Premium Pricing Engine",
+      "objective": "Menghitung kebutuhan premi berdasarkan expected cost dan loading.",
+      "capability": "Membedakan pure premium, expense, acquisition, reinsurance, risk margin, profit margin, dan gross premium.",
+      "chatMode": "Keuangan Klaim dan Premi",
+      "menu": "Premi > Simulasi",
+      "sample": "Apakah premi Rp5 juta cukup untuk biaya klaim dan operasional?",
+      "behavior": "AI menunjukkan basis tiap loading dan membandingkan premium income dengan total expected cost.",
+      "implementation": "Gunakan formula templates untuk additive loading, sequential loading, margin-on-premium, dan markup-on-cost.",
+      "components": [
+        "Calculator",
+        "formula registry",
+        "pricing assumptions"
+      ],
+      "calculationScope": "Expected loss, pure premium, expense, commission, reinsurance, risk/profit loading.",
+      "inputs": "Frequency, severity, expenses, loading basis, policy count, period.",
+      "acceptance": "AI membedakan margin dari markup dan tidak memakai basis persen secara salah.",
+      "metrics": [
+        "premium_accuracy",
+        "loading_basis_accuracy",
+        "explanation_score"
+      ],
+      "risk": "High",
+      "limit": "Swift satu skenario; Zenith beberapa komponen; Apex sensitivity/portfolio.",
+      "guardrail": "Bukan penetapan tarif aktuaria resmi."
+    },
+    {
+      "id": "SHARED-1336-009",
+      "priority": 9,
+      "scope": "Core",
+      "category": "Underwriting",
+      "name": "Insurance Financial Ratio Analyzer",
+      "objective": "Memahami rasio underwriting dan hubungannya dengan laba.",
+      "capability": "Menghitung gross/net loss ratio, expense ratio, combined ratio, dan underwriting result.",
+      "chatMode": "Analisis Keuangan Asuransi",
+      "menu": "Finance > Underwriting",
+      "sample": "Combined ratio 108% tetapi laba bersih positif, kenapa?",
+      "behavior": "AI memisahkan underwriting result dari investment income, reserve movement, dan other income.",
+      "implementation": "Gunakan ratio analyzer dengan gross/net basis serta earned/written premium validation.",
+      "components": [
+        "Calculator",
+        "financial statement schema",
+        "period normalizer"
+      ],
+      "calculationScope": "Premium, claim, expense, ratio, underwriting profit/loss.",
+      "inputs": "Earned premium, incurred claim, expenses, ceded premium/recovery, period.",
+      "acceptance": "Basis gross/net dan written/earned tidak tertukar.",
+      "metrics": [
+        "ratio_accuracy",
+        "basis_error_rate",
+        "analytical_completeness"
+      ],
+      "risk": "High",
+      "limit": "Swift ratio dasar; Apex sustainability analysis.",
+      "guardrail": "Jangan menyimpulkan kesehatan perusahaan hanya dari combined ratio."
+    },
+    {
+      "id": "SHARED-1336-010",
+      "priority": 10,
+      "scope": "Core",
+      "category": "Reserve",
+      "name": "Reserve and IBNR Intelligence",
+      "objective": "Membedakan paid claim, outstanding claim, IBNR, IBNER, dan incurred claim.",
+      "capability": "AI dapat menghitung reserve dasar dan menjelaskan reserve strengthening/release.",
+      "chatMode": "Analisis Keuangan Asuransi",
+      "menu": "Finance > Reserve",
+      "sample": "Paid Rp200 miliar, outstanding Rp70 miliar, IBNR Rp40 miliar.",
+      "behavior": "AI menghitung incurred claim dan menjelaskan bahwa cadangan bukan kas.",
+      "implementation": "Bangun reserve calculator dan reserve movement ledger.",
+      "components": [
+        "Formula registry",
+        "reserve schema",
+        "optional triangle parser"
+      ],
+      "calculationScope": "Incurred claim, outstanding, IBNR, reserve development, present value.",
+      "inputs": "Paid, outstanding, IBNR, opening reserve, closing estimate, discount rate.",
+      "acceptance": "Perhitungan reserve dasar benar dan istilah tidak tertukar.",
+      "metrics": [
+        "reserve_accuracy",
+        "terminology_accuracy",
+        "false_liquidity_inference"
+      ],
+      "risk": "High",
+      "limit": "Swift hanya konsep dasar; Apex mendapat triangle/sensitivity.",
+      "guardrail": "Tidak menggantikan estimasi resmi aktuaris."
+    },
+    {
+      "id": "SHARED-1336-011",
+      "priority": 11,
+      "scope": "Core",
+      "category": "Reinsurance",
+      "name": "Reinsurance Financial Calculator",
+      "objective": "Menghitung pembagian risiko dan dampak finansial reasuransi.",
+      "capability": "Mendukung quota share, surplus dasar, dan excess of loss.",
+      "chatMode": "Analisis Keuangan Asuransi",
+      "menu": "Finance > Reinsurance",
+      "sample": "Hitung bagian perusahaan pada excess of loss ini.",
+      "behavior": "AI menjelaskan retention, attachment, layer limit, ceded, retained, dan uncovered amount.",
+      "implementation": "Gunakan treaty-type schemas dan layer calculator.",
+      "components": [
+        "Reinsurance calculator",
+        "treaty registry",
+        "counterparty metadata"
+      ],
+      "calculationScope": "Quota share, retained/ceded premium, claim share, excess of loss layer.",
+      "inputs": "Treaty type, percentage, retention, limit, claim amount, occurrence basis.",
+      "acceptance": "Pembagian total harus reconcile dengan nilai klaim.",
+      "metrics": [
+        "reinsurance_accuracy",
+        "layer_reconciliation",
+        "treaty_selection_accuracy"
+      ],
+      "risk": "High",
+      "limit": "Swift quota share/XoL sederhana; Apex struktur kompleks dan gap.",
+      "guardrail": "Recovery lebih kecil dari premi satu tahun bukan bukti reasuransi buruk."
+    },
+    {
+      "id": "SHARED-1336-012",
+      "priority": 12,
+      "scope": "Core",
+      "category": "Capital",
+      "name": "Solvency and Liquidity Analyzer",
+      "objective": "Membedakan kesehatan modal jangka panjang dan kemampuan kas jangka pendek.",
+      "capability": "Menghitung surplus modal, solvency ratio dasar, liquidity gap, dan stress scenario.",
+      "chatMode": "Analisis Keuangan Asuransi",
+      "menu": "Finance > Solvency dan Liquidity",
+      "sample": "Kenapa perusahaan solvabel tetapi klaim terlambat dibayar?",
+      "behavior": "AI menjelaskan kualitas aset, liquid assets, claim cash flow, dan timing recovery.",
+      "implementation": "Gunakan capital/liquidity schemas, stress assumptions, dan jurisdiction metadata.",
+      "components": [
+        "Capital data",
+        "liabilities",
+        "liquid assets",
+        "cash-flow schedule",
+        "regulatory source"
+      ],
+      "calculationScope": "Available capital, required capital, solvency ratio, liquidity coverage/gap.",
+      "inputs": "Aset diperkenankan, kewajiban, modal, kebutuhan modal, kas, arus klaim.",
+      "acceptance": "AI tidak mencampurkan solvabilitas dan likuiditas.",
+      "metrics": [
+        "solvency_accuracy",
+        "liquidity_reasoning",
+        "regulation_scope_accuracy"
+      ],
+      "risk": "High",
+      "limit": "Swift penjelasan konsep; Apex stress testing.",
+      "guardrail": "Angka regulasi harus sesuai yurisdiksi dan tanggal berlaku."
+    },
+    {
+      "id": "SHARED-1336-013",
+      "priority": 13,
+      "scope": "Core",
+      "category": "Investment",
+      "name": "Insurance Investment and ALM Analyzer",
+      "objective": "Memahami pengelolaan aset terhadap kewajiban asuransi.",
+      "capability": "Menganalisis investment income, yield, market value, duration mismatch, liquidity, dan interest-rate risk.",
+      "chatMode": "Analisis Keuangan Asuransi",
+      "menu": "Finance > Investment dan ALM",
+      "sample": "Apa dampak kenaikan suku bunga bagi perusahaan asuransi?",
+      "behavior": "AI menjelaskan penurunan nilai obligasi, reinvestment yield, liability sensitivity, dan liquidity.",
+      "implementation": "Bangun asset portfolio schema dan basic ALM scenario analyzer.",
+      "components": [
+        "Investment calculator",
+        "asset/liability metadata",
+        "scenario engine"
+      ],
+      "calculationScope": "Weighted return, market-value impact, mismatch, stress explanation.",
+      "inputs": "Nilai aset, yield, duration, cash-flow kewajiban, horizon.",
+      "acceptance": "Analisis menunjukkan sisi aset dan kewajiban, bukan hanya return.",
+      "metrics": [
+        "investment_accuracy",
+        "ALM_reasoning_score",
+        "missing_assumption_detection"
+      ],
+      "risk": "High",
+      "limit": "Swift pengetahuan dasar; Apex ALM multi-scenario.",
+      "guardrail": "Tidak memberikan instruksi investasi nyata atau transaksi otomatis."
+    },
+    {
+      "id": "SHARED-1336-014",
+      "priority": 14,
+      "scope": "Core",
+      "category": "Scenario Analysis",
+      "name": "Insurance Financial Scenario Engine",
+      "objective": "Membandingkan perubahan frequency, severity, premi, volume, reserve, dan investasi.",
+      "capability": "AI menghasilkan base, optimistic, adverse, dan stress scenario.",
+      "chatMode": "Analisis Keuangan Asuransi",
+      "menu": "Finance > Scenario",
+      "sample": "Apa dampaknya jika frekuensi klaim naik 10%?",
+      "behavior": "AI menghitung ulang expected loss, ratio, result, dan menampilkan asumsi.",
+      "implementation": "Gunakan scenario variables, immutable baseline, sensitivity table, dan comparison formatter.",
+      "components": [
+        "Calculator",
+        "formula registry",
+        "baseline snapshot",
+        "scenario manager"
+      ],
+      "calculationScope": "Single-variable, multi-variable, sensitivity, stress.",
+      "inputs": "Baseline lengkap, perubahan variabel, periode, dan hubungan antarvariabel.",
+      "acceptance": "Skenario tidak mengubah baseline dan seluruh hasil dapat direproduksi.",
+      "metrics": [
+        "scenario_accuracy",
+        "baseline_integrity",
+        "sensitivity_consistency"
+      ],
+      "risk": "High",
+      "limit": "Swift satu skenario; Zenith beberapa; Apex stress/sensitivity kompleks.",
+      "guardrail": "Skenario bukan prediksi pasti."
+    },
+    {
+      "id": "SHARED-1336-015",
+      "priority": 15,
+      "scope": "Core",
+      "category": "Evidence",
+      "name": "Financial Evidence and Source Separation",
+      "objective": "Membedakan angka user, polis, database, spreadsheet, calculator, estimasi, dan keputusan resmi.",
+      "capability": "Setiap angka pada jawaban memiliki source_type dan evidence pointer.",
+      "chatMode": "Keuangan Klaim dan Premi",
+      "menu": "Finance > Evidence",
+      "sample": "Angka Rp15 juta ini berasal dari mana?",
+      "behavior": "AI menampilkan sumber input serta mana yang merupakan hasil simulasi.",
+      "implementation": "Tambahkan financial_value provenance dan source precedence.",
+      "components": [
+        "Artifact evidence",
+        "claim/policy connectors",
+        "calculator trace"
+      ],
+      "calculationScope": "Seluruh jawaban finansial.",
+      "inputs": "File/page/sheet/row, system timestamp, user input, formula output.",
+      "acceptance": "Tidak ada angka yang salah dilabeli sebagai data resmi.",
+      "metrics": [
+        "source_label_accuracy",
+        "provenance_completeness",
+        "official_vs_simulation_error"
+      ],
+      "risk": "Critical",
+      "limit": "Semua version wajib memisahkan sumber.",
+      "guardrail": "Data pelanggan lain tidak boleh menjadi evidence."
+    },
+    {
+      "id": "SHARED-1336-016",
+      "priority": 16,
+      "scope": "Core",
+      "category": "Confidence",
+      "name": "Insurance Financial Confidence Calibration",
+      "objective": "Menghitung confidence berdasarkan kualitas formula dan bukti, bukan gaya bahasa model.",
+      "capability": "Confidence dibatasi oleh input completeness, policy match, calculator verification, freshness, dan interpretation uncertainty.",
+      "chatMode": "Keuangan Klaim dan Premi",
+      "menu": "Finance > Confidence",
+      "sample": "Seberapa yakin dengan hitungan ini?",
+      "behavior": "AI menjelaskan basis confidence dan menurunkannya bila ada satu faktor kritis gagal.",
+      "implementation": "Gunakan critical-gate calibration, bukan rata-rata sederhana.",
+      "components": [
+        "Confidence components",
+        "verifier results",
+        "benchmark calibration"
+      ],
+      "calculationScope": "Seluruh jawaban hitungan dan analisis.",
+      "inputs": "Formula status, input completeness, evidence, policy match, freshness, conflicts.",
+      "acceptance": "Tidak ada confidence tinggi pada input kritis yang hilang atau salah polis.",
+      "metrics": [
+        "calibration_error",
+        "false_high_confidence",
+        "confidence_consistency"
+      ],
+      "risk": "Critical",
+      "limit": "Swift menampilkan status sederhana; Apex breakdown komponen.",
+      "guardrail": "Confidence tidak berarti keputusan resmi atau peluang klaim diterima."
+    },
+    {
+      "id": "SHARED-1336-017",
+      "priority": 17,
+      "scope": "Core",
+      "category": "Response Design",
+      "name": "Insurance Financial Answer Templates",
+      "objective": "Menyesuaikan penjelasan untuk customer, staff, dan supervisor.",
+      "capability": "Template memisahkan hasil, input, formula, asumsi, evidence, status, dan next step.",
+      "chatMode": "Keuangan Klaim dan Premi",
+      "menu": "Response Controller",
+      "sample": "Jelaskan hitungan ini dengan bahasa sederhana.",
+      "behavior": "AI memilih customer explanation, staff calculation, atau expert analysis sesuai mode/role.",
+      "implementation": "Buat template level customer, staff, supervisor serta verbosity per version.",
+      "components": [
+        "Role/mode registry",
+        "formula trace",
+        "evidence layer"
+      ],
+      "calculationScope": "Seluruh output finansial.",
+      "inputs": "Role, mode, version, complexity, dan user preference.",
+      "acceptance": "Jawaban customer mudah dipahami tanpa menghilangkan batas penting.",
+      "metrics": [
+        "clarity_score",
+        "formula_transparency",
+        "role_template_accuracy"
+      ],
+      "risk": "Medium",
+      "limit": "Swift ringkas; Zenith detail operasional; Apex analitis.",
+      "guardrail": "Penyederhanaan tidak boleh mengubah makna formula atau polis."
+    },
+    {
+      "id": "SHARED-1336-018",
+      "priority": 18,
+      "scope": "Core",
+      "category": "Spreadsheet",
+      "name": "Insurance Financial Spreadsheet QA",
+      "objective": "Membaca data keuangan asuransi dari CSV/XLSX dengan aman.",
+      "capability": "Mendeteksi angka sebagai teks, range formula salah, hidden row, filter, unit ribuan, dan total tidak reconcile.",
+      "chatMode": "Analisis Keuangan Asuransi",
+      "menu": "Upload File > Spreadsheet Keuangan",
+      "sample": "Validasi total klaim dan combined ratio pada file ini.",
+      "behavior": "AI memeriksa tipe data, formula/value, hidden/filtered rows, locale, dan source range.",
+      "implementation": "Gunakan spreadsheet parser, formula inspector, numeric verifier, dan targeted range loading.",
+      "components": [
+        "Artifact workspace",
+        "spreadsheet engine",
+        "calculator"
+      ],
+      "calculationScope": "Table QA, ratio calculation, reconciliation, anomaly detection.",
+      "inputs": "Workbook/sheet/range, units, formula, filters, period.",
+      "acceptance": "Hasil spreadsheet sesuai perhitungan independen.",
+      "metrics": [
+        "spreadsheet_QA_accuracy",
+        "formula_error_recall",
+        "reconciliation_accuracy"
+      ],
+      "risk": "High",
+      "limit": "Swift file kecil; Zenith workbook standar; Apex multi-workbook.",
+      "guardrail": "Jangan mengubah spreadsheet tanpa preview, backup, dan izin."
+    },
+    {
+      "id": "SHARED-1336-019",
+      "priority": 19,
+      "scope": "Core",
+      "category": "Evaluation",
+      "name": "Insurance Financial Benchmark",
+      "objective": "Menguji formula, angka, data kurang, evidence, confidence, dan penjelasan.",
+      "capability": "Mencakup premi, klaim, ratio, reserve, reinsurance, solvency, liquidity, investment, dan spreadsheet.",
+      "chatMode": "Keuangan Klaim dan Premi",
+      "menu": "Release Test",
+      "sample": "Uji semua pertanyaan keuangan asuransi yang sebelumnya gagal.",
+      "behavior": "Release menghasilkan scorecard per domain dan version.",
+      "implementation": "Buat golden calculations, missing-data cases, conflict cases, adversarial numbers, dan human-reviewed analyses.",
+      "components": [
+        "Evaluator V2",
+        "calculator",
+        "formula registry",
+        "synthetic documents"
+      ],
+      "calculationScope": "Seluruh kemampuan V13.36.",
+      "inputs": "Expected input, formula, result, tolerance, evidence, prohibited conclusion.",
+      "acceptance": "Claim arithmetic 99%+, tidak ada official-decision palsu, dan critical tests lulus.",
+      "metrics": [
+        "numeric_accuracy",
+        "formula_accuracy",
+        "evidence_accuracy",
+        "confidence_calibration",
+        "false_official_decision"
+      ],
+      "risk": "Critical",
+      "limit": "Threshold disesuaikan per version.",
+      "guardrail": "Data benchmark harus sintetis atau sudah dimasking."
+    },
+    {
+      "id": "SHARED-1336-020",
+      "priority": 20,
+      "scope": "Core",
+      "category": "Release",
+      "name": "V13.36 Release Gate",
+      "objective": "Memastikan calculator dan financial reasoning benar-benar stabil.",
+      "capability": "Gate menjalankan check, build, migration, calculator tests, finance benchmark, security, privacy, dan regression V13.35.",
+      "chatMode": "Semua Mode",
+      "menu": "Release Pipeline",
+      "sample": "Rilis V13.36.",
+      "behavior": "Release ditolak jika ada kesalahan hitung material, privacy leak, atau keputusan finansial palsu.",
+      "implementation": "Tambahkan npm run gate:13.36 dengan laporan per version.",
+      "components": [
+        "Build system",
+        "evaluator",
+        "test datasets",
+        "security sandbox"
+      ],
+      "calculationScope": "Seluruh kemampuan V13.36.",
+      "inputs": "Semua test kritis dan regression sebelumnya.",
+      "acceptance": "Semua gate wajib lulus sebelum distribusi.",
+      "metrics": [
+        "gate_pass_rate",
+        "regression_escape_rate",
+        "critical_finance_error"
+      ],
+      "risk": "Critical",
+      "limit": "Semua version mengikuti gate yang relevan.",
+      "guardrail": "Keberadaan file/module bukan bukti fitur sudah selesai."
+    },
+    {
+      "id": "APEX-1336-001",
+      "priority": 1,
+      "scope": "Version-Specific",
+      "category": "Chat Mode",
+      "name": "Apex Insurance Financial Expert",
+      "objective": "Menjadikan Apex analis expert untuk keuangan, aktuaria, dan supervisor.",
+      "capability": "Menganalisis multi-product, underwriting, reserve, reinsurance, solvency, liquidity, investment, dan reconciliation.",
+      "chatMode": "Analisis Internal / Supervisor > Insurance Finance Expert",
+      "menu": "Mode Chat > Apex Insurance Finance",
+      "sample": "Analisis kesehatan finansial perusahaan asuransi ini.",
+      "behavior": "Apex menyusun analysis plan, evidence map, calculation model, dan limitation.",
+      "implementation": "Gunakan expert finance router, deep calculator plan, and claim-level verification.",
+      "components": [
+        "All shared V13.36 components",
+        "supervisor authorization",
+        "artifact graph"
+      ],
+      "calculationScope": "Multi-domain financial analysis.",
+      "inputs": "Financial statements, policies, claims, reserves, treaties, capital, investments.",
+      "acceptance": "Analisis dapat direproduksi dan setiap conclusion memiliki evidence.",
+      "metrics": [
+        "expert_accuracy",
+        "evidence_coverage",
+        "analytical_completeness"
+      ],
+      "risk": "High",
+      "limit": "Tidak menandatangani laporan atau membuat keputusan resmi.",
+      "guardrail": "Tidak menggantikan aktuaris, auditor, atau regulator."
+    },
+    {
+      "id": "APEX-1336-002",
+      "priority": 2,
+      "scope": "Version-Specific",
+      "category": "Pricing",
+      "name": "Apex Premium Adequacy and Sensitivity",
+      "objective": "Menganalisis kecukupan premi pada level produk atau portofolio.",
+      "capability": "Menggabungkan frequency, severity, expenses, commissions, reinsurance, margin, volume, dan retention.",
+      "chatMode": "Analisis Internal / Supervisor",
+      "menu": "Finance Expert > Pricing",
+      "sample": "Apakah premi produk ini memadai jika severity naik 20%?",
+      "behavior": "Apex menghitung baseline, sensitivitas, break-even, dan risiko asumsi.",
+      "implementation": "Gunakan premium model, scenario grid, and assumption registry.",
+      "components": [
+        "Pricing calculator",
+        "portfolio data",
+        "scenario engine"
+      ],
+      "calculationScope": "Multi-component dan multi-scenario pricing.",
+      "inputs": "Exposure, frequency, severity, expenses, commissions, treaty, margins, volume.",
+      "acceptance": "Hasil menunjukkan formula, basis, dan sensitivity.",
+      "metrics": [
+        "premium_adequacy_accuracy",
+        "sensitivity_consistency"
+      ],
+      "risk": "High",
+      "limit": "Tidak menetapkan tarif final.",
+      "guardrail": "Bias dan regulatory pricing constraints harus disebut bila relevan."
+    },
+    {
+      "id": "APEX-1336-003",
+      "priority": 3,
+      "scope": "Version-Specific",
+      "category": "Underwriting",
+      "name": "Apex Underwriting Profitability Analysis",
+      "objective": "Menganalisis profitabilitas underwriting secara menyeluruh.",
+      "capability": "Menghubungkan gross/net premium, claim, expenses, commission, reinsurance, reserve movement, dan volume.",
+      "chatMode": "Analisis Internal / Supervisor",
+      "menu": "Finance Expert > Underwriting",
+      "sample": "Kenapa loss ratio rendah tetapi produk masih rugi?",
+      "behavior": "Apex memeriksa seluruh cost stack dan perubahan reserve.",
+      "implementation": "Gunakan underwriting bridge dan multi-period comparison.",
+      "components": [
+        "Financial statements",
+        "ratio analyzer",
+        "reserve and treaty data"
+      ],
+      "calculationScope": "Multi-period/product underwriting.",
+      "inputs": "Earned/written premium, claims, expenses, commissions, reinsurance, reserves.",
+      "acceptance": "Bridge dari premium ke underwriting result reconcile.",
+      "metrics": [
+        "underwriting_bridge_accuracy",
+        "unexplained_variance"
+      ],
+      "risk": "High",
+      "limit": "Tidak mengabaikan basis gross/net dan periode.",
+      "guardrail": "Laba investasi harus dipisahkan dari underwriting."
+    },
+    {
+      "id": "APEX-1336-004",
+      "priority": 4,
+      "scope": "Version-Specific",
+      "category": "Reserve",
+      "name": "Apex Reserve Development and Triangle Analysis",
+      "objective": "Menganalisis development klaim dan indikasi kecukupan cadangan.",
+      "capability": "Mendukung triangle dasar, development factors, adverse/favorable development, dan sensitivity.",
+      "chatMode": "Analisis Internal / Supervisor",
+      "menu": "Finance Expert > Reserve",
+      "sample": "Triangle tahun lama terus berkembang lebih tinggi, apa artinya?",
+      "behavior": "Apex menunjukkan pola, asumsi, uncertainty, dan data yang belum cukup.",
+      "implementation": "Gunakan triangle parser, development factor calculator, and backtesting.",
+      "components": [
+        "Reserve triangles",
+        "calculator",
+        "benchmark cases"
+      ],
+      "calculationScope": "Basic deterministic triangle and sensitivity.",
+      "inputs": "Accident/development periods, paid/incurred data, selected factors.",
+      "acceptance": "Perhitungan triangle dapat direproduksi dan tidak dianggap reserve resmi.",
+      "metrics": [
+        "triangle_accuracy",
+        "backtest_error",
+        "reserve_reasoning_score"
+      ],
+      "risk": "Critical",
+      "limit": "Tidak menghasilkan official reserve sign-off.",
+      "guardrail": "Metode dan limitation harus ditampilkan."
+    },
+    {
+      "id": "APEX-1336-005",
+      "priority": 5,
+      "scope": "Version-Specific",
+      "category": "Reinsurance",
+      "name": "Apex Reinsurance Program Analysis",
+      "objective": "Menganalisis beberapa treaty/layer dan gap terhadap tail risk.",
+      "capability": "Menghitung retained exposure, recoveries, exhaustion, counterparty concentration, dan timing gap.",
+      "chatMode": "Analisis Internal / Supervisor",
+      "menu": "Finance Expert > Reinsurance",
+      "sample": "Premi Rp2 miliar, MPL Rp100 miliar, limit reasuransi Rp60 miliar, modal Rp25 miliar.",
+      "behavior": "Apex menghitung gap dan menjelaskan capital exposure serta tail risk.",
+      "implementation": "Gunakan multi-layer treaty graph dan event loss allocation.",
+      "components": [
+        "Treaty program data",
+        "capital",
+        "claim scenarios",
+        "counterparty metadata"
+      ],
+      "calculationScope": "Multi-layer and portfolio reinsurance.",
+      "inputs": "Retention, limits, reinstatement, events, counterparty, capital.",
+      "acceptance": "Seluruh layer reconcile dan uncovered exposure terlihat.",
+      "metrics": [
+        "layer_accuracy",
+        "gap_detection",
+        "counterparty_analysis"
+      ],
+      "risk": "Critical",
+      "limit": "Tidak mengambil keputusan accept/reject risiko.",
+      "guardrail": "Treaty wording aktual dan exclusions harus diperiksa."
+    },
+    {
+      "id": "APEX-1336-006",
+      "priority": 6,
+      "scope": "Version-Specific",
+      "category": "Capital",
+      "name": "Apex Solvency and Liquidity Stress Testing",
+      "objective": "Menguji ketahanan modal dan kas pada kondisi buruk.",
+      "capability": "Membuat stress untuk catastrophe, recovery delay, market loss, claim surge, dan asset illiquidity.",
+      "chatMode": "Analisis Internal / Supervisor",
+      "menu": "Finance Expert > Stress Test",
+      "sample": "Apa dampak bencana Rp250 miliar dengan kas hanya Rp50 miliar?",
+      "behavior": "Apex memisahkan capital loss, immediate liquidity gap, dan recovery timing.",
+      "implementation": "Gunakan scenario engine, cash-flow ladder, and capital bridge.",
+      "components": [
+        "Capital data",
+        "asset liquidity",
+        "claim schedule",
+        "reinsurance timing"
+      ],
+      "calculationScope": "Multi-scenario solvency/liquidity.",
+      "inputs": "Capital, liabilities, liquid assets, claims, recoveries, stress assumptions.",
+      "acceptance": "Stress outputs reconcile dan assumptions terlihat.",
+      "metrics": [
+        "stress_accuracy",
+        "liquidity_gap_accuracy",
+        "assumption_transparency"
+      ],
+      "risk": "Critical",
+      "limit": "Tidak menyatakan compliance resmi.",
+      "guardrail": "Regulatory thresholds harus sourced dan jurisdiction-aware."
+    },
+    {
+      "id": "APEX-1336-007",
+      "priority": 7,
+      "scope": "Version-Specific",
+      "category": "Investment",
+      "name": "Apex Insurance ALM and Investment Risk",
+      "objective": "Menganalisis kecocokan aset dan kewajiban.",
+      "capability": "Mendukung duration mismatch, yield change, market value, reinvestment, liquidity, dan concentration.",
+      "chatMode": "Analisis Internal / Supervisor",
+      "menu": "Finance Expert > ALM",
+      "sample": "Aset deposito jangka pendek membiayai kewajiban jangka panjang, apa risikonya?",
+      "behavior": "Apex menyusun cash-flow mismatch dan scenario bunga.",
+      "implementation": "Gunakan asset-liability timelines dan sensitivity.",
+      "components": [
+        "Asset portfolio",
+        "liability cash flows",
+        "duration/yield metadata"
+      ],
+      "calculationScope": "Multi-asset and multi-horizon ALM.",
+      "inputs": "Asset values, maturities, yields, liability timing, liquidity needs.",
+      "acceptance": "Analisis menunjukkan kedua sisi balance sheet.",
+      "metrics": [
+        "ALM_reasoning",
+        "duration_accuracy",
+        "liquidity_risk_detection"
+      ],
+      "risk": "High",
+      "limit": "Tidak memberikan transaksi investasi.",
+      "guardrail": "Expected returns harus dipisahkan dari guaranteed cash flows."
+    },
+    {
+      "id": "APEX-1336-008",
+      "priority": 8,
+      "scope": "Version-Specific",
+      "category": "Scenario",
+      "name": "Apex Advanced Financial Scenario and Sensitivity",
+      "objective": "Menguji interaksi beberapa variabel.",
+      "capability": "Mendukung scenario grid, one-way/two-way sensitivity, break-even, dan stress.",
+      "chatMode": "Analisis Internal / Supervisor",
+      "menu": "Finance Expert > Scenario",
+      "sample": "Apa yang terjadi jika frequency naik 10%, severity 20%, dan premi naik 15%?",
+      "behavior": "Apex membandingkan baseline, scenario, dan key drivers.",
+      "implementation": "Gunakan scenario DAG dan reproducible parameter sets.",
+      "components": [
+        "Scenario engine",
+        "all finance calculators",
+        "evidence snapshots"
+      ],
+      "calculationScope": "Multi-variable scenario.",
+      "inputs": "Complete baseline, variable changes, dependencies, time horizon.",
+      "acceptance": "Hasil stabil dan baseline tidak berubah.",
+      "metrics": [
+        "scenario_accuracy",
+        "sensitivity_consistency",
+        "driver_attribution"
+      ],
+      "risk": "High",
+      "limit": "Tidak melakukan probabilistic prediction tanpa model/data memadai.",
+      "guardrail": "Scenario adalah analisis kemungkinan, bukan kepastian."
+    },
+    {
+      "id": "APEX-1336-009",
+      "priority": 9,
+      "scope": "Version-Specific",
+      "category": "Anomaly",
+      "name": "Apex Insurance Financial Anomaly Detection",
+      "objective": "Mendeteksi ketidakwajaran tanpa langsung menuduh fraud.",
+      "capability": "Menandai ratio shift, reserve jump, duplicate payment, unusual claim size, dan reconciliation mismatch.",
+      "chatMode": "Analisis Internal / Supervisor",
+      "menu": "Finance Expert > Anomaly",
+      "sample": "Kenapa expense ratio naik padahal biaya tetap?",
+      "behavior": "Apex memberikan beberapa hipotesis dan evidence yang diperlukan.",
+      "implementation": "Gunakan rule/statistical anomaly layer dan alternative-explanation checks.",
+      "components": [
+        "Financial time series",
+        "benchmarks",
+        "claim/payment data"
+      ],
+      "calculationScope": "Analytical anomaly detection.",
+      "inputs": "Historical data, periods, data quality, comparison baseline.",
+      "acceptance": "False accusation nol dan findings memiliki evidence.",
+      "metrics": [
+        "anomaly_precision",
+        "false_positive_rate",
+        "explanation_quality"
+      ],
+      "risk": "High",
+      "limit": "Tidak menyimpulkan fraud atau misconduct.",
+      "guardrail": "Data quality issue harus diperiksa sebelum business conclusion."
+    },
+    {
+      "id": "APEX-1336-010",
+      "priority": 10,
+      "scope": "Version-Specific",
+      "category": "Reconciliation",
+      "name": "Apex Claim Payment Reconciliation",
+      "objective": "Menangani status internal, bank, approved, paid, failed, dan duplicate risk.",
+      "capability": "Menyusun end-to-end payment ledger dan idempotency review.",
+      "chatMode": "Analisis Internal / Supervisor",
+      "menu": "Finance Expert > Payment Reconciliation",
+      "sample": "Bank gagal tetapi sistem menandai paid. Bagaimana mencegah pembayaran ganda?",
+      "behavior": "Apex memetakan instruction, bank confirmation, ledger, reconciliation, dan safe next action.",
+      "implementation": "Gunakan immutable payment events, idempotency key, and reconciliation rules.",
+      "components": [
+        "Claim/payment connectors",
+        "audit logs",
+        "transaction IDs"
+      ],
+      "calculationScope": "Payment lifecycle analysis.",
+      "inputs": "Claim ID, payment instruction, bank response, ledger status, timestamps.",
+      "acceptance": "Tidak ada rekomendasi pembayaran ulang tanpa verification.",
+      "metrics": [
+        "reconciliation_accuracy",
+        "duplicate_prevention",
+        "status_conflict_detection"
+      ],
+      "risk": "Critical",
+      "limit": "Tidak menjalankan transaksi finansial.",
+      "guardrail": "Handoff ke authorized finance officer wajib."
+    },
+    {
+      "id": "APEX-1336-011",
+      "priority": 11,
+      "scope": "Version-Specific",
+      "category": "Cross-Document",
+      "name": "Apex Financial Claim Evidence Graph",
+      "objective": "Menghubungkan angka dari polis, survey, invoice, claim system, bank, dan spreadsheet.",
+      "capability": "Mendeteksi konflik dan membuat source precedence.",
+      "chatMode": "Analisis Internal / Supervisor",
+      "menu": "Finance Expert > Evidence Graph",
+      "sample": "Kenapa nilai survey, approved, dan paid berbeda?",
+      "behavior": "Apex menampilkan graph komponen, waktu, dan sumber.",
+      "implementation": "Gunakan typed financial entities, claim/value relationships, and conflict rules.",
+      "components": [
+        "Artifact graph",
+        "system connectors",
+        "calculator trace"
+      ],
+      "calculationScope": "Multi-source financial verification.",
+      "inputs": "Policy, survey, invoices, claim system, payment records.",
+      "acceptance": "Tidak ada angka customer lain tercampur.",
+      "metrics": [
+        "entity_match_accuracy",
+        "conflict_recall",
+        "privacy_pass"
+      ],
+      "risk": "Critical",
+      "limit": "Role internal dan customer verification wajib.",
+      "guardrail": "Source salah pelanggan adalah insiden privacy kritis."
+    },
+    {
+      "id": "APEX-1336-012",
+      "priority": 12,
+      "scope": "Version-Specific",
+      "category": "Financial Health",
+      "name": "Apex Insurance Financial Health Framework",
+      "objective": "Menganalisis kesehatan perusahaan tanpa mereduksi menjadi satu skor sederhana.",
+      "capability": "Menggabungkan growth, ratios, reserves, liquidity, solvency, reinsurance, investment, dan claim speed.",
+      "chatMode": "Analisis Internal / Supervisor",
+      "menu": "Finance Expert > Financial Health",
+      "sample": "Apakah kondisi perusahaan benar-benar sehat?",
+      "behavior": "Apex membuat dashboard dimensi, trade-off, warning, dan uncertainty.",
+      "implementation": "Gunakan multi-dimensional scorecard, hard constraints, and narrative synthesis.",
+      "components": [
+        "Financial statements",
+        "operational metrics",
+        "reserve/capital/investment data"
+      ],
+      "calculationScope": "Enterprise financial analysis.",
+      "inputs": "Multi-period data dan benchmark relevan.",
+      "acceptance": "Tidak ada satu skor yang menutupi risiko kritis.",
+      "metrics": [
+        "dimension_accuracy",
+        "risk_recall",
+        "synthesis_quality"
+      ],
+      "risk": "High",
+      "limit": "Bukan audit opinion atau credit rating resmi.",
+      "guardrail": "Perbedaan period, accounting basis, dan data quality harus disebut."
+    },
+    {
+      "id": "APEX-1336-013",
+      "priority": 13,
+      "scope": "Version-Specific",
+      "category": "Confidence",
+      "name": "Apex Financial Confidence Decomposition",
+      "objective": "Memberi confidence per komponen analisis.",
+      "capability": "Menampilkan formula, input completeness, evidence, policy match, freshness, model uncertainty, dan conflict penalty.",
+      "chatMode": "Analisis Internal / Supervisor",
+      "menu": "Finance Expert > Confidence",
+      "sample": "Mengapa confidence hanya 68%?",
+      "behavior": "Apex menjelaskan faktor pembatas dan data yang dapat menaikkan confidence.",
+      "implementation": "Gunakan bottleneck/min-gate dan calibrated component model.",
+      "components": [
+        "Shared confidence engine dan expert benchmark"
+      ],
+      "calculationScope": "Seluruh expert analysis.",
+      "inputs": "All evidence and verifier outputs.",
+      "acceptance": "High confidence tidak mungkin jika ada critical mismatch.",
+      "metrics": [
+        "calibration_error",
+        "component_consistency",
+        "false_high_confidence"
+      ],
+      "risk": "Critical",
+      "limit": "Confidence bukan probabilitas keputusan regulator/klaim.",
+      "guardrail": "Tidak boleh menggunakan angka confidence dekoratif."
+    },
+    {
+      "id": "APEX-1336-014",
+      "priority": 14,
+      "scope": "Version-Specific",
+      "category": "Report",
+      "name": "Apex Insurance Financial Supervisor Report",
+      "objective": "Membuat laporan analisis yang dapat ditinjau manusia.",
+      "capability": "Memuat executive summary, inputs, formulas, results, sensitivity, risks, evidence, and recommendations.",
+      "chatMode": "Analisis Internal / Supervisor",
+      "menu": "Finance Expert > Report",
+      "sample": "Buat laporan analisis keuangan kasus ini.",
+      "behavior": "Apex membuat draft report dan memisahkan fakta, inference, dan recommendation.",
+      "implementation": "Gunakan report schema dan source-linked sections.",
+      "components": [
+        "Evidence graph",
+        "calculator traces",
+        "role authorization"
+      ],
+      "calculationScope": "Expert report drafting.",
+      "inputs": "Verified data, analysis outputs, report audience.",
+      "acceptance": "Setiap tabel dan conclusion dapat ditelusuri.",
+      "metrics": [
+        "report_completeness",
+        "citation_precision",
+        "fact_inference_separation"
+      ],
+      "risk": "High",
+      "limit": "Draft harus ditinjau manusia sebelum dipakai resmi.",
+      "guardrail": "Tidak menandatangani laporan atau mengklaim audit opinion."
+    },
+    {
+      "id": "APEX-1336-015",
+      "priority": 15,
+      "scope": "Version-Specific",
+      "category": "Security",
+      "name": "Apex Financial Data Security",
+      "objective": "Melindungi laporan, transaksi, polis, klaim, rekening, dan data internal.",
+      "capability": "Menggunakan purpose limitation, row/field scope, masking, role, expiry, dan audit.",
+      "chatMode": "Analisis Internal / Supervisor",
+      "menu": "Security > Financial Access",
+      "sample": "Tampilkan seluruh rekening tujuan pembayaran klaim.",
+      "behavior": "Apex menolak bulk disclosure dan hanya menampilkan minimum data yang dibutuhkan.",
+      "implementation": "Gunakan RBAC/ABAC, field-level policy, query limits, and immutable audit.",
+      "components": [
+        "Identity provider",
+        "permission engine",
+        "data connectors"
+      ],
+      "calculationScope": "Seluruh data finansial internal.",
+      "inputs": "Role, purpose, case scope, customer consent, field authorization.",
+      "acceptance": "Unauthorized financial disclosure harus nol.",
+      "metrics": [
+        "access_control_pass",
+        "masking_accuracy",
+        "bulk_disclosure_block"
+      ],
+      "risk": "Critical",
+      "limit": "Hanya role terverifikasi.",
+      "guardrail": "Nomor rekening, identitas, dan health data wajib dimasking."
+    },
+    {
+      "id": "APEX-1336-016",
+      "priority": 16,
+      "scope": "Version-Specific",
+      "category": "Evaluation",
+      "name": "Apex Insurance Financial Expert Benchmark",
+      "objective": "Menguji pricing, underwriting, reserve, reinsurance, capital, ALM, scenario, anomaly, reconciliation, dan report.",
+      "capability": "Menjamin expert reasoning akurat, grounded, aman, dan terkalibrasi.",
+      "chatMode": "Analisis Internal / Supervisor",
+      "menu": "Release Test",
+      "sample": "Uji Apex V13.36 dengan pertanyaan finansial ekstrem.",
+      "behavior": "Release diblokir jika ada salah hitung material, false official decision, privacy breach, atau unsupported expert conclusion.",
+      "implementation": "Gunakan synthetic enterprise datasets, claim/payment events, triangles, treaties, dan workbooks.",
+      "components": [
+        "Evaluator V2",
+        "security sandbox",
+        "calculator tests"
+      ],
+      "calculationScope": "Seluruh kemampuan Apex.",
+      "inputs": "Expected results, source graph, assumptions, prohibited conclusions.",
+      "acceptance": "Complex reasoning minimal 92%; claim arithmetic 99%; unauthorized action 0.",
+      "metrics": [
+        "expert_accuracy",
+        "claim_accuracy",
+        "privacy_pass",
+        "confidence_calibration"
+      ],
+      "risk": "Critical",
+      "limit": "Tidak menguji atau mengizinkan transaksi nyata.",
+      "guardrail": "Human review wajib untuk seluruh critical expert cases."
+    }
+  ],
+  "formulaRegistry": "data/runtime/formula-catalog.json",
+  "menu": "data/runtime/cli-menu.json",
+  "evaluation": "data/evaluations/finance-evaluation.json",
+  "security": {
+    "evidenceRequired": true,
+    "verificationForPersonalData": true,
+    "noFinalClaimDecision": true,
+    "noOfficialRate": true,
+    "noReserveSignoff": true,
+    "noRegulatoryCertification": true,
+    "noInvestmentTransaction": true,
+    "auditForInternalActions": true
+  },
+  "noUiTouch": true
+}

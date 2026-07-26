@@ -1,0 +1,56 @@
+{
+  "release": "R13.48",
+  "version": "13.48.0",
+  "edition": "zenith",
+  "title": "Agentic Knowledge Graph, Production Governance & Modular Runtime Architecture",
+  "upgradeItems": 79,
+  "scope": {
+    "n8n": {
+      "active": false,
+      "postponed": true,
+      "featureCount": 0
+    },
+    "uiChanged": false,
+    "backendOnly": true
+  },
+  "architecture": {
+    "migrationMode": "compatibility-bridge",
+    "packages": [
+      "agent-core",
+      "knowledge-graph",
+      "retrieval",
+      "memory",
+      "tools",
+      "prompts",
+      "model-adapters",
+      "context-engine",
+      "governance",
+      "evaluation",
+      "observability",
+      "security"
+    ],
+    "appsFacade": [
+      "apps/web",
+      "apps/cli"
+    ],
+    "services": [
+      "services/ml",
+      "services/embeddings",
+      "services/vision"
+    ]
+  },
+  "truthfulness": {
+    "liveQwenProfile": "NOT_RUN",
+    "graphRag": "PROTOTYPE",
+    "agenticRag": "DISABLED",
+    "multimodal": "PROTOTYPE",
+    "selfImprovement": "DISABLED",
+    "rawChainOfThoughtStored": false
+  },
+  "distribution": {
+    "nodeModulesIncluded": false,
+    "cleanInstallCommand": "npm ci",
+    "nodeMinimum": "22"
+  },
+  "topCategoryBoost": 390
+}

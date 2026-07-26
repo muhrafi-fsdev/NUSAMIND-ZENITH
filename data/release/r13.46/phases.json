@@ -1,0 +1,50 @@
+[
+  {
+    "phase_order": "1",
+    "phase_name": "Prompt Platform Foundation",
+    "main_goal": "Registry, compiler, lifecycle, Qwen adapter, trace",
+    "completion_definition": "Semua prompt production versioned dan adapter Qwen lulus",
+    "release_blocker": "Yes",
+    "primary_reference": "https://www.promptingguide.ai/prompts; https://www.promptingguide.ai/models"
+  },
+  {
+    "phase_order": "2",
+    "phase_name": "Adaptive Prompting and Context Engineering",
+    "main_goal": "Strategy router, context layers, budgets, compression, recall",
+    "completion_definition": "Strategy/context benchmark lulus per model",
+    "release_blocker": "Yes",
+    "primary_reference": "https://www.promptingguide.ai/research; https://www.promptingguide.ai/agents/context-engineering"
+  },
+  {
+    "phase_order": "3",
+    "phase_name": "Workflow and Agent Execution",
+    "main_goal": "Workflow-agent routing, tools, ReAct, planning, checkpoints, deep agents",
+    "completion_definition": "Expected-state dan recovery tests lulus",
+    "release_blocker": "Yes",
+    "primary_reference": "https://www.promptingguide.ai/agents"
+  },
+  {
+    "phase_order": "4",
+    "phase_name": "RAG Faithfulness and Security",
+    "main_goal": "Faithfulness, evidence status, injection, leakage, permission",
+    "completion_definition": "Critical adversarial attack success = 0",
+    "release_blocker": "Yes",
+    "primary_reference": "https://www.promptingguide.ai/research/rag; https://www.promptingguide.ai/prompts/adversarial-prompting/prompt-injection"
+  },
+  {
+    "phase_order": "5",
+    "phase_name": "Prompt Evaluation and Research",
+    "main_goal": "Prompt lab, optimizer, synthetic quality, trustworthiness, research registry",
+    "completion_definition": "Frozen benchmark dan research gate lulus",
+    "release_blocker": "Yes",
+    "primary_reference": "https://www.promptingguide.ai/research"
+  },
+  {
+    "phase_order": "6",
+    "phase_name": "Edition Integration and Release",
+    "main_goal": "Swift/Zenith/Apex profiles, resource, manifest, grand gate",
+    "completion_definition": "Seluruh edition critical case lulus",
+    "release_blocker": "Yes",
+    "primary_reference": "https://www.promptingguide.ai/agents; https://www.promptingguide.ai/models"
+  }
+]

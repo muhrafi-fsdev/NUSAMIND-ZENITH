@@ -1,0 +1,98 @@
+[
+  {
+    "component_id": "AC-01",
+    "component_name": "Execution Router",
+    "responsibility": "Choose direct/workflow/agent/handoff",
+    "input": "Task and risk",
+    "output": "Execution contract",
+    "permission_level": "Read-only",
+    "resource_limit": "Single decision",
+    "verification": "Route benchmark",
+    "target_editions": "Swift, Zenith, Apex",
+    "reference_source": "https://www.promptingguide.ai/agents/ai-workflows-vs-ai-agents"
+  },
+  {
+    "component_id": "AC-02",
+    "component_name": "Workflow Engine",
+    "responsibility": "Run fixed validated steps",
+    "input": "Workflow definition",
+    "output": "Verified outcome",
+    "permission_level": "Per tool contract",
+    "resource_limit": "Bounded steps",
+    "verification": "Postconditions",
+    "target_editions": "Swift, Zenith, Apex",
+    "reference_source": "https://www.promptingguide.ai/agents"
+  },
+  {
+    "component_id": "AC-03",
+    "component_name": "ReAct Loop",
+    "responsibility": "Action-observation-plan update",
+    "input": "Goal, tools, state",
+    "output": "Verified result",
+    "permission_level": "Bounded tools",
+    "resource_limit": "Step/time budget",
+    "verification": "Expected state",
+    "target_editions": "Zenith, Apex",
+    "reference_source": "https://arxiv.org/abs/2210.03629"
+  },
+  {
+    "component_id": "AC-04",
+    "component_name": "Planner",
+    "responsibility": "Build dependency graph",
+    "input": "Goal and constraints",
+    "output": "Validated plan",
+    "permission_level": "No side effects",
+    "resource_limit": "Node budget",
+    "verification": "Cycle/precondition validation",
+    "target_editions": "Zenith, Apex",
+    "reference_source": "https://www.promptingguide.ai/agents"
+  },
+  {
+    "component_id": "AC-05",
+    "component_name": "Checkpoint Manager",
+    "responsibility": "Persist resumable task state",
+    "input": "Plan and verified actions",
+    "output": "Checkpoint",
+    "permission_level": "Encrypted storage",
+    "resource_limit": "Retention limit",
+    "verification": "Resume/idempotency tests",
+    "target_editions": "Zenith, Apex",
+    "reference_source": "https://www.promptingguide.ai/agents"
+  },
+  {
+    "component_id": "AC-06",
+    "component_name": "Deep Orchestrator",
+    "responsibility": "Delegate specialist sub-agents",
+    "input": "Complex goal",
+    "output": "Merged verified report",
+    "permission_level": "Scoped delegation",
+    "resource_limit": "Concurrency/step budget",
+    "verification": "Verifier and evidence graph",
+    "target_editions": "Apex",
+    "reference_source": "https://www.promptingguide.ai/agents/deep-agents"
+  },
+  {
+    "component_id": "AC-07",
+    "component_name": "Verification Agent",
+    "responsibility": "Check claims, tools, expected state",
+    "input": "Outputs and evidence",
+    "output": "Pass/fail/findings",
+    "permission_level": "Read-only",
+    "resource_limit": "Bounded checks",
+    "verification": "Deterministic/source validation",
+    "target_editions": "Apex",
+    "reference_source": "https://www.promptingguide.ai/agents"
+  },
+  {
+    "component_id": "AC-08",
+    "component_name": "Security Agent",
+    "responsibility": "Inspect prompt/tool/retrieval risk",
+    "input": "Context and plan",
+    "output": "Security findings",
+    "permission_level": "Read-only",
+    "resource_limit": "Bounded checks",
+    "verification": "Adversarial rules",
+    "target_editions": "Apex",
+    "reference_source": "https://www.promptingguide.ai/agents"
+  }
+]

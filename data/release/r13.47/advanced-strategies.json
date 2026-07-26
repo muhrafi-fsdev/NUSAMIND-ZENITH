@@ -1,0 +1,122 @@
+[
+  {
+    "technique_id": "AT-01",
+    "technique_name": "Meta Prompting",
+    "runtime_status_target": "ACTIVE after structure benchmark",
+    "best_for": "Structured domain problems",
+    "not_for": "Tasks needing external facts alone",
+    "swift_support": "Simple",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verifier": "Output schema and domain rubric",
+    "reference_source": "https://www.promptingguide.ai/techniques/meta-prompting"
+  },
+  {
+    "technique_id": "AT-02",
+    "technique_name": "Generate Knowledge",
+    "runtime_status_target": "ACTIVE with evidence gate",
+    "best_for": "Query expansion and hypotheses",
+    "not_for": "Direct factual answer without retrieval",
+    "swift_support": "No",
+    "zenith_support": "Limited",
+    "apex_support": "Full",
+    "required_verifier": "Claim-evidence verifier",
+    "reference_source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "technique_id": "AT-03",
+    "technique_name": "Active-Prompt",
+    "runtime_status_target": "ACTIVE after review-yield benchmark",
+    "best_for": "Selecting uncertain exemplars",
+    "not_for": "Automatic self-labeling",
+    "swift_support": "No",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verifier": "Human-reviewed exemplar",
+    "reference_source": "https://www.promptingguide.ai/techniques/activeprompt"
+  },
+  {
+    "technique_id": "AT-04",
+    "technique_name": "Directional Stimulus",
+    "runtime_status_target": "ACTIVE after dimension coverage benchmark",
+    "best_for": "Focus on missing dimensions",
+    "not_for": "Adding unsupported facts",
+    "swift_support": "Simple",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verifier": "Policy/evidence-derived stimulus",
+    "reference_source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "technique_id": "AT-05",
+    "technique_name": "Self-Consistency",
+    "runtime_status_target": "Apex bounded runtime",
+    "best_for": "Verifiable reasoning tasks",
+    "not_for": "No verifier or high-cost task",
+    "swift_support": "No",
+    "zenith_support": "No",
+    "apex_support": "Full",
+    "required_verifier": "Deterministic/evidence verifier",
+    "reference_source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "technique_id": "AT-06",
+    "technique_name": "Tree Search",
+    "runtime_status_target": "Apex bounded runtime",
+    "best_for": "Complex planning alternatives",
+    "not_for": "Simple questions",
+    "swift_support": "No",
+    "zenith_support": "No",
+    "apex_support": "Limited",
+    "required_verifier": "Branch outcome verifier",
+    "reference_source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "technique_id": "AT-07",
+    "technique_name": "Graph Prompting",
+    "runtime_status_target": "Runtime graph required",
+    "best_for": "Claims, dependencies, diagrams",
+    "not_for": "No meaningful graph",
+    "swift_support": "No",
+    "zenith_support": "Limited",
+    "apex_support": "Full",
+    "required_verifier": "Graph consistency and lineage",
+    "reference_source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "technique_id": "AT-08",
+    "technique_name": "Reflexion",
+    "runtime_status_target": "Zenith one episode; Apex multi-episode",
+    "best_for": "Tool failures and iterative tasks",
+    "not_for": "Unverifiable subjective loops",
+    "swift_support": "No",
+    "zenith_support": "Limited",
+    "apex_support": "Full",
+    "required_verifier": "Outcome evaluator and state verification",
+    "reference_source": "https://www.promptingguide.ai/techniques/reflexion"
+  },
+  {
+    "technique_id": "AT-09",
+    "technique_name": "Multimodal CoT",
+    "runtime_status_target": "Structured visual evidence only",
+    "best_for": "Charts, tables, screenshots, diagrams",
+    "not_for": "Medical diagnosis from image",
+    "swift_support": "No",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verifier": "Visual evidence verifier",
+    "reference_source": "https://www.promptingguide.ai/techniques/multimodalcot"
+  },
+  {
+    "technique_id": "AT-10",
+    "technique_name": "Agentic RAG",
+    "runtime_status_target": "Bounded evidence-driven runtime",
+    "best_for": "Complex evidence and research gaps",
+    "not_for": "Simple deterministic tasks",
+    "swift_support": "Basic",
+    "zenith_support": "Limited",
+    "apex_support": "Full",
+    "required_verifier": "Entailment, gaps and stop criteria",
+    "reference_source": "https://www.promptingguide.ai/guides/reasoning-llms"
+  }
+]

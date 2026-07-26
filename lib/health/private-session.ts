@@ -1,0 +1,4 @@
+import {randomUUID} from 'node:crypto';import {getDatabase} from '../db';
+const mask=(text:string)=>text.replace(/\b\d{8,16}\b/g,'[MASKED_ID]').replace(/[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}/g,'[MASKED_EMAIL]').replace(/\b(?:\+62|62|0)8\d{7,11}\b/g,'[MASKED_PHONE]');
+export function createPrivateHealthSession(sessionId:string,summary:string,ttlMinutes=60){const id=randomUUID();const now=new Date();const expires=new Date(now.getTime()+Math.max(5,ttlMinutes)*60000);getDatabase().prepare('INSERT INTO health_sessions(id,session_id,masked_summary,consent_scope,expires_at,created_at) VALUES(?,?,?,?,?,?)').run(id,sessionId,mask(summary),'health-session-only',expires.toISOString(),now.toISOString());return{id,expiresAt:expires.toISOString(),masked:true};}
+export function purgeExpiredHealthSessions(){return getDatabase().prepare('DELETE FROM health_sessions WHERE expires_at<=?').run(new Date().toISOString()).changes;}

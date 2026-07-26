@@ -1,0 +1,34 @@
+[
+  {
+    "source_id": "CYBER-SRC-01",
+    "resource_name": "90DaysOfCyberSecurity",
+    "source_url": "https://github.com/farhanashrafdev/90DaysOfCyberSecurity",
+    "primary_contribution": "Structured learning roadmap covering networking, security, Linux, Python, traffic analysis, Git, SIEM/ELK, cloud and ethical labs",
+    "license_observed": "MIT",
+    "v13_49_1_adoption_boundary": "Learning content and lab planning; no autonomous hacking"
+  },
+  {
+    "source_id": "CYBER-SRC-02",
+    "resource_name": "Cybersecurity-Projects",
+    "source_url": "https://github.com/CarterPerez-dev/Cybersecurity-Projects",
+    "primary_contribution": "Tiered hands-on projects and security engineering patterns",
+    "license_observed": "AGPL-3.0",
+    "v13_49_1_adoption_boundary": "Defensive projects only; dual-use projects blocked/reference-only"
+  },
+  {
+    "source_id": "CYBER-SRC-03",
+    "resource_name": "awesome-ml-for-cybersecurity",
+    "source_url": "https://github.com/jivoi/awesome-ml-for-cybersecurity",
+    "primary_contribution": "Curated ML security datasets, papers, tutorials, courses and resources",
+    "license_observed": "CC BY-SA 4.0",
+    "v13_49_1_adoption_boundary": "Dataset/model registry and research references; no blind bulk ingestion"
+  },
+  {
+    "source_id": "CYBER-SRC-04",
+    "resource_name": "Awesome-Asset-Discovery",
+    "source_url": "https://github.com/redhuntlabs/Awesome-Asset-Discovery",
+    "primary_contribution": "Asset discovery categories for domains, IPs, cloud, code, archives and exposure sources",
+    "license_observed": "CC0-1.0",
+    "v13_49_1_adoption_boundary": "Passive-first and authorization-scoped inventory only"
+  }
+]

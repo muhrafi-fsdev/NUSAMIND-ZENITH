@@ -1,0 +1,12 @@
+{
+  "release": "R13.46",
+  "edition": "zenith",
+  "tier": "expert",
+  "hash_dim": 512,
+  "max_text": 20000,
+  "max_batch": 64,
+  "quality_threshold": 0.64,
+  "use_transformers": true,
+  "embed_model": "intfloat/multilingual-e5-base",
+  "version": "13.46.0"
+}

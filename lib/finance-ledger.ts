@@ -1,0 +1,1 @@
+import { FinanceRepository } from './repos';const repo=new FinanceRepository();export function recordFinanceRun(intent:string,inputs:unknown,result:unknown,confidence=0.7,sessionId?:string){return repo.record(intent,inputs,result,confidence,sessionId);}

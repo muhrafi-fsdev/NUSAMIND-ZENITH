@@ -1,0 +1,29 @@
+[
+  {
+    "id": "int-warfarin-kunyit",
+    "left": "Warfarin",
+    "right": "Kunyit",
+    "severity": "potentially_high",
+    "action": "verify_with_clinician",
+    "review_status": "needs_review",
+    "no_stop_medication_advice": true
+  },
+  {
+    "id": "int-warfarin-ginkgo",
+    "left": "Warfarin",
+    "right": "Ginkgo biloba",
+    "severity": "potentially_high",
+    "action": "verify_with_clinician",
+    "review_status": "needs_review",
+    "no_stop_medication_advice": true
+  },
+  {
+    "id": "int-insulin-herbal",
+    "left": "Insulin",
+    "right": "Herbal penurun gula",
+    "severity": "unknown_to_high",
+    "action": "monitor_and_verify",
+    "review_status": "needs_review",
+    "no_stop_medication_advice": true
+  }
+]

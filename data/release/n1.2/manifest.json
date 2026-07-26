@@ -1,0 +1,51 @@
+{
+  "release": "N1.2",
+  "semver": "1.2.0",
+  "edition": "zenith",
+  "name": "Advanced Autonomy & Deployment",
+  "implementation": "Original NusaMind implementation; architecture inspired by mature coding-agent patterns without copying OpenCode source.",
+  "features": [
+    "automatic-git-push",
+    "force-push-with-lease-and-backup",
+    "controlled-destructive-actions",
+    "encrypted-credential-vault",
+    "trusted-external-workspaces",
+    "mcp-quarantine-and-sandbox",
+    "autonomous-deployment-with-rollback",
+    "extended-agent-loop"
+  ],
+  "limits": {
+    "boost": 1450,
+    "maxSteps": 40,
+    "softSteps": 20,
+    "maxRuntime": 90,
+    "parallel": 2,
+    "executePush": true,
+    "forcePush": true,
+    "destructive": true,
+    "credentialWrite": true,
+    "externalWrite": true,
+    "mcpCall": true,
+    "deploy": [
+      "preview",
+      "staging"
+    ],
+    "autoDeploy": false
+  },
+  "safety": {
+    "rawShell": false,
+    "forcePushUsesLease": true,
+    "remoteBackupBeforeForce": true,
+    "credentialsReturnedToModel": false,
+    "unverifiedMcpRequiresSandbox": true,
+    "productionDeployment": "apex-only",
+    "agentLoopHasEmergencyCeiling": true,
+    "uiChanged": false,
+    "windowsExe": false,
+    "n8n": false
+  },
+  "api": [
+    "GET /api/n1/autonomy",
+    "POST /api/n1/autonomy"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "release": "13.39.0",
+  "edition": "apex",
+  "singleFile": true,
+  "folderUpload": true,
+  "archiveUpload": true,
+  "ocr": true,
+  "maxMB": 80,
+  "artifactFirst": true,
+  "recentArtifacts": true,
+  "dedup": true
+}

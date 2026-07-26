@@ -1,0 +1,62 @@
+[
+  {
+    "id": "DI-01",
+    "name": "swift-write-denied",
+    "expected": "PASS"
+  },
+  {
+    "id": "DI-02",
+    "name": "protected-env-denied",
+    "expected": "PASS"
+  },
+  {
+    "id": "DI-03",
+    "name": "external-path-denied",
+    "expected": "PASS"
+  },
+  {
+    "id": "DI-04",
+    "name": "destructive-command-denied",
+    "expected": "PASS"
+  },
+  {
+    "id": "DI-05",
+    "name": "safe-git-status-allowed",
+    "expected": "PASS"
+  },
+  {
+    "id": "DI-06",
+    "name": "build-requires-approval",
+    "expected": "PASS"
+  },
+  {
+    "id": "DI-07",
+    "name": "plan-read-only",
+    "expected": "PASS"
+  },
+  {
+    "id": "DI-08",
+    "name": "doom-loop-detected",
+    "expected": "PASS"
+  },
+  {
+    "id": "DI-09",
+    "name": "project-scan-ignores-cache",
+    "expected": "PASS"
+  },
+  {
+    "id": "DI-10",
+    "name": "context-ranking-bounded",
+    "expected": "PASS"
+  },
+  {
+    "id": "DI-11",
+    "name": "checkpoint-redacts-protected",
+    "expected": "PASS"
+  },
+  {
+    "id": "DI-12",
+    "name": "verification-no-false-success",
+    "expected": "PASS"
+  }
+]

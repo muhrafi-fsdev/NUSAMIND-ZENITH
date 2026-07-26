@@ -1,0 +1,113 @@
+{
+  "profile": {
+    "model": "qwen2.5:7b",
+    "family": "Qwen",
+    "release": "R13.46",
+    "chatTemplate": "ollama-qwen-chat",
+    "toolCallFormat": "json-function",
+    "structuredOutput": "json-schema",
+    "contextWindow": 16384,
+    "safeContextWindow": 12288,
+    "thinkingSupport": false,
+    "temperatureByTask": {
+      "direct": 0.15,
+      "rag": 0.2,
+      "workflow": 0.1,
+      "agent": 0.2,
+      "creative": 0.65
+    },
+    "topPByTask": {
+      "direct": 0.8,
+      "rag": 0.85,
+      "workflow": 0.75,
+      "agent": 0.85,
+      "creative": 0.95
+    },
+    "quantization": "runtime-detected",
+    "resource": {
+      "ramGb": 4,
+      "vramGb": 4,
+      "latencyTargetMs": 3500
+    },
+    "knownFailures": [
+      "Native thinking mode is not assumed for qwen2.5:7b.",
+      "Long-context reliability requires the needle benchmark.",
+      "Tool calls outside the allowlist are rejected."
+    ],
+    "status": "CONFIGURED"
+  },
+  "requirements": [
+    {
+      "adapter_id": "MA-QWEN-01",
+      "model_family": "Qwen",
+      "profile_field": "chat_template",
+      "required_value_or_test": "Verified against active tokenizer/template",
+      "runtime_use": "Prompt compilation",
+      "release_condition": "Template test passes",
+      "reference_source": "https://qwen.readthedocs.io/"
+    },
+    {
+      "adapter_id": "MA-QWEN-02",
+      "model_family": "Qwen",
+      "profile_field": "tool_call_format",
+      "required_value_or_test": "Function-call schema/parser tested",
+      "runtime_use": "Agent tools",
+      "release_condition": "Tool-call benchmark passes",
+      "reference_source": "https://qwen.readthedocs.io/"
+    },
+    {
+      "adapter_id": "MA-QWEN-03",
+      "model_family": "Qwen",
+      "profile_field": "structured_output",
+      "required_value_or_test": "JSON/schema reliability measured",
+      "runtime_use": "Extraction and tools",
+      "release_condition": "Invalid JSON under threshold",
+      "reference_source": "https://qwen.readthedocs.io/"
+    },
+    {
+      "adapter_id": "MA-QWEN-04",
+      "model_family": "Qwen",
+      "profile_field": "context_profile",
+      "required_value_or_test": "Needle benchmark by length/position",
+      "runtime_use": "Context budget",
+      "release_condition": "Safe context profile available",
+      "reference_source": "https://qwen.readthedocs.io/; https://www.promptingguide.ai/research/llm-recall"
+    },
+    {
+      "adapter_id": "MA-QWEN-05",
+      "model_family": "Qwen",
+      "profile_field": "thinking_support",
+      "required_value_or_test": "Version-specific behavior tested",
+      "runtime_use": "Strategy routing",
+      "release_condition": "No unsupported assumption",
+      "reference_source": "https://www.promptingguide.ai/models"
+    },
+    {
+      "adapter_id": "MA-QWEN-06",
+      "model_family": "Qwen",
+      "profile_field": "generation_settings",
+      "required_value_or_test": "Task-specific temperature/top_p benchmark",
+      "runtime_use": "Generation",
+      "release_condition": "Profile stored per task",
+      "reference_source": "https://www.promptingguide.ai/models"
+    },
+    {
+      "adapter_id": "MA-QWEN-07",
+      "model_family": "Qwen",
+      "profile_field": "resource_profile",
+      "required_value_or_test": "RAM/VRAM/latency/quantization tests",
+      "runtime_use": "Edition selection",
+      "release_condition": "Within resource budget",
+      "reference_source": "https://qwen.readthedocs.io/"
+    },
+    {
+      "adapter_id": "MA-QWEN-08",
+      "model_family": "Qwen",
+      "profile_field": "known_failures",
+      "required_value_or_test": "Regression list by prompt/tool/context",
+      "runtime_use": "Fallback routing",
+      "release_condition": "Every failure has regression test",
+      "reference_source": "https://www.promptingguide.ai/models"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+﻿component_id,component_name,responsibility,input,output,permission_level,resource_limit,verification,target_editions,reference_source
+AC-01,Execution Router,Choose direct/workflow/agent/handoff,Task and risk,Execution contract,Read-only,Single decision,Route benchmark,"Swift, Zenith, Apex",https://www.promptingguide.ai/agents/ai-workflows-vs-ai-agents
+AC-02,Workflow Engine,Run fixed validated steps,Workflow definition,Verified outcome,Per tool contract,Bounded steps,Postconditions,"Swift, Zenith, Apex",https://www.promptingguide.ai/agents
+AC-03,ReAct Loop,Action-observation-plan update,"Goal, tools, state",Verified result,Bounded tools,Step/time budget,Expected state,"Zenith, Apex",https://arxiv.org/abs/2210.03629
+AC-04,Planner,Build dependency graph,Goal and constraints,Validated plan,No side effects,Node budget,Cycle/precondition validation,"Zenith, Apex",https://www.promptingguide.ai/agents
+AC-05,Checkpoint Manager,Persist resumable task state,Plan and verified actions,Checkpoint,Encrypted storage,Retention limit,Resume/idempotency tests,"Zenith, Apex",https://www.promptingguide.ai/agents
+AC-06,Deep Orchestrator,Delegate specialist sub-agents,Complex goal,Merged verified report,Scoped delegation,Concurrency/step budget,Verifier and evidence graph,Apex,https://www.promptingguide.ai/agents/deep-agents
+AC-07,Verification Agent,"Check claims, tools, expected state",Outputs and evidence,Pass/fail/findings,Read-only,Bounded checks,Deterministic/source validation,Apex,https://www.promptingguide.ai/agents
+AC-08,Security Agent,Inspect prompt/tool/retrieval risk,Context and plan,Security findings,Read-only,Bounded checks,Adversarial rules,Apex,https://www.promptingguide.ai/agents

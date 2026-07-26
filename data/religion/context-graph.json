@@ -1,0 +1,51 @@
+[
+  {
+    "task": "comparative_quran_analysis",
+    "nodes": [
+      "primary_verse",
+      "comparison_verses",
+      "objects",
+      "historical_context",
+      "method",
+      "interpretations",
+      "conclusion"
+    ],
+    "required": [
+      "primary_verse",
+      "comparison_verses",
+      "context",
+      "method"
+    ]
+  },
+  {
+    "task": "contextual_tafsir",
+    "nodes": [
+      "verse",
+      "surrounding_verses",
+      "asbab_status",
+      "language",
+      "tafsir_views",
+      "limits"
+    ],
+    "required": [
+      "verse",
+      "context",
+      "source_attribution"
+    ]
+  },
+  {
+    "task": "hadith_verification",
+    "nodes": [
+      "quoted_text",
+      "source_candidate",
+      "book_number",
+      "sanad_matan",
+      "grade_attribution",
+      "confidence"
+    ],
+    "required": [
+      "source_candidate",
+      "verification_status"
+    ]
+  }
+]

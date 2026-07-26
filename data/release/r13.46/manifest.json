@@ -1,0 +1,62 @@
+{
+  "release": "R13.46",
+  "version": "13.46.0",
+  "edition": "zenith",
+  "editionName": "NusaMind Zenith",
+  "upgradeItems": 37,
+  "sharedItems": 32,
+  "noUiTouch": true,
+  "topCategoryBoost": 210,
+  "topCategoryCount": 736,
+  "phases": 6,
+  "benchmarkCases": 18,
+  "jsonNaming": "simple-kebab-case",
+  "runtimeStatus": "IMPLEMENTED",
+  "modelProfileStatus": "CONFIGURED; live hardware profile optional",
+  "sourceFiles": [
+    {
+      "file": "data/manifests/r13.46/agent-architecture.csv",
+      "sha256": "fd9bb06e28deb70833953e768e00e539b74209d4c5290d7ac59706ace5fa58cd"
+    },
+    {
+      "file": "data/manifests/r13.46/apex-upgrades.csv",
+      "sha256": "71483ea08bbe0c7f2b0b62c7c636a5fb92e82a9382acbd0c9d81a808a8ad54f9"
+    },
+    {
+      "file": "data/manifests/r13.46/benchmarks.csv",
+      "sha256": "821727eb467ecf7b92118a58062460bb68b9e5ee9f249fed45ddc388464486ca"
+    },
+    {
+      "file": "data/manifests/r13.46/phases.csv",
+      "sha256": "18dd5b50130a0c8c03dbc1580ab5538606b3076875a1f35eb39871dc74a527f8"
+    },
+    {
+      "file": "data/manifests/r13.46/master-upgrades.csv",
+      "sha256": "0a60ccbe3d25794f4ed5b580a624080e475d80c3d1b8403c8984e6e7db40f80d"
+    },
+    {
+      "file": "data/manifests/r13.46/prompt-strategies.csv",
+      "sha256": "dac86c7ec9e382f0f1823007b3ea989ecd45876aa818b06b87a3aa2493c5a1eb"
+    },
+    {
+      "file": "data/manifests/r13.46/qwen-adapter.csv",
+      "sha256": "ddc45a22fc681821a5926a4095cd93864356c8fc449090dd5bbd96293584c27b"
+    },
+    {
+      "file": "data/manifests/r13.46/research.csv",
+      "sha256": "eae5e93ef57a556ad41c502738412d399fe7c28ae6e6936047ec2f6a8201d43e"
+    },
+    {
+      "file": "data/manifests/r13.46/shared-upgrades.csv",
+      "sha256": "054ba150829cd731b5ac7bfa65229c555d84dfb7dff3e519443405eb399e3e23"
+    },
+    {
+      "file": "data/manifests/r13.46/swift-upgrades.csv",
+      "sha256": "4165bd8b4fb627669384321331b4352fab5ba11160663e230c05eaab87dcdec4"
+    },
+    {
+      "file": "data/manifests/r13.46/zenith-upgrades.csv",
+      "sha256": "b568fbcf2f413eb5d78d9fa6004da31cc71df0ebc6d85aadbae3c7b187c34cf8"
+    }
+  ]
+}

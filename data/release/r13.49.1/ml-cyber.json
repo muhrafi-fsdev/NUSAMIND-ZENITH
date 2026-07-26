@@ -1,0 +1,56 @@
+[
+  {
+    "ml_capability": "Malicious URL Triage",
+    "input_domain": "URL/domain lexical and reputation features",
+    "status_target": "PROTOTYPE",
+    "primary_output": "Risk signal and explanation",
+    "required_controls": "Calibration, OOD abstention, source freshness",
+    "forbidden_use": "Automatic blocking without validation",
+    "source_url": "https://github.com/jivoi/awesome-ml-for-cybersecurity"
+  },
+  {
+    "ml_capability": "Phishing Content Triage",
+    "input_domain": "Email/web text and metadata",
+    "status_target": "PROTOTYPE",
+    "primary_output": "Review priority",
+    "required_controls": "Privacy, adversarial tests, human review",
+    "forbidden_use": "Credential collection",
+    "source_url": "https://github.com/jivoi/awesome-ml-for-cybersecurity"
+  },
+  {
+    "ml_capability": "Network Anomaly Signal",
+    "input_domain": "Approved flow statistics",
+    "status_target": "PROTOTYPE",
+    "primary_output": "Anomaly signal",
+    "required_controls": "Environment baseline, drift, correlation",
+    "forbidden_use": "Verdict of compromise from score alone",
+    "source_url": "https://github.com/jivoi/awesome-ml-for-cybersecurity"
+  },
+  {
+    "ml_capability": "Log Sequence Anomaly",
+    "input_domain": "System/application logs",
+    "status_target": "PROTOTYPE",
+    "primary_output": "Rare sequence and timeline hints",
+    "required_controls": "Redaction, baseline, explainability",
+    "forbidden_use": "Automatic account action",
+    "source_url": "https://github.com/jivoi/awesome-ml-for-cybersecurity"
+  },
+  {
+    "ml_capability": "PE Malware Metadata Triage",
+    "input_domain": "Static PE metadata from authorized samples",
+    "status_target": "PROTOTYPE",
+    "primary_output": "Triage score",
+    "required_controls": "Sandbox, dataset license, no execution",
+    "forbidden_use": "Running unknown malware",
+    "source_url": "https://github.com/jivoi/awesome-ml-for-cybersecurity"
+  },
+  {
+    "ml_capability": "ML Robustness Evaluator",
+    "input_domain": "Models and evaluation sets",
+    "status_target": "BENCHMARKED",
+    "primary_output": "Evasion/poisoning/drift report",
+    "required_controls": "Frozen holdout and attack simulations",
+    "forbidden_use": "Generating evasive malware",
+    "source_url": "https://github.com/jivoi/awesome-ml-for-cybersecurity"
+  }
+]

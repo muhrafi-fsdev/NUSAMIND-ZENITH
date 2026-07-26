@@ -1,0 +1,13 @@
+{
+  "release": "R13.42",
+  "edition": "apex",
+  "mode": "verified-expert",
+  "rules": [
+    "Multi-hop evidence graph dan dual-layer claim verification.",
+    "Multi-pass expert review dengan stop condition dan budget.",
+    "Source conflict resolution transparan tanpa memaksa kesimpulan.",
+    "Failure-aware supervised agent: continue, retry, rollback, stop, atau handoff.",
+    "Claim/section scorecard serta automatic expert regression fixture."
+  ],
+  "criticalGate": "unsupported critical claim = 0; safety = 100%; capability claims require runtime health"
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "step_order": "1",
+    "component_id": "AR-01",
+    "component_name": "Need-Retrieval Classifier",
+    "input": "User task and freshness need",
+    "output": "Retrieval mode",
+    "stop_or_verification_rule": "Skip deterministic tasks"
+  },
+  {
+    "step_order": "2",
+    "component_id": "AR-02",
+    "component_name": "Query Planner",
+    "input": "Task and required claims",
+    "output": "Subqueries and evidence types",
+    "stop_or_verification_rule": "No duplicate/unrelated query"
+  },
+  {
+    "step_order": "3",
+    "component_id": "AR-03",
+    "component_name": "Initial Retriever",
+    "input": "Subqueries",
+    "output": "Ranked passages",
+    "stop_or_verification_rule": "Source/date/authority filters"
+  },
+  {
+    "step_order": "4",
+    "component_id": "AR-04",
+    "component_name": "Claim Graph",
+    "input": "Evidence and task schema",
+    "output": "Claims, entities and relations",
+    "stop_or_verification_rule": "Typed graph validation"
+  },
+  {
+    "step_order": "5",
+    "component_id": "AR-05",
+    "component_name": "Evidence-Gap Detector",
+    "input": "Required claims and support",
+    "output": "Missing/partial/conflict/stale gaps",
+    "stop_or_verification_rule": "Critical gaps block final answer"
+  },
+  {
+    "step_order": "6",
+    "component_id": "AR-06",
+    "component_name": "Follow-Up Retriever",
+    "input": "Unresolved gaps",
+    "output": "Additional evidence",
+    "stop_or_verification_rule": "Bounded by marginal gain and budget"
+  },
+  {
+    "step_order": "7",
+    "component_id": "AR-07",
+    "component_name": "Entailment/Contradiction",
+    "input": "Claim and passage",
+    "output": "Support status",
+    "stop_or_verification_rule": "Negation, numeric and date checks"
+  },
+  {
+    "step_order": "8",
+    "component_id": "AR-08",
+    "component_name": "Source Independence",
+    "input": "Source set",
+    "output": "Independent evidence groups",
+    "stop_or_verification_rule": "Copies count as one lineage"
+  },
+  {
+    "step_order": "9",
+    "component_id": "AR-09",
+    "component_name": "Stop Controller",
+    "input": "Coverage and resource state",
+    "output": "Stop or continue",
+    "stop_or_verification_rule": "Coverage, gain, timeout and max steps"
+  },
+  {
+    "step_order": "10",
+    "component_id": "AR-10",
+    "component_name": "Faithfulness Verifier",
+    "input": "Verified evidence graph",
+    "output": "Grounded answer and claim links",
+    "stop_or_verification_rule": "Unsupported critical claim equals zero"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "component_order": "1",
+    "component_id": "NN-C01",
+    "component_name": "Neuron/Dense Layer",
+    "mathematical_or_runtime_role": "z = XW + b",
+    "input": "Feature matrix",
+    "output": "Linear activation input",
+    "required_tests": "Shape and reference calculation",
+    "production_status_rule": "Prototype until gradient tests pass"
+  },
+  {
+    "component_order": "2",
+    "component_id": "NN-C02",
+    "component_name": "Activation",
+    "mathematical_or_runtime_role": "Non-linearity and gradient",
+    "input": "z",
+    "output": "a and da/dz",
+    "required_tests": "Numerical stability and derivative",
+    "production_status_rule": "Reusable core"
+  },
+  {
+    "component_order": "3",
+    "component_id": "NN-C03",
+    "component_name": "Loss",
+    "mathematical_or_runtime_role": "Measure prediction error",
+    "input": "Prediction and label",
+    "output": "Scalar loss and gradient",
+    "required_tests": "Finite-difference check",
+    "production_status_rule": "Reusable core"
+  },
+  {
+    "component_order": "4",
+    "component_id": "NN-C04",
+    "component_name": "Backpropagation",
+    "mathematical_or_runtime_role": "Chain-rule gradient",
+    "input": "Loss gradient",
+    "output": "Layer/parameter gradients",
+    "required_tests": "Network gradient check",
+    "production_status_rule": "Critical"
+  },
+  {
+    "component_order": "5",
+    "component_id": "NN-C05",
+    "component_name": "Optimizer",
+    "mathematical_or_runtime_role": "Update weights",
+    "input": "Parameters and gradients",
+    "output": "Updated parameters/state",
+    "required_tests": "Convergence and resume",
+    "production_status_rule": "Critical"
+  },
+  {
+    "component_order": "6",
+    "component_id": "NN-C06",
+    "component_name": "Trainer",
+    "mathematical_or_runtime_role": "Batch/epoch/checkpoint",
+    "input": "Dataset and model",
+    "output": "Best model and metrics",
+    "required_tests": "Reproducibility",
+    "production_status_rule": "Critical"
+  },
+  {
+    "component_order": "7",
+    "component_id": "NN-C07",
+    "component_name": "Intent MLP",
+    "mathematical_or_runtime_role": "Custom neural classifier",
+    "input": "Text features",
+    "output": "Domain/intent probabilities",
+    "required_tests": "Group holdout/OOD/calibration",
+    "production_status_rule": "Active only if better than baseline"
+  },
+  {
+    "component_order": "8",
+    "component_id": "NN-C08",
+    "component_name": "Multi-task MLP",
+    "mathematical_or_runtime_role": "Shared representation with separate heads",
+    "input": "Text features",
+    "output": "Domain/intent/urgency/OOD",
+    "required_tests": "Negative transfer and safety",
+    "production_status_rule": "Apex experimental/active after gate"
+  }
+]

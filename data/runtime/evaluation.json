@@ -1,0 +1,12 @@
+{
+  "release": "13.38.0",
+  "domains": [
+    "math",
+    "coding",
+    "file-qa",
+    "agent",
+    "religion",
+    "career"
+  ],
+  "fullBeforeRelease": true
+}

@@ -1,0 +1,133 @@
+{
+  "version": "12.0.0",
+  "name": "AL-QURAN NUSANTARA AI Production Architecture",
+  "principles": [
+    "offline-first",
+    "provider-agnostic",
+    "RAG-first",
+    "safe-by-default",
+    "observable",
+    "iterative-improvement",
+    "knowledge-expanded",
+    "fine-tuning-prep-ready",
+    "language-variant-aware"
+  ],
+  "layers": [
+    {
+      "id": "layer_1",
+      "name": "User Interface",
+      "responsibilities": [
+        "Chat UI",
+        "Mode switcher",
+        "Workflow board",
+        "Monitoring dashboard",
+        "Feedback capture"
+      ],
+      "health_check": "UI loads and can call /api/status"
+    },
+    {
+      "id": "layer_2",
+      "name": "API Gateway",
+      "responsibilities": [
+        "Rate limit",
+        "Request validation",
+        "Session ID normalization",
+        "Streaming and JSON fallback"
+      ],
+      "health_check": "All API routes return structured JSON or stream"
+    },
+    {
+      "id": "layer_3",
+      "name": "Intent Router",
+      "responsibilities": [
+        "Auto route Quran, Universal, Coding, Companion, Workflow",
+        "Sensitive topic safety classification"
+      ],
+      "health_check": "Router gives mode + confidence + reasons"
+    },
+    {
+      "id": "layer_4",
+      "name": "Memory System",
+      "responsibilities": [
+        "Short-term session",
+        "Long-term preference",
+        "Interaction summary",
+        "User feedback memory"
+      ],
+      "health_check": "Session and memory files are created in storage/"
+    },
+    {
+      "id": "layer_5",
+      "name": "Retrieval Layer",
+      "responsibilities": [
+        "Quran RAG",
+        "Universal RAG",
+        "Workflow RAG",
+        "Hybrid lexical/vector-lite scoring"
+      ],
+      "health_check": "Relevant top-k sources returned"
+    },
+    {
+      "id": "layer_6",
+      "name": "Model Layer",
+      "responsibilities": [
+        "Ollama offline",
+        "OpenAI optional",
+        "Coder model routing",
+        "Inference profile"
+      ],
+      "health_check": "Model responds with acceptable latency"
+    },
+    {
+      "id": "layer_7",
+      "name": "Guardrails & Validator",
+      "responsibilities": [
+        "Islamic safety",
+        "Sensitive topic disclaimers",
+        "Anti-hallucination style cleanup",
+        "Output format control"
+      ],
+      "health_check": "No fabricated ayat/hadith/source in guarded mode"
+    },
+    {
+      "id": "layer_8",
+      "name": "Evaluation & Monitoring",
+      "responsibilities": [
+        "Golden test set",
+        "Feedback labels",
+        "Latency/error logs",
+        "Dataset quality metrics",
+        "Improvement backlog"
+      ],
+      "health_check": "/api/evaluate and /api/monitoring are usable"
+    },
+    {
+      "id": "layer_9",
+      "name": "Knowledge & Tuning Expansion",
+      "responsibilities": [
+        "Current knowledge cards",
+        "Domain playbooks",
+        "Language variants",
+        "Fine-tuning prep JSONL",
+        "Knowledge quality check"
+      ],
+      "health_check": "npm run tuning:summary && npm run knowledge:check && npm run vector:reindex"
+    }
+  ],
+  "production_stages": [
+    "local-dev",
+    "internal-staging",
+    "limited-user-beta",
+    "production",
+    "continuous-improvement"
+  ],
+  "upgrade_backlog": [
+    "real embedding model integration",
+    "FAISS/Chroma vector store",
+    "admin auth",
+    "database persistence",
+    "feedback labeling UI",
+    "automated regression evaluation",
+    "Docker/PM2 production deployment"
+  ]
+}

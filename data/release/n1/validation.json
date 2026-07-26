@@ -1,0 +1,26 @@
+{
+  "upgradeItems": 124,
+  "statusCounts": {
+    "ACTIVE": 47,
+    "BENCHMARKED": 56,
+    "PROTOTYPE": 21
+  },
+  "topCategoryCount": 1080,
+  "topCategoryBoost": 900,
+  "contractBenchmark": {
+    "total": 79,
+    "pass": 79,
+    "failed": 0
+  },
+  "typescript": "PASS",
+  "productionBuild": "PASS",
+  "uiFilesChecked": 5,
+  "uiMismatch": 0,
+  "jsonFiles": 333,
+  "jsonInvalidNames": 0,
+  "jsonParseErrors": 0,
+  "forbiddenRuntimeArtifacts": [],
+  "cleanDistribution": true,
+  "sourceSizeBytes": 503026000,
+  "buildWarning": "Non-fatal dynamic filesystem tracing warning from existing desktop-control API."
+}

@@ -1,0 +1,2 @@
+import {redact} from '@/packages/governance';
+export function auditAction(input:{action:string;workspaceId:string;actor:string;result:string;details?:string}){return{timestamp:new Date(0).toISOString(),action:input.action,workspaceId:input.workspaceId,actor:input.actor,result:input.result,details:redact(input.details||''),rawChainOfThought:undefined,decisionSummary:`${input.action}:${input.result}`};}

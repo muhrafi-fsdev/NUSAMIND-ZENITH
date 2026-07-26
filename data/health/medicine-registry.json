@@ -1,0 +1,362 @@
+[
+  {
+    "id": "medicine-001",
+    "generic_name": "Paracetamol",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-002",
+    "generic_name": "Ibuprofen",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-003",
+    "generic_name": "Aspirin",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-004",
+    "generic_name": "Amoksisilin",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-005",
+    "generic_name": "Azitromisin",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-006",
+    "generic_name": "Metformin",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-007",
+    "generic_name": "Insulin",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": true,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-008",
+    "generic_name": "Amlodipin",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-009",
+    "generic_name": "Captopril",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-010",
+    "generic_name": "Losartan",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-011",
+    "generic_name": "Warfarin",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": true,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-012",
+    "generic_name": "Clopidogrel",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-013",
+    "generic_name": "Atorvastatin",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-014",
+    "generic_name": "Omeprazole",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-015",
+    "generic_name": "Salbutamol",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-016",
+    "generic_name": "Budesonide",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-017",
+    "generic_name": "Prednison",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": true,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-018",
+    "generic_name": "Cetirizine",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-019",
+    "generic_name": "Loratadine",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-020",
+    "generic_name": "Diazepam",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": true,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-021",
+    "generic_name": "Fenitoin",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": true,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-022",
+    "generic_name": "Levotiroksin",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-023",
+    "generic_name": "Furosemid",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-024",
+    "generic_name": "Spironolakton",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-025",
+    "generic_name": "Digoksin",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-026",
+    "generic_name": "Metronidazol",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-027",
+    "generic_name": "Ciprofloxacin",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-028",
+    "generic_name": "Doksisiklin",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-029",
+    "generic_name": "Fluconazole",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-030",
+    "generic_name": "Aciclovir",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-031",
+    "generic_name": "Ondansetron",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-032",
+    "generic_name": "Domperidone",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-033",
+    "generic_name": "Loperamide",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-034",
+    "generic_name": "Oralit",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-035",
+    "generic_name": "Asam folat",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-036",
+    "generic_name": "Ferrous sulfate",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-037",
+    "generic_name": "Vitamin D",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-038",
+    "generic_name": "Nitrogliserin",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-039",
+    "generic_name": "Heparin",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  },
+  {
+    "id": "medicine-040",
+    "generic_name": "Methotrexate",
+    "record_type": "medicine",
+    "prescription_boundary": true,
+    "do_not_stop_abruptly": false,
+    "review_status": "needs_review",
+    "source_ids": []
+  }
+]

@@ -1,0 +1,1052 @@
+[
+  {
+    "id": "APEX-1327-001",
+    "priority": 1,
+    "domain": "Version Identity",
+    "feature": "Max to Apex Migration",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Mengganti Max menjadi Apex sambil menjaga semua fitur expert.",
+    "capability": "Seluruh config, memory, workspace, desktop agent, model cache, dan command Max bermigrasi ke Apex.",
+    "example": {
+      "question": "Apakah command /max masih bekerja?",
+      "answer": "Masih sebagai alias transisi dan diarahkan ke Apex."
+    },
+    "implementation": "Migration manifest, alias layer, schema versioning, rollback plan.",
+    "knowledge": "Old config, session, workspace, model registry, aliases.",
+    "metrics": "migration_integrity, rollback_success, command_compatibility",
+    "limit": "Alias Max akan dihentikan setelah masa transisi.",
+    "guardrail": "Backup penuh metadata sebelum migrasi.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-002",
+    "priority": 2,
+    "domain": "CLI UI",
+    "feature": "Apex Nexus Medium Expert UI",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Membuat UI Apex berukuran medium tetapi tetap expert dan cepat.",
+    "capability": "CLI menampilkan mode Direct/Deep, confidence, evidence, workspace, file, agent, dan /stop secara compact.",
+    "example": {
+      "question": "Tampilkan UI Apex.",
+      "answer": "[Apex Nexus | DIRECT | Evidence: ON | Workspace: NusaMind | Agent: SAFE | /expand] >"
+    },
+    "implementation": "Layout medium expert, collapsible panels, no heavy dashboard, streaming output.",
+    "knowledge": "UI profile, agent status, evidence status, terminal width.",
+    "metrics": "startup_latency, readability, overflow_rate, perceived_speed",
+    "limit": "Detail tidak langsung terbuka.",
+    "guardrail": "Jangan tampilkan path, secret, atau data pribadi.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-003",
+    "priority": 3,
+    "domain": "Thinking Engine",
+    "feature": "Apex Direct-First Deep Thinking",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Menggabungkan deep thinking dengan respons cepat.",
+    "capability": "Apex memberi jawaban inti dulu; analisis berat berjalan hanya jika kompleks atau diminta.",
+    "example": {
+      "question": "Jawab cepat tapi mendalam.",
+      "answer": "Kesimpulan utama: ... Confidence: ... Ketik /expand untuk bukti, skenario, dan analisis lengkap."
+    },
+    "implementation": "Complexity router, lazy deep analysis, streaming, full-analysis cache.",
+    "knowledge": "Complexity labels, domain risk, evidence graph.",
+    "metrics": "first_token_latency, deep_reasoning_accuracy, unnecessary_content_rate",
+    "limit": "Analisis penuh bisa lebih lambat.",
+    "guardrail": "Jangan menampilkan private chain-of-thought.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-004",
+    "priority": 4,
+    "domain": "Thinking Engine",
+    "feature": "Hypothesis and Evidence Planner",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Menguji beberapa hipotesis sebelum menyimpulkan.",
+    "capability": "Apex menghasilkan kandidat penyebab, mencari bukti pendukung/penolak, lalu memberi confidence.",
+    "example": {
+      "question": "Cari akar masalah paling mungkin.",
+      "answer": "Hipotesis utama akan dibandingkan berdasarkan log, perubahan terakhir, dan hasil test."
+    },
+    "implementation": "Hypothesis graph, evidence scorer, counterexample checker.",
+    "knowledge": "Evidence, logs, source trust, experiments.",
+    "metrics": "root_cause_precision, evidence_coverage, calibration",
+    "limit": "Bukti yang tersedia bisa tidak lengkap.",
+    "guardrail": "Kesimpulan harus membedakan fakta, inferensi, dan asumsi.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-005",
+    "priority": 5,
+    "domain": "Response Engine",
+    "feature": "Apex Expert Answer Controller",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Mencegah Apex kembali menjawab terlalu panjang.",
+    "capability": "Default hanya Jawaban, Confidence/Akurasi, bukti utama, dan risiko penting.",
+    "example": {
+      "question": "Jawab yang saya tanya saja.",
+      "answer": "Jawaban: ... Akurasi: ... Bukti utama: ..."
+    },
+    "implementation": "Scope guard, section filter, token budget, stop-condition detector.",
+    "knowledge": "Requested scope, answer draft, evidence priority.",
+    "metrics": "scope_adherence, user_fatigue_score, answer_completeness",
+    "limit": "Detail lengkap hanya melalui /expand atau permintaan eksplisit.",
+    "guardrail": "Safety dan risiko utama tidak boleh disembunyikan.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-006",
+    "priority": 6,
+    "domain": "Financial",
+    "feature": "Global Cross-Asset Intelligence",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Memahami dinamika pasar finansial global secara mendalam.",
+    "capability": "Apex menghubungkan makro, yield, FX, obligasi, saham, komoditas, likuiditas, dan crypto.",
+    "example": {
+      "question": "Bagaimana inflasi AS memengaruhi aset global?",
+      "answer": "Aku akan membangun skenario melalui suku bunga, real yield, dolar, likuiditas, dan risk appetite."
+    },
+    "implementation": "Cross-asset knowledge graph, regime-aware correlations, timestamped sources.",
+    "knowledge": "Macro releases, rates, yields, FX, equities, commodities, crypto.",
+    "metrics": "cross_asset_consistency, scenario_accuracy, source_freshness",
+    "limit": "Korelasi dapat berubah saat regime berganti.",
+    "guardrail": "Wajib tampilkan tanggal data, sumber, dan ketidakpastian.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-007",
+    "priority": 7,
+    "domain": "Financial",
+    "feature": "Probabilistic Market Forecasting",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Membuat prediksi pasar berbasis probabilitas dan multi-model.",
+    "capability": "Apex memberi skenario, horizon, interval, confidence terkalibrasi, dan faktor risiko.",
+    "example": {
+      "question": "Prediksi indeks satu bulan ke depan.",
+      "answer": "Hasil akan berupa skenario bullish/netral/bearish, interval, data cut-off, dan confidence—bukan target pasti."
+    },
+    "implementation": "Multi-horizon ensemble, calibration, prediction intervals, regime router.",
+    "knowledge": "OHLCV, macro, fundamentals, sentiment, volatility, timestamps.",
+    "metrics": "Brier_score, log_loss, interval_coverage, directional_accuracy",
+    "limit": "Shock baru dapat membuat model gagal.",
+    "guardrail": "Tidak boleh menjadi jaminan atau instruksi trading.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-008",
+    "priority": 8,
+    "domain": "Financial",
+    "feature": "Financial Model Governance",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Menjaga prediksi dapat diaudit dan diuji.",
+    "capability": "Apex menyimpan versi model, data cut-off, fitur, backtest, calibration, dan failure cases.",
+    "example": {
+      "question": "Kenapa prediksi berubah?",
+      "answer": "Aku akan bandingkan versi model, data terbaru, regime, dan skor kalibrasi."
+    },
+    "implementation": "Model registry, data lineage, walk-forward evaluation, drift monitoring.",
+    "knowledge": "Model versions, forecast history, outcomes, source metadata.",
+    "metrics": "audit_completeness, calibration_drift, regression_rate",
+    "limit": "Membutuhkan histori prediksi.",
+    "guardrail": "Model yang gagal evaluasi tidak boleh diberi confidence tinggi.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-009",
+    "priority": 9,
+    "domain": "Religion",
+    "feature": "Advanced Islamic Source Reasoning",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Memahami pengetahuan agama dengan struktur sumber dan konteks.",
+    "capability": "Apex membedakan nash, tafsir, hadis, fikih, ushul dasar, dan khilaf.",
+    "example": {
+      "question": "Jelaskan hukum ini dan dalilnya.",
+      "answer": "Aku akan memisahkan hukum umum, dasar dalil, perbedaan pendapat, dan batasan penerapannya."
+    },
+    "implementation": "Trusted source graph, citation matcher, school/viewpoint metadata.",
+    "knowledge": "Quran, reliable tafsir, hadith references, fiqh sources.",
+    "metrics": "source_traceability, false_reference_rate, viewpoint_balance",
+    "limit": "Tidak menggantikan ulama atau mufti.",
+    "guardrail": "Jangan membuat dalil, nomor, atau derajat hadis.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-010",
+    "priority": 10,
+    "domain": "Religion",
+    "feature": "Hadith Verification Workflow",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Memeriksa hadis secara lebih sistematis.",
+    "capability": "Apex memeriksa lafaz, sumber, variasi riwayat, status rujukan, dan klaim derajat.",
+    "example": {
+      "question": "Apakah hadis ini benar?",
+      "answer": "Kirim teks dan sumbernya; aku akan cek kecocokan dan menyatakan jika belum terverifikasi."
+    },
+    "implementation": "Text normalization, reference search, source comparison, uncertainty labels.",
+    "knowledge": "Hadith text, kitab, numbering variants, scholarly references.",
+    "metrics": "reference_match, unsupported_grade_rate, uncertainty_accuracy",
+    "limit": "Tidak melakukan tahqiq independen setara ahli.",
+    "guardrail": "Jangan memastikan kesahihan tanpa sumber.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-011",
+    "priority": 11,
+    "domain": "Religion",
+    "feature": "Fiqh Scenario Reasoning",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Menganalisis kasus fikih dengan fakta, syarat, pengecualian, dan perbedaan pendapat.",
+    "capability": "Apex meminta detail yang relevan sebelum memberi penjelasan umum.",
+    "example": {
+      "question": "Bagaimana hukum pada kondisi saya?",
+      "answer": "Aku perlu konteks kondisi, waktu, kemampuan, dan mazhab/rujukan yang digunakan; untuk keputusan personal rujuk ahli."
+    },
+    "implementation": "Case fact extractor, condition/rule mapping, uncertainty and referral.",
+    "knowledge": "Case facts, jurisdiction/community context, trusted fiqh sources.",
+    "metrics": "fact_completeness, overconfident_fatwa_rate",
+    "limit": "Tidak memberikan fatwa personal final.",
+    "guardrail": "Privasi dan kehati-hatian wajib.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-012",
+    "priority": 12,
+    "domain": "Job Recommendation",
+    "feature": "Advanced Career Profile Intelligence",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Membuat rekomendasi kerja berbasis profil user secara mendalam.",
+    "capability": "Apex menggabungkan skill, proyek, pengalaman, pendidikan, minat, gaya kerja, lokasi, target gaji, dan gap.",
+    "example": {
+      "question": "Pekerjaan apa yang paling cocok buat saya?",
+      "answer": "Aku akan memberi ranking peran, alasan kecocokan, gap, risiko, dan langkah portofolio."
+    },
+    "implementation": "Skill graph, role ontology, constraint optimizer, evidence-based ranking.",
+    "knowledge": "Resume/profile, projects, experience, education, preferences, current job market data.",
+    "metrics": "top_k_role_precision, explanation_quality, gap_accuracy",
+    "limit": "Pasar kerja berubah dan butuh data terbaru.",
+    "guardrail": "Jangan memakai atribut sensitif atau membuat diskriminasi.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-013",
+    "priority": 13,
+    "domain": "Job Recommendation",
+    "feature": "Career Scenario and Transition Planner",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Membandingkan beberapa jalur karier.",
+    "capability": "Apex membuat skenario 3-6-12 bulan, biaya belajar, risiko, dan outcome realistis.",
+    "example": {
+      "question": "Lebih baik fokus fullstack atau data engineering?",
+      "answer": "Aku akan membandingkan skill saat ini, waktu, proyek, lowongan, hambatan, dan peluang transfer skill."
+    },
+    "implementation": "Scenario planner, decision matrix, market evidence.",
+    "knowledge": "Current skills, learning time, job listings, portfolio, constraints.",
+    "metrics": "plan_realism, transition_success_proxy, sensitivity",
+    "limit": "Tidak menjamin pekerjaan.",
+    "guardrail": "Sebutkan ketidakpastian pasar.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-014",
+    "priority": 14,
+    "domain": "Job Recommendation",
+    "feature": "Resume and Portfolio Evidence Mapping",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Menghubungkan rekomendasi pekerjaan dengan bukti kemampuan user.",
+    "capability": "Apex menunjukkan proyek/pengalaman mana yang mendukung tiap posisi dan apa yang perlu diperbaiki.",
+    "example": {
+      "question": "Apakah portofolio saya cocok untuk backend?",
+      "answer": "Aku akan petakan API, database, testing, deployment, dan kontribusi teknis yang dapat dibuktikan."
+    },
+    "implementation": "Artifact parser, competency evidence graph, role rubric.",
+    "knowledge": "Resume, GitHub/project files, certificates, reports.",
+    "metrics": "evidence_mapping_accuracy, missing_skill_detection",
+    "limit": "Kualitas rekomendasi bergantung bukti yang diberikan.",
+    "guardrail": "Jangan mengarang pengalaman user.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-015",
+    "priority": 15,
+    "domain": "Fullstack Programming",
+    "feature": "Fullstack Codebase Understanding",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Memahami codebase multi-file dan dependency end-to-end.",
+    "capability": "Apex memetakan route, UI, API, service, database, auth, config, dan deployment.",
+    "example": {
+      "question": "Analisis struktur project ini.",
+      "answer": "Aku akan membuat peta komponen, alur request, dependency, risiko, dan file relevan."
+    },
+    "implementation": "AST/static analysis, file graph, framework detection, code index.",
+    "knowledge": "Project folder, manifests, configs, code, schema.",
+    "metrics": "architecture_mapping_accuracy, relevant_file_recall",
+    "limit": "Codebase sangat besar perlu indexing.",
+    "guardrail": "Secret scan sebelum indexing.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-016",
+    "priority": 16,
+    "domain": "Fullstack Programming",
+    "feature": "Frontend Expert Reasoning",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Meningkatkan pemahaman UI, state, performance, accessibility, dan browser.",
+    "capability": "Apex menganalisis rendering, network, state flow, component boundaries, dan UX bug.",
+    "example": {
+      "question": "Kenapa frontend terasa lambat?",
+      "answer": "Aku akan cek bundle, network waterfall, rendering ulang, image, caching, dan data fetching."
+    },
+    "implementation": "Browser profiling, component graph, performance rules.",
+    "knowledge": "Frontend code, network trace, screenshots, performance metrics.",
+    "metrics": "frontend_diagnosis, performance_improvement",
+    "limit": "Perlu data profiling nyata.",
+    "guardrail": "Jangan mengorbankan accessibility/security.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-017",
+    "priority": 17,
+    "domain": "Fullstack Programming",
+    "feature": "Backend Expert Reasoning",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Memahami backend, concurrency, caching, queues, API, auth, dan observability.",
+    "capability": "Apex menilai correctness, latency, reliability, dan scaling.",
+    "example": {
+      "question": "Kenapa API lambat?",
+      "answer": "Aku akan cek query, N+1, external calls, serialization, cache, connection pool, dan tracing."
+    },
+    "implementation": "Trace analysis, query profiling, architecture rules.",
+    "knowledge": "Backend code, logs, traces, DB query plans.",
+    "metrics": "backend_root_cause_accuracy, latency_reduction",
+    "limit": "Optimasi tanpa profiling berisiko.",
+    "guardrail": "Auth, privacy, dan data integrity wajib.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-018",
+    "priority": 18,
+    "domain": "Fullstack Programming",
+    "feature": "Database and API Contract Expert",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Memastikan database dan API konsisten dan aman.",
+    "capability": "Apex memeriksa schema, migration, transaction, index, validation, dan contract compatibility.",
+    "example": {
+      "question": "Kenapa data tersimpan tapi tidak tampil?",
+      "answer": "Aku akan telusuri DB commit, query/filter, API mapping, serialization, cache, dan frontend state."
+    },
+    "implementation": "Schema graph, API contract validator, migration analyzer.",
+    "knowledge": "DB schema, migrations, API specs, queries, response samples.",
+    "metrics": "contract_error_detection, query_accuracy",
+    "limit": "Perubahan schema perlu backup dan test.",
+    "guardrail": "Jangan menjalankan migration destruktif tanpa konfirmasi.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-019",
+    "priority": 19,
+    "domain": "Fullstack Programming",
+    "feature": "Secure Fullstack Review",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Menemukan kelemahan keamanan umum.",
+    "capability": "Apex meninjau auth, authorization, input validation, session, secret, upload, dan API exposure.",
+    "example": {
+      "question": "Cek keamanan project ini.",
+      "answer": "Aku akan fokus pada kontrol akses, injection, XSS, CSRF, secret, file upload, dan dependency."
+    },
+    "implementation": "Security rules, taint-oriented checks, config review.",
+    "knowledge": "Code, dependencies, configs, routes, auth flow.",
+    "metrics": "security_finding_precision, false_positive_rate",
+    "limit": "Bukan pengganti pentest lengkap.",
+    "guardrail": "Tidak memberi panduan eksploitasi merusak.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-020",
+    "priority": 20,
+    "domain": "Debugging",
+    "feature": "Multi-layer Root Cause Analysis",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Menganalisis bug lintas UI, API, DB, OS, dan deployment.",
+    "capability": "Apex mengurutkan bukti dan menguji hipotesis sampai akar masalah.",
+    "example": {
+      "question": "Bug hanya muncul di hosting.",
+      "answer": "Aku akan bandingkan environment, config, dependency, path, permission, database, dan runtime logs."
+    },
+    "implementation": "Evidence graph, environment diff, reproducibility plan.",
+    "knowledge": "Logs, env metadata, configs, deployment files, tests.",
+    "metrics": "RCA_precision, time_to_root_cause, fix_success",
+    "limit": "Bukti yang tidak lengkap menurunkan confidence.",
+    "guardrail": "Backup dan read-only scan lebih dulu.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-021",
+    "priority": 21,
+    "domain": "Debugging",
+    "feature": "Automated Reproduction and Isolation",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Membuat langkah reproduksi dan mempersempit komponen penyebab.",
+    "capability": "Apex merancang test minimal dan membandingkan kondisi berhasil/gagal.",
+    "example": {
+      "question": "Bagaimana mereproduksi bug ini?",
+      "answer": "Aku akan mengunci input, environment, langkah, expected result, actual result, dan perubahan terakhir."
+    },
+    "implementation": "Reproduction template, binary isolation, controlled experiments.",
+    "knowledge": "Bug report, environment, input, logs, versions.",
+    "metrics": "reproduction_success, hypothesis_elimination_rate",
+    "limit": "Tidak semua bug dapat direproduksi.",
+    "guardrail": "Jangan menjalankan test destruktif pada data produksi.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-022",
+    "priority": 22,
+    "domain": "Debugging",
+    "feature": "Patch, Test, and Regression",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Menghasilkan perbaikan yang diverifikasi.",
+    "capability": "Apex membuat diff, backup, test targeted, dan regression test.",
+    "example": {
+      "question": "Perbaiki bug ini.",
+      "answer": "Aku akan membuat patch preview, menjelaskan dampak, lalu menjalankan test setelah persetujuan."
+    },
+    "implementation": "Patch generator, test selector, rollback and audit.",
+    "knowledge": "Source code, tests, build commands, change history.",
+    "metrics": "patch_acceptance, test_pass_rate, regression_rate",
+    "limit": "Tidak apply otomatis tanpa izin.",
+    "guardrail": "Perubahan penting wajib backup.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-023",
+    "priority": 23,
+    "domain": "Debugging",
+    "feature": "Observability and Incident Reasoning",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Memahami log, metric, trace, dan timeline insiden.",
+    "capability": "Apex menghubungkan gejala pengguna dengan service dan perubahan sistem.",
+    "example": {
+      "question": "Kenapa error meningkat jam tertentu?",
+      "answer": "Aku akan korelasikan trafik, latency, error rate, resource, deployment, dan dependency."
+    },
+    "implementation": "Time-series correlation, trace graph, event timeline.",
+    "knowledge": "Logs, metrics, traces, deployment events.",
+    "metrics": "incident_correlation_accuracy, false_causality_rate",
+    "limit": "Perlu observability yang cukup.",
+    "guardrail": "Jangan menganggap korelasi sebagai sebab tanpa bukti.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-024",
+    "priority": 24,
+    "domain": "Telecommunication",
+    "feature": "Advanced Fiber and Access Network Reasoning",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Mendalami FTTH/GPON dan jaringan akses.",
+    "capability": "Apex menghitung link budget, rise time, splitter design, capacity, margin, dan fault analysis.",
+    "example": {
+      "question": "Evaluasi desain GPON ini.",
+      "answer": "Aku akan validasi parameter, rumus, margin, kapasitas port, serta skenario downstream/upstream."
+    },
+    "implementation": "Formula engine, topology graph, standards-aware validator.",
+    "knowledge": "Fiber length, attenuation, splitters, connectors, splice, Tx/Rx, bitrate.",
+    "metrics": "calculation_accuracy, standards_consistency, design_margin",
+    "limit": "Standar/vendor dapat berubah.",
+    "guardrail": "Sumber teknis dan asumsi harus dicatat.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-025",
+    "priority": 25,
+    "domain": "Telecommunication",
+    "feature": "RF and Wireless Expert Reasoning",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Memahami RF, propagation, modulation, link budget, interference, dan capacity.",
+    "capability": "Apex menganalisis coverage dan kualitas komunikasi secara legal.",
+    "example": {
+      "question": "Kenapa sinyal wireless buruk?",
+      "answer": "Aku akan cek frekuensi, path loss, obstacle, antenna, interference, bandwidth, dan receiver sensitivity."
+    },
+    "implementation": "RF calculation module and propagation scenarios.",
+    "knowledge": "Frequency, power, antenna gains, distance, environment, bandwidth.",
+    "metrics": "RF_formula_accuracy, coverage_estimation_error",
+    "limit": "Simulasi tidak menggantikan survey lapangan.",
+    "guardrail": "Tidak membantu jamming atau gangguan jaringan.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-026",
+    "priority": 26,
+    "domain": "Telecommunication",
+    "feature": "Network Protocol and QoS Reasoning",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Memahami routing, switching, QoS, latency, loss, jitter, dan troubleshooting.",
+    "capability": "Apex menelusuri masalah dari physical sampai application.",
+    "example": {
+      "question": "Kenapa video call putus-putus?",
+      "answer": "Aku akan cek bandwidth, jitter, packet loss, WiFi/RF, queue, route, dan congestion."
+    },
+    "implementation": "Layered network graph and QoS rules.",
+    "knowledge": "Topology, packet capture summaries, interface stats, latency tests.",
+    "metrics": "fault_isolation_accuracy, QoS_recommendation_quality",
+    "limit": "Packet capture mendalam perlu data.",
+    "guardrail": "Privasi trafik harus dijaga.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-027",
+    "priority": 27,
+    "domain": "Telecommunication",
+    "feature": "Telecom Standards and Source Validation",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Memastikan istilah dan parameter selaras dengan sumber teknis.",
+    "capability": "Apex membedakan asumsi proyek, standar, vendor, dan hasil simulasi.",
+    "example": {
+      "question": "Apakah parameter ini standar?",
+      "answer": "Aku perlu nama standar/vendor dan versinya; aku akan tandai parameter asumsi versus rujukan."
+    },
+    "implementation": "Standards metadata and source versioning.",
+    "knowledge": "Standards documents, vendor datasheets, project assumptions.",
+    "metrics": "source_traceability, parameter_validation",
+    "limit": "Informasi terbaru perlu sumber aktual.",
+    "guardrail": "Jangan mengarang standar atau nilai vendor.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-028",
+    "priority": 28,
+    "domain": "Informatics",
+    "feature": "Advanced Algorithms and Complexity",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Menganalisis algoritma, kompleksitas, correctness, dan trade-off.",
+    "capability": "Apex membandingkan solusi dan memeriksa edge case.",
+    "example": {
+      "question": "Algoritma mana paling efisien?",
+      "answer": "Aku akan membandingkan waktu, memori, ukuran input, distribusi data, dan kemudahan implementasi."
+    },
+    "implementation": "Complexity analyzer, invariant checker, benchmark plan.",
+    "knowledge": "Algorithms, constraints, sample inputs, performance requirements.",
+    "metrics": "complexity_accuracy, edge_case_coverage",
+    "limit": "Analisis teoritis perlu benchmark untuk implementasi nyata.",
+    "guardrail": "Jelaskan asumsi model komputasi.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-029",
+    "priority": 29,
+    "domain": "Informatics",
+    "feature": "Systems and Distributed Computing Reasoning",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Memahami OS, concurrency, distributed systems, consistency, dan failure.",
+    "capability": "Apex membahas race condition, deadlock, replication, cache, queue, dan reliability.",
+    "example": {
+      "question": "Kenapa data antar server tidak konsisten?",
+      "answer": "Aku akan cek replication lag, cache invalidation, transaction boundary, message ordering, dan conflict resolution."
+    },
+    "implementation": "System model, failure scenario graph, consistency patterns.",
+    "knowledge": "Architecture, logs, timing, DB/message configuration.",
+    "metrics": "system_reasoning_accuracy, failure_mode_coverage",
+    "limit": "Sistem besar memerlukan observability.",
+    "guardrail": "Jangan melakukan perubahan produksi tanpa rollout plan.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-030",
+    "priority": 30,
+    "domain": "Informatics",
+    "feature": "Information and Data Architecture",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Memahami data model, pipeline, governance, dan kualitas data.",
+    "capability": "Apex merancang source→raw→bronze→silver→gold dan penggunaan analitik/ML.",
+    "example": {
+      "question": "Bagaimana mengubah bronze ke silver?",
+      "answer": "Lakukan validation, type casting, deduplication, null handling, standardisasi, dan data quality checks."
+    },
+    "implementation": "Data lineage graph, medallion templates, quality rules.",
+    "knowledge": "Source schemas, transformations, quality requirements.",
+    "metrics": "pipeline_correctness, data_quality_detection",
+    "limit": "Tool-specific detail perlu konfigurasi aktual.",
+    "guardrail": "PII dan akses data wajib dijaga.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-031",
+    "priority": 31,
+    "domain": "Complex Logic",
+    "feature": "Constraint and Causal Reasoning",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Menangani masalah dengan banyak batasan dan hubungan sebab-akibat.",
+    "capability": "Apex membedakan korelasi, sebab, asumsi, dan confounder.",
+    "example": {
+      "question": "Apa penyebab utama dari kondisi ini?",
+      "answer": "Aku akan menguji beberapa penyebab dan mencari bukti yang dapat membedakan hipotesis."
+    },
+    "implementation": "Causal graph, constraint solver, counterfactual questions.",
+    "knowledge": "Observations, constraints, interventions, outcomes.",
+    "metrics": "causal_precision, constraint_satisfaction, assumption_quality",
+    "limit": "Causal inference memerlukan data atau eksperimen.",
+    "guardrail": "Jangan menyebut sebab pasti dari korelasi saja.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-032",
+    "priority": 32,
+    "domain": "Complex Logic",
+    "feature": "Adversarial and Counterexample Checking",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Menguji jawaban terhadap pengecualian dan kasus gagal.",
+    "capability": "Apex mencari kondisi yang membuat solusi tidak berlaku.",
+    "example": {
+      "question": "Apakah solusi ini selalu benar?",
+      "answer": "Aku akan mencari counterexample, edge case, dan asumsi tersembunyi."
+    },
+    "implementation": "Counterexample generator, edge-case library, proof checks.",
+    "knowledge": "Rules, examples, constraints, expected properties.",
+    "metrics": "counterexample_recall, false_universal_claim_rate",
+    "limit": "Tidak semua klaim dapat dibuktikan otomatis.",
+    "guardrail": "Sampaikan keterbatasan bukti.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-033",
+    "priority": 33,
+    "domain": "Complex Logic",
+    "feature": "Multi-criteria Decision Optimization",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Membuat keputusan kompleks berdasarkan kriteria dan risiko.",
+    "capability": "Apex menghitung ranking, sensitivitas bobot, skenario, dan risiko.",
+    "example": {
+      "question": "Pilih opsi terbaik dari tiga strategi.",
+      "answer": "Aku akan membuat ranking dan menunjukkan kapan hasil berubah jika bobot/asumsi berubah."
+    },
+    "implementation": "MCDA, sensitivity analysis, scenario simulation.",
+    "knowledge": "Options, criteria, weights, constraints, uncertainty.",
+    "metrics": "ranking_stability, sensitivity_accuracy",
+    "limit": "Keputusan akhir tetap milik user.",
+    "guardrail": "Jangan menyembunyikan nilai atau asumsi.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-034",
+    "priority": 34,
+    "domain": "Business",
+    "feature": "Business Strategy Deep Thinking",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Menganalisis pasar, customer, competition, moat, growth, dan execution.",
+    "capability": "Apex membangun hipotesis strategi dan menguji kelayakannya.",
+    "example": {
+      "question": "Apakah produk ini layak dikembangkan?",
+      "answer": "Aku akan menilai problem strength, customer segment, alternatives, pricing, distribution, retention, dan execution risk."
+    },
+    "implementation": "Strategy canvas, market hypothesis, unit economics, scenario analysis.",
+    "knowledge": "Customer evidence, competitor data, pricing, costs, operational capacity.",
+    "metrics": "strategy_quality, assumption_traceability, scenario_consistency",
+    "limit": "Tidak menjamin keberhasilan.",
+    "guardrail": "Bedakan data, asumsi, dan opini.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-035",
+    "priority": 35,
+    "domain": "Business",
+    "feature": "Financial and Operational Modeling",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Menghubungkan model bisnis ke cash flow, kapasitas, dan risiko.",
+    "capability": "Apex membuat skenario revenue, cost, BEP, runway, margin, dan sensitivity.",
+    "example": {
+      "question": "Buat skenario bisnis konservatif dan agresif.",
+      "answer": "Aku akan menunjukkan asumsi utama, rentang hasil, dan titik kegagalan."
+    },
+    "implementation": "Driver-based financial model and sensitivity engine.",
+    "knowledge": "Price, volume, costs, conversion, churn, capacity.",
+    "metrics": "calculation_accuracy, sensitivity_correctness",
+    "limit": "Bukan audit atau valuasi profesional.",
+    "guardrail": "Jangan menyembunyikan asumsi.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-036",
+    "priority": 36,
+    "domain": "Business",
+    "feature": "Business Risk and Execution Planner",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Mengubah strategi menjadi milestone dan kontrol risiko.",
+    "capability": "Apex memberi prioritas eksperimen, KPI, owner, dependency, dan stop condition.",
+    "example": {
+      "question": "Bagaimana menjalankan ide ini?",
+      "answer": "Aku akan pecah menjadi validasi masalah, MVP, channel test, retention, dan scale gate."
+    },
+    "implementation": "Roadmap planner, risk register, KPI tree.",
+    "knowledge": "Goals, resources, timeline, risks, team capacity.",
+    "metrics": "plan_feasibility, risk_coverage, milestone_quality",
+    "limit": "Rencana harus disesuaikan kondisi aktual.",
+    "guardrail": "Jangan mendorong pengeluaran besar tanpa validasi.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-037",
+    "priority": 37,
+    "domain": "Law",
+    "feature": "Legal Research and Source Reasoning",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Menelusuri isu hukum dengan yurisdiksi dan sumber yang tepat.",
+    "capability": "Apex membedakan undang-undang, peraturan, putusan, kontrak, dan fakta kasus.",
+    "example": {
+      "question": "Apa dasar hukum kasus ini?",
+      "answer": "Aku perlu yurisdiksi dan tanggal; kemudian aku akan memisahkan aturan, fakta, dan interpretasi."
+    },
+    "implementation": "Legal source hierarchy, jurisdiction router, citation validation.",
+    "knowledge": "Current statutes, regulations, decisions, jurisdiction, case facts.",
+    "metrics": "source_relevance, citation_accuracy, jurisdiction_accuracy",
+    "limit": "Hukum cepat berubah dan memerlukan sumber terbaru.",
+    "guardrail": "Bukan pengganti pengacara; jangan memberi kepastian tanpa verifikasi.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-038",
+    "priority": 38,
+    "domain": "Law",
+    "feature": "Contract and Obligation Deep Analysis",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Menganalisis hak, kewajiban, risiko, konflik, dan skenario kontrak.",
+    "capability": "Apex menelusuri klausul terkait dan menunjukkan dampak.",
+    "example": {
+      "question": "Apa risiko terbesar kontrak ini?",
+      "answer": "Aku akan memeriksa pembayaran, penalti, pembatalan, liability, IP, kerahasiaan, dan dispute."
+    },
+    "implementation": "Clause graph, obligation/deadline extractor, conflict detector.",
+    "knowledge": "Contract, dates, parties, jurisdiction, amendments.",
+    "metrics": "clause_recall, obligation_accuracy, evidence_pointer",
+    "limit": "Tidak memberi keputusan final.",
+    "guardrail": "Dokumen dan identitas harus dilindungi.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-039",
+    "priority": 39,
+    "domain": "Law",
+    "feature": "Legal Scenario and Risk Explanation",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Menjelaskan beberapa kemungkinan hasil hukum secara hati-hati.",
+    "capability": "Apex menyusun skenario berdasarkan fakta yang terbukti dan yang belum jelas.",
+    "example": {
+      "question": "Apa kemungkinan hasil kasus ini?",
+      "answer": "Aku akan memberi skenario, faktor penentu, bukti yang kurang, dan kebutuhan konsultasi profesional."
+    },
+    "implementation": "Scenario tree, burden/evidence mapping, uncertainty labels.",
+    "knowledge": "Case facts, evidence, law sources, procedural status.",
+    "metrics": "scenario_completeness, overconfidence_rate",
+    "limit": "Tidak memprediksi putusan secara pasti.",
+    "guardrail": "Jangan mendorong tindakan ilegal.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-040",
+    "priority": 40,
+    "domain": "IoT",
+    "feature": "IoT Architecture and Edge Intelligence",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Mendesain IoT dari device sampai cloud/edge dengan reliability.",
+    "capability": "Apex menilai sensor, power, connectivity, protocol, security, storage, dashboard, dan fail-safe.",
+    "example": {
+      "question": "Rancang IoT yang tahan gangguan.",
+      "answer": "Aku akan menambahkan offline mode, retry, watchdog, validation, local buffer, dan alert."
+    },
+    "implementation": "Reference architecture, failure-mode analysis, component constraints.",
+    "knowledge": "Hardware specs, sensor behavior, network, backend, power budget.",
+    "metrics": "architecture_completeness, failure_mode_coverage",
+    "limit": "Sistem keselamatan perlu engineer dan testing lapangan.",
+    "guardrail": "Listrik, baterai, aktuator, dan keamanan wajib.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-041",
+    "priority": 41,
+    "domain": "IoT",
+    "feature": "IoT Digital Diagnostics and Predictive Maintenance",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Menganalisis anomali perangkat dan kesehatan sistem.",
+    "capability": "Apex menghubungkan raw sensor, firmware logs, network, API, DB, dan device state.",
+    "example": {
+      "question": "Kenapa pompa kadang tidak menyala?",
+      "answer": "Aku akan cek relay state, power, sensor threshold, mode, command log, network, dan fail-safe."
+    },
+    "implementation": "Telemetry correlation, anomaly detection, event timeline.",
+    "knowledge": "Sensor history, device logs, commands, network/API logs.",
+    "metrics": "fault_isolation, anomaly_precision, downtime_reduction",
+    "limit": "Prediksi maintenance memerlukan histori cukup.",
+    "guardrail": "Jangan mengaktifkan aktuator berbahaya otomatis.",
+    "release": "R13.28",
+    "edition": "apex"
+  },
+  {
+    "id": "APEX-1327-042",
+    "priority": 42,
+    "domain": "Machine Learning",
+    "feature": "End-to-End ML Research and Production",
+    "thinking": "Expert / Deep Thinking",
+    "cli": {
+      "name": "Apex Nexus CLI",
+      "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka"
+    },
+    "responseStyle": "Direct-first expert; jawaban inti cepat; deep thinking lewat /expand atau otomatis saat kompleks",
+    "goal": "Mendalami ML dari eksperimen sampai deployment dan monitoring.",
+    "capability": "Apex menangani data lineage, leakage, features, model selection, tuning, evaluation, serving, drift, dan retraining.",
+    "example": {
+      "question": "Bangun pipeline ML yang kuat.",
+      "answer": "Aku akan mulai dari definisi target, baseline, split waktu/kelompok yang benar, evaluasi, lalu deployment dan monitoring."
+    },
+    "implementation": "Experiment registry, feature/data validation, evaluation suite, deployment plan.",
+    "knowledge": "Datasets, target, constraints, model candidates, serving environment.",
+    "metrics": "generalization, leakage_rate, calibration, drift_detection, latency",
+    "limit": "Hasil bergantung kualitas data dan eksperimen.",
+    "guardrail": "Jangan klaim kecerdasan/akurasi tanpa benchmark; lindungi data pribadi.",
+    "release": "R13.28",
+    "edition": "apex"
+  }
+]

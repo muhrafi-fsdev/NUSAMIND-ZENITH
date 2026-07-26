@@ -1,0 +1,743 @@
+[
+  {
+    "id": "v13_20_max_playbook_001",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Deep Thinking Next Level",
+    "category": "Thinking Core",
+    "objective": "Menjadi versi paling kuat untuk analisis mendalam dan tugas berat.",
+    "commands": [
+      "/version max"
+    ],
+    "workingRule": "reasoning_depth=high; max_tokens=3000-6000; self_check=true; verifier=true",
+    "responsePattern": "AI membedah masalah kompleks dengan struktur, validasi, risiko, dan rekomendasi.",
+    "must_include": [
+      "Thinking Core",
+      "Deep Thinking Next Level",
+      "no UI touch"
+    ],
+    "guardrail": "Deep thinking tetap harus aman dan tidak mengarang.",
+    "metric": "expert_answer_quality, accuracy, latency_p95",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_002",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Expert RAG Retrieval",
+    "category": "RAG",
+    "objective": "Mengambil banyak sumber/chunk dan melakukan ranking lanjutan.",
+    "commands": [
+      "/rag deep",
+      "/sources detail"
+    ],
+    "workingRule": "rag_top_k=8-20; reranker=true; trust_filter=high; citation_required=true",
+    "responsePattern": "AI memberi jawaban mendalam berbasis sumber kuat.",
+    "must_include": [
+      "RAG",
+      "Expert RAG Retrieval",
+      "no UI touch"
+    ],
+    "guardrail": "Jika sumber tidak cukup, AI harus menolak klaim pasti.",
+    "metric": "retrieval_precision, faithfulness_score, citation_accuracy",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_003",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Advanced Source Trust",
+    "category": "Source Ranking",
+    "objective": "Memprioritaskan sumber resmi, valid, dan terbaru.",
+    "commands": [
+      "/source audit"
+    ],
+    "workingRule": "source_trust=high_only_for_sensitive; source_conflict_check=true",
+    "responsePattern": "AI bisa membedakan sumber resmi dan sumber lemah.",
+    "must_include": [
+      "Source Ranking",
+      "Advanced Source Trust",
+      "no UI touch"
+    ],
+    "guardrail": "Jangan memakai sumber rendah untuk keputusan sensitif.",
+    "metric": "trusted_source_usage_rate, low_trust_block_rate",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_004",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Adaptive Memory Reasoning",
+    "category": "Memory",
+    "objective": "Memakai memory project, session, preferensi user, dan artifact dengan cerdas.",
+    "commands": [
+      "/memory audit",
+      "/context health"
+    ],
+    "workingRule": "memory_mode=adaptive; scopes=session,workspace,global; conflict_detection=true",
+    "responsePattern": "AI bisa lanjut project panjang tanpa user mengulang konteks.",
+    "must_include": [
+      "Memory",
+      "Adaptive Memory Reasoning",
+      "no UI touch"
+    ],
+    "guardrail": "Data sensitif tidak boleh disimpan tanpa izin.",
+    "metric": "memory_relevance, context_recall_accuracy, privacy_violation_rate",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_005",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Advanced Session Continuity",
+    "category": "Session",
+    "objective": "Paham konteks panjang, output terakhir, file terakhir, dan revisi sebelumnya.",
+    "commands": [
+      "/continue",
+      "/artifacts",
+      "/revise last"
+    ],
+    "workingRule": "recent_window=50-100; rolling_summary=true; artifact_awareness=true; revision_mode=true",
+    "responsePattern": "AI paham 'upgrade lagi', 'yang file tadi', 'revisi versi sebelumnya'.",
+    "must_include": [
+      "Session",
+      "Advanced Session Continuity",
+      "no UI touch"
+    ],
+    "guardrail": "Jika ada konflik konteks, ikuti instruksi terbaru user.",
+    "metric": "followup_resolution_accuracy, wrong_reference_rate",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_006",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Long Context Handling",
+    "category": "Long Context",
+    "objective": "Mengelola percakapan dan dokumen panjang dengan summary dan compression.",
+    "commands": [
+      "/compress-context",
+      "/summary update"
+    ],
+    "workingRule": "context_compression=true; summary_refresh=auto; context_health=true",
+    "responsePattern": "AI tetap nyambung walau session panjang.",
+    "must_include": [
+      "Long Context",
+      "Long Context Handling",
+      "no UI touch"
+    ],
+    "guardrail": "Jangan menghapus constraint penting saat kompresi.",
+    "metric": "context_restore_success, lost_fact_rate, token_saving_rate",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_007",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Complex Coding Debugger",
+    "category": "Coding",
+    "objective": "Debug frontend, backend, database, API, hosting, dan log secara mendalam.",
+    "commands": [
+      "/attach project.zip",
+      "/debug deep"
+    ],
+    "workingRule": "code_depth=deep; multi_file=true; root_cause=true; regression_test=true",
+    "responsePattern": "AI menemukan akar masalah dan memberi fix permanen.",
+    "must_include": [
+      "Coding",
+      "Complex Coding Debugger",
+      "no UI touch"
+    ],
+    "guardrail": "Jangan mengubah file asli tanpa backup/konfirmasi.",
+    "metric": "root_cause_accuracy, fix_success_rate, regression_coverage",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_008",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Security Code Review",
+    "category": "Security",
+    "objective": "Review SQL injection, XSS, CSRF, auth, upload, token leak, rate limit.",
+    "commands": [
+      "/security-check login.php"
+    ],
+    "workingRule": "security_review=true; owasp_checks=true; secret_scan=true",
+    "responsePattern": "AI memberi patch defensif dan prioritas severity.",
+    "must_include": [
+      "Security",
+      "Security Code Review",
+      "no UI touch"
+    ],
+    "guardrail": "Jangan memberi payload exploit siap pakai atau instruksi serangan.",
+    "metric": "vulnerability_detection_rate, safe_fix_rate",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_009",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Deep Machine Learning Expert",
+    "category": "Deep ML",
+    "objective": "Memahami neural network, Transformer, fine-tuning, RAG, MLOps, eval.",
+    "commands": [
+      "/ml deep",
+      "/eval max"
+    ],
+    "workingRule": "ml_depth=expert; formulas=true; code_examples=true; eval_required=true",
+    "responsePattern": "AI bisa membantu desain sistem ML dan evaluasi NusaMind.",
+    "must_include": [
+      "Deep ML",
+      "Deep Machine Learning Expert",
+      "no UI touch"
+    ],
+    "guardrail": "Jangan melatih dari data sensitif tanpa izin/filtering.",
+    "metric": "ml_concept_accuracy, eval_design_quality",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_010",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Complex Mathematics Expert",
+    "category": "Matematika",
+    "objective": "Kalkulus lanjut, aljabar linear, statistik, optimasi, metode numerik, matematika sinyal.",
+    "commands": [
+      "/math deep"
+    ],
+    "workingRule": "math_depth=expert; proof_support=true; verifier=strong",
+    "responsePattern": "AI bisa mengerjakan soal kompleks dengan validasi.",
+    "must_include": [
+      "Matematika",
+      "Complex Mathematics Expert",
+      "no UI touch"
+    ],
+    "guardrail": "Jika notasi ambigu, wajib menyebut asumsi.",
+    "metric": "step_accuracy, proof_validity, calculation_error_rate",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_011",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Advanced Physics",
+    "category": "Fisika",
+    "objective": "Mekanika, elektromagnetik, gelombang, optik, thermal, fisika antariksa.",
+    "commands": [
+      "/physics solve"
+    ],
+    "workingRule": "physics_depth=advanced; unit_check=true; formula_steps=true",
+    "responsePattern": "AI menjelaskan fisika untuk telekomunikasi, IoT, dan perangkat.",
+    "must_include": [
+      "Fisika",
+      "Advanced Physics",
+      "no UI touch"
+    ],
+    "guardrail": "Jangan memberi instruksi eksperimen listrik/tekanan/panas yang berbahaya.",
+    "metric": "physics_answer_accuracy, unit_consistency",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_012",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Advanced Chemistry",
+    "category": "Kimia",
+    "objective": "Stoikiometri, asam-basa, redoks, material, baterai, kimia perangkat.",
+    "commands": [
+      "/chem solve"
+    ],
+    "workingRule": "chemistry_depth=advanced; safety_warning=true; step_calculation=true",
+    "responsePattern": "AI bisa menjelaskan kimia untuk device, baterai, sensor, dan lingkungan.",
+    "must_include": [
+      "Kimia",
+      "Advanced Chemistry",
+      "no UI touch"
+    ],
+    "guardrail": "Jangan menyarankan pencampuran bahan kimia berbahaya.",
+    "metric": "chemistry_accuracy, safety_warning_accuracy",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_013",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Telecommunication Expert",
+    "category": "Telekomunikasi",
+    "objective": "FTTH/GPON, RF, QoS, modulasi, satelit, sistem komunikasi, link budget.",
+    "commands": [
+      "/telecom deep"
+    ],
+    "workingRule": "telecom_depth=expert; formula_engine=true; source_required=true",
+    "responsePattern": "AI menghitung link budget, rise time, BER, QoS, dan analisis sinyal.",
+    "must_include": [
+      "Telekomunikasi",
+      "Telecommunication Expert",
+      "no UI touch"
+    ],
+    "guardrail": "Jangan membantu jammer atau gangguan RF ilegal.",
+    "metric": "formula_accuracy, telecom_diagnosis_accuracy",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_014",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Expert Communication System",
+    "category": "Communication System",
+    "objective": "Signal system, convolution, Fourier, information theory, channel coding, BER.",
+    "commands": [
+      "/siskom deep"
+    ],
+    "workingRule": "signal_math=true; telecom_bridge=true; graph_explanation=true",
+    "responsePattern": "AI menjelaskan sistem komunikasi secara matematis dan praktis.",
+    "must_include": [
+      "Communication System",
+      "Expert Communication System",
+      "no UI touch"
+    ],
+    "guardrail": "Jangan memberi rumus tanpa konteks asumsi.",
+    "metric": "signal_reasoning_accuracy, formula_traceability",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_015",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Expert IoT System",
+    "category": "IoT",
+    "objective": "ESP32, sensor, protokol, backend, dashboard, fail-safe, security, reliability.",
+    "commands": [
+      "/iot expert"
+    ],
+    "workingRule": "iot_depth=expert; fail_safe=true; security_check=true; architecture=true",
+    "responsePattern": "AI merancang sistem IoT end-to-end yang aman dan stabil.",
+    "must_include": [
+      "IoT",
+      "Expert IoT System",
+      "no UI touch"
+    ],
+    "guardrail": "Wajib prioritaskan safe state saat sensor/network gagal.",
+    "metric": "iot_architecture_score, failsafe_coverage",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_016",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Expert Guarded Islamic Module",
+    "category": "Agama",
+    "objective": "Al-Qur'an, hadits, fikih, kitab kuning dengan sumber dan kehati-hatian tinggi.",
+    "commands": [
+      "/persona agama",
+      "/sources"
+    ],
+    "workingRule": "islamic_guardrail=strict; source_required=true; fatwa_disclaimer=true",
+    "responsePattern": "AI menjawab agama dengan hati-hati, bersumber, dan tidak mengarang.",
+    "must_include": [
+      "Agama",
+      "Expert Guarded Islamic Module",
+      "no UI touch"
+    ],
+    "guardrail": "Jangan membuat ayat/hadits palsu atau fatwa final.",
+    "metric": "source_accuracy, false_hadith_rate, fiqh_safety_score",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_017",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Document Intelligence",
+    "category": "Document AI",
+    "objective": "Membaca PDF, Word, Excel, PPT, screenshot, log, tabel, dan multi-file.",
+    "commands": [
+      "/attach laporan.pdf",
+      "/analyze deep"
+    ],
+    "workingRule": "doc_depth=deep; table_extraction=true; citation=page/sheet/line; multi_file=true",
+    "responsePattern": "AI menganalisis dokumen panjang dan memberi jawaban berbasis bukti.",
+    "must_include": [
+      "Document AI",
+      "Document Intelligence",
+      "no UI touch"
+    ],
+    "guardrail": "Jika bagian tidak terbaca, AI wajib bilang tidak yakin.",
+    "metric": "ocr_accuracy, table_accuracy, citation_accuracy",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_018",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Research Mode",
+    "category": "Research",
+    "objective": "Membuat analisis panjang, roadmap, pro-kontra, dan rekomendasi bertingkat.",
+    "commands": [
+      "/research deep"
+    ],
+    "workingRule": "research_depth=high; compare_sources=true; structured_output=true",
+    "responsePattern": "AI menyusun roadmap teknis dan strategi pengembangan.",
+    "must_include": [
+      "Research",
+      "Research Mode",
+      "no UI touch"
+    ],
+    "guardrail": "Untuk info terbaru perlu sumber terkini.",
+    "metric": "research_quality, source_coverage",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_019",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Evaluation Mode",
+    "category": "Evaluation",
+    "objective": "Menguji kualitas jawaban, kode, dataset, RAG, dan model.",
+    "commands": [
+      "/eval run max"
+    ],
+    "workingRule": "eval_full=true; domain_benchmark=true; regression_check=true",
+    "responsePattern": "AI membuat test set dan skor sebelum/after upgrade.",
+    "must_include": [
+      "Evaluation",
+      "Evaluation Mode",
+      "no UI touch"
+    ],
+    "guardrail": "Jangan klaim meningkat tanpa metrik.",
+    "metric": "accuracy, faithfulness, safety, regression_rate",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_020",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Strong Self Check",
+    "category": "Self-Verification",
+    "objective": "Mengecek ulang angka, sumber, logika, dan potensi hallucination.",
+    "commands": [
+      "/verify last"
+    ],
+    "workingRule": "self_check=true; math_verify=true; source_verify=true; contradiction_check=true",
+    "responsePattern": "AI memvalidasi jawaban sebelum final.",
+    "must_include": [
+      "Self-Verification",
+      "Strong Self Check",
+      "no UI touch"
+    ],
+    "guardrail": "Jika gagal verifikasi, AI harus jujur.",
+    "metric": "verification_success, false_confidence_rate",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_021",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Multi-domain Reasoning",
+    "category": "Multi-domain",
+    "objective": "Menggabungkan domain seperti fikih+keuangan, ML+matematika, telecom+fisika.",
+    "commands": [
+      "/domain analyze"
+    ],
+    "workingRule": "multi_domain_router=true; primary_secondary_domain=true",
+    "responsePattern": "AI bisa menjawab masalah yang lintas disiplin.",
+    "must_include": [
+      "Multi-domain",
+      "Multi-domain Reasoning",
+      "no UI touch"
+    ],
+    "guardrail": "Domain sensitif tetap harus pakai guardrail masing-masing.",
+    "metric": "domain_routing_accuracy, multi_domain_quality",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_022",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Advanced CLI Debug Mode",
+    "category": "CLI Debug",
+    "objective": "Menampilkan intent, domain, source, confidence, latency, guardrail untuk developer.",
+    "commands": [
+      "/debug on",
+      "/debug last"
+    ],
+    "workingRule": "debug_metadata=full_safe; show_chain_of_thought=false",
+    "responsePattern": "Developer bisa tahu kenapa AI menjawab seperti itu.",
+    "must_include": [
+      "CLI Debug",
+      "Advanced CLI Debug Mode",
+      "no UI touch"
+    ],
+    "guardrail": "Masking token/password wajib aktif.",
+    "metric": "debug_helpfulness, issue_resolution_time",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_023",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Artifact Awareness",
+    "category": "Artifact",
+    "objective": "AI tahu file CSV/dokumen/kode yang sudah dibuat sebelumnya.",
+    "commands": [
+      "/artifacts",
+      "/revise last"
+    ],
+    "workingRule": "artifact_registry=true; revision_links=true; file_summary=true",
+    "responsePattern": "AI bisa merevisi file lama atau membuat versi baru.",
+    "must_include": [
+      "Artifact",
+      "Artifact Awareness",
+      "no UI touch"
+    ],
+    "guardrail": "Jangan menimpa file lama tanpa backup.",
+    "metric": "artifact_reference_accuracy, revision_success",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_024",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Advanced Revision Mode",
+    "category": "Revision",
+    "objective": "Merevisi output sebelumnya tanpa kehilangan konteks.",
+    "commands": [
+      "/upgrade last",
+      "/diff last"
+    ],
+    "workingRule": "revision_mode=advanced; diff_summary=true; versioned_output=true",
+    "responsePattern": "AI membuat versi baru dari CSV/roadmap/kode dengan changelog.",
+    "must_include": [
+      "Revision",
+      "Advanced Revision Mode",
+      "no UI touch"
+    ],
+    "guardrail": "Jika target ambigu, sebutkan asumsi.",
+    "metric": "revision_target_accuracy, changelog_quality",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_025",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Heavy Task Workspace",
+    "category": "Workspace",
+    "objective": "Mengelola project besar dengan banyak file, keputusan, task, dan memory.",
+    "commands": [
+      "/workspace status",
+      "/tasks"
+    ],
+    "workingRule": "workspace_depth=deep; task_tracker=true; decision_log=true; project_memory=true",
+    "responsePattern": "AI menjadi assistant project lengkap.",
+    "must_include": [
+      "Workspace",
+      "Heavy Task Workspace",
+      "no UI touch"
+    ],
+    "guardrail": "Jangan mencampur data antar project.",
+    "metric": "project_context_accuracy, task_completion_rate",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_026",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Strict Guardrail",
+    "category": "Guardrail",
+    "objective": "Keamanan tinggi untuk agama, hukum, cyber, keuangan, command, file, dan memory.",
+    "commands": [
+      "/safety strict"
+    ],
+    "workingRule": "safety_level=strict; prompt_injection_filter=true; secret_scanner=true",
+    "responsePattern": "AI lebih aman saat membaca file lokal dan membahas topik sensitif.",
+    "must_include": [
+      "Guardrail",
+      "Strict Guardrail",
+      "no UI touch"
+    ],
+    "guardrail": "Tidak boleh memberi instruksi cyber ofensif, menyimpan secret, atau mengarang dalil.",
+    "metric": "unsafe_output_rate, secret_detection_recall",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_027",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Expert Answer Format",
+    "category": "Output Format",
+    "objective": "Jawaban punya ringkasan, analisis, langkah, risiko, rekomendasi, dan next step.",
+    "commands": [
+      "/format expert"
+    ],
+    "workingRule": "format=expert; include_risks=true; include_tests=true; include_next_steps=true",
+    "responsePattern": "AI memberi jawaban rapi untuk masalah berat.",
+    "must_include": [
+      "Output Format",
+      "Expert Answer Format",
+      "no UI touch"
+    ],
+    "guardrail": "Jangan membuat jawaban panjang yang mengaburkan batasan safety.",
+    "metric": "format_compliance, usefulness_score",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  },
+  {
+    "id": "v13_20_max_playbook_028",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "Playbook Heavy Mode Optimization",
+    "category": "Performance",
+    "objective": "Mengoptimalkan mode berat agar tetap stabil di lokal.",
+    "commands": [
+      "/benchmark max"
+    ],
+    "workingRule": "cache_embeddings=true; batch_retrieval=true; streaming=true; memory_limit_guard=true",
+    "responsePattern": "Max tetap bisa dipakai walau lebih berat.",
+    "must_include": [
+      "Performance",
+      "Heavy Mode Optimization",
+      "no UI touch"
+    ],
+    "guardrail": "Jika resource tidak cukup, sarankan Lite/Flash.",
+    "metric": "p95_latency, ram_usage, crash_rate",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "playbook",
+      "max"
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+-r requirements.txt
+sentence-transformers>=3.4,<4
+transformers>=4.48,<5
+accelerate>=1.3,<2
+pandas>=2.2,<3
+# torch is installed separately by ml-setup-gpu.bat from the official CUDA wheel index

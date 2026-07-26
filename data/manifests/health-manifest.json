@@ -1,0 +1,18 @@
+{
+  "release": "R13.45",
+  "status": "seed-needs-review",
+  "curated": false,
+  "records": {
+    "diseases": 40,
+    "medicines": 40,
+    "herbs": 30,
+    "interactions": 3,
+    "labs": 15
+  },
+  "safety": {
+    "diagnosisBoundary": true,
+    "prescriptionBoundary": true,
+    "unknownRemainsUnknown": true,
+    "noAbruptStopAdvice": true
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "active": "apex",
+  "legacy": [
+    "max"
+  ],
+  "commands": {
+    "/version max": "/version apex"
+  }
+}

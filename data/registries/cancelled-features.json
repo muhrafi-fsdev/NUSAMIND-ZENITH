@@ -1,0 +1,17 @@
+[
+  {
+    "id": "windows-exe",
+    "status": "CANCELLED",
+    "allowed": "Web local and CLI only"
+  },
+  {
+    "id": "n8n",
+    "status": "POSTPONED",
+    "allowed": "Historical documentation only"
+  },
+  {
+    "id": "main-ui-redesign",
+    "status": "LOCKED",
+    "allowed": "No structural or visual changes"
+  }
+]

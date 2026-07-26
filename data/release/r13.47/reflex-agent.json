@@ -1,0 +1,74 @@
+[
+  {
+    "component_id": "RF-01",
+    "component_name": "Actor",
+    "responsibility": "Execute current plan",
+    "stored_data": "Action summary and tool request",
+    "verification": "Tool contract and permissions",
+    "target_editions": "Zenith, Apex"
+  },
+  {
+    "component_id": "RF-02",
+    "component_name": "Outcome Evaluator",
+    "responsibility": "Classify success, partial and failure",
+    "stored_data": "Expected versus actual state",
+    "verification": "Deterministic and task rubric",
+    "target_editions": "Zenith, Apex"
+  },
+  {
+    "component_id": "RF-03",
+    "component_name": "Reflection Generator",
+    "responsibility": "Produce short corrective lesson",
+    "stored_data": "Failure type and verified lesson",
+    "verification": "Evaluator evidence required",
+    "target_editions": "Zenith, Apex"
+  },
+  {
+    "component_id": "RF-04",
+    "component_name": "Episodic Lesson Memory",
+    "responsibility": "Store reusable lessons",
+    "stored_data": "Scope, tool, environment, expiry, review",
+    "verification": "No raw CoT or untrusted content",
+    "target_editions": "Zenith, Apex"
+  },
+  {
+    "component_id": "RF-05",
+    "component_name": "Lesson Retriever",
+    "responsibility": "Retrieve relevant lessons",
+    "stored_data": "Top-k lesson IDs",
+    "verification": "Scope and version filtering",
+    "target_editions": "Zenith, Apex"
+  },
+  {
+    "component_id": "RF-06",
+    "component_name": "Replanner",
+    "responsibility": "Modify plan after failure",
+    "stored_data": "Plan delta and reason code",
+    "verification": "Dependency and permission validation",
+    "target_editions": "Zenith, Apex"
+  },
+  {
+    "component_id": "RF-07",
+    "component_name": "Recovery Policy",
+    "responsibility": "Choose retry, fallback, rollback or handoff",
+    "stored_data": "Retry count and decision",
+    "verification": "Bounded retry policy",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "component_id": "RF-08",
+    "component_name": "Trajectory Scorecard",
+    "responsibility": "Evaluate complete execution path",
+    "stored_data": "Actions, states, resources and safety",
+    "verification": "Critical gates",
+    "target_editions": "Zenith, Apex"
+  },
+  {
+    "component_id": "RF-09",
+    "component_name": "Reflection Security",
+    "responsibility": "Block poisoned lessons",
+    "stored_data": "Sanitized trace references",
+    "verification": "Trusted runtime metadata only",
+    "target_editions": "Zenith, Apex"
+  }
+]

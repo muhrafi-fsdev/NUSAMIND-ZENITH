@@ -1,0 +1,8 @@
+﻿phase_order,phase_name,main_goal,completion_definition,release_blocker
+1,Critical Runtime Consolidation,"Fix Python, build, path security, gate, capability, schema",Build/FastAPI/migration/runtime tests pass,Yes
+2,Executable Evaluation and Health Safety,"Real prompts, red flags, privacy, image and dose boundaries",Critical executable health cases pass,Yes
+3,Production Machine Learning,"Unique dataset, heads, calibration, OOD, embeddings, registry, drift",Production ML gate passes,Yes
+4,Real Neural Text Classifier,Turn XOR lab into text classifier and compare baseline,Neural gate passes and model is better,Zenith/Apex neural only
+5,Corpus Migration and Retrieval V6,"Migrate monolith, split packs, activate V6",Normal chat uses V6 and legacy read is zero,Yes
+6,Verified Health Knowledge,"Populate disease, medicine, herbal, interactions, labs and evidence",Executable health knowledge gate passes,Yes
+7,Edition Integration and Release,"Resource, install/upgrade, edition benchmark and grand gate",Grand gate passes,Yes

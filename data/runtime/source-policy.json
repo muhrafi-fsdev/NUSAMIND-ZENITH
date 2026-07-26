@@ -1,0 +1,76 @@
+{
+  "release": "R13.47",
+  "instructionAuthority": "none",
+  "sources": [
+    {
+      "source_id": "SRC-01",
+      "source_url": "https://www.promptingguide.ai/research",
+      "source_role": "Research index and technique discovery",
+      "usage_policy": "Do not treat as production truth",
+      "verification_requirement": "Open original paper or official docs"
+    },
+    {
+      "source_id": "SRC-02",
+      "source_url": "https://www.promptingguide.ai/prompts",
+      "source_role": "Prompt examples and benchmark inspiration",
+      "usage_policy": "Adapt and benchmark locally",
+      "verification_requirement": "Frozen prompt tests required"
+    },
+    {
+      "source_id": "SRC-03",
+      "source_url": "https://www.promptingguide.ai/agents",
+      "source_role": "Agent architecture concepts",
+      "usage_policy": "Use bounded permissions and verification",
+      "verification_requirement": "Executable agent tests required"
+    },
+    {
+      "source_id": "SRC-04",
+      "source_url": "https://www.promptingguide.ai/models",
+      "source_role": "Model family prompting overview",
+      "usage_policy": "Do not assume Qwen behavior from other models",
+      "verification_requirement": "Use live Qwen profiling"
+    },
+    {
+      "source_id": "SRC-05",
+      "source_url": "https://www.promptingguide.ai/techniques/meta-prompting",
+      "source_role": "Meta Prompting reference",
+      "usage_policy": "Implement structured templates",
+      "verification_requirement": "Compare against baseline"
+    },
+    {
+      "source_id": "SRC-06",
+      "source_url": "https://www.promptingguide.ai/techniques/activeprompt",
+      "source_role": "Active-Prompt reference",
+      "usage_policy": "Human-reviewed uncertainty queue",
+      "verification_requirement": "No automatic self-label activation"
+    },
+    {
+      "source_id": "SRC-07",
+      "source_url": "https://www.promptingguide.ai/techniques/reflexion",
+      "source_role": "Reflexion reference",
+      "usage_policy": "Store verified short lessons only",
+      "verification_requirement": "No raw chain-of-thought"
+    },
+    {
+      "source_id": "SRC-08",
+      "source_url": "https://www.promptingguide.ai/techniques/multimodalcot",
+      "source_role": "Multimodal reasoning reference",
+      "usage_policy": "Use structured visual evidence",
+      "verification_requirement": "Visual claim verifier required"
+    },
+    {
+      "source_id": "SRC-09",
+      "source_url": "https://www.promptingguide.ai/guides/reasoning-llms",
+      "source_role": "Agentic and hybrid reasoning guide",
+      "usage_policy": "Bound search and judge usage",
+      "verification_requirement": "Task-specific deterministic guards"
+    },
+    {
+      "source_id": "SRC-10",
+      "source_url": "https://qwen.readthedocs.io/",
+      "source_role": "Official Qwen documentation",
+      "usage_policy": "Source of truth for templates",
+      "verification_requirement": "Profile every local model version"
+    }
+  ]
+}

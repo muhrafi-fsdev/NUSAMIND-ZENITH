@@ -1,0 +1,14 @@
+{
+  "release": "R13.45",
+  "depth": "deep",
+  "domains": [
+    "symptoms",
+    "conditions",
+    "medications",
+    "herbal-products",
+    "laboratory-tests",
+    "special-populations",
+    "adverse-events"
+  ],
+  "rule": "Information support only; no diagnosis or treatment decision."
+}

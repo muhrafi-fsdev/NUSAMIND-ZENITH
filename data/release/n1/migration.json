@@ -1,0 +1,102 @@
+[
+  {
+    "migration_id": "VER-001",
+    "current_location": "package.json",
+    "current_value_or_pattern": "version 13.49.1",
+    "n1_0_target": "version 1.0.0",
+    "migration_action": "Update package version and description.",
+    "legacy_compatibility": "No runtime alias required.",
+    "verification": "npm package metadata test",
+    "breaking_change": "Yes"
+  },
+  {
+    "migration_id": "VER-002",
+    "current_location": "lib/release.ts",
+    "current_value_or_pattern": "version 13.49.1; label R13.49.1",
+    "n1_0_target": "version 1.0.0; label N1.0",
+    "migration_action": "Generate from canonical manifest.",
+    "legacy_compatibility": "Expose legacyReleaseAliases for imports/logs.",
+    "verification": "release identity consistency test",
+    "breaking_change": "Yes"
+  },
+  {
+    "migration_id": "VER-003",
+    "current_location": "data/runtime/edition-profile.json",
+    "current_value_or_pattern": "release 13.49.0; releaseLabel R13.49; v1347/v1348 blocks",
+    "n1_0_target": "schemaVersion 1; release N1.0; lineage array",
+    "migration_action": "Normalize profile schema and budgets.",
+    "legacy_compatibility": "Migration reader for old profile.",
+    "verification": "edition profile contract",
+    "breaking_change": "Yes"
+  },
+  {
+    "migration_id": "VER-004",
+    "current_location": "data/manifests/capability-manifest.json",
+    "current_value_or_pattern": "release R13.45",
+    "n1_0_target": "release N1.0 generated manifest",
+    "migration_action": "Regenerate from runtime evidence.",
+    "legacy_compatibility": "Keep archived old manifest outside active path.",
+    "verification": "capability truthfulness gate",
+    "breaking_change": "Yes"
+  },
+  {
+    "migration_id": "VER-005",
+    "current_location": "data/release/r13.*",
+    "current_value_or_pattern": "Multiple release folders",
+    "n1_0_target": "data/release/n1 plus archive/legacy-r13",
+    "migration_action": "Move active data; preserve immutable historical snapshots.",
+    "legacy_compatibility": "Legacy import and read-only archive.",
+    "verification": "checksum and record reconciliation",
+    "breaking_change": "Yes"
+  },
+  {
+    "migration_id": "VER-006",
+    "current_location": "app/api/v2...v10",
+    "current_value_or_pattern": "23 versioned route files",
+    "n1_0_target": "/api/core/* and /api/n1/*",
+    "migration_action": "Extract shared services; create thin adapters.",
+    "legacy_compatibility": "Temporary deprecated route adapters.",
+    "verification": "API equivalence and deprecation telemetry",
+    "breaking_change": "Yes"
+  },
+  {
+    "migration_id": "VER-007",
+    "current_location": "scripts/check/gate/eval",
+    "current_value_or_pattern": "13.49.1 script names",
+    "n1_0_target": "check-n1, eval-n1, gate-n1",
+    "migration_action": "Rename scripts and update package commands.",
+    "legacy_compatibility": "Optional one-release aliases that print deprecation.",
+    "verification": "all scripts exit as expected",
+    "breaking_change": "Yes"
+  },
+  {
+    "migration_id": "VER-008",
+    "current_location": "README, CONTEXT, reports, UI labels",
+    "current_value_or_pattern": "R13/V13 active naming",
+    "n1_0_target": "N1.0 active naming",
+    "migration_action": "Codemod active sections; preserve historical changelog.",
+    "legacy_compatibility": "Historical headings remain clearly labeled legacy.",
+    "verification": "active naming scan",
+    "breaking_change": "No"
+  },
+  {
+    "migration_id": "VER-009",
+    "current_location": "Distribution roadmap",
+    "current_value_or_pattern": "Windows EXE plans from prior CSVs",
+    "n1_0_target": "Web local + CLI only",
+    "migration_action": "Remove EXE tasks, dependencies, artifacts, and claims.",
+    "legacy_compatibility": "Historical cancellation note only.",
+    "verification": "forbidden desktop artifact scan",
+    "breaking_change": "Yes"
+  },
+  {
+    "migration_id": "VER-010",
+    "current_location": "n8n references",
+    "current_value_or_pattern": "Historical/postponed references",
+    "n1_0_target": "POSTPONED / NOT_IMPLEMENTED",
+    "migration_action": "Lock dependency, route, tool, plugin, workflow, credential, and UI surfaces.",
+    "legacy_compatibility": "None until user approves detailed integration.",
+    "verification": "n8n zero-surface gate",
+    "breaking_change": "No"
+  }
+]

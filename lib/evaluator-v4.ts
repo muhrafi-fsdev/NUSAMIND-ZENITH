@@ -1,0 +1,3 @@
+import { formatFinalAnswer } from './answer-format';
+export type EvalCase={id:string;question:string;rawAnswer:string;mustContain?:string[]};
+export function evaluateFormulaRendering(cases:EvalCase[]){const rows=cases.map(c=>{const answer=formatFinalAnswer(c.rawAnswer,c.question,process.env.NUSAMIND_EDITION||'swift');const latexLeak=/(?:\$\$|\\frac|\\sqrt|\\begin|\\end|\\\[|\\\()/.test(answer);const contains=(c.mustContain||[]).every(x=>answer.includes(x));return{id:c.id,answer,latexLeak,contains,pass:!latexLeak&&contains};});return{ok:rows.every(x=>x.pass),passed:rows.filter(x=>x.pass).length,total:rows.length,rows};}

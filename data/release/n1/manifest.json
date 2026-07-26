@@ -1,0 +1,87 @@
+{
+  "release": "N1.0",
+  "version": "1.0.0",
+  "edition": "zenith",
+  "name": "NusaMind Zenith",
+  "title": "Unified Local Agent Intelligence Platform",
+  "migrationOrigin": [
+    "R13.49.1 Cybersecurity-Only",
+    "V13.49.2"
+  ],
+  "upgradeItems": 124,
+  "statusCounts": {
+    "ACTIVE": 47,
+    "BENCHMARKED": 56,
+    "PROTOTYPE": 21
+  },
+  "trackCounts": {
+    "MIGRATED_FOUNDATION": 79,
+    "SIGNIFICANT_N1_0": 45
+  },
+  "phaseCounts": {
+    "Phase 1 — Reference Gap Audit and Change Impact": 6,
+    "Phase 2 — Prompt, Reasoning and Deep-Agent Completion": 8,
+    "Phase 3 — Model Gateway Quota, Account and Compatibility Completion": 10,
+    "Phase 4 — Engineering Intelligence, Sessions and Skill Workflows": 15,
+    "Phase 5 — Browser Intelligence, Profiles and Replay": 9,
+    "Phase 6 — Optional Developer UI Component Governance": 6,
+    "Phase 7 — Cybersecurity Curriculum and Defensive Project Completion": 11,
+    "Phase 8 — Security ML and Authorized Attack-Surface Completion": 9,
+    "Phase 9 — Edition Integration, Regression and Release": 5,
+    "Phase 0 — N1.0 Versioning and Distribution Reset": 10,
+    "Phase 10 — Unified Intelligence Fabric": 8,
+    "Phase 11 — Retrieval, Data and Knowledge Excellence": 8,
+    "Phase 12 — Engineering Agent 2.0": 7,
+    "Phase 13 — Browser and Multimodal Research 2.0": 5,
+    "Phase 14 — Cybersecurity Fusion 2.0": 5,
+    "Phase 15 — Production and Evaluation 2.0": 2
+  },
+  "topCategoryBoost": 900,
+  "scope": {
+    "windowsExe": "CANCELLED",
+    "n8n": "POSTPONED",
+    "mainUi": "LOCKED",
+    "distribution": [
+      "WEB_LOCAL",
+      "CLI"
+    ]
+  },
+  "runtime": {
+    "cognitiveOrchestrator": "BENCHMARKED",
+    "adaptiveReasoning": "BENCHMARKED",
+    "evidenceGraph": "ACTIVE",
+    "retrievalPlanner": "BENCHMARKED",
+    "privacyMemory": "ACTIVE",
+    "engineeringAgent": "EDITION_BOUNDED",
+    "browserResearch": "EDITION_BOUNDED",
+    "defensiveCybersecurity": "ACTIVE",
+    "readinessGate": "ACTIVE"
+  },
+  "editionBudget": {
+    "contextTokens": 24576,
+    "modelCalls": 11,
+    "agentSteps": 18,
+    "parallelism": 2,
+    "tools": 10,
+    "retries": 2,
+    "elapsedMs": 11000,
+    "outputTokens": 4800,
+    "ramMb": 6144
+  },
+  "features": {
+    "causalSandbox": true,
+    "multiAgentDebate": false,
+    "semanticCodeGraph": true,
+    "browserWorkspace": true,
+    "securityControlGraph": true,
+    "longHorizonAgent": true
+  },
+  "limitations": {
+    "externalSourceContentFetched": false,
+    "liveModelBenchmark": "NOT_RUN",
+    "liveBrowserBenchmark": "NOT_RUN",
+    "prototypeCapabilitiesRemainPrototype": true,
+    "rawChainOfThoughtStored": false,
+    "performanceClaims": "Only source, policy, typecheck, build, and local contract checks are release-gated."
+  }
+}

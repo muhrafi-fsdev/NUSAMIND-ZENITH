@@ -1,0 +1,8 @@
+{
+  "falseRefusalFix": true,
+  "copyrightGuard": "exact-quran-database-only-for-verbatim",
+  "surahMap": true,
+  "confidenceValidation": true,
+  "regressionBenchmark": true,
+  "release": "13.38.0"
+}

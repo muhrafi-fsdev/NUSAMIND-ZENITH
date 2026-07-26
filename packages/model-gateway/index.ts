@@ -1,0 +1,9 @@
+import policyData from '@/data/release/r13.49/model-policy.json';
+export type Edition='swift'|'zenith'|'apex';export const gatewayPolicy=policyData;
+type Model={id:string;provider:string;tasks:string[];tools:boolean;private:boolean;cost:number;healthy:boolean};
+const models:Model[]=[{id:'qwen-main',provider:'ollama',tasks:['chat','reasoning','classification'],tools:true,private:true,cost:0,healthy:true},{id:'qwen-coder',provider:'ollama',tasks:['code'],tools:true,private:true,cost:0,healthy:true},{id:'deterministic',provider:'local',tasks:['calculation','verification'],tools:true,private:true,cost:0,healthy:true}];
+export function modelRegistry(){return models.map(x=>({...x}));}
+export function routeModel(input:{edition:Edition;task:string;requiresTools?:boolean;privateData?:boolean;unhealthy?:string[];budget?:number}){const unhealthy=new Set(input.unhealthy||[]);const candidates=models.filter(m=>m.tasks.includes(input.task)&&!unhealthy.has(m.id)&&m.healthy&&(!input.requiresTools||m.tools)&&(!input.privateData||m.private)&&m.cost<=(input.budget??Infinity));const selected=candidates[0];return selected?{ok:true,selected,reason:'TASK_HEALTH_PRIVACY_BUDGET'}:{ok:false,selected:null,reason:'NO_COMPATIBLE_MODEL'};}
+export function circuitBreaker(failures:number,threshold=3){return{open:failures>=threshold,state:failures>=threshold?'OPEN':'CLOSED'};}
+export function compatibleFallback(primary:Model|undefined,candidates:Model[]){return candidates.find(x=>x.healthy&&(!primary?.tools||x.tools)&&(!primary?.private||x.private))||null;}
+export function compressEvidence(text:string,maxLines=8){const lines=text.split(/\r?\n/).filter(Boolean);const critical=lines.filter(x=>/error|failed|exception|warning|evidence|source/i.test(x));const selected=[...new Set([...critical,...lines])].slice(0,maxLines);return{output:selected.join('\n'),preservedCritical:critical.every(x=>selected.includes(x)),originalLines:lines.length,outputLines:selected.length};}

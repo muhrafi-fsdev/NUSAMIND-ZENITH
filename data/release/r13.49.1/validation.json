@@ -1,0 +1,31 @@
+{
+  "edition": "zenith",
+  "release": "R13.49.1",
+  "scope": "CYBERSECURITY_ONLY",
+  "desktopApplicationUpdate": "CANCELLED",
+  "typecheck": "PASS",
+  "nextBuild": "PASS",
+  "cybersecurityBenchmark": {
+    "total": 14,
+    "pass": 14
+  },
+  "uiChecksumMismatches": 0,
+  "jsonFiles": 316,
+  "jsonParseErrors": 0,
+  "jsonNamingErrors": 0,
+  "topCategories": 956,
+  "topCategoryBoost": 75,
+  "upgradeItems": 34,
+  "cleanPackage": true,
+  "forbiddenDesktopArtifacts": [],
+  "sourceBytes": 502642938,
+  "fileCount": 1487,
+  "limitations": {
+    "windowsDesktopExe": "NOT_INCLUDED",
+    "electron": "NOT_INCLUDED",
+    "apiToIpcMigration": "NOT_INCLUDED",
+    "activeSecurityActions": "AUTHORIZED_LOCAL_OR_OWNED_TARGETS_ONLY",
+    "publicTargetScanning": "BLOCKED",
+    "liveExternalSecurityTools": "NOT_RUN"
+  }
+}

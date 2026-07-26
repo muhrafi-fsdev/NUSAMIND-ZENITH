@@ -1,0 +1,27 @@
+[
+  {
+    "id": "ask",
+    "mode": "primary",
+    "write": false
+  },
+  {
+    "id": "plan",
+    "mode": "primary",
+    "write": false
+  },
+  {
+    "id": "review",
+    "mode": "subagent",
+    "write": false
+  },
+  {
+    "id": "build",
+    "mode": "primary",
+    "write": true
+  },
+  {
+    "id": "repair",
+    "mode": "subagent",
+    "write": true
+  }
+]

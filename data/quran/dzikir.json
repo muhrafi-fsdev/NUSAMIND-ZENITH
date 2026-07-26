@@ -1,0 +1,135 @@
+[
+    {
+        "id": "dzikir_shalat_istighfar",
+        "title": "Istighfar",
+        "category": "Sesudah Shalat",
+        "arabic": "أَسْتَغْفِرُ اللَّهَ",
+        "latin": "Astaghfirullah.",
+        "translation": "Aku memohon ampun kepada Allah.",
+        "count": 3,
+        "source": "HR. Muslim",
+        "note": "Dibaca 3 kali setelah salam."
+    },
+    {
+        "id": "dzikir_shalat_salam",
+        "title": "Doa Keselamatan",
+        "category": "Sesudah Shalat",
+        "arabic": "اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ",
+        "latin": "Allahumma antas-salaam wa minkas-salaam tabaarokta yaa dzal-jalaali wal-ikroom.",
+        "translation": "Ya Allah, Engkaulah As-Salaam (Yang Maha Sejahtera) dan dari-Mu kesejahteraan, Maha Suci Engkau wahai Rabb Pemilik keagungan dan kemuliaan.",
+        "count": 1,
+        "source": "HR. Muslim"
+    },
+    {
+        "id": "dzikir_shalat_tahlil",
+        "title": "Tahlil & Tauhid",
+        "category": "Sesudah Shalat",
+        "arabic": "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+        "latin": "Laa ilaaha illallahu wahdahu laa syariikalahu, lahul-mulku wa lahul-hamdu wa huwa 'alaa kulli syai'in qodiir.",
+        "translation": "Tiada tuhan yang berhak disembah selain Allah semata, tiada sekutu bagi-Nya. Milik-Nya lah kerajaan dan pujian. Dan Dia Maha Kuasa atas segala sesuatu.",
+        "count": 1,
+        "source": "HR. Bukhari & Muslim",
+        "note": "Khusus setelah shalat Subuh dan Maghrib dianjurkan dibaca 10 kali."
+    },
+    {
+        "id": "dzikir_shalat_tasbih",
+        "title": "Tasbih",
+        "category": "Sesudah Shalat",
+        "arabic": "سُبْحَانَ اللَّهِ",
+        "latin": "Subhanallah.",
+        "translation": "Maha Suci Allah.",
+        "count": 33,
+        "source": "HR. Muslim"
+    },
+    {
+        "id": "dzikir_shalat_tahmid",
+        "title": "Tahmid",
+        "category": "Sesudah Shalat",
+        "arabic": "الْحَمْدُ لِلَّهِ",
+        "latin": "Alhamdulillah.",
+        "translation": "Segala puji bagi Allah.",
+        "count": 33,
+        "source": "HR. Muslim"
+    },
+    {
+        "id": "dzikir_shalat_takbir",
+        "title": "Takbir",
+        "category": "Sesudah Shalat",
+        "arabic": "اللَّهُ أَكْبَرُ",
+        "latin": "Allahu Akbar.",
+        "translation": "Allah Maha Besar.",
+        "count": 33,
+        "source": "HR. Muslim"
+    },
+    {
+        "id": "dzikir_shalat_penutup33",
+        "title": "Penutup Dzikir 33",
+        "category": "Sesudah Shalat",
+        "arabic": "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+        "latin": "Laa ilaaha illallahu wahdahu laa syariikalahu, lahul-mulku wa lahul-hamdu wa huwa 'alaa kulli syai'in qodiir.",
+        "translation": "Tiada tuhan yang berhak disembah selain Allah semata, tiada sekutu bagi-Nya. Milik-Nya lah kerajaan dan pujian. Dan Dia Maha Kuasa atas segala sesuatu.",
+        "count": 1,
+        "source": "HR. Muslim",
+        "note": "Untuk menyempurnakan bilangan menjadi 100."
+    },
+    {
+        "id": "dzikir_pagi_ayat_kursi",
+        "title": "Ayat Kursi",
+        "category": "Pagi",
+        "arabic": "اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+        "latin": "Allahu laa ilaaha illaa huwal hayyul qoyyuum, laa ta'khudzuhuu sinatuw walaa nauum, lahuu maa fissamaawaati wa maa fil ardh, man dzalladzii yasyfa'u 'indahuu illaa bi idznih, ya'lamu maa baina aidiihim wa maa kholfahum, wa laa yuhiithuuna bisyai-im min 'ilmihii illaa bimaa syaa-a, wasi'a kursiyyuhus-samaawaati wal ardh, wa laa ya-uuduhuu hifzhuhumaa wahuwal 'aliyyul 'azhiim.",
+        "translation": "Allah, tidak ada tuhan selain Dia. Yang Mahahidup, Yang terus menerus mengurus (makhluk-Nya), tidak mengantuk dan tidak tidur. Milik-Nya apa yang ada di langit dan apa yang ada di bumi. Tidak ada yang dapat memberi syafaat di sisi-Nya tanpa izin-Nya. Dia mengetahui apa yang di hadapan mereka dan apa yang di belakang mereka, dan mereka tidak mengetahui sesuatu apa pun tentang ilmu-Nya melainkan apa yang Dia kehendaki. Kursi-Nya meliputi langit dan bumi. Dan Dia tidak merasa berat memelihara keduanya, dan Dia Mahatinggi, Mahabesar.",
+        "count": 1,
+        "source": "QS. Al-Baqarah: 255"
+    },
+    {
+        "id": "dzikir_pagi_al_ikhlas",
+        "title": "Surah Al-Ikhlas",
+        "category": "Pagi",
+        "arabic": "قُلْ هُوَ اللَّهُ أَحَدٌ ﴿١﴾ اللَّهُ الصَّمَدُ ﴿٢﴾ لَمْ يَلِدْ وَلَمْ يُولَدْ ﴿٣﴾ وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ ﴿٤﴾",
+        "latin": "Qul huwallahu ahad. Allahush-shomad. Lam yalid walam yuulad. Wa lam yakun lahuu kufuwan ahad.",
+        "translation": "Katakanlah (Muhammad), Dialah Allah, Yang Maha Esa. Allah tempat meminta segala sesuatu. (Allah) tidak beranak dan tidak pula diperanakkan. Dan tidak ada sesuatu yang setara dengan Dia.",
+        "count": 3,
+        "source": "HR. Abu Dawud"
+    },
+    {
+        "id": "dzikir_pagi_sayyidul_istighfar",
+        "title": "Sayyidul Istighfar",
+        "category": "Pagi",
+        "arabic": "اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ خَلَقْتَنِي وَأَنَا عَبْدُكَ وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ",
+        "latin": "Allahumma anta rabbii laa ilaaha illaa anta khalaqtanii wa anaa 'abduka wa anaa 'alaa 'ahdika wa wa'dika mastatha'tu, a'uudzubika min syarri maa shana'tu, abuu-u laka bini'matika 'alayya wa abuu-u bidzanbii faghfir lii fainnahu laa yaghfirudz-dzunuuba illaa anta.",
+        "translation": "Ya Allah, Engkau adalah Tuhanku, tidak ada Tuhan yang berhak disembah kecuali Engkau, Engkaulah yang menciptakan aku dan aku adalah hamba-Mu. Aku akan setia pada perjanjianku dengan-Mu semampuku. Aku berlindung kepada-Mu dari kejelekan yang kuperbuat. Aku mengakui nikmat-Mu kepadaku dan aku mengakui dosaku, oleh karena itu ampunilah aku. Sesungguhnya tiada yang dapat mengampuni dosa kecuali Engkau.",
+        "count": 1,
+        "source": "HR. Bukhari"
+    },
+    {
+        "id": "dzikir_petang_ayat_kursi",
+        "title": "Ayat Kursi",
+        "category": "Petang",
+        "arabic": "اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ...",
+        "latin": "Allahu laa ilaaha illaa huwal hayyul qoyyuum...",
+        "translation": "Allah, tidak ada tuhan selain Dia...",
+        "count": 1,
+        "source": "QS. Al-Baqarah: 255"
+    },
+    {
+        "id": "dzikir_petang_sayyidul_istighfar",
+        "title": "Sayyidul Istighfar",
+        "category": "Petang",
+        "arabic": "اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ خَلَقْتَنِي...",
+        "latin": "Allahumma anta rabbii laa ilaaha illaa anta...",
+        "translation": "Ya Allah, Engkau adalah Tuhanku...",
+        "count": 1,
+        "source": "HR. Bukhari"
+    },
+    {
+        "id": "dzikir_petang_bismillah",
+        "title": "Bismillahilladzi",
+        "category": "Petang",
+        "arabic": "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
+        "latin": "Bismillahilladzii laa yadhurru ma'asmihii syai-un fil ardhi walaa fis-samaa-i wahuwas-samii'ul 'aliim.",
+        "translation": "Dengan nama Allah yang bila disebut, segala sesuatu di bumi dan langit tidak akan berbahaya, Dia-lah Yang Maha Mendengar lagi Maha Mengetahui.",
+        "count": 3,
+        "source": "HR. Abu Dawud & Tirmidzi"
+    }
+]

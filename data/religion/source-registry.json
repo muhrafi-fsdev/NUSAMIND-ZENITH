@@ -1,0 +1,44 @@
+[
+  {
+    "id": "quran-local",
+    "type": "canonical-quran",
+    "path": "data/quran/ayah-index.json",
+    "status": "primary",
+    "allowedClaims": [
+      "arabic_text",
+      "latin",
+      "translation",
+      "verse_reference"
+    ]
+  },
+  {
+    "id": "tafsir-reg",
+    "type": "tafsir-registry",
+    "status": "requires-attribution",
+    "allowedClaims": [
+      "interpretation",
+      "context",
+      "method"
+    ],
+    "rule": "Jangan menggabungkan pandangan tanpa atribusi."
+  },
+  {
+    "id": "hadith-reg",
+    "type": "hadith-registry",
+    "status": "verification-required",
+    "allowedClaims": [
+      "source_match",
+      "grade_with_attribution"
+    ],
+    "rule": "Jangan membuat nomor atau derajat hadis."
+  },
+  {
+    "id": "human-expert",
+    "type": "handoff",
+    "status": "available",
+    "allowedClaims": [
+      "personal-case-review",
+      "fatwa-authority"
+    ]
+  }
+]

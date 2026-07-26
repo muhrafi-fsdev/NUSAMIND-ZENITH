@@ -1,0 +1,39 @@
+{
+  "release": "R13.47",
+  "edition": "zenith",
+  "statuses": [
+    {
+      "status_code": "CONFIGURED",
+      "meaning": "Konfigurasi dan kontrak tersedia; runtime belum dibuktikan."
+    },
+    {
+      "status_code": "PROTOTYPE",
+      "meaning": "Handler awal dapat dieksekusi tetapi dependency/coverage produksi belum lengkap."
+    },
+    {
+      "status_code": "BENCHMARKED",
+      "meaning": "Executable benchmark lulus pada scope yang tercatat."
+    },
+    {
+      "status_code": "ACTIVE",
+      "meaning": "Runtime, dependency, safety, dan critical regression gate lulus."
+    },
+    {
+      "status_code": "DEGRADED",
+      "meaning": "Runtime berjalan dengan fallback atau batas yang dinyatakan."
+    },
+    {
+      "status_code": "DISABLED",
+      "meaning": "Dinonaktifkan oleh edisi atau policy."
+    },
+    {
+      "status_code": "NOT_IMPLEMENTED",
+      "meaning": "Belum ada handler runtime."
+    },
+    {
+      "status_code": "UNAVAILABLE",
+      "meaning": "Dependency aktif tidak tersedia."
+    }
+  ],
+  "rule": "Source presence tidak pernah cukup untuk status ACTIVE."
+}

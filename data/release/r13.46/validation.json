@@ -1,0 +1,79 @@
+{
+  "ok": true,
+  "release": "R13.46",
+  "edition": "zenith",
+  "total": 18,
+  "applicable": 17,
+  "failed": [],
+  "typecheck": true,
+  "results": [
+    {
+      "id": "PB-001",
+      "ok": true
+    },
+    {
+      "id": "PB-002",
+      "ok": true
+    },
+    {
+      "id": "PB-003",
+      "ok": true
+    },
+    {
+      "id": "PB-004",
+      "ok": true
+    },
+    {
+      "id": "PB-005",
+      "ok": true
+    },
+    {
+      "id": "PB-006",
+      "ok": true
+    },
+    {
+      "id": "PB-007",
+      "ok": true
+    },
+    {
+      "id": "PB-008",
+      "ok": true
+    },
+    {
+      "id": "PB-010",
+      "ok": true
+    },
+    {
+      "id": "PB-011",
+      "ok": true
+    },
+    {
+      "id": "PB-012",
+      "ok": true
+    },
+    {
+      "id": "PB-013",
+      "ok": true
+    },
+    {
+      "id": "PB-014",
+      "ok": true
+    },
+    {
+      "id": "PB-015",
+      "ok": true
+    },
+    {
+      "id": "PB-016",
+      "ok": true
+    },
+    {
+      "id": "PB-017",
+      "ok": true
+    },
+    {
+      "id": "PB-018",
+      "ok": true
+    }
+  ]
+}

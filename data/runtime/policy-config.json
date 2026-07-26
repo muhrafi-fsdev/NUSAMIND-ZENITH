@@ -1,0 +1,9 @@
+{
+  "default": "deny",
+  "edition": "apex",
+  "maxSteps": 12,
+  "confirmWrites": true,
+  "workspaceOnly": true,
+  "audit": true,
+  "rollback": true
+}

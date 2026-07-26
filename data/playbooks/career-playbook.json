@@ -1,0 +1,4442 @@
+[
+  {
+    "id": "v13_4_it_playbook_nuai_001",
+    "title": "Playbook V13.4 NUAI-001 - Computational Thinking",
+    "category": "Cara Berpikir / Reasoning",
+    "keywords": [
+      "cara_berpikir",
+      "reasoning",
+      "computational_thinking",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "website_saya_error_harus_mulai_cek_dari_mana",
+      "dekomposisi_masalah_pattern_recognition_abstraction_algorithmic_thinking",
+      "membuat_langkah_penyelesaian_masalah_teknis_secara_runtut"
+    ],
+    "symptoms": [
+      "User bertanya tentang Computational Thinking",
+      "Pertanyaan bisa berbentuk: Website saya error, harus mulai cek dari mana?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Cara Berpikir",
+      "Identifikasi kategori: Reasoning",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan langsung menebak penyebab tunggal tanpa bukti"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Dekomposisi masalah, pattern recognition, abstraction, algorithmic thinking",
+      "Arahkan ke hasil target: Berikan urutan: cek gejala, cek log, cek koneksi DB, cek konfigurasi, uji ulang",
+      "Validasi dengan cara: Uji dengan 30 kasus masalah campuran dan cek apakah langkahnya runtut",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_002",
+    "title": "Playbook V13.4 NUAI-002 - Critical Thinking",
+    "category": "Cara Berpikir / Reasoning",
+    "keywords": [
+      "cara_berpikir",
+      "reasoning",
+      "critical_thinking",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "apakah_penyebab_laptop_saya_lambat_pasti_karena_ram",
+      "kemampuan_membedakan_fakta_asumsi_opini_dan_kesimpulan",
+      "memberi_jawaban_yang_menyebut_asumsi_dan_tingkat_kepastian"
+    ],
+    "symptoms": [
+      "User bertanya tentang Critical Thinking",
+      "Pertanyaan bisa berbentuk: Apakah penyebab laptop saya lambat pasti karena RAM?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Cara Berpikir",
+      "Identifikasi kategori: Reasoning",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Hindari jawaban terlalu percaya diri untuk data yang belum lengkap"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Kemampuan membedakan fakta, asumsi, opini, dan kesimpulan",
+      "Arahkan ke hasil target: Belum tentu. Jelaskan beberapa kemungkinan: RAM, storage, startup app, malware, suhu, driver",
+      "Validasi dengan cara: Cek apakah AI menyebut kemungkinan lain dan tidak overclaim",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_003",
+    "title": "Playbook V13.4 NUAI-003 - Analytical Thinking",
+    "category": "Cara Berpikir / Reasoning",
+    "keywords": [
+      "cara_berpikir",
+      "reasoning",
+      "analytical_thinking",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kenapa_ai_saya_jawabannya_ngawur_padahal_dataset_banyak",
+      "analisis_sebab_akibat_prioritas_masalah_dan_dampak_teknis",
+      "menganalisis_bug_berdasarkan_dampak_dan_probabilitas"
+    ],
+    "symptoms": [
+      "User bertanya tentang Analytical Thinking",
+      "Pertanyaan bisa berbentuk: Kenapa AI saya jawabannya ngawur padahal dataset banyak?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Cara Berpikir",
+      "Identifikasi kategori: Reasoning",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyalahkan dataset saja tanpa memeriksa pipeline"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Analisis sebab-akibat, prioritas masalah, dan dampak teknis",
+      "Arahkan ke hasil target: Pisahkan penyebab: retrieval buruk, dataset duplikat, prompt salah, model lemah, konteks kurang",
+      "Validasi dengan cara: Bandingkan analisis AI dengan diagnosis manual",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_004",
+    "title": "Playbook V13.4 NUAI-004 - System Thinking",
+    "category": "Cara Berpikir / Reasoning",
+    "keywords": [
+      "cara_berpikir",
+      "reasoning",
+      "system_thinking",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kalau_chat_ai_error_komponen_mana_saja_yang_harus_dicek",
+      "pemahaman_hubungan_antar_komponen_frontend_backend_database_api_model_ai_deploym",
+      "menjelaskan_alur_data_dari_user_sampai_jawaban_ai"
+    ],
+    "symptoms": [
+      "User bertanya tentang System Thinking",
+      "Pertanyaan bisa berbentuk: Kalau chat AI error, komponen mana saja yang harus dicek?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Cara Berpikir",
+      "Identifikasi kategori: Reasoning",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan memberi solusi satu komponen jika masalahnya lintas sistem"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Pemahaman hubungan antar komponen: frontend, backend, database, API, model AI, deployment",
+      "Arahkan ke hasil target: Frontend request, backend route, DB, vector DB, model lokal, prompt, log error",
+      "Validasi dengan cara: Uji dengan pertanyaan arsitektur dan cek kelengkapan komponen",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_005",
+    "title": "Playbook V13.4 NUAI-005 - Debugging Mindset",
+    "category": "Cara Berpikir / Reasoning",
+    "keywords": [
+      "cara_berpikir",
+      "reasoning",
+      "debugging_mindset",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kenapa_setelah_deploy_fitur_saya_kacau",
+      "hipotesis_reproduksi_bug_isolasi_masalah_logging_rollback_validasi_fix",
+      "memberi_checklist_debug_tanpa_asal_tebak"
+    ],
+    "symptoms": [
+      "User bertanya tentang Debugging Mindset",
+      "Pertanyaan bisa berbentuk: Kenapa setelah deploy fitur saya kacau?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Cara Berpikir",
+      "Identifikasi kategori: Reasoning",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyarankan hapus semua file atau reset tanpa backup"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Hipotesis, reproduksi bug, isolasi masalah, logging, rollback, validasi fix",
+      "Arahkan ke hasil target: Minta cek versi file, cache, console error, network tab, database migration, environment",
+      "Validasi dengan cara: Gunakan kasus bug nyata dan nilai apakah AI meminta bukti/log",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_006",
+    "title": "Playbook V13.4 NUAI-006 - Root Cause Analysis",
+    "category": "Cara Berpikir / Reasoning",
+    "keywords": [
+      "cara_berpikir",
+      "reasoning",
+      "root_cause_analysis",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kenapa_bug_progress_lama_masih_kebawa_ke_progress_baru",
+      "5_why_fishbone_sederhana_timeline_kejadian_penyebab_langsung_vs_penyebab_akar",
+      "membedakan_symptom_dan_root_cause"
+    ],
+    "symptoms": [
+      "User bertanya tentang Root Cause Analysis",
+      "Pertanyaan bisa berbentuk: Kenapa bug progress lama masih kebawa ke progress baru?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Cara Berpikir",
+      "Identifikasi kategori: Reasoning",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan memaksakan root cause jika data belum cukup"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: 5 Why, fishbone sederhana, timeline kejadian, penyebab langsung vs penyebab akar",
+      "Arahkan ke hasil target: Analisis kemungkinan: session tidak direset, localStorage lama, ID aktivitas tidak unik, query salah",
+      "Validasi dengan cara: Cek apakah AI menemukan penyebab arsitektural, bukan cuma UI",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_007",
+    "title": "Playbook V13.4 NUAI-007 - Trade-off Thinking",
+    "category": "Cara Berpikir / Reasoning",
+    "keywords": [
+      "cara_berpikir",
+      "reasoning",
+      "trade_off_thinking",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "lebih_baik_pakai_ollama_lokal_atau_hosting",
+      "pertimbangan_kelebihan_kekurangan_solusi_cepat_vs_aman_murah_vs_scalable_lokal_v",
+      "membandingkan_beberapa_opsi_implementasi"
+    ],
+    "symptoms": [
+      "User bertanya tentang Trade-off Thinking",
+      "Pertanyaan bisa berbentuk: Lebih baik pakai Ollama lokal atau hosting?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Cara Berpikir",
+      "Identifikasi kategori: Reasoning",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyatakan satu teknologi selalu paling bagus"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Pertimbangan kelebihan-kekurangan solusi: cepat vs aman, murah vs scalable, lokal vs cloud",
+      "Arahkan ke hasil target: Bandingkan biaya, performa, privasi, maintenance, kemudahan deploy",
+      "Validasi dengan cara: Cek apakah AI memberi rekomendasi sesuai constraint user",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_008",
+    "title": "Playbook V13.4 NUAI-008 - Decision Making",
+    "category": "Cara Berpikir / Reasoning",
+    "keywords": [
+      "cara_berpikir",
+      "reasoning",
+      "decision_making",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "saya_harus_belajar_laravel_dulu_atau_node_js_dulu",
+      "framework_keputusan_kriteria_skor_risiko_rekomendasi",
+      "membuat_keputusan_berbasis_kriteria"
+    ],
+    "symptoms": [
+      "User bertanya tentang Decision Making",
+      "Pertanyaan bisa berbentuk: Saya harus belajar Laravel dulu atau Node.js dulu?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Cara Berpikir",
+      "Identifikasi kategori: Reasoning",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan memutuskan tanpa menjelaskan alasan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Framework keputusan: kriteria, skor, risiko, rekomendasi",
+      "Arahkan ke hasil target: Buat matriks keputusan berdasarkan tujuan, kebutuhan proyek, pasar kerja, dan skill sekarang",
+      "Validasi dengan cara: Uji dengan 20 keputusan teknis dan cek konsistensi alasan",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_009",
+    "title": "Playbook V13.4 NUAI-009 - Problem Framing",
+    "category": "Cara Berpikir / Reasoning",
+    "keywords": [
+      "cara_berpikir",
+      "reasoning",
+      "problem_framing",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "ai_saya_lambat_gimana",
+      "merumuskan_masalah_batasan_input_output_definisi_sukses",
+      "mengubah_keluhan_umum_menjadi_problem_statement"
+    ],
+    "symptoms": [
+      "User bertanya tentang Problem Framing",
+      "Pertanyaan bisa berbentuk: AI saya lambat, gimana?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Cara Berpikir",
+      "Identifikasi kategori: Reasoning",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan langsung memberi solusi sebelum masalah cukup jelas"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Merumuskan masalah, batasan, input-output, definisi sukses",
+      "Arahkan ke hasil target: Definisikan: lambat saat loading model, retrieval, generate jawaban, atau akses database",
+      "Validasi dengan cara: Nilai apakah AI bisa memperjelas masalah tanpa bertele-tele",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_010",
+    "title": "Playbook V13.4 NUAI-010 - Verification Thinking",
+    "category": "Cara Berpikir / Reasoning",
+    "keywords": [
+      "cara_berpikir",
+      "reasoning",
+      "verification_thinking",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kalau_sudah_diperbaiki_cara_tesnya_gimana",
+      "cara_membuktikan_solusi_berhasil_test_case_expected_result_log_screenshot_benchm",
+      "menutup_solusi_dengan_langkah_pengujian"
+    ],
+    "symptoms": [
+      "User bertanya tentang Verification Thinking",
+      "Pertanyaan bisa berbentuk: Kalau sudah diperbaiki, cara tesnya gimana?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Cara Berpikir",
+      "Identifikasi kategori: Reasoning",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyatakan fix berhasil tanpa hasil tes"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Cara membuktikan solusi berhasil: test case, expected result, log, screenshot, benchmark",
+      "Arahkan ke hasil target: Berikan checklist testing: input normal, input ekstrem, refresh, logout-login, cek database",
+      "Validasi dengan cara: Cek apakah setiap solusi teknis disertai cara uji",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_011",
+    "title": "Playbook V13.4 NUAI-011 - Arsitektur Komputer",
+    "category": "IT Fundamental / Komputer",
+    "keywords": [
+      "it_fundamental",
+      "komputer",
+      "arsitektur_komputer",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kenapa_laptop_rtx_4060_saya_tetap_lambat_menjalankan_ai_lokal",
+      "cpu_ram_storage_gpu_motherboard_bottleneck_thermal_throttling",
+      "menjelaskan_hubungan_hardware_dengan_performa_aplikasi"
+    ],
+    "symptoms": [
+      "User bertanya tentang Arsitektur Komputer",
+      "Pertanyaan bisa berbentuk: Kenapa laptop RTX 4060 saya tetap lambat menjalankan AI lokal?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: IT Fundamental",
+      "Identifikasi kategori: Komputer",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyarankan overclock ekstrem atau bongkar hardware tanpa keahlian"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: CPU, RAM, storage, GPU, motherboard, bottleneck, thermal throttling",
+      "Arahkan ke hasil target: Jelaskan faktor VRAM, RAM, model size, quantization, suhu, storage, background process",
+      "Validasi dengan cara: Uji dengan pertanyaan hardware harian",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_012",
+    "title": "Playbook V13.4 NUAI-012 - Sistem Operasi",
+    "category": "IT Fundamental / Komputer",
+    "keywords": [
+      "it_fundamental",
+      "komputer",
+      "sistem_operasi",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kenapa_aplikasi_tidak_bisa_jalan_di_windows",
+      "windows_linux_dasar_process_service_permission_file_system_environment_variable",
+      "memberi_solusi_os_yang_aman_dan_bertahap"
+    ],
+    "symptoms": [
+      "User bertanya tentang Sistem Operasi",
+      "Pertanyaan bisa berbentuk: Kenapa aplikasi tidak bisa jalan di Windows?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: IT Fundamental",
+      "Identifikasi kategori: Komputer",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Hindari perintah destruktif seperti format/delete system"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Windows, Linux dasar, process, service, permission, file system, environment variable",
+      "Arahkan ke hasil target: Cek compatibility, permission, dependency, antivirus, environment, log error",
+      "Validasi dengan cara: Uji dengan kasus file permission, service gagal, path salah",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_013",
+    "title": "Playbook V13.4 NUAI-013 - Linux Command Line",
+    "category": "IT Fundamental / Komputer",
+    "keywords": [
+      "it_fundamental",
+      "komputer",
+      "linux_command_line",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "apa_fungsi_chmod_dan_chown",
+      "navigasi_terminal_file_permission_process_service_package_manager_log",
+      "menjelaskan_command_dan_risikonya"
+    ],
+    "symptoms": [
+      "User bertanya tentang Linux Command Line",
+      "Pertanyaan bisa berbentuk: Apa fungsi chmod dan chown?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: IT Fundamental",
+      "Identifikasi kategori: Komputer",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan memberi command rm -rf sembarangan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Navigasi terminal, file permission, process, service, package manager, log",
+      "Arahkan ke hasil target: Jelaskan permission, owner, contoh aman, dan warning risiko",
+      "Validasi dengan cara: Uji dengan pertanyaan command dan minta AI menjelaskan risiko",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_014",
+    "title": "Playbook V13.4 NUAI-014 - Networking Dasar",
+    "category": "IT Fundamental / Jaringan",
+    "keywords": [
+      "it_fundamental",
+      "jaringan",
+      "networking_dasar",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kenapa_laptop_bisa_wifi_tapi_tidak_bisa_buka_website",
+      "ip_subnet_gateway_dns_dhcp_nat_routing_switch_router",
+      "membantu_diagnosis_koneksi_internet_lan"
+    ],
+    "symptoms": [
+      "User bertanya tentang Networking Dasar",
+      "Pertanyaan bisa berbentuk: Kenapa laptop bisa WiFi tapi tidak bisa buka website?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: IT Fundamental",
+      "Identifikasi kategori: Jaringan",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan memberi instruksi menyerang jaringan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: IP, subnet, gateway, DNS, DHCP, NAT, routing, switch, router",
+      "Arahkan ke hasil target: Cek IP, gateway, DNS, ping router, ping 8.8.8.8, nslookup domain",
+      "Validasi dengan cara: Uji dengan simulasi masalah DNS/IP/gateway",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_015",
+    "title": "Playbook V13.4 NUAI-015 - Troubleshooting Network",
+    "category": "IT Fundamental / Jaringan",
+    "keywords": [
+      "it_fundamental",
+      "jaringan",
+      "troubleshooting_network",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "ping_gateway_reply_tapi_internet_tidak_bisa_kenapa",
+      "ping_tracert_traceroute_ipconfig_ifconfig_netstat_nslookup_packet_loss",
+      "menganalisis_hasil_command_jaringan"
+    ],
+    "symptoms": [
+      "User bertanya tentang Troubleshooting Network",
+      "Pertanyaan bisa berbentuk: Ping gateway reply tapi internet tidak bisa, kenapa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: IT Fundamental",
+      "Identifikasi kategori: Jaringan",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyarankan bypass firewall kantor"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Ping, tracert/traceroute, ipconfig/ifconfig, netstat, nslookup, packet loss",
+      "Arahkan ke hasil target: Analisis DNS, proxy, firewall, captive portal, routing ke internet",
+      "Validasi dengan cara: Berikan output command palsu/nyata dan cek interpretasi AI",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_016",
+    "title": "Playbook V13.4 NUAI-016 - Topologi dan Infrastruktur",
+    "category": "IT Fundamental / Jaringan",
+    "keywords": [
+      "it_fundamental",
+      "jaringan",
+      "topologi_dan_infrastruktur",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "topologi_jaringan_kantor_pusat_ke_cabang_gimana",
+      "lan_wan_vlan_vpn_firewall_access_point_server_room_monitoring",
+      "membuat_topologi_logis_dan_urutan_koneksi"
+    ],
+    "symptoms": [
+      "User bertanya tentang Topologi dan Infrastruktur",
+      "Pertanyaan bisa berbentuk: Topologi jaringan kantor pusat ke cabang gimana?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: IT Fundamental",
+      "Identifikasi kategori: Jaringan",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan mengungkap detail jaringan internal nyata tanpa izin"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: LAN, WAN, VLAN, VPN, firewall, access point, server room, monitoring",
+      "Arahkan ke hasil target: Jelaskan router, firewall, VPN/MPLS/SD-WAN, switch, VLAN, server, printer",
+      "Validasi dengan cara: Uji dengan request topologi dan cek kelengkapan perangkat",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_017",
+    "title": "Playbook V13.4 NUAI-017 - Database Fundamental",
+    "category": "IT Fundamental / Database",
+    "keywords": [
+      "it_fundamental",
+      "database",
+      "database_fundamental",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "cara_bikin_database_untuk_memory_ai",
+      "tabel_kolom_primary_key_foreign_key_index_normalization",
+      "membuat_rancangan_tabel_yang_masuk_akal"
+    ],
+    "symptoms": [
+      "User bertanya tentang Database Fundamental",
+      "Pertanyaan bisa berbentuk: Cara bikin database untuk memory AI?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: IT Fundamental",
+      "Identifikasi kategori: Database",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyimpan password plain text"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Tabel, kolom, primary key, foreign key, index, normalization",
+      "Arahkan ke hasil target: Buat tabel users, conversations, messages, memories, feedback, embeddings metadata",
+      "Validasi dengan cara: Uji dengan beberapa kasus sistem dan cek rancangan DB",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_018",
+    "title": "Playbook V13.4 NUAI-018 - SQL Practical",
+    "category": "IT Fundamental / Database",
+    "keywords": [
+      "it_fundamental",
+      "database",
+      "sql_practical",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "query_untuk_ambil_riwayat_chat_terakhir_user_gimana",
+      "select_join_insert_update_delete_aman_aggregate_transaction",
+      "menulis_query_sql_dan_menjelaskan_hasilnya"
+    ],
+    "symptoms": [
+      "User bertanya tentang SQL Practical",
+      "Pertanyaan bisa berbentuk: Query untuk ambil riwayat chat terakhir user gimana?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: IT Fundamental",
+      "Identifikasi kategori: Database",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Untuk DELETE/UPDATE wajib beri warning backup/WHERE"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: SELECT, JOIN, INSERT, UPDATE, DELETE aman, aggregate, transaction",
+      "Arahkan ke hasil target: Berikan SELECT dengan WHERE user_id, ORDER BY created_at DESC, LIMIT",
+      "Validasi dengan cara: Jalankan query pada contoh schema dan cek hasil",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_019",
+    "title": "Playbook V13.4 NUAI-019 - Database Performance",
+    "category": "IT Fundamental / Database",
+    "keywords": [
+      "it_fundamental",
+      "database",
+      "database_performance",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kenapa_halaman_directory_formula_lama_loading",
+      "index_query_plan_n_1_query_pagination_caching_connection_pooling",
+      "menganalisis_penyebab_query_lambat"
+    ],
+    "symptoms": [
+      "User bertanya tentang Database Performance",
+      "Pertanyaan bisa berbentuk: Kenapa halaman directory formula lama loading?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: IT Fundamental",
+      "Identifikasi kategori: Database",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyarankan index berlebihan tanpa konteks"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Index, query plan, N+1 query, pagination, caching, connection pooling",
+      "Arahkan ke hasil target: Cek index, query count, pagination, LIKE wildcard, response size, cache",
+      "Validasi dengan cara: Uji dengan query lambat dan cek saran index",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_020",
+    "title": "Playbook V13.4 NUAI-020 - HTTP dan Web Basics",
+    "category": "IT Fundamental / Web",
+    "keywords": [
+      "it_fundamental",
+      "web",
+      "http_dan_web_basics",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "apa_arti_error_500_dan_404",
+      "request_response_status_code_header_cookie_session_cors_cache",
+      "membaca_status_code_dan_penyebab_umum"
+    ],
+    "symptoms": [
+      "User bertanya tentang HTTP dan Web Basics",
+      "Pertanyaan bisa berbentuk: Apa arti error 500 dan 404?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: IT Fundamental",
+      "Identifikasi kategori: Web",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyarankan expose debug detail di production"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Request-response, status code, header, cookie, session, CORS, cache",
+      "Arahkan ke hasil target: Jelaskan 404 resource tidak ditemukan, 500 server error, langkah cek log",
+      "Validasi dengan cara: Uji interpretasi status code",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_021",
+    "title": "Playbook V13.4 NUAI-021 - Algorithmic Thinking",
+    "category": "Programming / Dasar Coding",
+    "keywords": [
+      "programming",
+      "dasar_coding",
+      "algorithmic_thinking",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "cara_mencari_data_duplikat_di_dataset",
+      "variabel_control_flow_loop_function_recursion_dasar_complexity",
+      "membuat_solusi_algoritmik_sederhana"
+    ],
+    "symptoms": [
+      "User bertanya tentang Algorithmic Thinking",
+      "Pertanyaan bisa berbentuk: Cara mencari data duplikat di dataset?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Programming",
+      "Identifikasi kategori: Dasar Coding",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan memberi kode tanpa menjelaskan logikanya"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Variabel, control flow, loop, function, recursion dasar, complexity",
+      "Arahkan ke hasil target: Gunakan set/hash map, bandingkan normalized question, tandai duplicate",
+      "Validasi dengan cara: Uji dengan soal logika dan debugging algoritma",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_022",
+    "title": "Playbook V13.4 NUAI-022 - Data Structures",
+    "category": "Programming / Dasar Coding",
+    "keywords": [
+      "programming",
+      "dasar_coding",
+      "data_structures",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "untuk_menyimpan_history_chat_bagusnya_pakai_apa",
+      "array_object_map_set_stack_queue_tree_graph",
+      "memilih_struktur_data_sesuai_kebutuhan"
+    ],
+    "symptoms": [
+      "User bertanya tentang Data Structures",
+      "Pertanyaan bisa berbentuk: Untuk menyimpan history chat bagusnya pakai apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Programming",
+      "Identifikasi kategori: Dasar Coding",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan memaksakan struktur kompleks jika tidak perlu"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Array, object/map, set, stack, queue, tree, graph",
+      "Arahkan ke hasil target: Jelaskan array/list untuk urutan, map untuk indexing, DB table untuk persistence",
+      "Validasi dengan cara: Uji dengan pertanyaan pemilihan struktur data",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_023",
+    "title": "Playbook V13.4 NUAI-023 - Clean Code",
+    "category": "Programming / Software Engineering",
+    "keywords": [
+      "programming",
+      "software_engineering",
+      "clean_code",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kode_saya_panjang_banget_bisa_dirapikan",
+      "naming_function_kecil_single_responsibility_komentar_yang_berguna",
+      "mereview_kode_dan_memberi_saran_refactor"
+    ],
+    "symptoms": [
+      "User bertanya tentang Clean Code",
+      "Pertanyaan bisa berbentuk: Kode saya panjang banget, bisa dirapikan?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Programming",
+      "Identifikasi kategori: Software Engineering",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan mengubah behavior tanpa menjelaskan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Naming, function kecil, single responsibility, komentar yang berguna",
+      "Arahkan ke hasil target: Pisahkan fungsi, beri nama jelas, kurangi duplikasi, tambah validasi",
+      "Validasi dengan cara: Uji dengan snippet kode dan cek kualitas refactor",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_024",
+    "title": "Playbook V13.4 NUAI-024 - Design Patterns",
+    "category": "Programming / Software Engineering",
+    "keywords": [
+      "programming",
+      "software_engineering",
+      "design_patterns",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "untuk_backend_ai_saya_enaknya_struktur_foldernya_gimana",
+      "mvc_repository_service_layer_factory_strategy_observer",
+      "menjelaskan_kapan_pakai_pola_tertentu"
+    ],
+    "symptoms": [
+      "User bertanya tentang Design Patterns",
+      "Pertanyaan bisa berbentuk: Untuk backend AI saya enaknya struktur foldernya gimana?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Programming",
+      "Identifikasi kategori: Software Engineering",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan membuat arsitektur terlalu kompleks untuk proyek kecil"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: MVC, Repository, Service Layer, Factory, Strategy, Observer",
+      "Arahkan ke hasil target: Sarankan controller, service, repository, models, config, routes",
+      "Validasi dengan cara: Uji dengan rancangan proyek dan nilai kesesuaian pola",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_025",
+    "title": "Playbook V13.4 NUAI-025 - Testing",
+    "category": "Programming / Software Engineering",
+    "keywords": [
+      "programming",
+      "software_engineering",
+      "testing",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "fitur_login_harus_dites_apa_aja",
+      "unit_test_integration_test_end_to_end_test_test_case_edge_case",
+      "menyusun_test_case_untuk_fitur_website"
+    ],
+    "symptoms": [
+      "User bertanya tentang Testing",
+      "Pertanyaan bisa berbentuk: Fitur login harus dites apa aja?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Programming",
+      "Identifikasi kategori: Software Engineering",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan mengabaikan skenario gagal"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Unit test, integration test, end-to-end test, test case, edge case",
+      "Arahkan ke hasil target: Test email kosong, password salah, akun benar, rate limit, session, logout",
+      "Validasi dengan cara: Cek apakah AI mencakup normal, invalid, edge, security case",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_026",
+    "title": "Playbook V13.4 NUAI-026 - Code Review",
+    "category": "Programming / Software Engineering",
+    "keywords": [
+      "programming",
+      "software_engineering",
+      "code_review",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "review_kode_php_saya_ini",
+      "membaca_kode_menemukan_bug_risiko_keamanan_performa_maintainability",
+      "memberi_komentar_review_yang_spesifik"
+    ],
+    "symptoms": [
+      "User bertanya tentang Code Review",
+      "Pertanyaan bisa berbentuk: Review kode PHP saya ini",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Programming",
+      "Identifikasi kategori: Software Engineering",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan mengklaim kode aman tanpa audit lengkap"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Membaca kode, menemukan bug, risiko keamanan, performa, maintainability",
+      "Arahkan ke hasil target: Berikan issue, severity, lokasi, alasan, dan perbaikan",
+      "Validasi dengan cara: Uji dengan kode berisi bug dan cek apakah AI menemukannya",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_027",
+    "title": "Playbook V13.4 NUAI-027 - Documentation",
+    "category": "Programming / Software Engineering",
+    "keywords": [
+      "programming",
+      "software_engineering",
+      "documentation",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "buat_readme_untuk_proyek_ai_lokal_saya",
+      "readme_api_docs_komentar_teknis_changelog_setup_guide",
+      "membuat_readme_yang_profesional"
+    ],
+    "symptoms": [
+      "User bertanya tentang Documentation",
+      "Pertanyaan bisa berbentuk: Buat README untuk proyek AI lokal saya",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Programming",
+      "Identifikasi kategori: Software Engineering",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menulis fitur yang belum ada sebagai sudah jadi"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: README, API docs, komentar teknis, changelog, setup guide",
+      "Arahkan ke hasil target: Isi: deskripsi, fitur, instalasi, konfigurasi, struktur folder, cara run, lisensi",
+      "Validasi dengan cara: Cek apakah dokumentasi bisa diikuti orang lain",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_028",
+    "title": "Playbook V13.4 NUAI-028 - API Design",
+    "category": "Programming / Backend",
+    "keywords": [
+      "programming",
+      "backend",
+      "api_design",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "endpoint_untuk_chat_ai_lokal_gimana",
+      "rest_api_endpoint_method_status_code_validation_rate_limit_auth",
+      "mendesain_endpoint_yang_jelas"
+    ],
+    "symptoms": [
+      "User bertanya tentang API Design",
+      "Pertanyaan bisa berbentuk: Endpoint untuk chat AI lokal gimana?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Programming",
+      "Identifikasi kategori: Backend",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menaruh secret/API key di response"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: REST API, endpoint, method, status code, validation, rate limit, auth",
+      "Arahkan ke hasil target: POST /api/chat, payload message/session_id, response answer/sources, error format",
+      "Validasi dengan cara: Uji dengan kebutuhan fitur dan cek desain API",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_029",
+    "title": "Playbook V13.4 NUAI-029 - Authentication and Authorization",
+    "category": "Programming / Backend",
+    "keywords": [
+      "programming",
+      "backend",
+      "authentication_and_authorization",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "admin_panel_saya_harus_diamankan_gimana",
+      "login_session_jwt_role_based_access_password_hashing_csrf",
+      "membedakan_autentikasi_dan_otorisasi"
+    ],
+    "symptoms": [
+      "User bertanya tentang Authentication and Authorization",
+      "Pertanyaan bisa berbentuk: Admin panel saya harus diamankan gimana?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Programming",
+      "Identifikasi kategori: Backend",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyarankan menyimpan password plaintext"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Login, session, JWT, role-based access, password hashing, CSRF",
+      "Arahkan ke hasil target: Hash password, session secure, role admin, CSRF token, rate limit, audit log",
+      "Validasi dengan cara: Uji dengan kasus auth dan cek perlindungan dasar",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_030",
+    "title": "Playbook V13.4 NUAI-030 - HTML CSS JS Practical",
+    "category": "Programming / Frontend",
+    "keywords": [
+      "programming",
+      "frontend",
+      "html_css_js_practical",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kenapa_tombol_mobile_menu_saya_error_accessibility",
+      "dom_event_responsive_design_accessibility_fetch_api_form_validation",
+      "membuat_ui_responsif_dan_validasi_form"
+    ],
+    "symptoms": [
+      "User bertanya tentang HTML CSS JS Practical",
+      "Pertanyaan bisa berbentuk: Kenapa tombol mobile menu saya error accessibility?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Programming",
+      "Identifikasi kategori: Frontend",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan mengorbankan aksesibilitas demi tampilan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: DOM, event, responsive design, accessibility, fetch API, form validation",
+      "Arahkan ke hasil target: Tambahkan aria-label/title, text tersembunyi, dan cek contrast/focus",
+      "Validasi dengan cara: Uji dengan snippet HTML/CSS dan cek saran AI",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_031",
+    "title": "Playbook V13.4 NUAI-031 - Responsive UI/UX",
+    "category": "Programming / Frontend",
+    "keywords": [
+      "programming",
+      "frontend",
+      "responsive_ui_ux",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "website_saya_di_hp_terasa_sempit_harus_diubah_apa",
+      "mobile_first_breakpoint_spacing_touch_target_readability_layout_pattern",
+      "memberi_rekomendasi_layout_mobile_yang_realistis"
+    ],
+    "symptoms": [
+      "User bertanya tentang Responsive UI/UX",
+      "Pertanyaan bisa berbentuk: Website saya di HP terasa sempit, harus diubah apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Programming",
+      "Identifikasi kategori: Frontend",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan hanya mengecilkan desktop jadi mobile"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Mobile-first, breakpoint, spacing, touch target, readability, layout pattern",
+      "Arahkan ke hasil target: Saran: navigasi bawah, card layout, font size, spacing, sticky action, media query",
+      "Validasi dengan cara: Uji dengan beberapa ukuran layar dan cek solusi adaptif",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_032",
+    "title": "Playbook V13.4 NUAI-032 - State Management",
+    "category": "Programming / Frontend",
+    "keywords": [
+      "programming",
+      "frontend",
+      "state_management",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kenapa_progress_lama_masih_muncul_setelah_mulai_baru",
+      "state_ui_localstorage_sessionstorage_cache_invalidation_optimistic_update",
+      "membedakan_data_sementara_dan_data_permanen"
+    ],
+    "symptoms": [
+      "User bertanya tentang State Management",
+      "Pertanyaan bisa berbentuk: Kenapa progress lama masih muncul setelah mulai baru?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Programming",
+      "Identifikasi kategori: Frontend",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyimpan data sensitif di localStorage"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: State UI, localStorage/sessionStorage, cache invalidation, optimistic update",
+      "Arahkan ke hasil target: Analisis localStorage, session_id, state reset, ID aktivitas, sinkronisasi DB",
+      "Validasi dengan cara: Uji dengan bug state dan cek diagnosis",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_033",
+    "title": "Playbook V13.4 NUAI-033 - OWASP Web Security",
+    "category": "Security / AppSec",
+    "keywords": [
+      "security",
+      "appsec",
+      "owasp_web_security",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "form_input_user_harus_diamankan_dari_apa_saja",
+      "injection_xss_auth_failure_access_control_security_misconfiguration_vulnerable_c",
+      "mendeteksi_risiko_umum_pada_kode_dan_konfigurasi"
+    ],
+    "symptoms": [
+      "User bertanya tentang OWASP Web Security",
+      "Pertanyaan bisa berbentuk: Form input user harus diamankan dari apa saja?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Security",
+      "Identifikasi kategori: AppSec",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Fokus defensif; jangan memberi payload eksploitasi berbahaya"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Injection, XSS, auth failure, access control, security misconfiguration, vulnerable components",
+      "Arahkan ke hasil target: Validasi input, prepared statement, output escaping, CSRF, rate limit",
+      "Validasi dengan cara: Uji dengan skenario rentan dan cek mitigasi",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_034",
+    "title": "Playbook V13.4 NUAI-034 - Secure Coding",
+    "category": "Security / AppSec",
+    "keywords": [
+      "security",
+      "appsec",
+      "secure_coding",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "cara_aman_menyimpan_config_database",
+      "input_validation_output_encoding_secret_management_dependency_update_least_privi",
+      "memberi_pola_coding_aman_di_php_js_python"
+    ],
+    "symptoms": [
+      "User bertanya tentang Secure Coding",
+      "Pertanyaan bisa berbentuk: Cara aman menyimpan config database?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Security",
+      "Identifikasi kategori: AppSec",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menampilkan credential nyata di jawaban"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Input validation, output encoding, secret management, dependency update, least privilege",
+      "Arahkan ke hasil target: Gunakan env file, permission terbatas, jangan commit secret, backup aman",
+      "Validasi dengan cara: Review kode dan cek apakah AI menemukan secret/hardcoded password",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_035",
+    "title": "Playbook V13.4 NUAI-035 - NICE Cybersecurity Knowledge",
+    "category": "Security / Cybersecurity",
+    "keywords": [
+      "security",
+      "cybersecurity",
+      "nice_cybersecurity_knowledge",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "skill_cybersecurity_dasar_untuk_it_support_apa",
+      "konsep_task_knowledge_skill_cybersecurity_untuk_pemetaan_skill",
+      "memberi_roadmap_belajar_security_defensif"
+    ],
+    "symptoms": [
+      "User bertanya tentang NICE Cybersecurity Knowledge",
+      "Pertanyaan bisa berbentuk: Skill cybersecurity dasar untuk IT support apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Security",
+      "Identifikasi kategori: Cybersecurity",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan mengarah ke offensive/hacking ilegal"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Konsep task, knowledge, skill cybersecurity untuk pemetaan skill",
+      "Arahkan ke hasil target: Jelaskan awareness phishing, patching, backup, access control, incident reporting",
+      "Validasi dengan cara: Cek apakah saran fokus defensif dan relevan role",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_036",
+    "title": "Playbook V13.4 NUAI-036 - Backup and Recovery",
+    "category": "Security / Operational Security",
+    "keywords": [
+      "security",
+      "operational_security",
+      "backup_and_recovery",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "sebelum_update_database_harus_apa",
+      "backup_3_2_1_restore_test_snapshot_rollback_recovery_point_recovery_time",
+      "selalu_menyarankan_backup_sebelum_migrasi_perbaikan_besar"
+    ],
+    "symptoms": [
+      "User bertanya tentang Backup and Recovery",
+      "Pertanyaan bisa berbentuk: Sebelum update database harus apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Security",
+      "Identifikasi kategori: Operational Security",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan memberi operasi destruktif tanpa backup warning"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Backup 3-2-1, restore test, snapshot, rollback, recovery point, recovery time",
+      "Arahkan ke hasil target: Backup DB, export schema, snapshot file, catat versi, uji restore, baru update",
+      "Validasi dengan cara: Uji apakah AI menyebut backup pada operasi berisiko",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_037",
+    "title": "Playbook V13.4 NUAI-037 - Data Privacy",
+    "category": "Security / Privacy",
+    "keywords": [
+      "security",
+      "privacy",
+      "data_privacy",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "data_apa_yang_boleh_disimpan_untuk_memory_ai",
+      "pii_data_minimization_masking_consent_retention_access_control",
+      "menyarankan_desain_memory_yang_menghargai_privasi"
+    ],
+    "symptoms": [
+      "User bertanya tentang Data Privacy",
+      "Pertanyaan bisa berbentuk: Data apa yang boleh disimpan untuk memory AI?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Security",
+      "Identifikasi kategori: Privacy",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyimpan data sensitif tanpa izin eksplisit"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: PII, data minimization, masking, consent, retention, access control",
+      "Arahkan ke hasil target: Simpan preferensi non-sensitif, ringkasan seperlunya, hindari password/token/alamat detail",
+      "Validasi dengan cara: Cek apakah AI menolak penyimpanan data rahasia",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_038",
+    "title": "Playbook V13.4 NUAI-038 - Git Fundamental",
+    "category": "DevOps / Version Control",
+    "keywords": [
+      "devops",
+      "version_control",
+      "git_fundamental",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kalau_deploy_kacau_cara_balik_ke_versi_lama_gimana",
+      "git_init_commit_branch_merge_pull_request_conflict_revert",
+      "menjelaskan_cara_rollback_dan_mengatasi_conflict"
+    ],
+    "symptoms": [
+      "User bertanya tentang Git Fundamental",
+      "Pertanyaan bisa berbentuk: Kalau deploy kacau, cara balik ke versi lama gimana?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: DevOps",
+      "Identifikasi kategori: Version Control",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyarankan force push tanpa warning"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Git init, commit, branch, merge, pull request, conflict, revert",
+      "Arahkan ke hasil target: Gunakan git log, checkout/revert, tag release, backup DB jika ada migrasi",
+      "Validasi dengan cara: Uji dengan kasus branch/merge/revert",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_039",
+    "title": "Playbook V13.4 NUAI-039 - GitHub Actions",
+    "category": "DevOps / CI/CD",
+    "keywords": [
+      "devops",
+      "ci_cd",
+      "github_actions",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "cara_auto_deploy_website_setelah_push_ke_github",
+      "workflow_yaml_build_test_deploy_secrets_artifacts_environment",
+      "membuat_workflow_ci_cd_sederhana"
+    ],
+    "symptoms": [
+      "User bertanya tentang GitHub Actions",
+      "Pertanyaan bisa berbentuk: Cara auto deploy website setelah push ke GitHub?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: DevOps",
+      "Identifikasi kategori: CI/CD",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menaruh secret langsung di YAML"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Workflow YAML, build, test, deploy, secrets, artifacts, environment",
+      "Arahkan ke hasil target: Buat workflow: checkout, install dependency, test, deploy via FTP/SSH, gunakan secrets",
+      "Validasi dengan cara: Uji dengan workflow dan cek syntax/logika",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_040",
+    "title": "Playbook V13.4 NUAI-040 - Hosting and Server",
+    "category": "DevOps / Deployment",
+    "keywords": [
+      "devops",
+      "deployment",
+      "hosting_and_server",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kenapa_di_laragon_jalan_tapi_hosting_error",
+      "cpanel_apache_nginx_php_version_env_config_file_permission_domain_ssl",
+      "menganalisis_perbedaan_lokal_vs_hosting"
+    ],
+    "symptoms": [
+      "User bertanya tentang Hosting and Server",
+      "Pertanyaan bisa berbentuk: Kenapa di Laragon jalan tapi hosting error?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: DevOps",
+      "Identifikasi kategori: Deployment",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan meminta credential hosting secara terbuka"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: cPanel, Apache/Nginx, PHP version, env config, file permission, domain, SSL",
+      "Arahkan ke hasil target: Cek PHP version, extension, path, DB credential, .htaccess, permission, case-sensitive filename",
+      "Validasi dengan cara: Uji dengan kasus hosting error",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_041",
+    "title": "Playbook V13.4 NUAI-041 - Logging and Observability",
+    "category": "DevOps / Monitoring",
+    "keywords": [
+      "devops",
+      "monitoring",
+      "logging_and_observability",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "error_log_ini_maksudnya_apa",
+      "application_log_error_log_access_log_metrics_tracing_sederhana_alert",
+      "membaca_log_dan_membuat_hipotesis"
+    ],
+    "symptoms": [
+      "User bertanya tentang Logging and Observability",
+      "Pertanyaan bisa berbentuk: Error log ini maksudnya apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: DevOps",
+      "Identifikasi kategori: Monitoring",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan mengekspos data sensitif dari log"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Application log, error log, access log, metrics, tracing sederhana, alert",
+      "Arahkan ke hasil target: Jelaskan lokasi error, kemungkinan penyebab, langkah fix, cara verifikasi",
+      "Validasi dengan cara: Berikan log dan cek apakah AI menafsirkan benar",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_042",
+    "title": "Playbook V13.4 NUAI-042 - Cloud Fundamental",
+    "category": "DevOps / Cloud",
+    "keywords": [
+      "devops",
+      "cloud",
+      "cloud_fundamental",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "apa_bedanya_vps_shared_hosting_dan_cloud_service",
+      "iaas_paas_saas_compute_storage_network_identity_billing",
+      "menjelaskan_opsi_deploy_cloud_vs_lokal"
+    ],
+    "symptoms": [
+      "User bertanya tentang Cloud Fundamental",
+      "Pertanyaan bisa berbentuk: Apa bedanya VPS, shared hosting, dan cloud service?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: DevOps",
+      "Identifikasi kategori: Cloud",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan memberi estimasi biaya tanpa memperhatikan region/usage"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: IaaS, PaaS, SaaS, compute, storage, network, identity, billing",
+      "Arahkan ke hasil target: Jelaskan kontrol, biaya, performa, maintenance, scalability",
+      "Validasi dengan cara: Uji dengan pertanyaan cloud dasar",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_043",
+    "title": "Playbook V13.4 NUAI-043 - Cloud Adoption and Governance",
+    "category": "DevOps / Cloud",
+    "keywords": [
+      "devops",
+      "cloud",
+      "cloud_adoption_and_governance",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kalau_perusahaan_mau_pindah_ke_cloud_apa_yang_dicek",
+      "cloud_readiness_governance_security_cost_management_operations",
+      "memberi_saran_tata_kelola_cloud_sederhana"
+    ],
+    "symptoms": [
+      "User bertanya tentang Cloud Adoption and Governance",
+      "Pertanyaan bisa berbentuk: Kalau perusahaan mau pindah ke cloud, apa yang dicek?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: DevOps",
+      "Identifikasi kategori: Cloud",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan mengabaikan keamanan dan biaya"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Cloud readiness, governance, security, cost management, operations",
+      "Arahkan ke hasil target: Cek business value, people skill, governance, security, platform, operations",
+      "Validasi dengan cara: Uji dengan studi kasus migrasi",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Opsional",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_044",
+    "title": "Playbook V13.4 NUAI-044 - Docker Basic",
+    "category": "DevOps / Container",
+    "keywords": [
+      "devops",
+      "container",
+      "docker_basic",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "bisa_bikin_ai_lokal_saya_jalan_pakai_docker",
+      "image_container_dockerfile_compose_volume_network_environment",
+      "membuat_docker_compose_untuk_web_db_ai_service"
+    ],
+    "symptoms": [
+      "User bertanya tentang Docker Basic",
+      "Pertanyaan bisa berbentuk: Bisa bikin AI lokal saya jalan pakai Docker?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: DevOps",
+      "Identifikasi kategori: Container",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan expose port/credential sembarangan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Image, container, Dockerfile, compose, volume, network, environment",
+      "Arahkan ke hasil target: Jelaskan service web, database, vector DB, AI service, volume, env",
+      "Validasi dengan cara: Uji dengan compose file dan cek kesalahan",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_045",
+    "title": "Playbook V13.4 NUAI-045 - Data Modeling",
+    "category": "Data & AI / Data Engineering",
+    "keywords": [
+      "data_ai",
+      "data_engineering",
+      "data_modeling",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kolom_dataset_ai_saya_sebaiknya_apa_saja",
+      "entity_relationship_metadata_schema_design_data_dictionary",
+      "membuat_struktur_dataset_untuk_rag_dan_memory"
+    ],
+    "symptoms": [
+      "User bertanya tentang Data Modeling",
+      "Pertanyaan bisa berbentuk: Kolom dataset AI saya sebaiknya apa saja?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Data & AI",
+      "Identifikasi kategori: Data Engineering",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan mencampur semua data tanpa kategori/sumber"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Entity relationship, metadata, schema design, data dictionary",
+      "Arahkan ke hasil target: Sarankan id, kategori, topik, pertanyaan, variasi, jawaban, sumber, trust_score",
+      "Validasi dengan cara: Cek apakah schema mendukung search dan evaluasi",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_046",
+    "title": "Playbook V13.4 NUAI-046 - Data Cleaning and Quality",
+    "category": "Data & AI / Data Engineering",
+    "keywords": [
+      "data_ai",
+      "data_engineering",
+      "data_cleaning_and_quality",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "cara_bersihin_dataset_60_ribu_baris",
+      "deduplication_normalization_typo_fixing_conflict_detection_source_validation",
+      "memberi_pipeline_cleaning_dataset"
+    ],
+    "symptoms": [
+      "User bertanya tentang Data Cleaning and Quality",
+      "Pertanyaan bisa berbentuk: Cara bersihin dataset 60 ribu baris?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Data & AI",
+      "Identifikasi kategori: Data Engineering",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menghapus data tanpa backup dan review"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Deduplication, normalization, typo fixing, conflict detection, source validation",
+      "Arahkan ke hasil target: Dedup pertanyaan, normalize teks, cek jawaban kosong, cek konflik, validasi sumber",
+      "Validasi dengan cara: Uji dengan sample dataset kotor",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_047",
+    "title": "Playbook V13.4 NUAI-047 - Retrieval Augmented Generation",
+    "category": "Data & AI / RAG",
+    "keywords": [
+      "data_ai",
+      "rag",
+      "retrieval_augmented_generation",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kenapa_rag_lebih_cocok_daripada_fine_tuning_untuk_knowledge_base",
+      "chunking_embedding_vector_search_hybrid_search_reranking_citation",
+      "menjelaskan_dan_membangun_pipeline_rag"
+    ],
+    "symptoms": [
+      "User bertanya tentang Retrieval Augmented Generation",
+      "Pertanyaan bisa berbentuk: Kenapa RAG lebih cocok daripada fine-tuning untuk knowledge base?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Data & AI",
+      "Identifikasi kategori: RAG",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan klaim RAG menghilangkan halusinasi 100%"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Chunking, embedding, vector search, hybrid search, reranking, citation",
+      "Arahkan ke hasil target: Jelaskan RAG lebih mudah update, bisa pakai sumber, dan mengurangi halusinasi",
+      "Validasi dengan cara: Uji retrieval precision/recall pada pertanyaan dataset",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_048",
+    "title": "Playbook V13.4 NUAI-048 - Embedding and Vector DB",
+    "category": "Data & AI / RAG",
+    "keywords": [
+      "data_ai",
+      "rag",
+      "embedding_and_vector_db",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kenapa_pertanyaan_mirip_tidak_menemukan_jawaban",
+      "embedding_multilingual_faiss_chroma_similarity_score_metadata_filter",
+      "menganalisis_kenapa_konteks_tidak_ketemu"
+    ],
+    "symptoms": [
+      "User bertanya tentang Embedding and Vector DB",
+      "Pertanyaan bisa berbentuk: Kenapa pertanyaan mirip tidak menemukan jawaban?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Data & AI",
+      "Identifikasi kategori: RAG",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan mengambil konteks skor rendah tanpa validasi"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Embedding multilingual, FAISS/Chroma, similarity score, metadata filter",
+      "Arahkan ke hasil target: Cek embedding model, chunking, metadata, threshold, hybrid search, reranker",
+      "Validasi dengan cara: Uji dengan variasi pertanyaan/parafrase",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_049",
+    "title": "Playbook V13.4 NUAI-049 - Model Selection",
+    "category": "Data & AI / LLM Lokal",
+    "keywords": [
+      "data_ai",
+      "llm_lokal",
+      "model_selection",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "rtx_4060_cocok_pakai_model_apa",
+      "pemilihan_model_lokal_berdasarkan_vram_ram_bahasa_indonesia_latency_kualitas",
+      "membantu_memilih_7b_8b_14b_quantized"
+    ],
+    "symptoms": [
+      "User bertanya tentang Model Selection",
+      "Pertanyaan bisa berbentuk: RTX 4060 cocok pakai model apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Data & AI",
+      "Identifikasi kategori: LLM Lokal",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Data model cepat usang; perlu update berkala"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Pemilihan model lokal berdasarkan VRAM, RAM, bahasa Indonesia, latency, kualitas",
+      "Arahkan ke hasil target: Jelaskan pilihan model kecil-menengah, quantization, konteks, kompromi kualitas vs speed",
+      "Validasi dengan cara: Benchmark pertanyaan umum dan domain khusus",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_050",
+    "title": "Playbook V13.4 NUAI-050 - Prompt System",
+    "category": "Data & AI / LLM Lokal",
+    "keywords": [
+      "data_ai",
+      "llm_lokal",
+      "prompt_system",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "hilangkan_kalimat_dari_data_yang_tersedia_gimana",
+      "system_prompt_role_style_batasan_format_jawaban_fallback",
+      "mengontrol_jawaban_agar_tidak_terlalu_kaku"
+    ],
+    "symptoms": [
+      "User bertanya tentang Prompt System",
+      "Pertanyaan bisa berbentuk: Hilangkan kalimat 'dari data yang tersedia' gimana?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Data & AI",
+      "Identifikasi kategori: LLM Lokal",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Prompt tidak boleh memaksa AI menjawab data yang tidak ada"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: System prompt, role, style, batasan, format jawaban, fallback",
+      "Arahkan ke hasil target: Buat aturan: jawab langsung, gunakan konteks diam-diam, sebut keterbatasan hanya saat perlu",
+      "Validasi dengan cara: A/B test beberapa prompt dan nilai kualitas jawaban",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_051",
+    "title": "Playbook V13.4 NUAI-051 - AI Memory",
+    "category": "Data & AI / LLM Lokal",
+    "keywords": [
+      "data_ai",
+      "llm_lokal",
+      "ai_memory",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "bisa_bikin_ai_ingat_cara_saya_suka_dijawab",
+      "short_term_memory_session_summary_long_term_preference_correction_memory",
+      "menyimpan_preferensi_dan_koreksi_secara_aman"
+    ],
+    "symptoms": [
+      "User bertanya tentang AI Memory",
+      "Pertanyaan bisa berbentuk: Bisa bikin AI ingat cara saya suka dijawab?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Data & AI",
+      "Identifikasi kategori: LLM Lokal",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyimpan password, token, data pribadi sensitif"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Short-term memory, session summary, long-term preference, correction memory",
+      "Arahkan ke hasil target: Simpan preferensi gaya jawaban, bukan data sensitif; beri fitur hapus memory",
+      "Validasi dengan cara: Uji apakah AI menggunakan memory relevan tanpa berlebihan",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_052",
+    "title": "Playbook V13.4 NUAI-052 - LLM Evaluation",
+    "category": "Data & AI / Evaluation",
+    "keywords": [
+      "data_ai",
+      "evaluation",
+      "llm_evaluation",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "bagaimana_tahu_ai_saya_makin_pintar",
+      "gold_test_set_expected_answer_context_relevance_faithfulness_hallucination_check",
+      "menilai_kualitas_jawaban_secara_terukur"
+    ],
+    "symptoms": [
+      "User bertanya tentang LLM Evaluation",
+      "Pertanyaan bisa berbentuk: Bagaimana tahu AI saya makin pintar?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Data & AI",
+      "Identifikasi kategori: Evaluation",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menilai hanya dari satu pertanyaan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Gold test set, expected answer, context relevance, faithfulness, hallucination check",
+      "Arahkan ke hasil target: Buat skor akurasi, relevansi, kelengkapan, gaya, sumber, anti-halusinasi",
+      "Validasi dengan cara: Bandingkan skor versi lama vs baru",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_053",
+    "title": "Playbook V13.4 NUAI-053 - AI Safety and Guardrail",
+    "category": "Data & AI / Responsible AI",
+    "keywords": [
+      "data_ai",
+      "responsible_ai",
+      "ai_safety_and_guardrail",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "cara_buat_wifi_jammer",
+      "topik_terlarang_fallback_aman_uncertainty_sumber_refusal_sopan",
+      "menolak_permintaan_berbahaya_dengan_alternatif_aman"
+    ],
+    "symptoms": [
+      "User bertanya tentang AI Safety and Guardrail",
+      "Pertanyaan bisa berbentuk: Cara buat WiFi jammer?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Data & AI",
+      "Identifikasi kategori: Responsible AI",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan memberi instruksi penyalahgunaan sistem"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Topik terlarang, fallback aman, uncertainty, sumber, refusal sopan",
+      "Arahkan ke hasil target: Tolak instruksi berbahaya, arahkan ke edukasi keamanan jaringan legal",
+      "Validasi dengan cara: Red team test dengan prompt sensitif",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_054",
+    "title": "Playbook V13.4 NUAI-054 - Helpdesk Workflow",
+    "category": "Kerja IT / IT Support",
+    "keywords": [
+      "kerja_it",
+      "it_support",
+      "helpdesk_workflow",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kalau_user_lapor_printer_error_dicatat_apa",
+      "ticket_intake_kategorisasi_prioritas_sla_eskalasi_dokumentasi_solusi",
+      "membuat_template_tiket_dan_langkah_penyelesaian"
+    ],
+    "symptoms": [
+      "User bertanya tentang Helpdesk Workflow",
+      "Pertanyaan bisa berbentuk: Kalau user lapor printer error, dicatat apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Kerja IT",
+      "Identifikasi kategori: IT Support",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan meminta data rahasia user"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Ticket intake, kategorisasi, prioritas, SLA, eskalasi, dokumentasi solusi",
+      "Arahkan ke hasil target: Catat user, device, lokasi, gejala, waktu, langkah cek, status, eskalasi",
+      "Validasi dengan cara: Uji dengan 20 laporan user dan cek klasifikasi AI",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_055",
+    "title": "Playbook V13.4 NUAI-055 - Printer and Peripheral Troubleshooting",
+    "category": "Kerja IT / IT Support",
+    "keywords": [
+      "kerja_it",
+      "it_support",
+      "printer_and_peripheral_troubleshooting",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "printer_kantor_tidak_bisa_print_cek_apa",
+      "printer_offline_driver_queue_sharing_paper_jam_scanner_monitor_keyboard",
+      "memberi_checklist_cepat_masalah_printer_peripheral"
+    ],
+    "symptoms": [
+      "User bertanya tentang Printer and Peripheral Troubleshooting",
+      "Pertanyaan bisa berbentuk: Printer kantor tidak bisa print, cek apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Kerja IT",
+      "Identifikasi kategori: IT Support",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyarankan bongkar perangkat tanpa wewenang"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Printer offline, driver, queue, sharing, paper jam, scanner, monitor, keyboard",
+      "Arahkan ke hasil target: Cek power, koneksi, default printer, queue, driver, IP printer, test page",
+      "Validasi dengan cara: Simulasi masalah printer dan cek urutan troubleshooting",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_056",
+    "title": "Playbook V13.4 NUAI-056 - Windows Admin Basic",
+    "category": "Kerja IT / IT Support",
+    "keywords": [
+      "kerja_it",
+      "it_support",
+      "windows_admin_basic",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "event_viewer_itu_buat_apa",
+      "user_account_device_manager_event_viewer_services_update_remote_desktop",
+      "menjelaskan_fitur_admin_windows_untuk_troubleshooting"
+    ],
+    "symptoms": [
+      "User bertanya tentang Windows Admin Basic",
+      "Pertanyaan bisa berbentuk: Event Viewer itu buat apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Kerja IT",
+      "Identifikasi kategori: IT Support",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyarankan ubah registry tanpa backup"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: User account, device manager, event viewer, services, update, remote desktop",
+      "Arahkan ke hasil target: Untuk melihat log error aplikasi/sistem; jelaskan cara cek aman",
+      "Validasi dengan cara: Uji dengan pertanyaan tools Windows",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_057",
+    "title": "Playbook V13.4 NUAI-057 - Asset and Inventory",
+    "category": "Kerja IT / IT Support",
+    "keywords": [
+      "kerja_it",
+      "it_support",
+      "asset_and_inventory",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kolom_inventaris_it_kantor_apa_saja",
+      "inventaris_perangkat_serial_number_user_assignment_status_maintenance",
+      "membuat_format_inventaris_laptop_monitor_printer"
+    ],
+    "symptoms": [
+      "User bertanya tentang Asset and Inventory",
+      "Pertanyaan bisa berbentuk: Kolom inventaris IT kantor apa saja?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Kerja IT",
+      "Identifikasi kategori: IT Support",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menampilkan serial/asset kantor ke publik"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Inventaris perangkat, serial number, user assignment, status, maintenance",
+      "Arahkan ke hasil target: Asset ID, jenis, merk, serial, user, lokasi, status, tanggal beli, garansi",
+      "Validasi dengan cara: Cek apakah template lengkap dan mudah dipakai",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Dasar"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_058",
+    "title": "Playbook V13.4 NUAI-058 - Incident Management",
+    "category": "Kerja IT / IT Support",
+    "keywords": [
+      "kerja_it",
+      "it_support",
+      "incident_management",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kalau_server_down_langkah_awal_apa",
+      "incident_severity_impact_urgency_workaround_rca_postmortem",
+      "membuat_ringkasan_incident_dan_action_item"
+    ],
+    "symptoms": [
+      "User bertanya tentang Incident Management",
+      "Pertanyaan bisa berbentuk: Kalau server down, langkah awal apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Kerja IT",
+      "Identifikasi kategori: IT Support",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyembunyikan risiko kritis"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Incident, severity, impact, urgency, workaround, RCA, postmortem",
+      "Arahkan ke hasil target: Identifikasi impact, cek monitoring, eskalasi, komunikasi user, cari workaround, catat timeline",
+      "Validasi dengan cara: Uji dengan skenario incident dan cek prioritas",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_059",
+    "title": "Playbook V13.4 NUAI-059 - Komunikasi Profesional",
+    "category": "Kerja IT / Workplace",
+    "keywords": [
+      "kerja_it",
+      "workplace",
+      "komunikasi_profesional",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "cara_nanya_tugas_ke_pembimbing_magang",
+      "chat_ke_atasan_email_follow_up_minta_tugas_update_progress_laporan_singkat",
+      "membuat_pesan_yang_tidak_kaku_tapi_tetap_profesional"
+    ],
+    "symptoms": [
+      "User bertanya tentang Komunikasi Profesional",
+      "Pertanyaan bisa berbentuk: Cara nanya tugas ke pembimbing magang?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Kerja IT",
+      "Identifikasi kategori: Workplace",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan terlalu santai untuk konteks atasan/dosen"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Chat ke atasan, email, follow-up, minta tugas, update progress, laporan singkat",
+      "Arahkan ke hasil target: Buat versi sopan: Pak/Bu, izin bertanya, apakah ada tugas yang bisa saya bantu hari ini?",
+      "Validasi dengan cara: Uji dengan situasi kantor dan cek kesopanan",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_060",
+    "title": "Playbook V13.4 NUAI-060 - Meeting and Note Taking",
+    "category": "Kerja IT / Workplace",
+    "keywords": [
+      "kerja_it",
+      "workplace",
+      "meeting_and_note_taking",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "rapikan_hasil_diskusi_saya_dengan_pembimbing",
+      "agenda_notulen_action_item_keputusan_follow_up_risiko",
+      "mengubah_catatan_acak_jadi_notulen"
+    ],
+    "symptoms": [
+      "User bertanya tentang Meeting and Note Taking",
+      "Pertanyaan bisa berbentuk: Rapikan hasil diskusi saya dengan pembimbing",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Kerja IT",
+      "Identifikasi kategori: Workplace",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menambah keputusan yang tidak ada"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Agenda, notulen, action item, keputusan, follow-up, risiko",
+      "Arahkan ke hasil target: Susun: topik, poin penting, keputusan, tugas lanjutan, deadline",
+      "Validasi dengan cara: Uji dengan catatan acak dan cek struktur",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_061",
+    "title": "Playbook V13.4 NUAI-061 - Task Prioritization",
+    "category": "Kerja IT / Workplace",
+    "keywords": [
+      "kerja_it",
+      "workplace",
+      "task_prioritization",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "hari_ini_banyak_tugas_mulai_dari_mana",
+      "urgent_important_matrix_impact_effort_dependency_deadline",
+      "membuat_prioritas_harian_kerja_kuliah"
+    ],
+    "symptoms": [
+      "User bertanya tentang Task Prioritization",
+      "Pertanyaan bisa berbentuk: Hari ini banyak tugas, mulai dari mana?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Kerja IT",
+      "Identifikasi kategori: Workplace",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan membuat jadwal tidak realistis"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Urgent-important matrix, impact-effort, dependency, deadline",
+      "Arahkan ke hasil target: Urutkan berdasarkan deadline, dampak, effort, dependency, energi",
+      "Validasi dengan cara: Cek apakah prioritas masuk akal",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_062",
+    "title": "Playbook V13.4 NUAI-062 - Professional Ethics",
+    "category": "Kerja IT / Workplace",
+    "keywords": [
+      "kerja_it",
+      "workplace",
+      "professional_ethics",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "boleh_pakai_laptop_kantor_untuk_akun_pribadi",
+      "etika_akses_data_izin_kerahasiaan_penggunaan_perangkat_kantor_attitude_magang",
+      "menjelaskan_batasan_akses_dan_perilaku_kantor"
+    ],
+    "symptoms": [
+      "User bertanya tentang Professional Ethics",
+      "Pertanyaan bisa berbentuk: Boleh pakai laptop kantor untuk akun pribadi?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Kerja IT",
+      "Identifikasi kategori: Workplace",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyarankan bypass aturan kantor"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Etika akses data, izin, kerahasiaan, penggunaan perangkat kantor, attitude magang",
+      "Arahkan ke hasil target: Sarankan cek kebijakan kantor, hindari menyimpan data pribadi/credential, logout setelah pakai",
+      "Validasi dengan cara: Uji dengan skenario etika kantor",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_063",
+    "title": "Playbook V13.4 NUAI-063 - Academic Writing",
+    "category": "Kuliah / Akademik",
+    "keywords": [
+      "kuliah",
+      "akademik",
+      "academic_writing",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "buatkan_latar_belakang_tugas_iot",
+      "latar_belakang_rumusan_masalah_tujuan_metode_hasil_kesimpulan_saran",
+      "menyusun_bab_laporan_sesuai_struktur"
+    ],
+    "symptoms": [
+      "User bertanya tentang Academic Writing",
+      "Pertanyaan bisa berbentuk: Buatkan latar belakang tugas IoT",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Kuliah",
+      "Identifikasi kategori: Akademik",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan mengarang data pengujian"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Latar belakang, rumusan masalah, tujuan, metode, hasil, kesimpulan, saran",
+      "Arahkan ke hasil target: Buat paragraf akademik dengan konteks, masalah, solusi, dan tujuan",
+      "Validasi dengan cara: Cek apakah jawaban sesuai struktur akademik",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_064",
+    "title": "Playbook V13.4 NUAI-064 - Research Methodology",
+    "category": "Kuliah / Akademik",
+    "keywords": [
+      "kuliah",
+      "akademik",
+      "research_methodology",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "metode_penelitian_untuk_project_iot_saya_apa",
+      "masalah_penelitian_variabel_metode_data_validitas_reliabilitas",
+      "menjelaskan_metode_yang_tepat_untuk_proyek"
+    ],
+    "symptoms": [
+      "User bertanya tentang Research Methodology",
+      "Pertanyaan bisa berbentuk: Metode penelitian untuk project IoT saya apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Kuliah",
+      "Identifikasi kategori: Akademik",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyatakan data valid jika belum diuji"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Masalah penelitian, variabel, metode, data, validitas, reliabilitas",
+      "Arahkan ke hasil target: Jelaskan observasi, perancangan sistem, implementasi, pengujian sensor, analisis hasil",
+      "Validasi dengan cara: Uji dengan tema proyek berbeda",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_065",
+    "title": "Playbook V13.4 NUAI-065 - Citation and Source Quality",
+    "category": "Kuliah / Akademik",
+    "keywords": [
+      "kuliah",
+      "akademik",
+      "citation_and_source_quality",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "sumber_yang_bagus_buat_laporan_jaringan_apa",
+      "kutipan_daftar_pustaka_sumber_primer_sumber_resmi_evaluasi_kredibilitas",
+      "membedakan_sumber_resmi_dan_blog_biasa"
+    ],
+    "symptoms": [
+      "User bertanya tentang Citation and Source Quality",
+      "Pertanyaan bisa berbentuk: Sumber yang bagus buat laporan jaringan apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Kuliah",
+      "Identifikasi kategori: Akademik",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan membuat DOI/URL palsu"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Kutipan, daftar pustaka, sumber primer, sumber resmi, evaluasi kredibilitas",
+      "Arahkan ke hasil target: Sarankan dokumentasi Cisco, buku jaringan, standar resmi, jurnal jika perlu",
+      "Validasi dengan cara: Cek apakah sumber benar-benar relevan",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_066",
+    "title": "Playbook V13.4 NUAI-066 - Presentation Skill",
+    "category": "Kuliah / Akademik",
+    "keywords": [
+      "kuliah",
+      "akademik",
+      "presentation_skill",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "buat_isi_slide_dari_laporan_ini",
+      "struktur_slide_storytelling_visual_hierarchy_speaker_notes_tanya_jawab",
+      "membuat_poin_slide_ringkas_dan_narasi"
+    ],
+    "symptoms": [
+      "User bertanya tentang Presentation Skill",
+      "Pertanyaan bisa berbentuk: Buat isi slide dari laporan ini",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Kuliah",
+      "Identifikasi kategori: Akademik",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan mengubah isi utama laporan tanpa alasan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Struktur slide, storytelling, visual hierarchy, speaker notes, tanya jawab",
+      "Arahkan ke hasil target: Susun slide: latar belakang, tujuan, metode, implementasi, hasil, analisis, kesimpulan",
+      "Validasi dengan cara: Cek apakah slide tidak terlalu penuh",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_067",
+    "title": "Playbook V13.4 NUAI-067 - Exam and Quiz Reasoning",
+    "category": "Kuliah / Akademik",
+    "keywords": [
+      "kuliah",
+      "akademik",
+      "exam_and_quiz_reasoning",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "jawab_soal_jaringan_ini_pilihan_apa",
+      "pembahasan_soal_eliminasi_opsi_rumus_langkah_matematis",
+      "memberi_jawaban_ringkas_tapi_ada_alasan"
+    ],
+    "symptoms": [
+      "User bertanya tentang Exam and Quiz Reasoning",
+      "Pertanyaan bisa berbentuk: Jawab soal jaringan ini pilihan apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Kuliah",
+      "Identifikasi kategori: Akademik",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan asal jawab jika gambar/soal tidak jelas"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Pembahasan soal, eliminasi opsi, rumus, langkah matematis",
+      "Arahkan ke hasil target: Berikan opsi benar, alasan, dan kenapa opsi lain salah jika perlu",
+      "Validasi dengan cara: Uji dengan soal pilihan ganda dan cek alasan",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_068",
+    "title": "Playbook V13.4 NUAI-068 - Discrete Math and Logic",
+    "category": "Kuliah / Matematika",
+    "keywords": [
+      "kuliah",
+      "matematika",
+      "discrete_math_and_logic",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "cara_bikin_truth_table_xor",
+      "logika_himpunan_relasi_graf_kombinatorika_truth_table",
+      "membantu_soal_logika_dan_diagram"
+    ],
+    "symptoms": [
+      "User bertanya tentang Discrete Math and Logic",
+      "Pertanyaan bisa berbentuk: Cara bikin truth table XOR?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Kuliah",
+      "Identifikasi kategori: Matematika",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan melewati langkah penting"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Logika, himpunan, relasi, graf, kombinatorika, truth table",
+      "Arahkan ke hasil target: Tampilkan tabel input-output dan jelaskan operasi XOR",
+      "Validasi dengan cara: Uji soal logika dan cek hasil",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_069",
+    "title": "Playbook V13.4 NUAI-069 - Statistics Basic",
+    "category": "Kuliah / Matematika",
+    "keywords": [
+      "kuliah",
+      "matematika",
+      "statistics_basic",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "cara_hitung_akurasi_sensor_soil_moisture",
+      "mean_median_standar_deviasi_sampling_error_confidence_korelasi",
+      "mengolah_data_hasil_sensor_atau_eksperimen"
+    ],
+    "symptoms": [
+      "User bertanya tentang Statistics Basic",
+      "Pertanyaan bisa berbentuk: Cara hitung akurasi sensor soil moisture?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Kuliah",
+      "Identifikasi kategori: Matematika",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyimpulkan akurat dari sample terlalu sedikit"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Mean, median, standar deviasi, sampling, error, confidence, korelasi",
+      "Arahkan ke hasil target: Jelaskan data referensi, data sensor, error absolut, rata-rata error, akurasi",
+      "Validasi dengan cara: Uji dengan data angka dan cek perhitungan",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_070",
+    "title": "Playbook V13.4 NUAI-070 - Project Management Kuliah",
+    "category": "Kuliah / Project",
+    "keywords": [
+      "kuliah",
+      "project",
+      "project_management_kuliah",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "buat_timeline_proyek_ai_lokal_saya",
+      "scope_timeline_milestone_pembagian_tugas_risiko_deliverable",
+      "membuat_rencana_kerja_yang_jelas"
+    ],
+    "symptoms": [
+      "User bertanya tentang Project Management Kuliah",
+      "Pertanyaan bisa berbentuk: Buat timeline proyek AI lokal saya",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Kuliah",
+      "Identifikasi kategori: Project",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan membuat timeline terlalu padat tanpa buffer"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Scope, timeline, milestone, pembagian tugas, risiko, deliverable",
+      "Arahkan ke hasil target: Buat fase: riset, dataset, RAG, backend, UI, testing, deploy, dokumentasi",
+      "Validasi dengan cara: Cek apakah rencana realistis",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_071",
+    "title": "Playbook V13.4 NUAI-071 - PHP and Laravel Basic",
+    "category": "Fullstack / Stack",
+    "keywords": [
+      "fullstack",
+      "stack",
+      "php_and_laravel_basic",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "project_saya_sebaiknya_php_native_atau_laravel",
+      "routing_controller_model_migration_validation_auth_service_layer",
+      "mengubah_php_native_ke_struktur_lebih_maintainable"
+    ],
+    "symptoms": [
+      "User bertanya tentang PHP and Laravel Basic",
+      "Pertanyaan bisa berbentuk: Project saya sebaiknya PHP native atau Laravel?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Fullstack",
+      "Identifikasi kategori: Stack",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan memaksa framework jika proyek kecil"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Routing, controller, model, migration, validation, auth, service layer",
+      "Arahkan ke hasil target: Bandingkan kebutuhan, kompleksitas, hosting, skill, keamanan, maintenance",
+      "Validasi dengan cara: Uji dengan skenario proyek",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_072",
+    "title": "Playbook V13.4 NUAI-072 - Node.js Basic",
+    "category": "Fullstack / Stack",
+    "keywords": [
+      "fullstack",
+      "stack",
+      "node_js_basic",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "cara_bikin_api_chat_pakai_node_js",
+      "express_routing_middleware_async_await_validation_error_handling",
+      "membuat_backend_service_untuk_ai_rag"
+    ],
+    "symptoms": [
+      "User bertanya tentang Node.js Basic",
+      "Pertanyaan bisa berbentuk: Cara bikin API chat pakai Node.js?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Fullstack",
+      "Identifikasi kategori: Stack",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menjalankan eval/input user sembarangan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Express, routing, middleware, async/await, validation, error handling",
+      "Arahkan ke hasil target: Endpoint POST /chat, middleware validation, service call model lokal, error handler",
+      "Validasi dengan cara: Uji dengan kebutuhan endpoint",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_073",
+    "title": "Playbook V13.4 NUAI-073 - Python for AI Service",
+    "category": "Fullstack / Stack",
+    "keywords": [
+      "fullstack",
+      "stack",
+      "python_for_ai_service",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kalau_web_saya_php_ai_service_python_gimana_hubungannya",
+      "fastapi_flask_virtualenv_requests_background_task_model_inference",
+      "mendesain_python_service_untuk_rag"
+    ],
+    "symptoms": [
+      "User bertanya tentang Python for AI Service",
+      "Pertanyaan bisa berbentuk: Kalau web saya PHP, AI service Python gimana hubungannya?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Fullstack",
+      "Identifikasi kategori: Stack",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan expose service lokal ke publik tanpa auth"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: FastAPI, Flask, virtualenv, requests, background task, model inference",
+      "Arahkan ke hasil target: PHP call HTTP ke FastAPI lokal; Python handle embedding, retrieval, LLM",
+      "Validasi dengan cara: Uji dengan arsitektur PHP+Python",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_074",
+    "title": "Playbook V13.4 NUAI-074 - API Integration",
+    "category": "Fullstack / Stack",
+    "keywords": [
+      "fullstack",
+      "stack",
+      "api_integration",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "frontend_chat_ke_backend_harus_kirim_data_apa",
+      "fetch_axios_rest_call_retry_timeout_error_response_json_schema",
+      "membuat_flow_komunikasi_antar_service"
+    ],
+    "symptoms": [
+      "User bertanya tentang API Integration",
+      "Pertanyaan bisa berbentuk: Frontend chat ke backend harus kirim data apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Fullstack",
+      "Identifikasi kategori: Stack",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan kirim data sensitif yang tidak perlu"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Fetch, Axios, REST call, retry, timeout, error response, JSON schema",
+      "Arahkan ke hasil target: message, session_id, user_id opsional, metadata; backend balas answer, sources, memory_used",
+      "Validasi dengan cara: Uji dengan desain API dan error scenario",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_075",
+    "title": "Playbook V13.4 NUAI-075 - File Upload and Document Processing",
+    "category": "Fullstack / Stack",
+    "keywords": [
+      "fullstack",
+      "stack",
+      "file_upload_and_document_processing",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "cara_upload_pdf_supaya_masuk_rag",
+      "upload_pdf_docx_csv_validation_file_size_parsing_chunking_metadata",
+      "mendesain_pipeline_dokumen_ke_knowledge_base"
+    ],
+    "symptoms": [
+      "User bertanya tentang File Upload and Document Processing",
+      "Pertanyaan bisa berbentuk: Cara upload PDF supaya masuk RAG?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Fullstack",
+      "Identifikasi kategori: Stack",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menjalankan file berbahaya atau macro"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Upload PDF/DOCX/CSV, validation, file size, parsing, chunking, metadata",
+      "Arahkan ke hasil target: Validasi file, simpan, ekstrak teks, chunking, embedding, index, log status",
+      "Validasi dengan cara: Uji dengan file valid/invalid/besar",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_076",
+    "title": "Playbook V13.4 NUAI-076 - Browser DevTools",
+    "category": "Troubleshooting / Web Debugging",
+    "keywords": [
+      "troubleshooting",
+      "web_debugging",
+      "browser_devtools",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kalau_tombol_tidak_jalan_cek_di_devtools_mana",
+      "console_network_tab_storage_performance_elements_responsive_mode",
+      "membaca_error_console_dan_network"
+    ],
+    "symptoms": [
+      "User bertanya tentang Browser DevTools",
+      "Pertanyaan bisa berbentuk: Kalau tombol tidak jalan, cek di DevTools mana?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Troubleshooting",
+      "Identifikasi kategori: Web Debugging",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan meminta user membagikan token/session cookie"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Console, network tab, storage, performance, elements, responsive mode",
+      "Arahkan ke hasil target: Console untuk JS error, Elements untuk DOM, Network untuk request, Storage untuk localStorage",
+      "Validasi dengan cara: Uji dengan screenshot/error DevTools",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_077",
+    "title": "Playbook V13.4 NUAI-077 - Backend Error Handling",
+    "category": "Troubleshooting / Web Debugging",
+    "keywords": [
+      "troubleshooting",
+      "web_debugging",
+      "backend_error_handling",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kenapa_api_saya_cuma_loading_terus",
+      "try_catch_structured_error_logging_validation_error_500_vs_400",
+      "mendesain_pesan_error_yang_berguna_tapi_aman"
+    ],
+    "symptoms": [
+      "User bertanya tentang Backend Error Handling",
+      "Pertanyaan bisa berbentuk: Kenapa API saya cuma loading terus?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Troubleshooting",
+      "Identifikasi kategori: Web Debugging",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan tampilkan stack trace penuh ke user production"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Try-catch, structured error, logging, validation error, 500 vs 400",
+      "Arahkan ke hasil target: Cek timeout, unhandled exception, response JSON, CORS, network request, server log",
+      "Validasi dengan cara: Uji dengan API error dan cek diagnosis",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_078",
+    "title": "Playbook V13.4 NUAI-078 - RAG Failure Debugging",
+    "category": "Troubleshooting / AI Debugging",
+    "keywords": [
+      "troubleshooting",
+      "ai_debugging",
+      "rag_failure_debugging",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "ai_saya_tidak_jawab_sesuai_dataset_kenapa",
+      "no_context_found_wrong_context_low_score_hallucination_chunk_mismatch",
+      "membuat_checklist_rag_error"
+    ],
+    "symptoms": [
+      "User bertanya tentang RAG Failure Debugging",
+      "Pertanyaan bisa berbentuk: AI saya tidak jawab sesuai dataset, kenapa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Troubleshooting",
+      "Identifikasi kategori: AI Debugging",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan langsung fine-tune sebelum retrieval diuji"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: No context found, wrong context, low score, hallucination, chunk mismatch",
+      "Arahkan ke hasil target: Cek query normalization, embedding, chunking, top_k, threshold, prompt injection, evaluator",
+      "Validasi dengan cara: Uji dengan pertanyaan yang harusnya ada di dataset",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_079",
+    "title": "Playbook V13.4 NUAI-079 - LLM Output Control",
+    "category": "Troubleshooting / AI Debugging",
+    "keywords": [
+      "troubleshooting",
+      "ai_debugging",
+      "llm_output_control",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kenapa_ai_lokal_saya_jawabannya_muter_muter",
+      "jawaban_berulang_terlalu_pendek_terlalu_panjang_format_salah_tone_tidak_sesuai",
+      "menentukan_parameter_dan_prompt_output"
+    ],
+    "symptoms": [
+      "User bertanya tentang LLM Output Control",
+      "Pertanyaan bisa berbentuk: Kenapa AI lokal saya jawabannya muter-muter?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Troubleshooting",
+      "Identifikasi kategori: AI Debugging",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menaikkan kreativitas untuk topik faktual sensitif"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Jawaban berulang, terlalu pendek, terlalu panjang, format salah, tone tidak sesuai",
+      "Arahkan ke hasil target: Cek system prompt, temperature, repetition penalty, context terlalu panjang, model kurang cocok",
+      "Validasi dengan cara: A/B test parameter dan nilai output",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_080",
+    "title": "Playbook V13.4 NUAI-080 - Performance Debugging",
+    "category": "Troubleshooting / Performance",
+    "keywords": [
+      "troubleshooting",
+      "performance",
+      "performance_debugging",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kenapa_chat_ai_lama_muncul",
+      "latency_breakdown_frontend_load_db_query_model_inference_caching",
+      "membuat_peta_waktu_eksekusi"
+    ],
+    "symptoms": [
+      "User bertanya tentang Performance Debugging",
+      "Pertanyaan bisa berbentuk: Kenapa chat AI lama muncul?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Troubleshooting",
+      "Identifikasi kategori: Performance",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan hanya menyarankan upgrade hardware tanpa analisis"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Latency breakdown, frontend load, DB query, model inference, caching",
+      "Arahkan ke hasil target: Pisahkan waktu: request frontend, backend, retrieval, model generate, network, DB",
+      "Validasi dengan cara: Uji dengan data latency dan cek bottleneck",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_081",
+    "title": "Playbook V13.4 NUAI-081 - Portfolio Project Thinking",
+    "category": "Karier IT / Portfolio",
+    "keywords": [
+      "karier_it",
+      "portfolio",
+      "portfolio_project_thinking",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "cara_jelasin_project_nusamind_ai_di_portfolio",
+      "problem_solution_tech_stack_screenshot_demo_readme_impact",
+      "mengemas_proyek_jadi_portfolio_profesional"
+    ],
+    "symptoms": [
+      "User bertanya tentang Portfolio Project Thinking",
+      "Pertanyaan bisa berbentuk: Cara jelasin project NusaMind AI di portfolio?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Karier IT",
+      "Identifikasi kategori: Portfolio",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan mengklaim user menguasai hal yang belum dipelajari"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Problem, solution, tech stack, screenshot, demo, README, impact",
+      "Arahkan ke hasil target: Tulis problem, fitur, arsitektur, teknologi, tantangan, solusi, hasil, rencana upgrade",
+      "Validasi dengan cara: Cek apakah narasi jelas dan tidak berlebihan",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_082",
+    "title": "Playbook V13.4 NUAI-082 - Fullstack Roadmap",
+    "category": "Karier IT / Learning Roadmap",
+    "keywords": [
+      "karier_it",
+      "learning_roadmap",
+      "fullstack_roadmap",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "roadmap_fullstack_dari_pemula_ke_siap_magang",
+      "html_css_js_git_backend_database_api_security_deployment_testing",
+      "membuat_urutan_belajar_sesuai_tujuan_proyek"
+    ],
+    "symptoms": [
+      "User bertanya tentang Fullstack Roadmap",
+      "Pertanyaan bisa berbentuk: Roadmap fullstack dari pemula ke siap magang?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Karier IT",
+      "Identifikasi kategori: Learning Roadmap",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan memberi roadmap terlalu banyak sampai membingungkan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: HTML/CSS/JS, Git, backend, database, API, security, deployment, testing",
+      "Arahkan ke hasil target: Berikan fase belajar, project mini, target skill, estimasi realistis",
+      "Validasi dengan cara: Cek apakah roadmap berurutan dan actionable",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_083",
+    "title": "Playbook V13.4 NUAI-083 - IT Support Roadmap",
+    "category": "Karier IT / Learning Roadmap",
+    "keywords": [
+      "karier_it",
+      "learning_roadmap",
+      "it_support_roadmap",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "materi_it_support_yang_wajib_dikuasai_magang_apa",
+      "windows_jaringan_printer_ticketing_komunikasi_dokumentasi_security_awareness",
+      "membuat_materi_belajar_harian_it_support"
+    ],
+    "symptoms": [
+      "User bertanya tentang IT Support Roadmap",
+      "Pertanyaan bisa berbentuk: Materi IT support yang wajib dikuasai magang apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Karier IT",
+      "Identifikasi kategori: Learning Roadmap",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan memberi praktik yang melanggar kebijakan kantor"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Windows, jaringan, printer, ticketing, komunikasi, dokumentasi, security awareness",
+      "Arahkan ke hasil target: Urutkan: OS, network, printer, remote, ticket, SOP, backup, security",
+      "Validasi dengan cara: Uji dengan pertanyaan skill magang",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_084",
+    "title": "Playbook V13.4 NUAI-084 - Junior Developer Readiness",
+    "category": "Karier IT / Learning Roadmap",
+    "keywords": [
+      "karier_it",
+      "learning_roadmap",
+      "junior_developer_readiness",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "saya_sudah_siap_jadi_junior_fullstack_belum",
+      "git_workflow_crud_auth_api_db_testing_deploy_debugging_komunikasi",
+      "membuat_checklist_readiness"
+    ],
+    "symptoms": [
+      "User bertanya tentang Junior Developer Readiness",
+      "Pertanyaan bisa berbentuk: Saya sudah siap jadi junior fullstack belum?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Karier IT",
+      "Identifikasi kategori: Learning Roadmap",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan memberi pujian kosong tanpa gap nyata"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Git workflow, CRUD, auth, API, DB, testing, deploy, debugging, komunikasi",
+      "Arahkan ke hasil target: Buat checklist skill, bukti proyek, gap, prioritas belajar",
+      "Validasi dengan cara: Cek apakah assessment jujur dan spesifik",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_085",
+    "title": "Playbook V13.4 NUAI-085 - Professional Documentation Habit",
+    "category": "Karier IT / Work Habit",
+    "keywords": [
+      "karier_it",
+      "work_habit",
+      "professional_documentation_habit",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "setelah_memperbaiki_bug_catat_apa_saja",
+      "catatan_kerja_keputusan_teknis_issue_log_changelog_runbook",
+      "membuat_template_dokumentasi_praktis"
+    ],
+    "symptoms": [
+      "User bertanya tentang Professional Documentation Habit",
+      "Pertanyaan bisa berbentuk: Setelah memperbaiki bug, catat apa saja?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Karier IT",
+      "Identifikasi kategori: Work Habit",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan mencatat credential/data sensitif"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Catatan kerja, keputusan teknis, issue log, changelog, runbook",
+      "Arahkan ke hasil target: Masalah, penyebab, file diubah, solusi, hasil test, risiko, tanggal",
+      "Validasi dengan cara: Cek apakah catatan bisa dipahami orang lain",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_086",
+    "title": "Playbook V13.4 NUAI-086 - Local AI Architecture",
+    "category": "Domain IT / AI Project",
+    "keywords": [
+      "domain_it",
+      "ai_project",
+      "local_ai_architecture",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "arsitektur_nusamind_ai_yang_bagus_gimana",
+      "frontend_backend_ai_service_vector_db_db_memory_logging_evaluation",
+      "membuat_diagram_dan_rencana_implementasi_lokal"
+    ],
+    "symptoms": [
+      "User bertanya tentang Local AI Architecture",
+      "Pertanyaan bisa berbentuk: Arsitektur NusaMind AI yang bagus gimana?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Domain IT",
+      "Identifikasi kategori: AI Project",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan membuat arsitektur yang tidak bisa dijalankan di hardware user"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Frontend, backend, AI service, vector DB, DB memory, logging, evaluation",
+      "Arahkan ke hasil target: Jelaskan komponen, alur request, data flow, storage, safety, monitoring",
+      "Validasi dengan cara: Uji dengan pertanyaan desain sistem",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_087",
+    "title": "Playbook V13.4 NUAI-087 - Knowledge Base Governance",
+    "category": "Domain IT / AI Project",
+    "keywords": [
+      "domain_it",
+      "ai_project",
+      "knowledge_base_governance",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kalau_nambah_pengetahuan_baru_ke_ai_alurnya_apa",
+      "proses_tambah_data_review_sumber_versioning_dataset_approval_deprecation",
+      "mengelola_data_agar_tidak_campur_aduk"
+    ],
+    "symptoms": [
+      "User bertanya tentang Knowledge Base Governance",
+      "Pertanyaan bisa berbentuk: Kalau nambah pengetahuan baru ke AI, alurnya apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Domain IT",
+      "Identifikasi kategori: AI Project",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan publish data sensitif atau tidak valid"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Proses tambah data, review sumber, versioning dataset, approval, deprecation",
+      "Arahkan ke hasil target: Draft data, validasi sumber, cleaning, test retrieval, review, publish, monitor feedback",
+      "Validasi dengan cara: Cek apakah data baru tidak merusak evaluasi",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_088",
+    "title": "Playbook V13.4 NUAI-088 - Multi-mode Assistant",
+    "category": "Domain IT / AI Project",
+    "keywords": [
+      "domain_it",
+      "ai_project",
+      "multi_mode_assistant",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "jelaskan_ini_buat_status_wa_saya",
+      "mode_santai_teknis_akademik_agama_aman_kerja_profesional",
+      "memilih_mode_jawaban_otomatis"
+    ],
+    "symptoms": [
+      "User bertanya tentang Multi-mode Assistant",
+      "Pertanyaan bisa berbentuk: Jelaskan ini buat status WA saya",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Domain IT",
+      "Identifikasi kategori: AI Project",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan memakai gaya santai pada topik sensitif/serius"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Mode santai, teknis, akademik, agama aman, kerja profesional",
+      "Arahkan ke hasil target: Gunakan mode santai singkat, bukan mode teknis panjang",
+      "Validasi dengan cara: Uji dengan 50 pertanyaan berbagai konteks",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_089",
+    "title": "Playbook V13.4 NUAI-089 - IoT Fundamental",
+    "category": "Domain IT / IoT",
+    "keywords": [
+      "domain_it",
+      "iot",
+      "iot_fundamental",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "alur_smart_garden_esp32_gimana",
+      "sensor_actuator_microcontroller_relay_power_mqtt_http_dashboard",
+      "mendesain_alur_iot_dari_sensor_ke_dashboard"
+    ],
+    "symptoms": [
+      "User bertanya tentang IoT Fundamental",
+      "Pertanyaan bisa berbentuk: Alur smart garden ESP32 gimana?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Domain IT",
+      "Identifikasi kategori: IoT",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyarankan rangkaian listrik berbahaya tanpa peringatan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Sensor, actuator, microcontroller, relay, power, MQTT/HTTP, dashboard",
+      "Arahkan ke hasil target: Sensor baca data, ESP32 kirim API, backend simpan DB, dashboard tampilkan, relay kontrol pompa",
+      "Validasi dengan cara: Uji dengan proyek IoT dan cek kelengkapan komponen",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_090",
+    "title": "Playbook V13.4 NUAI-090 - CCNA-style Foundation",
+    "category": "Domain IT / Networking",
+    "keywords": [
+      "domain_it",
+      "networking",
+      "ccna_style_foundation",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "bedanya_tcp_dan_udp_apa",
+      "osi_tcp_ip_switching_routing_vlan_subnetting_nat_acl_troubleshooting",
+      "menjawab_pertanyaan_jaringan_dengan_konsep_dan_contoh"
+    ],
+    "symptoms": [
+      "User bertanya tentang CCNA-style Foundation",
+      "Pertanyaan bisa berbentuk: Bedanya TCP dan UDP apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Domain IT",
+      "Identifikasi kategori: Networking",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan memberi instruksi mengganggu jaringan publik"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: OSI/TCP-IP, switching, routing, VLAN, subnetting, NAT, ACL, troubleshooting",
+      "Arahkan ke hasil target: Jelaskan koneksi, reliabilitas, contoh aplikasi, kelebihan-kekurangan",
+      "Validasi dengan cara: Uji dengan soal jaringan dasar",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_091",
+    "title": "Playbook V13.4 NUAI-091 - Dashboard Thinking",
+    "category": "Domain IT / Data Visualization",
+    "keywords": [
+      "domain_it",
+      "data_visualization",
+      "dashboard_thinking",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "dashboard_procurewatch_harus_ada_apa",
+      "kpi_chart_map_filter_drilldown_table_insight_data_storytelling",
+      "menyarankan_tampilan_dashboard_yang_informatif"
+    ],
+    "symptoms": [
+      "User bertanya tentang Dashboard Thinking",
+      "Pertanyaan bisa berbentuk: Dashboard ProcureWatch harus ada apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Domain IT",
+      "Identifikasi kategori: Data Visualization",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan membuat insight tanpa data"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: KPI, chart, map, filter, drilldown, table, insight, data storytelling",
+      "Arahkan ke hasil target: KPI anggaran, peta wilayah, ranking risiko, tren waktu, filter sektor, detail paket",
+      "Validasi dengan cara: Cek apakah visual sesuai data dan tujuan",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_092",
+    "title": "Playbook V13.4 NUAI-092 - ETL and Parsing",
+    "category": "Domain IT / Data Pipeline",
+    "keywords": [
+      "domain_it",
+      "data_pipeline",
+      "etl_and_parsing",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kenapa_data_lokasi_import_tidak_masuk_map",
+      "extract_transform_load_parsing_csv_pdf_web_validation_dedup_schema_mapping",
+      "mendesain_pipeline_data_dari_file_ke_db"
+    ],
+    "symptoms": [
+      "User bertanya tentang ETL and Parsing",
+      "Pertanyaan bisa berbentuk: Kenapa data lokasi import tidak masuk map?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Domain IT",
+      "Identifikasi kategori: Data Pipeline",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan scraping situs yang melarang atau melanggar aturan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Extract, transform, load, parsing CSV/PDF/web, validation, dedup, schema mapping",
+      "Arahkan ke hasil target: Cek parsing kolom lokasi, geocoding, schema DB, validasi null, mapping frontend",
+      "Validasi dengan cara: Uji dengan file import dan cek mapping",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_093",
+    "title": "Playbook V13.4 NUAI-093 - Bias and Reliability",
+    "category": "Domain IT / AI Ethics",
+    "keywords": [
+      "domain_it",
+      "ai_ethics",
+      "bias_and_reliability",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "apakah_jawaban_ai_selalu_benar",
+      "bias_dataset_fairness_dasar_reliability_uncertainty_human_review",
+      "menjelaskan_batas_kepercayaan_dan_perlunya_validasi"
+    ],
+    "symptoms": [
+      "User bertanya tentang Bias and Reliability",
+      "Pertanyaan bisa berbentuk: Apakah jawaban AI selalu benar?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Domain IT",
+      "Identifikasi kategori: AI Ethics",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan overclaim kemampuan AI"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Bias dataset, fairness dasar, reliability, uncertainty, human review",
+      "Arahkan ke hasil target: Tidak; jelaskan potensi salah, bias dataset, retrieval keliru, perlunya sumber dan evaluasi",
+      "Validasi dengan cara: Uji pertanyaan jebakan dan cek sikap hati-hati",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_094",
+    "title": "Playbook V13.4 NUAI-094 - CRUD App",
+    "category": "Latihan Praktik / Project Based Learning",
+    "keywords": [
+      "latihan_praktik",
+      "project_based_learning",
+      "crud_app",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "latihan_fullstack_paling_bagus_buat_pemula_apa",
+      "project_crud_dengan_auth_search_pagination_validation_export_csv",
+      "membimbing_pembuatan_aplikasi_dasar"
+    ],
+    "symptoms": [
+      "User bertanya tentang CRUD App",
+      "Pertanyaan bisa berbentuk: Latihan fullstack paling bagus buat pemula apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Latihan Praktik",
+      "Identifikasi kategori: Project Based Learning",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan terlalu kompleks untuk latihan awal"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Project CRUD dengan auth, search, pagination, validation, export CSV",
+      "Arahkan ke hasil target: Buat CRUD inventaris IT dengan login admin, DB, search, export, log aktivitas",
+      "Validasi dengan cara: Cek apakah project bisa dibuat bertahap",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_095",
+    "title": "Playbook V13.4 NUAI-095 - RAG Chatbot Mini",
+    "category": "Latihan Praktik / Project Based Learning",
+    "keywords": [
+      "latihan_praktik",
+      "project_based_learning",
+      "rag_chatbot_mini",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "project_latihan_ai_lokal_yang_relevan_apa",
+      "upload_csv_embedding_search_chat_source_citation_feedback",
+      "membuat_mini_project_rag_end_to_end"
+    ],
+    "symptoms": [
+      "User bertanya tentang RAG Chatbot Mini",
+      "Pertanyaan bisa berbentuk: Project latihan AI lokal yang relevan apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Latihan Praktik",
+      "Identifikasi kategori: Project Based Learning",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan memasukkan sumber agama tanpa validasi"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Upload CSV, embedding, search, chat, source citation, feedback",
+      "Arahkan ke hasil target: Buat RAG chatbot FAQ kampus/Al-Qur'an ringan dengan data lokal dan evaluasi",
+      "Validasi dengan cara: Uji minimal 50 pertanyaan dataset",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_096",
+    "title": "Playbook V13.4 NUAI-096 - Helpdesk Simulator",
+    "category": "Latihan Praktik / Project Based Learning",
+    "keywords": [
+      "latihan_praktik",
+      "project_based_learning",
+      "helpdesk_simulator",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "latihan_magang_it_support_apa_yang_bisa_dibuat",
+      "simulasi_tiket_user_troubleshooting_dokumentasi_eskalasi",
+      "membuat_latihan_skenario_kantor"
+    ],
+    "symptoms": [
+      "User bertanya tentang Helpdesk Simulator",
+      "Pertanyaan bisa berbentuk: Latihan magang IT support apa yang bisa dibuat?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Latihan Praktik",
+      "Identifikasi kategori: Project Based Learning",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan mensimulasikan akses data sensitif"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Simulasi tiket user, troubleshooting, dokumentasi, eskalasi",
+      "Arahkan ke hasil target: Buat simulator tiket: printer offline, WiFi error, email login, laptop lambat",
+      "Validasi dengan cara: Uji AI dengan roleplay tiket",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_097",
+    "title": "Playbook V13.4 NUAI-097 - Network Lab",
+    "category": "Latihan Praktik / Project Based Learning",
+    "keywords": [
+      "latihan_praktik",
+      "project_based_learning",
+      "network_lab",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "latihan_subnetting_dan_vlan_yang_bagus_apa",
+      "packet_tracer_topologi_subnet_vlan_routing_ping_test",
+      "membuat_latihan_lab_jaringan"
+    ],
+    "symptoms": [
+      "User bertanya tentang Network Lab",
+      "Pertanyaan bisa berbentuk: Latihan subnetting dan VLAN yang bagus apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Latihan Praktik",
+      "Identifikasi kategori: Project Based Learning",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan mengarah ke jaringan nyata tanpa izin"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Packet Tracer/topologi, subnet, VLAN, routing, ping test",
+      "Arahkan ke hasil target: Buat topologi 2 VLAN, router-on-a-stick, DHCP, uji ping antar VLAN",
+      "Validasi dengan cara: Cek apakah konfigurasi masuk akal",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_098",
+    "title": "Playbook V13.4 NUAI-098 - Deployment Checklist",
+    "category": "Latihan Praktik / Project Based Learning",
+    "keywords": [
+      "latihan_praktik",
+      "project_based_learning",
+      "deployment_checklist",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "sebelum_deploy_website_apa_saja_yang_harus_dicek",
+      "checklist_deploy_env_db_migration_cache_permission_ssl_backup_smoke_test",
+      "membuat_checklist_sebelum_upload_ke_hosting"
+    ],
+    "symptoms": [
+      "User bertanya tentang Deployment Checklist",
+      "Pertanyaan bisa berbentuk: Sebelum deploy website, apa saja yang harus dicek?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Latihan Praktik",
+      "Identifikasi kategori: Project Based Learning",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan deploy tanpa rollback plan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Checklist deploy: env, DB, migration, cache, permission, SSL, backup, smoke test",
+      "Arahkan ke hasil target: Backup, config env, DB migration, file path, permission, error log, SSL, test fitur utama",
+      "Validasi dengan cara: Uji checklist pada proyek nyata",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_099",
+    "title": "Playbook V13.4 NUAI-099 - Taxonomy and Metadata",
+    "category": "Sistem Knowledge / Dataset Design",
+    "keywords": [
+      "sistem_knowledge",
+      "dataset_design",
+      "taxonomy_and_metadata",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "biar_dataset_ai_rapi_kategori_apa_saja",
+      "kategori_subkategori_tag_difficulty_source_trust_level_update_frequency",
+      "mendesain_taksonomi_data"
+    ],
+    "symptoms": [
+      "User bertanya tentang Taxonomy and Metadata",
+      "Pertanyaan bisa berbentuk: Biar dataset AI rapi, kategori apa saja?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Sistem Knowledge",
+      "Identifikasi kategori: Dataset Design",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan campur data sensitif dengan knowledge umum"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Kategori, subkategori, tag, difficulty, source, trust level, update frequency",
+      "Arahkan ke hasil target: Pisahkan IT, kuliah, kerja, agama, umum, troubleshooting, project docs",
+      "Validasi dengan cara: Cek retrieval per kategori",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_100",
+    "title": "Playbook V13.4 NUAI-100 - Source Citation Field",
+    "category": "Sistem Knowledge / Dataset Design",
+    "keywords": [
+      "sistem_knowledge",
+      "dataset_design",
+      "source_citation_field",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "sumber_jawaban_ini_dari_mana",
+      "kolom_sumber_url_dokumen_halaman_tanggal_akses_trust_score",
+      "menjawab_dengan_sumber_saat_diperlukan"
+    ],
+    "symptoms": [
+      "User bertanya tentang Source Citation Field",
+      "Pertanyaan bisa berbentuk: Sumber jawaban ini dari mana?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Sistem Knowledge",
+      "Identifikasi kategori: Dataset Design",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan membuat sumber palsu"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Kolom sumber, URL, dokumen, halaman, tanggal akses, trust score",
+      "Arahkan ke hasil target: Tampilkan nama sumber dan link bila tersedia",
+      "Validasi dengan cara: Cek apakah jawaban faktual punya sumber",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_101",
+    "title": "Playbook V13.4 NUAI-101 - Difficulty Leveling",
+    "category": "Sistem Knowledge / Dataset Design",
+    "keywords": [
+      "sistem_knowledge",
+      "dataset_design",
+      "difficulty_leveling",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "jelaskan_docker_untuk_pemula",
+      "level_pemula_menengah_lanjut_untuk_setiap_konsep",
+      "menjawab_konsep_sesuai_level"
+    ],
+    "symptoms": [
+      "User bertanya tentang Difficulty Leveling",
+      "Pertanyaan bisa berbentuk: Jelaskan Docker untuk pemula",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Sistem Knowledge",
+      "Identifikasi kategori: Dataset Design",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan terlalu teknis untuk user pemula"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Level pemula, menengah, lanjut untuk setiap konsep",
+      "Arahkan ke hasil target: Gunakan analogi ringan, baru lanjut ke istilah image/container/volume",
+      "Validasi dengan cara: Uji dengan pertanyaan pemula vs teknis",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_102",
+    "title": "Playbook V13.4 NUAI-102 - Misconception Dataset",
+    "category": "Sistem Knowledge / Dataset Design",
+    "keywords": [
+      "sistem_knowledge",
+      "dataset_design",
+      "misconception_dataset",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "berarti_dataset_banyak_pasti_ai_makin_pintar_ya",
+      "miskonsepsi_umum_it_ai_jaringan_security_kuliah",
+      "memberi_koreksi_tanpa_merendahkan_user"
+    ],
+    "symptoms": [
+      "User bertanya tentang Misconception Dataset",
+      "Pertanyaan bisa berbentuk: Berarti dataset banyak pasti AI makin pintar ya?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Sistem Knowledge",
+      "Identifikasi kategori: Dataset Design",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan merespons dengan nada menggurui"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Miskonsepsi umum IT, AI, jaringan, security, kuliah",
+      "Arahkan ke hasil target: Koreksi: tidak selalu; kualitas, struktur, retrieval, evaluasi lebih penting",
+      "Validasi dengan cara: Uji dengan klaim salah dan cek koreksi",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_103",
+    "title": "Playbook V13.4 NUAI-103 - Scenario-based Knowledge",
+    "category": "Sistem Knowledge / Dataset Design",
+    "keywords": [
+      "sistem_knowledge",
+      "dataset_design",
+      "scenario_based_knowledge",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "saya_di_kantor_belum_dikasih_task_harus_ngapain",
+      "skenario_nyata_kerja_kuliah_proyek_dan_solusi_step_by_step",
+      "menjawab_masalah_nyata_dengan_konteks"
+    ],
+    "symptoms": [
+      "User bertanya tentang Scenario-based Knowledge",
+      "Pertanyaan bisa berbentuk: Saya di kantor belum dikasih task, harus ngapain?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Sistem Knowledge",
+      "Identifikasi kategori: Dataset Design",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyarankan tindakan yang melanggar etika kantor"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Skenario nyata kerja/kuliah/proyek dan solusi step-by-step",
+      "Arahkan ke hasil target: Saran: observasi, belajar dokumentasi, tanya sopan, catat logbook, siapkan pertanyaan",
+      "Validasi dengan cara: Uji dengan skenario harian user",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_104",
+    "title": "Playbook V13.4 NUAI-104 - Worked Examples",
+    "category": "Sistem Knowledge / Dataset Design",
+    "keywords": [
+      "sistem_knowledge",
+      "dataset_design",
+      "worked_examples",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "contoh_debugging_database_error_dong",
+      "contoh_lengkap_dari_masalah_sampai_solusi_untuk_coding_jaringan_laporan_debuggin",
+      "memberi_contoh_end_to_end"
+    ],
+    "symptoms": [
+      "User bertanya tentang Worked Examples",
+      "Pertanyaan bisa berbentuk: Contoh debugging database error dong",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Sistem Knowledge",
+      "Identifikasi kategori: Dataset Design",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan membuat data produksi palsu"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Contoh lengkap dari masalah sampai solusi untuk coding, jaringan, laporan, debugging",
+      "Arahkan ke hasil target: Tampilkan gejala, penyebab, cara cek, perbaikan, verifikasi",
+      "Validasi dengan cara: Cek apakah contoh bisa dipraktikkan",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_105",
+    "title": "Playbook V13.4 NUAI-105 - Rubric and Scoring",
+    "category": "Sistem Knowledge / Dataset Design",
+    "keywords": [
+      "sistem_knowledge",
+      "dataset_design",
+      "rubric_and_scoring",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "nilai_laporan_saya_kurangnya_dimana",
+      "rubrik_penilaian_jawaban_proyek_laporan_presentasi_code_review",
+      "menilai_hasil_kerja_user_berdasarkan_kriteria"
+    ],
+    "symptoms": [
+      "User bertanya tentang Rubric and Scoring",
+      "Pertanyaan bisa berbentuk: Nilai laporan saya kurangnya dimana?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Sistem Knowledge",
+      "Identifikasi kategori: Dataset Design",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan memberi nilai final seolah dosen resmi"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Rubrik penilaian jawaban, proyek, laporan, presentasi, code review",
+      "Arahkan ke hasil target: Beri skor struktur, isi, data, sitasi, bahasa, kesimpulan, saran perbaikan",
+      "Validasi dengan cara: Cek konsistensi skor antar contoh",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_106",
+    "title": "Playbook V13.4 NUAI-106 - Software Architecture Basic",
+    "category": "IT Maturity / Architecture",
+    "keywords": [
+      "it_maturity",
+      "architecture",
+      "software_architecture_basic",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "perlu_microservice_untuk_ai_lokal_saya",
+      "monolith_modular_monolith_microservice_dasar_layered_architecture_event_driven",
+      "memberi_desain_yang_tidak_overengineering"
+    ],
+    "symptoms": [
+      "User bertanya tentang Software Architecture Basic",
+      "Pertanyaan bisa berbentuk: Perlu microservice untuk AI lokal saya?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: IT Maturity",
+      "Identifikasi kategori: Architecture",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menyarankan microservice untuk semua kasus"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Monolith, modular monolith, microservice dasar, layered architecture, event-driven",
+      "Arahkan ke hasil target: Kemungkinan belum perlu; mulai modular monolith + service AI terpisah jika dibutuhkan",
+      "Validasi dengan cara: Uji dengan ukuran proyek berbeda",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_107",
+    "title": "Playbook V13.4 NUAI-107 - Scalability Basic",
+    "category": "IT Maturity / Architecture",
+    "keywords": [
+      "it_maturity",
+      "architecture",
+      "scalability_basic",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kalau_user_chat_banyak_ai_lokal_saya_kuat",
+      "caching_queue_pagination_worker_rate_limit_horizontal_vertical_scaling",
+      "menganalisis_bottleneck_dan_skala"
+    ],
+    "symptoms": [
+      "User bertanya tentang Scalability Basic",
+      "Pertanyaan bisa berbentuk: Kalau user chat banyak, AI lokal saya kuat?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: IT Maturity",
+      "Identifikasi kategori: Architecture",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menjanjikan kapasitas tanpa benchmark"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Caching, queue, pagination, worker, rate limit, horizontal/vertical scaling",
+      "Arahkan ke hasil target: Jelaskan limit model, queue request, rate limit, caching, GPU, worker, fallback",
+      "Validasi dengan cara: Uji dengan skenario 10/100/1000 user",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_108",
+    "title": "Playbook V13.4 NUAI-108 - SOP and Runbook",
+    "category": "IT Maturity / Operations",
+    "keywords": [
+      "it_maturity",
+      "operations",
+      "sop_and_runbook",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "buat_sop_restart_service_ai_lokal",
+      "sop_install_sop_backup_sop_restore_sop_deploy_sop_incident",
+      "membuat_prosedur_kerja_yang_bisa_diulang"
+    ],
+    "symptoms": [
+      "User bertanya tentang SOP and Runbook",
+      "Pertanyaan bisa berbentuk: Buat SOP restart service AI lokal",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: IT Maturity",
+      "Identifikasi kategori: Operations",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan membuat SOP yang melewati otorisasi"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: SOP install, SOP backup, SOP restore, SOP deploy, SOP incident",
+      "Arahkan ke hasil target: Cek user aktif, backup log, stop service, start service, test endpoint, catat hasil",
+      "Validasi dengan cara: Uji apakah SOP aman dan jelas",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_109",
+    "title": "Playbook V13.4 NUAI-109 - Change Management",
+    "category": "IT Maturity / Operations",
+    "keywords": [
+      "it_maturity",
+      "operations",
+      "change_management",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "mau_update_dataset_besar_langsung_upload_aja",
+      "request_change_risk_approval_backup_rollout_rollback_communication",
+      "menyarankan_proses_update_yang_aman"
+    ],
+    "symptoms": [
+      "User bertanya tentang Change Management",
+      "Pertanyaan bisa berbentuk: Mau update dataset besar, langsung upload aja?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: IT Maturity",
+      "Identifikasi kategori: Operations",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan melakukan perubahan besar tanpa backup/testing"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Request change, risk, approval, backup, rollout, rollback, communication",
+      "Arahkan ke hasil target: Sarankan staging, backup index, evaluasi, batch import, rollback plan",
+      "Validasi dengan cara: Uji dengan perubahan berisiko",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_110",
+    "title": "Playbook V13.4 NUAI-110 - Service Level Thinking",
+    "category": "IT Maturity / Operations",
+    "keywords": [
+      "it_maturity",
+      "operations",
+      "service_level_thinking",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "target_performa_ai_lokal_sebaiknya_apa",
+      "sla_slo_uptime_response_time_error_budget_dasar",
+      "membantu_membuat_target_performa_aplikasi"
+    ],
+    "symptoms": [
+      "User bertanya tentang Service Level Thinking",
+      "Pertanyaan bisa berbentuk: Target performa AI lokal sebaiknya apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: IT Maturity",
+      "Identifikasi kategori: Operations",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menetapkan SLA bisnis tanpa data kapasitas"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: SLA, SLO, uptime, response time, error budget dasar",
+      "Arahkan ke hasil target: Contoh: p95 response < 10 detik untuk query ringan, error rate < 2%, uptime lokal sesuai kebutuhan",
+      "Validasi dengan cara: Cek apakah target realistis",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Opsional",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_111",
+    "title": "Playbook V13.4 NUAI-111 - Direct Answer First",
+    "category": "Gaya Jawaban AI / Communication",
+    "keywords": [
+      "gaya_jawaban_ai",
+      "communication",
+      "direct_answer_first",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "berapa_jam_07_40_ke_17_10",
+      "jawab_inti_dulu_baru_penjelasan_dan_langkah",
+      "memberi_jawaban_langsung_untuk_pertanyaan_sederhana"
+    ],
+    "symptoms": [
+      "User bertanya tentang Direct Answer First",
+      "Pertanyaan bisa berbentuk: Berapa jam 07.40 ke 17.10?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Gaya Jawaban AI",
+      "Identifikasi kategori: Communication",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan terlalu panjang untuk pertanyaan sederhana"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Jawab inti dulu, baru penjelasan dan langkah",
+      "Arahkan ke hasil target: 9 jam 30 menit. Lalu jelaskan cara hitung jika perlu",
+      "Validasi dengan cara: Uji dengan pertanyaan sederhana",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_112",
+    "title": "Playbook V13.4 NUAI-112 - Step-by-step Technical Answer",
+    "category": "Gaya Jawaban AI / Communication",
+    "keywords": [
+      "gaya_jawaban_ai",
+      "communication",
+      "step_by_step_technical_answer",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "database_connection_failed_gimana_cara_fix",
+      "struktur_gejala_kemungkinan_penyebab_cara_cek_solusi_verifikasi",
+      "menjawab_masalah_teknis_dengan_rapi"
+    ],
+    "symptoms": [
+      "User bertanya tentang Step-by-step Technical Answer",
+      "Pertanyaan bisa berbentuk: Database connection failed gimana cara fix?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Gaya Jawaban AI",
+      "Identifikasi kategori: Communication",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan langsung memberi fix tanpa cara cek"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Struktur: gejala, kemungkinan penyebab, cara cek, solusi, verifikasi",
+      "Arahkan ke hasil target: Cek credential, host, DB name, user privilege, port, extension, log, test koneksi",
+      "Validasi dengan cara: Uji dengan berbagai error teknis",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_113",
+    "title": "Playbook V13.4 NUAI-113 - Socratic Learning",
+    "category": "Gaya Jawaban AI / Communication",
+    "keywords": [
+      "gaya_jawaban_ai",
+      "communication",
+      "socratic_learning",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "aku_belum_paham_subnetting",
+      "memberi_petunjuk_bertahap_untuk_belajar_bukan_langsung_semua_jawaban",
+      "menjelaskan_konsep_sambil_bertanya_ringan"
+    ],
+    "symptoms": [
+      "User bertanya tentang Socratic Learning",
+      "Pertanyaan bisa berbentuk: Aku belum paham subnetting",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Gaya Jawaban AI",
+      "Identifikasi kategori: Communication",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menggurui atau terlalu banyak bertanya"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Memberi petunjuk bertahap untuk belajar, bukan langsung semua jawaban",
+      "Arahkan ke hasil target: Mulai dari IP, subnet mask, network ID, host ID, lalu latihan kecil",
+      "Validasi dengan cara: Uji apakah user bisa mengikuti langkah",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_114",
+    "title": "Playbook V13.4 NUAI-114 - Friendly but Professional Tone",
+    "category": "Gaya Jawaban AI / Communication",
+    "keywords": [
+      "gaya_jawaban_ai",
+      "communication",
+      "friendly_but_professional_tone",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "jelasin_buat_status_wa_saya",
+      "bahasa_santai_sopan_tidak_kaku_tidak_terlalu_alay",
+      "menyesuaikan_tone_untuk_teman_kuliah_kerja"
+    ],
+    "symptoms": [
+      "User bertanya tentang Friendly but Professional Tone",
+      "Pertanyaan bisa berbentuk: Jelasin buat status WA saya",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Gaya Jawaban AI",
+      "Identifikasi kategori: Communication",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan memakai slang berlebihan di konteks akademik/kerja"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Bahasa santai, sopan, tidak kaku, tidak terlalu alay",
+      "Arahkan ke hasil target: Buat versi singkat, santai, gaul sopan",
+      "Validasi dengan cara: Uji dengan permintaan berbagai tone",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_115",
+    "title": "Playbook V13.4 NUAI-115 - Uncertainty Handling",
+    "category": "Gaya Jawaban AI / Communication",
+    "keywords": [
+      "gaya_jawaban_ai",
+      "communication",
+      "uncertainty_handling",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "apakah_versi_windows_terbaru_apa",
+      "kalimat_saat_data_kurang_butuh_sumber_atau_kemungkinan_berubah",
+      "mengatakan_tidak_tahu_dengan_tetap_membantu"
+    ],
+    "symptoms": [
+      "User bertanya tentang Uncertainty Handling",
+      "Pertanyaan bisa berbentuk: Apakah versi Windows terbaru apa?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Gaya Jawaban AI",
+      "Identifikasi kategori: Communication",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan mengarang fakta terkini"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Kalimat saat data kurang, butuh sumber, atau kemungkinan berubah",
+      "Arahkan ke hasil target: Jika data lokal belum update, katakan perlu cek sumber resmi; berikan cara cek",
+      "Validasi dengan cara: Uji dengan pertanyaan data terbaru",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_116",
+    "title": "Playbook V13.4 NUAI-116 - Constructive Critique",
+    "category": "Gaya Jawaban AI / Communication",
+    "keywords": [
+      "gaya_jawaban_ai",
+      "communication",
+      "constructive_critique",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "menurut_kamu_ide_saya_bagus_ga",
+      "kritik_yang_jujur_tapi_membangun_untuk_kode_laporan_keputusan",
+      "memberi_koreksi_tanpa_menjatuhkan"
+    ],
+    "symptoms": [
+      "User bertanya tentang Constructive Critique",
+      "Pertanyaan bisa berbentuk: Menurut kamu ide saya bagus ga?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Gaya Jawaban AI",
+      "Identifikasi kategori: Communication",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan memberi pujian kosong atau merendahkan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Kritik yang jujur tapi membangun untuk kode, laporan, keputusan",
+      "Arahkan ke hasil target: Jawab jujur: bagian kuat, risiko, bagian lemah, saran perbaikan",
+      "Validasi dengan cara: Cek apakah kritik spesifik dan sopan",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_117",
+    "title": "Playbook V13.4 NUAI-117 - Digital Literacy",
+    "category": "Pengetahuan Umum Terpakai / Daily Tech Literacy",
+    "keywords": [
+      "pengetahuan_umum_terpakai",
+      "daily_tech_literacy",
+      "digital_literacy",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "kenapa_file_saya_tidak_bisa_dibuka",
+      "akun_password_cloud_storage_browser_file_format_backup_update_aplikasi",
+      "memberi_solusi_praktis_untuk_pengguna_umum"
+    ],
+    "symptoms": [
+      "User bertanya tentang Digital Literacy",
+      "Pertanyaan bisa berbentuk: Kenapa file saya tidak bisa dibuka?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Pengetahuan Umum Terpakai",
+      "Identifikasi kategori: Daily Tech Literacy",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan meminta password/file pribadi"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Akun, password, cloud storage, browser, file format, backup, update aplikasi",
+      "Arahkan ke hasil target: Cek format file, aplikasi pendukung, ekstensi, corrupt, permission, storage",
+      "Validasi dengan cara: Uji dengan masalah digital sehari-hari",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_118",
+    "title": "Playbook V13.4 NUAI-118 - Excel Word PowerPoint",
+    "category": "Pengetahuan Umum Terpakai / Office Productivity",
+    "keywords": [
+      "pengetahuan_umum_terpakai",
+      "office_productivity",
+      "excel_word_powerpoint",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "formula_excel_untuk_menghitung_jam_kerja",
+      "formula_excel_format_dokumen_word_struktur_ppt_export_pdf_template_laporan",
+      "memberi_langkah_praktis_office"
+    ],
+    "symptoms": [
+      "User bertanya tentang Excel Word PowerPoint",
+      "Pertanyaan bisa berbentuk: Formula Excel untuk menghitung jam kerja?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Pengetahuan Umum Terpakai",
+      "Identifikasi kategori: Office Productivity",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan membuat data laporan palsu"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Formula Excel, format dokumen Word, struktur PPT, export PDF, template laporan",
+      "Arahkan ke hasil target: Gunakan sel waktu masuk/keluar, selisih, format [h]:mm, catatan lembur",
+      "Validasi dengan cara: Uji dengan tugas Office nyata",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_119",
+    "title": "Playbook V13.4 NUAI-119 - English for IT",
+    "category": "Pengetahuan Umum Terpakai / Professional English IT",
+    "keywords": [
+      "pengetahuan_umum_terpakai",
+      "professional_english_it",
+      "english_for_it",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "apa_arti_connection_timeout",
+      "istilah_it_inggris_indonesia_email_teknis_error_message_dokumentasi",
+      "menerjemahkan_error_sambil_menjelaskan_solusi"
+    ],
+    "symptoms": [
+      "User bertanya tentang English for IT",
+      "Pertanyaan bisa berbentuk: Apa arti 'connection timeout'?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Pengetahuan Umum Terpakai",
+      "Identifikasi kategori: Professional English IT",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan menerjemahkan istilah teknis secara terlalu literal"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Istilah IT Inggris-Indonesia, email teknis, error message, dokumentasi",
+      "Arahkan ke hasil target: Koneksi terlalu lama tidak mendapat respons; cek server, network, timeout config",
+      "Validasi dengan cara: Uji dengan error message Inggris",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Disarankan",
+    "level": "Dasar-Menengah"
+  },
+  {
+    "id": "v13_4_it_playbook_nuai_120",
+    "title": "Playbook V13.4 NUAI-120 - Responsible Problem Solving",
+    "category": "Pengetahuan Umum Terpakai / Ethical Problem Solving",
+    "keywords": [
+      "pengetahuan_umum_terpakai",
+      "ethical_problem_solving",
+      "responsible_problem_solving",
+      "v13_4",
+      "it_kerja_kuliah",
+      "csv_upgrade",
+      "cara_bikin_wifi_jammer",
+      "membedakan_bantuan_aman_vs_penyalahgunaan_alternatif_edukatif_batas_legal",
+      "menolak_instruksi_berbahaya_sambil_memberi_pembelajaran_aman"
+    ],
+    "symptoms": [
+      "User bertanya tentang Responsible Problem Solving",
+      "Pertanyaan bisa berbentuk: Cara bikin WiFi jammer?",
+      "User membutuhkan jawaban yang sesuai, runtut, dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi area: Pengetahuan Umum Terpakai",
+      "Identifikasi kategori: Ethical Problem Solving",
+      "Tentukan format jawaban: definisi, step-by-step, list, kode, analisis, akademik, atau troubleshooting",
+      "Perhatikan guardrail: Jangan memberi langkah teknis untuk merusak/mengganggu sistem"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Masukkan materi: Membedakan bantuan aman vs penyalahgunaan, alternatif edukatif, batas legal",
+      "Arahkan ke hasil target: Tolak pembuatan jammer; arahkan ke pembelajaran spektrum, keamanan WiFi defensif, aturan legal",
+      "Validasi dengan cara: Red-team test terhadap permintaan sensitif",
+      "Minta detail tambahan hanya bila detail user tidak cukup untuk memberi jawaban aman"
+    ],
+    "source": "list_upgrade_knowledge_nusamind_ai_it_kerja_kuliah.csv",
+    "priority": "Wajib",
+    "level": "Dasar-Menengah"
+  }
+]

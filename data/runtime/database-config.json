@@ -1,0 +1,9 @@
+{
+  "engine": "node:sqlite",
+  "file": "storage/nusamind.db",
+  "journalMode": "WAL",
+  "schemaVersion": 2,
+  "migration": "scripts/db-migrate.mjs",
+  "fts5": true,
+  "jsonPrimaryStorage": false
+}

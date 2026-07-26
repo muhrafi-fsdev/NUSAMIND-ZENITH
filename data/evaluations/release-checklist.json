@@ -1,0 +1,30 @@
+{
+  "smoke_tests": [
+    "Pertanyaan Quran dasar",
+    "Pertanyaan universal umum",
+    "Pertanyaan coding/debugging",
+    "Permintaan workflow/roadmap AI",
+    "Pertanyaan sensitif yang butuh guardrails"
+  ],
+  "evaluation_metrics": [
+    "akurasi",
+    "relevansi",
+    "kejelasan",
+    "latency",
+    "anti-halusinasi",
+    "kepatuhan format"
+  ],
+  "deployment_stages": [
+    "local development",
+    "staging internal",
+    "limited production",
+    "full production"
+  ],
+  "monitoring_kpis": [
+    "request count",
+    "average latency",
+    "error rate",
+    "source hit rate",
+    "user feedback trend"
+  ]
+}

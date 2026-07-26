@@ -1,0 +1,2 @@
+export type ContextItem={id:string;text:string;tokens:number;priority:number;critical?:boolean;kind?:string};
+export function packContext(items:ContextItem[],budget:number){const ordered=[...items].sort((a,b)=>Number(Boolean(b.critical))-Number(Boolean(a.critical))||b.priority-a.priority);const kept:ContextItem[]=[];const dropped:ContextItem[]=[];let used=0;for(const item of ordered){if(used+item.tokens<=budget||item.critical){kept.push(item);used+=item.tokens;}else dropped.push(item);}return{kept,dropped,used,budget,criticalLoss:dropped.filter(x=>x.critical).map(x=>x.id)};}

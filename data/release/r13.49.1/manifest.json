@@ -1,0 +1,31 @@
+{
+  "release": "R13.49.1",
+  "version": "13.49.1",
+  "edition": "zenith",
+  "title": "Defensive Cybersecurity Intelligence Patch",
+  "upgradeItems": 34,
+  "uiChanged": false,
+  "topCategoryBoost": 75,
+  "desktopApplicationUpdate": "CANCELLED",
+  "cybersecurity": {
+    "modes": [
+      "LEARN",
+      "DEFENSIVE_ANALYSIS",
+      "LAB_ONLY"
+    ],
+    "assetValidation": "PASSIVE_FIRST_WITH_EXPLICIT_AUTHORIZATION",
+    "externalActiveScanning": false,
+    "autonomousExploitation": false,
+    "learningModules": 9,
+    "projectPolicies": 8,
+    "mlCapabilities": 6,
+    "benchmarkCases": 14
+  },
+  "limitations": {
+    "windowsDesktopExe": "NOT_INCLUDED",
+    "electron": "NOT_INCLUDED",
+    "apiToIpcMigration": "NOT_INCLUDED",
+    "activeSecurityActions": "AUTHORIZED_LOCAL_OR_OWNED_TARGETS_ONLY",
+    "publicTargetScanning": "BLOCKED"
+  }
+}

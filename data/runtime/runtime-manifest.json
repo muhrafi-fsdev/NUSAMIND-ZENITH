@@ -1,0 +1,41 @@
+{
+  "name": "nusamind-zenith",
+  "release": "1.0.0",
+  "releaseLabel": "N1.0",
+  "edition": "zenith",
+  "createdBy": "NusaMind N1 build pipeline",
+  "upgradeItems": 124,
+  "semanticNaming": true,
+  "uiUntouched": true,
+  "windowsExe": false,
+  "n8nIntegration": false,
+  "entrypoints": {
+    "web": "npm run dev",
+    "cli": "run-cli.bat",
+    "ml": "ml-start.bat",
+    "gate": "npm run gate",
+    "status": "/api/n1/status",
+    "evaluate": "/api/n1/evaluate"
+  },
+  "legacyEntrypoints": {
+    "web": "npm run dev",
+    "cli": "apex.bat",
+    "menu": "npm run menu:summary",
+    "summary": "npm run edition:summary",
+    "reliability": "npm run reliability:summary",
+    "finance": "npm run ins-fin:summary",
+    "r136": "npm run r136:summary",
+    "upgrade": "npm run upgrade:summary",
+    "r140": "npm run release:13.40",
+    "calculation": "npm run evaluate:13.40",
+    "r141": "npm run release:13.41",
+    "reliabilityGate": "npm run gate:13.41",
+    "r142": "npm run release:13.42",
+    "knowledge": "npm run release:13.42",
+    "knowledgeGate": "npm run gate:13.42",
+    "r143": "npm run release:13.43",
+    "ml": "npm run ml:status",
+    "mlGate": "npm run gate:13.43"
+  },
+  "topCategoryCount": 1080
+}

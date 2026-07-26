@@ -1,0 +1,34 @@
+{
+  "release": "13.38.0",
+  "label": "R13.33",
+  "edition": "apex",
+  "mode": "supervised-autonomous",
+  "enabledByDefault": false,
+  "confirmationRequired": true,
+  "workspaceOnly": true,
+  "supportedFrameworks": [
+    "static",
+    "next",
+    "vite"
+  ],
+  "actions": [
+    "plan",
+    "create",
+    "apply",
+    "build",
+    "start",
+    "stop",
+    "rollback",
+    "logs"
+  ],
+  "safety": [
+    "local-or-token",
+    "path-sandbox",
+    "new-project-only",
+    "file-count-limit",
+    "command-allowlist",
+    "audit-log",
+    "marker-based-rollback"
+  ],
+  "uiChanged": false
+}

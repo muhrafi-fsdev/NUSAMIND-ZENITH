@@ -1,0 +1,40 @@
+{
+  "release": "R13.43",
+  "edition": "apex",
+  "cases": [
+    {
+      "id": "ML-INTENT-01",
+      "input": "Debug error TypeScript",
+      "expectedDomain": "coding"
+    },
+    {
+      "id": "ML-INS-01",
+      "input": "Klaim asuransi belum selesai dan urgent",
+      "expectedDomain": "insurance"
+    },
+    {
+      "id": "ML-REL-01",
+      "input": "Jelaskan tafsir ayat",
+      "expectedDomain": "religion"
+    },
+    {
+      "id": "ML-SIM-01",
+      "task": "semantic similarity",
+      "minimum": 0.01
+    },
+    {
+      "id": "ML-ANOM-01",
+      "task": "numeric anomaly",
+      "rows": 4
+    },
+    {
+      "id": "ML-EVAL-01",
+      "task": "answer evaluator",
+      "range": [
+        0,
+        1
+      ]
+    }
+  ],
+  "editionCases": 18
+}

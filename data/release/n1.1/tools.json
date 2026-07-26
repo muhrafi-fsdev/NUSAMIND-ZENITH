@@ -1,0 +1,50 @@
+[
+  {
+    "id": "read-file",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "list-files",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "glob-files",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "grep-code",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "git-status",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "git-diff",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "lsp-diagnostics",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "run-typecheck",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "run-tests",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "run-build",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "apply-exact-patch",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "rollback-patch",
+    "status": "ACTIVE"
+  }
+]

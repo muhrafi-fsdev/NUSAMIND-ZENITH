@@ -1,0 +1,66 @@
+[
+  {
+    "component_id": "MM-C01",
+    "component_name": "OCR and Layout",
+    "visual_input": "Screenshot or document",
+    "structured_output": "Text spans and coordinates",
+    "primary_verification": "OCR confidence and region match",
+    "target_editions": "Zenith, Apex"
+  },
+  {
+    "component_id": "MM-C02",
+    "component_name": "Object and UI State",
+    "visual_input": "UI screenshot or device photo",
+    "structured_output": "Objects, labels and states",
+    "primary_verification": "Region-supported labels",
+    "target_editions": "Zenith, Apex"
+  },
+  {
+    "component_id": "MM-C03",
+    "component_name": "Table Parser",
+    "visual_input": "Table image",
+    "structured_output": "Cells, headers, spans and footnotes",
+    "primary_verification": "Grid and numeric validation",
+    "target_editions": "Zenith, Apex"
+  },
+  {
+    "component_id": "MM-C04",
+    "component_name": "Chart Parser",
+    "visual_input": "Chart image",
+    "structured_output": "Axes, series, values and units",
+    "primary_verification": "Numerical and legend validation",
+    "target_editions": "Zenith, Apex"
+  },
+  {
+    "component_id": "MM-C05",
+    "component_name": "Diagram Graph",
+    "visual_input": "Network, circuit or flowchart",
+    "structured_output": "Nodes, edges, direction and groups",
+    "primary_verification": "Topology consistency",
+    "target_editions": "Apex"
+  },
+  {
+    "component_id": "MM-C06",
+    "component_name": "Screenshot Debugger",
+    "visual_input": "Error screenshot",
+    "structured_output": "Observed evidence and hypotheses",
+    "primary_verification": "Logs/tests before final fix",
+    "target_editions": "Zenith, Apex"
+  },
+  {
+    "component_id": "MM-C07",
+    "component_name": "Injection Scanner",
+    "visual_input": "Any image or scan",
+    "structured_output": "Suspicious regions and quarantine",
+    "primary_verification": "Instruction authority none",
+    "target_editions": "Zenith, Apex"
+  },
+  {
+    "component_id": "MM-C08",
+    "component_name": "Visual Claim Verifier",
+    "visual_input": "Answer and visual evidence",
+    "structured_output": "Supported/unsupported visual claims",
+    "primary_verification": "Every critical claim maps to region",
+    "target_editions": "Zenith, Apex"
+  }
+]

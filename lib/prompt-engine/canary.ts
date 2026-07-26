@@ -1,0 +1,4 @@
+export type CanarySample={quality:number;cost:number;latencyMs:number;criticalFailure?:boolean};
+function mean(v:number[]){return v.length?v.reduce((a,b)=>a+b,0)/v.length:0;}
+function variance(v:number[]){const m=mean(v);return v.length>1?v.reduce((a,b)=>a+(b-m)**2,0)/(v.length-1):0;}
+export function compareCanary(baseline:CanarySample[],candidate:CanarySample[],minDelta=0.01){const b=mean(baseline.map((x)=>x.quality)),c=mean(candidate.map((x)=>x.quality));const se=Math.sqrt(variance(baseline.map((x)=>x.quality))/Math.max(1,baseline.length)+variance(candidate.map((x)=>x.quality))/Math.max(1,candidate.length));const z=se?((c-b)/se):0;const critical=candidate.some((x)=>x.criticalFailure);const pass=!critical&&(c-b)>=minDelta&&z>=-1.96;return{pass,rollback:!pass,baseline:b,candidate:c,delta:c-b,z,criticalFailure:critical};}

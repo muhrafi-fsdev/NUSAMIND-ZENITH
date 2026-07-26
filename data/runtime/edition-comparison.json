@@ -1,0 +1,21 @@
+{
+  "release": "13.38.0",
+  "edition": "apex",
+  "previous": {
+    "top": 441,
+    "univ": 2179633,
+    "lang": 369946,
+    "gold": 113363,
+    "vector": 2908588
+  },
+  "current": {
+    "top": 476,
+    "univ": 2477133,
+    "lang": 408446,
+    "gold": 136113,
+    "vector": 3293588
+  },
+  "allTopCategoryScoresRaised": true,
+  "sourcePosterBaseline": "R13.32",
+  "uiChanged": false
+}

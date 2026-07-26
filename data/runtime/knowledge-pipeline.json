@@ -1,0 +1,132 @@
+[
+  {
+    "stage_order": "1",
+    "stage_id": "ING-01",
+    "stage_name": "Source Intake",
+    "input": "File, URL export, dataset, manual source",
+    "required_checks": "Source identity; license/use status; checksum",
+    "output_status": "IMPORTED",
+    "failure_status": "REJECTED",
+    "human_review_required": "For restricted/unknown rights"
+  },
+  {
+    "stage_order": "2",
+    "stage_id": "ING-02",
+    "stage_name": "Security Scan",
+    "input": "Imported source",
+    "required_checks": "Malware; prompt injection; secrets; PII; archive safety",
+    "output_status": "VALIDATED",
+    "failure_status": "QUARANTINED",
+    "human_review_required": "For high-risk findings"
+  },
+  {
+    "stage_order": "3",
+    "stage_id": "ING-03",
+    "stage_name": "Format Validation",
+    "input": "Validated source",
+    "required_checks": "Schema; encoding; required fields; parser health",
+    "output_status": "VALIDATED",
+    "failure_status": "REJECTED",
+    "human_review_required": "No"
+  },
+  {
+    "stage_order": "4",
+    "stage_id": "ING-04",
+    "stage_name": "Extraction",
+    "input": "Validated source",
+    "required_checks": "Text/table/image extraction; page/section coordinates",
+    "output_status": "VALIDATED",
+    "failure_status": "REVIEW_REQUIRED",
+    "human_review_required": "When extraction confidence low"
+  },
+  {
+    "stage_order": "5",
+    "stage_id": "ING-05",
+    "stage_name": "Normalization",
+    "input": "Extracted content",
+    "required_checks": "Language; dates; numbers; units; names; canonical IDs",
+    "output_status": "VALIDATED",
+    "failure_status": "REVIEW_REQUIRED",
+    "human_review_required": "For ambiguous values"
+  },
+  {
+    "stage_order": "6",
+    "stage_id": "ING-06",
+    "stage_name": "Claim Segmentation",
+    "input": "Normalized content",
+    "required_checks": "Atomic claims; claim type; scope; source pointer",
+    "output_status": "VALIDATED",
+    "failure_status": "REVIEW_REQUIRED",
+    "human_review_required": "For complex/high-stakes source"
+  },
+  {
+    "stage_order": "7",
+    "stage_id": "ING-07",
+    "stage_name": "Dedup and Lineage",
+    "input": "Claims",
+    "required_checks": "Exact/semantic duplicates; source dependency; version",
+    "output_status": "VALIDATED",
+    "failure_status": "REVIEW_REQUIRED",
+    "human_review_required": "For possible false merge"
+  },
+  {
+    "stage_order": "8",
+    "stage_id": "ING-08",
+    "stage_name": "Conflict Analysis",
+    "input": "Validated claims",
+    "required_checks": "Existing claims; dates; jurisdiction; viewpoint",
+    "output_status": "REVIEW_REQUIRED",
+    "failure_status": "REJECTED",
+    "human_review_required": "Yes for material conflict"
+  },
+  {
+    "stage_order": "9",
+    "stage_id": "ING-09",
+    "stage_name": "Source Scoring",
+    "input": "Source and claims",
+    "required_checks": "Authority; directness; freshness; independence; trust",
+    "output_status": "VERIFIED",
+    "failure_status": "REVIEW_REQUIRED",
+    "human_review_required": "Yes for high-stakes/low trust"
+  },
+  {
+    "stage_order": "10",
+    "stage_id": "ING-10",
+    "stage_name": "Index Build",
+    "input": "Verified records",
+    "required_checks": "FTS5; embeddings; metadata; checksum manifest",
+    "output_status": "VERIFIED",
+    "failure_status": "REJECTED",
+    "human_review_required": "No"
+  },
+  {
+    "stage_order": "11",
+    "stage_id": "ING-11",
+    "stage_name": "Benchmark",
+    "input": "Indexed batch",
+    "required_checks": "Accuracy; retrieval; freshness; conflict; anti-hallucination",
+    "output_status": "VERIFIED",
+    "failure_status": "REVIEW_REQUIRED",
+    "human_review_required": "When critical tests fail"
+  },
+  {
+    "stage_order": "12",
+    "stage_id": "ING-12",
+    "stage_name": "Activation",
+    "input": "Verified passing batch",
+    "required_checks": "Authorized approval; corpus version; rollback snapshot",
+    "output_status": "ACTIVE",
+    "failure_status": "REJECTED",
+    "human_review_required": "Yes for critical/high-stakes batch"
+  },
+  {
+    "stage_order": "13",
+    "stage_id": "ING-13",
+    "stage_name": "Maintenance",
+    "input": "Active batch",
+    "required_checks": "Freshness review; user feedback; benchmark regression",
+    "output_status": "ACTIVE/DEPRECATED",
+    "failure_status": "DEPRECATED",
+    "human_review_required": "For material update"
+  }
+]

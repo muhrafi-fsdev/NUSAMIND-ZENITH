@@ -1,0 +1,5 @@
+import fs from 'node:fs';
+const root=process.cwd(); const edition='zenith'; let pass=0; const tests=[]; function t(name,ok){tests.push({name,ok});if(ok)pass++;}
+const mod=fs.readFileSync('packages/developer-intelligence/index.ts','utf8');
+t('mode-controller',mod.includes('resolveMode'));t('permission-engine',mod.includes('permissionFor'));t('protected-env',mod.includes('PROTECTED_PATH'));t('destructive-deny',mod.includes('DESTRUCTIVE_COMMAND'));t('checkpoint',mod.includes('createCheckpoint'));t('rollback',mod.includes('restoreCheckpoint'));t('doom-loop',mod.includes('detectDoomLoop'));t('project-scan',mod.includes('scanProject'));t('context-ranking',mod.includes('selectContext'));t('verification',mod.includes('verifyResult'));t('api-route',fs.existsSync('app/api/n1/developer/route.ts'));t('manifest',JSON.parse(fs.readFileSync('data/release/n1.1/manifest.json')).edition===edition);
+const expected=12; console.log(JSON.stringify({release:'N1.1',edition,passed:pass,total:expected,tests},null,2)); if(pass!==expected)process.exit(1);

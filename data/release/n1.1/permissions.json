@@ -1,0 +1,25 @@
+{
+  "default": "DENY",
+  "edition": "zenith",
+  "modes": [
+    "ASK",
+    "PLAN",
+    "BUILD",
+    "REVIEW",
+    "REPAIR"
+  ],
+  "read": {
+    "*": "ALLOW",
+    ".env": "DENY",
+    ".env.*": "DENY",
+    ".env.example": "ALLOW"
+  },
+  "edit": "ASK",
+  "externalDirectory": "DENY",
+  "gitPush": "DENY",
+  "destructiveShell": "DENY",
+  "approvalScopes": [
+    "once",
+    "session"
+  ]
+}

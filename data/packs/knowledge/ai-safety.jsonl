@@ -1,0 +1,1 @@
+{"id":"v12_tech_card_010","type":"universal","title":"Safety Validator","category":"AI Safety","text":"Safety validator memeriksa jawaban sebelum dikirim ke user. Pada Quran mode, validator harus mencegah pengarang ayat/hadis, fatwa mutlak, dan klaim tanpa sumber.","tags":["v12","ai-engineering","safety","validator"],"source":"V12 Built-in Advanced Knowledge","confidence":0.91}

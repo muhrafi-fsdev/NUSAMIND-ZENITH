@@ -1,0 +1,590 @@
+[
+  {
+    "id": "v13_20_max_scenario_001",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/version max",
+    "expectedBehavior": "AI membedah masalah kompleks dengan struktur, validasi, risiko, dan rekomendasi.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Lebih lambat dan lebih berat dibanding Flash/Lite.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Thinking Core"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_002",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/rag deep; /sources detail",
+    "expectedBehavior": "AI memberi jawaban mendalam berbasis sumber kuat.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Lebih lambat karena retrieval lebih dalam.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "RAG"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_003",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/source audit",
+    "expectedBehavior": "AI bisa membedakan sumber resmi dan sumber lemah.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Membutuhkan source registry yang rapi.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Source Ranking"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_004",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/memory audit; /context health",
+    "expectedBehavior": "AI bisa lanjut project panjang tanpa user mengulang konteks.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Harus dikontrol agar tidak creepy/berlebihan.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Memory"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_005",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/continue; /artifacts; /revise last",
+    "expectedBehavior": "AI paham 'upgrade lagi', 'yang file tadi', 'revisi versi sebelumnya'.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Butuh storage session yang stabil.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Session"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_006",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/compress-context; /summary update",
+    "expectedBehavior": "AI tetap nyambung walau session panjang.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Lebih berat di CPU/RAM.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Long Context"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_007",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/attach project.zip; /debug deep",
+    "expectedBehavior": "AI menemukan akar masalah dan memberi fix permanen.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Butuh file/log cukup lengkap.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Coding"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_008",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/security-check login.php",
+    "expectedBehavior": "AI memberi patch defensif dan prioritas severity.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Tidak untuk eksploitasi ofensif.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Security"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_009",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/ml deep; /eval max",
+    "expectedBehavior": "AI bisa membantu desain sistem ML dan evaluasi NusaMind.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Butuh data dan metrik untuk jawaban yang presisi.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Deep ML"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_010",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/math deep",
+    "expectedBehavior": "AI bisa mengerjakan soal kompleks dengan validasi.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Lebih lambat karena perlu self-check.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Matematika"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_011",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/physics solve",
+    "expectedBehavior": "AI menjelaskan fisika untuk telekomunikasi, IoT, dan perangkat.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Eksperimen fisika berisiko perlu warning.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Fisika"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_012",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/chem solve",
+    "expectedBehavior": "AI bisa menjelaskan kimia untuk device, baterai, sensor, dan lingkungan.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Tidak untuk eksperimen kimia berbahaya.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Kimia"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_013",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/telecom deep",
+    "expectedBehavior": "AI menghitung link budget, rise time, BER, QoS, dan analisis sinyal.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Butuh parameter teknis lengkap.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Telekomunikasi"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_014",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/siskom deep",
+    "expectedBehavior": "AI menjelaskan sistem komunikasi secara matematis dan praktis.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Butuh rumus dan asumsi jelas.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Communication System"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_015",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/iot expert",
+    "expectedBehavior": "AI merancang sistem IoT end-to-end yang aman dan stabil.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Butuh data wiring/kode/log agar akurat.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "IoT"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_016",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/persona agama; /sources",
+    "expectedBehavior": "AI menjawab agama dengan hati-hati, bersumber, dan tidak mengarang.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Bukan mufti/ustaz pengambil fatwa final.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Agama"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_017",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/attach laporan.pdf; /analyze deep",
+    "expectedBehavior": "AI menganalisis dokumen panjang dan memberi jawaban berbasis bukti.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Butuh OCR/parser yang kuat.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Document AI"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_018",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/research deep",
+    "expectedBehavior": "AI menyusun roadmap teknis dan strategi pengembangan.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Lebih lambat karena multi-step.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Research"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_019",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/eval run max",
+    "expectedBehavior": "AI membuat test set dan skor sebelum/after upgrade.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Butuh golden dataset.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Evaluation"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_020",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/verify last",
+    "expectedBehavior": "AI memvalidasi jawaban sebelum final.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Menambah latency.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Self-Verification"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_021",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/domain analyze",
+    "expectedBehavior": "AI bisa menjawab masalah yang lintas disiplin.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Butuh domain routing yang akurat.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Multi-domain"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_022",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/debug on; /debug last",
+    "expectedBehavior": "Developer bisa tahu kenapa AI menjawab seperti itu.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Jangan tampilkan reasoning privat/secret.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "CLI Debug"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_023",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/artifacts; /revise last",
+    "expectedBehavior": "AI bisa merevisi file lama atau membuat versi baru.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Butuh registry artifact rapi.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Artifact"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_024",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/upgrade last; /diff last",
+    "expectedBehavior": "AI membuat versi baru dari CSV/roadmap/kode dengan changelog.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Butuh last_output_reference yang akurat.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Revision"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_025",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/workspace status; /tasks",
+    "expectedBehavior": "AI menjadi assistant project lengkap.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Butuh storage lokal yang stabil.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Workspace"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_026",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/safety strict",
+    "expectedBehavior": "AI lebih aman saat membaca file lokal dan membahas topik sensitif.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Bisa lebih sering menolak jika permintaan berisiko.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Guardrail"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_027",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/format expert",
+    "expectedBehavior": "AI memberi jawaban rapi untuk masalah berat.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Terlalu panjang untuk pertanyaan sederhana.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Output Format"
+    ]
+  },
+  {
+    "id": "v13_20_max_scenario_028",
+    "version": "V13.20",
+    "edition": "max",
+    "mode": "auto",
+    "input": "/benchmark max",
+    "expectedBehavior": "Max tetap bisa dipakai walau lebih berat.",
+    "must_not_include": [
+      "mengubah UI",
+      "Dari data yang tersedia",
+      "Berdasarkan dataset"
+    ],
+    "risk": "Mungkin butuh hardware lebih kuat.",
+    "source": "version-upgrade-playbooks-v13-20-max.json",
+    "tags": [
+      "v13.20",
+      "scenario",
+      "max",
+      "Performance"
+    ]
+  }
+]

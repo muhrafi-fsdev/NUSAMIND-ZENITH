@@ -1,0 +1,47 @@
+[
+  {
+    "phase_order": "1",
+    "phase_name": "Critical Foundation",
+    "main_goal": "Build, database, gate, safety, capability honesty",
+    "required_before_start": "Project source R13.43",
+    "completion_definition": "Check/build/regression/runtime diagnostics pass",
+    "estimated_risk": "Critical",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "2",
+    "phase_name": "Real Machine Learning",
+    "main_goal": "Generalizing classifiers, embeddings, OOD, calibration, retrieval V5",
+    "required_before_start": "Phase 1",
+    "completion_definition": "Frozen tests and ML gate pass",
+    "estimated_risk": "Critical",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "3",
+    "phase_name": "Neural Intelligence Lab",
+    "main_goal": "Neuron, backpropagation, optimizer, custom MLP, benchmark",
+    "required_before_start": "Phase 2 datasets/evaluation",
+    "completion_definition": "Neural model beats baseline and neural gate passes",
+    "estimated_risk": "High",
+    "release_blocker": "For Zenith/Apex activation"
+  },
+  {
+    "phase_order": "4",
+    "phase_name": "Integrated Health Intelligence",
+    "main_goal": "Modern/traditional medicine, red flags, interactions, evidence, privacy",
+    "required_before_start": "Phase 1–2; retrieval and verifier",
+    "completion_definition": "All health critical benchmark and gate pass",
+    "estimated_risk": "Critical",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "5",
+    "phase_name": "Edition Integration",
+    "main_goal": "Differentiate Swift, Zenith, Apex and final system validation",
+    "required_before_start": "Phases 1–4",
+    "completion_definition": "Grand release gate passes",
+    "estimated_risk": "Critical",
+    "release_blocker": "Yes"
+  }
+]

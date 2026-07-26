@@ -1,0 +1,112 @@
+[
+  {
+    "strategy_id": "PS-DIRECT",
+    "strategy_name": "Direct Response",
+    "best_for": "Simple known or deterministic task",
+    "avoid_when": "Complex multi-source task",
+    "swift_support": "Full",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verification": "Output validation",
+    "reference_source": "https://www.promptingguide.ai/prompts"
+  },
+  {
+    "strategy_id": "PS-ZERO",
+    "strategy_name": "Zero-Shot",
+    "best_for": "Clear simple instruction",
+    "avoid_when": "Ambiguous format-sensitive task",
+    "swift_support": "Full",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verification": "Task outcome check",
+    "reference_source": "https://www.promptingguide.ai/prompts"
+  },
+  {
+    "strategy_id": "PS-FEW",
+    "strategy_name": "Few-Shot",
+    "best_for": "Classification, extraction, formatting",
+    "avoid_when": "Bad or expensive examples",
+    "swift_support": "Limited",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verification": "Example relevance and schema",
+    "reference_source": "https://www.promptingguide.ai/prompts"
+  },
+  {
+    "strategy_id": "PS-CHAIN",
+    "strategy_name": "Prompt Chaining",
+    "best_for": "Long documents and multi-stage tasks",
+    "avoid_when": "Single-step task",
+    "swift_support": "No",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verification": "Stage contracts and final verifier",
+    "reference_source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "strategy_id": "PS-PROGRAM",
+    "strategy_name": "Program-Aided",
+    "best_for": "Math, parsing, deterministic work",
+    "avoid_when": "Creative or subjective task",
+    "swift_support": "Full",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verification": "Deterministic verifier",
+    "reference_source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "strategy_id": "PS-RAG",
+    "strategy_name": "Retrieval-Augmented",
+    "best_for": "Factual/current/private documents",
+    "avoid_when": "No trusted evidence",
+    "swift_support": "Full",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verification": "Faithfulness and citation verifier",
+    "reference_source": "https://www.promptingguide.ai/research/rag"
+  },
+  {
+    "strategy_id": "PS-REACT",
+    "strategy_name": "ReAct-Style",
+    "best_for": "Bounded tool tasks",
+    "avoid_when": "No tools or uncontrolled high risk",
+    "swift_support": "No",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verification": "Expected-state and step budget",
+    "reference_source": "https://arxiv.org/abs/2210.03629"
+  },
+  {
+    "strategy_id": "PS-SELFCONS",
+    "strategy_name": "Limited Self-Consistency",
+    "best_for": "Reasoning with verifiable outcome",
+    "avoid_when": "No verifier or high cost",
+    "swift_support": "No",
+    "zenith_support": "Limited",
+    "apex_support": "Full",
+    "required_verification": "Agreement plus external verifier",
+    "reference_source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "strategy_id": "PS-TREE",
+    "strategy_name": "Tree Search",
+    "best_for": "Bounded planning alternatives",
+    "avoid_when": "Simple task or weak evaluator",
+    "swift_support": "No",
+    "zenith_support": "No",
+    "apex_support": "Limited",
+    "required_verification": "Branch budget and verifier",
+    "reference_source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "strategy_id": "PS-GRAPH",
+    "strategy_name": "Graph Reasoning",
+    "best_for": "Entity, claim, dependency relationships",
+    "avoid_when": "No graph structure",
+    "swift_support": "No",
+    "zenith_support": "Limited",
+    "apex_support": "Full",
+    "required_verification": "Graph consistency and lineage",
+    "reference_source": "https://www.promptingguide.ai/research"
+  }
+]

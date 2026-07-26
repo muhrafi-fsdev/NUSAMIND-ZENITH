@@ -1,0 +1,249 @@
+{
+  "release": "R13.43",
+  "version": "13.43.0",
+  "edition": "apex",
+  "noUiTouch": true,
+  "theme": "Python Machine Learning Service",
+  "items": [
+    {
+      "id": "SHARED-1343-001",
+      "category": "ML Architecture",
+      "feature": "Python Machine Learning Service V1",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-002",
+      "category": "ML Runtime",
+      "feature": "Offline-First ML Runtime",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-003",
+      "category": "Classification",
+      "feature": "Hybrid Intent and Domain Classifier",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-004",
+      "category": "Embeddings",
+      "feature": "Multilingual Semantic Embedding Engine",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-005",
+      "category": "NLP",
+      "feature": "Sentiment and Emotion Analysis",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-006",
+      "category": "Routing",
+      "feature": "Urgency and Escalation Classifier",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-007",
+      "category": "Privacy",
+      "feature": "PII Pattern Detection",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-008",
+      "category": "Documents",
+      "feature": "Document Feature Extraction Hooks",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-009",
+      "category": "Anomaly",
+      "feature": "Numeric Anomaly Detection",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-010",
+      "category": "Evaluation",
+      "feature": "ML Answer Quality Evaluator",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-011",
+      "category": "Confidence",
+      "feature": "Confidence Calibration and Abstention",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-012",
+      "category": "Models",
+      "feature": "Local Model Registry",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-013",
+      "category": "Data Quality",
+      "feature": "Dataset Schema and Validation",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-014",
+      "category": "Training",
+      "feature": "Supervised Intent Training Pipeline",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-015",
+      "category": "Inference",
+      "feature": "Batch Inference Pipeline",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-016",
+      "category": "Reliability",
+      "feature": "Graceful ML Fallback",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-017",
+      "category": "Observability",
+      "feature": "ML Capability Health Report",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-018",
+      "category": "Monitoring",
+      "feature": "Dataset and Prediction Drift Signals",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-019",
+      "category": "Metrics",
+      "feature": "Model Metrics and Evaluation Store",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-020",
+      "category": "Features",
+      "feature": "Feature Store Lite",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-021",
+      "category": "Audit",
+      "feature": "ML Audit and Training Ledger",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-022",
+      "category": "Security",
+      "feature": "Protected Training and Reload Operations",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-023",
+      "category": "Deployment",
+      "feature": "CPU and GPU Runtime Profiles",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-024",
+      "category": "Integration",
+      "feature": "TypeScript ML Client",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-025",
+      "category": "Integration",
+      "feature": "Chat Advisory ML Routing",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-026",
+      "category": "API",
+      "feature": "NusaMind ML API Gateway",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-027",
+      "category": "Benchmark",
+      "feature": "R13.43 ML Reliability Benchmark",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "SHARED-1343-028",
+      "category": "Release",
+      "feature": "R13.43 ML Release Gate",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "APEX-1343-029",
+      "category": "Apex ML",
+      "feature": "Apex Multi-Model ML Router",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "APEX-1343-030",
+      "category": "Apex ML",
+      "feature": "Apex Transformer Embedding Backend",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "APEX-1343-031",
+      "category": "Apex ML",
+      "feature": "Apex Ensemble Intent Classification",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "APEX-1343-032",
+      "category": "Apex ML",
+      "feature": "Apex Cross-Domain Risk Classification",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "APEX-1343-033",
+      "category": "Apex ML",
+      "feature": "Apex Advanced Answer Evaluator",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "APEX-1343-034",
+      "category": "Apex ML",
+      "feature": "Apex Dataset Drift Analytics",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "APEX-1343-035",
+      "category": "Apex ML",
+      "feature": "Apex Experiment and Model Registry",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "APEX-1343-036",
+      "category": "Apex ML",
+      "feature": "Apex GPU Acceleration Profile",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "APEX-1343-037",
+      "category": "Apex ML",
+      "feature": "Apex Batch and Async Inference",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "APEX-1343-038",
+      "category": "Apex ML",
+      "feature": "Apex Protected Training Control",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "APEX-1343-039",
+      "category": "Apex ML",
+      "feature": "Apex Model Rollback Workflow",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    },
+    {
+      "id": "APEX-1343-040",
+      "category": "Apex ML",
+      "feature": "Apex Expert ML Benchmark",
+      "guardrail": "Prediksi ML adalah sinyal pendukung, bukan fakta atau keputusan akhir. Training write-action dibatasi localhost/token."
+    }
+  ]
+}

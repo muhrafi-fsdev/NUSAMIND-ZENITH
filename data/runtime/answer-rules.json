@@ -1,0 +1,11 @@
+{
+  "release": "13.38.0",
+  "edition": "apex",
+  "language": "id-ID",
+  "singleAccuracyLine": true,
+  "mathDeterministicNoRagLabel": true,
+  "basicIslamDirect": true,
+  "latexCliNormalization": true,
+  "directFirst": true,
+  "evidenceBoundFileAnswers": true
+}

@@ -1,0 +1,33 @@
+{
+  "release": "N1.0",
+  "allowed": [
+    "Next.js local web",
+    "PowerShell CLI",
+    "Python ML service",
+    "Ollama local runtime"
+  ],
+  "forbidden": [
+    "Electron",
+    "Electron Forge",
+    "Squirrel",
+    "NusaMind.exe",
+    "Setup.exe",
+    "PyInstaller desktop bundle",
+    "n8n runtime integration"
+  ],
+  "excludedArtifacts": [
+    "node_modules",
+    ".next",
+    "out",
+    "dist",
+    "build",
+    "coverage",
+    "__pycache__",
+    ".venv",
+    "logs",
+    "runtime sessions"
+  ],
+  "cleanInstallCommand": "npm ci",
+  "nodeMinimum": "22",
+  "uiLocked": true
+}

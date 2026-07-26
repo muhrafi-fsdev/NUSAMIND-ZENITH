@@ -1,0 +1,1 @@
+import fs from 'node:fs';const d=JSON.parse(fs.readFileSync('data/runtime/customer-service.json','utf8'));console.log({release:d.release,edition:d.edition,features:d.features.length,privacy:d.privacy,claims:d.claims});

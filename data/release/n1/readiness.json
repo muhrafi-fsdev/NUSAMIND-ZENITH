@@ -1,0 +1,12 @@
+{
+  "release": "N1.0",
+  "edition": "zenith",
+  "criticalFailures": 0,
+  "falseActiveClaims": 0,
+  "windowsExeSurfaces": 0,
+  "n8nRuntimeSurfaces": 0,
+  "uiMismatchCount": 0,
+  "liveModelBenchmark": "NOT_RUN",
+  "contractBenchmarkCount": 79,
+  "status": "SOURCE_GATE_PENDING_EXECUTION"
+}

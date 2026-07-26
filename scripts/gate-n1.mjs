@@ -1,0 +1,3 @@
+import {spawnSync} from 'node:child_process';const commands=[['npm',['run','check']],['npm',['run','check:n1']],['npm',['run','exe:check']],['npm',['run','n8n:check']],['npm',['run','ui:check']],['npm',['run','naming:audit']],['npm',['run','distribution:check']],['npm',['run','build']],['npm',['run','benchmark:n1']]];const results=[];
+for(const [cmd,args] of commands){const r=spawnSync(cmd,args,{stdio:'inherit',shell:process.platform==='win32'});results.push({command:[cmd,...args].join(' '),status:r.status});if(r.status!==0){console.error(JSON.stringify({ok:false,release:'N1.0',results},null,2));process.exit(r.status||1);}}
+console.log(JSON.stringify({ok:true,release:'N1.0',results,liveModelBenchmark:'NOT_RUN',liveBrowserBenchmark:'NOT_RUN'},null,2));

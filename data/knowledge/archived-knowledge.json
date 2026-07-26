@@ -1,0 +1,534 @@
+[
+  {
+    "id": "v13_20_max_max-13_20-001",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Deep Thinking Next Level",
+    "category": "Thinking Core",
+    "sub_fitur": "Deep Thinking Next Level",
+    "priority": 1,
+    "tipe_upgrade": "Sangat Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Thinking Core | Subfitur: Deep Thinking Next Level | Prioritas: 1 | Tipe: Sangat Wajib.\nTujuan: Menjadi versi paling kuat untuk analisis mendalam dan tugas berat.\nSetting: reasoning_depth=high; max_tokens=3000-6000; self_check=true; verifier=true\nKemampuan setelah upgrade: AI membedah masalah kompleks dengan struktur, validasi, risiko, dan rekomendasi.\nCocok untuk: debugging berat, riset, dokumen panjang, coding kompleks, domain expert\nBatasan: Lebih lambat dan lebih berat dibanding Flash/Lite.\nMetrik: expert_answer_quality, accuracy, latency_p95\nGuardrail: Deep thinking tetap harus aman dan tidak mengarang.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "thinking-core",
+      "deep-thinking-next-level"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-002",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Expert RAG Retrieval",
+    "category": "RAG",
+    "sub_fitur": "Expert RAG Retrieval",
+    "priority": 2,
+    "tipe_upgrade": "Sangat Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: RAG | Subfitur: Expert RAG Retrieval | Prioritas: 2 | Tipe: Sangat Wajib.\nTujuan: Mengambil banyak sumber/chunk dan melakukan ranking lanjutan.\nSetting: rag_top_k=8-20; reranker=true; trust_filter=high; citation_required=true\nKemampuan setelah upgrade: AI memberi jawaban mendalam berbasis sumber kuat.\nCocok untuk: riset berat, agama/hukum/keuangan, dokumen teknis\nBatasan: Lebih lambat karena retrieval lebih dalam.\nMetrik: retrieval_precision, faithfulness_score, citation_accuracy\nGuardrail: Jika sumber tidak cukup, AI harus menolak klaim pasti.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "rag",
+      "expert-rag-retrieval"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-003",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Advanced Source Trust",
+    "category": "Source Ranking",
+    "sub_fitur": "Advanced Source Trust",
+    "priority": 3,
+    "tipe_upgrade": "Sangat Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Source Ranking | Subfitur: Advanced Source Trust | Prioritas: 3 | Tipe: Sangat Wajib.\nTujuan: Memprioritaskan sumber resmi, valid, dan terbaru.\nSetting: source_trust=high_only_for_sensitive; source_conflict_check=true\nKemampuan setelah upgrade: AI bisa membedakan sumber resmi dan sumber lemah.\nCocok untuk: agama, hukum, keuangan, cyber, data teknis\nBatasan: Membutuhkan source registry yang rapi.\nMetrik: trusted_source_usage_rate, low_trust_block_rate\nGuardrail: Jangan memakai sumber rendah untuk keputusan sensitif.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "source-ranking",
+      "advanced-source-trust"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-004",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Adaptive Memory Reasoning",
+    "category": "Memory",
+    "sub_fitur": "Adaptive Memory Reasoning",
+    "priority": 4,
+    "tipe_upgrade": "Sangat Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Memory | Subfitur: Adaptive Memory Reasoning | Prioritas: 4 | Tipe: Sangat Wajib.\nTujuan: Memakai memory project, session, preferensi user, dan artifact dengan cerdas.\nSetting: memory_mode=adaptive; scopes=session,workspace,global; conflict_detection=true\nKemampuan setelah upgrade: AI bisa lanjut project panjang tanpa user mengulang konteks.\nCocok untuk: project besar dan session panjang\nBatasan: Harus dikontrol agar tidak creepy/berlebihan.\nMetrik: memory_relevance, context_recall_accuracy, privacy_violation_rate\nGuardrail: Data sensitif tidak boleh disimpan tanpa izin.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "memory",
+      "adaptive-memory-reasoning"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-005",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Advanced Session Continuity",
+    "category": "Session",
+    "sub_fitur": "Advanced Session Continuity",
+    "priority": 5,
+    "tipe_upgrade": "Sangat Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Session | Subfitur: Advanced Session Continuity | Prioritas: 5 | Tipe: Sangat Wajib.\nTujuan: Paham konteks panjang, output terakhir, file terakhir, dan revisi sebelumnya.\nSetting: recent_window=50-100; rolling_summary=true; artifact_awareness=true; revision_mode=true\nKemampuan setelah upgrade: AI paham 'upgrade lagi', 'yang file tadi', 'revisi versi sebelumnya'.\nCocok untuk: pengerjaan roadmap, coding, dokumen, dataset panjang\nBatasan: Butuh storage session yang stabil.\nMetrik: followup_resolution_accuracy, wrong_reference_rate\nGuardrail: Jika ada konflik konteks, ikuti instruksi terbaru user.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "session",
+      "advanced-session-continuity"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-006",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Long Context Handling",
+    "category": "Long Context",
+    "sub_fitur": "Long Context Handling",
+    "priority": 6,
+    "tipe_upgrade": "Sangat Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Long Context | Subfitur: Long Context Handling | Prioritas: 6 | Tipe: Sangat Wajib.\nTujuan: Mengelola percakapan dan dokumen panjang dengan summary dan compression.\nSetting: context_compression=true; summary_refresh=auto; context_health=true\nKemampuan setelah upgrade: AI tetap nyambung walau session panjang.\nCocok untuk: session panjang, dokumen besar, multi-file\nBatasan: Lebih berat di CPU/RAM.\nMetrik: context_restore_success, lost_fact_rate, token_saving_rate\nGuardrail: Jangan menghapus constraint penting saat kompresi.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "long-context",
+      "long-context-handling"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-007",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Complex Coding Debugger",
+    "category": "Coding",
+    "sub_fitur": "Complex Coding Debugger",
+    "priority": 7,
+    "tipe_upgrade": "Sangat Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Coding | Subfitur: Complex Coding Debugger | Prioritas: 7 | Tipe: Sangat Wajib.\nTujuan: Debug frontend, backend, database, API, hosting, dan log secara mendalam.\nSetting: code_depth=deep; multi_file=true; root_cause=true; regression_test=true\nKemampuan setelah upgrade: AI menemukan akar masalah dan memberi fix permanen.\nCocok untuk: bug kompleks dan project web lokal/hosting\nBatasan: Butuh file/log cukup lengkap.\nMetrik: root_cause_accuracy, fix_success_rate, regression_coverage\nGuardrail: Jangan mengubah file asli tanpa backup/konfirmasi.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "coding",
+      "complex-coding-debugger"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-008",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Security Code Review",
+    "category": "Security",
+    "sub_fitur": "Security Code Review",
+    "priority": 8,
+    "tipe_upgrade": "Sangat Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Security | Subfitur: Security Code Review | Prioritas: 8 | Tipe: Sangat Wajib.\nTujuan: Review SQL injection, XSS, CSRF, auth, upload, token leak, rate limit.\nSetting: security_review=true; owasp_checks=true; secret_scan=true\nKemampuan setelah upgrade: AI memberi patch defensif dan prioritas severity.\nCocok untuk: audit keamanan web dan API\nBatasan: Tidak untuk eksploitasi ofensif.\nMetrik: vulnerability_detection_rate, safe_fix_rate\nGuardrail: Jangan memberi payload exploit siap pakai atau instruksi serangan.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "security",
+      "security-code-review"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-009",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Deep Machine Learning Expert",
+    "category": "Deep ML",
+    "sub_fitur": "Deep Machine Learning Expert",
+    "priority": 9,
+    "tipe_upgrade": "Sangat Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Deep ML | Subfitur: Deep Machine Learning Expert | Prioritas: 9 | Tipe: Sangat Wajib.\nTujuan: Memahami neural network, Transformer, fine-tuning, RAG, MLOps, eval.\nSetting: ml_depth=expert; formulas=true; code_examples=true; eval_required=true\nKemampuan setelah upgrade: AI bisa membantu desain sistem ML dan evaluasi NusaMind.\nCocok untuk: pengembangan AI lokal, RAG, classifier, reranker, fine-tuning\nBatasan: Butuh data dan metrik untuk jawaban yang presisi.\nMetrik: ml_concept_accuracy, eval_design_quality\nGuardrail: Jangan melatih dari data sensitif tanpa izin/filtering.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "deep-ml",
+      "deep-machine-learning-expert"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-010",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Complex Mathematics Expert",
+    "category": "Matematika",
+    "sub_fitur": "Complex Mathematics Expert",
+    "priority": 10,
+    "tipe_upgrade": "Sangat Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Matematika | Subfitur: Complex Mathematics Expert | Prioritas: 10 | Tipe: Sangat Wajib.\nTujuan: Kalkulus lanjut, aljabar linear, statistik, optimasi, metode numerik, matematika sinyal.\nSetting: math_depth=expert; proof_support=true; verifier=strong\nKemampuan setelah upgrade: AI bisa mengerjakan soal kompleks dengan validasi.\nCocok untuk: kuliah teknik, ML, telekomunikasi, fisika\nBatasan: Lebih lambat karena perlu self-check.\nMetrik: step_accuracy, proof_validity, calculation_error_rate\nGuardrail: Jika notasi ambigu, wajib menyebut asumsi.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "matematika",
+      "complex-mathematics-expert"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-011",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Advanced Physics",
+    "category": "Fisika",
+    "sub_fitur": "Advanced Physics",
+    "priority": 11,
+    "tipe_upgrade": "Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Fisika | Subfitur: Advanced Physics | Prioritas: 11 | Tipe: Wajib.\nTujuan: Mekanika, elektromagnetik, gelombang, optik, thermal, fisika antariksa.\nSetting: physics_depth=advanced; unit_check=true; formula_steps=true\nKemampuan setelah upgrade: AI menjelaskan fisika untuk telekomunikasi, IoT, dan perangkat.\nCocok untuk: soal fisika, fiber optic, RF, thermal device\nBatasan: Eksperimen fisika berisiko perlu warning.\nMetrik: physics_answer_accuracy, unit_consistency\nGuardrail: Jangan memberi instruksi eksperimen listrik/tekanan/panas yang berbahaya.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "fisika",
+      "advanced-physics"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-012",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Advanced Chemistry",
+    "category": "Kimia",
+    "sub_fitur": "Advanced Chemistry",
+    "priority": 12,
+    "tipe_upgrade": "Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Kimia | Subfitur: Advanced Chemistry | Prioritas: 12 | Tipe: Wajib.\nTujuan: Stoikiometri, asam-basa, redoks, material, baterai, kimia perangkat.\nSetting: chemistry_depth=advanced; safety_warning=true; step_calculation=true\nKemampuan setelah upgrade: AI bisa menjelaskan kimia untuk device, baterai, sensor, dan lingkungan.\nCocok untuk: soal kimia, baterai, korosi, material IoT\nBatasan: Tidak untuk eksperimen kimia berbahaya.\nMetrik: chemistry_accuracy, safety_warning_accuracy\nGuardrail: Jangan menyarankan pencampuran bahan kimia berbahaya.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "kimia",
+      "advanced-chemistry"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-013",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Telecommunication Expert",
+    "category": "Telekomunikasi",
+    "sub_fitur": "Telecommunication Expert",
+    "priority": 13,
+    "tipe_upgrade": "Sangat Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Telekomunikasi | Subfitur: Telecommunication Expert | Prioritas: 13 | Tipe: Sangat Wajib.\nTujuan: FTTH/GPON, RF, QoS, modulasi, satelit, sistem komunikasi, link budget.\nSetting: telecom_depth=expert; formula_engine=true; source_required=true\nKemampuan setelah upgrade: AI menghitung link budget, rise time, BER, QoS, dan analisis sinyal.\nCocok untuk: tugas telekomunikasi berat, SKSO, RF, wireless, sistem komunikasi\nBatasan: Butuh parameter teknis lengkap.\nMetrik: formula_accuracy, telecom_diagnosis_accuracy\nGuardrail: Jangan membantu jammer atau gangguan RF ilegal.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "telekomunikasi",
+      "telecommunication-expert"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-014",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Expert Communication System",
+    "category": "Communication System",
+    "sub_fitur": "Expert Communication System",
+    "priority": 14,
+    "tipe_upgrade": "Sangat Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Communication System | Subfitur: Expert Communication System | Prioritas: 14 | Tipe: Sangat Wajib.\nTujuan: Signal system, convolution, Fourier, information theory, channel coding, BER.\nSetting: signal_math=true; telecom_bridge=true; graph_explanation=true\nKemampuan setelah upgrade: AI menjelaskan sistem komunikasi secara matematis dan praktis.\nCocok untuk: kuliah sistem komunikasi dan teori informasi\nBatasan: Butuh rumus dan asumsi jelas.\nMetrik: signal_reasoning_accuracy, formula_traceability\nGuardrail: Jangan memberi rumus tanpa konteks asumsi.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "communication-system",
+      "expert-communication-system"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-015",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Expert IoT System",
+    "category": "IoT",
+    "sub_fitur": "Expert IoT System",
+    "priority": 15,
+    "tipe_upgrade": "Sangat Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: IoT | Subfitur: Expert IoT System | Prioritas: 15 | Tipe: Sangat Wajib.\nTujuan: ESP32, sensor, protokol, backend, dashboard, fail-safe, security, reliability.\nSetting: iot_depth=expert; fail_safe=true; security_check=true; architecture=true\nKemampuan setelah upgrade: AI merancang sistem IoT end-to-end yang aman dan stabil.\nCocok untuk: Smart Garden, dashboard IoT, ESP32, API, DB, fail-safe\nBatasan: Butuh data wiring/kode/log agar akurat.\nMetrik: iot_architecture_score, failsafe_coverage\nGuardrail: Wajib prioritaskan safe state saat sensor/network gagal.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "iot",
+      "expert-iot-system"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-016",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Expert Guarded Islamic Module",
+    "category": "Agama",
+    "sub_fitur": "Expert Guarded Islamic Module",
+    "priority": 16,
+    "tipe_upgrade": "Sangat Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Agama | Subfitur: Expert Guarded Islamic Module | Prioritas: 16 | Tipe: Sangat Wajib.\nTujuan: Al-Qur'an, hadits, fikih, kitab kuning dengan sumber dan kehati-hatian tinggi.\nSetting: islamic_guardrail=strict; source_required=true; fatwa_disclaimer=true\nKemampuan setelah upgrade: AI menjawab agama dengan hati-hati, bersumber, dan tidak mengarang.\nCocok untuk: hadits, fikih, tafsir, kitab kuning, hukum Islam umum\nBatasan: Bukan mufti/ustaz pengambil fatwa final.\nMetrik: source_accuracy, false_hadith_rate, fiqh_safety_score\nGuardrail: Jangan membuat ayat/hadits palsu atau fatwa final.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "agama",
+      "expert-guarded-islamic-module"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-017",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Document Intelligence",
+    "category": "Document AI",
+    "sub_fitur": "Document Intelligence",
+    "priority": 17,
+    "tipe_upgrade": "Sangat Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Document AI | Subfitur: Document Intelligence | Prioritas: 17 | Tipe: Sangat Wajib.\nTujuan: Membaca PDF, Word, Excel, PPT, screenshot, log, tabel, dan multi-file.\nSetting: doc_depth=deep; table_extraction=true; citation=page/sheet/line; multi_file=true\nKemampuan setelah upgrade: AI menganalisis dokumen panjang dan memberi jawaban berbasis bukti.\nCocok untuk: laporan kuliah, dataset, screenshot error, kode/log\nBatasan: Butuh OCR/parser yang kuat.\nMetrik: ocr_accuracy, table_accuracy, citation_accuracy\nGuardrail: Jika bagian tidak terbaca, AI wajib bilang tidak yakin.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "document-ai",
+      "document-intelligence"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-018",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Research Mode",
+    "category": "Research",
+    "sub_fitur": "Research Mode",
+    "priority": 18,
+    "tipe_upgrade": "Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Research | Subfitur: Research Mode | Prioritas: 18 | Tipe: Wajib.\nTujuan: Membuat analisis panjang, roadmap, pro-kontra, dan rekomendasi bertingkat.\nSetting: research_depth=high; compare_sources=true; structured_output=true\nKemampuan setelah upgrade: AI menyusun roadmap teknis dan strategi pengembangan.\nCocok untuk: riset project, arsitektur AI, karya ilmiah, analisis teknis\nBatasan: Lebih lambat karena multi-step.\nMetrik: research_quality, source_coverage\nGuardrail: Untuk info terbaru perlu sumber terkini.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "research",
+      "research-mode"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-019",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Evaluation Mode",
+    "category": "Evaluation",
+    "sub_fitur": "Evaluation Mode",
+    "priority": 19,
+    "tipe_upgrade": "Sangat Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Evaluation | Subfitur: Evaluation Mode | Prioritas: 19 | Tipe: Sangat Wajib.\nTujuan: Menguji kualitas jawaban, kode, dataset, RAG, dan model.\nSetting: eval_full=true; domain_benchmark=true; regression_check=true\nKemampuan setelah upgrade: AI membuat test set dan skor sebelum/after upgrade.\nCocok untuk: benchmark NusaMind, dataset quality, model update\nBatasan: Butuh golden dataset.\nMetrik: accuracy, faithfulness, safety, regression_rate\nGuardrail: Jangan klaim meningkat tanpa metrik.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "evaluation",
+      "evaluation-mode"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-020",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Strong Self Check",
+    "category": "Self-Verification",
+    "sub_fitur": "Strong Self Check",
+    "priority": 20,
+    "tipe_upgrade": "Sangat Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Self-Verification | Subfitur: Strong Self Check | Prioritas: 20 | Tipe: Sangat Wajib.\nTujuan: Mengecek ulang angka, sumber, logika, dan potensi hallucination.\nSetting: self_check=true; math_verify=true; source_verify=true; contradiction_check=true\nKemampuan setelah upgrade: AI memvalidasi jawaban sebelum final.\nCocok untuk: domain sensitif, matematika, coding, dokumen, riset\nBatasan: Menambah latency.\nMetrik: verification_success, false_confidence_rate\nGuardrail: Jika gagal verifikasi, AI harus jujur.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "self-verification",
+      "strong-self-check"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-021",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Multi-domain Reasoning",
+    "category": "Multi-domain",
+    "sub_fitur": "Multi-domain Reasoning",
+    "priority": 21,
+    "tipe_upgrade": "Sangat Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Multi-domain | Subfitur: Multi-domain Reasoning | Prioritas: 21 | Tipe: Sangat Wajib.\nTujuan: Menggabungkan domain seperti fikih+keuangan, ML+matematika, telecom+fisika.\nSetting: multi_domain_router=true; primary_secondary_domain=true\nKemampuan setelah upgrade: AI bisa menjawab masalah yang lintas disiplin.\nCocok untuk: pertanyaan kompleks lintas bidang\nBatasan: Butuh domain routing yang akurat.\nMetrik: domain_routing_accuracy, multi_domain_quality\nGuardrail: Domain sensitif tetap harus pakai guardrail masing-masing.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "multi-domain",
+      "multi-domain-reasoning"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-022",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Advanced CLI Debug Mode",
+    "category": "CLI Debug",
+    "sub_fitur": "Advanced CLI Debug Mode",
+    "priority": 22,
+    "tipe_upgrade": "Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: CLI Debug | Subfitur: Advanced CLI Debug Mode | Prioritas: 22 | Tipe: Wajib.\nTujuan: Menampilkan intent, domain, source, confidence, latency, guardrail untuk developer.\nSetting: debug_metadata=full_safe; show_chain_of_thought=false\nKemampuan setelah upgrade: Developer bisa tahu kenapa AI menjawab seperti itu.\nCocok untuk: pengembangan dan debugging NusaMind\nBatasan: Jangan tampilkan reasoning privat/secret.\nMetrik: debug_helpfulness, issue_resolution_time\nGuardrail: Masking token/password wajib aktif.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "cli-debug",
+      "advanced-cli-debug-mode"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-023",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Artifact Awareness",
+    "category": "Artifact",
+    "sub_fitur": "Artifact Awareness",
+    "priority": 23,
+    "tipe_upgrade": "Sangat Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Artifact | Subfitur: Artifact Awareness | Prioritas: 23 | Tipe: Sangat Wajib.\nTujuan: AI tahu file CSV/dokumen/kode yang sudah dibuat sebelumnya.\nSetting: artifact_registry=true; revision_links=true; file_summary=true\nKemampuan setelah upgrade: AI bisa merevisi file lama atau membuat versi baru.\nCocok untuk: CSV, dataset, roadmap, dokumen, kode\nBatasan: Butuh registry artifact rapi.\nMetrik: artifact_reference_accuracy, revision_success\nGuardrail: Jangan menimpa file lama tanpa backup.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "artifact",
+      "artifact-awareness"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-024",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Advanced Revision Mode",
+    "category": "Revision",
+    "sub_fitur": "Advanced Revision Mode",
+    "priority": 24,
+    "tipe_upgrade": "Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Revision | Subfitur: Advanced Revision Mode | Prioritas: 24 | Tipe: Wajib.\nTujuan: Merevisi output sebelumnya tanpa kehilangan konteks.\nSetting: revision_mode=advanced; diff_summary=true; versioned_output=true\nKemampuan setelah upgrade: AI membuat versi baru dari CSV/roadmap/kode dengan changelog.\nCocok untuk: upgrade bertahap seperti roadmap NusaMind\nBatasan: Butuh last_output_reference yang akurat.\nMetrik: revision_target_accuracy, changelog_quality\nGuardrail: Jika target ambigu, sebutkan asumsi.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "revision",
+      "advanced-revision-mode"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-025",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Heavy Task Workspace",
+    "category": "Workspace",
+    "sub_fitur": "Heavy Task Workspace",
+    "priority": 25,
+    "tipe_upgrade": "Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Workspace | Subfitur: Heavy Task Workspace | Prioritas: 25 | Tipe: Wajib.\nTujuan: Mengelola project besar dengan banyak file, keputusan, task, dan memory.\nSetting: workspace_depth=deep; task_tracker=true; decision_log=true; project_memory=true\nKemampuan setelah upgrade: AI menjadi assistant project lengkap.\nCocok untuk: project AI/web/IoT kompleks\nBatasan: Butuh storage lokal yang stabil.\nMetrik: project_context_accuracy, task_completion_rate\nGuardrail: Jangan mencampur data antar project.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "workspace",
+      "heavy-task-workspace"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-026",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Strict Guardrail",
+    "category": "Guardrail",
+    "sub_fitur": "Strict Guardrail",
+    "priority": 26,
+    "tipe_upgrade": "Sangat Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Guardrail | Subfitur: Strict Guardrail | Prioritas: 26 | Tipe: Sangat Wajib.\nTujuan: Keamanan tinggi untuk agama, hukum, cyber, keuangan, command, file, dan memory.\nSetting: safety_level=strict; prompt_injection_filter=true; secret_scanner=true\nKemampuan setelah upgrade: AI lebih aman saat membaca file lokal dan membahas topik sensitif.\nCocok untuk: semua task berat dan data sensitif\nBatasan: Bisa lebih sering menolak jika permintaan berisiko.\nMetrik: unsafe_output_rate, secret_detection_recall\nGuardrail: Tidak boleh memberi instruksi cyber ofensif, menyimpan secret, atau mengarang dalil.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "guardrail",
+      "strict-guardrail"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-027",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Expert Answer Format",
+    "category": "Output Format",
+    "sub_fitur": "Expert Answer Format",
+    "priority": 27,
+    "tipe_upgrade": "Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Output Format | Subfitur: Expert Answer Format | Prioritas: 27 | Tipe: Wajib.\nTujuan: Jawaban punya ringkasan, analisis, langkah, risiko, rekomendasi, dan next step.\nSetting: format=expert; include_risks=true; include_tests=true; include_next_steps=true\nKemampuan setelah upgrade: AI memberi jawaban rapi untuk masalah berat.\nCocok untuk: analisis, debugging, riset, dokumen, arsitektur\nBatasan: Terlalu panjang untuk pertanyaan sederhana.\nMetrik: format_compliance, usefulness_score\nGuardrail: Jangan membuat jawaban panjang yang mengaburkan batasan safety.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "output-format",
+      "expert-answer-format"
+    ],
+    "confidence": 0.94
+  },
+  {
+    "id": "v13_20_max_max-13_20-028",
+    "version": "V13.20",
+    "edition": "max",
+    "title": "NusaMind Apex Heavy Mode Optimization",
+    "category": "Performance",
+    "sub_fitur": "Heavy Mode Optimization",
+    "priority": 28,
+    "tipe_upgrade": "Wajib",
+    "text": "NusaMind Apex berlaku mulai V13.20. Kategori: Performance | Subfitur: Heavy Mode Optimization | Prioritas: 28 | Tipe: Wajib.\nTujuan: Mengoptimalkan mode berat agar tetap stabil di lokal.\nSetting: cache_embeddings=true; batch_retrieval=true; streaming=true; memory_limit_guard=true\nKemampuan setelah upgrade: Max tetap bisa dipakai walau lebih berat.\nCocok untuk: laptop lokal dengan task berat\nBatasan: Mungkin butuh hardware lebih kuat.\nMetrik: p95_latency, ram_usage, crash_rate\nGuardrail: Jika resource tidak cukup, sarankan Lite/Flash.",
+    "source": "list_upgrade_nusamind_max_version_v13_20.csv",
+    "tags": [
+      "v13.20",
+      "max",
+      "performance",
+      "heavy-mode-optimization"
+    ],
+    "confidence": 0.94
+  }
+]

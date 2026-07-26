@@ -1,0 +1,16 @@
+{
+  "edition": "zenith",
+  "root": "/mnt/data/n1_work/build/zenith/nusamind-zenith-n1.0",
+  "upgradeItems": 124,
+  "benchmarks": 79,
+  "statusCounts": {
+    "ACTIVE": 47,
+    "BENCHMARKED": 56,
+    "PROTOTYPE": 21
+  },
+  "topCategoryCount": 1080,
+  "topCategoryBoost": 900,
+  "newTopCategories": 124,
+  "uiFilesLocked": 5,
+  "uiMismatch": 0
+}

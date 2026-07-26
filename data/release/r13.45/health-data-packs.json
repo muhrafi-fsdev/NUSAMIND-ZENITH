@@ -1,0 +1,42 @@
+[
+  {
+    "pack_id": "HP-DISEASE",
+    "pack_name": "Disease Knowledge Pack",
+    "required_record_types": "Disease; causes; risks; pathophysiology; symptoms; red flags; complications; tests; prevention; sources",
+    "minimum_release_condition": "Curated coverage and source/freshness benchmark",
+    "primary_safety_checks": "No diagnosis; red-flag linkage",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "pack_id": "HP-MED",
+    "pack_name": "Modern Medicine Pack",
+    "required_record_types": "Generic/brand; class; indications; effects; contraindications; interactions; populations; alerts",
+    "minimum_release_condition": "Safety fields and verified source coverage",
+    "primary_safety_checks": "No prescribing; no abrupt discontinuation",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "pack_id": "HP-HERB",
+    "pack_name": "Traditional Medicine Pack",
+    "required_record_types": "Species; part; preparation; traditional use; evidence; toxicity; standardization; regulator category",
+    "minimum_release_condition": "Identity and evidence review",
+    "primary_safety_checks": "Natural != safe; no cure overclaim",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "pack_id": "HP-INT",
+    "pack_name": "Interaction Pack",
+    "required_record_types": "Drug-drug; drug-herb; herb-herb; food; disease; procedure; severity; evidence",
+    "minimum_release_condition": "Curated recall benchmark",
+    "primary_safety_checks": "Unknown remains unknown; no stop-med advice",
+    "target_editions": "Zenith, Apex; Swift subset"
+  },
+  {
+    "pack_id": "HP-LAB",
+    "pack_name": "Medical Test Pack",
+    "required_record_types": "Test; specimen; unit; method; reference context; critical values; confounders",
+    "minimum_release_condition": "Unit and boundary benchmark",
+    "primary_safety_checks": "Abnormal != diagnosis",
+    "target_editions": "Swift, Zenith, Apex"
+  }
+]

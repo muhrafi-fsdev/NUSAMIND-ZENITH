@@ -1,0 +1,50 @@
+[
+  {
+    "component_id": "UI-C01",
+    "component": "Skills Registry Viewer",
+    "purpose": "Inspect skills and benchmarks",
+    "data_source": "Skills registry",
+    "main_ui_impact": "None",
+    "status": "PROTOTYPE"
+  },
+  {
+    "component_id": "UI-C02",
+    "component": "Engineering Timeline",
+    "purpose": "Inspect plan/patch/test/rollback states",
+    "data_source": "Engineering audit",
+    "main_ui_impact": "None",
+    "status": "PROTOTYPE"
+  },
+  {
+    "component_id": "UI-C03",
+    "component": "Approval Dialog",
+    "purpose": "Preview side effects",
+    "data_source": "Execution envelope",
+    "main_ui_impact": "Optional component only",
+    "status": "PROTOTYPE"
+  },
+  {
+    "component_id": "UI-C04",
+    "component": "Model Health Viewer",
+    "purpose": "Inspect routes, latency, RAM, circuit state",
+    "data_source": "Model telemetry",
+    "main_ui_impact": "None",
+    "status": "PROTOTYPE"
+  },
+  {
+    "component_id": "UI-C05",
+    "component": "Browser Evidence Viewer",
+    "purpose": "Inspect URLs, actions, screenshots and verification",
+    "data_source": "Browser evidence",
+    "main_ui_impact": "None",
+    "status": "PROTOTYPE"
+  },
+  {
+    "component_id": "UI-C06",
+    "component": "Benchmark Report",
+    "purpose": "Inspect critical suite results",
+    "data_source": "Evaluation reports",
+    "main_ui_impact": "None",
+    "status": "PROTOTYPE"
+  }
+]

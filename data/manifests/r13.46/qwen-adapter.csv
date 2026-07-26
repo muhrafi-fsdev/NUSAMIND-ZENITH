@@ -1,0 +1,9 @@
+﻿adapter_id,model_family,profile_field,required_value_or_test,runtime_use,release_condition,reference_source
+MA-QWEN-01,Qwen,chat_template,Verified against active tokenizer/template,Prompt compilation,Template test passes,https://qwen.readthedocs.io/
+MA-QWEN-02,Qwen,tool_call_format,Function-call schema/parser tested,Agent tools,Tool-call benchmark passes,https://qwen.readthedocs.io/
+MA-QWEN-03,Qwen,structured_output,JSON/schema reliability measured,Extraction and tools,Invalid JSON under threshold,https://qwen.readthedocs.io/
+MA-QWEN-04,Qwen,context_profile,Needle benchmark by length/position,Context budget,Safe context profile available,https://qwen.readthedocs.io/; https://www.promptingguide.ai/research/llm-recall
+MA-QWEN-05,Qwen,thinking_support,Version-specific behavior tested,Strategy routing,No unsupported assumption,https://www.promptingguide.ai/models
+MA-QWEN-06,Qwen,generation_settings,Task-specific temperature/top_p benchmark,Generation,Profile stored per task,https://www.promptingguide.ai/models
+MA-QWEN-07,Qwen,resource_profile,RAM/VRAM/latency/quantization tests,Edition selection,Within resource budget,https://qwen.readthedocs.io/
+MA-QWEN-08,Qwen,known_failures,Regression list by prompt/tool/context,Fallback routing,Every failure has regression test,https://www.promptingguide.ai/models

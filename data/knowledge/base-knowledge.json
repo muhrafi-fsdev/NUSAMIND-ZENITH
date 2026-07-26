@@ -1,0 +1,243 @@
+[
+  {
+    "id": "v12_current_knowledge_001",
+    "type": "universal",
+    "title": "Apa bahasa pemrograman paling populer pada tahun 2026?",
+    "category": "Programming Languages",
+    "text": "Menurut artikel Nextage tentang \"Top 20 Programming Languages 2026\", Python masih menjadi bahasa pemrograman paling populer. Indeks TIOBE menunjukkan bahwa pada Februari 2026 Python menguasai 21,81 % share, dan Survei Stack Overflow 2025 mencatat lonjakan tujuh poin persentase dari 2024 ke 2025. Popularitasnya didorong oleh dominasi Python dalam pengembangan kecerdasan buatan dan machine learning serta ketersediaan pustaka seperti TensorFlow, PyTorch, dan scikit‑learn. Meski share‑nya turun dari puncak 26,98 % pada Juli 2025, Python tetap memimpin berkat ekosistem AI/ML yang kuat【589439180716956†L104-L123】.",
+    "tags": [
+      "python",
+      "popularity",
+      "2026",
+      "ai",
+      "machine learning",
+      "tiobe index",
+      "stack overflow survey",
+      "v12",
+      "current-knowledge",
+      "sourced"
+    ],
+    "source": "Nextage Blog 2026【589439180716956†L104-L123】",
+    "confidence": 0.9
+  },
+  {
+    "id": "v12_current_knowledge_002",
+    "type": "universal",
+    "title": "Mengapa TypeScript menjadi bahasa paling banyak digunakan di GitHub pada 2025–2026?",
+    "category": "Programming Languages",
+    "text": "Artikel Nextage mencatat bahwa TypeScript merupakan \"cerita besar\" tahun 2026. Pada Agustus 2025, TypeScript melampaui Python sebagai bahasa yang paling digunakan di GitHub berdasarkan jumlah kontributor. Hal ini disebabkan oleh dua faktor: meta-framework modern seperti Next.js dan Angular yang menggunakan TypeScript secara default, serta meningkatnya penggunaan AI generatif yang membuat keandalan tipe statis semakin penting; sebuah studi pada 2025 menunjukkan 94 % error kompilasi yang dihasilkan oleh model bahasa disebabkan oleh kesalahan tipe. Selain itu, jumlah kontributor TypeScript meningkat 66 % dalam setahun, menunjukkan adopsi yang sangat cepat【589439180716956†L132-L141】.",
+    "tags": [
+      "typescript",
+      "github contributors",
+      "next.js",
+      "angular",
+      "generative ai",
+      "type-checking",
+      "2025",
+      "2026",
+      "v12",
+      "current-knowledge",
+      "sourced"
+    ],
+    "source": "Nextage Blog 2026【589439180716956†L132-L141】",
+    "confidence": 0.88
+  },
+  {
+    "id": "v12_current_knowledge_003",
+    "type": "universal",
+    "title": "Apa tren utama dalam pengembangan web pada tahun 2026?",
+    "category": "Web Development Trends 2026",
+    "text": "Tulisan LogRocket merinci delapan tren yang akan membentuk pengembangan web pada 2026. Tren penting meliputi: (1) \"AI‑first development\" – AI tidak hanya memberikan saran kode tetapi juga membangun fitur dari prompt bahasa alami, membantu menjelajahi kode dan mempercepat onboarding【920437647896495†L104-L124】; (2) \"Meta‑frameworks become the new default\" – framework seperti Next.js dan Nuxt menjadi titik awal utama karena menangani routing, fetching data, caching, rendering, dan API dalam satu paket sehingga aplikasi lebih cepat dan biaya infrastruktur lebih rendah【920437647896495†L126-L144】; dan (3) \"TanStack‑ification\" – suite TanStack (Query, Router, Table, Form) menjadi standar untuk lapisan logika dan meluas dengan utilitas baru seperti TanStack DB, TanStack Form, TanStack Store, TanStack AI, dan TanStack Start【920437647896495†L145-L168】.",
+    "tags": [
+      "ai-first development",
+      "meta-frameworks",
+      "next.js",
+      "nuxt",
+      "tanstack",
+      "2026 trends",
+      "web development",
+      "v12",
+      "current-knowledge",
+      "sourced"
+    ],
+    "source": "LogRocket Blog 2025【920437647896495†L104-L144】【920437647896495†L145-L168】",
+    "confidence": 0.87
+  },
+  {
+    "id": "v12_current_knowledge_004",
+    "type": "universal",
+    "title": "Apa yang dimaksud dengan tren AI‑first development?",
+    "category": "AI‑first Development",
+    "text": "Di dalam tren AI‑first development, alat AI telah berevolusi dari sekadar utilitas pelengkap menjadi komponen inti siklus pengembangan. Menurut LogRocket, workflow kini menempatkan pengembang sebagai arsitek yang mengawasi AI untuk membuat fitur dari URL Figma atau prompt bahasa alami, menjelaskan logika kode yang tidak familiar, dan mempersingkat onboarding. Aplikasi juga dirancang dengan asumsi AI sebagai bagian dari input dan output normal【920437647896495†L104-L124】.",
+    "tags": [
+      "ai-first development",
+      "generative ai",
+      "agentic workflows",
+      "code exploration",
+      "onboarding",
+      "2026",
+      "v12",
+      "current-knowledge",
+      "sourced"
+    ],
+    "source": "LogRocket Blog 2025【920437647896495†L104-L124】",
+    "confidence": 0.86
+  },
+  {
+    "id": "v12_current_knowledge_005",
+    "type": "universal",
+    "title": "Mengapa meta‑framework seperti Next.js dan Nuxt diprediksi menjadi default pada 2026?",
+    "category": "Web Development Trends 2026",
+    "text": "LogRocket menyebut bahwa era memilih router atau konfigurasi bundler hampir berakhir karena meta‑framework seperti Next.js dan Nuxt menjadi solusi terpadu. Framework ini menangani routing, pengambilan data, caching, strategi render, dan API dalam satu paket. Generative UI builders, misalnya Vercel’s v0, menghasilkan aplikasi Next.js secara default. Tim yang bermigrasi ke Next.js atau Astro melaporkan waktu muat lebih cepat, biaya infrastruktur lebih rendah, dan overhead setup yang jauh berkurang【920437647896495†L126-L144】.",
+    "tags": [
+      "meta-frameworks",
+      "next.js",
+      "nuxt",
+      "2026 default",
+      "server actions",
+      "generative ui",
+      "performance",
+      "v12",
+      "current-knowledge",
+      "sourced"
+    ],
+    "source": "LogRocket Blog 2025【920437647896495†L126-L144】",
+    "confidence": 0.86
+  },
+  {
+    "id": "v12_current_knowledge_006",
+    "type": "universal",
+    "title": "Apa itu TanStack dan bagaimana pengaruhnya terhadap pengembangan frontend pada 2026?",
+    "category": "Web Development Trends 2026",
+    "text": "TanStack adalah kumpulan pustaka seperti TanStack Query, Router, Table, Form yang menyelesaikan masalah fetching data, caching, sinkronisasi state, dan formulir secara framework‑agnostic. LogRocket melaporkan bahwa pada 2026, TanStack telah berkembang menjadi ekosistem logika yang lengkap dengan utilitas baru (TanStack DB, TanStack Form, TanStack Store, TanStack AI, TanStack Start) sehingga pengembang memanfaatkan satu suite untuk beragam kebutuhan aplikasi【920437647896495†L145-L168】.",
+    "tags": [
+      "tanstack",
+      "query",
+      "router",
+      "table",
+      "form",
+      "ai",
+      "store",
+      "db",
+      "2026",
+      "v12",
+      "current-knowledge",
+      "sourced"
+    ],
+    "source": "LogRocket Blog 2025【920437647896495†L145-L168】",
+    "confidence": 0.85
+  },
+  {
+    "id": "v12_current_knowledge_007",
+    "type": "universal",
+    "title": "Apa lima tren AI terpenting tahun 2026 menurut Info‑Tech Research Group?",
+    "category": "AI Trends 2026",
+    "text": "Laporan AI Trends 2026 dari Info‑Tech Research Group menyoroti lima tren utama: (1) \"Foundational AI principles\" – organisasi akan merumuskan prinsip AI untuk mengelola risiko dan menyelaraskan strategi【459217496183945†L121-L125】; (2) \"From copilots to vibe coding\" – kategori baru alat AI akan muncul dan memaksa organisasi memilih antara platform AI terpadu atau alat khusus【459217496183945†L126-L130】; (3) \"Agentic AI comes of age\" – adopsi agentic AI akan tumbuh cepat, mendorong perubahan eksponensial dalam organisasi【459217496183945†L131-L135】; (4) \"Risk management is the price of admission\" – organisasi akan menerapkan program manajemen risiko AI untuk meredam potensi risiko【459217496183945†L137-L143】; dan (5) \"AI will hang in the balance between freedom and control\" – isu kedaulatan dan regulasi AI akan menjadi sorotan di berbagai yurisdiksi【459217496183945†L142-L145】.",
+    "tags": [
+      "ai trends 2026",
+      "foundational principles",
+      "copilots to vibe coding",
+      "agentic ai",
+      "risk management",
+      "ai sovereignty",
+      "v12",
+      "current-knowledge",
+      "sourced"
+    ],
+    "source": "Info‑Tech Research Group 2026【459217496183945†L121-L145】",
+    "confidence": 0.88
+  },
+  {
+    "id": "v12_current_knowledge_008",
+    "type": "universal",
+    "title": "Apa tren utama dalam agen kecerdasan (agentic AI) pada 2026?",
+    "category": "Agentic AI Trends 2026",
+    "text": "Artikel Firecrawl merinci tren agentic AI yang berkembang. Beberapa tren utama meliputi: CLI agents yang mengambil alih pengembangan dan memungkinkan developer mendelegasikan pekerjaan ke agen otonom【856538598495478†L107-L121】; multi‑agent systems yang memungkinkan tim agen bekerja sama dan mempercepat proses hingga 50 %【856538598495478†L80-L83】; agentic commerce yang memprediksi 20 % transaksi e‑commerce akan ditangani agen【856538598495478†L82-L84】; peningkatan fokus pada AI governance dan regulasi【856538598495478†L84-L85】; personal AI assistants yang menjadi mainstream【856538598495478†L86-L87】; context engineering yang menekankan penggunaan jendela konteks luas hingga 1 juta token untuk meminimalkan halusinasi【856538598495478†L88-L99】; vertical AI agents yang dirancang untuk industri khusus seperti kesehatan atau keuangan【856538598495478†L90-L91】; small language models (SLMs) yang efisien seperti Phi‑4 yang menyamai model besar dengan biaya lebih rendah【856538598495478†L92-L93】; recursive language models yang mampu reasoning dan memperbaiki diri sendiri【856538598495478†L94-L95】; akses data web langsung dan browser agents yang memungkinkan agen bekerja dengan data real‑time untuk mengurangi halusinasi【856538598495478†L97-L100】; serta verifiability, yaitu AI yang beroperasi di domain dengan output terverifikasi【856538598495478†L101-L104】.",
+    "tags": [
+      "agentic ai",
+      "cli agents",
+      "multi-agent systems",
+      "agentic commerce",
+      "ai governance",
+      "personal ai assistants",
+      "context engineering",
+      "vertical agents",
+      "slms",
+      "recursive language models",
+      "browser agents",
+      "verifiability",
+      "v12",
+      "current-knowledge",
+      "sourced"
+    ],
+    "source": "Firecrawl Blog 2026【856538598495478†L80-L104】【856538598495478†L107-L121】",
+    "confidence": 0.86
+  },
+  {
+    "id": "v12_current_knowledge_009",
+    "type": "universal",
+    "title": "Apa keunggulan utama Vercel AI SDK dibanding framework AI lainnya?",
+    "category": "Generative AI Frameworks 2026",
+    "text": "Dalam perbandingan framework generative AI 2026, Vercel AI SDK menonjol karena integrasinya yang mulus dengan React dan lapisan UI web. SDK ini menyediakan hook seperti `useChat` dan `useCompletion` yang langsung terhubung dengan alur streaming AI, mengelola state, indikator loading, dan error boundary. Vercel AI SDK mendukung berbagai framework front‑end, termasuk React/Next.js, Nuxt, SvelteKit, SolidStart, dan Expo, serta menawarkan primitif sederhana seperti `generateText` dan `streamText` untuk menghasilkan teks dan agen terstruktur【670448748959933†L322-L406】. Keunggulan lainnya adalah integrasi generative UI dengan streaming React Server Components serta dukungan provider yang luas, meskipun SDK beroperasi pada level abstraksi rendah sehingga developer perlu membangun pipeline dan observability sendiri【670448748959933†L322-L406】.",
+    "tags": [
+      "vercel ai sdk",
+      "react integration",
+      "usechat",
+      "usecompletion",
+      "streamtext",
+      "structured generation",
+      "2026 frameworks",
+      "v12",
+      "current-knowledge",
+      "sourced"
+    ],
+    "source": "Genkit/Generative AI Frameworks Comparison【670448748959933†L322-L406】",
+    "confidence": 0.85
+  },
+  {
+    "id": "v12_current_knowledge_010",
+    "type": "universal",
+    "title": "Apa itu Genkit dan apa keunggulannya dalam pengembangan AI generatif?",
+    "category": "Generative AI Frameworks 2026",
+    "text": "Genkit adalah framework open‑source yang diumumkan oleh Google pada Google I/O 2024 untuk membawa tooling AI siap produksi ke pengembang full‑stack. Framework ini bersifat cloud‑agnostic dan menyediakan ekosistem plugin untuk berbagai model dan vector store. Genkit menonjol karena menawarkan beberapa level abstraksi: pengembang dapat melakukan generasi teks vanilla, membangun pipeline terketik (flows), atau membuat agen otonom dalam aplikasi yang sama. Genkit memiliki dukungan lintas bahasa (TypeScript/JavaScript stabil; Python, Go, dan Dart dalam preview) dan menyediakan perangkat dev UI untuk observabilitas alur AI【670448748959933†L86-L128】.",
+    "tags": [
+      "genkit",
+      "google i/o 2024",
+      "open source",
+      "cloud agnostic",
+      "flows",
+      "agent abstractions",
+      "multi-language",
+      "dart",
+      "flutter",
+      "observability",
+      "v12",
+      "current-knowledge",
+      "sourced"
+    ],
+    "source": "Genkit/Generative AI Frameworks Comparison【670448748959933†L86-L128】",
+    "confidence": 0.84
+  },
+  {
+    "id": "v12_current_knowledge_011",
+    "type": "universal",
+    "title": "Apa yang membedakan Mastra dari framework AI generatif lainnya?",
+    "category": "Generative AI Frameworks 2026",
+    "text": "Mastra adalah framework AI generatif yang lahir pada 2024 dan fokus pada ekosistem TypeScript. Framework ini dirancang untuk membuat agen otonom dengan cepat; semua fitur berpusat pada agen, memori, dan workflow. Mastra tidak menyediakan primitif generasi teks vanilla atau pipeline seperti Genkit; sebaliknya, pengembang menyusun agen lengkap dengan memori dan alat dalam beberapa baris kode. Mastra terintegrasi erat dengan meta‑framework modern seperti Next.js, Astro, SvelteKit, dan Hono, serta menyertakan Studio UI berbasis web untuk mendefinisikan, menguji, dan menjalankan agen secara visual【670448748959933†L423-L447】.",
+    "tags": [
+      "mastra",
+      "agent-only framework",
+      "typescript",
+      "nex.js integration",
+      "astro",
+      "sveltekit",
+      "studio ui",
+      "rapid agent development",
+      "v12",
+      "current-knowledge",
+      "sourced"
+    ],
+    "source": "Genkit/Generative AI Frameworks Comparison【670448748959933†L423-L447】",
+    "confidence": 0.84
+  }
+]

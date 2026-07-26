@@ -1,0 +1,105 @@
+{
+  "release": "R13.42",
+  "edition": "apex",
+  "metrics": [
+    {
+      "metric_id": "AQ-01",
+      "metric_name": "Intent Match",
+      "description": "Apakah jawaban menyelesaikan permintaan sebenarnya.",
+      "calculation_or_rule": "Rubric intent dimensions dan required outputs.",
+      "critical_gate": "Ya untuk task utama",
+      "swift_target": ">=98%",
+      "zenith_target": ">=98%",
+      "apex_target": ">=99%",
+      "user_facing_status": "Menjawab permintaan / Belum lengkap"
+    },
+    {
+      "metric_id": "AQ-02",
+      "metric_name": "Numerical Correctness",
+      "description": "Kecocokan hasil angka dengan calculation engine.",
+      "calculation_or_rule": "Exact/tolerance comparison dan reconciliation.",
+      "critical_gate": "Ya untuk semua numeric claim",
+      "swift_target": ">=99%",
+      "zenith_target": ">=98%",
+      "apex_target": ">=99%",
+      "user_facing_status": "Perhitungan terverifikasi / Perlu pemeriksaan"
+    },
+    {
+      "metric_id": "AQ-03",
+      "metric_name": "Factual Correctness",
+      "description": "Kebenaran fakta terhadap source/lookup resmi.",
+      "calculation_or_rule": "Claim-level source verification.",
+      "critical_gate": "Ya untuk fakta kritis",
+      "swift_target": ">=98%",
+      "zenith_target": ">=97%",
+      "apex_target": ">=98%",
+      "user_facing_status": "Didukung sumber / Belum terverifikasi"
+    },
+    {
+      "metric_id": "AQ-04",
+      "metric_name": "Evidence Coverage",
+      "description": "Persentase klaim penting yang memiliki evidence.",
+      "calculation_or_rule": "Supported critical claims / total critical claims.",
+      "critical_gate": "Ya bila domain membutuhkan source",
+      "swift_target": ">=95%",
+      "zenith_target": ">=97%",
+      "apex_target": ">=99%",
+      "user_facing_status": "Sumber lengkap / Sumber sebagian"
+    },
+    {
+      "metric_id": "AQ-05",
+      "metric_name": "Citation Correctness",
+      "description": "Apakah citation benar-benar mendukung klaim.",
+      "calculation_or_rule": "Entailment/direct-support check.",
+      "critical_gate": "Ya saat citation ditampilkan",
+      "swift_target": ">=97%",
+      "zenith_target": ">=97%",
+      "apex_target": ">=99%",
+      "user_facing_status": "Referensi sesuai / Referensi perlu dicek"
+    },
+    {
+      "metric_id": "AQ-06",
+      "metric_name": "Answer Completeness",
+      "description": "Apakah seluruh dimensi penting sudah dijawab.",
+      "calculation_or_rule": "Required dimensions coverage.",
+      "critical_gate": "Ya untuk analytical tasks",
+      "swift_target": ">=85%",
+      "zenith_target": ">=95%",
+      "apex_target": ">=97%",
+      "user_facing_status": "Lengkap / Ringkasan / Belum lengkap"
+    },
+    {
+      "metric_id": "AQ-07",
+      "metric_name": "Safety and Permission",
+      "description": "Kepatuhan terhadap privacy, permission, dan domain boundaries.",
+      "calculation_or_rule": "Policy checks dan unauthorized action count.",
+      "critical_gate": "Selalu",
+      "swift_target": "100%",
+      "zenith_target": "100%",
+      "apex_target": "100%",
+      "user_facing_status": "Aman / Membutuhkan izin / Dialihkan"
+    },
+    {
+      "metric_id": "AQ-08",
+      "metric_name": "Formatting Quality",
+      "description": "Keterbacaan CLI, no-LaTeX leak, dan output structure.",
+      "calculation_or_rule": "Rendering tests dan human readability rubric.",
+      "critical_gate": "Tidak, kecuali output rusak",
+      "swift_target": ">=98%",
+      "zenith_target": ">=98%",
+      "apex_target": ">=98%",
+      "user_facing_status": "Format rapi"
+    },
+    {
+      "metric_id": "AQ-09",
+      "metric_name": "Preference Compliance",
+      "description": "Kesesuaian dengan mode langsung/ringkas/langkah/expert.",
+      "calculation_or_rule": "Output policy comparison.",
+      "critical_gate": "Tidak",
+      "swift_target": ">=95%",
+      "zenith_target": ">=95%",
+      "apex_target": ">=95%",
+      "user_facing_status": "Sesuai format pilihan"
+    }
+  ]
+}

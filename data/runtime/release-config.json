@@ -1,0 +1,13 @@
+{
+  "release": "1.0.0",
+  "label": "N1.0",
+  "edition": "zenith",
+  "legacy": "lite",
+  "name": "NusaMind Zenith",
+  "cli": "Zenith Core CLI",
+  "noUiTouch": true,
+  "windowsExe": false,
+  "n8nIntegration": false,
+  "machineLearning": "python-fastapi",
+  "source": "data/release/n1/manifest.json"
+}

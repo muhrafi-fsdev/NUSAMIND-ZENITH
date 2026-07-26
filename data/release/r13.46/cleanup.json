@@ -1,0 +1,28 @@
+{
+  "renamedJson": {
+    "data/schemas/knowledge-record-schema.json": "data/schemas/knowledge-record.json",
+    "data/knowledge/supplemental-knowledge.json": "data/knowledge/supplemental.json",
+    "data/knowledge/law-developer-extended.json": "data/knowledge/law-dev-extra.json",
+    "data/evaluations/calculation-evaluation.json": "data/evaluations/calc-eval.json",
+    "data/evaluations/reliability-benchmark.json": "data/evaluations/reliability-bench.json",
+    "data/runtime/reliability-benchmark.json": "data/runtime/reliability-bench.json",
+    "data/runtime/customer-service-eval.json": "data/runtime/cs-eval.json",
+    "data/manifests/implementation-phases.json": "data/manifests/phases.json",
+    "data/release/r13.45/implementation-phases.json": "data/release/r13.45/phases.json",
+    "data/release/r13.45/executable-benchmarks.json": "data/release/r13.45/benchmarks.json",
+    "data/release/r13.45/capability-readiness.json": "data/release/r13.45/capabilities.json",
+    "data/health/interaction-registry.json": "data/health/interactions.json"
+  },
+  "removedObsolete": [
+    "scripts/check-13.45.mjs",
+    "scripts/release-13.45.mjs",
+    "scripts/gate-grand-13.45.mjs",
+    "scripts/gate-ml-13.45.mjs",
+    "scripts/gate-health-13.45.mjs",
+    "scripts/gate-neural-13.45.mjs",
+    "scripts/eval-neural-v13.45.py",
+    "scripts/migrate-universal-v1345.py"
+  ],
+  "uiUnchanged": true,
+  "uiFileCount": 6
+}

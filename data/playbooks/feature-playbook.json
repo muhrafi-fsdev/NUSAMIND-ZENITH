@@ -1,0 +1,338 @@
+[
+  {
+    "id": "APEX-1327-001",
+    "feature": "Max to Apex Migration",
+    "domain": "Version Identity",
+    "goal": "Mengganti Max menjadi Apex sambil menjaga semua fitur expert.",
+    "implementation": "Migration manifest, alias layer, schema versioning, rollback plan.",
+    "guardrail": "Backup penuh metadata sebelum migrasi."
+  },
+  {
+    "id": "APEX-1327-002",
+    "feature": "Apex Nexus Medium Expert UI",
+    "domain": "CLI UI",
+    "goal": "Membuat UI Apex berukuran medium tetapi tetap expert dan cepat.",
+    "implementation": "Layout medium expert, collapsible panels, no heavy dashboard, streaming output.",
+    "guardrail": "Jangan tampilkan path, secret, atau data pribadi."
+  },
+  {
+    "id": "APEX-1327-003",
+    "feature": "Apex Direct-First Deep Thinking",
+    "domain": "Thinking Engine",
+    "goal": "Menggabungkan deep thinking dengan respons cepat.",
+    "implementation": "Complexity router, lazy deep analysis, streaming, full-analysis cache.",
+    "guardrail": "Jangan menampilkan private chain-of-thought."
+  },
+  {
+    "id": "APEX-1327-004",
+    "feature": "Hypothesis and Evidence Planner",
+    "domain": "Thinking Engine",
+    "goal": "Menguji beberapa hipotesis sebelum menyimpulkan.",
+    "implementation": "Hypothesis graph, evidence scorer, counterexample checker.",
+    "guardrail": "Kesimpulan harus membedakan fakta, inferensi, dan asumsi."
+  },
+  {
+    "id": "APEX-1327-005",
+    "feature": "Apex Expert Answer Controller",
+    "domain": "Response Engine",
+    "goal": "Mencegah Apex kembali menjawab terlalu panjang.",
+    "implementation": "Scope guard, section filter, token budget, stop-condition detector.",
+    "guardrail": "Safety dan risiko utama tidak boleh disembunyikan."
+  },
+  {
+    "id": "APEX-1327-006",
+    "feature": "Global Cross-Asset Intelligence",
+    "domain": "Financial",
+    "goal": "Memahami dinamika pasar finansial global secara mendalam.",
+    "implementation": "Cross-asset knowledge graph, regime-aware correlations, timestamped sources.",
+    "guardrail": "Wajib tampilkan tanggal data, sumber, dan ketidakpastian."
+  },
+  {
+    "id": "APEX-1327-007",
+    "feature": "Probabilistic Market Forecasting",
+    "domain": "Financial",
+    "goal": "Membuat prediksi pasar berbasis probabilitas dan multi-model.",
+    "implementation": "Multi-horizon ensemble, calibration, prediction intervals, regime router.",
+    "guardrail": "Tidak boleh menjadi jaminan atau instruksi trading."
+  },
+  {
+    "id": "APEX-1327-008",
+    "feature": "Financial Model Governance",
+    "domain": "Financial",
+    "goal": "Menjaga prediksi dapat diaudit dan diuji.",
+    "implementation": "Model registry, data lineage, walk-forward evaluation, drift monitoring.",
+    "guardrail": "Model yang gagal evaluasi tidak boleh diberi confidence tinggi."
+  },
+  {
+    "id": "APEX-1327-009",
+    "feature": "Advanced Islamic Source Reasoning",
+    "domain": "Religion",
+    "goal": "Memahami pengetahuan agama dengan struktur sumber dan konteks.",
+    "implementation": "Trusted source graph, citation matcher, school/viewpoint metadata.",
+    "guardrail": "Jangan membuat dalil, nomor, atau derajat hadis."
+  },
+  {
+    "id": "APEX-1327-010",
+    "feature": "Hadith Verification Workflow",
+    "domain": "Religion",
+    "goal": "Memeriksa hadis secara lebih sistematis.",
+    "implementation": "Text normalization, reference search, source comparison, uncertainty labels.",
+    "guardrail": "Jangan memastikan kesahihan tanpa sumber."
+  },
+  {
+    "id": "APEX-1327-011",
+    "feature": "Fiqh Scenario Reasoning",
+    "domain": "Religion",
+    "goal": "Menganalisis kasus fikih dengan fakta, syarat, pengecualian, dan perbedaan pendapat.",
+    "implementation": "Case fact extractor, condition/rule mapping, uncertainty and referral.",
+    "guardrail": "Privasi dan kehati-hatian wajib."
+  },
+  {
+    "id": "APEX-1327-012",
+    "feature": "Advanced Career Profile Intelligence",
+    "domain": "Job Recommendation",
+    "goal": "Membuat rekomendasi kerja berbasis profil user secara mendalam.",
+    "implementation": "Skill graph, role ontology, constraint optimizer, evidence-based ranking.",
+    "guardrail": "Jangan memakai atribut sensitif atau membuat diskriminasi."
+  },
+  {
+    "id": "APEX-1327-013",
+    "feature": "Career Scenario and Transition Planner",
+    "domain": "Job Recommendation",
+    "goal": "Membandingkan beberapa jalur karier.",
+    "implementation": "Scenario planner, decision matrix, market evidence.",
+    "guardrail": "Sebutkan ketidakpastian pasar."
+  },
+  {
+    "id": "APEX-1327-014",
+    "feature": "Resume and Portfolio Evidence Mapping",
+    "domain": "Job Recommendation",
+    "goal": "Menghubungkan rekomendasi pekerjaan dengan bukti kemampuan user.",
+    "implementation": "Artifact parser, competency evidence graph, role rubric.",
+    "guardrail": "Jangan mengarang pengalaman user."
+  },
+  {
+    "id": "APEX-1327-015",
+    "feature": "Fullstack Codebase Understanding",
+    "domain": "Fullstack Programming",
+    "goal": "Memahami codebase multi-file dan dependency end-to-end.",
+    "implementation": "AST/static analysis, file graph, framework detection, code index.",
+    "guardrail": "Secret scan sebelum indexing."
+  },
+  {
+    "id": "APEX-1327-016",
+    "feature": "Frontend Expert Reasoning",
+    "domain": "Fullstack Programming",
+    "goal": "Meningkatkan pemahaman UI, state, performance, accessibility, dan browser.",
+    "implementation": "Browser profiling, component graph, performance rules.",
+    "guardrail": "Jangan mengorbankan accessibility/security."
+  },
+  {
+    "id": "APEX-1327-017",
+    "feature": "Backend Expert Reasoning",
+    "domain": "Fullstack Programming",
+    "goal": "Memahami backend, concurrency, caching, queues, API, auth, dan observability.",
+    "implementation": "Trace analysis, query profiling, architecture rules.",
+    "guardrail": "Auth, privacy, dan data integrity wajib."
+  },
+  {
+    "id": "APEX-1327-018",
+    "feature": "Database and API Contract Expert",
+    "domain": "Fullstack Programming",
+    "goal": "Memastikan database dan API konsisten dan aman.",
+    "implementation": "Schema graph, API contract validator, migration analyzer.",
+    "guardrail": "Jangan menjalankan migration destruktif tanpa konfirmasi."
+  },
+  {
+    "id": "APEX-1327-019",
+    "feature": "Secure Fullstack Review",
+    "domain": "Fullstack Programming",
+    "goal": "Menemukan kelemahan keamanan umum.",
+    "implementation": "Security rules, taint-oriented checks, config review.",
+    "guardrail": "Tidak memberi panduan eksploitasi merusak."
+  },
+  {
+    "id": "APEX-1327-020",
+    "feature": "Multi-layer Root Cause Analysis",
+    "domain": "Debugging",
+    "goal": "Menganalisis bug lintas UI, API, DB, OS, dan deployment.",
+    "implementation": "Evidence graph, environment diff, reproducibility plan.",
+    "guardrail": "Backup dan read-only scan lebih dulu."
+  },
+  {
+    "id": "APEX-1327-021",
+    "feature": "Automated Reproduction and Isolation",
+    "domain": "Debugging",
+    "goal": "Membuat langkah reproduksi dan mempersempit komponen penyebab.",
+    "implementation": "Reproduction template, binary isolation, controlled experiments.",
+    "guardrail": "Jangan menjalankan test destruktif pada data produksi."
+  },
+  {
+    "id": "APEX-1327-022",
+    "feature": "Patch, Test, and Regression",
+    "domain": "Debugging",
+    "goal": "Menghasilkan perbaikan yang diverifikasi.",
+    "implementation": "Patch generator, test selector, rollback and audit.",
+    "guardrail": "Perubahan penting wajib backup."
+  },
+  {
+    "id": "APEX-1327-023",
+    "feature": "Observability and Incident Reasoning",
+    "domain": "Debugging",
+    "goal": "Memahami log, metric, trace, dan timeline insiden.",
+    "implementation": "Time-series correlation, trace graph, event timeline.",
+    "guardrail": "Jangan menganggap korelasi sebagai sebab tanpa bukti."
+  },
+  {
+    "id": "APEX-1327-024",
+    "feature": "Advanced Fiber and Access Network Reasoning",
+    "domain": "Telecommunication",
+    "goal": "Mendalami FTTH/GPON dan jaringan akses.",
+    "implementation": "Formula engine, topology graph, standards-aware validator.",
+    "guardrail": "Sumber teknis dan asumsi harus dicatat."
+  },
+  {
+    "id": "APEX-1327-025",
+    "feature": "RF and Wireless Expert Reasoning",
+    "domain": "Telecommunication",
+    "goal": "Memahami RF, propagation, modulation, link budget, interference, dan capacity.",
+    "implementation": "RF calculation module and propagation scenarios.",
+    "guardrail": "Tidak membantu jamming atau gangguan jaringan."
+  },
+  {
+    "id": "APEX-1327-026",
+    "feature": "Network Protocol and QoS Reasoning",
+    "domain": "Telecommunication",
+    "goal": "Memahami routing, switching, QoS, latency, loss, jitter, dan troubleshooting.",
+    "implementation": "Layered network graph and QoS rules.",
+    "guardrail": "Privasi trafik harus dijaga."
+  },
+  {
+    "id": "APEX-1327-027",
+    "feature": "Telecom Standards and Source Validation",
+    "domain": "Telecommunication",
+    "goal": "Memastikan istilah dan parameter selaras dengan sumber teknis.",
+    "implementation": "Standards metadata and source versioning.",
+    "guardrail": "Jangan mengarang standar atau nilai vendor."
+  },
+  {
+    "id": "APEX-1327-028",
+    "feature": "Advanced Algorithms and Complexity",
+    "domain": "Informatics",
+    "goal": "Menganalisis algoritma, kompleksitas, correctness, dan trade-off.",
+    "implementation": "Complexity analyzer, invariant checker, benchmark plan.",
+    "guardrail": "Jelaskan asumsi model komputasi."
+  },
+  {
+    "id": "APEX-1327-029",
+    "feature": "Systems and Distributed Computing Reasoning",
+    "domain": "Informatics",
+    "goal": "Memahami OS, concurrency, distributed systems, consistency, dan failure.",
+    "implementation": "System model, failure scenario graph, consistency patterns.",
+    "guardrail": "Jangan melakukan perubahan produksi tanpa rollout plan."
+  },
+  {
+    "id": "APEX-1327-030",
+    "feature": "Information and Data Architecture",
+    "domain": "Informatics",
+    "goal": "Memahami data model, pipeline, governance, dan kualitas data.",
+    "implementation": "Data lineage graph, medallion templates, quality rules.",
+    "guardrail": "PII dan akses data wajib dijaga."
+  },
+  {
+    "id": "APEX-1327-031",
+    "feature": "Constraint and Causal Reasoning",
+    "domain": "Complex Logic",
+    "goal": "Menangani masalah dengan banyak batasan dan hubungan sebab-akibat.",
+    "implementation": "Causal graph, constraint solver, counterfactual questions.",
+    "guardrail": "Jangan menyebut sebab pasti dari korelasi saja."
+  },
+  {
+    "id": "APEX-1327-032",
+    "feature": "Adversarial and Counterexample Checking",
+    "domain": "Complex Logic",
+    "goal": "Menguji jawaban terhadap pengecualian dan kasus gagal.",
+    "implementation": "Counterexample generator, edge-case library, proof checks.",
+    "guardrail": "Sampaikan keterbatasan bukti."
+  },
+  {
+    "id": "APEX-1327-033",
+    "feature": "Multi-criteria Decision Optimization",
+    "domain": "Complex Logic",
+    "goal": "Membuat keputusan kompleks berdasarkan kriteria dan risiko.",
+    "implementation": "MCDA, sensitivity analysis, scenario simulation.",
+    "guardrail": "Jangan menyembunyikan nilai atau asumsi."
+  },
+  {
+    "id": "APEX-1327-034",
+    "feature": "Business Strategy Deep Thinking",
+    "domain": "Business",
+    "goal": "Menganalisis pasar, customer, competition, moat, growth, dan execution.",
+    "implementation": "Strategy canvas, market hypothesis, unit economics, scenario analysis.",
+    "guardrail": "Bedakan data, asumsi, dan opini."
+  },
+  {
+    "id": "APEX-1327-035",
+    "feature": "Financial and Operational Modeling",
+    "domain": "Business",
+    "goal": "Menghubungkan model bisnis ke cash flow, kapasitas, dan risiko.",
+    "implementation": "Driver-based financial model and sensitivity engine.",
+    "guardrail": "Jangan menyembunyikan asumsi."
+  },
+  {
+    "id": "APEX-1327-036",
+    "feature": "Business Risk and Execution Planner",
+    "domain": "Business",
+    "goal": "Mengubah strategi menjadi milestone dan kontrol risiko.",
+    "implementation": "Roadmap planner, risk register, KPI tree.",
+    "guardrail": "Jangan mendorong pengeluaran besar tanpa validasi."
+  },
+  {
+    "id": "APEX-1327-037",
+    "feature": "Legal Research and Source Reasoning",
+    "domain": "Law",
+    "goal": "Menelusuri isu hukum dengan yurisdiksi dan sumber yang tepat.",
+    "implementation": "Legal source hierarchy, jurisdiction router, citation validation.",
+    "guardrail": "Bukan pengganti pengacara; jangan memberi kepastian tanpa verifikasi."
+  },
+  {
+    "id": "APEX-1327-038",
+    "feature": "Contract and Obligation Deep Analysis",
+    "domain": "Law",
+    "goal": "Menganalisis hak, kewajiban, risiko, konflik, dan skenario kontrak.",
+    "implementation": "Clause graph, obligation/deadline extractor, conflict detector.",
+    "guardrail": "Dokumen dan identitas harus dilindungi."
+  },
+  {
+    "id": "APEX-1327-039",
+    "feature": "Legal Scenario and Risk Explanation",
+    "domain": "Law",
+    "goal": "Menjelaskan beberapa kemungkinan hasil hukum secara hati-hati.",
+    "implementation": "Scenario tree, burden/evidence mapping, uncertainty labels.",
+    "guardrail": "Jangan mendorong tindakan ilegal."
+  },
+  {
+    "id": "APEX-1327-040",
+    "feature": "IoT Architecture and Edge Intelligence",
+    "domain": "IoT",
+    "goal": "Mendesain IoT dari device sampai cloud/edge dengan reliability.",
+    "implementation": "Reference architecture, failure-mode analysis, component constraints.",
+    "guardrail": "Listrik, baterai, aktuator, dan keamanan wajib."
+  },
+  {
+    "id": "APEX-1327-041",
+    "feature": "IoT Digital Diagnostics and Predictive Maintenance",
+    "domain": "IoT",
+    "goal": "Menganalisis anomali perangkat dan kesehatan sistem.",
+    "implementation": "Telemetry correlation, anomaly detection, event timeline.",
+    "guardrail": "Jangan mengaktifkan aktuator berbahaya otomatis."
+  },
+  {
+    "id": "APEX-1327-042",
+    "feature": "End-to-End ML Research and Production",
+    "domain": "Machine Learning",
+    "goal": "Mendalami ML dari eksperimen sampai deployment dan monitoring.",
+    "implementation": "Experiment registry, feature/data validation, evaluation suite, deployment plan.",
+    "guardrail": "Jangan klaim kecerdasan/akurasi tanpa benchmark; lindungi data pribadi."
+  }
+]

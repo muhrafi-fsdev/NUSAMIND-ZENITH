@@ -1,0 +1,326 @@
+[
+  {
+    "id": "MAX-1326-001",
+    "title": "Advanced Supervised Windows Agent",
+    "category": "Windows Control",
+    "objective": "Memaksimalkan kontrol Windows dengan human-in-the-loop.",
+    "workingRule": "Planner, permission engine, executor, verifier, audit, rollback.",
+    "safePolicy": "Default read-only; emergency stop wajib.",
+    "exampleUsage": "/desktop agent on"
+  },
+  {
+    "id": "MAX-1326-002",
+    "title": "Windows UI Automation via UIA",
+    "category": "Windows Control",
+    "objective": "Mengontrol elemen UI lebih stabil daripada koordinat mouse.",
+    "workingRule": "Microsoft UI Automation selector; fallback screenshot.",
+    "safePolicy": "Jangan klik transaksi, password, atau penghapusan tanpa konfirmasi.",
+    "exampleUsage": "/uia inspect"
+  },
+  {
+    "id": "MAX-1326-003",
+    "title": "Vision-based Desktop Understanding",
+    "category": "Windows Control",
+    "objective": "Memahami kondisi layar dan perubahan UI.",
+    "workingRule": "OCR, visual element detection, state diff.",
+    "safePolicy": "Masking data pribadi dan secret.",
+    "exampleUsage": "/screen inspect"
+  },
+  {
+    "id": "MAX-1326-004",
+    "title": "PowerShell Orchestration Layer",
+    "category": "Windows Control",
+    "objective": "Menjalankan workflow Windows melalui PowerShell secara terkontrol.",
+    "workingRule": "Local scripts, constrained execution, timeout.",
+    "safePolicy": "Jangan jalankan script internet tanpa review.",
+    "exampleUsage": "/powershell plan"
+  },
+  {
+    "id": "MAX-1326-005",
+    "title": "WSL and Linux Integration",
+    "category": "Windows Control",
+    "objective": "Menghubungkan Windows dengan WSL/Linux workspace.",
+    "workingRule": "Shell detector, path translator, environment registry.",
+    "safePolicy": "Sudo/root command memerlukan konfirmasi tinggi.",
+    "exampleUsage": "/shell auto"
+  },
+  {
+    "id": "MAX-1326-006",
+    "title": "Project-aware Desktop Workspace",
+    "category": "Windows Control",
+    "objective": "Mengikat aplikasi, folder, terminal, dan memory ke satu project.",
+    "workingRule": "Workspace manifest + allowed resources.",
+    "safePolicy": "Scope access harus eksplisit.",
+    "exampleUsage": "/workspace desktop NusaMind"
+  },
+  {
+    "id": "MAX-1326-007",
+    "title": "Safe File Editing with Patch",
+    "category": "Windows Control",
+    "objective": "Mengedit file memakai diff terkontrol.",
+    "workingRule": "Unified diff, checksum, atomic write, backup.",
+    "safePolicy": "Secret dimasking; jangan overwrite tanpa backup.",
+    "exampleUsage": "/patch preview"
+  },
+  {
+    "id": "MAX-1326-008",
+    "title": "System Restore and Snapshot Planning",
+    "category": "Windows Control",
+    "objective": "Membuat titik pemulihan atau backup sebelum perubahan besar.",
+    "workingRule": "Restore-point integration + fallback backup.",
+    "safePolicy": "Tidak ubah driver/registry tanpa recovery dan izin.",
+    "exampleUsage": "/recovery plan"
+  },
+  {
+    "id": "MAX-1326-009",
+    "title": "Event-driven Verification",
+    "category": "Windows Control",
+    "objective": "Memverifikasi hasil setelah aksi.",
+    "workingRule": "Action-specific verification adapters.",
+    "safePolicy": "Jangan mengklaim berhasil tanpa bukti.",
+    "exampleUsage": "/verify last-action"
+  },
+  {
+    "id": "MAX-1326-010",
+    "title": "Permission Tokens and Expiry",
+    "category": "Windows Control",
+    "objective": "Membatasi izin berdasarkan durasi dan scope.",
+    "workingRule": "Permission token with scope, expiry, revocation.",
+    "safePolicy": "Tidak ada izin permanen default.",
+    "exampleUsage": "/permission grant --15m"
+  },
+  {
+    "id": "MAX-1326-011",
+    "title": "Advanced Process and Service Diagnostics",
+    "category": "Windows Control",
+    "objective": "Menganalisis proses/service secara mendalam.",
+    "workingRule": "Service dependency graph + port scanner + log parser.",
+    "safePolicy": "Jangan restart service kritis tanpa izin.",
+    "exampleUsage": "/diagnose service"
+  },
+  {
+    "id": "MAX-1326-012",
+    "title": "Network Diagnostics Agent",
+    "category": "Windows Control",
+    "objective": "Menganalisis jaringan Windows/Linux secara aman.",
+    "workingRule": "Diagnostic command bundle with timeout.",
+    "safePolicy": "Jangan buka port atau nonaktifkan keamanan otomatis.",
+    "exampleUsage": "/network diagnose"
+  },
+  {
+    "id": "MAX-1326-013",
+    "title": "Package and Runtime Manager",
+    "category": "Windows Control",
+    "objective": "Mengelola dependency project secara supervised.",
+    "workingRule": "Adapters npm/pip/composer/winget/choco/apt dengan risk control.",
+    "safePolicy": "Verifikasi package dan sumber.",
+    "exampleUsage": "/deps diagnose"
+  },
+  {
+    "id": "MAX-1326-014",
+    "title": "Browser Automation Expert",
+    "category": "Windows Control",
+    "objective": "Mendukung workflow web lokal dan debugging browser.",
+    "workingRule": "Playwright dengan domain allowlist.",
+    "safePolicy": "Jangan login rekening/trading atau menekan beli/jual.",
+    "exampleUsage": "/browser debug"
+  },
+  {
+    "id": "MAX-1326-015",
+    "title": "Desktop Action Audit and Replay",
+    "category": "Windows Control",
+    "objective": "Mencatat aksi dan replay aman.",
+    "workingRule": "Structured action log dan safe replay.",
+    "safePolicy": "Masking secrets dalam log.",
+    "exampleUsage": "/actions show, /replay safe"
+  },
+  {
+    "id": "MAX-1326-016",
+    "title": "Emergency Stop and Kill-Switch",
+    "category": "Windows Control",
+    "objective": "Menghentikan seluruh aksi segera.",
+    "workingRule": "Cancellation token, child-process cleanup, queue clear.",
+    "safePolicy": "Perintah stop tidak boleh diabaikan.",
+    "exampleUsage": "/stop"
+  },
+  {
+    "id": "MAX-1326-017",
+    "title": "Global Cross-Asset Reasoning",
+    "category": "Global Finance",
+    "objective": "Memahami interaksi saham, obligasi, FX, komoditas, dan crypto.",
+    "workingRule": "Cross-asset graph, regime-aware correlation model.",
+    "safePolicy": "Wajib tampilkan tanggal data dan skenario alternatif.",
+    "exampleUsage": "/global-market deep"
+  },
+  {
+    "id": "MAX-1326-018",
+    "title": "Macro Nowcasting Framework",
+    "category": "Global Finance",
+    "objective": "Mengestimasi kondisi ekonomi dari indikator terbaru.",
+    "workingRule": "Dynamic factor/ensemble model with missing-data handling.",
+    "safePolicy": "Tandai data preliminary dan revisi.",
+    "exampleUsage": "/macro nowcast"
+  },
+  {
+    "id": "MAX-1326-019",
+    "title": "IDX Equity Expert Module",
+    "category": "Stocks Indonesia",
+    "objective": "Menganalisis emiten Indonesia menyeluruh.",
+    "workingRule": "Issuer knowledge graph and financial parser.",
+    "safePolicy": "Bukan rekomendasi personal; sumber dan tanggal wajib.",
+    "exampleUsage": "/idx deep TICKER"
+  },
+  {
+    "id": "MAX-1326-020",
+    "title": "Global Equity Expert Module",
+    "category": "Stocks Global",
+    "objective": "Menganalisis saham luar negeri dan faktor global.",
+    "workingRule": "Financial statement normalization across markets.",
+    "safePolicy": "Jangan memberi certainty atau instruksi transaksi.",
+    "exampleUsage": "/equity deep TICKER"
+  },
+  {
+    "id": "MAX-1326-021",
+    "title": "Crypto Market Microstructure Expert",
+    "category": "Cryptocurrency",
+    "objective": "Memahami likuiditas, leverage, funding, open interest, liquidation, exchange risk.",
+    "workingRule": "Exchange data adapters dan microstructure features.",
+    "safePolicy": "Wajib sebut sumber exchange dan timestamp.",
+    "exampleUsage": "/crypto microstructure"
+  },
+  {
+    "id": "MAX-1326-022",
+    "title": "On-chain Analysis Expert",
+    "category": "Cryptocurrency",
+    "objective": "Memahami aktivitas jaringan dan holder.",
+    "workingRule": "On-chain provider abstraction and anomaly detection.",
+    "safePolicy": "Jangan anggap satu metrik sebagai sinyal pasti.",
+    "exampleUsage": "/onchain analyze"
+  },
+  {
+    "id": "MAX-1326-023",
+    "title": "Multi-Horizon Forecast Router",
+    "category": "Market Prediction",
+    "objective": "Memilih model sesuai horizon prediksi.",
+    "workingRule": "Horizon classifier and model registry.",
+    "safePolicy": "Wajib sebut horizon dan interval ketidakpastian.",
+    "exampleUsage": "/forecast --horizon 1d|1w|1m"
+  },
+  {
+    "id": "MAX-1326-024",
+    "title": "Probabilistic Ensemble Forecast",
+    "category": "Market Prediction",
+    "objective": "Menggabungkan beberapa pendekatan prediksi.",
+    "workingRule": "Calibrated model ensemble with out-of-sample validation.",
+    "safePolicy": "Jangan tampilkan probabilitas tanpa evaluasi.",
+    "exampleUsage": "/forecast ensemble"
+  },
+  {
+    "id": "MAX-1326-025",
+    "title": "Prediction Interval and Uncertainty",
+    "category": "Market Prediction",
+    "objective": "Menampilkan rentang, bukan angka tunggal.",
+    "workingRule": "Quantile regression/conformal interval.",
+    "safePolicy": "Interval bukan batas aman.",
+    "exampleUsage": "/forecast interval"
+  },
+  {
+    "id": "MAX-1326-026",
+    "title": "Market Regime and Structural Break Detection",
+    "category": "Market Prediction",
+    "objective": "Mendeteksi perubahan pola pasar.",
+    "workingRule": "Change-point detection, HMM/regime model, drift alerts.",
+    "safePolicy": "Jangan percaya backtest lintas regime secara buta.",
+    "exampleUsage": "/regime deep"
+  },
+  {
+    "id": "MAX-1326-027",
+    "title": "Walk-forward Backtesting",
+    "category": "Market Prediction",
+    "objective": "Menguji prediksi secara realistis.",
+    "workingRule": "No look-ahead, purged splits, transaction costs.",
+    "safePolicy": "Laporkan bias, biaya, overfitting.",
+    "exampleUsage": "/backtest walk-forward"
+  },
+  {
+    "id": "MAX-1326-028",
+    "title": "Forecast Calibration Monitor",
+    "category": "Market Prediction",
+    "objective": "Memeriksa apakah probabilitas prediksi dapat dipercaya.",
+    "workingRule": "Brier score, reliability analysis, recalibration.",
+    "safePolicy": "Jangan tampilkan confidence palsu.",
+    "exampleUsage": "/forecast calibration"
+  },
+  {
+    "id": "MAX-1326-029",
+    "title": "Fundamental Valuation Expert",
+    "category": "Financial Reasoning",
+    "objective": "Membandingkan valuasi berbasis arus kas dan multiple.",
+    "workingRule": "Formula-driven valuation engine.",
+    "safePolicy": "Nilai wajar bukan harga pasti.",
+    "exampleUsage": "/valuation scenario"
+  },
+  {
+    "id": "MAX-1326-030",
+    "title": "Technical and Quantitative Signal Fusion",
+    "category": "Financial Reasoning",
+    "objective": "Menggabungkan sinyal teknikal tanpa overfitting.",
+    "workingRule": "Feature pipeline, regularization, out-of-sample tests.",
+    "safePolicy": "Hindari optimasi parameter berlebihan.",
+    "exampleUsage": "/quant signals"
+  },
+  {
+    "id": "MAX-1326-031",
+    "title": "News and Sentiment Expert",
+    "category": "Financial Reasoning",
+    "objective": "Memahami dampak berita dengan kredibilitas dan kejutan pasar.",
+    "workingRule": "Entity/event extraction, source ranking, surprise scoring.",
+    "safePolicy": "Jangan sebar rumor sebagai fakta.",
+    "exampleUsage": "/event impact"
+  },
+  {
+    "id": "MAX-1326-032",
+    "title": "Portfolio Scenario and Stress Test",
+    "category": "Risk",
+    "objective": "Menganalisis risiko portofolio lintas aset.",
+    "workingRule": "Exposure engine, scenario shocks, covariance estimates.",
+    "safePolicy": "Jangan simpan portofolio tanpa izin.",
+    "exampleUsage": "/portfolio stress"
+  },
+  {
+    "id": "MAX-1326-033",
+    "title": "Drawdown and Tail Risk Analysis",
+    "category": "Risk",
+    "objective": "Memahami risiko kerugian ekstrem.",
+    "workingRule": "Historical simulation and robust checks.",
+    "safePolicy": "Jelaskan keterbatasan VaR.",
+    "exampleUsage": "/risk tail"
+  },
+  {
+    "id": "MAX-1326-034",
+    "title": "Financial Source Trust and Freshness Engine",
+    "category": "Accuracy",
+    "objective": "Memprioritaskan data resmi dan terbaru.",
+    "workingRule": "Source registry, TTL per data type, conflict resolver.",
+    "safePolicy": "Jangan mengarang data live.",
+    "exampleUsage": "/source audit finance"
+  },
+  {
+    "id": "MAX-1326-035",
+    "title": "Max Direct-First Finance Mode",
+    "category": "Response Performance",
+    "objective": "Menjaga Max cepat walau analisis finansial expert.",
+    "workingRule": "Compact answer schema + deferred analysis.",
+    "safePolicy": "Jangan sembunyikan risiko utama.",
+    "exampleUsage": "/max direct, /expand"
+  },
+  {
+    "id": "MAX-1326-036",
+    "title": "Finance Prediction Governance",
+    "category": "Evaluation",
+    "objective": "Mengontrol kualitas dan keamanan prediksi.",
+    "workingRule": "Model registry, data lineage, evaluation reports, rollback.",
+    "safePolicy": "Prediksi gagal evaluasi tidak boleh confidence tinggi.",
+    "exampleUsage": "/forecast audit"
+  }
+]

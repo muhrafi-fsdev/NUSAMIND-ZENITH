@@ -1,0 +1,30 @@
+{
+  "release": "R13.47",
+  "version": "13.47.0",
+  "edition": "zenith",
+  "upgradeItems": 54,
+  "topCategoryBoost": 285,
+  "uiChanged": false,
+  "distribution": {
+    "nodeModulesBundled": false,
+    "installCommand": "npm ci",
+    "lockfileRequired": true
+  },
+  "runtime": {
+    "evidenceBoundary": "unverified-external",
+    "capabilityLifecycle": "v4",
+    "promptStrategies": "advanced-bounded",
+    "context": "token-aware",
+    "reflexion": true,
+    "agenticRag": true,
+    "multimodal": true,
+    "rawChainOfThoughtStored": false
+  },
+  "capabilitySummary": {
+    "configured": 54,
+    "deterministicRuntime": 47,
+    "liveModelDependent": "CONFIGURED_OR_PROTOTYPE"
+  },
+  "sourceRegistry": "data/release/r13.47/sources.json",
+  "rollback": "R13.46"
+}

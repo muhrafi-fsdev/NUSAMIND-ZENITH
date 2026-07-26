@@ -1,0 +1,39 @@
+{
+  "release": "R13.49",
+  "version": "13.49.0",
+  "edition": "zenith",
+  "title": "Unified Model Gateway, Engineering Agent, Secure Browser Operator & Skills Runtime",
+  "upgradeItems": 53,
+  "scope": {
+    "n8n": {
+      "active": false,
+      "postponed": true
+    },
+    "mainUiChanged": false,
+    "optionalDeveloperDashboard": true
+  },
+  "runtime": {
+    "skills": "ACTIVE",
+    "modelGateway": "ACTIVE",
+    "browserOperator": "BENCHMARKED",
+    "engineeringAgent": "BENCHMARKED",
+    "developerDashboard": "PROTOTYPE"
+  },
+  "distribution": {
+    "nodeModulesIncluded": false,
+    "pythonVenvIncluded": false,
+    "browserCacheIncluded": false,
+    "cleanInstallCommand": "npm ci",
+    "nodeMinimum": "22"
+  },
+  "limitations": {
+    "liveModelBenchmark": "NOT_RUN",
+    "browserEngine": "POLICY_AND_OFFLINE_BENCHMARK_ONLY",
+    "developerDashboard": "PROTOTYPE",
+    "approvedBuildMode": "BENCHMARKED",
+    "parallelRepositoryAnalysis": "DISABLED",
+    "n8n": "POSTPONED",
+    "rawChainOfThoughtStored": false
+  },
+  "topCategoryBoost": 500
+}

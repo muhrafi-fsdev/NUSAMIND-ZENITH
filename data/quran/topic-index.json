@@ -1,0 +1,100 @@
+[
+  {
+    "id": "sabar",
+    "label": "sabar dan keteguhan hati",
+    "aliases": ["sabar", "kesabaran", "bersabar", "penyabar", "tabah", "sabr"],
+    "refs": ["2:45", "2:153", "2:155-157", "3:200", "8:46", "16:127", "39:10", "103:3"],
+    "note": "Untuk tema sabar, biasanya yang dicari bukan satu surah penuh, melainkan beberapa ayat yang membahas sabar."
+  },
+  {
+    "id": "syukur",
+    "label": "syukur",
+    "aliases": ["syukur", "bersyukur", "rasa syukur", "nikmat"],
+    "refs": ["2:152", "14:7", "16:18", "27:40", "31:12", "34:13"],
+    "note": "Ayat-ayat ini berkaitan dengan mengingat nikmat Allah dan bersyukur."
+  },
+  {
+    "id": "shalat",
+    "label": "salat/shalat",
+    "aliases": ["salat", "shalat", "sholat", "solat", "sembahyang"],
+    "refs": ["2:43", "2:45", "2:153", "4:103", "11:114", "20:14", "29:45"],
+    "note": "Ayat-ayat ini membahas perintah, fungsi, dan kedudukan salat."
+  },
+  {
+    "id": "rezeki",
+    "label": "rezeki",
+    "aliases": ["rezeki", "rizki", "rejeki", "nafkah", "penghidupan"],
+    "refs": ["2:172", "11:6", "29:60", "34:39", "51:22", "65:2-3"],
+    "note": "Ayat-ayat ini membahas rezeki, tawakal, dan keyakinan kepada Allah."
+  },
+  {
+    "id": "orang-tua",
+    "label": "berbakti kepada orang tua",
+    "aliases": ["orang tua", "ortu", "ibu bapak", "ayah ibu", "berbakti", "birrul walidain"],
+    "refs": ["17:23-24", "31:14", "46:15", "29:8", "4:36"],
+    "note": "Ayat-ayat ini membahas adab dan perintah berbuat baik kepada orang tua."
+  },
+  {
+    "id": "ilmu",
+    "label": "ilmu dan belajar",
+    "aliases": ["ilmu", "belajar", "pengetahuan", "membaca", "alim", "orang berilmu"],
+    "refs": ["20:114", "58:11", "39:9", "96:1-5", "2:269"],
+    "note": "Ayat-ayat ini menunjukkan kedudukan ilmu, membaca, dan belajar."
+  },
+  {
+    "id": "taubat",
+    "label": "taubat dan ampunan",
+    "aliases": ["taubat", "tobat", "ampunan", "dosa", "istighfar"],
+    "refs": ["39:53", "66:8", "3:135", "4:110", "25:70"],
+    "note": "Ayat-ayat ini berkaitan dengan harapan, ampunan Allah, dan kembali kepada-Nya."
+  },
+  {
+    "id": "sedekah",
+    "label": "sedekah dan infak",
+    "aliases": ["sedekah", "shadaqah", "infaq", "infak", "zakat", "memberi"],
+    "refs": ["2:261", "2:264", "2:267", "3:92", "57:7", "64:16"],
+    "note": "Ayat-ayat ini membahas keutamaan memberi dan menjaga adab saat bersedekah."
+  },
+  {
+    "id": "ikhlas",
+    "label": "ikhlas",
+    "aliases": ["ikhlas", "tulus", "riya", "karena allah"],
+    "refs": ["98:5", "39:2", "39:11", "6:162", "76:9"],
+    "note": "Ayat-ayat ini membahas kemurnian niat dalam ibadah dan amal."
+  },
+  {
+    "id": "ujian",
+    "label": "ujian dan musibah",
+    "aliases": ["ujian", "cobaan", "musibah", "kesulitan", "duka", "sedih"],
+    "refs": ["2:155-157", "29:2-3", "94:5-6", "64:11", "57:22"],
+    "note": "Ayat-ayat ini berkaitan dengan ujian hidup, musibah, dan keteguhan iman."
+  },
+  {
+    "id": "jujur",
+    "label": "jujur dan kebenaran",
+    "aliases": ["jujur", "kejujuran", "benar", "kebenaran", "dusta", "bohong"],
+    "refs": ["9:119", "33:70", "61:2-3", "103:3"],
+    "note": "Ayat-ayat ini berkaitan dengan kejujuran, perkataan benar, dan larangan dusta."
+  },
+  {
+    "id": "adil",
+    "label": "adil dan keadilan",
+    "aliases": ["adil", "keadilan", "zalim", "kezaliman", "hak"],
+    "refs": ["4:58", "4:135", "5:8", "16:90"],
+    "note": "Ayat-ayat ini membahas keadilan, amanah, dan sikap objektif."
+  },
+  {
+    "id": "amanah",
+    "label": "amanah dan tanggung jawab",
+    "aliases": ["amanah", "tanggung jawab", "kepercayaan", "dipercaya"],
+    "refs": ["4:58", "8:27", "23:8", "70:32"],
+    "note": "Ayat-ayat ini membahas amanah, janji, dan tanggung jawab."
+  },
+  {
+    "id": "doa",
+    "label": "doa",
+    "aliases": ["doa", "berdoa", "memohon", "minta kepada allah"],
+    "refs": ["2:186", "7:55", "40:60", "27:62"],
+    "note": "Ayat-ayat ini membahas kedekatan Allah dan adab berdoa."
+  }
+]

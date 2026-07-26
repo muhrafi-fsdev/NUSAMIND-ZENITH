@@ -1,0 +1,47 @@
+[
+  {
+    "resource_id": "RES-01",
+    "resource_name": "9router",
+    "source_url": "https://github.com/decolua/9router",
+    "primary_concepts": "Model gateway, adapters, routing, health, fallback, compression, analytics",
+    "adoption_mode": "Architecture and runtime patterns",
+    "modules": "packages/model-gateway; services/model-gateway",
+    "not_adopted": "Unverified free-access claims or unrestricted provider usage"
+  },
+  {
+    "resource_id": "RES-02",
+    "resource_name": "OpenCode",
+    "source_url": "https://github.com/anomalyco/opencode",
+    "primary_concepts": "Plan/build modes, repository exploration, patching, tests, review, checkpoint",
+    "adoption_mode": "Engineering workflow patterns",
+    "modules": "packages/engineering-agent; packages/repository-index",
+    "not_adopted": "Unrestricted terminal or repository-wide writes"
+  },
+  {
+    "resource_id": "RES-03",
+    "resource_name": "shadcn/ui",
+    "source_url": "https://github.com/shadcn-ui/ui",
+    "primary_concepts": "Composable accessible components",
+    "adoption_mode": "Optional developer dashboard only",
+    "modules": "apps/developer-dashboard; packages/ui-optional",
+    "not_adopted": "Main NusaMind UI redesign"
+  },
+  {
+    "resource_id": "RES-04",
+    "resource_name": "Browser-use",
+    "source_url": "https://github.com/browser-use/browser-use",
+    "primary_concepts": "Browser service, actions, observations, custom tools, QA",
+    "adoption_mode": "Security-hardened browser operator",
+    "modules": "services/browser; packages/browser-operator",
+    "not_adopted": "Unapproved submit, CAPTCHA bypass, unrestricted browsing, credential exposure"
+  },
+  {
+    "resource_id": "RES-05",
+    "resource_name": "Matt Pocock Skills",
+    "source_url": "https://github.com/mattpocock/skills",
+    "primary_concepts": "Composable skills, project context, TDD, debugging, ADR, review, handoff",
+    "adoption_mode": "Skill architecture and selected workflows",
+    "modules": "packages/skills; skills/*; CONTEXT.md; docs/adr",
+    "not_adopted": "Automatic activation of unreviewed skills"
+  }
+]

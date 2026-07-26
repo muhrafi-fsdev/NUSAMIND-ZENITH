@@ -1,0 +1,252 @@
+[
+  {
+    "node_id": "NODE-LLM",
+    "node_type": "MODEL",
+    "node_name": "Qwen Main Language Model",
+    "default_status": "CONFIGURED",
+    "target_editions": "Swift, Zenith, Apex",
+    "critical_dependencies": "Model profile; adapter; resource budget",
+    "verified_by": "BENCH-MODEL",
+    "primary_owner_module": "packages/model-adapters"
+  },
+  {
+    "node_id": "NODE-PROMPT",
+    "node_type": "CAPABILITY",
+    "node_name": "Prompt Patterns",
+    "default_status": "BENCHMARKED",
+    "target_editions": "Swift, Zenith, Apex",
+    "critical_dependencies": "Prompt registry; compiler; model adapter",
+    "verified_by": "BENCH-PROMPT",
+    "primary_owner_module": "packages/prompts"
+  },
+  {
+    "node_id": "NODE-TOOLS",
+    "node_type": "CAPABILITY",
+    "node_name": "Tool Use and Function Calling",
+    "default_status": "BENCHMARKED",
+    "target_editions": "Swift, Zenith, Apex",
+    "critical_dependencies": "Tool registry; permissions; verifier",
+    "verified_by": "BENCH-TOOLS",
+    "primary_owner_module": "packages/tools"
+  },
+  {
+    "node_id": "NODE-EMBED",
+    "node_type": "MODEL",
+    "node_name": "Embeddings and Vectors",
+    "default_status": "CONFIGURED",
+    "target_editions": "Swift, Zenith, Apex",
+    "critical_dependencies": "Embedding service; index manifest",
+    "verified_by": "BENCH-EMBED",
+    "primary_owner_module": "services/embeddings"
+  },
+  {
+    "node_id": "NODE-CONTEXT",
+    "node_type": "CAPABILITY",
+    "node_name": "Context Windows and Management",
+    "default_status": "BENCHMARKED",
+    "target_editions": "Swift, Zenith, Apex",
+    "critical_dependencies": "Tokenizer; budget; packer; freshness",
+    "verified_by": "BENCH-CONTEXT",
+    "primary_owner_module": "packages/context-engine"
+  },
+  {
+    "node_id": "NODE-CRAG",
+    "node_type": "RETRIEVER",
+    "node_name": "Classical RAG",
+    "default_status": "BENCHMARKED",
+    "target_editions": "Swift, Zenith, Apex",
+    "critical_dependencies": "Index; reranker; verifier",
+    "verified_by": "BENCH-CRAG",
+    "primary_owner_module": "packages/retrieval/classical-rag"
+  },
+  {
+    "node_id": "NODE-GRAG",
+    "node_type": "RETRIEVER",
+    "node_name": "Graph RAG",
+    "default_status": "PROTOTYPE",
+    "target_editions": "Zenith, Apex",
+    "critical_dependencies": "Capability graph; graph index; verifier",
+    "verified_by": "BENCH-GRAG",
+    "primary_owner_module": "packages/retrieval/graph-rag"
+  },
+  {
+    "node_id": "NODE-ARAG",
+    "node_type": "RETRIEVER",
+    "node_name": "Agentic RAG",
+    "default_status": "PROTOTYPE",
+    "target_editions": "Apex",
+    "critical_dependencies": "Query planner; gap detector; stop; verifier",
+    "verified_by": "BENCH-ARAG",
+    "primary_owner_module": "packages/retrieval/agentic-rag"
+  },
+  {
+    "node_id": "NODE-STM",
+    "node_type": "MEMORY",
+    "node_name": "Short-Term Memory",
+    "default_status": "BENCHMARKED",
+    "target_editions": "Swift, Zenith, Apex",
+    "critical_dependencies": "Session store; expiry; privacy",
+    "verified_by": "BENCH-STM",
+    "primary_owner_module": "packages/memory/short-term"
+  },
+  {
+    "node_id": "NODE-LTM",
+    "node_type": "MEMORY",
+    "node_name": "Long-Term Memory",
+    "default_status": "PROTOTYPE",
+    "target_editions": "Swift, Zenith, Apex",
+    "critical_dependencies": "Consent; verification; deletion",
+    "verified_by": "BENCH-LTM",
+    "primary_owner_module": "packages/memory/long-term"
+  },
+  {
+    "node_id": "NODE-EPISODIC",
+    "node_type": "MEMORY",
+    "node_name": "Episodic Memory",
+    "default_status": "PROTOTYPE",
+    "target_editions": "Zenith, Apex",
+    "critical_dependencies": "Execution trace; lesson security",
+    "verified_by": "BENCH-EPISODIC",
+    "primary_owner_module": "packages/memory/episodic"
+  },
+  {
+    "node_id": "NODE-REACT",
+    "node_type": "AGENT_PATTERN",
+    "node_name": "ReAct Loop",
+    "default_status": "BENCHMARKED",
+    "target_editions": "Zenith, Apex",
+    "critical_dependencies": "Tools; state verifier; recovery",
+    "verified_by": "BENCH-REACT",
+    "primary_owner_module": "packages/agent-core/react"
+  },
+  {
+    "node_id": "NODE-PLAN",
+    "node_type": "AGENT_PATTERN",
+    "node_name": "Planner–Executor",
+    "default_status": "BENCHMARKED",
+    "target_editions": "Swift, Zenith, Apex",
+    "critical_dependencies": "Planner; executor; verifier",
+    "verified_by": "BENCH-PLAN",
+    "primary_owner_module": "packages/agent-core"
+  },
+  {
+    "node_id": "NODE-MULTI",
+    "node_type": "AGENT_PATTERN",
+    "node_name": "Multi-Agent Orchestration",
+    "default_status": "PROTOTYPE",
+    "target_editions": "Apex",
+    "critical_dependencies": "Planner; scoped agents; verification",
+    "verified_by": "BENCH-MULTI",
+    "primary_owner_module": "packages/agent-core/orchestrator"
+  },
+  {
+    "node_id": "NODE-CTXGRAPH",
+    "node_type": "AGENT_PATTERN",
+    "node_name": "Context Graph Traversal",
+    "default_status": "PROTOTYPE",
+    "target_editions": "Zenith, Apex",
+    "critical_dependencies": "Knowledge graph; memory; permission",
+    "verified_by": "BENCH-CTXGRAPH",
+    "primary_owner_module": "packages/knowledge-graph"
+  },
+  {
+    "node_id": "NODE-TOOLROUTE",
+    "node_type": "AGENT_PATTERN",
+    "node_name": "Tool Selection and Routing",
+    "default_status": "BENCHMARKED",
+    "target_editions": "Swift, Zenith, Apex",
+    "critical_dependencies": "Tool graph; permissions; profiles",
+    "verified_by": "BENCH-TOOLROUTE",
+    "primary_owner_module": "packages/tools/selector"
+  },
+  {
+    "node_id": "NODE-REFLECT",
+    "node_type": "AGENT_PATTERN",
+    "node_name": "Reflection and Self-Critique",
+    "default_status": "PROTOTYPE",
+    "target_editions": "Zenith, Apex",
+    "critical_dependencies": "Evaluator; episodic memory; poisoning guard",
+    "verified_by": "BENCH-REFLECT",
+    "primary_owner_module": "packages/agent-core/reflection"
+  },
+  {
+    "node_id": "NODE-CONFIDENCE",
+    "node_type": "GOVERNANCE",
+    "node_name": "Confidence Scoring",
+    "default_status": "PROTOTYPE",
+    "target_editions": "Swift, Zenith, Apex",
+    "critical_dependencies": "Evidence; model calibration; verifier",
+    "verified_by": "BENCH-CONFIDENCE",
+    "primary_owner_module": "packages/governance/confidence"
+  },
+  {
+    "node_id": "NODE-POLICY",
+    "node_type": "GOVERNANCE",
+    "node_name": "Policy Gates",
+    "default_status": "BENCHMARKED",
+    "target_editions": "Swift, Zenith, Apex",
+    "critical_dependencies": "Policy registry; permissions",
+    "verified_by": "BENCH-POLICY",
+    "primary_owner_module": "packages/governance/policy-gates"
+  },
+  {
+    "node_id": "NODE-AUDIT",
+    "node_type": "GOVERNANCE",
+    "node_name": "Audit Trail",
+    "default_status": "BENCHMARKED",
+    "target_editions": "Swift, Zenith, Apex",
+    "critical_dependencies": "Trace schema; storage; redaction",
+    "verified_by": "BENCH-AUDIT",
+    "primary_owner_module": "packages/observability/audit"
+  },
+  {
+    "node_id": "NODE-EVAL",
+    "node_type": "GOVERNANCE",
+    "node_name": "Evaluation and Observability",
+    "default_status": "BENCHMARKED",
+    "target_editions": "Swift, Zenith, Apex",
+    "critical_dependencies": "Evaluators; metrics; reports",
+    "verified_by": "BENCH-EVAL",
+    "primary_owner_module": "packages/evaluation"
+  },
+  {
+    "node_id": "NODE-RESOURCE",
+    "node_type": "GOVERNANCE",
+    "node_name": "Cost and Resource Economics",
+    "default_status": "PROTOTYPE",
+    "target_editions": "Swift, Zenith, Apex",
+    "critical_dependencies": "Telemetry; budgets",
+    "verified_by": "BENCH-RESOURCE",
+    "primary_owner_module": "packages/observability/resources"
+  },
+  {
+    "node_id": "NODE-MULTIMODAL",
+    "node_type": "FRONTIER",
+    "node_name": "Multimodal Reasoning",
+    "default_status": "PROTOTYPE",
+    "target_editions": "Zenith, Apex",
+    "critical_dependencies": "Vision profile; visual verifier",
+    "verified_by": "BENCH-MM",
+    "primary_owner_module": "packages/multimodal"
+  },
+  {
+    "node_id": "NODE-SELFIMPROVE",
+    "node_type": "FRONTIER",
+    "node_name": "Controlled Self-Improving Agent",
+    "default_status": "PROTOTYPE",
+    "target_editions": "Apex",
+    "critical_dependencies": "Regression; approval; canary; rollback",
+    "verified_by": "BENCH-SELF",
+    "primary_owner_module": "packages/agent-core/self-improvement"
+  },
+  {
+    "node_id": "NODE-WORKFLOW",
+    "node_type": "FRONTIER",
+    "node_name": "Internal Agentic Workflows at Scale",
+    "default_status": "PROTOTYPE",
+    "target_editions": "Zenith, Apex",
+    "critical_dependencies": "Queue; idempotency; checkpoint; audit",
+    "verified_by": "BENCH-WORKFLOW",
+    "primary_owner_module": "packages/agent-core/workflows"
+  }
+]

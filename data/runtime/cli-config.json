@@ -1,0 +1,9 @@
+{
+  "name": "Apex Nexus CLI",
+  "size": "Medium Expert: 96-112 kolom, status compact, panel detail dapat dibuka",
+  "identity": "Expert direct-first dan deep thinking",
+  "preChatMenu": true,
+  "menuConfig": "data/runtime/cli-menu.json",
+  "uploadLimitKb": 4096,
+  "folderFileLimit": 60
+}

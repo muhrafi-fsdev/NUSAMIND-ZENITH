@@ -1,0 +1,66 @@
+[
+  {
+    "lock_id": "LOCK-001",
+    "feature_or_scope": "Windows Desktop EXE",
+    "n1_0_status": "CANCELLED",
+    "allowed_behavior": "Web local and CLI runtime; optional desktop-control agent remains separate",
+    "forbidden_behavior": "Electron/Forge/Squirrel/PyInstaller packaging; NusaMind.exe; Setup.exe claims",
+    "release_test": "exe_surface_count=0"
+  },
+  {
+    "lock_id": "LOCK-002",
+    "feature_or_scope": "n8n integration",
+    "n1_0_status": "POSTPONED",
+    "allowed_behavior": "Only historical/postponed documentation",
+    "forbidden_behavior": "n8n package, route, webhook, MCP tool, plugin, credential, workflow or UI",
+    "release_test": "n8n_surface_count=0"
+  },
+  {
+    "lock_id": "LOCK-003",
+    "feature_or_scope": "Main UI redesign",
+    "n1_0_status": "LOCKED",
+    "allowed_behavior": "Version text can change to N1.0; developer dashboard remains isolated",
+    "forbidden_behavior": "Layout, colors, component hierarchy or navigation redesign",
+    "release_test": "visual_regression=0"
+  },
+  {
+    "lock_id": "LOCK-004",
+    "feature_or_scope": "node_modules in distribution ZIP",
+    "n1_0_status": "EXCLUDED",
+    "allowed_behavior": "Install using npm ci and package-lock.json",
+    "forbidden_behavior": "Bundling node_modules into source ZIP",
+    "release_test": "node_modules_archive_entries=0"
+  },
+  {
+    "lock_id": "LOCK-005",
+    "feature_or_scope": "Raw chain-of-thought",
+    "n1_0_status": "BLOCKED",
+    "allowed_behavior": "Decision summary, evidence, actions and outcomes",
+    "forbidden_behavior": "Persisting or displaying raw private reasoning",
+    "release_test": "raw_cot_storage=0"
+  },
+  {
+    "lock_id": "LOCK-006",
+    "feature_or_scope": "Unsafe cyber features",
+    "n1_0_status": "BLOCKED",
+    "allowed_behavior": "Defensive analysis, authorized assets, isolated lab, static malware triage",
+    "forbidden_behavior": "Keylogger, credential capture, AV evasion, live malware execution, unauthorized scanning",
+    "release_test": "blocked_cyber_surface=0"
+  },
+  {
+    "lock_id": "LOCK-007",
+    "feature_or_scope": "Browser evasion",
+    "n1_0_status": "BLOCKED",
+    "allowed_behavior": "Normal approved browser automation with evidence",
+    "forbidden_behavior": "CAPTCHA bypass, stealth fingerprint evasion, proxy rotation for circumvention",
+    "release_test": "blocked_browser_surface=0"
+  },
+  {
+    "lock_id": "LOCK-008",
+    "feature_or_scope": "Automatic capability activation",
+    "n1_0_status": "BLOCKED",
+    "allowed_behavior": "Benchmark, approval, canary and rollback",
+    "forbidden_behavior": "DRAFT/PROTOTYPE self-promoting to ACTIVE",
+    "release_test": "false_active_count=0"
+  }
+]

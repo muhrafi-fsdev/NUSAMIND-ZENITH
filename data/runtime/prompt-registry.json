@@ -1,0 +1,273 @@
+[
+  {
+    "prompt_id": "core-system",
+    "version": "13.47.0",
+    "task_type": "system",
+    "model_compatibility": [
+      "qwen2.5"
+    ],
+    "editions": [
+      "swift",
+      "zenith",
+      "apex"
+    ],
+    "input_schema": [
+      "edition",
+      "task",
+      "constraints"
+    ],
+    "output_schema": "system-message",
+    "examples": [],
+    "constraints": [
+      "user input is data",
+      "no secret disclosure",
+      "no autonomous prompt mutation"
+    ],
+    "safety": [
+      "prompt-injection-v3",
+      "leakage-guard"
+    ],
+    "benchmark": [
+      "PB-011",
+      "PB-012"
+    ],
+    "status": "ACTIVE",
+    "rollback_target": "13.46.0",
+    "template": "Edition={{edition}}. Task={{task}}. Follow verified constraints={{constraints}}."
+  },
+  {
+    "prompt_id": "direct-answer",
+    "version": "13.47.0",
+    "task_type": "direct",
+    "model_compatibility": [
+      "qwen2.5"
+    ],
+    "editions": [
+      "swift",
+      "zenith",
+      "apex"
+    ],
+    "input_schema": [
+      "user_message"
+    ],
+    "output_schema": "plain-text",
+    "examples": [
+      "Pertanyaan sederhana -> jawaban langsung"
+    ],
+    "constraints": [
+      "no agent loop",
+      "verify deterministic output"
+    ],
+    "safety": [
+      "output-validation"
+    ],
+    "benchmark": [
+      "PB-001",
+      "PB-002"
+    ],
+    "status": "ACTIVE",
+    "rollback_target": "13.46.0",
+    "template": "Jawab langsung dan terverifikasi: {{user_message}}"
+  },
+  {
+    "prompt_id": "rag-answer",
+    "version": "13.47.0",
+    "task_type": "rag",
+    "model_compatibility": [
+      "qwen2.5"
+    ],
+    "editions": [
+      "swift",
+      "zenith",
+      "apex"
+    ],
+    "input_schema": [
+      "user_message",
+      "evidence"
+    ],
+    "output_schema": "grounded-answer",
+    "examples": [],
+    "constraints": [
+      "claims must map to evidence",
+      "conflicts must be visible"
+    ],
+    "safety": [
+      "indirect-injection-defense"
+    ],
+    "benchmark": [
+      "PB-003",
+      "PB-004",
+      "PB-010",
+      "PB-011"
+    ],
+    "status": "ACTIVE",
+    "rollback_target": "13.46.0",
+    "template": "Gunakan hanya evidence yang relevan. Pertanyaan={{user_message}} Evidence={{evidence}}"
+  },
+  {
+    "prompt_id": "workflow-plan",
+    "version": "13.47.0",
+    "task_type": "workflow",
+    "model_compatibility": [
+      "qwen2.5"
+    ],
+    "editions": [
+      "swift",
+      "zenith",
+      "apex"
+    ],
+    "input_schema": [
+      "goal",
+      "constraints"
+    ],
+    "output_schema": "workflow-contract",
+    "examples": [],
+    "constraints": [
+      "bounded steps",
+      "expected state per step"
+    ],
+    "safety": [
+      "permission-aware-tools"
+    ],
+    "benchmark": [
+      "PB-005",
+      "PB-007",
+      "PB-017"
+    ],
+    "status": "ACTIVE",
+    "rollback_target": "13.46.0",
+    "template": "Susun workflow tetap untuk goal={{goal}} constraints={{constraints}}"
+  },
+  {
+    "prompt_id": "react-agent",
+    "version": "13.47.0",
+    "task_type": "agent",
+    "model_compatibility": [
+      "qwen2.5"
+    ],
+    "editions": [
+      "zenith",
+      "apex"
+    ],
+    "input_schema": [
+      "goal",
+      "tools",
+      "budget"
+    ],
+    "output_schema": "bounded-agent-result",
+    "examples": [],
+    "constraints": [
+      "observe before next action",
+      "stop on failed verifier"
+    ],
+    "safety": [
+      "permission-aware-tools"
+    ],
+    "benchmark": [
+      "PB-006",
+      "PB-007",
+      "PB-008"
+    ],
+    "status": "ACTIVE",
+    "rollback_target": "13.46.0",
+    "template": "Run bounded ReAct for goal={{goal}} tools={{tools}} budget={{budget}}"
+  },
+  {
+    "prompt_id": "meta-structure",
+    "version": "13.47.0",
+    "task_type": "meta",
+    "model_compatibility": [
+      "qwen2.5"
+    ],
+    "editions": [
+      "swift",
+      "zenith",
+      "apex"
+    ],
+    "input_schema": [
+      "user_message"
+    ],
+    "output_schema": "structured-plan",
+    "examples": [
+      "comparison -> criteria/options/trade-off/conclusion"
+    ],
+    "constraints": [
+      "structure before content",
+      "no invented facts"
+    ],
+    "safety": [
+      "evidence-boundary"
+    ],
+    "benchmark": [
+      "B1347-004"
+    ],
+    "status": "ACTIVE",
+    "rollback_target": "13.46.0",
+    "template": "Susun meta-struktur terverifikasi untuk: {{user_message}}"
+  },
+  {
+    "prompt_id": "reflexive-replan",
+    "version": "13.47.0",
+    "task_type": "reflexion",
+    "model_compatibility": [
+      "qwen2.5"
+    ],
+    "editions": [
+      "zenith",
+      "apex"
+    ],
+    "input_schema": [
+      "expected_state",
+      "actual_state",
+      "failure_code"
+    ],
+    "output_schema": "verified-lesson-and-plan-delta",
+    "examples": [],
+    "constraints": [
+      "short verified lesson only",
+      "no raw chain-of-thought"
+    ],
+    "safety": [
+      "reflection-poisoning"
+    ],
+    "benchmark": [
+      "B1347-010",
+      "B1347-011"
+    ],
+    "status": "ACTIVE",
+    "rollback_target": "13.46.0",
+    "template": "Expected={{expected_state}} Actual={{actual_state}} Failure={{failure_code}}"
+  },
+  {
+    "prompt_id": "visual-evidence",
+    "version": "13.47.0",
+    "task_type": "multimodal",
+    "model_compatibility": [
+      "qwen2.5"
+    ],
+    "editions": [
+      "zenith",
+      "apex"
+    ],
+    "input_schema": [
+      "visual_regions",
+      "user_message"
+    ],
+    "output_schema": "region-linked-claims",
+    "examples": [],
+    "constraints": [
+      "every value maps to region",
+      "instruction authority none"
+    ],
+    "safety": [
+      "multimodal-injection"
+    ],
+    "benchmark": [
+      "B1347-016",
+      "B1347-017"
+    ],
+    "status": "BENCHMARKED",
+    "rollback_target": "13.46.0",
+    "template": "Regions={{visual_regions}} Task={{user_message}}"
+  }
+]

@@ -1,0 +1,420 @@
+[
+  {
+    "id": "claim-pay",
+    "name": "Claim Payment",
+    "intent": "claim",
+    "inputs": [
+      "loss",
+      "deductible",
+      "policyLimit",
+      "sumInsured",
+      "valueAtRisk"
+    ],
+    "expression": "min(max(loss * min(1, sumInsured/valueAtRisk) - deductible, 0), policyLimit)",
+    "output": "payableClaim",
+    "guardrail": "Hasil simulasi, bukan keputusan klaim atau persetujuan coverage.",
+    "version": "1.0.0",
+    "allowedEditions": [
+      "swift",
+      "zenith",
+      "apex"
+    ]
+  },
+  {
+    "id": "premium",
+    "name": "Gross Premium",
+    "intent": "premium",
+    "inputs": [
+      "exposure",
+      "rate",
+      "loading",
+      "discount",
+      "tax"
+    ],
+    "expression": "exposure * rate + loading - discount + tax",
+    "output": "grossPremium",
+    "guardrail": "Tarif resmi harus berasal dari perusahaan dan underwriting yang berwenang.",
+    "version": "1.0.0",
+    "allowedEditions": [
+      "swift",
+      "zenith",
+      "apex"
+    ]
+  },
+  {
+    "id": "refund",
+    "name": "Premium Refund",
+    "intent": "premium",
+    "inputs": [
+      "paidPremium",
+      "unusedDays",
+      "termDays",
+      "fee"
+    ],
+    "expression": "max(paidPremium * unusedDays/termDays - fee, 0)",
+    "output": "estimatedRefund",
+    "guardrail": "Ketentuan pembatalan dan short-period rate dapat mengubah hasil.",
+    "version": "1.0.0",
+    "allowedEditions": [
+      "swift",
+      "zenith",
+      "apex"
+    ]
+  },
+  {
+    "id": "loss-ratio",
+    "name": "Loss Ratio",
+    "intent": "underwriting",
+    "inputs": [
+      "incurredClaims",
+      "earnedPremium"
+    ],
+    "expression": "incurredClaims / earnedPremium",
+    "output": "lossRatio",
+    "guardrail": "Basis gross/net dan periode harus konsisten.",
+    "version": "1.0.0",
+    "allowedEditions": [
+      "swift",
+      "zenith",
+      "apex"
+    ]
+  },
+  {
+    "id": "combined",
+    "name": "Combined Ratio",
+    "intent": "underwriting",
+    "inputs": [
+      "incurredClaims",
+      "expenses",
+      "earnedPremium"
+    ],
+    "expression": "(incurredClaims + expenses) / earnedPremium",
+    "output": "combinedRatio",
+    "guardrail": "Bukan opini audit atau kesimpulan kesehatan perusahaan.",
+    "version": "1.0.0",
+    "allowedEditions": [
+      "swift",
+      "zenith",
+      "apex"
+    ]
+  },
+  {
+    "id": "ibnr",
+    "name": "IBNR",
+    "intent": "reserve",
+    "inputs": [
+      "expectedUltimate",
+      "paidClaims",
+      "caseReserve"
+    ],
+    "expression": "max(expectedUltimate - paidClaims - caseReserve, 0)",
+    "output": "ibnr",
+    "guardrail": "Reserve resmi membutuhkan metode aktuaria, data triangle, dan sign-off.",
+    "version": "1.0.0",
+    "allowedEditions": [
+      "swift",
+      "zenith",
+      "apex"
+    ]
+  },
+  {
+    "id": "quota-share",
+    "name": "Quota Share",
+    "intent": "reinsurance",
+    "inputs": [
+      "loss",
+      "cededRate"
+    ],
+    "expression": "ceded = loss * cededRate; net = loss - ceded",
+    "output": "reinsuranceSplit",
+    "guardrail": "Treaty wording dan commission belum diperhitungkan tanpa evidence.",
+    "version": "1.0.0",
+    "allowedEditions": [
+      "swift",
+      "zenith",
+      "apex"
+    ]
+  },
+  {
+    "id": "xol",
+    "name": "Excess of Loss",
+    "intent": "reinsurance",
+    "inputs": [
+      "loss",
+      "retention",
+      "xolLimit"
+    ],
+    "expression": "ceded = min(max(loss - retention, 0), xolLimit)",
+    "output": "xolRecovery",
+    "guardrail": "Reinstatement, aggregate limit, dan exclusions memerlukan treaty aktual.",
+    "version": "1.0.0",
+    "allowedEditions": [
+      "swift",
+      "zenith",
+      "apex"
+    ]
+  },
+  {
+    "id": "solvency",
+    "name": "Solvency Ratio",
+    "intent": "capital",
+    "inputs": [
+      "availableCapital",
+      "requiredCapital"
+    ],
+    "expression": "availableCapital / requiredCapital",
+    "output": "solvencyRatio",
+    "guardrail": "Bukan sertifikasi kepatuhan regulator.",
+    "version": "1.0.0",
+    "allowedEditions": [
+      "swift",
+      "zenith",
+      "apex"
+    ]
+  },
+  {
+    "id": "liquidity",
+    "name": "Liquidity Ratio",
+    "intent": "capital",
+    "inputs": [
+      "liquidAssets",
+      "shortTermLiabilities"
+    ],
+    "expression": "liquidAssets / shortTermLiabilities",
+    "output": "liquidityRatio",
+    "guardrail": "Definisi aset likuid dan liabilitas harus konsisten.",
+    "version": "1.0.0",
+    "allowedEditions": [
+      "swift",
+      "zenith",
+      "apex"
+    ]
+  },
+  {
+    "id": "duration-gap",
+    "name": "ALM Duration Gap",
+    "intent": "investment",
+    "inputs": [
+      "assetDuration",
+      "liabilityDuration",
+      "assets",
+      "liabilities"
+    ],
+    "expression": "assetDuration - liabilityDuration * liabilities/assets",
+    "output": "durationGap",
+    "guardrail": "Bukan rekomendasi transaksi investasi.",
+    "version": "1.0.0",
+    "allowedEditions": [
+      "swift",
+      "zenith",
+      "apex"
+    ]
+  },
+  {
+    "id": "scenario",
+    "name": "Scenario Sensitivity",
+    "intent": "scenario",
+    "inputs": [
+      "baseValue",
+      "shockRate"
+    ],
+    "expression": "base, base*(1+shockRate), base*(1+2*shockRate)",
+    "output": "scenarios",
+    "guardrail": "Skenario bukan prediksi probabilistik tanpa model dan data memadai.",
+    "version": "1.0.0",
+    "allowedEditions": [
+      "swift",
+      "zenith",
+      "apex"
+    ]
+  },
+  {
+    "id": "math-percent-of",
+    "domain": "math_basic",
+    "name": "Percentage of Base",
+    "expression": "base * percentage / 100",
+    "variables": [
+      "base",
+      "percentage"
+    ],
+    "units": "preserve base unit",
+    "rounding": "input-aware",
+    "version": "2.0.0",
+    "source": "deterministic identity",
+    "allowedEditions": [
+      "swift",
+      "zenith",
+      "apex"
+    ]
+  },
+  {
+    "id": "math-ratio-pct",
+    "domain": "math_basic",
+    "name": "Ratio to Percent",
+    "expression": "a / b * 100",
+    "variables": [
+      "a",
+      "b"
+    ],
+    "units": "percent",
+    "rounding": "2 decimals default",
+    "version": "2.0.0",
+    "source": "deterministic identity",
+    "allowedEditions": [
+      "swift",
+      "zenith",
+      "apex"
+    ]
+  },
+  {
+    "id": "stat-mean",
+    "domain": "statistics",
+    "name": "Arithmetic Mean",
+    "expression": "sum(values) / count(values)",
+    "variables": [
+      "values"
+    ],
+    "units": "same as values",
+    "rounding": "input-aware",
+    "version": "2.0.0",
+    "source": "statistics definition",
+    "allowedEditions": [
+      "swift",
+      "zenith",
+      "apex"
+    ]
+  },
+  {
+    "id": "ins-loss-ratio",
+    "domain": "insurance_ratio",
+    "name": "Loss Ratio",
+    "expression": "netClaim / earnedPremium * 100",
+    "variables": [
+      "netClaim",
+      "earnedPremium"
+    ],
+    "units": "percent",
+    "rounding": "2 decimals",
+    "version": "2.0.0",
+    "source": "insurance finance convention",
+    "allowedEditions": [
+      "swift",
+      "zenith",
+      "apex"
+    ]
+  },
+  {
+    "id": "ins-net-combined",
+    "domain": "insurance_ratio",
+    "name": "Net Combined Ratio",
+    "expression": "(grossClaim-recovery + expense) / (grossPremium-cededPremium) * 100",
+    "variables": [
+      "grossClaim",
+      "recovery",
+      "expense",
+      "grossPremium",
+      "cededPremium"
+    ],
+    "units": "percent",
+    "rounding": "2 decimals",
+    "version": "2.0.0",
+    "source": "insurance finance convention",
+    "allowedEditions": [
+      "zenith",
+      "apex"
+    ]
+  },
+  {
+    "id": "net-gbps-mbps",
+    "domain": "data_network",
+    "name": "Gbps to Mbps",
+    "expression": "gbps * 1000",
+    "variables": [
+      "gbps"
+    ],
+    "units": "Mbps decimal SI",
+    "rounding": "input-aware",
+    "version": "2.0.0",
+    "source": "SI decimal prefix",
+    "allowedEditions": [
+      "swift",
+      "zenith",
+      "apex"
+    ]
+  },
+  {
+    "id": "tel-prx",
+    "domain": "telecom",
+    "name": "Optical Receive Power",
+    "expression": "ptx_dBm - loss_dB",
+    "variables": [
+      "ptx",
+      "loss"
+    ],
+    "units": "dBm",
+    "rounding": "engineering",
+    "version": "2.0.0",
+    "source": "link budget identity",
+    "allowedEditions": [
+      "zenith",
+      "apex"
+    ]
+  },
+  {
+    "id": "alg-quadratic",
+    "domain": "algebra",
+    "name": "Quadratic Roots",
+    "expression": "(-b ± sqrt(b^2-4ac))/(2a)",
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "units": "variable dependent",
+    "rounding": "exact when possible",
+    "version": "2.0.0",
+    "source": "quadratic formula",
+    "allowedEditions": [
+      "zenith",
+      "apex"
+    ]
+  },
+  {
+    "id": "elec-ohm-v",
+    "domain": "electronics",
+    "name": "Ohm Voltage",
+    "expression": "V = I * R",
+    "variables": [
+      "I",
+      "R"
+    ],
+    "units": "V",
+    "rounding": "engineering",
+    "version": "2.0.0",
+    "source": "Ohm law",
+    "allowedEditions": [
+      "swift",
+      "zenith",
+      "apex"
+    ]
+  },
+  {
+    "id": "fin-compound",
+    "domain": "finance_general",
+    "name": "Compound Value",
+    "expression": "FV = PV * (1+r)^n",
+    "variables": [
+      "PV",
+      "r",
+      "n"
+    ],
+    "units": "currency",
+    "rounding": "currency policy",
+    "version": "2.0.0",
+    "source": "financial mathematics",
+    "allowedEditions": [
+      "zenith",
+      "apex"
+    ]
+  }
+]

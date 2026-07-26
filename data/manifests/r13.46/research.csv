@@ -1,0 +1,9 @@
+﻿research_id,topic,guide_source,original_source_required,implementation_status,target_module,benchmark_required,activation_rule
+RS-001,ReAct,https://arxiv.org/abs/2210.03629,Yes,REVIEWED,Bounded agent loop,Tool task and recovery,Expected-state verification required
+RS-002,RAG Faithfulness,https://www.promptingguide.ai/research/rag,Yes,REVIEWED,Faithfulness guard,Claim support and stale evidence,Unsupported critical claim must be zero
+RS-003,LLM Recall,https://www.promptingguide.ai/research/llm-recall,Yes,REVIEWED,Context profiling,Needle position and length,Safe context profile required
+RS-004,Synthetic Data,https://www.promptingguide.ai/research/synthetic_data,Yes,REVIEWED,Dataset quality gate,"Factuality, privacy, dedup",No ungrounded synthetic record
+RS-005,Trustworthiness,https://www.promptingguide.ai/research/trustworthiness-in-llms,Yes,REVIEWED,Trust scorecard,"Truthfulness, privacy, robustness",Critical dimension fail means final fail
+RS-006,Deep Agents,https://www.promptingguide.ai/agents/deep-agents,Yes,DISCOVERED,Apex orchestrator,"Delegation, cost, verification",Prototype and benchmark required
+RS-007,Context Engineering,https://www.promptingguide.ai/agents/context-engineering,Yes,REVIEWED,Context Engine V2,"Relevance, compression, conflict",Must improve task and token efficiency
+RS-008,Prompt Injection,https://www.promptingguide.ai/prompts/adversarial-prompting/prompt-injection,Yes,REVIEWED,Security pipeline,Direct and indirect attacks,Critical attack success zero

@@ -1,0 +1,5 @@
+import { createHash } from 'node:crypto';
+import { getDatabase } from './db';
+export function dependencyCacheKey(scope:string,input:unknown,dependencies:string[]=[]){return createHash('sha256').update(JSON.stringify({scope,input,dependencies:[...dependencies].sort()})).digest('hex');}
+export function readDependencyCache(key:string){const row=getDatabase().prepare('SELECT value_json,expires_at FROM cache WHERE key=?').get(key) as {value_json?:string;expires_at?:string}|undefined;if(!row||Date.parse(String(row.expires_at))<=Date.now())return null;try{return JSON.parse(String(row.value_json));}catch{return null;}}
+export function writeDependencyCache(key:string,scope:string,value:unknown,ttlMs:number,version='R13.45'){const now=new Date();getDatabase().prepare('INSERT OR REPLACE INTO cache(key,value_json,scope,version,expires_at,created_at) VALUES(?,?,?,?,?,?)').run(key,JSON.stringify(value),scope,version,new Date(now.getTime()+Math.max(1000,ttlMs)).toISOString(),now.toISOString());return key;}

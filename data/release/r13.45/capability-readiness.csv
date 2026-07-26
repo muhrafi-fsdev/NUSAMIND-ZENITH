@@ -1,0 +1,6 @@
+﻿capability_id,capability_name,available_requirements,degraded_conditions,not_ready_conditions,target_versions
+CAP-ML,Production ML,FastAPI healthy; ACTIVE model; dataset/feature/calibration hashes; frozen benchmark; fallback tested,Baseline/rules available,Model missing or benchmark/schema fail,"Swift, Zenith, Apex"
+CAP-NN,Custom Neural Text Classifier,Gradient; text model; safe load; group holdout; OOD; calibration; baseline superiority,Production ML baseline works,Only XOR demo or no text model,"Zenith, Apex"
+CAP-RETR,Retrieval V6,FTS5; embedding; metadata/freshness; reranker policy; chat uses V6; benchmark pass,FTS-only or embedding unavailable,Only wrapper file exists,"Swift, Zenith, Apex"
+CAP-HEALTH,Integrated Health,Red flags; privacy; populated registries; interactions; evidence; freshness; verifier; benchmark,Safety works but optional pack limited,Empty registries or critical test fail,"Swift, Zenith, Apex"
+CAP-CORPUS,Knowledge Packs,Manifest/checksum; schema; imported/indexed; rollback; benchmark,Core with limited corpus,Corrupt/incompatible pack,"Swift, Zenith, Apex"

@@ -1,0 +1,30 @@
+[
+  {
+    "resource_name": "90DaysOfCyberSecurity",
+    "source_url": "https://github.com/farhanashrafdev/90DaysOfCyberSecurity",
+    "observed_license": "MIT",
+    "default_adoption_policy": "Curriculum concepts and source registry",
+    "direct_code_reuse_requirement": "Preserve applicable copyright/license notice"
+  },
+  {
+    "resource_name": "Cybersecurity-Projects",
+    "source_url": "https://github.com/CarterPerez-dev/Cybersecurity-Projects",
+    "observed_license": "AGPL-3.0",
+    "default_adoption_policy": "Reference patterns; do not copy whole projects by default",
+    "direct_code_reuse_requirement": "Dedicated AGPL compatibility and distribution review"
+  },
+  {
+    "resource_name": "awesome-ml-for-cybersecurity",
+    "source_url": "https://github.com/jivoi/awesome-ml-for-cybersecurity",
+    "observed_license": "CC BY-SA 4.0",
+    "default_adoption_policy": "Use as curated bibliography and dataset/paper registry",
+    "direct_code_reuse_requirement": "Attribution and ShareAlike review for adapted licensed content"
+  },
+  {
+    "resource_name": "Awesome-Asset-Discovery",
+    "source_url": "https://github.com/redhuntlabs/Awesome-Asset-Discovery",
+    "observed_license": "CC0-1.0",
+    "default_adoption_policy": "Use categories and resource references with provenance",
+    "direct_code_reuse_requirement": "Still retain source provenance for audit quality"
+  }
+]

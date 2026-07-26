@@ -1,0 +1,1 @@
+export function layeredInstructions(input:{system:string;developer?:string;user:string;external?:string}){return[{role:'system',content:input.system},{role:'developer',content:input.developer||''},{role:'user',content:input.user},{role:'external',content:input.external||'',instructionAuthority:'none'}];}

@@ -1,0 +1,74 @@
+[
+  {
+    "layer_order": "1",
+    "layer_name": "Web and CLI Entry",
+    "primary_responsibility": "Local Next.js UI, CLI menus, upload, sessions and status",
+    "n1_0_target_modules": "apps/web; apps/cli; app/*",
+    "edition_scope": "All",
+    "runtime_boundary": "No Electron/EXE"
+  },
+  {
+    "layer_order": "2",
+    "layer_name": "Unified Cognitive Orchestrator",
+    "primary_responsibility": "Select direct, deterministic, retrieval, skill, workflow or agent path",
+    "n1_0_target_modules": "packages/intelligence-orchestrator",
+    "edition_scope": "All",
+    "runtime_boundary": "Permission and resource governed"
+  },
+  {
+    "layer_order": "3",
+    "layer_name": "Reasoning and Prompt Platform",
+    "primary_responsibility": "Prompt portfolio, model templates, PAL, ART, debate and abstention",
+    "n1_0_target_modules": "packages/reasoning; packages/prompts; packages/reliability",
+    "edition_scope": "Edition bounded",
+    "runtime_boundary": "No raw CoT persistence"
+  },
+  {
+    "layer_order": "4",
+    "layer_name": "Retrieval, Evidence and Memory",
+    "primary_responsibility": "Retrieval planning, evidence graph, temporal knowledge, entity graph and privacy memory",
+    "n1_0_target_modules": "packages/retrieval; packages/evidence-graph-v2; packages/memory",
+    "edition_scope": "All",
+    "runtime_boundary": "Source and consent required"
+  },
+  {
+    "layer_order": "5",
+    "layer_name": "Engineering Agent",
+    "primary_responsibility": "Repository/LSP graph, plan, patch, tests, Git workflow, docs and rollback",
+    "n1_0_target_modules": "packages/engineering-agent; packages/code-intelligence",
+    "edition_scope": "Swift read-only; Zenith/Apex bounded writes",
+    "runtime_boundary": "Workspace and approval scoped"
+  },
+  {
+    "layer_order": "6",
+    "layer_name": "Browser and Multimodal",
+    "primary_responsibility": "Research workspace, structured extraction, QA, dry-run and visual grounding",
+    "n1_0_target_modules": "services/browser; packages/browser-operator; packages/multimodal",
+    "edition_scope": "Edition bounded",
+    "runtime_boundary": "No CAPTCHA/stealth/evasion"
+  },
+  {
+    "layer_order": "7",
+    "layer_name": "Cybersecurity Fusion",
+    "primary_responsibility": "Defensive learning, SOC, assets, supply chain, ML signals and evidence",
+    "n1_0_target_modules": "packages/cyber-*; services/ml/security",
+    "edition_scope": "Defensive and authorized only",
+    "runtime_boundary": "No offensive blocked features"
+  },
+  {
+    "layer_order": "8",
+    "layer_name": "Model Gateway",
+    "primary_responsibility": "Local-first routing, quotas, conformance, fallback, compression and resource analytics",
+    "n1_0_target_modules": "packages/model-gateway",
+    "edition_scope": "All",
+    "runtime_boundary": "Approved user-owned providers only"
+  },
+  {
+    "layer_order": "9",
+    "layer_name": "Governance and Evaluation",
+    "primary_responsibility": "Capability truth, permissions, privacy, SLO, audit, benchmarks, canary and release",
+    "n1_0_target_modules": "packages/governance; packages/evaluation; packages/observability",
+    "edition_scope": "All",
+    "runtime_boundary": "Critical failure blocks release"
+  }
+]

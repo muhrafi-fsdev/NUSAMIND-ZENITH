@@ -1,0 +1,19 @@
+{
+  "edition": "zenith",
+  "default": "DENY",
+  "automaticGitPush": "APPROVAL",
+  "forcePush": "APPROVAL_FORCE_WITH_LEASE",
+  "destructiveAction": "APPROVAL_AND_BACKUP",
+  "credentialVault": "SCOPED_ENCRYPTED",
+  "externalWorkspace": "TRUSTED_REGISTRY",
+  "unverifiedMcp": "SANDBOX_REQUIRED",
+  "deployment": [
+    "preview",
+    "staging"
+  ],
+  "extendedLoop": {
+    "soft": 20,
+    "hard": 40,
+    "runtimeMinutes": 90
+  }
+}

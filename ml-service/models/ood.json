@@ -1,0 +1,13 @@
+{
+  "format": "nusamind-ood-v1",
+  "threshold": 0.8455,
+  "metrics": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "rows": 1575,
+    "groups": 525,
+    "labels": 15,
+    "group_leakage": 0,
+    "train_seconds": 8.874
+  }
+}

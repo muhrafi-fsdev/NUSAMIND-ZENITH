@@ -1,0 +1,167 @@
+[
+    {
+        "id": "doa_bangun_tidur",
+        "title": "Doa Bangun Tidur",
+        "category": "Pagi & Petang",
+        "context": "Dibaca ketika baru bangun dari tidur di pagi hari.",
+        "arabic": "اَلْحَمْدُ ِللهِ الَّذِى أَحْيَانَا بَعْدَمَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ",
+        "latin": "Alhamdullillahilladzi ahyaanaa bada maa amaatanaa wa ilaihin nushur.",
+        "translation": "Segala puji bagi Allah yang telah menghidupkan kami sesudah kami mati, dan hanya kepada-Nya kami dikembalikan.",
+        "source": "HR. Bukhari",
+        "tags": ["pagi", "tidur", "bangun"]
+    },
+    {
+        "id": "doa_sebelum_tidur",
+        "title": "Doa Sebelum Tidur",
+        "category": "Pagi & Petang",
+        "context": "Dibaca sebelum memejamkan mata untuk tidur malam.",
+        "arabic": "بِاسْمِكَ اللَّهُمَّ أَحْيَا وَبِاسْمِكَ أَمُوتُ",
+        "latin": "Bismikallahumma ahyaa wa bismika amuut.",
+        "translation": "Dengan nama-Mu ya Allah aku hidup, dan dengan nama-Mu aku mati.",
+        "source": "HR. Bukhari & Muslim",
+        "tags": ["malam", "tidur", "sebelum"]
+    },
+    {
+        "id": "doa_sebelum_makan",
+        "title": "Doa Sebelum Makan",
+        "category": "Sehari-hari",
+        "context": "Dibaca sebelum menyantap makanan atau minuman.",
+        "arabic": "اللَّهُمَّ بَارِكْ لَنَا فِيمَا رَزَقْتَنَا وَقِنَا عَذَابَ النَّارِ",
+        "latin": "Allahumma baarik lanaa fiimaa rozaqtanaa wa qinaa 'adzaaban naar.",
+        "translation": "Ya Allah, berkahilah kami dalam rezeki yang telah Engkau berikan kepada kami dan peliharalah kami dari siksa api neraka.",
+        "source": "HR. Malik",
+        "tags": ["makan", "minum", "rezeki"]
+    },
+    {
+        "id": "doa_sesudah_makan",
+        "title": "Doa Sesudah Makan",
+        "category": "Sehari-hari",
+        "context": "Dibaca setelah selesai makan.",
+        "arabic": "الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مُسْلِمِينَ",
+        "latin": "Alhamdulillahilladzi ath'amanaa wa saqoonaa wa ja'alanaa muslimiin.",
+        "translation": "Segala puji bagi Allah yang telah memberi kami makan dan minum, serta menjadikan kami termasuk golongan orang muslim.",
+        "source": "HR. Abu Dawud",
+        "tags": ["makan", "minum", "syukur"]
+    },
+    {
+        "id": "doa_masuk_wc",
+        "title": "Doa Masuk Kamar Mandi",
+        "category": "Sehari-hari",
+        "context": "Dibaca sebelum melangkahkan kaki (kiri) masuk ke kamar mandi/WC.",
+        "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ",
+        "latin": "Allahumma innii a'uudzubika minal khubutsi wal khobaaitsi.",
+        "translation": "Ya Allah, sesungguhnya aku berlindung kepada-Mu dari godaan setan laki-laki dan setan perempuan.",
+        "source": "HR. Bukhari & Muslim",
+        "tags": ["wc", "kamar mandi", "toilet", "masuk"]
+    },
+    {
+        "id": "doa_keluar_wc",
+        "title": "Doa Keluar Kamar Mandi",
+        "category": "Sehari-hari",
+        "context": "Dibaca setelah keluar dari kamar mandi/WC dengan melangkahkan kaki kanan.",
+        "arabic": "غُفْرَانَكَ",
+        "latin": "Ghuufraanaka.",
+        "translation": "Aku memohon ampunan-Mu.",
+        "source": "HR. Abu Dawud & Tirmidzi",
+        "tags": ["wc", "kamar mandi", "toilet", "keluar"]
+    },
+    {
+        "id": "doa_masuk_rumah",
+        "title": "Doa Masuk Rumah",
+        "category": "Sehari-hari",
+        "context": "Dibaca ketika hendak memasuki rumah.",
+        "arabic": "بِسْمِ اللَّهِ وَلَجْنَا وَبِسْمِ اللَّهِ خَرَجْنَا وَعَلَى رَبِّنَا تَوَكَّلْنَا",
+        "latin": "Bismillahi walajnaa wa bismillahi khorojnaa wa 'alaa robbinaa tawakkalnaa.",
+        "translation": "Dengan nama Allah kami masuk, dan dengan nama Allah kami keluar, dan hanya kepada Tuhan kami, kami bertawakkal.",
+        "source": "HR. Abu Dawud",
+        "tags": ["rumah", "masuk", "keluarga"]
+    },
+    {
+        "id": "doa_keluar_rumah",
+        "title": "Doa Keluar Rumah",
+        "category": "Sehari-hari",
+        "context": "Dibaca ketika melangkah keluar dari rumah.",
+        "arabic": "بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
+        "latin": "Bismillahi tawakkaltu 'alallahi laa hawla wa laa quwwata illaa billaah.",
+        "translation": "Dengan nama Allah aku bertawakkal kepada Allah, tiada daya dan kekuatan melainkan dengan pertolongan Allah.",
+        "source": "HR. Abu Dawud & Tirmidzi",
+        "tags": ["rumah", "keluar", "pergian", "perlindungan"]
+    },
+    {
+        "id": "doa_naik_kendaraan",
+        "title": "Doa Naik Kendaraan",
+        "category": "Sehari-hari",
+        "context": "Dibaca sesaat setelah duduk di atas kendaraan.",
+        "arabic": "سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ",
+        "latin": "Subhaanal-ladzii sakh-khoro lanaa haadzaa wa maa kunnaa lahuu muqriniin, wa innaa ilaa robbinaa lamunqolibuun.",
+        "translation": "Maha Suci Tuhan yang telah menundukkan semua ini bagi kami padahal kami sebelumnya tidak mampu menguasainya, dan sesungguhnya kami akan kembali kepada Tuhan kami.",
+        "source": "QS. Az-Zukhruf: 13-14",
+        "tags": ["kendaraan", "safar", "perjalanan", "mobil", "motor"]
+    },
+    {
+        "id": "doa_masuk_masjid",
+        "title": "Doa Masuk Masjid",
+        "category": "Ibadah",
+        "context": "Dibaca ketika melangkahkan kaki kanan memasuki masjid.",
+        "arabic": "اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ",
+        "latin": "Allahummaf-tahlii abwaaba rohmatik.",
+        "translation": "Ya Allah, bukakanlah untukku pintu-pintu rahmat-Mu.",
+        "source": "HR. Muslim",
+        "tags": ["masjid", "masuk", "ibadah", "rahmat"]
+    },
+    {
+        "id": "doa_keluar_masjid",
+        "title": "Doa Keluar Masjid",
+        "category": "Ibadah",
+        "context": "Dibaca ketika melangkahkan kaki kiri keluar dari masjid.",
+        "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ",
+        "latin": "Allahumma innii as-aluka min fadhlika.",
+        "translation": "Ya Allah, sesungguhnya aku memohon karunia-Mu.",
+        "source": "HR. Muslim",
+        "tags": ["masjid", "keluar", "ibadah", "karunia"]
+    },
+    {
+        "id": "doa_setelah_wudhu",
+        "title": "Doa Setelah Wudhu",
+        "category": "Ibadah",
+        "context": "Dibaca setelah selesai menyempurnakan wudhu.",
+        "arabic": "أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ، اللَّهُمَّ اجْعَلْنِي مِنَ التَّوَّابِينَ وَاجْعَلْنِي مِنَ الْمُتَطَهِّرِينَ",
+        "latin": "Asyhadu an laa ilaaha illallahu wahdahu laa syariikalahu wa asyhadu anna muhammadan 'abduhu wa rasuuluhu, allahummaj'alnii minat-tawwaabiina waj'alnii minal-mutathahhiriin.",
+        "translation": "Aku bersaksi bahwa tiada tuhan melainkan Allah yang Maha Esa, tiada sekutu bagi-Nya. Dan aku bersaksi bahwa Muhammad adalah hamba dan utusan-Nya. Ya Allah, jadikanlah aku termasuk orang-orang yang bertobat dan jadikanlah aku termasuk orang-orang yang menyucikan diri.",
+        "source": "HR. Tirmidzi",
+        "tags": ["wudhu", "suci", "ibadah", "bersih"]
+    },
+    {
+        "id": "doa_orang_tua",
+        "title": "Doa Untuk Kedua Orang Tua",
+        "category": "Sehari-hari",
+        "context": "Dibaca kapan saja, sering dipanjatkan setelah shalat wajib untuk memohonkan ampunan bagi orang tua.",
+        "arabic": "رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا",
+        "latin": "Rabbighfir lii wa liwaalidayya warhamhumaa kamaa rabbayaanii shaghiiraa.",
+        "translation": "Ya Tuhanku, ampunilah aku dan kedua orang tuaku, dan sayangilah keduanya sebagaimana mereka menyayangiku di waktu kecil.",
+        "source": "Al-Quran & Hadits",
+        "tags": ["orang tua", "ibu", "ayah", "ampunan", "kasih sayang"]
+    },
+    {
+        "id": "doa_ilmu_manfaat",
+        "title": "Doa Mohon Ilmu yang Bermanfaat",
+        "category": "Pagi & Petang",
+        "context": "Dibaca pada pagi hari setelah subuh untuk memohon keberkahan ilmu dan rezeki.",
+        "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلًا مُتَقَبَّلًا",
+        "latin": "Allahumma innii as-aluka 'ilman naafi'an, wa rizqon thoyyiban, wa 'amalan mutaqobbalan.",
+        "translation": "Ya Allah, sesungguhnya aku memohon kepada-Mu ilmu yang bermanfaat, rezeki yang baik, dan amalan yang diterima.",
+        "source": "HR. Ibnu Majah",
+        "tags": ["pagi", "ilmu", "belajar", "rezeki", "amal"]
+    },
+    {
+        "id": "doa_kebaikan_dunia_akhirat",
+        "title": "Doa Sapu Jagat",
+        "category": "Al-Quran",
+        "context": "Doa yang mencakup segala kebaikan di dunia dan perlindungan di akhirat. Sering dibaca saat thawaf atau menutup doa.",
+        "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+        "latin": "Robbanaa aatinaa fid-dunyaa hasanatan wa fil-aakhiroti hasanatan wa qinaa 'adzaaban-naar.",
+        "translation": "Ya Tuhan kami, berikanlah kami kebaikan di dunia dan kebaikan di akhirat, dan lindungilah kami dari siksa neraka.",
+        "source": "QS. Al-Baqarah: 201",
+        "tags": ["kebaikan", "dunia", "akhirat", "sapu jagat", "neraka"]
+    }
+]

@@ -1,0 +1,59 @@
+{
+  "release": "R13.49",
+  "edition": "zenith",
+  "status": "PASSED",
+  "upgradeItems": 53,
+  "topCategories": 922,
+  "topCategoryBoost": 500,
+  "allTopCategoriesRaised": true,
+  "ui": {
+    "changed": false,
+    "checksumFiles": 5,
+    "mismatch": []
+  },
+  "jsonNaming": {
+    "standard": "simple-kebab-case",
+    "maxStem": 24,
+    "files": 304,
+    "invalid": [],
+    "parseErrors": []
+  },
+  "validation": {
+    "npmCi": true,
+    "typescript": true,
+    "nextBuild": true,
+    "runtimeApi": true,
+    "executableBenchmark": {
+      "passed": 33,
+      "total": 33
+    },
+    "zipIntegrity": "PENDING"
+  },
+  "cleanup": {
+    "nodeModulesExcluded": true,
+    "nextBuildExcluded": true,
+    "pythonVenvExcluded": true,
+    "browserCachesExcluded": true,
+    "runtimeStorageExcluded": true,
+    "obsoleteR1348ReleaseScriptsRemoved": true,
+    "trash": []
+  },
+  "scope": {
+    "n8nActive": false,
+    "n8nPostponed": true,
+    "mainUiChanged": false
+  },
+  "truthfulness": {
+    "liveExternalModelBenchmark": "NOT_RUN",
+    "browserEngine": "POLICY_AND_OFFLINE_BENCHMARK_ONLY",
+    "developerDashboard": "PROTOTYPE",
+    "rawChainOfThoughtStored": false
+  },
+  "features": {
+    "skillsRuntime": "ACTIVE",
+    "modelGateway": "ACTIVE",
+    "engineeringAgent": "BENCHMARKED",
+    "secureBrowserOperator": "BENCHMARKED",
+    "parallelRepositoryAnalysis": "DISABLED"
+  }
+}

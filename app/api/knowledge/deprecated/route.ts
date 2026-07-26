@@ -1,0 +1,1 @@
+import { getDeprecatedKnowledge } from '@/lib/knowledge-center'; export const runtime='nodejs'; export const dynamic='force-dynamic'; export async function GET(req:Request){const url=new URL(req.url);return Response.json(getDeprecatedKnowledge(Number(url.searchParams.get('limit')||50)));}

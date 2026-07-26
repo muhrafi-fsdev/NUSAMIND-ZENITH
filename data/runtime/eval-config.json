@@ -1,0 +1,12 @@
+{
+  "release": "R13.47",
+  "executableOnly": true,
+  "criticalFailureBlocksRelease": true,
+  "judgeCanOverrideSafety": false,
+  "canaryStatistics": true,
+  "paretoMetrics": [
+    "quality",
+    "cost",
+    "latency"
+  ]
+}

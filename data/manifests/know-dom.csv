@@ -1,0 +1,21 @@
+﻿domain_id,domain_name,example_subdomains,stability_class,source_priority,swift_depth,zenith_depth,apex_depth,high_stakes,review_frequency
+general,Pengetahuan Umum,geografi; sejarah; budaya; lingkungan; transportasi,moderate,encyclopedia; official institutions; academic,foundational,intermediate,advanced,No,12 months
+indonesia,Pengetahuan Indonesia,pendidikan; administrasi; industri; perusahaan; istilah lokal,moderate,official Indonesian sources; institutions,foundational,advanced standard,expert,Conditional,3-6 months
+education,Pendidikan dan Akademik,belajar; kurikulum; penulisan; metodologi penelitian,moderate,textbooks; academic; official education,beginner,advanced,research,No,6-12 months
+mathematics,Matematika,aritmetika; aljabar; kalkulus; diskrit; optimasi,stable,textbooks; verified formulas,intermediate-light,advanced,expert/research,No,24 months
+statistics,Statistik dan Probabilitas,Bayes; distribusi; inferensi; evaluasi model,stable,textbooks; standards; papers,basic,advanced standard,expert,Conditional,12-24 months
+science,Sains,fisika; kimia; biologi; lingkungan,stable,textbooks; papers; official science,basic,advanced standard,expert,Conditional,12 months
+technology,Teknologi Umum,OS; hardware; cloud; software; devices,fast,official docs; vendors; standards,basic,advanced standard,expert,Conditional,1-3 months
+coding,Coding dan Software Engineering,languages; frameworks; APIs; testing; architecture,fast,official docs; source repos; standards,basic,project standard,expert repo,Conditional,1-3 months
+networking,Jaringan Komputer,IP; routing; switching; Wi-Fi; security,moderate,RFC; vendors; textbooks,basic,advanced standard,expert,Conditional,3-6 months
+telecom,Telekomunikasi,RF; fiber; modulation; link budget; microwave,moderate,standards; textbooks; papers,basic,advanced standard,expert,Conditional,6-12 months
+iot,Internet of Things,ESP32; sensor; protocols; edge; dashboard,moderate,official docs; datasheets; standards,basic,project standard,expert,Conditional,3-6 months
+data_engineering,Data Engineering,ETL; warehouse; bronze/silver/gold; Airflow; Snowflake,fast,official docs; architecture guides,basic,advanced standard,expert,Conditional,1-3 months
+ai_data,AI dan Data,ML; DL; NLP; RAG; embeddings; evaluation,fast,papers; official docs; benchmarks,basic,advanced standard,research,Conditional,1-2 months
+business,Bisnis dan Manajemen,UMKM; operasi; risiko; administrasi; strategy,moderate,official; academic; company docs,basic,advanced standard,expert,Conditional,3-6 months
+finance,Keuangan dan Akuntansi,laporan; margin; investasi umum; pajak umum,fast,regulators; standards; official data,basic,operational,expert,Yes,1-3 months
+insurance,Asuransi,produk; polis; klaim; underwriting; reserve; reinsurance,fast,regulator; official policy; internal verified,basic,service desk,expert/supervisor,Yes,1-3 months
+religion,Agama dan Al-Qur'an,tafsir; hadis; fikih; akidah; sejarah; akhlak,stable/moderate,canonical text; verified scholarship,basic,contextual,research,Yes,6-12 months
+customer_service,Customer Service,intent; complaint; SLA; de-escalation; ticket,moderate,SOP; official product/service docs,FAQ,operational,supervisor,Yes,3-6 months
+everyday,Kebutuhan Sehari-hari,Windows; Office; Wi-Fi; printer; email; magang,moderate,official docs; verified workflows,quick help,full daily help,expert diagnosis,Conditional,3-6 months
+user_projects,Project Pengguna,NusaMind; SheetFormula; KIRA; IoT; FTTH,project-based,uploaded/project sources,summary,project standard,expert,Private,on change

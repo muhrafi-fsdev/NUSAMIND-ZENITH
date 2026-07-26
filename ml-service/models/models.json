@@ -1,0 +1,19 @@
+{
+  "format": "nusamind-model-registry-v2",
+  "release": "R13.45",
+  "edition": "zenith",
+  "model": "intent.joblib",
+  "checksum": "bc45f7529851d55b213f791204d5fbd1a562e442ce446fed8b41e712567ce2ab",
+  "metrics": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "rows": 1575,
+    "groups": 525,
+    "labels": 15,
+    "group_leakage": 0,
+    "train_seconds": 8.874
+  },
+  "ood_threshold": 0.8455,
+  "status": "active",
+  "trained_at": "2026-07-15T08:42:13Z"
+}

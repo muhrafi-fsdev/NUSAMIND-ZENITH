@@ -1,0 +1,162 @@
+[
+  {
+    "path_order": "1",
+    "target_path": "apps/web",
+    "responsibility": "Next.js web UI and API adapters",
+    "migrated_from": "app/*",
+    "dependency_rule": "May import packages, not services internals",
+    "release_requirement": "UI regression must pass"
+  },
+  {
+    "path_order": "2",
+    "target_path": "apps/cli",
+    "responsibility": "CLI entry point and presentation",
+    "migrated_from": "CLI root modules",
+    "dependency_rule": "May import packages only",
+    "release_requirement": "Existing commands remain compatible"
+  },
+  {
+    "path_order": "3",
+    "target_path": "services/ml",
+    "responsibility": "Python ML runtime",
+    "migrated_from": "ml-service/*",
+    "dependency_rule": "Contract API only",
+    "release_requirement": "Health and contract tests pass"
+  },
+  {
+    "path_order": "4",
+    "target_path": "services/embeddings",
+    "responsibility": "Embedding runtime",
+    "migrated_from": "embedding utilities",
+    "dependency_rule": "No UI imports",
+    "release_requirement": "Model/index compatibility passes"
+  },
+  {
+    "path_order": "5",
+    "target_path": "services/vision",
+    "responsibility": "Vision and multimodal runtime",
+    "migrated_from": "vision utilities",
+    "dependency_rule": "No direct database coupling",
+    "release_requirement": "Vision profile required"
+  },
+  {
+    "path_order": "6",
+    "target_path": "packages/agent-core",
+    "responsibility": "Planner, executor, state, recovery, reflection",
+    "migrated_from": "lib/agent*",
+    "dependency_rule": "Must not import apps",
+    "release_requirement": "Agent benchmark passes"
+  },
+  {
+    "path_order": "7",
+    "target_path": "packages/knowledge-graph",
+    "responsibility": "Capability nodes, edges, readiness and traversal",
+    "migrated_from": "capability checker files",
+    "dependency_rule": "No UI imports",
+    "release_requirement": "Graph integrity gate passes"
+  },
+  {
+    "path_order": "8",
+    "target_path": "packages/retrieval",
+    "responsibility": "Classical, Graph, Agentic RAG and verifier",
+    "migrated_from": "lib/retrieval*",
+    "dependency_rule": "Shared evidence schema",
+    "release_requirement": "Retrieval benchmarks pass"
+  },
+  {
+    "path_order": "9",
+    "target_path": "packages/memory",
+    "responsibility": "Memory types, privacy, freshness and retrieval",
+    "migrated_from": "memory modules",
+    "dependency_rule": "Workspace isolation required",
+    "release_requirement": "Memory privacy tests pass"
+  },
+  {
+    "path_order": "10",
+    "target_path": "packages/tools",
+    "responsibility": "Registry, contracts, selector, debugger and verifier",
+    "migrated_from": "tool modules",
+    "dependency_rule": "All side effects audited",
+    "release_requirement": "False success equals zero"
+  },
+  {
+    "path_order": "11",
+    "target_path": "packages/prompts",
+    "responsibility": "Prompt registry, compiler and lifecycle",
+    "migrated_from": "prompt files",
+    "dependency_rule": "No unversioned prompt",
+    "release_requirement": "Prompt gate passes"
+  },
+  {
+    "path_order": "12",
+    "target_path": "packages/model-adapters",
+    "responsibility": "Qwen, embedding and vision profiles",
+    "migrated_from": "model configs",
+    "dependency_rule": "Versioned adapters only",
+    "release_requirement": "Profile freshness passes"
+  },
+  {
+    "path_order": "13",
+    "target_path": "packages/context-engine",
+    "responsibility": "Token budget, packing, compression and freshness",
+    "migrated_from": "context files",
+    "dependency_rule": "No character-only limits",
+    "release_requirement": "Context benchmark passes"
+  },
+  {
+    "path_order": "14",
+    "target_path": "packages/governance",
+    "responsibility": "Policy, confidence, permissions, privacy and fallback",
+    "migrated_from": "policy files",
+    "dependency_rule": "Cannot be bypassed",
+    "release_requirement": "Governance gate passes"
+  },
+  {
+    "path_order": "15",
+    "target_path": "packages/evaluation",
+    "responsibility": "Evaluators, regressions, feedback and reports",
+    "migrated_from": "evaluation scripts",
+    "dependency_rule": "Critical gates supported",
+    "release_requirement": "Evaluation agreement passes"
+  },
+  {
+    "path_order": "16",
+    "target_path": "packages/observability",
+    "responsibility": "Audit, metrics, resources and decisions",
+    "migrated_from": "logs/metrics utilities",
+    "dependency_rule": "Redaction required",
+    "release_requirement": "Audit completeness passes"
+  },
+  {
+    "path_order": "17",
+    "target_path": "packages/security",
+    "responsibility": "Injection, secrets, path and artifact security",
+    "migrated_from": "security files",
+    "dependency_rule": "Independent from model output",
+    "release_requirement": "Security suite passes"
+  },
+  {
+    "path_order": "18",
+    "target_path": "data",
+    "responsibility": "Knowledge, indexes, registries, evaluation and packs",
+    "migrated_from": "data/*",
+    "dependency_rule": "No executable code in data packs",
+    "release_requirement": "Manifest/checksum required"
+  },
+  {
+    "path_order": "19",
+    "target_path": "tests",
+    "responsibility": "Unit, integration, executable, security and regression",
+    "migrated_from": "scattered tests",
+    "dependency_rule": "Tests mirror packages",
+    "release_requirement": "Critical coverage required"
+  },
+  {
+    "path_order": "20",
+    "target_path": "logs/storage/docs/scripts",
+    "responsibility": "Operational artifacts, documentation and automation",
+    "migrated_from": "root files",
+    "dependency_rule": "No secrets in repository",
+    "release_requirement": "Clean structure gate passes"
+  }
+]

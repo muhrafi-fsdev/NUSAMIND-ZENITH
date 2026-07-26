@@ -1,0 +1,11 @@
+﻿strategy_id,strategy_name,best_for,avoid_when,swift_support,zenith_support,apex_support,required_verification,reference_source
+PS-DIRECT,Direct Response,Simple known or deterministic task,Complex multi-source task,Full,Full,Full,Output validation,https://www.promptingguide.ai/prompts
+PS-ZERO,Zero-Shot,Clear simple instruction,Ambiguous format-sensitive task,Full,Full,Full,Task outcome check,https://www.promptingguide.ai/prompts
+PS-FEW,Few-Shot,"Classification, extraction, formatting",Bad or expensive examples,Limited,Full,Full,Example relevance and schema,https://www.promptingguide.ai/prompts
+PS-CHAIN,Prompt Chaining,Long documents and multi-stage tasks,Single-step task,No,Full,Full,Stage contracts and final verifier,https://www.promptingguide.ai/research
+PS-PROGRAM,Program-Aided,"Math, parsing, deterministic work",Creative or subjective task,Full,Full,Full,Deterministic verifier,https://www.promptingguide.ai/research
+PS-RAG,Retrieval-Augmented,Factual/current/private documents,No trusted evidence,Full,Full,Full,Faithfulness and citation verifier,https://www.promptingguide.ai/research/rag
+PS-REACT,ReAct-Style,Bounded tool tasks,No tools or uncontrolled high risk,No,Full,Full,Expected-state and step budget,https://arxiv.org/abs/2210.03629
+PS-SELFCONS,Limited Self-Consistency,Reasoning with verifiable outcome,No verifier or high cost,No,Limited,Full,Agreement plus external verifier,https://www.promptingguide.ai/research
+PS-TREE,Tree Search,Bounded planning alternatives,Simple task or weak evaluator,No,No,Limited,Branch budget and verifier,https://www.promptingguide.ai/research
+PS-GRAPH,Graph Reasoning,"Entity, claim, dependency relationships",No graph structure,No,Limited,Full,Graph consistency and lineage,https://www.promptingguide.ai/research

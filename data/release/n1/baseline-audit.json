@@ -1,0 +1,122 @@
+[
+  {
+    "audit_id": "BASE-001",
+    "project_evidence": "package.json version",
+    "observed_value": "13.49.1",
+    "n1_0_required_change": "Set package semver to 1.0.0 and display release to N1.0.",
+    "priority": "Critical",
+    "source_file_or_scan": "package.json"
+  },
+  {
+    "audit_id": "BASE-002",
+    "project_evidence": "package.json description",
+    "observed_value": "NusaMind Apex R13.49.1 — defensive cybersecurity intelligence patch. Windows desktop/EXE update cancelled. Main UI unchanged.",
+    "n1_0_required_change": "Rename to NusaMind N1.0; preserve Windows EXE cancelled and main UI unchanged statements.",
+    "priority": "High",
+    "source_file_or_scan": "package.json"
+  },
+  {
+    "audit_id": "BASE-003",
+    "project_evidence": "release.ts identity",
+    "observed_value": "export const RELEASE = Object.freeze({ version: '13.49.1', label: 'R13.49.1', edition: 'apex', legacyEdition: 'max', name: 'NusaMind Apex', cli: 'Apex Nexus CLI' } as const);\nexport type ReleaseInfo = typeof RELEASE;",
+    "n1_0_required_change": "Canonical RELEASE = version 1.0.0, label N1.0, edition apex.",
+    "priority": "Critical",
+    "source_file_or_scan": "lib/release.ts"
+  },
+  {
+    "audit_id": "BASE-004",
+    "project_evidence": "runtime edition profile identity",
+    "observed_value": "13.49.0 / R13.49",
+    "n1_0_required_change": "Remove version drift and nested active v13 blocks; use N1 schema.",
+    "priority": "Critical",
+    "source_file_or_scan": "data/runtime/edition-profile.json"
+  },
+  {
+    "audit_id": "BASE-005",
+    "project_evidence": "capability manifest identity",
+    "observed_value": "R13.45",
+    "n1_0_required_change": "Regenerate from N1.0 canonical release manifest.",
+    "priority": "Critical",
+    "source_file_or_scan": "data/manifests/capability-manifest.json"
+  },
+  {
+    "audit_id": "BASE-006",
+    "project_evidence": "runtime distribution",
+    "observed_value": "Next.js Web local on port 3000 plus CLI; Windows EXE explicitly cancelled",
+    "n1_0_required_change": "Keep Web + CLI only; remove all EXE roadmap/artifact claims.",
+    "priority": "Critical",
+    "source_file_or_scan": "package.json, README.md, check/gate scripts"
+  },
+  {
+    "audit_id": "BASE-007",
+    "project_evidence": "versioned API route files",
+    "observed_value": "23",
+    "n1_0_required_change": "Move stable behavior to /api/core and N1 status to /api/n1; keep temporary thin adapters.",
+    "priority": "Critical",
+    "source_file_or_scan": "ZIP path scan app/api/v*/route.ts"
+  },
+  {
+    "audit_id": "BASE-008",
+    "project_evidence": "archive entry count",
+    "observed_value": "1487",
+    "n1_0_required_change": "Run duplicate/generated/junk audit before N1.0 distribution.",
+    "priority": "High",
+    "source_file_or_scan": "ZIP central directory"
+  },
+  {
+    "audit_id": "BASE-009",
+    "project_evidence": "legacy R13 textual references",
+    "observed_value": "3034",
+    "n1_0_required_change": "Classify active vs historical; active references migrate to N1.0.",
+    "priority": "High",
+    "source_file_or_scan": "Text-file scan"
+  },
+  {
+    "audit_id": "BASE-010",
+    "project_evidence": "legacy V13 textual references",
+    "observed_value": "675316",
+    "n1_0_required_change": "Preserve only historical datasets; remove active release naming.",
+    "priority": "High",
+    "source_file_or_scan": "Text-file scan"
+  },
+  {
+    "audit_id": "BASE-011",
+    "project_evidence": "13.49.1 textual references",
+    "observed_value": "1047",
+    "n1_0_required_change": "Migrate active references and retain lineage metadata.",
+    "priority": "High",
+    "source_file_or_scan": "Text-file scan"
+  },
+  {
+    "audit_id": "BASE-012",
+    "project_evidence": "n8n textual references",
+    "observed_value": "41",
+    "n1_0_required_change": "Ensure every occurrence is historical/postponed; no runtime capability.",
+    "priority": "Critical",
+    "source_file_or_scan": "Text-file scan"
+  },
+  {
+    "audit_id": "BASE-013",
+    "project_evidence": "localhost:3000 references",
+    "observed_value": "6",
+    "n1_0_required_change": "Keep local Web runtime; centralize base URL config and health checks.",
+    "priority": "Medium",
+    "source_file_or_scan": "Text-file scan"
+  },
+  {
+    "audit_id": "BASE-014",
+    "project_evidence": "Node engine",
+    "observed_value": ">=22.0.0",
+    "n1_0_required_change": "Preserve explicit runtime requirement and clean-install test.",
+    "priority": "High",
+    "source_file_or_scan": "package.json"
+  },
+  {
+    "audit_id": "BASE-015",
+    "project_evidence": "current release scripts",
+    "observed_value": "check:13.49.1, benchmark:13.49.1, release:13.49.1, gate-r13.49.1",
+    "n1_0_required_change": "Rename to check:n1, benchmark:n1, release:n1, gate-n1.",
+    "priority": "Critical",
+    "source_file_or_scan": "package.json scripts"
+  }
+]

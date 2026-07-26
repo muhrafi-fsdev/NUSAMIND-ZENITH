@@ -1,0 +1,50 @@
+{
+  "release": "R13.47",
+  "edition": "zenith",
+  "status": "PASSED",
+  "upgradeItems": 54,
+  "topCategories": 790,
+  "topCategoryBoost": 285,
+  "topCategoryMinDelta": 285,
+  "allTopCategoriesRaised": true,
+  "ui": {
+    "changed": false,
+    "checksumFiles": 5,
+    "mismatch": []
+  },
+  "jsonNaming": {
+    "standard": "simple-kebab-case",
+    "maxStem": 24,
+    "files": 277,
+    "invalid": [],
+    "renamed": [
+      "data/knowledge/finance-network-v2.json -> data/knowledge/finance-network.json",
+      "data/runtime/evaluation-v2.json -> data/runtime/evaluation.json",
+      "data/runtime/source-registry-v2.json -> data/runtime/source-policy.json"
+    ]
+  },
+  "validation": {
+    "npmCi": true,
+    "typescript": true,
+    "nextBuild": true,
+    "executableBenchmark": {
+      "passed": 19,
+      "total": 19
+    },
+    "releaseGate": true,
+    "zipIntegrity": "PASSED"
+  },
+  "cleanup": {
+    "nodeModulesExcluded": true,
+    "nextBuildExcluded": true,
+    "runtimeStorageExcluded": true,
+    "oldR1346ReleaseScriptsRemoved": true,
+    "cacheAndTempExcluded": true
+  },
+  "truthfulness": {
+    "externalEvidenceInstructionAuthority": "none",
+    "rawChainOfThoughtStored": false,
+    "qwenLiveProfile": "NOT_RUN",
+    "multimodalLiveModel": "PROTOTYPE"
+  }
+}

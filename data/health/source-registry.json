@@ -1,0 +1,11 @@
+{
+  "hierarchy": [
+    "emergency guidance",
+    "regulator",
+    "clinical guideline",
+    "systematic review",
+    "peer-reviewed study",
+    "expert consensus"
+  ],
+  "freshnessRequired": true
+}

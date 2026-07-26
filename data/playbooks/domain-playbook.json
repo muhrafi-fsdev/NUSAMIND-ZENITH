@@ -1,0 +1,374 @@
+[
+  {
+    "id": "playbook_nextjs_blank_page",
+    "title": "Next.js Blank Putih / Hydration Error",
+    "category": "Coding Debugging",
+    "symptoms": [
+      "Halaman blank putih",
+      "Console error hydration",
+      "Build sukses tapi UI kosong",
+      "Komponen client tidak jalan"
+    ],
+    "diagnosis": [
+      "Cek console browser dan terminal Next.js",
+      "Pastikan komponen yang memakai localStorage/window diberi use client",
+      "Cek import path dan komponen default export",
+      "Cek error runtime setelah hydration"
+    ],
+    "fixes": [
+      "Pisahkan komponen client dan server",
+      "Gunakan useEffect untuk akses window/localStorage",
+      "Bersihkan cache .next lalu npm run dev ulang",
+      "Tambahkan fallback loading dan error boundary"
+    ],
+    "keywords": [
+      "nextjs",
+      "blank putih",
+      "hydration",
+      "use client",
+      "react",
+      "app router"
+    ]
+  },
+  {
+    "id": "playbook_npm_install_error",
+    "title": "NPM Install Error",
+    "category": "Coding Debugging",
+    "symptoms": [
+      "npm install gagal",
+      "ERESOLVE dependency conflict",
+      "package not found",
+      "node version mismatch"
+    ],
+    "diagnosis": [
+      "Cek node -v dan npm -v",
+      "Cek package.json engines",
+      "Cek lockfile yang konflik",
+      "Cek internet/proxy/registry"
+    ],
+    "fixes": [
+      "Gunakan Node.js 22+ untuk project AI SDK terbaru",
+      "Hapus node_modules dan package-lock jika perlu",
+      "Jalankan npm cache verify",
+      "Gunakan npm install --legacy-peer-deps hanya jika paham risikonya"
+    ],
+    "keywords": [
+      "npm",
+      "node",
+      "dependency",
+      "package-lock",
+      "ERESOLVE"
+    ]
+  },
+  {
+    "id": "playbook_ollama_not_connected",
+    "title": "Ollama Tidak Terhubung",
+    "category": "Local AI",
+    "symptoms": [
+      "AI error connect ECONNREFUSED",
+      "Ollama status false",
+      "Model tidak ditemukan",
+      "Chat tidak menjawab"
+    ],
+    "diagnosis": [
+      "Cek ollama serve aktif",
+      "Buka http://localhost:11434/api/tags",
+      "Cek OLLAMA_BASE_URL di .env.local",
+      "Cek model qwen2.5:7b sudah dipull"
+    ],
+    "fixes": [
+      "Jalankan ollama serve di terminal terpisah",
+      "Jalankan ollama pull qwen2.5:7b",
+      "Restart npm run dev setelah env berubah",
+      "Gunakan fallback JSON endpoint untuk diagnosis"
+    ],
+    "keywords": [
+      "ollama",
+      "local ai",
+      "qwen",
+      "localhost 11434",
+      "offline"
+    ]
+  },
+  {
+    "id": "playbook_laragon_php_next_migration",
+    "title": "Migrasi Laragon PHP ke Next.js",
+    "category": "Fullstack Architecture",
+    "symptoms": [
+      "Project lama PHP/HTML ingin jadi Next.js",
+      "Frontend dan backend tercampur",
+      "API key sempat ditaruh frontend",
+      "Sulit deploy modern"
+    ],
+    "diagnosis": [
+      "Pisahkan UI, API, data, storage, dan model provider",
+      "Petakan endpoint lama ke route Next.js",
+      "Pindahkan secret ke .env.local",
+      "Pastikan storage lokal tidak ikut deploy publik"
+    ],
+    "fixes": [
+      "Gunakan app/api/* sebagai backend",
+      "Gunakan data/*.json untuk RAG lokal",
+      "Gunakan storage untuk session/memory/log",
+      "Tambahkan Docker jika mau deploy server"
+    ],
+    "keywords": [
+      "laragon",
+      "php",
+      "nextjs",
+      "migration",
+      "api route"
+    ]
+  },
+  {
+    "id": "playbook_rag_bad_answer",
+    "title": "RAG Jawab Ngawur",
+    "category": "AI Engineering",
+    "symptoms": [
+      "Jawaban tidak nyambung",
+      "AI memaksa konteks Quran untuk pertanyaan umum",
+      "Sumber retrieval tidak relevan",
+      "Jawaban terlalu kaku"
+    ],
+    "diagnosis": [
+      "Cek top-k retrieval",
+      "Cek skor lexical/vector",
+      "Cek intent router",
+      "Cek prompt assembly dan sumber yang masuk context"
+    ],
+    "fixes": [
+      "Perluas language variants",
+      "Tambahkan hybrid retrieval",
+      "Tambah reranker sederhana",
+      "Gunakan guardrail: jangan sebut dataset kecuali ditanya",
+      "Tambah golden evaluation set"
+    ],
+    "keywords": [
+      "rag",
+      "retrieval",
+      "ngawur",
+      "reranking",
+      "golden set",
+      "prompt"
+    ]
+  },
+  {
+    "id": "playbook_quran_guardrails",
+    "title": "Guardrail Quran dan Hukum Agama",
+    "category": "Quran Safety",
+    "symptoms": [
+      "User tanya hukum fikih",
+      "User minta ayat spesifik",
+      "Konteks dataset kurang",
+      "Risiko salah tafsir"
+    ],
+    "diagnosis": [
+      "Bedakan ayat, terjemah, tafsir, nasihat, dan hukum fikih",
+      "Cek sumber lokal tersedia atau tidak",
+      "Cek apakah jawaban perlu kehati-hatian"
+    ],
+    "fixes": [
+      "Jangan mengarang nomor ayat/hadis",
+      "Gunakan frasa hati-hati untuk fikih",
+      "Sarankan cek ustadz/ulama/tafsir terpercaya",
+      "Jawab sebagai penjelasan umum bila data kurang"
+    ],
+    "keywords": [
+      "quran",
+      "tafsir",
+      "fikih",
+      "hukum agama",
+      "guardrails"
+    ]
+  },
+  {
+    "id": "playbook_wifi_unstable",
+    "title": "WiFi Putus Nyambung",
+    "category": "IT Support",
+    "symptoms": [
+      "WiFi putus nyambung",
+      "Ping tinggi",
+      "Internet lambat",
+      "Hanya satu device bermasalah"
+    ],
+    "diagnosis": [
+      "Cek ping gateway",
+      "Cek driver WiFi",
+      "Cek kanal 2.4/5 GHz",
+      "Cek power saving adapter",
+      "Cek router overload"
+    ],
+    "fixes": [
+      "Restart router dan device",
+      "Update driver WiFi",
+      "Matikan power saving adapter",
+      "Gunakan 5 GHz jika jarak dekat",
+      "Ganti DNS hanya setelah masalah koneksi dasar aman"
+    ],
+    "keywords": [
+      "wifi",
+      "jaringan",
+      "putus nyambung",
+      "ping",
+      "router"
+    ]
+  },
+  {
+    "id": "playbook_windows_ram_high",
+    "title": "RAM Windows Tinggi",
+    "category": "Windows Optimization",
+    "symptoms": [
+      "RAM tinggi",
+      "Task Manager tidak jelas",
+      "Laptop terasa berat",
+      "Background app banyak"
+    ],
+    "diagnosis": [
+      "Cek Startup Apps",
+      "Cek browser tab/extensions",
+      "Cek Windows Update/Defender scan",
+      "Cek service vendor laptop"
+    ],
+    "fixes": [
+      "Disable startup yang tidak perlu",
+      "Restart browser dan kurangi tab",
+      "Biarkan update/scan selesai",
+      "Jangan end task proses sistem sembarangan",
+      "Upgrade RAM jika workload berat"
+    ],
+    "keywords": [
+      "windows",
+      "ram",
+      "memory",
+      "task manager",
+      "laptop berat"
+    ]
+  },
+  {
+    "id": "playbook_monitor_external_flicker",
+    "title": "Monitor Eksternal Kedap-kedip",
+    "category": "Hardware Troubleshooting",
+    "symptoms": [
+      "Layar kedap-kedip",
+      "Monitor black screen sesaat",
+      "Game flicker",
+      "Refresh rate tidak stabil"
+    ],
+    "diagnosis": [
+      "Cek kabel HDMI/DP/USB-C",
+      "Cek refresh rate Windows",
+      "Cek VRR/G-Sync/FreeSync",
+      "Cek driver GPU",
+      "Cek power saving"
+    ],
+    "fixes": [
+      "Gunakan kabel berkualitas sesuai bandwidth",
+      "Samakan refresh rate yang stabil",
+      "Matikan VRR sementara untuk test",
+      "Update driver GPU",
+      "Coba port lain"
+    ],
+    "keywords": [
+      "monitor",
+      "flicker",
+      "kedap kedip",
+      "refresh rate",
+      "displayport",
+      "hdmi"
+    ]
+  },
+  {
+    "id": "playbook_academic_report",
+    "title": "Penyusunan Laporan Akademik",
+    "category": "Academic Writing",
+    "symptoms": [
+      "Bingung struktur laporan",
+      "Isi kurang banyak",
+      "Format dosen harus dipertahankan",
+      "Butuh narasi rapi"
+    ],
+    "diagnosis": [
+      "Identifikasi template asli",
+      "Petakan bab/subbab",
+      "Ambil data pengujian dan hasil",
+      "Pisahkan fakta, analisis, dan kesimpulan"
+    ],
+    "fixes": [
+      "Jangan ubah struktur jika diminta",
+      "Isi bagian kosong dengan narasi yang relevan",
+      "Gunakan bahasa formal akademik",
+      "Tambahkan referensi hanya bila jelas sumbernya"
+    ],
+    "keywords": [
+      "laporan",
+      "akademik",
+      "word",
+      "ppt",
+      "bab",
+      "analisis"
+    ]
+  },
+  {
+    "id": "playbook_internship_it",
+    "title": "Magang IT Helpdesk / Tech Service",
+    "category": "Internship",
+    "symptoms": [
+      "Belum dapat task",
+      "Bingung laporan harian",
+      "Takut salah tanya",
+      "Kultur kantor santai"
+    ],
+    "diagnosis": [
+      "Bedakan idle normal dan tidak produktif",
+      "Catat observasi teknis",
+      "Tanya mentor dengan sopan",
+      "Dokumentasikan diskusi dan pembelajaran"
+    ],
+    "fixes": [
+      "Buat logbook singkat setiap hari",
+      "Siapkan pertanyaan ringan tentang jaringan/server/helpdesk",
+      "Jangan memaksa akses area sensitif",
+      "Jaga etika walaupun kantor santai"
+    ],
+    "keywords": [
+      "magang",
+      "internship",
+      "it helpdesk",
+      "logbook",
+      "kantor"
+    ]
+  },
+  {
+    "id": "playbook_iot_esp32",
+    "title": "ESP32 IoT Troubleshooting",
+    "category": "IoT",
+    "symptoms": [
+      "ESP32 tidak connect WiFi",
+      "Sensor tidak stabil",
+      "Relay tidak aktif",
+      "Data tidak masuk dashboard"
+    ],
+    "diagnosis": [
+      "Cek pin wiring dan ground bersama",
+      "Cek serial monitor",
+      "Cek endpoint API",
+      "Cek power supply relay/pump",
+      "Cek kalibrasi sensor"
+    ],
+    "fixes": [
+      "Pisahkan power beban dan mikrokontroler bila perlu",
+      "Tambahkan delay/debounce",
+      "Validasi payload JSON",
+      "Gunakan fail-safe untuk sensor error",
+      "Log data sebelum kirim API"
+    ],
+    "keywords": [
+      "esp32",
+      "iot",
+      "sensor",
+      "relay",
+      "dashboard",
+      "api"
+    ]
+  }
+]

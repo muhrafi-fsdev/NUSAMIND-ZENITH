@@ -1,0 +1,128 @@
+[
+  {
+    "id": "site_identity",
+    "title": "Identitas Al-Quran Nusantara",
+    "category": "Panduan Website",
+    "context": "Al-Quran Nusantara adalah website untuk membaca Al-Quran dengan teks Arab, transliterasi latin, terjemahan Indonesia, daftar surah, pencarian ayat, doa harian, dzikir, jadwal sholat, arah kiblat, mode gelap, dan pengaturan tampilan.",
+    "translation": "Website ini dirancang sebagai sahabat digital untuk membaca dan menemukan rujukan ibadah dari data yang tersedia di dalam project. AI Quran Assistant membantu mencari informasi dari data tersebut, bukan menjadi ustadz atau pemberi fatwa.",
+    "details": "Fitur utama berada di halaman Quran, Surah, Doa, dan Dzikir. AI Assistant tersedia sebagai panel chat lokal yang memakai data website sendiri.",
+    "tags": ["website", "identitas", "fitur", "quran", "doa", "dzikir", "ai assistant"]
+  },
+  {
+    "id": "site_read_quran",
+    "title": "Cara Membaca Quran",
+    "category": "Panduan Website",
+    "context": "Di halaman Quran, pengguna dapat melihat daftar surah dan membuka surah yang ingin dibaca. Halaman surah menampilkan teks Arab, transliterasi latin, dan terjemahan Indonesia.",
+    "translation": "Pengguna dapat memakai tombol salin untuk menyalin ayat, tombol bagikan untuk membagikan link ayat, serta navigasi surah sebelumnya dan berikutnya.",
+    "details": "Pada halaman surah tersedia pengaturan ukuran teks Arab, ukuran teks terjemahan, jarak antar baris, dan mode fokus agar membaca lebih nyaman.",
+    "tags": ["baca quran", "membaca", "surah", "ayat", "teks arab", "transliterasi", "terjemahan"]
+  },
+  {
+    "id": "site_search_ayah",
+    "title": "Cara Mencari Ayat atau Surah",
+    "category": "Panduan Website",
+    "context": "Kolom pencarian di halaman Quran dapat digunakan untuk mengetik nama surah, arti surah, transliterasi, atau kata kunci dalam terjemahan Indonesia.",
+    "translation": "Hasil pencarian dapat membuka halaman surah atau langsung menuju ayat terkait. Contoh pencarian: Al-Fatihah, sabar, rezeki, atau 2:255.",
+    "details": "AI Assistant juga dapat menerima pertanyaan dengan format natural seperti 'ayat tentang sabar', 'Al-Fatihah ayat 5', atau 'ringkas Surah Al-Kahf'.",
+    "tags": ["cari", "pencarian", "surah", "ayat", "search", "2:255", "kata kunci"]
+  },
+  {
+    "id": "site_open_surah",
+    "title": "Cara Membuka Surah",
+    "category": "Panduan Website",
+    "context": "Pada halaman Quran, setiap surah tampil sebagai kartu. Klik kartu surah untuk membuka halaman baca surah.",
+    "translation": "Halaman surah memiliki header berisi nama surah, arti nama, jenis Makkiyah atau Madaniyah, jumlah ayat, dan tombol AI untuk bertanya tentang surah tersebut.",
+    "details": "Setiap ayat juga memiliki tombol AI untuk menjelaskan ayat atau mencari ayat yang bertema dekat.",
+    "tags": ["buka surah", "kartu surah", "halaman surah", "tanya ai", "jelaskan ayat"]
+  },
+  {
+    "id": "site_doa_usage",
+    "title": "Cara Menggunakan Doa Harian",
+    "category": "Panduan Website",
+    "context": "Halaman Doa berisi kumpulan doa harian yang dapat dicari berdasarkan aktivitas atau kebutuhan seperti tidur, makan, rezeki, orang tua, masjid, wudhu, dan perjalanan.",
+    "translation": "Klik kartu doa untuk membuka teks Arab, latin, arti, konteks pembacaan, dan sumber. Tombol salin tersedia untuk menyalin doa.",
+    "details": "AI Assistant dapat membantu mencari doa dengan bahasa natural, misalnya 'doa sebelum tidur dong' atau 'doa sebelum makan'.",
+    "tags": ["doa", "doa harian", "tidur", "makan", "wudhu", "masjid", "salin"]
+  },
+  {
+    "id": "site_dzikir_usage",
+    "title": "Cara Menggunakan Dzikir",
+    "category": "Panduan Website",
+    "context": "Halaman Dzikir menyediakan Dzikir Pagi, Dzikir Petang, dan Dzikir Sesudah Shalat. Bacaan ditampilkan berurutan agar pengguna bisa mengikuti alur dzikir.",
+    "translation": "Beberapa dzikir memiliki jumlah bacaan. Jika jumlah tersedia, website menampilkan penghitung agar bacaan lebih mudah diikuti.",
+    "details": "AI Assistant dapat menjawab pertanyaan seperti 'dzikir pagi apa aja?', 'dzikir petang', atau 'dzikir sesudah shalat' berdasarkan data dzikir yang tersedia.",
+    "tags": ["dzikir", "zikir", "pagi", "petang", "sesudah shalat", "counter", "penghitung"]
+  },
+  {
+    "id": "site_prayer_times",
+    "title": "Cara Jadwal Sholat Bekerja",
+    "category": "Panduan Website",
+    "context": "Halaman Quran menampilkan jadwal sholat harian. Jika pengguna memberi izin lokasi, jadwal diambil berdasarkan lokasi pengguna. Jika lokasi tidak tersedia, website memakai lokasi bawaan Jakarta.",
+    "translation": "Jadwal sholat memakai layanan waktu sholat dan metode Kementerian Agama RI bila tersedia dalam konfigurasi request.",
+    "details": "Jadwal sholat adalah bantuan praktis. Untuk kepastian waktu setempat, ikuti panduan masjid atau otoritas keagamaan daerah masing-masing.",
+    "tags": ["jadwal sholat", "sholat", "subuh", "dzuhur", "ashar", "maghrib", "isya", "lokasi"]
+  },
+  {
+    "id": "site_qibla",
+    "title": "Cara Arah Kiblat Bekerja",
+    "category": "Panduan Website",
+    "context": "Fitur arah kiblat membantu pengguna memperkirakan arah kiblat berdasarkan lokasi perangkat jika izin lokasi tersedia.",
+    "translation": "Arah kiblat bergantung pada akurasi sensor dan lokasi perangkat. Gunakan sebagai bantuan praktis, bukan satu-satunya dasar jika diperlukan kepastian tinggi.",
+    "details": "Jika perangkat tidak memberi izin lokasi atau sensor tidak akurat, hasil arah kiblat bisa terbatas.",
+    "tags": ["kiblat", "qiblat", "arah kiblat", "lokasi", "sensor"]
+  },
+  {
+    "id": "site_display_settings",
+    "title": "Mode Gelap dan Pengaturan Font",
+    "category": "Panduan Website",
+    "context": "Website mendukung mode gelap dan pengaturan ukuran font. Pengaturan disimpan lokal di browser pengguna.",
+    "translation": "Di halaman Quran, tombol pengaturan membuka mode gelap dan ukuran font. Di halaman surah, pengaturan tampilan tersedia untuk teks Arab, terjemahan, dan jarak antar baris.",
+    "details": "Pengaturan ini memakai localStorage browser, sehingga tidak perlu disimpan ke database server.",
+    "tags": ["dark mode", "mode gelap", "font", "pengaturan", "tampilan", "localStorage"]
+  },
+  {
+    "id": "site_ai_how_it_works",
+    "title": "Cara Kerja AI Quran Assistant",
+    "category": "AI Assistant",
+    "context": "AI Quran Assistant memakai pendekatan Local RAG. RAG berarti pertanyaan pengguna dipakai untuk mencari rujukan dari Quran, doa, dzikir, dan knowledge website, lalu jawaban disusun dari rujukan tersebut.",
+    "translation": "Mode dasar tidak membutuhkan model besar. Ia memakai pencarian keyword, sinonim, fuzzy ringan, scoring relevansi, validasi sumber, confidence, dan template jawaban natural yang dibatasi oleh data website.",
+    "details": "AI tidak boleh mengarang sumber. Jika rujukan tidak cukup, AI harus jujur mengatakan belum menemukan data yang kuat.",
+    "tags": ["ai", "assistant", "rag", "local rag", "pencarian lokal", "confidence"]
+  },
+  {
+    "id": "site_ai_privacy",
+    "title": "Privasi AI Quran Assistant",
+    "category": "AI Assistant",
+    "context": "AI Quran Assistant dirancang local-first. Pertanyaan diproses di browser sebisa mungkin dan chat history disimpan lokal di browser pengguna.",
+    "translation": "Website tidak mengirim pertanyaan pengguna ke OpenAI atau cloud AI pihak ketiga secara default. Chat tidak disimpan ke database kecuali ada izin dan fitur khusus yang jelas.",
+    "details": "Corpus dapat disimpan di IndexedDB atau localStorage browser agar pemuatan berikutnya lebih cepat.",
+    "tags": ["privacy", "privasi", "local-first", "localStorage", "IndexedDB", "chat history"]
+  },
+  {
+    "id": "site_ai_local_model",
+    "title": "Pencarian Lokal dan Local AI Model",
+    "category": "AI Assistant",
+    "context": "Basic Local RAG adalah mode default dan selalu aktif. Browser Local AI seperti WebLLM atau Transformers.js hanya opsional untuk memperhalus bahasa jawaban jika model tersedia.",
+    "translation": "Model lokal tidak boleh menjadi sumber kebenaran. Model hanya boleh memperhalus draft jawaban yang sudah dibuat dari hasil retrieval dan citation.",
+    "details": "Jika WebGPU atau model tidak tersedia, AI otomatis memakai mode pencarian lokal. Model besar tidak dimuat otomatis saat halaman dibuka.",
+    "tags": ["local ai", "weblLM", "transformers", "webgpu", "fallback", "basic rag"]
+  },
+  {
+    "id": "site_ai_examples",
+    "title": "Contoh Pertanyaan untuk AI",
+    "category": "AI Assistant",
+    "context": "Pengguna dapat bertanya tentang ayat, surah, doa, dzikir, fitur website, jadwal sholat, arah kiblat, atau pengaturan tampilan.",
+    "translation": "Contoh pertanyaan: ayat tentang sabar, doa sebelum tidur, dzikir pagi apa aja, jelaskan Al-Fatihah ayat 5, ringkas Surah Al-Kahf, bagaimana cara mencari surah, atau apa itu fitur AI di web ini.",
+    "details": "Pertanyaan di luar topik website, Quran, doa, dzikir, atau ibadah akan ditolak secara sopan.",
+    "tags": ["contoh pertanyaan", "prompt", "ayat sabar", "doa tidur", "dzikir pagi", "fitur ai"]
+  },
+  {
+    "id": "site_ai_religious_disclaimer",
+    "title": "Batasan Keagamaan AI Quran Assistant",
+    "category": "Keamanan dan Akidah",
+    "context": "AI Quran Assistant tidak memberikan fatwa final, tidak mengarang ayat, tidak mengarang hadits, tidak mengklaim satu tafsir sebagai satu-satunya kebenaran, dan tidak menjawab sebagai otoritas untuk masalah fikih sensitif.",
+    "translation": "Untuk keputusan hukum agama yang spesifik, silakan rujuk ustadz atau ulama yang kompeten. Untuk kondisi medis atau psikologis, rujuk tenaga profesional yang sesuai.",
+    "details": "AI boleh memberi penjelasan umum dari terjemahan yang tersedia, tetapi tidak boleh menambahkan asbabun nuzul, tafsir ulama, kitab, atau sumber luar jika tidak ada di corpus.",
+    "tags": ["disclaimer", "batasan", "fatwa", "hukum", "akidah", "etika", "anti halusinasi"]
+  }
+]

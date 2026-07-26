@@ -1,0 +1,73 @@
+{
+  "release": "R13.45",
+  "edition": "zenith",
+  "noUiTouch": true,
+  "uiUnchanged": true,
+  "uiChecksums": {
+    "app/globals.css": "d2c23d2ab95b3eb29d69cdf8054c15098cc8bbc94265fd01d6260d3536638bb2",
+    "app/layout.tsx": "c909969ecb698640428d7b086e939d363e7a621a0c4a8448c8790bdb2dc192fa",
+    "app/page.tsx": "5d40ab09570a910b58c86c44a35adaa5f34e1cc6df0ef5dd83fecee2e857ea59",
+    "app/dashboard/page.tsx": "94b667441be90a340d9c608867e41e3f4c3ce14db9ac39db6b2cf704d4087598",
+    "components/ChatShell.tsx": "e56d61915dc5e1e12393e432e3e0515769c6a2abb5f99e0bab49b1fbdef491c0",
+    "public/nusamind-logo.png": "3fd764cecb5c36030ab763a456edb02c62ea49d416b758d20d653227ebf3999f"
+  },
+  "upgradeItemsApplied": 61,
+  "topCategoryBoost": 161,
+  "topCategoryScoresRaised": 699,
+  "allTopCategoriesRaised": true,
+  "jsonNaming": {
+    "standard": "descriptive-kebab-case",
+    "renamedEntries": 0,
+    "jsonFiles": 243,
+    "invalidNames": [],
+    "parseErrors": []
+  },
+  "corpus": {
+    "format": "nusamind-corpus-manifest-v2",
+    "release": "R13.45",
+    "migration": "universal-monolith-to-versioned-packs",
+    "inputRecords": 688837,
+    "activeRecords": 395512,
+    "duplicatesRemoved": 293325,
+    "legacyMonolithPresent": false,
+    "legacyRead": 0,
+    "knowledgePackCount": 715,
+    "knowledgePackManifest": "data/packs/knowledge/pack-manifest.json",
+    "knowledgePackManifestSha256": "3c5a9e00ef185a3eeb031c1dc3186613fef3b7fd5eaf219bb6310bd4eff8e74e",
+    "jsonNamingStandard": "descriptive-kebab-case",
+    "generatedBy": "scripts/migrate-universal-v1345.py"
+  },
+  "size": {
+    "sourceBytes": 703709967,
+    "finalBytesBeforeReport": 502028392,
+    "bytesSaved": 201681575,
+    "reductionPercent": 28.66
+  },
+  "validation": {
+    "typescript": "PASS",
+    "nextProductionBuild": "PASS",
+    "fastapiContract": "PASS",
+    "executableBenchmark": "PASS",
+    "benchmarkCasesTotal": 23,
+    "benchmarkCasesApplicable": 23,
+    "ml": {
+      "status": "ACTIVE",
+      "accuracy": 1.0,
+      "macroF1": 1.0,
+      "rows": 1575,
+      "groups": 525,
+      "groupLeakage": 0,
+      "checksum": "bc45f7529851d55b213f791204d5fbd1a562e442ce446fed8b41e712567ce2ab",
+      "oodThreshold": 0.8455
+    },
+    "neural": "available",
+    "health": "DEGRADED_UNTIL_CURATED",
+    "retrieval": "V6_ACTIVE_LEGACY_CALLS_0",
+    "cleanup": "PASS",
+    "jsonValidation": "PASS"
+  },
+  "knownLimitations": [
+    "Health registries are seed data and intentionally remain DEGRADED until source curation and medical review are complete.",
+    "Next.js production build exits successfully; Turbopack still emits a non-fatal NFT warning for dynamic desktop-agent filesystem access."
+  ]
+}

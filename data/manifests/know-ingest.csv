@@ -1,0 +1,14 @@
+﻿stage_order,stage_id,stage_name,input,required_checks,output_status,failure_status,human_review_required
+1,ING-01,Source Intake,"File, URL export, dataset, manual source",Source identity; license/use status; checksum,IMPORTED,REJECTED,For restricted/unknown rights
+2,ING-02,Security Scan,Imported source,Malware; prompt injection; secrets; PII; archive safety,VALIDATED,QUARANTINED,For high-risk findings
+3,ING-03,Format Validation,Validated source,Schema; encoding; required fields; parser health,VALIDATED,REJECTED,No
+4,ING-04,Extraction,Validated source,Text/table/image extraction; page/section coordinates,VALIDATED,REVIEW_REQUIRED,When extraction confidence low
+5,ING-05,Normalization,Extracted content,Language; dates; numbers; units; names; canonical IDs,VALIDATED,REVIEW_REQUIRED,For ambiguous values
+6,ING-06,Claim Segmentation,Normalized content,Atomic claims; claim type; scope; source pointer,VALIDATED,REVIEW_REQUIRED,For complex/high-stakes source
+7,ING-07,Dedup and Lineage,Claims,Exact/semantic duplicates; source dependency; version,VALIDATED,REVIEW_REQUIRED,For possible false merge
+8,ING-08,Conflict Analysis,Validated claims,Existing claims; dates; jurisdiction; viewpoint,REVIEW_REQUIRED,REJECTED,Yes for material conflict
+9,ING-09,Source Scoring,Source and claims,Authority; directness; freshness; independence; trust,VERIFIED,REVIEW_REQUIRED,Yes for high-stakes/low trust
+10,ING-10,Index Build,Verified records,FTS5; embeddings; metadata; checksum manifest,VERIFIED,REJECTED,No
+11,ING-11,Benchmark,Indexed batch,Accuracy; retrieval; freshness; conflict; anti-hallucination,VERIFIED,REVIEW_REQUIRED,When critical tests fail
+12,ING-12,Activation,Verified passing batch,Authorized approval; corpus version; rollback snapshot,ACTIVE,REJECTED,Yes for critical/high-stakes batch
+13,ING-13,Maintenance,Active batch,Freshness review; user feedback; benchmark regression,ACTIVE/DEPRECATED,DEPRECATED,For material update

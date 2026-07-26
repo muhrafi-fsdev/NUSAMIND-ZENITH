@@ -1,0 +1,6 @@
+﻿pack_id,pack_name,required_record_types,minimum_release_condition,primary_safety_checks,target_editions
+HP-DISEASE,Disease Knowledge Pack,Disease; causes; risks; pathophysiology; symptoms; red flags; complications; tests; prevention; sources,Curated coverage and source/freshness benchmark,No diagnosis; red-flag linkage,"Swift, Zenith, Apex"
+HP-MED,Modern Medicine Pack,Generic/brand; class; indications; effects; contraindications; interactions; populations; alerts,Safety fields and verified source coverage,No prescribing; no abrupt discontinuation,"Swift, Zenith, Apex"
+HP-HERB,Traditional Medicine Pack,Species; part; preparation; traditional use; evidence; toxicity; standardization; regulator category,Identity and evidence review,Natural != safe; no cure overclaim,"Swift, Zenith, Apex"
+HP-INT,Interaction Pack,Drug-drug; drug-herb; herb-herb; food; disease; procedure; severity; evidence,Curated recall benchmark,Unknown remains unknown; no stop-med advice,"Zenith, Apex; Swift subset"
+HP-LAB,Medical Test Pack,Test; specimen; unit; method; reference context; critical values; confounders,Unit and boundary benchmark,Abnormal != diagnosis,"Swift, Zenith, Apex"

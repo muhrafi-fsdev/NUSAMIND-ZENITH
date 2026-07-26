@@ -1,0 +1,8 @@
+import { createHash } from 'node:crypto';
+export type EvidenceTrust='unverified'|'validated'|'rejected';
+export type ExternalEvidence={id:string;source:string;text:string;trust:EvidenceTrust;instructionAuthority:'none';injection:boolean;hash:string;metadata:Record<string,unknown>};
+const INJECTION=/(ignore|abaikan|lupakan).{0,32}(system|developer|policy|instruksi)|reveal.{0,24}(prompt|secret)|system\s*message|developer\s*message|jailbreak/iu;
+export function scanExternalInstruction(text:string){const matches=text.match(INJECTION);return{safe:!matches,injection:Boolean(matches),reason:matches?'EXTERNAL_INSTRUCTION_PATTERN':undefined};}
+export function tagExternalContext(text:string,source='external',metadata:Record<string,unknown>={}):ExternalEvidence{const scan=scanExternalInstruction(text);const normalized=String(text||'').normalize('NFKC').replace(/\u0000/g,'');return{id:createHash('sha256').update(`${source}|${normalized}`).digest('hex').slice(0,24),source,text:normalized,trust:'unverified',instructionAuthority:'none',injection:scan.injection,hash:createHash('sha256').update(normalized).digest('hex'),metadata};}
+export function validateExternalEvidence(evidence:ExternalEvidence,input:{sourceVerified:boolean;claimCoverage:number;integrityOk?:boolean}){const ok=!evidence.injection&&input.sourceVerified&&input.claimCoverage>=0.6&&input.integrityOk!==false;return{...evidence,trust:(ok?'validated':'rejected') as EvidenceTrust,validation:{...input,ok}};}
+export function externalEvidenceBlock(items:ExternalEvidence[]){return `<retrieved_evidence trust="unverified" instruction_authority="none">\n${items.map((x,i)=>`[E${i+1}] source=${x.source} injection=${x.injection?'quarantined':'none'}\n${x.text}`).join('\n\n')}\n</retrieved_evidence>`;}

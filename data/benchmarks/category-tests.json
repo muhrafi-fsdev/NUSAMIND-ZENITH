@@ -1,0 +1,3651 @@
+[
+  {
+    "title": "Python Machine Learning Service V1",
+    "previous": 32090,
+    "score": 32375,
+    "release": "R13.47",
+    "category": "ML Architecture",
+    "upgradeId": "SHARED-1343-001"
+  },
+  {
+    "title": "Offline-First ML Runtime",
+    "previous": 32089,
+    "score": 32374,
+    "release": "R13.47",
+    "category": "ML Runtime",
+    "upgradeId": "SHARED-1343-002"
+  },
+  {
+    "title": "Hybrid Intent and Domain Classifier",
+    "previous": 32088,
+    "score": 32373,
+    "release": "R13.47",
+    "category": "Classification",
+    "upgradeId": "SHARED-1343-003"
+  },
+  {
+    "title": "Multilingual Semantic Embedding Engine",
+    "previous": 32087,
+    "score": 32372,
+    "release": "R13.47",
+    "category": "Embeddings",
+    "upgradeId": "SHARED-1343-004"
+  },
+  {
+    "title": "Sentiment and Emotion Analysis",
+    "previous": 32086,
+    "score": 32371,
+    "release": "R13.47",
+    "category": "NLP",
+    "upgradeId": "SHARED-1343-005"
+  },
+  {
+    "title": "Urgency and Escalation Classifier",
+    "previous": 32085,
+    "score": 32370,
+    "release": "R13.47",
+    "category": "Routing",
+    "upgradeId": "SHARED-1343-006"
+  },
+  {
+    "title": "PII Pattern Detection",
+    "previous": 32084,
+    "score": 32369,
+    "release": "R13.47",
+    "category": "Privacy",
+    "upgradeId": "SHARED-1343-007"
+  },
+  {
+    "title": "Document Feature Extraction Hooks",
+    "previous": 32083,
+    "score": 32368,
+    "release": "R13.47",
+    "category": "Documents",
+    "upgradeId": "SHARED-1343-008"
+  },
+  {
+    "title": "Numeric Anomaly Detection",
+    "previous": 32082,
+    "score": 32367,
+    "release": "R13.47",
+    "category": "Anomaly",
+    "upgradeId": "SHARED-1343-009"
+  },
+  {
+    "title": "ML Answer Quality Evaluator",
+    "previous": 32081,
+    "score": 32366,
+    "release": "R13.47",
+    "category": "Evaluation",
+    "upgradeId": "SHARED-1343-010"
+  },
+  {
+    "title": "Confidence Calibration and Abstention",
+    "previous": 32080,
+    "score": 32365,
+    "release": "R13.47",
+    "category": "Confidence",
+    "upgradeId": "SHARED-1343-011"
+  },
+  {
+    "title": "Local Model Registry",
+    "previous": 32079,
+    "score": 32364,
+    "release": "R13.47",
+    "category": "Models",
+    "upgradeId": "SHARED-1343-012"
+  },
+  {
+    "title": "Dataset Schema and Validation",
+    "previous": 32078,
+    "score": 32363,
+    "release": "R13.47",
+    "category": "Data Quality",
+    "upgradeId": "SHARED-1343-013"
+  },
+  {
+    "title": "Supervised Intent Training Pipeline",
+    "previous": 32077,
+    "score": 32362,
+    "release": "R13.47",
+    "category": "Training",
+    "upgradeId": "SHARED-1343-014"
+  },
+  {
+    "title": "Batch Inference Pipeline",
+    "previous": 32076,
+    "score": 32361,
+    "release": "R13.47",
+    "category": "Inference",
+    "upgradeId": "SHARED-1343-015"
+  },
+  {
+    "title": "Graceful ML Fallback",
+    "previous": 32075,
+    "score": 32360,
+    "release": "R13.47",
+    "category": "Reliability",
+    "upgradeId": "SHARED-1343-016"
+  },
+  {
+    "title": "ML Capability Health Report",
+    "previous": 32074,
+    "score": 32359,
+    "release": "R13.47",
+    "category": "Observability",
+    "upgradeId": "SHARED-1343-017"
+  },
+  {
+    "title": "Dataset and Prediction Drift Signals",
+    "previous": 32073,
+    "score": 32358,
+    "release": "R13.47",
+    "category": "Monitoring",
+    "upgradeId": "SHARED-1343-018"
+  },
+  {
+    "title": "Model Metrics and Evaluation Store",
+    "previous": 32072,
+    "score": 32357,
+    "release": "R13.47",
+    "category": "Metrics",
+    "upgradeId": "SHARED-1343-019"
+  },
+  {
+    "title": "Feature Store Lite",
+    "previous": 32071,
+    "score": 32356,
+    "release": "R13.47",
+    "category": "Features",
+    "upgradeId": "SHARED-1343-020"
+  },
+  {
+    "title": "ML Audit and Training Ledger",
+    "previous": 32070,
+    "score": 32355,
+    "release": "R13.47",
+    "category": "Audit",
+    "upgradeId": "SHARED-1343-021"
+  },
+  {
+    "title": "Protected Training and Reload Operations",
+    "previous": 32069,
+    "score": 32354,
+    "release": "R13.47",
+    "category": "Security",
+    "upgradeId": "SHARED-1343-022"
+  },
+  {
+    "title": "CPU and GPU Runtime Profiles",
+    "previous": 32068,
+    "score": 32353,
+    "release": "R13.47",
+    "category": "Deployment",
+    "upgradeId": "SHARED-1343-023"
+  },
+  {
+    "title": "TypeScript ML Client",
+    "previous": 32067,
+    "score": 32352,
+    "release": "R13.47",
+    "category": "Integration",
+    "upgradeId": "SHARED-1343-024"
+  },
+  {
+    "title": "Chat Advisory ML Routing",
+    "previous": 32066,
+    "score": 32351,
+    "release": "R13.47",
+    "category": "Integration",
+    "upgradeId": "SHARED-1343-025"
+  },
+  {
+    "title": "NusaMind ML API Gateway",
+    "previous": 32065,
+    "score": 32350,
+    "release": "R13.47",
+    "category": "API",
+    "upgradeId": "SHARED-1343-026"
+  },
+  {
+    "title": "R13.43 ML Reliability Benchmark",
+    "previous": 32064,
+    "score": 32349,
+    "release": "R13.47",
+    "category": "Benchmark",
+    "upgradeId": "SHARED-1343-027"
+  },
+  {
+    "title": "R13.43 ML Release Gate",
+    "previous": 32063,
+    "score": 32348,
+    "release": "R13.47",
+    "category": "Release",
+    "upgradeId": "SHARED-1343-028"
+  },
+  {
+    "title": "Apex Multi-Model ML Router",
+    "previous": 32062,
+    "score": 32347,
+    "release": "R13.47",
+    "category": "Apex ML",
+    "upgradeId": "APEX-1343-029"
+  },
+  {
+    "title": "Apex Transformer Embedding Backend",
+    "previous": 32061,
+    "score": 32346,
+    "release": "R13.47",
+    "category": "Apex ML",
+    "upgradeId": "APEX-1343-030"
+  },
+  {
+    "title": "Apex Ensemble Intent Classification",
+    "previous": 32060,
+    "score": 32345,
+    "release": "R13.47",
+    "category": "Apex ML",
+    "upgradeId": "APEX-1343-031"
+  },
+  {
+    "title": "Apex Cross-Domain Risk Classification",
+    "previous": 32059,
+    "score": 32344,
+    "release": "R13.47",
+    "category": "Apex ML",
+    "upgradeId": "APEX-1343-032"
+  },
+  {
+    "title": "Apex Advanced Answer Evaluator",
+    "previous": 32058,
+    "score": 32343,
+    "release": "R13.47",
+    "category": "Apex ML",
+    "upgradeId": "APEX-1343-033"
+  },
+  {
+    "title": "Apex Dataset Drift Analytics",
+    "previous": 32057,
+    "score": 32342,
+    "release": "R13.47",
+    "category": "Apex ML",
+    "upgradeId": "APEX-1343-034"
+  },
+  {
+    "title": "Apex Experiment and Model Registry",
+    "previous": 32056,
+    "score": 32341,
+    "release": "R13.47",
+    "category": "Apex ML",
+    "upgradeId": "APEX-1343-035"
+  },
+  {
+    "title": "Apex GPU Acceleration Profile",
+    "previous": 32055,
+    "score": 32340,
+    "release": "R13.47",
+    "category": "Apex ML",
+    "upgradeId": "APEX-1343-036"
+  },
+  {
+    "title": "Apex Batch and Async Inference",
+    "previous": 32054,
+    "score": 32339,
+    "release": "R13.47",
+    "category": "Apex ML",
+    "upgradeId": "APEX-1343-037"
+  },
+  {
+    "title": "Apex Protected Training Control",
+    "previous": 32053,
+    "score": 32338,
+    "release": "R13.47",
+    "category": "Apex ML",
+    "upgradeId": "APEX-1343-038"
+  },
+  {
+    "title": "Apex Model Rollback Workflow",
+    "previous": 32052,
+    "score": 32337,
+    "release": "R13.47",
+    "category": "Apex ML",
+    "upgradeId": "APEX-1343-039"
+  },
+  {
+    "title": "Apex Expert ML Benchmark",
+    "previous": 32051,
+    "score": 32336,
+    "release": "R13.47",
+    "category": "Apex ML",
+    "upgradeId": "APEX-1343-040"
+  },
+  {
+    "title": "Universal Domain Knowledge Architecture",
+    "previous": 31940,
+    "score": 32225,
+    "release": "R13.47"
+  },
+  {
+    "title": "Knowledge Record Standard V2",
+    "previous": 31939,
+    "score": 32224,
+    "release": "R13.47"
+  },
+  {
+    "title": "Verified Knowledge Ingestion Pipeline",
+    "previous": 31938,
+    "score": 32223,
+    "release": "R13.47"
+  },
+  {
+    "title": "Knowledge Status Lifecycle",
+    "previous": 31937,
+    "score": 32222,
+    "release": "R13.47"
+  },
+  {
+    "title": "Knowledge Deduplication V2",
+    "previous": 31936,
+    "score": 32221,
+    "release": "R13.47"
+  },
+  {
+    "title": "Knowledge Conflict Resolver V2",
+    "previous": 31935,
+    "score": 32220,
+    "release": "R13.47"
+  },
+  {
+    "title": "Knowledge Freshness and Review Scheduler",
+    "previous": 31934,
+    "score": 32219,
+    "release": "R13.47"
+  },
+  {
+    "title": "Knowledge Gap Detector",
+    "previous": 31933,
+    "score": 32218,
+    "release": "R13.47"
+  },
+  {
+    "title": "Automatic Knowledge Gap Queue",
+    "previous": 31932,
+    "score": 32217,
+    "release": "R13.47"
+  },
+  {
+    "title": "Source Authority and Lineage V2",
+    "previous": 31931,
+    "score": 32216,
+    "release": "R13.47"
+  },
+  {
+    "title": "Multilingual Knowledge Alias Graph",
+    "previous": 31930,
+    "score": 32215,
+    "release": "R13.47"
+  },
+  {
+    "title": "Curriculum Difficulty Levels",
+    "previous": 31929,
+    "score": 32214,
+    "release": "R13.47"
+  },
+  {
+    "title": "Question Understanding V4",
+    "previous": 31928,
+    "score": 32213,
+    "release": "R13.47"
+  },
+  {
+    "title": "Knowledge Synthesis Engine",
+    "previous": 31927,
+    "score": 32212,
+    "release": "R13.47"
+  },
+  {
+    "title": "Adaptive Teaching Intelligence",
+    "previous": 31926,
+    "score": 32211,
+    "release": "R13.47"
+  },
+  {
+    "title": "Repository Knowledge and Code Intelligence V2",
+    "previous": 31925,
+    "score": 32210,
+    "release": "R13.47"
+  },
+  {
+    "title": "Everyday and Workplace Knowledge Pack",
+    "previous": 31924,
+    "score": 32209,
+    "release": "R13.47"
+  },
+  {
+    "title": "Indonesia-Centric Knowledge Pack",
+    "previous": 31923,
+    "score": 32208,
+    "release": "R13.47"
+  },
+  {
+    "title": "High-Stakes Knowledge Guard V2",
+    "previous": 31922,
+    "score": 32207,
+    "release": "R13.47"
+  },
+  {
+    "title": "Synthetic Knowledge Quality Control",
+    "previous": 31921,
+    "score": 32206,
+    "release": "R13.47"
+  },
+  {
+    "title": "Knowledge Batch Versioning and Rollback",
+    "previous": 31920,
+    "score": 32205,
+    "release": "R13.47"
+  },
+  {
+    "title": "Knowledge Answer Feedback Loop",
+    "previous": 31919,
+    "score": 32204,
+    "release": "R13.47"
+  },
+  {
+    "title": "Knowledge Health Dashboard",
+    "previous": 31918,
+    "score": 32203,
+    "release": "R13.47"
+  },
+  {
+    "title": "Knowledge Benchmark V2",
+    "previous": 31917,
+    "score": 32202,
+    "release": "R13.47"
+  },
+  {
+    "title": "V13.42 Knowledge Release Gate",
+    "previous": 31916,
+    "score": 32201,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Expert Knowledge Synthesis",
+    "previous": 31915,
+    "score": 32200,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Cross-Domain Reasoning Graph",
+    "previous": 31914,
+    "score": 32199,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Research Knowledge Workspace",
+    "previous": 31913,
+    "score": 32198,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Knowledge Ingestion Reviewer",
+    "previous": 31912,
+    "score": 32197,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Repository and Architecture Knowledge Graph",
+    "previous": 31911,
+    "score": 32196,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Academic and Research Tutor",
+    "previous": 31910,
+    "score": 32195,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Deep Knowledge Gap Analysis",
+    "previous": 31909,
+    "score": 32194,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Expert Knowledge Conflict Resolution",
+    "previous": 31908,
+    "score": 32193,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Current-vs-Historical Knowledge Analysis",
+    "previous": 31907,
+    "score": 32192,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Knowledge Health Analytics",
+    "previous": 31906,
+    "score": 32191,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Expert Knowledge Benchmark",
+    "previous": 31905,
+    "score": 32190,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Religious Source Conflict Resolver",
+    "previous": 31904,
+    "score": 32189,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Religious Evidence Graph",
+    "previous": 31902,
+    "score": 32187,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Quranic Historical Context",
+    "previous": 31900,
+    "score": 32185,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Theology Viewpoint Analysis",
+    "previous": 31898,
+    "score": 32183,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Maqashid and Text Boundary",
+    "previous": 31896,
+    "score": 32181,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Methodology of Legal Inference",
+    "previous": 31894,
+    "score": 32179,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Asbab Narration Comparison",
+    "previous": 31892,
+    "score": 32177,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Hadith Critical Verification",
+    "previous": 31890,
+    "score": 32175,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Quranic Research Benchmark",
+    "previous": 31889,
+    "score": 32174,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Naskh Takhsis Taqyid Analyzer",
+    "previous": 31888,
+    "score": 32173,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Religious Adversarial Evaluation",
+    "previous": 31887,
+    "score": 32172,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Advanced Quranic Arabic",
+    "previous": 31886,
+    "score": 32171,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Religious Confidence Decomposition",
+    "previous": 31885,
+    "score": 32170,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Qiraat Semantic Analysis",
+    "previous": 31884,
+    "score": 32169,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Quranic Research Report",
+    "previous": 31883,
+    "score": 32168,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Multi-Tafsir Synthesis",
+    "previous": 31882,
+    "score": 32167,
+    "release": "R13.47"
+  },
+  {
+    "title": "Qiraat Registry and Relevance Gate",
+    "previous": 31881,
+    "score": 32166,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Quranic Research Expert",
+    "previous": 31880,
+    "score": 32165,
+    "release": "R13.47"
+  },
+  {
+    "title": "Arabic Linguistic Analyzer",
+    "previous": 31879,
+    "score": 32164,
+    "release": "R13.47"
+  },
+  {
+    "title": "V13.37 Release Gate",
+    "previous": 31878,
+    "score": 32163,
+    "release": "R13.47"
+  },
+  {
+    "title": "Nasikh-Mansukh Validation Engine",
+    "previous": 31877,
+    "score": 32162,
+    "release": "R13.47"
+  },
+  {
+    "title": "Quranic and Religious Benchmark",
+    "previous": 31876,
+    "score": 32161,
+    "release": "R13.47"
+  },
+  {
+    "title": "Tafsir Difference Classifier",
+    "previous": 31875,
+    "score": 32160,
+    "release": "R13.47"
+  },
+  {
+    "title": "Religious Answer Templates",
+    "previous": 31874,
+    "score": 32159,
+    "release": "R13.47"
+  },
+  {
+    "title": "Tafsir Source Registry",
+    "previous": 31873,
+    "score": 32158,
+    "release": "R13.47"
+  },
+  {
+    "title": "Religious Session and Source Isolation",
+    "previous": 31872,
+    "score": 32157,
+    "release": "R13.47"
+  },
+  {
+    "title": "Comparative Quran Reasoning Engine",
+    "previous": 31871,
+    "score": 32156,
+    "release": "R13.47"
+  },
+  {
+    "title": "Anti-Sectarian and False-Consensus Guard",
+    "previous": 31870,
+    "score": 32155,
+    "release": "R13.47"
+  },
+  {
+    "title": "Quran Context Graph",
+    "previous": 31869,
+    "score": 32154,
+    "release": "R13.47"
+  },
+  {
+    "title": "Religious Personal-Case Boundary",
+    "previous": 31868,
+    "score": 32153,
+    "release": "R13.47"
+  },
+  {
+    "title": "Arabic CLI Rendering and Encoding Fix",
+    "previous": 31867,
+    "score": 32152,
+    "release": "R13.47"
+  },
+  {
+    "title": "Religious Confidence Calibration",
+    "previous": 31866,
+    "score": 32151,
+    "release": "R13.47"
+  },
+  {
+    "title": "Canonical Quran Text Integrity",
+    "previous": 31865,
+    "score": 32150,
+    "release": "R13.47"
+  },
+  {
+    "title": "Claim-Level Religious Evidence",
+    "previous": 31864,
+    "score": 32149,
+    "release": "R13.47"
+  },
+  {
+    "title": "Quran Reference Resolver V2",
+    "previous": 31863,
+    "score": 32148,
+    "release": "R13.47"
+  },
+  {
+    "title": "Asbab al-Nuzul Verification",
+    "previous": 31862,
+    "score": 32147,
+    "release": "R13.47"
+  },
+  {
+    "title": "Religious Intent Hierarchy",
+    "previous": 31861,
+    "score": 32146,
+    "release": "R13.47"
+  },
+  {
+    "title": "Hadith Reference Verification",
+    "previous": 31860,
+    "score": 32145,
+    "release": "R13.47"
+  },
+  {
+    "title": "Religious Analysis Intent Hotfix",
+    "previous": 31859,
+    "score": 32144,
+    "release": "R13.47"
+  },
+  {
+    "title": "Chemistry Reasoning",
+    "previous": 31211,
+    "score": 31496,
+    "release": "R13.47"
+  },
+  {
+    "title": "Answer Quality Control",
+    "previous": 31123,
+    "score": 31408,
+    "release": "R13.47"
+  },
+  {
+    "title": "Physics Reasoning",
+    "previous": 30924,
+    "score": 31209,
+    "release": "R13.47"
+  },
+  {
+    "title": "Adaptive Reasoning Router V3",
+    "previous": 30904,
+    "score": 31189,
+    "release": "R13.47"
+  },
+  {
+    "title": "Evidence-First Answer Pipeline",
+    "previous": 30897,
+    "score": 31182,
+    "release": "R13.47"
+  },
+  {
+    "title": "Claim-Level Answer Verifier V3",
+    "previous": 30890,
+    "score": 31175,
+    "release": "R13.47"
+  },
+  {
+    "title": "Multi-Pass Answer Correction",
+    "previous": 30883,
+    "score": 31168,
+    "release": "R13.47"
+  },
+  {
+    "title": "Contradiction and Data Conflict Detector",
+    "previous": 30876,
+    "score": 31161,
+    "release": "R13.47"
+  },
+  {
+    "title": "Source Quality and Freshness Engine",
+    "previous": 30869,
+    "score": 31154,
+    "release": "R13.47"
+  },
+  {
+    "title": "Hybrid Retrieval V4",
+    "previous": 30862,
+    "score": 31147,
+    "release": "R13.47"
+  },
+  {
+    "title": "Three-Layer Long-Context Manager",
+    "previous": 30855,
+    "score": 31140,
+    "release": "R13.47"
+  },
+  {
+    "title": "Verified User Correction Learning",
+    "previous": 30848,
+    "score": 31133,
+    "release": "R13.47"
+  },
+  {
+    "title": "Response Consistency Engine",
+    "previous": 30841,
+    "score": 31126,
+    "release": "R13.47"
+  },
+  {
+    "title": "Runtime Capability Checker",
+    "previous": 30834,
+    "score": 31119,
+    "release": "R13.47"
+  },
+  {
+    "title": "Failure-Aware Tool Execution",
+    "previous": 30827,
+    "score": 31112,
+    "release": "R13.47"
+  },
+  {
+    "title": "Automatic Failure-to-Test Capture",
+    "previous": 30820,
+    "score": 31105,
+    "release": "R13.47"
+  },
+  {
+    "title": "Answer Quality Scorecard",
+    "previous": 30813,
+    "score": 31098,
+    "release": "R13.47"
+  },
+  {
+    "title": "User-Facing Reliability Status",
+    "previous": 30806,
+    "score": 31091,
+    "release": "R13.47"
+  },
+  {
+    "title": "Independent Evidence Detection",
+    "previous": 30799,
+    "score": 31084,
+    "release": "R13.47"
+  },
+  {
+    "title": "Evidence-Aware Cache Invalidation",
+    "previous": 30792,
+    "score": 31077,
+    "release": "R13.47"
+  },
+  {
+    "title": "Risk-Aware Clarification Engine",
+    "previous": 30785,
+    "score": 31070,
+    "release": "R13.47"
+  },
+  {
+    "title": "Calibrated Abstention and Escalation",
+    "previous": 30778,
+    "score": 31063,
+    "release": "R13.47"
+  },
+  {
+    "title": "Reasoning Outcome Trace",
+    "previous": 30771,
+    "score": 31056,
+    "release": "R13.47"
+  },
+  {
+    "title": "V13.41 Reliability Benchmark",
+    "previous": 30764,
+    "score": 31049,
+    "release": "R13.47"
+  },
+  {
+    "title": "V13.41 Reliability Release Gate",
+    "previous": 30757,
+    "score": 31042,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Verified Expert Reasoning",
+    "previous": 30750,
+    "score": 31035,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Multi-Hop Evidence Graph",
+    "previous": 30743,
+    "score": 31028,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Dual-Layer Claim Verification",
+    "previous": 30736,
+    "score": 31021,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Multi-Pass Expert Review",
+    "previous": 30722,
+    "score": 31007,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Long-Context Research Workspace",
+    "previous": 30715,
+    "score": 31000,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Failure-Aware Supervised Agent",
+    "previous": 30708,
+    "score": 30993,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Methodological Consistency",
+    "previous": 30701,
+    "score": 30986,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Claim and Section Scorecard",
+    "previous": 30694,
+    "score": 30979,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Automatic Expert Regression Builder",
+    "previous": 30687,
+    "score": 30972,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Expert Reliability Benchmark",
+    "previous": 30680,
+    "score": 30965,
+    "release": "R13.47"
+  },
+  {
+    "title": "Protected Block Formatting",
+    "previous": 30673,
+    "score": 30958,
+    "release": "R13.47"
+  },
+  {
+    "title": "Raw and Display Value Separation",
+    "previous": 30666,
+    "score": 30951,
+    "release": "R13.47"
+  },
+  {
+    "title": "Percent and Decimal Disambiguation",
+    "previous": 30659,
+    "score": 30944,
+    "release": "R13.47"
+  },
+  {
+    "title": "Explicit LaTeX Exception",
+    "previous": 30652,
+    "score": 30937,
+    "release": "R13.47"
+  },
+  {
+    "title": "R13.40.1 Formula Regression Gate",
+    "previous": 30645,
+    "score": 30930,
+    "release": "R13.47"
+  },
+  {
+    "title": "Computer Troubleshooting",
+    "previous": 30619,
+    "score": 30904,
+    "release": "R13.47"
+  },
+  {
+    "title": "Windows Linux Command Safety",
+    "previous": 30385,
+    "score": 30670,
+    "release": "R13.47"
+  },
+  {
+    "title": "Logical Reasoning Reliability",
+    "previous": 30124,
+    "score": 30409,
+    "release": "R13.47"
+  },
+  {
+    "title": "Performance Capability",
+    "previous": 30051,
+    "score": 30336,
+    "release": "R13.47"
+  },
+  {
+    "title": "Evaluation Capability",
+    "previous": 29672,
+    "score": 29957,
+    "release": "R13.47"
+  },
+  {
+    "title": "Desktop Control Safety",
+    "previous": 29571,
+    "score": 29856,
+    "release": "R13.47"
+  },
+  {
+    "title": "CLI UI Capability",
+    "previous": 29250,
+    "score": 29535,
+    "release": "R13.47"
+  },
+  {
+    "title": "Matematika Deep Reasoning",
+    "previous": 29168,
+    "score": 29453,
+    "release": "R13.47"
+  },
+  {
+    "title": "Version Routing Capability",
+    "previous": 29106,
+    "score": 29391,
+    "release": "R13.47"
+  },
+  {
+    "title": "Safety Capability",
+    "previous": 28957,
+    "score": 29242,
+    "release": "R13.47"
+  },
+  {
+    "title": "Kimia Kompleks Capability",
+    "previous": 28706,
+    "score": 28991,
+    "release": "R13.47"
+  },
+  {
+    "title": "Fisika Kompleks Capability",
+    "previous": 28147,
+    "score": 28432,
+    "release": "R13.47"
+  },
+  {
+    "title": "Bahasa Interaksi Natural",
+    "previous": 28121,
+    "score": 28406,
+    "release": "R13.47"
+  },
+  {
+    "title": "Scenario Safe Critique Work Coding Alignment",
+    "previous": 28101,
+    "score": 28386,
+    "release": "R13.47"
+  },
+  {
+    "title": "Desktop Control Capability",
+    "previous": 27993,
+    "score": 28278,
+    "release": "R13.47"
+  },
+  {
+    "title": "Scenario Policy Answer Alignment",
+    "previous": 27925,
+    "score": 28210,
+    "release": "R13.47"
+  },
+  {
+    "title": "Improvement Menjawab Capability",
+    "previous": 27909,
+    "score": 28194,
+    "release": "R13.47"
+  },
+  {
+    "title": "OS Windows/Linux Capability",
+    "previous": 27861,
+    "score": 28146,
+    "release": "R13.47"
+  },
+  {
+    "title": "Kecepatan Respon Capability",
+    "previous": 27564,
+    "score": 27849,
+    "release": "R13.47"
+  },
+  {
+    "title": "Machine Learning Deep Pipeline",
+    "previous": 27558,
+    "score": 27843,
+    "release": "R13.47"
+  },
+  {
+    "title": "Tren Viral Safe Reasoning",
+    "previous": 27329,
+    "score": 27614,
+    "release": "R13.47"
+  },
+  {
+    "title": "Komputer Capability",
+    "previous": 27275,
+    "score": 27560,
+    "release": "R13.47"
+  },
+  {
+    "title": "Matematika Kompleks Capability",
+    "previous": 27051,
+    "score": 27336,
+    "release": "R13.47"
+  },
+  {
+    "title": "Pemrograman Advanced Reliability",
+    "previous": 27043,
+    "score": 27328,
+    "release": "R13.47"
+  },
+  {
+    "title": "Agama Capability",
+    "previous": 26638,
+    "score": 26923,
+    "release": "R13.47"
+  },
+  {
+    "title": "Logika Dasar Capability",
+    "previous": 25901,
+    "score": 26186,
+    "release": "R13.47"
+  },
+  {
+    "title": "Agama Safe Context",
+    "previous": 25742,
+    "score": 26027,
+    "release": "R13.47"
+  },
+  {
+    "title": "Scenario Math Language Trend Alignment",
+    "previous": 25710,
+    "score": 25995,
+    "release": "R13.47"
+  },
+  {
+    "title": "UU UUD Legal Literacy",
+    "previous": 25549,
+    "score": 25834,
+    "release": "R13.47"
+  },
+  {
+    "title": "IoT Architecture and Edge Intelligence",
+    "previous": 25476,
+    "score": 25761,
+    "release": "R13.47"
+  },
+  {
+    "title": "IoT Digital Diagnostics and Predictive Maintenance",
+    "previous": 25454,
+    "score": 25739,
+    "release": "R13.47"
+  },
+  {
+    "title": "End-to-End ML Research and Production",
+    "previous": 25412,
+    "score": 25697,
+    "release": "R13.47"
+  },
+  {
+    "title": "Legal Scenario and Risk Explanation",
+    "previous": 25043,
+    "score": 25328,
+    "release": "R13.47"
+  },
+  {
+    "title": "Integrated Safety Routing",
+    "previous": 24934,
+    "score": 25219,
+    "release": "R13.47"
+  },
+  {
+    "title": "Makanan Minuman Safe Lifestyle",
+    "previous": 24926,
+    "score": 25211,
+    "release": "R13.47"
+  },
+  {
+    "title": "Business Risk and Execution Planner",
+    "previous": 24910,
+    "score": 25195,
+    "release": "R13.47"
+  },
+  {
+    "title": "Legal Research and Source Reasoning",
+    "previous": 24888,
+    "score": 25173,
+    "release": "R13.47"
+  },
+  {
+    "title": "Contract and Obligation Deep Analysis",
+    "previous": 24873,
+    "score": 25158,
+    "release": "R13.47"
+  },
+  {
+    "title": "Politik Netral Demokrasi",
+    "previous": 24837,
+    "score": 25122,
+    "release": "R13.47"
+  },
+  {
+    "title": "Business Strategy Deep Thinking",
+    "previous": 24536,
+    "score": 24821,
+    "release": "R13.47"
+  },
+  {
+    "title": "Multi-criteria Decision Optimization",
+    "previous": 24517,
+    "score": 24802,
+    "release": "R13.47"
+  },
+  {
+    "title": "Financial and Operational Modeling",
+    "previous": 24471,
+    "score": 24756,
+    "release": "R13.47"
+  },
+  {
+    "title": "Constraint and Causal Reasoning",
+    "previous": 24374,
+    "score": 24659,
+    "release": "R13.47"
+  },
+  {
+    "title": "Adversarial and Counterexample Checking",
+    "previous": 24323,
+    "score": 24608,
+    "release": "R13.47"
+  },
+  {
+    "title": "Math Language Trend Evaluation Rubric",
+    "previous": 24322,
+    "score": 24607,
+    "release": "R13.47"
+  },
+  {
+    "title": "Information and Data Architecture",
+    "previous": 24242,
+    "score": 24527,
+    "release": "R13.47"
+  },
+  {
+    "title": "Finance Prediction Governance",
+    "previous": 23945,
+    "score": 24230,
+    "release": "R13.47"
+  },
+  {
+    "title": "Network Protocol and QoS Reasoning",
+    "previous": 23929,
+    "score": 24214,
+    "release": "R13.47"
+  },
+  {
+    "title": "Systems and Distributed Computing Reasoning",
+    "previous": 23886,
+    "score": 24171,
+    "release": "R13.47"
+  },
+  {
+    "title": "Internship",
+    "previous": 23879,
+    "score": 24164,
+    "release": "R13.47"
+  },
+  {
+    "title": "Advanced Algorithms and Complexity",
+    "previous": 23875,
+    "score": 24160,
+    "release": "R13.47"
+  },
+  {
+    "title": "Financial Source Trust and Freshness Engine",
+    "previous": 23850,
+    "score": 24135,
+    "release": "R13.47"
+  },
+  {
+    "title": "File Accuracy Scenario",
+    "previous": 23834,
+    "score": 24119,
+    "release": "R13.47"
+  },
+  {
+    "title": "RF and Wireless Expert Reasoning",
+    "previous": 23791,
+    "score": 24076,
+    "release": "R13.47"
+  },
+  {
+    "title": "Pengetahuan IPS",
+    "previous": 23712,
+    "score": 23997,
+    "release": "R13.47"
+  },
+  {
+    "title": "Telekomunikasi",
+    "previous": 23686,
+    "score": 23971,
+    "release": "R13.47"
+  },
+  {
+    "title": "Phrasing Expansion - Tech",
+    "previous": 23667,
+    "score": 23952,
+    "release": "R13.47"
+  },
+  {
+    "title": "Telecom Standards and Source Validation",
+    "previous": 23662,
+    "score": 23947,
+    "release": "R13.47"
+  },
+  {
+    "title": "Max Direct-First Finance Mode",
+    "previous": 23647,
+    "score": 23932,
+    "release": "R13.47"
+  },
+  {
+    "title": "Pengetahuan Fashion",
+    "previous": 23603,
+    "score": 23888,
+    "release": "R13.47"
+  },
+  {
+    "title": "Coding Fullstack",
+    "previous": 23554,
+    "score": 23839,
+    "release": "R13.47"
+  },
+  {
+    "title": "AI Engineering",
+    "previous": 23517,
+    "score": 23802,
+    "release": "R13.47"
+  },
+  {
+    "title": "Coding Debugging",
+    "previous": 23511,
+    "score": 23796,
+    "release": "R13.47"
+  },
+  {
+    "title": "AI RAG LLM",
+    "previous": 23511,
+    "score": 23796,
+    "release": "R13.47"
+  },
+  {
+    "title": "Drawdown and Tail Risk Analysis",
+    "previous": 23510,
+    "score": 23795,
+    "release": "R13.47"
+  },
+  {
+    "title": "AI RAG LLM Query Variants",
+    "previous": 23479,
+    "score": 23764,
+    "release": "R13.47"
+  },
+  {
+    "title": "Math Academic",
+    "previous": 23397,
+    "score": 23682,
+    "release": "R13.47"
+  },
+  {
+    "title": "Advanced Fiber and Access Network Reasoning",
+    "previous": 23393,
+    "score": 23678,
+    "release": "R13.47"
+  },
+  {
+    "title": "Networking",
+    "previous": 23346,
+    "score": 23631,
+    "release": "R13.47"
+  },
+  {
+    "title": "Windows Laptop",
+    "previous": 23308,
+    "score": 23593,
+    "release": "R13.47"
+  },
+  {
+    "title": "Portfolio Scenario and Stress Test",
+    "previous": 23261,
+    "score": 23546,
+    "release": "R13.47"
+  },
+  {
+    "title": "Production Architecture",
+    "previous": 23249,
+    "score": 23534,
+    "release": "R13.47"
+  },
+  {
+    "title": "Patch, Test, and Regression",
+    "previous": 23249,
+    "score": 23534,
+    "release": "R13.47"
+  },
+  {
+    "title": "Observability and Incident Reasoning",
+    "previous": 23248,
+    "score": 23533,
+    "release": "R13.47"
+  },
+  {
+    "title": "Automated Reproduction and Isolation",
+    "previous": 22985,
+    "score": 23270,
+    "release": "R13.47"
+  },
+  {
+    "title": "Multi-layer Root Cause Analysis",
+    "previous": 22985,
+    "score": 23270,
+    "release": "R13.47"
+  },
+  {
+    "title": "Secure Fullstack Review",
+    "previous": 22949,
+    "score": 23234,
+    "release": "R13.47"
+  },
+  {
+    "title": "News and Sentiment Expert",
+    "previous": 22909,
+    "score": 23194,
+    "release": "R13.47"
+  },
+  {
+    "title": "Database and API Contract Expert",
+    "previous": 22874,
+    "score": 23159,
+    "release": "R13.47"
+  },
+  {
+    "title": "Technical and Quantitative Signal Fusion",
+    "previous": 22823,
+    "score": 23108,
+    "release": "R13.47"
+  },
+  {
+    "title": "Backend Expert Reasoning",
+    "previous": 22802,
+    "score": 23087,
+    "release": "R13.47"
+  },
+  {
+    "title": "Fullstack Codebase Understanding",
+    "previous": 22557,
+    "score": 22842,
+    "release": "R13.47"
+  },
+  {
+    "title": "Frontend Expert Reasoning",
+    "previous": 22550,
+    "score": 22835,
+    "release": "R13.47"
+  },
+  {
+    "title": "FAQ Cache Flash",
+    "previous": 22527,
+    "score": 22812,
+    "release": "R13.47"
+  },
+  {
+    "title": "Forecast Calibration Monitor",
+    "previous": 22471,
+    "score": 22756,
+    "release": "R13.47"
+  },
+  {
+    "title": "Walk-forward Backtesting",
+    "previous": 22470,
+    "score": 22755,
+    "release": "R13.47"
+  },
+  {
+    "title": "Fundamental Valuation Expert",
+    "previous": 22450,
+    "score": 22735,
+    "release": "R13.47"
+  },
+  {
+    "title": "Resume and Portfolio Evidence Mapping",
+    "previous": 22384,
+    "score": 22669,
+    "release": "R13.47"
+  },
+  {
+    "title": "Advanced Career Profile Intelligence",
+    "previous": 22146,
+    "score": 22431,
+    "release": "R13.47"
+  },
+  {
+    "title": "Hadith Verification Workflow",
+    "previous": 22123,
+    "score": 22408,
+    "release": "R13.47"
+  },
+  {
+    "title": "Prediction Interval and Uncertainty",
+    "previous": 22028,
+    "score": 22313,
+    "release": "R13.47"
+  },
+  {
+    "title": "Direct Math Mode",
+    "previous": 22000,
+    "score": 22285,
+    "release": "R13.47"
+  },
+  {
+    "title": "Market Regime and Structural Break Detection",
+    "previous": 21991,
+    "score": 22276,
+    "release": "R13.47"
+  },
+  {
+    "title": "Career Scenario and Transition Planner",
+    "previous": 21967,
+    "score": 22252,
+    "release": "R13.47"
+  },
+  {
+    "title": "Fiqh Scenario Reasoning",
+    "previous": 21912,
+    "score": 22197,
+    "release": "R13.47"
+  },
+  {
+    "title": "Quran Basic Direct Mode",
+    "previous": 21680,
+    "score": 21965,
+    "release": "R13.47"
+  },
+  {
+    "title": "Probabilistic Market Forecasting",
+    "previous": 21662,
+    "score": 21947,
+    "release": "R13.47"
+  },
+  {
+    "title": "Stop Condition Detector",
+    "previous": 21619,
+    "score": 21904,
+    "release": "R13.47"
+  },
+  {
+    "title": "Financial Model Governance",
+    "previous": 21586,
+    "score": 21871,
+    "release": "R13.47"
+  },
+  {
+    "title": "Multi-Horizon Forecast Router",
+    "previous": 21581,
+    "score": 21866,
+    "release": "R13.47"
+  },
+  {
+    "title": "Probabilistic Ensemble Forecast",
+    "previous": 21577,
+    "score": 21862,
+    "release": "R13.47"
+  },
+  {
+    "title": "Advanced Islamic Source Reasoning",
+    "previous": 21484,
+    "score": 21769,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Expert Answer Controller",
+    "previous": 21334,
+    "score": 21619,
+    "release": "R13.47"
+  },
+  {
+    "title": "Global Cross-Asset Intelligence",
+    "previous": 21320,
+    "score": 21605,
+    "release": "R13.47"
+  },
+  {
+    "title": "On-chain Analysis Expert",
+    "previous": 21237,
+    "score": 21522,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Direct-First Deep Thinking",
+    "previous": 21208,
+    "score": 21493,
+    "release": "R13.47"
+  },
+  {
+    "title": "Crypto Market Microstructure Expert",
+    "previous": 21193,
+    "score": 21478,
+    "release": "R13.47"
+  },
+  {
+    "title": "Incremental File Parsing",
+    "previous": 21187,
+    "score": 21472,
+    "release": "R13.47"
+  },
+  {
+    "title": "Hypothesis and Evidence Planner",
+    "previous": 21186,
+    "score": 21471,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Nexus Medium Expert UI",
+    "previous": 20955,
+    "score": 21240,
+    "release": "R13.47"
+  },
+  {
+    "title": "Global Equity Expert Module",
+    "previous": 20922,
+    "score": 21207,
+    "release": "R13.47"
+  },
+  {
+    "title": "Max to Apex Migration",
+    "previous": 20904,
+    "score": 21189,
+    "release": "R13.47"
+  },
+  {
+    "title": "Fast Guardrail Classifier",
+    "previous": 20850,
+    "score": 21135,
+    "release": "R13.47"
+  },
+  {
+    "title": "IDX Equity Expert Module",
+    "previous": 20822,
+    "score": 21107,
+    "release": "R13.47"
+  },
+  {
+    "title": "Macro Nowcasting Framework",
+    "previous": 20634,
+    "score": 20919,
+    "release": "R13.47"
+  },
+  {
+    "title": "Prompt Slimming",
+    "previous": 20624,
+    "score": 20909,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Version Capability Advisor",
+    "previous": 20492,
+    "score": 20777,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Intelligence Mode Center",
+    "previous": 20465,
+    "score": 20750,
+    "release": "R13.47"
+  },
+  {
+    "title": "Global Cross-Asset Reasoning",
+    "previous": 20450,
+    "score": 20735,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Workspace and Chat Manager",
+    "previous": 20441,
+    "score": 20726,
+    "release": "R13.47"
+  },
+  {
+    "title": "Speed Quality Benchmark",
+    "previous": 20394,
+    "score": 20679,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Nexus Command Center",
+    "previous": 20350,
+    "score": 20635,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Universal Artifact Workspace",
+    "previous": 20345,
+    "score": 20630,
+    "release": "R13.47"
+  },
+  {
+    "title": "Fast File Indexing",
+    "previous": 20125,
+    "score": 20410,
+    "release": "R13.47"
+  },
+  {
+    "title": "Artifact Evidence Graph",
+    "previous": 20124,
+    "score": 20409,
+    "release": "R13.47"
+  },
+  {
+    "title": "Emergency Stop and Kill-Switch",
+    "previous": 20123,
+    "score": 20408,
+    "release": "R13.47"
+  },
+  {
+    "title": "Any-Question File Reasoning",
+    "previous": 20123,
+    "score": 20408,
+    "release": "R13.47"
+  },
+  {
+    "title": "Codebase and Log Deep Analysis",
+    "previous": 20116,
+    "score": 20401,
+    "release": "R13.47"
+  },
+  {
+    "title": "Adversarial File Safety",
+    "previous": 20106,
+    "score": 20391,
+    "release": "R13.47"
+  },
+  {
+    "title": "Scientific and Financial File Analysis",
+    "previous": 20070,
+    "score": 20355,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Context and Risk Disclosure",
+    "previous": 19977,
+    "score": 20262,
+    "release": "R13.47"
+  },
+  {
+    "title": "Job Suitability Percentage Model",
+    "previous": 19977,
+    "score": 20262,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Multi-Pass Answer Verifier",
+    "previous": 19942,
+    "score": 20227,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Deep Analysis Planner",
+    "previous": 19942,
+    "score": 20227,
+    "release": "R13.47"
+  },
+  {
+    "title": "Compact Debug Format",
+    "previous": 19922,
+    "score": 20207,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Agent Security Center",
+    "previous": 19870,
+    "score": 20155,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex High-Performance Reasoning Pipeline",
+    "previous": 19868,
+    "score": 20153,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Competency Intelligence",
+    "previous": 19738,
+    "score": 20023,
+    "release": "R13.47"
+  },
+  {
+    "title": "Career Market and Transition Planner",
+    "previous": 19725,
+    "score": 20010,
+    "release": "R13.47"
+  },
+  {
+    "title": "Desktop Action Audit and Replay",
+    "previous": 19724,
+    "score": 20009,
+    "release": "R13.47"
+  },
+  {
+    "title": "Resume Portfolio Analyzer",
+    "previous": 19697,
+    "score": 19982,
+    "release": "R13.47"
+  },
+  {
+    "title": "Network Diagnostics Agent",
+    "previous": 19681,
+    "score": 19966,
+    "release": "R13.47"
+  },
+  {
+    "title": "Package and Runtime Manager",
+    "previous": 19675,
+    "score": 19960,
+    "release": "R13.47"
+  },
+  {
+    "title": "Browser Automation Expert",
+    "previous": 19670,
+    "score": 19955,
+    "release": "R13.47"
+  },
+  {
+    "title": "Streaming CLI Answer",
+    "previous": 19560,
+    "score": 19845,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Adaptive Empathy",
+    "previous": 19538,
+    "score": 19823,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex End-to-End Problem Solver",
+    "previous": 19533,
+    "score": 19818,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Research and Synthesis Mode",
+    "previous": 19529,
+    "score": 19814,
+    "release": "R13.47"
+  },
+  {
+    "title": "Constraint and Trade-off Optimizer",
+    "previous": 19514,
+    "score": 19799,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Natural Language Action Planner",
+    "previous": 19504,
+    "score": 19789,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Firm Wise Advisor",
+    "previous": 19426,
+    "score": 19711,
+    "release": "R13.47"
+  },
+  {
+    "title": "Open Application and Workspace",
+    "previous": 19321,
+    "score": 19606,
+    "release": "R13.47"
+  },
+  {
+    "title": "Semantic File Editing",
+    "previous": 19259,
+    "score": 19544,
+    "release": "R13.47"
+  },
+  {
+    "title": "Per-domain Knowledge Router",
+    "previous": 19244,
+    "score": 19529,
+    "release": "R13.47"
+  },
+  {
+    "title": "Create Any Supported File",
+    "previous": 19239,
+    "score": 19524,
+    "release": "R13.47"
+  },
+  {
+    "title": "File Organization Advisor and Executor",
+    "previous": 19231,
+    "score": 19516,
+    "release": "R13.47"
+  },
+  {
+    "title": "Advanced Process and Service Diagnostics",
+    "previous": 19220,
+    "score": 19505,
+    "release": "R13.47"
+  },
+  {
+    "title": "Cross-File Refactor and Move",
+    "previous": 19203,
+    "score": 19488,
+    "release": "R13.47"
+  },
+  {
+    "title": "CLI Menu Capability",
+    "previous": 19055,
+    "score": 19340,
+    "release": "R13.47"
+  },
+  {
+    "title": "Permission Tokens and Expiry",
+    "previous": 19006,
+    "score": 19291,
+    "release": "R13.47"
+  },
+  {
+    "title": "Graceful Application Close",
+    "previous": 18999,
+    "score": 19284,
+    "release": "R13.47"
+  },
+  {
+    "title": "Mode Chat Selector",
+    "previous": 18997,
+    "score": 19282,
+    "release": "R13.47"
+  },
+  {
+    "title": "Transaction Rollback",
+    "previous": 18987,
+    "score": 19272,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Financial Data Security",
+    "previous": 18962,
+    "score": 19247,
+    "release": "R13.47"
+  },
+  {
+    "title": "Natural Language Server and Project Run",
+    "previous": 18954,
+    "score": 19239,
+    "release": "R13.47"
+  },
+  {
+    "title": "Customer Service Intent Classifier",
+    "previous": 18951,
+    "score": 19236,
+    "release": "R13.47"
+  },
+  {
+    "title": "Emergency Stop and Recovery",
+    "previous": 18949,
+    "score": 19234,
+    "release": "R13.47"
+  },
+  {
+    "title": "Human-in-the-Loop Risk Levels",
+    "previous": 18949,
+    "score": 19234,
+    "release": "R13.47"
+  },
+  {
+    "title": "Agent Action Verification",
+    "previous": 18910,
+    "score": 19195,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Insurance Financial Supervisor Report",
+    "previous": 18910,
+    "score": 19195,
+    "release": "R13.47"
+  },
+  {
+    "title": "Application Interaction Workflow",
+    "previous": 18892,
+    "score": 19177,
+    "release": "R13.47"
+  },
+  {
+    "title": "Insurance Document Capability",
+    "previous": 18883,
+    "score": 19168,
+    "release": "R13.47"
+  },
+  {
+    "title": "Context Isolation Capability",
+    "previous": 18879,
+    "score": 19164,
+    "release": "R13.47"
+  },
+  {
+    "title": "Policy Document Understanding",
+    "previous": 18869,
+    "score": 19154,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Claim Payment Reconciliation",
+    "previous": 18869,
+    "score": 19154,
+    "release": "R13.47"
+  },
+  {
+    "title": "Claim Guidance Assistant",
+    "previous": 18868,
+    "score": 19153,
+    "release": "R13.47"
+  },
+  {
+    "title": "Insurance Knowledge Capability",
+    "previous": 18866,
+    "score": 19151,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Adaptive Multi-Domain Router",
+    "previous": 18865,
+    "score": 19150,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Financial Confidence Decomposition",
+    "previous": 18864,
+    "score": 19149,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Insurance Financial Expert Benchmark",
+    "previous": 18853,
+    "score": 19138,
+    "release": "R13.47"
+  },
+  {
+    "title": "Privacy Capability",
+    "previous": 18824,
+    "score": 19109,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Insurance Financial Anomaly Detection",
+    "previous": 18796,
+    "score": 19081,
+    "release": "R13.47"
+  },
+  {
+    "title": "Customer Service Capability",
+    "previous": 18792,
+    "score": 19077,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Insurance Financial Health Framework",
+    "previous": 18756,
+    "score": 19041,
+    "release": "R13.47"
+  },
+  {
+    "title": "Insurance Product Knowledge Schema",
+    "previous": 18747,
+    "score": 19032,
+    "release": "R13.47"
+  },
+  {
+    "title": "Separated Chat Context and Memory",
+    "previous": 18742,
+    "score": 19027,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Reinsurance Program Analysis",
+    "previous": 18724,
+    "score": 19009,
+    "release": "R13.47"
+  },
+  {
+    "title": "Event-driven Verification",
+    "previous": 18718,
+    "score": 19003,
+    "release": "R13.47"
+  },
+  {
+    "title": "Firmness and Fraud-Safe Boundary",
+    "previous": 18717,
+    "score": 19002,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Advanced Financial Scenario and Sensitivity",
+    "previous": 18717,
+    "score": 19002,
+    "release": "R13.47"
+  },
+  {
+    "title": "Customer Verification and Data Privacy",
+    "previous": 18717,
+    "score": 19002,
+    "release": "R13.47"
+  },
+  {
+    "title": "Long-Term Consequence Reasoning",
+    "previous": 18713,
+    "score": 18998,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Financial Claim Evidence Graph",
+    "previous": 18710,
+    "score": 18995,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Calibrated Percentage Engine",
+    "previous": 18704,
+    "score": 18989,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Reserve Development and Triangle Analysis",
+    "previous": 18676,
+    "score": 18961,
+    "release": "R13.47"
+  },
+  {
+    "title": "Hybrid Retrieval Cache",
+    "previous": 18672,
+    "score": 18957,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Insurance ALM and Investment Risk",
+    "previous": 18667,
+    "score": 18952,
+    "release": "R13.47"
+  },
+  {
+    "title": "Model Router",
+    "previous": 18666,
+    "score": 18951,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Agent and Intelligence Benchmark",
+    "previous": 18660,
+    "score": 18945,
+    "release": "R13.47"
+  },
+  {
+    "title": "Empathy Capability",
+    "previous": 18659,
+    "score": 18944,
+    "release": "R13.47"
+  },
+  {
+    "title": "Handoff Capability",
+    "previous": 18658,
+    "score": 18943,
+    "release": "R13.47"
+  },
+  {
+    "title": "Claims Capability",
+    "previous": 18657,
+    "score": 18942,
+    "release": "R13.47"
+  },
+  {
+    "title": "Ticketing Capability",
+    "previous": 18644,
+    "score": 18929,
+    "release": "R13.47"
+  },
+  {
+    "title": "Claim Document Checklist",
+    "previous": 18643,
+    "score": 18928,
+    "release": "R13.47"
+  },
+  {
+    "title": "V13.36 Release Gate",
+    "previous": 18622,
+    "score": 18907,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Underwriting Profitability Analysis",
+    "previous": 18611,
+    "score": 18896,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Solvency and Liquidity Stress Testing",
+    "previous": 18600,
+    "score": 18885,
+    "release": "R13.47"
+  },
+  {
+    "title": "Customer Empathy and De-escalation",
+    "previous": 18580,
+    "score": 18865,
+    "release": "R13.47"
+  },
+  {
+    "title": "Hot Answer Cache",
+    "previous": 18571,
+    "score": 18856,
+    "release": "R13.47"
+  },
+  {
+    "title": "Human Agent Escalation",
+    "previous": 18570,
+    "score": 18855,
+    "release": "R13.47"
+  },
+  {
+    "title": "Insurance Financial Benchmark",
+    "previous": 18570,
+    "score": 18855,
+    "release": "R13.47"
+  },
+  {
+    "title": "Self-Correction and Failure Recovery",
+    "previous": 18569,
+    "score": 18854,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Premium Adequacy and Sensitivity",
+    "previous": 18561,
+    "score": 18846,
+    "release": "R13.47"
+  },
+  {
+    "title": "Empathy with Actionable Support",
+    "previous": 18555,
+    "score": 18840,
+    "release": "R13.47"
+  },
+  {
+    "title": "Secret and Personal Data Protection",
+    "previous": 18508,
+    "score": 18793,
+    "release": "R13.47"
+  },
+  {
+    "title": "Customer Service and Insurance Benchmark",
+    "previous": 18502,
+    "score": 18787,
+    "release": "R13.47"
+  },
+  {
+    "title": "Financial Evidence and Source Separation",
+    "previous": 18500,
+    "score": 18785,
+    "release": "R13.47"
+  },
+  {
+    "title": "Insurance Financial Spreadsheet QA",
+    "previous": 18489,
+    "score": 18774,
+    "release": "R13.47"
+  },
+  {
+    "title": "Complaint Ticket and Case Summary",
+    "previous": 18486,
+    "score": 18771,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Insurance Financial Expert",
+    "previous": 18480,
+    "score": 18765,
+    "release": "R13.47"
+  },
+  {
+    "title": "Policy Boundary Capability",
+    "previous": 18471,
+    "score": 18756,
+    "release": "R13.47"
+  },
+  {
+    "title": "Resource-Aware Local Optimization",
+    "previous": 18470,
+    "score": 18755,
+    "release": "R13.47"
+  },
+  {
+    "title": "System Restore and Snapshot Planning",
+    "previous": 18453,
+    "score": 18738,
+    "release": "R13.47"
+  },
+  {
+    "title": "Insurance Financial Scenario Engine",
+    "previous": 18450,
+    "score": 18735,
+    "release": "R13.47"
+  },
+  {
+    "title": "CRM Tools Capability",
+    "previous": 18447,
+    "score": 18732,
+    "release": "R13.47"
+  },
+  {
+    "title": "Customer Service Audit and SLA Tracking",
+    "previous": 18442,
+    "score": 18727,
+    "release": "R13.47"
+  },
+  {
+    "title": "Insurance Financial Answer Templates",
+    "previous": 18441,
+    "score": 18726,
+    "release": "R13.47"
+  },
+  {
+    "title": "Audit and SLA Capability",
+    "previous": 18405,
+    "score": 18690,
+    "release": "R13.47"
+  },
+  {
+    "title": "Customer Service Tool Registry",
+    "previous": 18403,
+    "score": 18688,
+    "release": "R13.47"
+  },
+  {
+    "title": "Reserve and IBNR Intelligence",
+    "previous": 18388,
+    "score": 18673,
+    "release": "R13.47"
+  },
+  {
+    "title": "Supervisor Mode Capability",
+    "previous": 18386,
+    "score": 18671,
+    "release": "R13.47"
+  },
+  {
+    "title": "Insurance Investment and ALM Analyzer",
+    "previous": 18381,
+    "score": 18666,
+    "release": "R13.47"
+  },
+  {
+    "title": "Safe File Editing with Patch",
+    "previous": 18379,
+    "score": 18664,
+    "release": "R13.47"
+  },
+  {
+    "title": "Insurance Financial Confidence Calibration",
+    "previous": 18370,
+    "score": 18655,
+    "release": "R13.47"
+  },
+  {
+    "title": "Chat Mode Capability",
+    "previous": 18366,
+    "score": 18651,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Customer Service Supervisor Chat",
+    "previous": 18341,
+    "score": 18626,
+    "release": "R13.47"
+  },
+  {
+    "title": "Insurance Financial Ratio Analyzer",
+    "previous": 18338,
+    "score": 18623,
+    "release": "R13.47"
+  },
+  {
+    "title": "Solvency and Liquidity Analyzer",
+    "previous": 18327,
+    "score": 18612,
+    "release": "R13.47"
+  },
+  {
+    "title": "Release Capability",
+    "previous": 18320,
+    "score": 18605,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Insurance Expert Desk",
+    "previous": 18315,
+    "score": 18600,
+    "release": "R13.47"
+  },
+  {
+    "title": "V13.35 Release Gate",
+    "previous": 18313,
+    "score": 18598,
+    "release": "R13.47"
+  },
+  {
+    "title": "Supervisor Capability",
+    "previous": 18310,
+    "score": 18595,
+    "release": "R13.47"
+  },
+  {
+    "title": "Financial Input and Locale Normalizer",
+    "previous": 18299,
+    "score": 18584,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Claim Inconsistency Detection",
+    "previous": 18292,
+    "score": 18577,
+    "release": "R13.47"
+  },
+  {
+    "title": "Claim Analysis Capability",
+    "previous": 18290,
+    "score": 18575,
+    "release": "R13.47"
+  },
+  {
+    "title": "Premium Pricing Engine",
+    "previous": 18261,
+    "score": 18546,
+    "release": "R13.47"
+  },
+  {
+    "title": "Project-aware Desktop Workspace",
+    "previous": 18259,
+    "score": 18544,
+    "release": "R13.47"
+  },
+  {
+    "title": "Reinsurance Financial Calculator",
+    "previous": 18252,
+    "score": 18537,
+    "release": "R13.47"
+  },
+  {
+    "title": "Policy Reasoning Capability",
+    "previous": 18251,
+    "score": 18536,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Cross-Document Claim Timeline",
+    "previous": 18235,
+    "score": 18520,
+    "release": "R13.47"
+  },
+  {
+    "title": "Insurance Financial Formula Registry",
+    "previous": 18197,
+    "score": 18482,
+    "release": "R13.47"
+  },
+  {
+    "title": "Claim Payment Breakdown Engine",
+    "previous": 18186,
+    "score": 18471,
+    "release": "R13.47"
+  },
+  {
+    "title": "Universal Tool Registry",
+    "previous": 18169,
+    "score": 18454,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Multi-Document Policy Reasoning",
+    "previous": 18165,
+    "score": 18450,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex V13.28 Staged Rollout",
+    "previous": 18147,
+    "score": 18432,
+    "release": "R13.47"
+  },
+  {
+    "title": "Deterministic Insurance Calculator",
+    "previous": 18145,
+    "score": 18430,
+    "release": "R13.47"
+  },
+  {
+    "title": "True Natural-Language Tool Calling",
+    "previous": 18144,
+    "score": 18429,
+    "release": "R13.47"
+  },
+  {
+    "title": "Missing Financial Data Detector",
+    "previous": 18134,
+    "score": 18419,
+    "release": "R13.47"
+  },
+  {
+    "title": "Single Accuracy Line",
+    "previous": 18129,
+    "score": 18414,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Escalation Priority Analyzer",
+    "previous": 18110,
+    "score": 18395,
+    "release": "R13.47"
+  },
+  {
+    "title": "Root Cause Capability",
+    "previous": 18109,
+    "score": 18394,
+    "release": "R13.47"
+  },
+  {
+    "title": "WSL and Linux Integration",
+    "previous": 18108,
+    "score": 18393,
+    "release": "R13.47"
+  },
+  {
+    "title": "Insurance Financial Intent Router",
+    "previous": 18093,
+    "score": 18378,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Insurance Knowledge Synthesis",
+    "previous": 18088,
+    "score": 18373,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Fraud Indicator Review",
+    "previous": 18086,
+    "score": 18371,
+    "release": "R13.47"
+  },
+  {
+    "title": "Fraud Safety Capability",
+    "previous": 18072,
+    "score": 18357,
+    "release": "R13.47"
+  },
+  {
+    "title": "Audit Capability",
+    "previous": 18071,
+    "score": 18356,
+    "release": "R13.47"
+  },
+  {
+    "title": "Full SQLite Migration",
+    "previous": 18068,
+    "score": 18353,
+    "release": "R13.47"
+  },
+  {
+    "title": "Inconsistency Capability",
+    "previous": 18054,
+    "score": 18339,
+    "release": "R13.47"
+  },
+  {
+    "title": "Quality Assurance Capability",
+    "previous": 18053,
+    "score": 18338,
+    "release": "R13.47"
+  },
+  {
+    "title": "Insurance Finance Chat Mode",
+    "previous": 18045,
+    "score": 18330,
+    "release": "R13.47"
+  },
+  {
+    "title": "Artifact Workspace V2",
+    "previous": 18045,
+    "score": 18330,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Service Failure RCA",
+    "previous": 18041,
+    "score": 18326,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Case Audit Trail Analyzer",
+    "previous": 17997,
+    "score": 18282,
+    "release": "R13.47"
+  },
+  {
+    "title": "Evaluator V2",
+    "previous": 17994,
+    "score": 18279,
+    "release": "R13.47"
+  },
+  {
+    "title": "Research Capability",
+    "previous": 17983,
+    "score": 18268,
+    "release": "R13.47"
+  },
+  {
+    "title": "Coaching Capability",
+    "previous": 17952,
+    "score": 18237,
+    "release": "R13.47"
+  },
+  {
+    "title": "Answer Budget Controller",
+    "previous": 17951,
+    "score": 18236,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Agent Response QA",
+    "previous": 17945,
+    "score": 18230,
+    "release": "R13.47"
+  },
+  {
+    "title": "PowerShell Orchestration Layer",
+    "previous": 17926,
+    "score": 18211,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Codebase Graph Intelligence",
+    "previous": 17909,
+    "score": 18194,
+    "release": "R13.47"
+  },
+  {
+    "title": "OCR and Vision V1",
+    "previous": 17909,
+    "score": 18194,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Customer Service Coaching Assistant",
+    "previous": 17900,
+    "score": 18185,
+    "release": "R13.47"
+  },
+  {
+    "title": "Claim Guidance Safety",
+    "previous": 17888,
+    "score": 18173,
+    "release": "R13.47"
+  },
+  {
+    "title": "V13.34 Release Gate",
+    "previous": 17881,
+    "score": 18166,
+    "release": "R13.47"
+  },
+  {
+    "title": "Request Trace and Metrics",
+    "previous": 17859,
+    "score": 18144,
+    "release": "R13.47"
+  },
+  {
+    "title": "Insurance Policy Understanding",
+    "previous": 17858,
+    "score": 18143,
+    "release": "R13.47"
+  },
+  {
+    "title": "Customer Service Mode Isolation",
+    "previous": 17851,
+    "score": 18136,
+    "release": "R13.47"
+  },
+  {
+    "title": "Hybrid Retrieval Pipeline",
+    "previous": 17849,
+    "score": 18134,
+    "release": "R13.47"
+  },
+  {
+    "title": "Evidence and Citation Layer",
+    "previous": 17838,
+    "score": 18123,
+    "release": "R13.47"
+  },
+  {
+    "title": "Security Capability",
+    "previous": 17831,
+    "score": 18116,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Adaptive Direct-First Reasoning",
+    "previous": 17814,
+    "score": 18099,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Insurance Expert and Supervisor Benchmark",
+    "previous": 17799,
+    "score": 18084,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex True Supervised Agent",
+    "previous": 17795,
+    "score": 18080,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Insurance Data Access Control",
+    "previous": 17760,
+    "score": 18045,
+    "release": "R13.47"
+  },
+  {
+    "title": "Agent Permission and Risk Engine",
+    "previous": 17759,
+    "score": 18044,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Advanced Hybrid Retrieval and Reranker",
+    "previous": 17727,
+    "score": 18012,
+    "release": "R13.47"
+  },
+  {
+    "title": "Fraud-Safe Service Boundary",
+    "previous": 17720,
+    "score": 18005,
+    "release": "R13.47"
+  },
+  {
+    "title": "Complaint Ticketing and SLA",
+    "previous": 17719,
+    "score": 18004,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Risk-Aware Multi-Step Planner",
+    "previous": 17717,
+    "score": 18002,
+    "release": "R13.47"
+  },
+  {
+    "title": "Human Agent Handoff",
+    "previous": 17695,
+    "score": 17980,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Multi-Score Calibration",
+    "previous": 17689,
+    "score": 17974,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Patch Build Test Pipeline",
+    "previous": 17685,
+    "score": 17970,
+    "release": "R13.47"
+  },
+  {
+    "title": "Customer Verification and Privacy",
+    "previous": 17685,
+    "score": 17970,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Expert Trace and Replay",
+    "previous": 17660,
+    "score": 17945,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Audit and Transaction Rollback",
+    "previous": 17604,
+    "score": 17889,
+    "release": "R13.47"
+  },
+  {
+    "title": "Religious False-Refusal Regression Carryover",
+    "previous": 17602,
+    "score": 17887,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Multi-Artifact Research Synthesis",
+    "previous": 17573,
+    "score": 17858,
+    "release": "R13.47"
+  },
+  {
+    "title": "Vision-based Desktop Understanding",
+    "previous": 17528,
+    "score": 17813,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Claim-Level Verification",
+    "previous": 17523,
+    "score": 17808,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Cross-Artifact Visual Reasoning",
+    "previous": 17522,
+    "score": 17807,
+    "release": "R13.47"
+  },
+  {
+    "title": "Fast Source Retrieval",
+    "previous": 17507,
+    "score": 17792,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Agent Security Hardening",
+    "previous": 17494,
+    "score": 17779,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex End-to-End Agent Benchmark",
+    "previous": 17483,
+    "score": 17768,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Adversarial Dataset Scanner",
+    "previous": 17463,
+    "score": 17748,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Memory Architecture",
+    "previous": 17418,
+    "score": 17703,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex File Contradiction Detector",
+    "previous": 17412,
+    "score": 17697,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Dataset Governance Pipeline",
+    "previous": 17407,
+    "score": 17692,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Comprehensive Evaluation Framework",
+    "previous": 17401,
+    "score": 17686,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Cross-File Evidence Graph",
+    "previous": 17352,
+    "score": 17637,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Temporal Validity Engine",
+    "previous": 17337,
+    "score": 17622,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Source Conflict Resolution",
+    "previous": 17332,
+    "score": 17617,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Action Preview and Impact",
+    "previous": 17293,
+    "score": 17578,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Four-Level Desktop Sandbox",
+    "previous": 17276,
+    "score": 17561,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Failure Case Library",
+    "previous": 17273,
+    "score": 17558,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Memory Privacy Controls",
+    "previous": 17272,
+    "score": 17557,
+    "release": "R13.47"
+  },
+  {
+    "title": "Advanced Supervised Windows Agent",
+    "previous": 17267,
+    "score": 17552,
+    "release": "R13.47"
+  },
+  {
+    "title": "Windows UI Automation via UIA",
+    "previous": 17267,
+    "score": 17552,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Incremental File Indexing",
+    "previous": 17247,
+    "score": 17532,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Adversarial Agent Tests",
+    "previous": 17238,
+    "score": 17523,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Variance and Consistency Test",
+    "previous": 17206,
+    "score": 17491,
+    "release": "R13.47"
+  },
+  {
+    "title": "Validator",
+    "previous": 17190,
+    "score": 17475,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Full Pipeline Tracing",
+    "previous": 17178,
+    "score": 17463,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Memory Conflict and Provenance",
+    "previous": 17177,
+    "score": 17462,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Refusal Without Evidence",
+    "previous": 17177,
+    "score": 17462,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Knowledge Governance Registry",
+    "previous": 17175,
+    "score": 17460,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Atomic Backup and Rollback",
+    "previous": 17175,
+    "score": 17460,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Verified Feedback Learning",
+    "previous": 17167,
+    "score": 17452,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Hierarchical Task Router",
+    "previous": 17137,
+    "score": 17422,
+    "release": "R13.47"
+  },
+  {
+    "title": "Lazy Deep Thinking Router",
+    "previous": 17131,
+    "score": 17416,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Staged Feature Rollout",
+    "previous": 17122,
+    "score": 17407,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Read-Only Default",
+    "previous": 17121,
+    "score": 17406,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Reliability Completion Gate",
+    "previous": 17090,
+    "score": 17375,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Tool Policy Enforcement",
+    "previous": 17083,
+    "score": 17368,
+    "release": "R13.47"
+  },
+  {
+    "title": "Tool Schema Validity",
+    "previous": 17078,
+    "score": 17363,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Retrieval and Model Cache",
+    "previous": 17076,
+    "score": 17361,
+    "release": "R13.47"
+  },
+  {
+    "title": "Corruption Rate",
+    "previous": 17072,
+    "score": 17357,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Quality Drift Monitor",
+    "previous": 17069,
+    "score": 17354,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Emergency Stop Validation",
+    "previous": 17064,
+    "score": 17349,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Secret and PII Governance",
+    "previous": 17043,
+    "score": 17328,
+    "release": "R13.47"
+  },
+  {
+    "title": "Tool Schema",
+    "previous": 17030,
+    "score": 17315,
+    "release": "R13.47"
+  },
+  {
+    "title": "Parse Success",
+    "previous": 17022,
+    "score": 17307,
+    "release": "R13.47"
+  },
+  {
+    "title": "Wrong Tool Rate",
+    "previous": 17021,
+    "score": 17306,
+    "release": "R13.47"
+  },
+  {
+    "title": "Capability Registry",
+    "previous": 17021,
+    "score": 17306,
+    "release": "R13.47"
+  },
+  {
+    "title": "Argument Accuracy",
+    "previous": 17020,
+    "score": 17305,
+    "release": "R13.47"
+  },
+  {
+    "title": "Risk Metadata",
+    "previous": 17020,
+    "score": 17305,
+    "release": "R13.47"
+  },
+  {
+    "title": "Intent Accuracy",
+    "previous": 17013,
+    "score": 17298,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Career Score Validation",
+    "previous": 17010,
+    "score": 17295,
+    "release": "R13.47"
+  },
+  {
+    "title": "Planner",
+    "previous": 17002,
+    "score": 17287,
+    "release": "R13.47"
+  },
+  {
+    "title": "Tervalidasi",
+    "previous": 16992,
+    "score": 17277,
+    "release": "R13.47"
+  },
+  {
+    "title": "Dan Hanya Tersedia Pada Version Yang Diizinkan",
+    "previous": 16989,
+    "score": 17274,
+    "release": "R13.47"
+  },
+  {
+    "title": "Direct-First Answer Speed",
+    "previous": 16987,
+    "score": 17272,
+    "release": "R13.47"
+  },
+  {
+    "title": "Backup Utility",
+    "previous": 16980,
+    "score": 17265,
+    "release": "R13.47"
+  },
+  {
+    "title": "Query Latency",
+    "previous": 16971,
+    "score": 17256,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Direct-First Fast Path",
+    "previous": 16969,
+    "score": 17254,
+    "release": "R13.47"
+  },
+  {
+    "title": "Artifact Reuse Rate",
+    "previous": 16948,
+    "score": 17233,
+    "release": "R13.47"
+  },
+  {
+    "title": "Sqlite",
+    "previous": 16944,
+    "score": 17229,
+    "release": "R13.47"
+  },
+  {
+    "title": "Citation Accuracy",
+    "previous": 16941,
+    "score": 17226,
+    "release": "R13.47"
+  },
+  {
+    "title": "Edition Policy",
+    "previous": 16941,
+    "score": 17226,
+    "release": "R13.47"
+  },
+  {
+    "title": "Tool Registry",
+    "previous": 16911,
+    "score": 17196,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Release Quality Gate",
+    "previous": 16908,
+    "score": 17193,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Lazy Deep Thinking",
+    "previous": 16905,
+    "score": 17190,
+    "release": "R13.47"
+  },
+  {
+    "title": "Desktop sandbox",
+    "previous": 16892,
+    "score": 17177,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Domain Expert Verifiers",
+    "previous": 16892,
+    "score": 17177,
+    "release": "R13.47"
+  },
+  {
+    "title": "Migration Success",
+    "previous": 16879,
+    "score": 17164,
+    "release": "R13.47"
+  },
+  {
+    "title": "Automated benchmark",
+    "previous": 16874,
+    "score": 17159,
+    "release": "R13.47"
+  },
+  {
+    "title": "Tool Selection Accuracy",
+    "previous": 16873,
+    "score": 17158,
+    "release": "R13.47"
+  },
+  {
+    "title": "Controlled memory",
+    "previous": 16858,
+    "score": 17143,
+    "release": "R13.47"
+  },
+  {
+    "title": "Semua Tool Terdaftar",
+    "previous": 16856,
+    "score": 17141,
+    "release": "R13.47"
+  },
+  {
+    "title": "Intent Router",
+    "previous": 16856,
+    "score": 17141,
+    "release": "R13.47"
+  },
+  {
+    "title": "Entity Resolver",
+    "previous": 16855,
+    "score": 17140,
+    "release": "R13.47"
+  },
+  {
+    "title": "Write Failure Rate",
+    "previous": 16855,
+    "score": 17140,
+    "release": "R13.47"
+  },
+  {
+    "title": "Unauthorized Tool Rate",
+    "previous": 16854,
+    "score": 17139,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Target Profile",
+    "previous": 16854,
+    "score": 17139,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Resource Profiler",
+    "previous": 16854,
+    "score": 17139,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Reliability Report",
+    "previous": 16842,
+    "score": 17127,
+    "release": "R13.47"
+  },
+  {
+    "title": "Knowledge versioning",
+    "previous": 16809,
+    "score": 17094,
+    "release": "R13.47"
+  },
+  {
+    "title": "Evidence-based file QA",
+    "previous": 16779,
+    "score": 17064,
+    "release": "R13.47"
+  },
+  {
+    "title": "Dataset quality pipeline",
+    "previous": 16754,
+    "score": 17039,
+    "release": "R13.47"
+  },
+  {
+    "title": "Import Utility",
+    "previous": 16750,
+    "score": 17035,
+    "release": "R13.47"
+  },
+  {
+    "title": "Artifact Tables",
+    "previous": 16742,
+    "score": 17027,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Replayable Debug Sessions",
+    "previous": 16742,
+    "score": 17027,
+    "release": "R13.47"
+  },
+  {
+    "title": "Parser Router",
+    "previous": 16713,
+    "score": 16998,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Job Data Freshness",
+    "previous": 16713,
+    "score": 16998,
+    "release": "R13.47"
+  },
+  {
+    "title": "Schema Migrations",
+    "previous": 16699,
+    "score": 16984,
+    "release": "R13.47"
+  },
+  {
+    "title": "Auto-router",
+    "previous": 16698,
+    "score": 16983,
+    "release": "R13.47"
+  },
+  {
+    "title": "Confidence calibration",
+    "previous": 16675,
+    "score": 16960,
+    "release": "R13.47"
+  },
+  {
+    "title": "Observability",
+    "previous": 16534,
+    "score": 16819,
+    "release": "R13.47"
+  },
+  {
+    "title": "Verified feedback learning",
+    "previous": 16529,
+    "score": 16814,
+    "release": "R13.47"
+  },
+  {
+    "title": "Apex Expert Calculation Benchmark",
+    "previous": 4233,
+    "score": 4518,
+    "release": "R13.47",
+    "upgradeId": "APEX-1340-011"
+  },
+  {
+    "title": "Apex Claim-Level Numeric Confidence",
+    "previous": 4228,
+    "score": 4513,
+    "release": "R13.47",
+    "upgradeId": "APEX-1340-010"
+  },
+  {
+    "title": "Apex Reproducible Calculation Report",
+    "previous": 4223,
+    "score": 4508,
+    "release": "R13.47",
+    "upgradeId": "APEX-1340-009"
+  },
+  {
+    "title": "Apex Formula Extraction from Documents",
+    "previous": 4218,
+    "score": 4503,
+    "release": "R13.47",
+    "upgradeId": "APEX-1340-008"
+  },
+  {
+    "title": "Apex Multi-Variable Sensitivity Engine",
+    "previous": 4213,
+    "score": 4498,
+    "release": "R13.47",
+    "upgradeId": "APEX-1340-007"
+  },
+  {
+    "title": "Apex Statistical Assumption Auditor",
+    "previous": 4208,
+    "score": 4493,
+    "release": "R13.47",
+    "upgradeId": "APEX-1340-006"
+  },
+  {
+    "title": "Apex Engineering Calculation Workspace",
+    "previous": 4203,
+    "score": 4488,
+    "release": "R13.47",
+    "upgradeId": "APEX-1340-005"
+  },
+  {
+    "title": "Apex Insurance Finance Expert Renderer",
+    "previous": 4198,
+    "score": 4483,
+    "release": "R13.47",
+    "upgradeId": "APEX-1340-004"
+  },
+  {
+    "title": "Apex Dual-Method Verification",
+    "previous": 4193,
+    "score": 4478,
+    "release": "R13.47",
+    "upgradeId": "APEX-1340-003"
+  },
+  {
+    "title": "Apex Expert Formula Library",
+    "previous": 4188,
+    "score": 4473,
+    "release": "R13.47",
+    "upgradeId": "APEX-1340-002"
+  },
+  {
+    "title": "Apex Advanced Calculation Planner",
+    "previous": 4183,
+    "score": 4468,
+    "release": "R13.47",
+    "upgradeId": "APEX-1340-001"
+  },
+  {
+    "title": "V13.40 Answer Quality Release Gate",
+    "previous": 4178,
+    "score": 4463,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-024"
+  },
+  {
+    "title": "Calculation Golden Dataset",
+    "previous": 4173,
+    "score": 4458,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-023"
+  },
+  {
+    "title": "No-LaTeX Leak Middleware",
+    "previous": 4168,
+    "score": 4453,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-022"
+  },
+  {
+    "title": "Copy-Ready Formula Output",
+    "previous": 4163,
+    "score": 4448,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-021"
+  },
+  {
+    "title": "Calculation Confidence Decomposition",
+    "previous": 4158,
+    "score": 4443,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-020"
+  },
+  {
+    "title": "Visible Assumption Ledger",
+    "previous": 4153,
+    "score": 4438,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-019"
+  },
+  {
+    "title": "Calculation Missing-Input Detector V2",
+    "previous": 4148,
+    "score": 4433,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-018"
+  },
+  {
+    "title": "Explicit Output Format Switch",
+    "previous": 4143,
+    "score": 4428,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-017"
+  },
+  {
+    "title": "Answer Detail Controller",
+    "previous": 4138,
+    "score": 4423,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-016"
+  },
+  {
+    "title": "Unicode Math Fallback Policy",
+    "previous": 4133,
+    "score": 4418,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-015"
+  },
+  {
+    "title": "Terminal-Safe Calculation Tables",
+    "previous": 4128,
+    "score": 4413,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-014"
+  },
+  {
+    "title": "Engineering Formula and Unit Registry",
+    "previous": 4123,
+    "score": 4408,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-013"
+  },
+  {
+    "title": "Statistics and Probability Calculator",
+    "previous": 4118,
+    "score": 4403,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-012"
+  },
+  {
+    "title": "Symbolic-to-Numeric Calculation Router",
+    "previous": 4113,
+    "score": 4398,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-011"
+  },
+  {
+    "title": "Financial and Insurance Formula Engine V2",
+    "previous": 4108,
+    "score": 4393,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-010"
+  },
+  {
+    "title": "Domain-Aware Calculation Templates",
+    "previous": 4103,
+    "score": 4388,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-009"
+  },
+  {
+    "title": "Independent Calculation Verifier",
+    "previous": 4098,
+    "score": 4383,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-008"
+  },
+  {
+    "title": "Rounding and Significant-Digit Policy",
+    "previous": 4093,
+    "score": 4378,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-007"
+  },
+  {
+    "title": "Unit-Aware Calculation Engine",
+    "previous": 4088,
+    "score": 4373,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-006"
+  },
+  {
+    "title": "Indonesian Number and Currency Normalizer V2",
+    "previous": 4083,
+    "score": 4368,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-005"
+  },
+  {
+    "title": "Versioned Formula Registry V2",
+    "previous": 4078,
+    "score": 4363,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-004"
+  },
+  {
+    "title": "Deterministic Formula Engine V2",
+    "previous": 4073,
+    "score": 4358,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-003"
+  },
+  {
+    "title": "Final Answer First",
+    "previous": 4068,
+    "score": 4353,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-002"
+  },
+  {
+    "title": "CLI Math Rendering Engine V2",
+    "previous": 4063,
+    "score": 4348,
+    "release": "R13.47",
+    "upgradeId": "SHARED-1340-001"
+  }
+]

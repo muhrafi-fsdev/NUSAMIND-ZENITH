@@ -1,0 +1,82 @@
+[
+  {
+    "step_order": "1",
+    "step_id": "CM-01",
+    "migration_step": "Freeze legacy writes",
+    "required_checks": "Checksum and read-only policy",
+    "output": "Frozen snapshot",
+    "rollback_condition": "Direct write detected"
+  },
+  {
+    "step_order": "2",
+    "step_id": "CM-02",
+    "migration_step": "Streaming parse",
+    "required_checks": "Encoding, malformed records, memory cap",
+    "output": "Record stream",
+    "rollback_condition": "Parse loss too high"
+  },
+  {
+    "step_order": "3",
+    "step_id": "CM-03",
+    "migration_step": "Normalize",
+    "required_checks": "Language, dates, numbers, IDs",
+    "output": "Canonical records",
+    "rollback_condition": "Meaning changed"
+  },
+  {
+    "step_order": "4",
+    "step_id": "CM-04",
+    "migration_step": "Deduplicate",
+    "required_checks": "Exact, normalized, semantic, lineage",
+    "output": "Unique clusters",
+    "rollback_condition": "False merge high"
+  },
+  {
+    "step_order": "5",
+    "step_id": "CM-05",
+    "migration_step": "Domain/source metadata",
+    "required_checks": "Domain, source, trust, dates, difficulty",
+    "output": "Knowledge V2 records",
+    "rollback_condition": "Critical metadata missing"
+  },
+  {
+    "step_order": "6",
+    "step_id": "CM-06",
+    "migration_step": "SQLite and FTS5 import",
+    "required_checks": "Transaction, schema, count reconciliation",
+    "output": "SQLite/FTS5 corpus",
+    "rollback_condition": "Count/checksum mismatch"
+  },
+  {
+    "step_order": "7",
+    "step_id": "CM-07",
+    "migration_step": "Embedding index",
+    "required_checks": "Model/version/dimensions/checksum",
+    "output": "Embedding index",
+    "rollback_condition": "Coverage incomplete"
+  },
+  {
+    "step_order": "8",
+    "step_id": "CM-08",
+    "migration_step": "Retrieval benchmark",
+    "required_checks": "Precision, recall, MRR, latency",
+    "output": "Validated V6 index",
+    "rollback_condition": "Below threshold"
+  },
+  {
+    "step_order": "9",
+    "step_id": "CM-09",
+    "migration_step": "Runtime cutover",
+    "required_checks": "Trace uses V6; legacy disabled",
+    "output": "Production V6",
+    "rollback_condition": "Regression detected"
+  },
+  {
+    "step_order": "10",
+    "step_id": "CM-10",
+    "migration_step": "Pack split and archive",
+    "required_checks": "Manifests, checksums, rollback",
+    "output": "Core/knowledge/health packs",
+    "rollback_condition": "Lifecycle failure"
+  }
+]

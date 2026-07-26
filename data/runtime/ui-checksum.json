@@ -1,0 +1,11 @@
+{
+  "release": "R13.49",
+  "baseline": "R13.48",
+  "files": {
+    "app/globals.css": "d2c23d2ab95b3eb29d69cdf8054c15098cc8bbc94265fd01d6260d3536638bb2",
+    "app/layout.tsx": "c909969ecb698640428d7b086e939d363e7a621a0c4a8448c8790bdb2dc192fa",
+    "app/page.tsx": "5d40ab09570a910b58c86c44a35adaa5f34e1cc6df0ef5dd83fecee2e857ea59",
+    "components/ChatShell.tsx": "e56d61915dc5e1e12393e432e3e0515769c6a2abb5f99e0bab49b1fbdef491c0",
+    "public/nusamind-logo.png": "3fd764cecb5c36030ab763a456edb02c62ea49d416b758d20d653227ebf3999f"
+  }
+}

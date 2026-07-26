@@ -1,0 +1,4 @@
+
+import { createHash } from 'node:crypto';
+export type SyntheticRecord={question:string;answer:string;source?:string;containsPii?:boolean};
+export function gateSyntheticData(records:SyntheticRecord[]){const seen=new Set<string>();const accepted:SyntheticRecord[]=[];const rejected:Array<{record:SyntheticRecord;reason:string}>=[];for(const record of records){const key=createHash('sha256').update(`${record.question.trim().toLowerCase()}|${record.answer.trim().toLowerCase()}`).digest('hex');let reason='';if(!record.source)reason='UNGROUNDED';else if(record.containsPii)reason='PRIVACY';else if(seen.has(key))reason='DUPLICATE';else if(record.answer.trim().length<8)reason='LOW_QUALITY';if(reason)rejected.push({record,reason});else{seen.add(key);accepted.push(record);}}return{ok:rejected.every((x)=>x.reason==='DUPLICATE'),accepted,rejected,duplicateRate:records.length?(rejected.filter((x)=>x.reason==='DUPLICATE').length/records.length):0};}

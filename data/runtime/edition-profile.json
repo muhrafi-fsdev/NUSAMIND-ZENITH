@@ -1,0 +1,117 @@
+{
+  "release": "1.0.0",
+  "releaseLabel": "N1.0",
+  "edition": "zenith",
+  "editionName": "NusaMind Zenith",
+  "description": "Balanced local intelligence with deeper reasoning, artifact research, approved engineering workflows, and defensive security analysis.",
+  "defaultLevel": "high",
+  "globalCounts": {
+    "universalKnowledge": 3868133,
+    "languageVariants": 605136,
+    "goldenEvaluationCases": 201347,
+    "vectorLiteStatusIndex": "6015588+"
+  },
+  "upgradeItems": 124,
+  "topCategoryCount": 1080,
+  "priorityNote": "N1.0: 124 upgrade items, all Top Category scores +900, main UI unchanged.",
+  "sourceManifest": "data/release/n1/upgrades.json",
+  "noUiTouch": true,
+  "namingConvention": {
+    "style": "simple-kebab-case",
+    "versionInJsonFilename": false,
+    "conventionalFilesPreserved": [
+      "package.json",
+      "package-lock.json",
+      "tsconfig.json"
+    ]
+  },
+  "cliUpload": {
+    "enabled": true,
+    "limitKb": 81920,
+    "folderFileLimit": 2500,
+    "webUiChanged": false
+  },
+  "desktopControl": {
+    "mode": "bounded-react",
+    "enabledByDefault": false,
+    "confirmationRequired": true,
+    "auditLog": true,
+    "emergencyStop": true
+  },
+  "promptPlatform": {
+    "registry": "v3",
+    "compiler": "layered",
+    "lifecycle": true,
+    "canaryRollback": true,
+    "runtimeTrace": true
+  },
+  "context": {
+    "budgetTokens": 16384,
+    "compression": true,
+    "conflictDetection": true,
+    "stateSeparation": true
+  },
+  "agent": {
+    "mode": "bounded-reflexive",
+    "react": true,
+    "checkpoint": true,
+    "deep": false,
+    "parallelism": 1
+  },
+  "resource": {
+    "contextTokens": 24576,
+    "modelCalls": 11,
+    "agentSteps": 18,
+    "parallelism": 2,
+    "tools": 10,
+    "retries": 2,
+    "elapsedMs": 11000,
+    "outputTokens": 4800,
+    "ramMb": 6144
+  },
+  "v1347": {
+    "items": 54,
+    "topCategoryBoost": 285,
+    "capabilityLifecycle": "v4",
+    "advancedPrompting": true,
+    "tokenAwareContext": true,
+    "reflexiveAgent": true,
+    "agenticRag": true,
+    "multimodal": true,
+    "benchmarkCases": 19,
+    "noUiTouch": true
+  },
+  "v1348": {
+    "items": 79,
+    "topCategoryBoost": 390,
+    "capabilityGraph": true,
+    "modularRuntime": true,
+    "governanceGates": true,
+    "n8nIntegration": false,
+    "benchmarkCases": 29,
+    "noUiTouch": true,
+    "architectureMigration": "compatibility-bridge"
+  },
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "lineage": [
+    "R13.49.1 Cybersecurity-Only",
+    "V13.49.2"
+  ],
+  "statusCounts": {
+    "ACTIVE": 47,
+    "BENCHMARKED": 56,
+    "PROTOTYPE": 21
+  },
+  "topCategoryBoost": 900,
+  "windowsExe": false,
+  "n8nIntegration": false,
+  "features": {
+    "causalSandbox": true,
+    "multiAgentDebate": false,
+    "semanticCodeGraph": true,
+    "browserWorkspace": true,
+    "securityControlGraph": true,
+    "longHorizonAgent": true
+  }
+}

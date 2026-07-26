@@ -1,0 +1,7 @@
+{
+  "release": "R13.36",
+  "edition": "apex",
+  "sessions": [],
+  "archived": true,
+  "note": "Session benchmark lama tidak dibundel untuk menghemat ukuran."
+}

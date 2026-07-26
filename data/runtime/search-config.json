@@ -1,0 +1,12 @@
+{
+  "mode": "hybrid",
+  "signals": [
+    "keyword",
+    "vector",
+    "metadata",
+    "trust"
+  ],
+  "reranker": true,
+  "evidenceThreshold": 0.12,
+  "release": "13.38.0"
+}

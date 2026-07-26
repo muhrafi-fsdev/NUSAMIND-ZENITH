@@ -1,0 +1,65 @@
+[
+  {
+    "memory_type": "SHORT_TERM",
+    "purpose": "Active conversation and current task",
+    "default_retention": "Session/task expiry",
+    "write_condition": "Automatic within active session",
+    "read_condition": "Relevant current task only",
+    "privacy_requirement": "Workspace isolated",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "memory_type": "LONG_TERM",
+    "purpose": "Approved preferences and project facts",
+    "default_retention": "Until expiry/deletion",
+    "write_condition": "Explicit consent or approved rule",
+    "read_condition": "Relevant and not superseded",
+    "privacy_requirement": "Consent, encryption, deletion",
+    "target_editions": "Swift, Zenith, Apex"
+  },
+  {
+    "memory_type": "EPISODIC",
+    "purpose": "Verified agent execution episodes",
+    "default_retention": "Bounded retention",
+    "write_condition": "Verified outcome only",
+    "read_condition": "Matching task/tool/failure",
+    "privacy_requirement": "Redacted; no raw CoT",
+    "target_editions": "Zenith, Apex"
+  },
+  {
+    "memory_type": "ARTIFACT",
+    "purpose": "Artifact versions, checksums and decisions",
+    "default_retention": "Project lifecycle",
+    "write_condition": "After artifact verification",
+    "read_condition": "Current project and version",
+    "privacy_requirement": "Workspace isolated",
+    "target_editions": "Zenith, Apex"
+  },
+  {
+    "memory_type": "WORKFLOW",
+    "purpose": "Internal workflow state and outcome",
+    "default_retention": "Workflow lifecycle",
+    "write_condition": "During verified workflow",
+    "read_condition": "Matching workflow version",
+    "privacy_requirement": "Audit and idempotency",
+    "target_editions": "Zenith, Apex"
+  },
+  {
+    "memory_type": "LESSON",
+    "purpose": "Short verified corrective lessons",
+    "default_retention": "Expiry/review based",
+    "write_condition": "Evaluator-approved only",
+    "read_condition": "Relevant failure scope",
+    "privacy_requirement": "Poisoning protection; no raw CoT",
+    "target_editions": "Zenith, Apex"
+  },
+  {
+    "memory_type": "PRIVATE_HEALTH",
+    "purpose": "Sensitive health conversation data",
+    "default_retention": "Minimal/consent based",
+    "write_condition": "Explicit consent only",
+    "read_condition": "Private health session only",
+    "privacy_requirement": "Encrypted and separate",
+    "target_editions": "Swift, Zenith, Apex"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "assumption_id": "DIST-01",
+    "decision": "node_modules excluded",
+    "prerequisite": "Node.js >=22, package-lock.json, npm ci",
+    "correct_interpretation": "Install dependencies after extraction",
+    "incorrect_interpretation": "Project is broken"
+  },
+  {
+    "assumption_id": "DIST-02",
+    "decision": "Python .venv/browser caches excluded",
+    "prerequisite": "Python lock and setup script",
+    "correct_interpretation": "Create clean virtualenv",
+    "incorrect_interpretation": "Bundle environment"
+  },
+  {
+    "assumption_id": "DIST-03",
+    "decision": "Main UI preserved",
+    "prerequisite": "Visual regression",
+    "correct_interpretation": "shadcn dashboard is optional",
+    "incorrect_interpretation": "Main UI redesign"
+  },
+  {
+    "assumption_id": "DIST-04",
+    "decision": "n8n postponed",
+    "prerequisite": "No n8n ACTIVE manifest entry",
+    "correct_interpretation": "V13.49 uses five supplied resources only",
+    "incorrect_interpretation": "n8n included"
+  },
+  {
+    "assumption_id": "DIST-05",
+    "decision": "External repos are references",
+    "prerequisite": "Source and license review",
+    "correct_interpretation": "Adopt patterns selectively",
+    "incorrect_interpretation": "Merge repositories wholesale"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "pattern_id": "PAT-01",
+    "pattern_name": "Direct Response",
+    "best_for": "Simple answer or deterministic output",
+    "avoid_when": "Multi-step side effects",
+    "required_components": "Prompt, model/tool, output validator",
+    "swift_support": "Full",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "primary_verification": "Output schema or deterministic check"
+  },
+  {
+    "pattern_id": "PAT-02",
+    "pattern_name": "Deterministic Workflow",
+    "best_for": "Known fixed steps",
+    "avoid_when": "Open research",
+    "required_components": "Workflow graph, tools, postconditions",
+    "swift_support": "Full",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "primary_verification": "Expected-state verification"
+  },
+  {
+    "pattern_id": "PAT-03",
+    "pattern_name": "Planner–Executor",
+    "best_for": "Multi-step dependency task",
+    "avoid_when": "Single simple question",
+    "required_components": "Planner, executor, verifier, recovery",
+    "swift_support": "Limited",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "primary_verification": "Node postconditions"
+  },
+  {
+    "pattern_id": "PAT-04",
+    "pattern_name": "ReAct Loop",
+    "best_for": "Adaptive tool task",
+    "avoid_when": "No tools or uncontrolled high risk",
+    "required_components": "Tool router, observation, verifier, budget",
+    "swift_support": "No",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "primary_verification": "Trajectory and expected state"
+  },
+  {
+    "pattern_id": "PAT-05",
+    "pattern_name": "Context Graph Traversal",
+    "best_for": "Project/knowledge dependency tasks",
+    "avoid_when": "No graph or simple lookup",
+    "required_components": "Knowledge graph, memory, freshness",
+    "swift_support": "No",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "primary_verification": "Traversal relevance"
+  },
+  {
+    "pattern_id": "PAT-06",
+    "pattern_name": "Multi-Agent Orchestration",
+    "best_for": "Complex expert decomposition",
+    "avoid_when": "Resource-constrained simple tasks",
+    "required_components": "Scoped agents, planner, verifier, audit",
+    "swift_support": "No",
+    "zenith_support": "No",
+    "apex_support": "Full",
+    "primary_verification": "Independent verification"
+  },
+  {
+    "pattern_id": "PAT-07",
+    "pattern_name": "Reflection/Self-Critique",
+    "best_for": "Verified iterative correction",
+    "avoid_when": "No objective evaluator",
+    "required_components": "Evaluator, episodic memory, poisoning guard",
+    "swift_support": "No",
+    "zenith_support": "Limited",
+    "apex_support": "Full",
+    "primary_verification": "Outcome-based lesson"
+  }
+]

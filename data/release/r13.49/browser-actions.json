@@ -1,0 +1,132 @@
+[
+  {
+    "action_id": "BA-01",
+    "action": "Navigate approved public URL",
+    "risk": "READ",
+    "swift": "Allowed",
+    "zenith": "Allowed",
+    "apex": "Allowed",
+    "approval": "No",
+    "verification": "URL and redirect validation"
+  },
+  {
+    "action_id": "BA-02",
+    "action": "Read/extract page",
+    "risk": "READ",
+    "swift": "Allowed",
+    "zenith": "Allowed",
+    "apex": "Allowed",
+    "approval": "No",
+    "verification": "DOM evidence"
+  },
+  {
+    "action_id": "BA-03",
+    "action": "Take screenshot",
+    "risk": "READ",
+    "swift": "Allowed",
+    "zenith": "Allowed",
+    "apex": "Allowed",
+    "approval": "No",
+    "verification": "Screenshot checksum and URL"
+  },
+  {
+    "action_id": "BA-04",
+    "action": "Click navigation element",
+    "risk": "INTERACTIVE",
+    "swift": "Escalate",
+    "zenith": "Allowed in plan",
+    "apex": "Allowed in plan",
+    "approval": "Risk-based",
+    "verification": "DOM/URL state"
+  },
+  {
+    "action_id": "BA-05",
+    "action": "Type form draft",
+    "risk": "INTERACTIVE",
+    "swift": "Escalate",
+    "zenith": "Allowed",
+    "apex": "Allowed",
+    "approval": "Sensitive fields",
+    "verification": "Value set and no submit"
+  },
+  {
+    "action_id": "BA-06",
+    "action": "Submit form",
+    "risk": "COMMIT",
+    "swift": "Denied",
+    "zenith": "Explicit approval",
+    "apex": "Explicit approval",
+    "approval": "Always",
+    "verification": "Success and expected state"
+  },
+  {
+    "action_id": "BA-07",
+    "action": "Login/use account",
+    "risk": "SENSITIVE",
+    "swift": "Denied",
+    "zenith": "Broker + approval",
+    "apex": "Broker + approval",
+    "approval": "Always",
+    "verification": "Session state without secret exposure"
+  },
+  {
+    "action_id": "BA-08",
+    "action": "Upload file",
+    "risk": "COMMIT",
+    "swift": "Denied",
+    "zenith": "Explicit approval",
+    "apex": "Explicit approval",
+    "approval": "Always",
+    "verification": "Target and upload confirmation"
+  },
+  {
+    "action_id": "BA-09",
+    "action": "Download file",
+    "risk": "WRITE",
+    "swift": "Escalate",
+    "zenith": "Quarantine",
+    "apex": "Quarantine",
+    "approval": "Risk-based",
+    "verification": "MIME/checksum/quarantine"
+  },
+  {
+    "action_id": "BA-10",
+    "action": "Send/publish content",
+    "risk": "COMMIT",
+    "swift": "Denied",
+    "zenith": "Explicit approval",
+    "apex": "Explicit approval",
+    "approval": "Always",
+    "verification": "Published state evidence"
+  },
+  {
+    "action_id": "BA-11",
+    "action": "Payment/account change",
+    "risk": "HIGH_RISK",
+    "swift": "Denied",
+    "zenith": "Out of scope",
+    "apex": "Out of scope",
+    "approval": "N/A",
+    "verification": "Not implemented"
+  },
+  {
+    "action_id": "BA-12",
+    "action": "Private/local network target",
+    "risk": "HIGH_RISK",
+    "swift": "Denied",
+    "zenith": "Approved local QA only",
+    "apex": "Approved local QA only",
+    "approval": "Always",
+    "verification": "SSRF guard"
+  },
+  {
+    "action_id": "BA-13",
+    "action": "CAPTCHA bypass",
+    "risk": "PROHIBITED",
+    "swift": "Denied",
+    "zenith": "Denied",
+    "apex": "Denied",
+    "approval": "N/A",
+    "verification": "Stop and handoff"
+  }
+]

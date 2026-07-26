@@ -1,0 +1,7 @@
+﻿menu_order,menu_item,swift_behavior,zenith_behavior,apex_behavior
+1,Type Kecerdasan,"Instant, Quick Reasoning, Auto","Instant, Balanced, Analytical, Auto","Direct, Analytical, Deep Thinking, Research, Agent, Auto"
+2,Chat,New/Continue session ringan,"Session, pin, rename, workspace summary","Workspace, branch, artifacts, decision history"
+3,Version,Pilih Swift/Zenith/Apex,Capability cards + rekomendasi versi,"Advisor berdasarkan kompleksitas, risiko, resource"
+4,Upload File,File kecil dan QA cepat,Universal file workspace dan multi-file,"Artifact graph, codebase, evidence lintas file"
+5,Disclaimer,Compact,Contextual,Domain/action risk disclosure
+6,Keamanan,Read-only status + stop,"Permission, allowed folders/apps, audit","Agent security center, expiry, backups, queue, rollback"

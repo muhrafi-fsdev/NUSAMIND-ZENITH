@@ -1,0 +1,23 @@
+[
+  {
+    "source_id": "REF-01",
+    "source_title": "The Agentic AI Knowledge Graph",
+    "source_file": "WhatsApp Image 2026-07-17 at 14.50.50.jpeg",
+    "main_contribution": "Foundations, retrieval and memory, agent patterns, governance, frontier capabilities, and dependency relationships.",
+    "used_in_phases": "3, 4, 5, 6, 8, 9"
+  },
+  {
+    "source_id": "REF-02",
+    "source_title": "The LLM Application Iceberg",
+    "source_file": "WhatsApp Image 2026-07-17 at 14.49.32.jpeg",
+    "main_contribution": "Hidden production infrastructure: prompts, RAG, embeddings, chunking, permissions, evaluation, monitoring, cost, fallback, privacy and latency.",
+    "used_in_phases": "6, 7, 9"
+  },
+  {
+    "source_id": "REF-03",
+    "source_title": "AI Agent Project Structure Example",
+    "source_file": "WhatsApp Image 2026-07-17 at 14.48.11.jpeg",
+    "main_contribution": "Modular repository structure, source separation, services, tools, models, prompts, API, tests, data, logs, configuration and entry points.",
+    "used_in_phases": "1, 2, 8, 9"
+  }
+]

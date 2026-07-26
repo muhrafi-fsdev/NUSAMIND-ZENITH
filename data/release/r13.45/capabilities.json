@@ -1,0 +1,42 @@
+[
+  {
+    "capability_id": "CAP-ML",
+    "capability_name": "Production ML",
+    "available_requirements": "FastAPI healthy; ACTIVE model; dataset/feature/calibration hashes; frozen benchmark; fallback tested",
+    "degraded_conditions": "Baseline/rules available",
+    "not_ready_conditions": "Model missing or benchmark/schema fail",
+    "target_versions": "Swift, Zenith, Apex"
+  },
+  {
+    "capability_id": "CAP-NN",
+    "capability_name": "Custom Neural Text Classifier",
+    "available_requirements": "Gradient; text model; safe load; group holdout; OOD; calibration; baseline superiority",
+    "degraded_conditions": "Production ML baseline works",
+    "not_ready_conditions": "Only XOR demo or no text model",
+    "target_versions": "Zenith, Apex"
+  },
+  {
+    "capability_id": "CAP-RETR",
+    "capability_name": "Retrieval V6",
+    "available_requirements": "FTS5; embedding; metadata/freshness; reranker policy; chat uses V6; benchmark pass",
+    "degraded_conditions": "FTS-only or embedding unavailable",
+    "not_ready_conditions": "Only wrapper file exists",
+    "target_versions": "Swift, Zenith, Apex"
+  },
+  {
+    "capability_id": "CAP-HEALTH",
+    "capability_name": "Integrated Health",
+    "available_requirements": "Red flags; privacy; populated registries; interactions; evidence; freshness; verifier; benchmark",
+    "degraded_conditions": "Safety works but optional pack limited",
+    "not_ready_conditions": "Empty registries or critical test fail",
+    "target_versions": "Swift, Zenith, Apex"
+  },
+  {
+    "capability_id": "CAP-CORPUS",
+    "capability_name": "Knowledge Packs",
+    "available_requirements": "Manifest/checksum; schema; imported/indexed; rollback; benchmark",
+    "degraded_conditions": "Core with limited corpus",
+    "not_ready_conditions": "Corrupt/incompatible pack",
+    "target_versions": "Swift, Zenith, Apex"
+  }
+]

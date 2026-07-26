@@ -1,0 +1,1 @@
+export { transitionPrompt } from './registry';

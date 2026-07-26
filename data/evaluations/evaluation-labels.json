@@ -1,0 +1,20 @@
+{
+  "labels": [
+    "helpful",
+    "not_helpful",
+    "wrong_context",
+    "hallucination",
+    "too_short",
+    "too_long",
+    "unsafe",
+    "needs_source",
+    "good_style"
+  ],
+  "scale": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

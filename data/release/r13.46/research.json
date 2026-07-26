@@ -1,0 +1,82 @@
+[
+  {
+    "research_id": "RS-001",
+    "topic": "ReAct",
+    "guide_source": "https://arxiv.org/abs/2210.03629",
+    "original_source_required": "Yes",
+    "implementation_status": "REVIEWED",
+    "target_module": "Bounded agent loop",
+    "benchmark_required": "Tool task and recovery",
+    "activation_rule": "Expected-state verification required"
+  },
+  {
+    "research_id": "RS-002",
+    "topic": "RAG Faithfulness",
+    "guide_source": "https://www.promptingguide.ai/research/rag",
+    "original_source_required": "Yes",
+    "implementation_status": "REVIEWED",
+    "target_module": "Faithfulness guard",
+    "benchmark_required": "Claim support and stale evidence",
+    "activation_rule": "Unsupported critical claim must be zero"
+  },
+  {
+    "research_id": "RS-003",
+    "topic": "LLM Recall",
+    "guide_source": "https://www.promptingguide.ai/research/llm-recall",
+    "original_source_required": "Yes",
+    "implementation_status": "REVIEWED",
+    "target_module": "Context profiling",
+    "benchmark_required": "Needle position and length",
+    "activation_rule": "Safe context profile required"
+  },
+  {
+    "research_id": "RS-004",
+    "topic": "Synthetic Data",
+    "guide_source": "https://www.promptingguide.ai/research/synthetic_data",
+    "original_source_required": "Yes",
+    "implementation_status": "REVIEWED",
+    "target_module": "Dataset quality gate",
+    "benchmark_required": "Factuality, privacy, dedup",
+    "activation_rule": "No ungrounded synthetic record"
+  },
+  {
+    "research_id": "RS-005",
+    "topic": "Trustworthiness",
+    "guide_source": "https://www.promptingguide.ai/research/trustworthiness-in-llms",
+    "original_source_required": "Yes",
+    "implementation_status": "REVIEWED",
+    "target_module": "Trust scorecard",
+    "benchmark_required": "Truthfulness, privacy, robustness",
+    "activation_rule": "Critical dimension fail means final fail"
+  },
+  {
+    "research_id": "RS-006",
+    "topic": "Deep Agents",
+    "guide_source": "https://www.promptingguide.ai/agents/deep-agents",
+    "original_source_required": "Yes",
+    "implementation_status": "DISCOVERED",
+    "target_module": "Apex orchestrator",
+    "benchmark_required": "Delegation, cost, verification",
+    "activation_rule": "Prototype and benchmark required"
+  },
+  {
+    "research_id": "RS-007",
+    "topic": "Context Engineering",
+    "guide_source": "https://www.promptingguide.ai/agents/context-engineering",
+    "original_source_required": "Yes",
+    "implementation_status": "REVIEWED",
+    "target_module": "Context Engine V2",
+    "benchmark_required": "Relevance, compression, conflict",
+    "activation_rule": "Must improve task and token efficiency"
+  },
+  {
+    "research_id": "RS-008",
+    "topic": "Prompt Injection",
+    "guide_source": "https://www.promptingguide.ai/prompts/adversarial-prompting/prompt-injection",
+    "original_source_required": "Yes",
+    "implementation_status": "REVIEWED",
+    "target_module": "Security pipeline",
+    "benchmark_required": "Direct and indirect attacks",
+    "activation_rule": "Critical attack success zero"
+  }
+]

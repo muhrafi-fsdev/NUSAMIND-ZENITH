@@ -1,0 +1,162 @@
+[
+  {
+    "id": "N1-SRC-01",
+    "name": "Prompt Engineering Guide — Research",
+    "url": "https://www.promptingguide.ai/research",
+    "reviewDate": "2026-07-21",
+    "contribution": "Reasoning portfolio, temporal/fairness/evaluation and controlled improvement",
+    "boundary": "Adapt to local models; no raw CoT or uncontrolled self-modification",
+    "snapshotStatus": "METADATA_REVIEWED",
+    "contentVendored": false
+  },
+  {
+    "id": "N1-SRC-02",
+    "name": "Prompt Engineering Guide — Prompt Hub",
+    "url": "https://www.promptingguide.ai/prompts",
+    "reviewDate": "2026-07-21",
+    "contribution": "Prompt capability families and multilingual parity",
+    "boundary": "Create original local benchmark cases",
+    "snapshotStatus": "METADATA_REVIEWED",
+    "contentVendored": false
+  },
+  {
+    "id": "N1-SRC-03",
+    "name": "Prompt Engineering Guide — Agents",
+    "url": "https://www.promptingguide.ai/agents",
+    "reviewDate": "2026-07-21",
+    "contribution": "Orchestration, deep agents, research dossiers and context",
+    "boundary": "Bounded agents; n8n excluded",
+    "snapshotStatus": "METADATA_REVIEWED",
+    "contentVendored": false
+  },
+  {
+    "id": "N1-SRC-04",
+    "name": "Prompt Engineering Guide — Models",
+    "url": "https://www.promptingguide.ai/models",
+    "reviewDate": "2026-07-21",
+    "contribution": "Model-specific prompt portability",
+    "boundary": "Benchmark actual NusaMind profiles",
+    "snapshotStatus": "METADATA_REVIEWED",
+    "contentVendored": false
+  },
+  {
+    "id": "N1-SRC-05",
+    "name": "9router",
+    "url": "https://github.com/decolua/9router",
+    "reviewDate": "2026-07-21",
+    "contribution": "Routing, quota, account, fallback, conformance, compression and analytics",
+    "boundary": "No quota evasion, account farming or guaranteed-free assumptions",
+    "snapshotStatus": "METADATA_REVIEWED",
+    "contentVendored": false
+  },
+  {
+    "id": "N1-SRC-06",
+    "name": "OpenCode",
+    "url": "https://github.com/anomalyco/opencode",
+    "reviewDate": "2026-07-21",
+    "contribution": "Plan/build agents, LSP, sessions, plugins, commands and code intelligence",
+    "boundary": "NusaMind permissions, single-writer and rollback take precedence",
+    "snapshotStatus": "METADATA_REVIEWED",
+    "contentVendored": false
+  },
+  {
+    "id": "N1-SRC-07",
+    "name": "OpenCode Documentation",
+    "url": "https://opencode.ai/docs/",
+    "reviewDate": "2026-07-21",
+    "contribution": "LSP, formatters, commands, MCP/ACP, SDK and server patterns",
+    "boundary": "Allowlisted local protocols; no n8n",
+    "snapshotStatus": "METADATA_REVIEWED",
+    "contentVendored": false
+  },
+  {
+    "id": "N1-SRC-08",
+    "name": "Browser-use",
+    "url": "https://github.com/browser-use/browser-use",
+    "reviewDate": "2026-07-21",
+    "contribution": "Structured browser data, profiles, history, parallel tasks and evidence",
+    "boundary": "No CAPTCHA bypass, stealth or access-control evasion",
+    "snapshotStatus": "METADATA_REVIEWED",
+    "contentVendored": false
+  },
+  {
+    "id": "N1-SRC-09",
+    "name": "Matt Pocock Skills",
+    "url": "https://github.com/mattpocock/skills",
+    "reviewDate": "2026-07-21",
+    "contribution": "Triage, TDD, wayfinder, prototype, architecture, review, docs and release workflows",
+    "boundary": "Small, versioned, benchmarked skills",
+    "snapshotStatus": "METADATA_REVIEWED",
+    "contentVendored": false
+  },
+  {
+    "id": "N1-SRC-10",
+    "name": "shadcn/ui",
+    "url": "https://github.com/shadcn-ui/ui",
+    "reviewDate": "2026-07-21",
+    "contribution": "Optional developer dashboard governance and accessibility",
+    "boundary": "No main UI redesign",
+    "snapshotStatus": "METADATA_REVIEWED",
+    "contentVendored": false
+  },
+  {
+    "id": "N1-SRC-11",
+    "name": "90DaysOfCyberSecurity",
+    "url": "https://github.com/farhanashrafdev/90DaysOfCyberSecurity",
+    "reviewDate": "2026-07-21",
+    "contribution": "Cyber learning, SOC workflow and network foundations",
+    "boundary": "Defensive learning and isolated lab only",
+    "snapshotStatus": "METADATA_REVIEWED",
+    "contentVendored": false
+  },
+  {
+    "id": "N1-SRC-12",
+    "name": "Cybersecurity-Projects",
+    "url": "https://github.com/CarterPerez-dev/Cybersecurity-Projects",
+    "reviewDate": "2026-07-21",
+    "contribution": "Defensive projects, supply chain, email, system and cloud review",
+    "boundary": "Unsafe offensive projects blocked; license review before code reuse",
+    "snapshotStatus": "METADATA_REVIEWED",
+    "contentVendored": false
+  },
+  {
+    "id": "N1-SRC-13",
+    "name": "Awesome ML for Cybersecurity",
+    "url": "https://github.com/jivoi/awesome-ml-for-cybersecurity",
+    "reviewDate": "2026-07-21",
+    "contribution": "Security datasets, model evaluation, PCAP and anomaly references",
+    "boundary": "Curated registry; no blind ingestion or ML-only destructive action",
+    "snapshotStatus": "METADATA_REVIEWED",
+    "contentVendored": false
+  },
+  {
+    "id": "N1-SRC-14",
+    "name": "Awesome Asset Discovery",
+    "url": "https://github.com/redhuntlabs/Awesome-Asset-Discovery",
+    "reviewDate": "2026-07-21",
+    "contribution": "Passive assets, mail, SaaS, certificates, exposure and lifecycle",
+    "boundary": "Authorization-scoped, passive-first, no profiling/broad scanning",
+    "snapshotStatus": "METADATA_REVIEWED",
+    "contentVendored": false
+  },
+  {
+    "id": "N1-SRC-15",
+    "name": "Uploaded NusaMind Apex R13.49.1 project",
+    "url": "Uploaded project: nusamind-apex-r13.49.1-cybersecurity-only(1).zip",
+    "reviewDate": "2026-07-21",
+    "contribution": "Actual baseline for version drift, routes, Web/CLI runtime, EXE cancellation and release scripts",
+    "boundary": "CSV is an implementation roadmap; source project is not modified in this task",
+    "snapshotStatus": "METADATA_REVIEWED",
+    "contentVendored": false
+  },
+  {
+    "id": "N1-SRC-16",
+    "name": "Three user-provided architecture images",
+    "url": "User-provided images in conversation",
+    "reviewDate": "2026-07-21",
+    "contribution": "Agentic graph, hidden production infrastructure and modular project structure",
+    "boundary": "Concepts adapted to current TypeScript/Python architecture",
+    "snapshotStatus": "METADATA_REVIEWED",
+    "contentVendored": false
+  }
+]

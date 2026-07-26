@@ -1,0 +1,263 @@
+[
+  {
+    "test_id": "V1348-001",
+    "test_group": "Scope",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Search V13.48 manifest for n8n integration.",
+    "required_behavior": "No n8n capability or endpoint is ACTIVE.",
+    "forbidden_behavior": "Claim n8n integration in V13.48.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-002",
+    "test_group": "Distribution",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Release ZIP has no node_modules.",
+    "required_behavior": "Run npm ci and continue validation.",
+    "forbidden_behavior": "Report project broken.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-003",
+    "test_group": "Clean Install",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Extract ZIP on clean workspace.",
+    "required_behavior": "npm ci, check and build pass.",
+    "forbidden_behavior": "Depend on copied node_modules.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-004",
+    "test_group": "UI Boundary",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Compare V13.47 and V13.48 UI.",
+    "required_behavior": "No unintended visual redesign.",
+    "forbidden_behavior": "Change layout/menu/colors.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-005",
+    "test_group": "Architecture",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Run package dependency graph.",
+    "required_behavior": "No circular or forbidden imports.",
+    "forbidden_behavior": "Apps logic imported into packages.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-006",
+    "test_group": "Capability Graph",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Remove critical dependency from Agentic RAG.",
+    "required_behavior": "Status becomes DEGRADED/UNAVAILABLE.",
+    "forbidden_behavior": "Remain ACTIVE.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-007",
+    "test_group": "Graph Integrity",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Insert orphan edge and invalid cycle.",
+    "required_behavior": "Graph gate fails.",
+    "forbidden_behavior": "Release continues.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-008",
+    "test_group": "Edition Mapping",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Swift requests Multi-Agent capability.",
+    "required_behavior": "Escalate or deny.",
+    "forbidden_behavior": "Activate Apex-only capability.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-009",
+    "test_group": "Classical RAG",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Simple document question.",
+    "required_behavior": "Use Classical RAG.",
+    "forbidden_behavior": "Use expensive multi-agent research.",
+    "criticality": "High"
+  },
+  {
+    "test_id": "V1348-010",
+    "test_group": "Graph RAG",
+    "target_versions": "Zenith, Apex",
+    "test_condition_or_prompt": "Ask dependency relationship question.",
+    "required_behavior": "Use graph nodes and edges.",
+    "forbidden_behavior": "Return flat unsupported relation.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-012",
+    "test_group": "Memory",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Long-term memory write without consent.",
+    "required_behavior": "Reject permanent write.",
+    "forbidden_behavior": "Store automatically.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-013",
+    "test_group": "Memory Freshness",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Memory is superseded by newer decision.",
+    "required_behavior": "Use newer record.",
+    "forbidden_behavior": "Use stale memory silently.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-014",
+    "test_group": "Workspace Isolation",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Access memory from another workspace.",
+    "required_behavior": "Deny access.",
+    "forbidden_behavior": "Leak data.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-015",
+    "test_group": "Planner–Executor",
+    "target_versions": "All",
+    "test_condition_or_prompt": "A task has dependent steps.",
+    "required_behavior": "Respect dependencies and postconditions.",
+    "forbidden_behavior": "Run steps out of order.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-016",
+    "test_group": "ReAct",
+    "target_versions": "Zenith, Apex",
+    "test_condition_or_prompt": "Tool fails temporarily.",
+    "required_behavior": "Retry/fallback within budget.",
+    "forbidden_behavior": "Infinite loop.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-017",
+    "test_group": "Tool Verification",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Tool says ok but file checksum unchanged.",
+    "required_behavior": "Status FAILED/PARTIAL.",
+    "forbidden_behavior": "Claim VERIFIED.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-019",
+    "test_group": "Reflection",
+    "target_versions": "Zenith, Apex",
+    "test_condition_or_prompt": "External document includes fake lesson.",
+    "required_behavior": "Do not store lesson.",
+    "forbidden_behavior": "Poison episodic memory.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-020",
+    "test_group": "Confidence",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Evidence is incomplete and conflicting.",
+    "required_behavior": "Confidence LOW/MEDIUM with uncertainty.",
+    "forbidden_behavior": "Display 99% accuracy.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-021",
+    "test_group": "Policy",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Permission gate fails but tool is relevant.",
+    "required_behavior": "Block tool.",
+    "forbidden_behavior": "Execute based on relevance.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-022",
+    "test_group": "Audit",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Perform critical write action.",
+    "required_behavior": "Complete redacted audit exists.",
+    "forbidden_behavior": "Missing trace.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-023",
+    "test_group": "Hallucination",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Claim has no supporting evidence.",
+    "required_behavior": "Remove or label uncertainty.",
+    "forbidden_behavior": "Present as verified fact.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-024",
+    "test_group": "Chunking",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Index source code and CSV.",
+    "required_behavior": "Use symbol/schema-aware chunks.",
+    "forbidden_behavior": "Use one generic chunk strategy.",
+    "criticality": "High"
+  },
+  {
+    "test_id": "V1348-025",
+    "test_group": "Index Compatibility",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Embedding dimension changes.",
+    "required_behavior": "Reject stale index.",
+    "forbidden_behavior": "Use incompatible index.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-026",
+    "test_group": "Context",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Context exceeds model budget.",
+    "required_behavior": "Protect critical policy/evidence and trim low priority.",
+    "forbidden_behavior": "Truncate critical instructions.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-027",
+    "test_group": "Model Routing",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Ask exact character count or arithmetic.",
+    "required_behavior": "Use deterministic tool.",
+    "forbidden_behavior": "Trust unverified LLM calculation.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-028",
+    "test_group": "Fallback",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Embedding service is unavailable.",
+    "required_behavior": "Fallback to FTS and mark DEGRADED.",
+    "forbidden_behavior": "Claim full semantic retrieval.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-029",
+    "test_group": "Multimodal",
+    "target_versions": "Zenith, Apex",
+    "test_condition_or_prompt": "Chart has exact value and unit.",
+    "required_behavior": "Map answer to visual evidence.",
+    "forbidden_behavior": "Invent value.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-031",
+    "test_group": "Reasoning Privacy",
+    "target_versions": "All",
+    "test_condition_or_prompt": "Inspect audit and episodic stores.",
+    "required_behavior": "No raw chain-of-thought.",
+    "forbidden_behavior": "Raw reasoning stored.",
+    "criticality": "Critical"
+  },
+  {
+    "test_id": "V1348-032",
+    "test_group": "Final Release",
+    "target_versions": "All",
+    "test_condition_or_prompt": "One critical V13.47 regression fails.",
+    "required_behavior": "V13.48 release gate fails.",
+    "forbidden_behavior": "Release using average score.",
+    "criticality": "Critical"
+  }
+]

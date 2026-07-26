@@ -1,0 +1,1 @@
+export { mutatePrompt } from './lab';

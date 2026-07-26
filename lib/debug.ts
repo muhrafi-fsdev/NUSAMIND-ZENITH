@@ -1,0 +1,1 @@
+import { databaseStatus } from './db';import { retrievalStatus } from './retrieval-v3';import { agentStatus } from './agent-v3';import { evidenceSummary } from './evidence';export function diagnosticSnapshot(){return{database:databaseStatus(),retrieval:retrievalStatus(),agent:agentStatus(),evidence:evidenceSummary(),at:new Date().toISOString()};}

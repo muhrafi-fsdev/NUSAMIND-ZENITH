@@ -1,0 +1,1 @@
+import {runtimeManifestV1348} from '@/lib/runtime-manifest-v1348';export const runtime='nodejs';export const dynamic='force-dynamic';export async function GET(){return Response.json({ok:true,...runtimeManifestV1348(),endpoints:['/api/v8/status','/api/v8/evaluate','/api/v8/graph']});}

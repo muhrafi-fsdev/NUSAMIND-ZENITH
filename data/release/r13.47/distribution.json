@@ -1,0 +1,26 @@
+[
+  {
+    "assumption_id": "DIST-01",
+    "applies_to_files": "nusamind-apex-r13.46-upgraded(1).zip; NusaMind AI Zenith Model V13.46.zip",
+    "distribution_decision": "node_modules intentionally omitted to reduce ZIP size",
+    "validation_prerequisite": "Node.js >=22 and npm ci using included package-lock.json",
+    "correct_interpretation": "Missing node_modules is expected; install dependencies before check/build.",
+    "incorrect_interpretation": "Project is broken because node_modules is absent."
+  },
+  {
+    "assumption_id": "DIST-02",
+    "applies_to_files": "Apex and Zenith V13.46 ZIP",
+    "distribution_decision": "package.json and package-lock.json included",
+    "validation_prerequisite": "Use npm ci in a clean temporary workspace",
+    "correct_interpretation": "Lockfile enables reproducible dependency installation.",
+    "incorrect_interpretation": "Dependencies should be bundled into the ZIP."
+  },
+  {
+    "assumption_id": "DIST-03",
+    "applies_to_files": "Future V13.47 ZIP releases",
+    "distribution_decision": "Keep node_modules excluded",
+    "validation_prerequisite": "Clean-install, check, build and runtime tests before release",
+    "correct_interpretation": "Release validation begins after dependency installation.",
+    "incorrect_interpretation": "Developer-machine build alone is sufficient."
+  }
+]

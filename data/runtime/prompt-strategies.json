@@ -1,0 +1,222 @@
+[
+  {
+    "strategy_id": "PS-DIRECT",
+    "strategy_name": "Direct Response",
+    "best_for": "Simple known or deterministic task",
+    "avoid_when": "Complex multi-source task",
+    "swift_support": "Full",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verification": "Output validation",
+    "reference_source": "https://www.promptingguide.ai/prompts"
+  },
+  {
+    "strategy_id": "PS-ZERO",
+    "strategy_name": "Zero-Shot",
+    "best_for": "Clear simple instruction",
+    "avoid_when": "Ambiguous format-sensitive task",
+    "swift_support": "Full",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verification": "Task outcome check",
+    "reference_source": "https://www.promptingguide.ai/prompts"
+  },
+  {
+    "strategy_id": "PS-FEW",
+    "strategy_name": "Few-Shot",
+    "best_for": "Classification, extraction, formatting",
+    "avoid_when": "Bad or expensive examples",
+    "swift_support": "Limited",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verification": "Example relevance and schema",
+    "reference_source": "https://www.promptingguide.ai/prompts"
+  },
+  {
+    "strategy_id": "PS-CHAIN",
+    "strategy_name": "Prompt Chaining",
+    "best_for": "Long documents and multi-stage tasks",
+    "avoid_when": "Single-step task",
+    "swift_support": "No",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verification": "Stage contracts and final verifier",
+    "reference_source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "strategy_id": "PS-PROGRAM",
+    "strategy_name": "Program-Aided",
+    "best_for": "Math, parsing, deterministic work",
+    "avoid_when": "Creative or subjective task",
+    "swift_support": "Full",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verification": "Deterministic verifier",
+    "reference_source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "strategy_id": "PS-RAG",
+    "strategy_name": "Retrieval-Augmented",
+    "best_for": "Factual/current/private documents",
+    "avoid_when": "No trusted evidence",
+    "swift_support": "Full",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verification": "Faithfulness and citation verifier",
+    "reference_source": "https://www.promptingguide.ai/research/rag"
+  },
+  {
+    "strategy_id": "PS-REACT",
+    "strategy_name": "ReAct-Style",
+    "best_for": "Bounded tool tasks",
+    "avoid_when": "No tools or uncontrolled high risk",
+    "swift_support": "No",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verification": "Expected-state and step budget",
+    "reference_source": "https://arxiv.org/abs/2210.03629"
+  },
+  {
+    "strategy_id": "PS-SELFCONS",
+    "strategy_name": "Limited Self-Consistency",
+    "best_for": "Reasoning with verifiable outcome",
+    "avoid_when": "No verifier or high cost",
+    "swift_support": "No",
+    "zenith_support": "Limited",
+    "apex_support": "Full",
+    "required_verification": "Agreement plus external verifier",
+    "reference_source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "strategy_id": "PS-TREE",
+    "strategy_name": "Tree Search",
+    "best_for": "Bounded planning alternatives",
+    "avoid_when": "Simple task or weak evaluator",
+    "swift_support": "No",
+    "zenith_support": "No",
+    "apex_support": "Limited",
+    "required_verification": "Branch budget and verifier",
+    "reference_source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "strategy_id": "PS-GRAPH",
+    "strategy_name": "Graph Reasoning",
+    "best_for": "Entity, claim, dependency relationships",
+    "avoid_when": "No graph structure",
+    "swift_support": "No",
+    "zenith_support": "Limited",
+    "apex_support": "Full",
+    "required_verification": "Graph consistency and lineage",
+    "reference_source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "strategy_id": "ADV-AT-01",
+    "strategy_name": "Meta Prompting",
+    "best_for": "Structured domain problems",
+    "avoid_when": "Tasks needing external facts alone",
+    "swift_support": "Simple",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verification": "Output schema and domain rubric",
+    "reference_source": "https://www.promptingguide.ai/techniques/meta-prompting"
+  },
+  {
+    "strategy_id": "ADV-AT-02",
+    "strategy_name": "Generate Knowledge",
+    "best_for": "Query expansion and hypotheses",
+    "avoid_when": "Direct factual answer without retrieval",
+    "swift_support": "No",
+    "zenith_support": "Limited",
+    "apex_support": "Full",
+    "required_verification": "Claim-evidence verifier",
+    "reference_source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "strategy_id": "ADV-AT-03",
+    "strategy_name": "Active-Prompt",
+    "best_for": "Selecting uncertain exemplars",
+    "avoid_when": "Automatic self-labeling",
+    "swift_support": "No",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verification": "Human-reviewed exemplar",
+    "reference_source": "https://www.promptingguide.ai/techniques/activeprompt"
+  },
+  {
+    "strategy_id": "ADV-AT-04",
+    "strategy_name": "Directional Stimulus",
+    "best_for": "Focus on missing dimensions",
+    "avoid_when": "Adding unsupported facts",
+    "swift_support": "Simple",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verification": "Policy/evidence-derived stimulus",
+    "reference_source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "strategy_id": "ADV-AT-05",
+    "strategy_name": "Self-Consistency",
+    "best_for": "Verifiable reasoning tasks",
+    "avoid_when": "No verifier or high-cost task",
+    "swift_support": "No",
+    "zenith_support": "No",
+    "apex_support": "Full",
+    "required_verification": "Deterministic/evidence verifier",
+    "reference_source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "strategy_id": "ADV-AT-06",
+    "strategy_name": "Tree Search",
+    "best_for": "Complex planning alternatives",
+    "avoid_when": "Simple questions",
+    "swift_support": "No",
+    "zenith_support": "No",
+    "apex_support": "Limited",
+    "required_verification": "Branch outcome verifier",
+    "reference_source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "strategy_id": "ADV-AT-07",
+    "strategy_name": "Graph Prompting",
+    "best_for": "Claims, dependencies, diagrams",
+    "avoid_when": "No meaningful graph",
+    "swift_support": "No",
+    "zenith_support": "Limited",
+    "apex_support": "Full",
+    "required_verification": "Graph consistency and lineage",
+    "reference_source": "https://www.promptingguide.ai/research"
+  },
+  {
+    "strategy_id": "ADV-AT-08",
+    "strategy_name": "Reflexion",
+    "best_for": "Tool failures and iterative tasks",
+    "avoid_when": "Unverifiable subjective loops",
+    "swift_support": "No",
+    "zenith_support": "Limited",
+    "apex_support": "Full",
+    "required_verification": "Outcome evaluator and state verification",
+    "reference_source": "https://www.promptingguide.ai/techniques/reflexion"
+  },
+  {
+    "strategy_id": "ADV-AT-09",
+    "strategy_name": "Multimodal CoT",
+    "best_for": "Charts, tables, screenshots, diagrams",
+    "avoid_when": "Medical diagnosis from image",
+    "swift_support": "No",
+    "zenith_support": "Full",
+    "apex_support": "Full",
+    "required_verification": "Visual evidence verifier",
+    "reference_source": "https://www.promptingguide.ai/techniques/multimodalcot"
+  },
+  {
+    "strategy_id": "ADV-AT-10",
+    "strategy_name": "Agentic RAG",
+    "best_for": "Complex evidence and research gaps",
+    "avoid_when": "Simple deterministic tasks",
+    "swift_support": "Basic",
+    "zenith_support": "Limited",
+    "apex_support": "Full",
+    "required_verification": "Entailment, gaps and stop criteria",
+    "reference_source": "https://www.promptingguide.ai/guides/reasoning-llms"
+  }
+]

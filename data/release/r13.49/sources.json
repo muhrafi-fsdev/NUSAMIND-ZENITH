@@ -1,0 +1,37 @@
+[
+  {
+    "source_id": "SRC-01",
+    "resource": "9router",
+    "url": "https://github.com/decolua/9router",
+    "role": "Model gateway and routing inspiration",
+    "review_note": "Verify current docs/license before direct reuse"
+  },
+  {
+    "source_id": "SRC-02",
+    "resource": "OpenCode",
+    "url": "https://github.com/anomalyco/opencode",
+    "role": "Engineering agent workflow inspiration",
+    "review_note": "Keep NusaMind permission and verification model"
+  },
+  {
+    "source_id": "SRC-03",
+    "resource": "shadcn/ui",
+    "url": "https://github.com/shadcn-ui/ui",
+    "role": "Optional developer dashboard foundation",
+    "review_note": "No main UI change without approval"
+  },
+  {
+    "source_id": "SRC-04",
+    "resource": "Browser-use",
+    "url": "https://github.com/browser-use/browser-use",
+    "role": "Browser operator inspiration",
+    "review_note": "Add SSRF, injection, approval, session, and evidence controls"
+  },
+  {
+    "source_id": "SRC-05",
+    "resource": "Matt Pocock Skills",
+    "url": "https://github.com/mattpocock/skills",
+    "role": "Skills and engineering workflow inspiration",
+    "review_note": "Each adopted skill needs local contract and benchmark"
+  }
+]

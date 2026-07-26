@@ -1,0 +1,2546 @@
+[
+  {
+    "id": "v13_1_more_cybersecurity_essentials_001",
+    "type": "universal",
+    "title": "Cybersecurity Essentials: Xss",
+    "category": "Cybersecurity Essentials",
+    "text": "XSS adalah serangan menyisipkan script ke halaman web. Cegah dengan escaping output, sanitasi input, Content Security Policy, dan hindari dangerouslySetInnerHTML tanpa validasi. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "cybersecurity essentials",
+      "xss",
+      "xss",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_cybersecurity_essentials_001_qa",
+    "type": "universal",
+    "title": "Q&A umum: xss",
+    "category": "Cybersecurity Essentials Q&A",
+    "text": "Jika user bertanya tentang \"xss\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada xss. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "xss",
+      "cybersecurity essentials",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_cybersecurity_essentials_002",
+    "type": "universal",
+    "title": "Cybersecurity Essentials: Csrf",
+    "category": "Cybersecurity Essentials",
+    "text": "CSRF memaksa browser user melakukan request tanpa sadar. Cegah dengan CSRF token, SameSite cookie, dan validasi origin/referer. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "cybersecurity essentials",
+      "csrf",
+      "csrf",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_cybersecurity_essentials_002_qa",
+    "type": "universal",
+    "title": "Q&A umum: csrf",
+    "category": "Cybersecurity Essentials Q&A",
+    "text": "Jika user bertanya tentang \"csrf\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada csrf. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "csrf",
+      "cybersecurity essentials",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_cybersecurity_essentials_003",
+    "type": "universal",
+    "title": "Cybersecurity Essentials: Password Hashing",
+    "category": "Cybersecurity Essentials",
+    "text": "Password harus di-hash dengan algoritma kuat seperti bcrypt/argon2, bukan dienkripsi atau disimpan plain text. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "cybersecurity essentials",
+      "password hashing",
+      "password",
+      "hashing",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_cybersecurity_essentials_003_qa",
+    "type": "universal",
+    "title": "Q&A umum: password hashing",
+    "category": "Cybersecurity Essentials Q&A",
+    "text": "Jika user bertanya tentang \"password hashing\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada password hashing. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "password hashing",
+      "cybersecurity essentials",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_cybersecurity_essentials_004",
+    "type": "universal",
+    "title": "Cybersecurity Essentials: Least Privilege",
+    "category": "Cybersecurity Essentials",
+    "text": "Least privilege berarti user/service hanya diberi izin minimum yang diperlukan. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "cybersecurity essentials",
+      "least privilege",
+      "least",
+      "privilege",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_cybersecurity_essentials_004_qa",
+    "type": "universal",
+    "title": "Q&A umum: least privilege",
+    "category": "Cybersecurity Essentials Q&A",
+    "text": "Jika user bertanya tentang \"least privilege\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada least privilege. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "least privilege",
+      "cybersecurity essentials",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_cybersecurity_essentials_005",
+    "type": "universal",
+    "title": "Cybersecurity Essentials: Secret Management",
+    "category": "Cybersecurity Essentials",
+    "text": "Secret seperti token, API key, dan password database harus disimpan di env/secret manager dan tidak masuk Git. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "cybersecurity essentials",
+      "secret management",
+      "secret",
+      "management",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_cybersecurity_essentials_005_qa",
+    "type": "universal",
+    "title": "Q&A umum: secret management",
+    "category": "Cybersecurity Essentials Q&A",
+    "text": "Jika user bertanya tentang \"secret management\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada secret management. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "secret management",
+      "cybersecurity essentials",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_cybersecurity_essentials_006",
+    "type": "universal",
+    "title": "Cybersecurity Essentials: Logging Security",
+    "category": "Cybersecurity Essentials",
+    "text": "Log keamanan harus mencatat event penting tanpa membocorkan password, token, atau data sensitif. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "cybersecurity essentials",
+      "logging security",
+      "logging",
+      "security",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_cybersecurity_essentials_006_qa",
+    "type": "universal",
+    "title": "Q&A umum: logging security",
+    "category": "Cybersecurity Essentials Q&A",
+    "text": "Jika user bertanya tentang \"logging security\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada logging security. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "logging security",
+      "cybersecurity essentials",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_cybersecurity_essentials_007",
+    "type": "universal",
+    "title": "Cybersecurity Essentials: Backup Restore",
+    "category": "Cybersecurity Essentials",
+    "text": "Backup harus diuji restore-nya. Backup yang tidak pernah diuji bisa gagal saat bencana. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "cybersecurity essentials",
+      "backup restore",
+      "backup",
+      "restore",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_cybersecurity_essentials_007_qa",
+    "type": "universal",
+    "title": "Q&A umum: backup restore",
+    "category": "Cybersecurity Essentials Q&A",
+    "text": "Jika user bertanya tentang \"backup restore\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada backup restore. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "backup restore",
+      "cybersecurity essentials",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_cybersecurity_essentials_008",
+    "type": "universal",
+    "title": "Cybersecurity Essentials: Phishing",
+    "category": "Cybersecurity Essentials",
+    "text": "Phishing menipu user agar memberikan data. Cek domain, link, lampiran, dan jangan login dari link mencurigakan. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "cybersecurity essentials",
+      "phishing",
+      "phishing",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_cybersecurity_essentials_008_qa",
+    "type": "universal",
+    "title": "Q&A umum: phishing",
+    "category": "Cybersecurity Essentials Q&A",
+    "text": "Jika user bertanya tentang \"phishing\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada phishing. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "phishing",
+      "cybersecurity essentials",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_cybersecurity_essentials_009",
+    "type": "universal",
+    "title": "Cybersecurity Essentials: 2Fa",
+    "category": "Cybersecurity Essentials",
+    "text": "Two-factor authentication menambah lapisan keamanan selain password. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "cybersecurity essentials",
+      "2fa",
+      "2fa",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_cybersecurity_essentials_009_qa",
+    "type": "universal",
+    "title": "Q&A umum: 2fa",
+    "category": "Cybersecurity Essentials Q&A",
+    "text": "Jika user bertanya tentang \"2fa\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada 2fa. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "2fa",
+      "cybersecurity essentials",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_cybersecurity_essentials_010",
+    "type": "universal",
+    "title": "Cybersecurity Essentials: Security Checklist",
+    "category": "Cybersecurity Essentials",
+    "text": "Checklist keamanan dasar: validasi input, auth, authorization, rate limit, secure headers, audit log, dependency update. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "cybersecurity essentials",
+      "security checklist",
+      "security",
+      "checklist",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_cybersecurity_essentials_010_qa",
+    "type": "universal",
+    "title": "Q&A umum: security checklist",
+    "category": "Cybersecurity Essentials Q&A",
+    "text": "Jika user bertanya tentang \"security checklist\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada security checklist. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "security checklist",
+      "cybersecurity essentials",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_math_logic_001",
+    "type": "universal",
+    "title": "Math Logic: Persentase",
+    "category": "Math Logic",
+    "text": "Persentase menghitung bagian dari 100. Rumus dasar: nilai bagian / total x 100 persen. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "math logic",
+      "persentase",
+      "persentase",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_math_logic_001_qa",
+    "type": "universal",
+    "title": "Q&A umum: persentase",
+    "category": "Math Logic Q&A",
+    "text": "Jika user bertanya tentang \"persentase\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada persentase. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "persentase",
+      "math logic",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_math_logic_002",
+    "type": "universal",
+    "title": "Math Logic: Rata Rata",
+    "category": "Math Logic",
+    "text": "Rata-rata adalah jumlah data dibagi banyak data. Gunakan median jika data punya outlier ekstrem. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "math logic",
+      "rata rata",
+      "rata",
+      "rata",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_math_logic_002_qa",
+    "type": "universal",
+    "title": "Q&A umum: rata rata",
+    "category": "Math Logic Q&A",
+    "text": "Jika user bertanya tentang \"rata rata\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada rata rata. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "rata rata",
+      "math logic",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_math_logic_003",
+    "type": "universal",
+    "title": "Math Logic: Logika If Else",
+    "category": "Math Logic",
+    "text": "If else memilih cabang berdasarkan kondisi benar/salah. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "math logic",
+      "logika if else",
+      "logika",
+      "if",
+      "else",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_math_logic_003_qa",
+    "type": "universal",
+    "title": "Q&A umum: logika if else",
+    "category": "Math Logic Q&A",
+    "text": "Jika user bertanya tentang \"logika if else\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada logika if else. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "logika if else",
+      "math logic",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_math_logic_004",
+    "type": "universal",
+    "title": "Math Logic: Algoritma",
+    "category": "Math Logic",
+    "text": "Algoritma adalah langkah sistematis untuk menyelesaikan masalah. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "math logic",
+      "algoritma",
+      "algoritma",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_math_logic_004_qa",
+    "type": "universal",
+    "title": "Q&A umum: algoritma",
+    "category": "Math Logic Q&A",
+    "text": "Jika user bertanya tentang \"algoritma\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada algoritma. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "algoritma",
+      "math logic",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_math_logic_005",
+    "type": "universal",
+    "title": "Math Logic: Kompleksitas Waktu",
+    "category": "Math Logic",
+    "text": "Kompleksitas waktu memperkirakan pertumbuhan waktu proses saat input membesar, misalnya O(n) atau O(log n). Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "math logic",
+      "kompleksitas waktu",
+      "kompleksitas",
+      "waktu",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_math_logic_005_qa",
+    "type": "universal",
+    "title": "Q&A umum: kompleksitas waktu",
+    "category": "Math Logic Q&A",
+    "text": "Jika user bertanya tentang \"kompleksitas waktu\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada kompleksitas waktu. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "kompleksitas waktu",
+      "math logic",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_math_logic_006",
+    "type": "universal",
+    "title": "Math Logic: Binary Search",
+    "category": "Math Logic",
+    "text": "Binary search mencari data terurut dengan membagi ruang pencarian dua bagian berulang kali. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "math logic",
+      "binary search",
+      "binary",
+      "search",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_math_logic_006_qa",
+    "type": "universal",
+    "title": "Q&A umum: binary search",
+    "category": "Math Logic Q&A",
+    "text": "Jika user bertanya tentang \"binary search\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada binary search. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "binary search",
+      "math logic",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_math_logic_007",
+    "type": "universal",
+    "title": "Math Logic: Sorting",
+    "category": "Math Logic",
+    "text": "Sorting mengurutkan data. Pilih algoritma sesuai ukuran data, stabilitas, dan kebutuhan performa. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "math logic",
+      "sorting",
+      "sorting",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_math_logic_007_qa",
+    "type": "universal",
+    "title": "Q&A umum: sorting",
+    "category": "Math Logic Q&A",
+    "text": "Jika user bertanya tentang \"sorting\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada sorting. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "sorting",
+      "math logic",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_math_logic_008",
+    "type": "universal",
+    "title": "Math Logic: Recursion",
+    "category": "Math Logic",
+    "text": "Recursion adalah fungsi yang memanggil dirinya sendiri dengan base case agar tidak infinite loop. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "math logic",
+      "recursion",
+      "recursion",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_math_logic_008_qa",
+    "type": "universal",
+    "title": "Q&A umum: recursion",
+    "category": "Math Logic Q&A",
+    "text": "Jika user bertanya tentang \"recursion\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada recursion. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "recursion",
+      "math logic",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_math_logic_009",
+    "type": "universal",
+    "title": "Math Logic: Truth Table",
+    "category": "Math Logic",
+    "text": "Truth table menampilkan semua kombinasi input dan output logika. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "math logic",
+      "truth table",
+      "truth",
+      "table",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_math_logic_009_qa",
+    "type": "universal",
+    "title": "Q&A umum: truth table",
+    "category": "Math Logic Q&A",
+    "text": "Jika user bertanya tentang \"truth table\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada truth table. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "truth table",
+      "math logic",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_math_logic_010",
+    "type": "universal",
+    "title": "Math Logic: Probability Conditional",
+    "category": "Math Logic",
+    "text": "Probabilitas bersyarat menghitung kemungkinan suatu kejadian jika kejadian lain sudah diketahui. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "math logic",
+      "probability conditional",
+      "probability",
+      "conditional",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_math_logic_010_qa",
+    "type": "universal",
+    "title": "Q&A umum: probability conditional",
+    "category": "Math Logic Q&A",
+    "text": "Jika user bertanya tentang \"probability conditional\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada probability conditional. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "probability conditional",
+      "math logic",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_office_productivity_001",
+    "type": "universal",
+    "title": "Office Productivity: Excel Vlookup",
+    "category": "Office Productivity",
+    "text": "VLOOKUP mencari nilai di kolom pertama tabel lalu mengambil data dari kolom lain. Untuk fleksibel, gunakan XLOOKUP jika tersedia. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "office productivity",
+      "excel vlookup",
+      "excel",
+      "vlookup",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_office_productivity_001_qa",
+    "type": "universal",
+    "title": "Q&A umum: excel vlookup",
+    "category": "Office Productivity Q&A",
+    "text": "Jika user bertanya tentang \"excel vlookup\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada excel vlookup. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "excel vlookup",
+      "office productivity",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_office_productivity_002",
+    "type": "universal",
+    "title": "Office Productivity: Excel Pivot Table",
+    "category": "Office Productivity",
+    "text": "Pivot table merangkum data besar menjadi laporan berdasarkan baris, kolom, nilai, dan filter. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "office productivity",
+      "excel pivot table",
+      "excel",
+      "pivot",
+      "table",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_office_productivity_002_qa",
+    "type": "universal",
+    "title": "Q&A umum: excel pivot table",
+    "category": "Office Productivity Q&A",
+    "text": "Jika user bertanya tentang \"excel pivot table\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada excel pivot table. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "excel pivot table",
+      "office productivity",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_office_productivity_003",
+    "type": "universal",
+    "title": "Office Productivity: Excel If",
+    "category": "Office Productivity",
+    "text": "IF di Excel memilih hasil berdasarkan kondisi benar/salah. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "office productivity",
+      "excel if",
+      "excel",
+      "if",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_office_productivity_003_qa",
+    "type": "universal",
+    "title": "Q&A umum: excel if",
+    "category": "Office Productivity Q&A",
+    "text": "Jika user bertanya tentang \"excel if\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada excel if. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "excel if",
+      "office productivity",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_office_productivity_004",
+    "type": "universal",
+    "title": "Office Productivity: Word Daftar Isi",
+    "category": "Office Productivity",
+    "text": "Daftar isi otomatis di Word dibuat dari Heading 1, Heading 2, dan update table. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "office productivity",
+      "word daftar isi",
+      "word",
+      "daftar",
+      "isi",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_office_productivity_004_qa",
+    "type": "universal",
+    "title": "Q&A umum: word daftar isi",
+    "category": "Office Productivity Q&A",
+    "text": "Jika user bertanya tentang \"word daftar isi\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada word daftar isi. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "word daftar isi",
+      "office productivity",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_office_productivity_005",
+    "type": "universal",
+    "title": "Office Productivity: Word Sitasi",
+    "category": "Office Productivity",
+    "text": "Sitasi di Word sebaiknya memakai citation manager atau fitur references agar konsisten. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "office productivity",
+      "word sitasi",
+      "word",
+      "sitasi",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_office_productivity_005_qa",
+    "type": "universal",
+    "title": "Q&A umum: word sitasi",
+    "category": "Office Productivity Q&A",
+    "text": "Jika user bertanya tentang \"word sitasi\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada word sitasi. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "word sitasi",
+      "office productivity",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_office_productivity_006",
+    "type": "universal",
+    "title": "Office Productivity: Powerpoint Slide",
+    "category": "Office Productivity",
+    "text": "Slide baik berisi poin inti, visual jelas, font terbaca, dan tidak terlalu padat teks. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "office productivity",
+      "powerpoint slide",
+      "powerpoint",
+      "slide",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_office_productivity_006_qa",
+    "type": "universal",
+    "title": "Q&A umum: powerpoint slide",
+    "category": "Office Productivity Q&A",
+    "text": "Jika user bertanya tentang \"powerpoint slide\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada powerpoint slide. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "powerpoint slide",
+      "office productivity",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_office_productivity_007",
+    "type": "universal",
+    "title": "Office Productivity: Pdf Compress",
+    "category": "Office Productivity",
+    "text": "Compress PDF mengurangi ukuran file, tapi pastikan kualitas gambar masih cukup untuk dibaca. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "office productivity",
+      "pdf compress",
+      "pdf",
+      "compress",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_office_productivity_007_qa",
+    "type": "universal",
+    "title": "Q&A umum: pdf compress",
+    "category": "Office Productivity Q&A",
+    "text": "Jika user bertanya tentang \"pdf compress\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada pdf compress. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "pdf compress",
+      "office productivity",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_office_productivity_008",
+    "type": "universal",
+    "title": "Office Productivity: File Naming",
+    "category": "Office Productivity",
+    "text": "Nama file rapi pakai tanggal, versi, dan deskripsi singkat agar mudah dicari. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "office productivity",
+      "file naming",
+      "file",
+      "naming",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_office_productivity_008_qa",
+    "type": "universal",
+    "title": "Q&A umum: file naming",
+    "category": "Office Productivity Q&A",
+    "text": "Jika user bertanya tentang \"file naming\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada file naming. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "file naming",
+      "office productivity",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_office_productivity_009",
+    "type": "universal",
+    "title": "Office Productivity: Backup Tugas",
+    "category": "Office Productivity",
+    "text": "Backup tugas di cloud dan local untuk mencegah file hilang. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "office productivity",
+      "backup tugas",
+      "backup",
+      "tugas",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_office_productivity_009_qa",
+    "type": "universal",
+    "title": "Q&A umum: backup tugas",
+    "category": "Office Productivity Q&A",
+    "text": "Jika user bertanya tentang \"backup tugas\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada backup tugas. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "backup tugas",
+      "office productivity",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_office_productivity_010",
+    "type": "universal",
+    "title": "Office Productivity: Email Formal",
+    "category": "Office Productivity",
+    "text": "Email formal sebaiknya punya subject jelas, salam, inti singkat, lampiran disebutkan, dan penutup sopan. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "office productivity",
+      "email formal",
+      "email",
+      "formal",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_office_productivity_010_qa",
+    "type": "universal",
+    "title": "Q&A umum: email formal",
+    "category": "Office Productivity Q&A",
+    "text": "Jika user bertanya tentang \"email formal\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada email formal. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "email formal",
+      "office productivity",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_cloud_devops_001",
+    "type": "universal",
+    "title": "Cloud DevOps: Docker",
+    "category": "Cloud DevOps",
+    "text": "Docker mengemas aplikasi dan dependency dalam container agar environment lebih konsisten. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "cloud devops",
+      "docker",
+      "docker",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_cloud_devops_001_qa",
+    "type": "universal",
+    "title": "Q&A umum: docker",
+    "category": "Cloud DevOps Q&A",
+    "text": "Jika user bertanya tentang \"docker\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada docker. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "docker",
+      "cloud devops",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_cloud_devops_002",
+    "type": "universal",
+    "title": "Cloud DevOps: Docker Compose",
+    "category": "Cloud DevOps",
+    "text": "Docker Compose menjalankan beberapa service seperti app, database, dan cache dengan satu file konfigurasi. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "cloud devops",
+      "docker compose",
+      "docker",
+      "compose",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_cloud_devops_002_qa",
+    "type": "universal",
+    "title": "Q&A umum: docker compose",
+    "category": "Cloud DevOps Q&A",
+    "text": "Jika user bertanya tentang \"docker compose\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada docker compose. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "docker compose",
+      "cloud devops",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_cloud_devops_003",
+    "type": "universal",
+    "title": "Cloud DevOps: Ci Cd",
+    "category": "Cloud DevOps",
+    "text": "CI/CD mengotomasi test, build, dan deploy agar perubahan lebih aman dan cepat. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "cloud devops",
+      "ci cd",
+      "ci",
+      "cd",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_cloud_devops_003_qa",
+    "type": "universal",
+    "title": "Q&A umum: ci cd",
+    "category": "Cloud DevOps Q&A",
+    "text": "Jika user bertanya tentang \"ci cd\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada ci cd. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "ci cd",
+      "cloud devops",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_cloud_devops_004",
+    "type": "universal",
+    "title": "Cloud DevOps: Environment Staging",
+    "category": "Cloud DevOps",
+    "text": "Staging adalah lingkungan mirip production untuk uji sebelum rilis ke user. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "cloud devops",
+      "environment staging",
+      "environment",
+      "staging",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_cloud_devops_004_qa",
+    "type": "universal",
+    "title": "Q&A umum: environment staging",
+    "category": "Cloud DevOps Q&A",
+    "text": "Jika user bertanya tentang \"environment staging\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada environment staging. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "environment staging",
+      "cloud devops",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_cloud_devops_005",
+    "type": "universal",
+    "title": "Cloud DevOps: Rollback",
+    "category": "Cloud DevOps",
+    "text": "Rollback mengembalikan versi aplikasi ke versi sebelumnya saat deploy bermasalah. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "cloud devops",
+      "rollback",
+      "rollback",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_cloud_devops_005_qa",
+    "type": "universal",
+    "title": "Q&A umum: rollback",
+    "category": "Cloud DevOps Q&A",
+    "text": "Jika user bertanya tentang \"rollback\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada rollback. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "rollback",
+      "cloud devops",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_cloud_devops_006",
+    "type": "universal",
+    "title": "Cloud DevOps: Health Check",
+    "category": "Cloud DevOps",
+    "text": "Health check mengecek apakah service hidup, database terhubung, dan dependency utama normal. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "cloud devops",
+      "health check",
+      "health",
+      "check",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_cloud_devops_006_qa",
+    "type": "universal",
+    "title": "Q&A umum: health check",
+    "category": "Cloud DevOps Q&A",
+    "text": "Jika user bertanya tentang \"health check\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada health check. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "health check",
+      "cloud devops",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_cloud_devops_007",
+    "type": "universal",
+    "title": "Cloud DevOps: Observability",
+    "category": "Cloud DevOps",
+    "text": "Observability menggabungkan logs, metrics, dan traces agar masalah produksi lebih mudah didiagnosis. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "cloud devops",
+      "observability",
+      "observability",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_cloud_devops_007_qa",
+    "type": "universal",
+    "title": "Q&A umum: observability",
+    "category": "Cloud DevOps Q&A",
+    "text": "Jika user bertanya tentang \"observability\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada observability. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "observability",
+      "cloud devops",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_cloud_devops_008",
+    "type": "universal",
+    "title": "Cloud DevOps: Pm2",
+    "category": "Cloud DevOps",
+    "text": "PM2 menjaga proses Node.js tetap hidup dan bisa restart otomatis saat crash. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "cloud devops",
+      "pm2",
+      "pm2",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_cloud_devops_008_qa",
+    "type": "universal",
+    "title": "Q&A umum: pm2",
+    "category": "Cloud DevOps Q&A",
+    "text": "Jika user bertanya tentang \"pm2\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada pm2. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "pm2",
+      "cloud devops",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_cloud_devops_009",
+    "type": "universal",
+    "title": "Cloud DevOps: Nginx Reverse Proxy",
+    "category": "Cloud DevOps",
+    "text": "Nginx bisa meneruskan request dari domain ke aplikasi Node.js lokal pada port tertentu. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "cloud devops",
+      "nginx reverse proxy",
+      "nginx",
+      "reverse",
+      "proxy",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_cloud_devops_009_qa",
+    "type": "universal",
+    "title": "Q&A umum: nginx reverse proxy",
+    "category": "Cloud DevOps Q&A",
+    "text": "Jika user bertanya tentang \"nginx reverse proxy\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada nginx reverse proxy. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "nginx reverse proxy",
+      "cloud devops",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_cloud_devops_010",
+    "type": "universal",
+    "title": "Cloud DevOps: Ssl Https",
+    "category": "Cloud DevOps",
+    "text": "HTTPS mengenkripsi koneksi dan wajib untuk login, API, cookie aman, dan production. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "cloud devops",
+      "ssl https",
+      "ssl",
+      "https",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_cloud_devops_010_qa",
+    "type": "universal",
+    "title": "Q&A umum: ssl https",
+    "category": "Cloud DevOps Q&A",
+    "text": "Jika user bertanya tentang \"ssl https\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada ssl https. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "ssl https",
+      "cloud devops",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_mobile_android_001",
+    "type": "universal",
+    "title": "Mobile Android: Aplikasi Lemot",
+    "category": "Mobile Android",
+    "text": "Aplikasi HP lemot bisa karena cache, storage penuh, RAM rendah, bug aplikasi, atau jaringan lambat. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "mobile android",
+      "aplikasi lemot",
+      "aplikasi",
+      "lemot",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_mobile_android_001_qa",
+    "type": "universal",
+    "title": "Q&A umum: aplikasi lemot",
+    "category": "Mobile Android Q&A",
+    "text": "Jika user bertanya tentang \"aplikasi lemot\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada aplikasi lemot. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "aplikasi lemot",
+      "mobile android",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_mobile_android_002",
+    "type": "universal",
+    "title": "Mobile Android: Android Permission",
+    "category": "Mobile Android",
+    "text": "Permission Android membatasi akses kamera, lokasi, storage, dan mikrofon agar user tetap aman. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "mobile android",
+      "android permission",
+      "android",
+      "permission",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_mobile_android_002_qa",
+    "type": "universal",
+    "title": "Q&A umum: android permission",
+    "category": "Mobile Android Q&A",
+    "text": "Jika user bertanya tentang \"android permission\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada android permission. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "android permission",
+      "mobile android",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_mobile_android_003",
+    "type": "universal",
+    "title": "Mobile Android: Responsive Mobile",
+    "category": "Mobile Android",
+    "text": "Desain mobile harus fokus pada ukuran layar kecil, tombol mudah disentuh, dan konten tidak terlalu padat. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "mobile android",
+      "responsive mobile",
+      "responsive",
+      "mobile",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_mobile_android_003_qa",
+    "type": "universal",
+    "title": "Q&A umum: responsive mobile",
+    "category": "Mobile Android Q&A",
+    "text": "Jika user bertanya tentang \"responsive mobile\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada responsive mobile. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "responsive mobile",
+      "mobile android",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_mobile_android_004",
+    "type": "universal",
+    "title": "Mobile Android: Pwa",
+    "category": "Mobile Android",
+    "text": "PWA membuat web terasa seperti aplikasi: bisa install, cache asset, dan kadang offline. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "mobile android",
+      "pwa",
+      "pwa",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_mobile_android_004_qa",
+    "type": "universal",
+    "title": "Q&A umum: pwa",
+    "category": "Mobile Android Q&A",
+    "text": "Jika user bertanya tentang \"pwa\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada pwa. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "pwa",
+      "mobile android",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_mobile_android_005",
+    "type": "universal",
+    "title": "Mobile Android: Flutter",
+    "category": "Mobile Android",
+    "text": "Flutter memakai Dart untuk membuat aplikasi mobile lintas platform dengan UI konsisten. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "mobile android",
+      "flutter",
+      "flutter",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_mobile_android_005_qa",
+    "type": "universal",
+    "title": "Q&A umum: flutter",
+    "category": "Mobile Android Q&A",
+    "text": "Jika user bertanya tentang \"flutter\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada flutter. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "flutter",
+      "mobile android",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_mobile_android_006",
+    "type": "universal",
+    "title": "Mobile Android: React Native",
+    "category": "Mobile Android",
+    "text": "React Native memakai JavaScript/TypeScript untuk membuat aplikasi mobile native-like. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "mobile android",
+      "react native",
+      "react",
+      "native",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_mobile_android_006_qa",
+    "type": "universal",
+    "title": "Q&A umum: react native",
+    "category": "Mobile Android Q&A",
+    "text": "Jika user bertanya tentang \"react native\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada react native. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "react native",
+      "mobile android",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_mobile_android_007",
+    "type": "universal",
+    "title": "Mobile Android: Mobile Api",
+    "category": "Mobile Android",
+    "text": "Aplikasi mobile yang memanggil API harus menangani timeout, retry, offline state, dan token expired. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "mobile android",
+      "mobile api",
+      "mobile",
+      "api",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_mobile_android_007_qa",
+    "type": "universal",
+    "title": "Q&A umum: mobile api",
+    "category": "Mobile Android Q&A",
+    "text": "Jika user bertanya tentang \"mobile api\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada mobile api. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "mobile api",
+      "mobile android",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_mobile_android_008",
+    "type": "universal",
+    "title": "Mobile Android: Push Notification",
+    "category": "Mobile Android",
+    "text": "Push notification harus relevan dan tidak spam agar user tidak mematikan notifikasi. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "mobile android",
+      "push notification",
+      "push",
+      "notification",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_mobile_android_008_qa",
+    "type": "universal",
+    "title": "Q&A umum: push notification",
+    "category": "Mobile Android Q&A",
+    "text": "Jika user bertanya tentang \"push notification\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada push notification. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "push notification",
+      "mobile android",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_mobile_android_009",
+    "type": "universal",
+    "title": "Mobile Android: Storage Penuh",
+    "category": "Mobile Android",
+    "text": "Storage penuh bisa membuat aplikasi crash, update gagal, dan performa HP turun. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "mobile android",
+      "storage penuh",
+      "storage",
+      "penuh",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_mobile_android_009_qa",
+    "type": "universal",
+    "title": "Q&A umum: storage penuh",
+    "category": "Mobile Android Q&A",
+    "text": "Jika user bertanya tentang \"storage penuh\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada storage penuh. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "storage penuh",
+      "mobile android",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_mobile_android_010",
+    "type": "universal",
+    "title": "Mobile Android: Battery Drain",
+    "category": "Mobile Android",
+    "text": "Battery drain bisa disebabkan GPS, background sync, brightness, jaringan buruk, atau aplikasi berat. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "mobile android",
+      "battery drain",
+      "battery",
+      "drain",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_mobile_android_010_qa",
+    "type": "universal",
+    "title": "Q&A umum: battery drain",
+    "category": "Mobile Android Q&A",
+    "text": "Jika user bertanya tentang \"battery drain\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada battery drain. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "battery drain",
+      "mobile android",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_data_analytics_001",
+    "type": "universal",
+    "title": "Data Analytics: Data Visualization",
+    "category": "Data Analytics",
+    "text": "Visualisasi data harus memilih chart sesuai tujuan: line untuk tren, bar untuk perbandingan, pie terbatas untuk proporsi sederhana. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "data analytics",
+      "data visualization",
+      "data",
+      "visualization",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_data_analytics_001_qa",
+    "type": "universal",
+    "title": "Q&A umum: data visualization",
+    "category": "Data Analytics Q&A",
+    "text": "Jika user bertanya tentang \"data visualization\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada data visualization. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "data visualization",
+      "data analytics",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_data_analytics_002",
+    "type": "universal",
+    "title": "Data Analytics: Kpi",
+    "category": "Data Analytics",
+    "text": "KPI adalah metrik kunci untuk menilai keberhasilan terhadap target. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "data analytics",
+      "kpi",
+      "kpi",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_data_analytics_002_qa",
+    "type": "universal",
+    "title": "Q&A umum: kpi",
+    "category": "Data Analytics Q&A",
+    "text": "Jika user bertanya tentang \"kpi\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada kpi. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "kpi",
+      "data analytics",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_data_analytics_003",
+    "type": "universal",
+    "title": "Data Analytics: Dashboard",
+    "category": "Data Analytics",
+    "text": "Dashboard baik menampilkan metrik penting, filter jelas, dan status yang dapat ditindaklanjuti. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "data analytics",
+      "dashboard",
+      "dashboard",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_data_analytics_003_qa",
+    "type": "universal",
+    "title": "Q&A umum: dashboard",
+    "category": "Data Analytics Q&A",
+    "text": "Jika user bertanya tentang \"dashboard\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada dashboard. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "dashboard",
+      "data analytics",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_data_analytics_004",
+    "type": "universal",
+    "title": "Data Analytics: Data Outlier",
+    "category": "Data Analytics",
+    "text": "Outlier adalah nilai ekstrem. Jangan langsung hapus; cek apakah error data atau fenomena penting. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "data analytics",
+      "data outlier",
+      "data",
+      "outlier",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_data_analytics_004_qa",
+    "type": "universal",
+    "title": "Q&A umum: data outlier",
+    "category": "Data Analytics Q&A",
+    "text": "Jika user bertanya tentang \"data outlier\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada data outlier. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "data outlier",
+      "data analytics",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_data_analytics_005",
+    "type": "universal",
+    "title": "Data Analytics: Data Pipeline",
+    "category": "Data Analytics",
+    "text": "Data pipeline memindahkan data dari sumber, membersihkan, mengubah, lalu menyimpan untuk analisis. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "data analytics",
+      "data pipeline",
+      "data",
+      "pipeline",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_data_analytics_005_qa",
+    "type": "universal",
+    "title": "Q&A umum: data pipeline",
+    "category": "Data Analytics Q&A",
+    "text": "Jika user bertanya tentang \"data pipeline\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada data pipeline. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "data pipeline",
+      "data analytics",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_data_analytics_006",
+    "type": "universal",
+    "title": "Data Analytics: Etl",
+    "category": "Data Analytics",
+    "text": "ETL berarti Extract, Transform, Load: ambil data, ubah/bersihkan, lalu muat ke tujuan. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "data analytics",
+      "etl",
+      "etl",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_data_analytics_006_qa",
+    "type": "universal",
+    "title": "Q&A umum: etl",
+    "category": "Data Analytics Q&A",
+    "text": "Jika user bertanya tentang \"etl\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada etl. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "etl",
+      "data analytics",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_data_analytics_007",
+    "type": "universal",
+    "title": "Data Analytics: Deduplication",
+    "category": "Data Analytics",
+    "text": "Deduplication menghapus data ganda berdasarkan key seperti id, email, hash, atau kombinasi kolom. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "data analytics",
+      "deduplication",
+      "deduplication",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_data_analytics_007_qa",
+    "type": "universal",
+    "title": "Q&A umum: deduplication",
+    "category": "Data Analytics Q&A",
+    "text": "Jika user bertanya tentang \"deduplication\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada deduplication. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "deduplication",
+      "data analytics",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_data_analytics_008",
+    "type": "universal",
+    "title": "Data Analytics: Missing Value",
+    "category": "Data Analytics",
+    "text": "Missing value bisa diisi, dihapus, atau ditandai tergantung konteks analisis. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "data analytics",
+      "missing value",
+      "missing",
+      "value",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_data_analytics_008_qa",
+    "type": "universal",
+    "title": "Q&A umum: missing value",
+    "category": "Data Analytics Q&A",
+    "text": "Jika user bertanya tentang \"missing value\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada missing value. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "missing value",
+      "data analytics",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_data_analytics_009",
+    "type": "universal",
+    "title": "Data Analytics: Csv Error",
+    "category": "Data Analytics",
+    "text": "CSV error sering karena delimiter beda, encoding, quote tidak tertutup, atau baris tidak konsisten. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "data analytics",
+      "csv error",
+      "csv",
+      "error",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_data_analytics_009_qa",
+    "type": "universal",
+    "title": "Q&A umum: csv error",
+    "category": "Data Analytics Q&A",
+    "text": "Jika user bertanya tentang \"csv error\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada csv error. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "csv error",
+      "data analytics",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_data_analytics_010",
+    "type": "universal",
+    "title": "Data Analytics: Data Validation",
+    "category": "Data Analytics",
+    "text": "Data validation memastikan tipe, format, range, dan relasi data sesuai aturan. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "data analytics",
+      "data validation",
+      "data",
+      "validation",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_data_analytics_010_qa",
+    "type": "universal",
+    "title": "Q&A umum: data validation",
+    "category": "Data Analytics Q&A",
+    "text": "Jika user bertanya tentang \"data validation\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada data validation. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "data validation",
+      "data analytics",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_general_tech_concepts_001",
+    "type": "universal",
+    "title": "General Tech Concepts: Operating System",
+    "category": "General Tech Concepts",
+    "text": "Operating system mengatur hardware, file, process, memory, driver, dan aplikasi. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "general tech concepts",
+      "operating system",
+      "operating",
+      "system",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_general_tech_concepts_001_qa",
+    "type": "universal",
+    "title": "Q&A umum: operating system",
+    "category": "General Tech Concepts Q&A",
+    "text": "Jika user bertanya tentang \"operating system\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada operating system. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "operating system",
+      "general tech concepts",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_general_tech_concepts_002",
+    "type": "universal",
+    "title": "General Tech Concepts: Cpu Gpu",
+    "category": "General Tech Concepts",
+    "text": "CPU cocok untuk tugas umum dan serial; GPU cocok untuk komputasi paralel seperti grafis dan AI. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "general tech concepts",
+      "cpu gpu",
+      "cpu",
+      "gpu",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_general_tech_concepts_002_qa",
+    "type": "universal",
+    "title": "Q&A umum: cpu gpu",
+    "category": "General Tech Concepts Q&A",
+    "text": "Jika user bertanya tentang \"cpu gpu\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada cpu gpu. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "cpu gpu",
+      "general tech concepts",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_general_tech_concepts_003",
+    "type": "universal",
+    "title": "General Tech Concepts: Ram Storage",
+    "category": "General Tech Concepts",
+    "text": "RAM menyimpan data sementara saat aplikasi berjalan; storage menyimpan file permanen. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "general tech concepts",
+      "ram storage",
+      "ram",
+      "storage",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_general_tech_concepts_003_qa",
+    "type": "universal",
+    "title": "Q&A umum: ram storage",
+    "category": "General Tech Concepts Q&A",
+    "text": "Jika user bertanya tentang \"ram storage\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada ram storage. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "ram storage",
+      "general tech concepts",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_general_tech_concepts_004",
+    "type": "universal",
+    "title": "General Tech Concepts: Cache",
+    "category": "General Tech Concepts",
+    "text": "Cache menyimpan data sementara agar akses berikutnya lebih cepat. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "general tech concepts",
+      "cache",
+      "cache",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_general_tech_concepts_004_qa",
+    "type": "universal",
+    "title": "Q&A umum: cache",
+    "category": "General Tech Concepts Q&A",
+    "text": "Jika user bertanya tentang \"cache\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada cache. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "cache",
+      "general tech concepts",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_general_tech_concepts_005",
+    "type": "universal",
+    "title": "General Tech Concepts: Server Client",
+    "category": "General Tech Concepts",
+    "text": "Client meminta layanan, server memproses dan memberi response. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "general tech concepts",
+      "server client",
+      "server",
+      "client",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_general_tech_concepts_005_qa",
+    "type": "universal",
+    "title": "Q&A umum: server client",
+    "category": "General Tech Concepts Q&A",
+    "text": "Jika user bertanya tentang \"server client\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada server client. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "server client",
+      "general tech concepts",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_general_tech_concepts_006",
+    "type": "universal",
+    "title": "General Tech Concepts: Http Https",
+    "category": "General Tech Concepts",
+    "text": "HTTP adalah protokol web; HTTPS menambahkan enkripsi TLS agar aman. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "general tech concepts",
+      "http https",
+      "http",
+      "https",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_general_tech_concepts_006_qa",
+    "type": "universal",
+    "title": "Q&A umum: http https",
+    "category": "General Tech Concepts Q&A",
+    "text": "Jika user bertanya tentang \"http https\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada http https. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "http https",
+      "general tech concepts",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_general_tech_concepts_007",
+    "type": "universal",
+    "title": "General Tech Concepts: Domain Dns",
+    "category": "General Tech Concepts",
+    "text": "DNS menerjemahkan nama domain menjadi alamat IP. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "general tech concepts",
+      "domain dns",
+      "domain",
+      "dns",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_general_tech_concepts_007_qa",
+    "type": "universal",
+    "title": "Q&A umum: domain dns",
+    "category": "General Tech Concepts Q&A",
+    "text": "Jika user bertanya tentang \"domain dns\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada domain dns. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "domain dns",
+      "general tech concepts",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_general_tech_concepts_008",
+    "type": "universal",
+    "title": "General Tech Concepts: Latency Bandwidth",
+    "category": "General Tech Concepts",
+    "text": "Latency adalah jeda waktu respons; bandwidth adalah kapasitas data per waktu. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "general tech concepts",
+      "latency bandwidth",
+      "latency",
+      "bandwidth",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_general_tech_concepts_008_qa",
+    "type": "universal",
+    "title": "Q&A umum: latency bandwidth",
+    "category": "General Tech Concepts Q&A",
+    "text": "Jika user bertanya tentang \"latency bandwidth\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada latency bandwidth. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "latency bandwidth",
+      "general tech concepts",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_general_tech_concepts_009",
+    "type": "universal",
+    "title": "General Tech Concepts: Virtualization",
+    "category": "General Tech Concepts",
+    "text": "Virtualization menjalankan mesin virtual di atas hardware fisik. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "general tech concepts",
+      "virtualization",
+      "virtualization",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_general_tech_concepts_009_qa",
+    "type": "universal",
+    "title": "Q&A umum: virtualization",
+    "category": "General Tech Concepts Q&A",
+    "text": "Jika user bertanya tentang \"virtualization\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada virtualization. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "virtualization",
+      "general tech concepts",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_general_tech_concepts_010",
+    "type": "universal",
+    "title": "General Tech Concepts: Container Vs Vm",
+    "category": "General Tech Concepts",
+    "text": "Container berbagi kernel host dan lebih ringan; VM menjalankan OS lengkap dan lebih terisolasi. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "general tech concepts",
+      "container vs vm",
+      "container",
+      "vs",
+      "vm",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_general_tech_concepts_010_qa",
+    "type": "universal",
+    "title": "Q&A umum: container vs vm",
+    "category": "General Tech Concepts Q&A",
+    "text": "Jika user bertanya tentang \"container vs vm\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada container vs vm. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "container vs vm",
+      "general tech concepts",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_writing_communication_001",
+    "type": "universal",
+    "title": "Writing Communication: Jawaban Ringkas",
+    "category": "Writing Communication",
+    "text": "Jawaban ringkas langsung ke inti, biasanya 2-5 poin tanpa penjelasan panjang. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "writing communication",
+      "jawaban ringkas",
+      "jawaban",
+      "ringkas",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_writing_communication_001_qa",
+    "type": "universal",
+    "title": "Q&A umum: jawaban ringkas",
+    "category": "Writing Communication Q&A",
+    "text": "Jika user bertanya tentang \"jawaban ringkas\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada jawaban ringkas. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "jawaban ringkas",
+      "writing communication",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_writing_communication_002",
+    "type": "universal",
+    "title": "Writing Communication: Jawaban Detail",
+    "category": "Writing Communication",
+    "text": "Jawaban detail memberi konteks, penyebab, langkah, contoh, dan validasi. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "writing communication",
+      "jawaban detail",
+      "jawaban",
+      "detail",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_writing_communication_002_qa",
+    "type": "universal",
+    "title": "Q&A umum: jawaban detail",
+    "category": "Writing Communication Q&A",
+    "text": "Jika user bertanya tentang \"jawaban detail\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada jawaban detail. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "jawaban detail",
+      "writing communication",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_writing_communication_003",
+    "type": "universal",
+    "title": "Writing Communication: Bahasa Santai",
+    "category": "Writing Communication",
+    "text": "Bahasa santai tetap harus jelas, tidak sok tahu, dan tidak mengorbankan akurasi. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "writing communication",
+      "bahasa santai",
+      "bahasa",
+      "santai",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_writing_communication_003_qa",
+    "type": "universal",
+    "title": "Q&A umum: bahasa santai",
+    "category": "Writing Communication Q&A",
+    "text": "Jika user bertanya tentang \"bahasa santai\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada bahasa santai. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "bahasa santai",
+      "writing communication",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_writing_communication_004",
+    "type": "universal",
+    "title": "Writing Communication: Kritik Konstruktif",
+    "category": "Writing Communication",
+    "text": "Kritik konstruktif menyebut masalah, dampak, dan solusi tanpa menyerang pribadi. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "writing communication",
+      "kritik konstruktif",
+      "kritik",
+      "konstruktif",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_writing_communication_004_qa",
+    "type": "universal",
+    "title": "Q&A umum: kritik konstruktif",
+    "category": "Writing Communication Q&A",
+    "text": "Jika user bertanya tentang \"kritik konstruktif\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada kritik konstruktif. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "kritik konstruktif",
+      "writing communication",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_writing_communication_005",
+    "type": "universal",
+    "title": "Writing Communication: Tanya Klarifikasi",
+    "category": "Writing Communication",
+    "text": "Tanya klarifikasi jika request ambigu, data kurang, atau ada risiko salah eksekusi. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "writing communication",
+      "tanya klarifikasi",
+      "tanya",
+      "klarifikasi",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_writing_communication_005_qa",
+    "type": "universal",
+    "title": "Q&A umum: tanya klarifikasi",
+    "category": "Writing Communication Q&A",
+    "text": "Jika user bertanya tentang \"tanya klarifikasi\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada tanya klarifikasi. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "tanya klarifikasi",
+      "writing communication",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_writing_communication_006",
+    "type": "universal",
+    "title": "Writing Communication: Struktur Laporan",
+    "category": "Writing Communication",
+    "text": "Struktur laporan mengikuti pendahuluan, metode, hasil, analisis, kesimpulan, dan lampiran. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "writing communication",
+      "struktur laporan",
+      "struktur",
+      "laporan",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_writing_communication_006_qa",
+    "type": "universal",
+    "title": "Q&A umum: struktur laporan",
+    "category": "Writing Communication Q&A",
+    "text": "Jika user bertanya tentang \"struktur laporan\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada struktur laporan. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "struktur laporan",
+      "writing communication",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_writing_communication_007",
+    "type": "universal",
+    "title": "Writing Communication: Parafrase",
+    "category": "Writing Communication",
+    "text": "Parafrase mengubah kalimat tanpa mengubah makna. Jangan menghilangkan poin penting. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "writing communication",
+      "parafrase",
+      "parafrase",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_writing_communication_007_qa",
+    "type": "universal",
+    "title": "Q&A umum: parafrase",
+    "category": "Writing Communication Q&A",
+    "text": "Jika user bertanya tentang \"parafrase\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada parafrase. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "parafrase",
+      "writing communication",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_writing_communication_008",
+    "type": "universal",
+    "title": "Writing Communication: Summary",
+    "category": "Writing Communication",
+    "text": "Summary mengambil inti, bukan menyalin semua detail. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "writing communication",
+      "summary",
+      "summary",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_writing_communication_008_qa",
+    "type": "universal",
+    "title": "Q&A umum: summary",
+    "category": "Writing Communication Q&A",
+    "text": "Jika user bertanya tentang \"summary\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada summary. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "summary",
+      "writing communication",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_writing_communication_009",
+    "type": "universal",
+    "title": "Writing Communication: Instruksi User",
+    "category": "Writing Communication",
+    "text": "Instruksi user harus diikuti selama aman dan tidak bertentangan dengan fakta. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "writing communication",
+      "instruksi user",
+      "instruksi",
+      "user",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_writing_communication_009_qa",
+    "type": "universal",
+    "title": "Q&A umum: instruksi user",
+    "category": "Writing Communication Q&A",
+    "text": "Jika user bertanya tentang \"instruksi user\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada instruksi user. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "instruksi user",
+      "writing communication",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  },
+  {
+    "id": "v13_1_more_writing_communication_010",
+    "type": "universal",
+    "title": "Writing Communication: Jawab Sesuai Pertanyaan",
+    "category": "Writing Communication",
+    "text": "Jawaban harus menjawab objek yang ditanyakan, format yang diminta, dan batasan user; jangan pindah topik. Jika user bertanya pendek, jawab inti dulu lalu beri langkah lanjutan jika diperlukan.",
+    "tags": [
+      "writing communication",
+      "jawab sesuai pertanyaan",
+      "jawab",
+      "sesuai",
+      "pertanyaan",
+      "knowledge umum",
+      "universal"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.83
+  },
+  {
+    "id": "v13_1_more_writing_communication_010_qa",
+    "type": "universal",
+    "title": "Q&A umum: jawab sesuai pertanyaan",
+    "category": "Writing Communication Q&A",
+    "text": "Jika user bertanya tentang \"jawab sesuai pertanyaan\" dengan variasi bahasa seperti apa itu, bedanya apa, kenapa, cara mengatasi, atau contoh, fokuskan jawaban pada jawab sesuai pertanyaan. Jangan menjawab topik lain yang hanya mirip kata kuncinya.",
+    "tags": [
+      "query alignment",
+      "jawab sesuai pertanyaan",
+      "writing communication",
+      "bahasa natural"
+    ],
+    "source": "NusaMind Universal Knowledge V13.1 Extended",
+    "confidence": 0.82
+  }
+]

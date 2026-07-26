@@ -1,0 +1,240 @@
+[
+  {
+    "id": "v13_2_playbook_food_recommendation",
+    "title": "User minta rekomendasi makanan",
+    "category": "Makanan & Kuliner",
+    "symptoms": [
+      "user bertanya enaknya makan apa",
+      "bingung mau makan apa",
+      "minta ide bekal/menu"
+    ],
+    "diagnosis": [
+      "kebutuhan user belum spesifik: budget, mood, lokasi, pantangan, waktu"
+    ],
+    "fixes": [
+      "beri 5-10 opsi berdasarkan kategori: murah, kenyang, sehat, pedas, cepat",
+      "tanyakan preferensi jika perlu",
+      "jangan klaim restoran tertentu terbaru tanpa data lokasi"
+    ],
+    "keywords": [
+      "makanan",
+      "rekomendasi",
+      "menu",
+      "bekal"
+    ]
+  },
+  {
+    "id": "v13_2_playbook_caption",
+    "title": "User minta caption/status",
+    "category": "Caption & Status",
+    "symptoms": [
+      "minta caption IG/WA",
+      "minta kata-kata singkat",
+      "minta status santai/gaul/sopan"
+    ],
+    "diagnosis": [
+      "format dan vibe perlu disesuaikan dengan konteks foto atau mood"
+    ],
+    "fixes": [
+      "beri 10 opsi singkat",
+      "kelompokkan berdasarkan vibe: santai, aesthetic, lucu, profesional",
+      "jangan terlalu panjang jika user minta status WA"
+    ],
+    "keywords": [
+      "caption",
+      "status",
+      "instagram",
+      "whatsapp"
+    ]
+  },
+  {
+    "id": "v13_2_playbook_viral_trend",
+    "title": "User tanya tren viral sekarang",
+    "category": "Trend Viral & Current Snapshot",
+    "symptoms": [
+      "sedang viral apa",
+      "trend hari ini",
+      "yang lagi rame apa"
+    ],
+    "diagnosis": [
+      "tren berubah cepat dan dataset lokal bisa kadaluarsa"
+    ],
+    "fixes": [
+      "beri jawaban berbasis snapshot jika ada",
+      "jelaskan keterbatasan data lokal",
+      "sarankan cek TikTok/Instagram/X/Google Trends/sumber berita terbaru untuk real-time"
+    ],
+    "keywords": [
+      "viral",
+      "trend",
+      "trending",
+      "hari ini"
+    ]
+  },
+  {
+    "id": "v13_2_playbook_entertainment",
+    "title": "User minta tempat hiburan",
+    "category": "Tempat Hiburan & Lifestyle",
+    "symptoms": [
+      "minta tempat healing",
+      "mau jalan-jalan",
+      "minta tempat hiburan dekat lokasi"
+    ],
+    "diagnosis": [
+      "rekomendasi butuh lokasi, budget, jam, dan preferensi"
+    ],
+    "fixes": [
+      "beri kategori tempat jika lokasi tidak diketahui",
+      "minta kota/kecamatan jika user ingin rekomendasi dekat",
+      "sebut cek jam buka/tiket terbaru"
+    ],
+    "keywords": [
+      "hiburan",
+      "wisata",
+      "mall",
+      "cafe",
+      "museum"
+    ]
+  },
+  {
+    "id": "v13_2_playbook_electronics_buying",
+    "title": "User minta saran elektronik",
+    "category": "Elektronik & Gadget",
+    "symptoms": [
+      "mau beli laptop/HP/monitor",
+      "minta rekomendasi gadget",
+      "bingung spek"
+    ],
+    "diagnosis": [
+      "perlu budget, use case, ukuran, brand preference, dan prioritas"
+    ],
+    "fixes": [
+      "jelaskan parameter teknis penting",
+      "beri checklist keputusan",
+      "jangan klaim harga terbaru tanpa pencarian real-time"
+    ],
+    "keywords": [
+      "elektronik",
+      "gadget",
+      "laptop",
+      "smartphone",
+      "monitor"
+    ]
+  },
+  {
+    "id": "v13_2_playbook_animal_care",
+    "title": "User tanya perawatan hewan",
+    "category": "Hewan",
+    "symptoms": [
+      "hewan lemas",
+      "hewan tidak mau makan",
+      "minta cara rawat kucing/anjing/ikan"
+    ],
+    "diagnosis": [
+      "bisa berupa perawatan umum atau masalah kesehatan"
+    ],
+    "fixes": [
+      "beri saran perawatan dasar",
+      "untuk gejala sakit serius arahkan ke dokter hewan",
+      "jangan beri obat manusia"
+    ],
+    "keywords": [
+      "hewan",
+      "kucing",
+      "anjing",
+      "pet"
+    ]
+  },
+  {
+    "id": "v13_2_playbook_plant_care",
+    "title": "User tanya tanaman",
+    "category": "Tumbuhan & Gardening",
+    "symptoms": [
+      "daun kuning",
+      "tanaman layu",
+      "tanaman tidak tumbuh"
+    ],
+    "diagnosis": [
+      "penyebab umum: overwatering, underwatering, kurang cahaya, hama, media buruk"
+    ],
+    "fixes": [
+      "beri checklist cahaya, air, media, pot, akar, hama",
+      "minta foto/kondisi jika perlu"
+    ],
+    "keywords": [
+      "tanaman",
+      "tumbuhan",
+      "daun kuning",
+      "gardening"
+    ]
+  },
+  {
+    "id": "v13_2_playbook_history_answering",
+    "title": "User tanya sejarah",
+    "category": "Sejarah",
+    "symptoms": [
+      "minta sejarah singkat",
+      "minta timeline",
+      "minta tokoh/penyebab/dampak"
+    ],
+    "diagnosis": [
+      "sejarah perlu urutan waktu dan konteks"
+    ],
+    "fixes": [
+      "jawab dengan timeline singkat",
+      "bedakan fakta dan interpretasi",
+      "hindari klaim tanpa sumber jika detail kontroversial"
+    ],
+    "keywords": [
+      "sejarah",
+      "timeline",
+      "tokoh"
+    ]
+  },
+  {
+    "id": "v13_2_playbook_general_question_alignment",
+    "title": "Jawaban tidak sesuai pertanyaan",
+    "category": "Alignment",
+    "symptoms": [
+      "user mengeluh jawaban melenceng",
+      "pertanyaan spesifik tapi jawaban terlalu umum"
+    ],
+    "diagnosis": [
+      "retrieval/prompt mungkin terlalu luas atau salah domain"
+    ],
+    "fixes": [
+      "ulang pertanyaan inti user",
+      "jawab objek yang diminta dulu",
+      "baru tambah konteks jika perlu",
+      "jangan ganti topik"
+    ],
+    "keywords": [
+      "sesuai pertanyaan",
+      "ngawur",
+      "melenceng"
+    ]
+  },
+  {
+    "id": "v13_2_playbook_coding_more_precise",
+    "title": "Debugging coding lebih presisi",
+    "category": "Coding & Software Engineering",
+    "symptoms": [
+      "user kasih error coding",
+      "user minta debug step by step"
+    ],
+    "diagnosis": [
+      "butuh error message, file, stack trace, command, dan environment"
+    ],
+    "fixes": [
+      "minta detail jika belum ada",
+      "beri kemungkinan penyebab berurutan",
+      "beri perintah cek dan contoh fix minimal"
+    ],
+    "keywords": [
+      "coding",
+      "debug",
+      "error",
+      "step by step"
+    ]
+  }
+]

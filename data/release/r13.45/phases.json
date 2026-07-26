@@ -1,0 +1,51 @@
+[
+  {
+    "phase_order": "1",
+    "phase_name": "Critical Runtime Consolidation",
+    "main_goal": "Fix Python, build, path security, gate, capability, schema",
+    "completion_definition": "Build/FastAPI/migration/runtime tests pass",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "2",
+    "phase_name": "Executable Evaluation and Health Safety",
+    "main_goal": "Real prompts, red flags, privacy, image and dose boundaries",
+    "completion_definition": "Critical executable health cases pass",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "3",
+    "phase_name": "Production Machine Learning",
+    "main_goal": "Unique dataset, heads, calibration, OOD, embeddings, registry, drift",
+    "completion_definition": "Production ML gate passes",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "4",
+    "phase_name": "Real Neural Text Classifier",
+    "main_goal": "Turn XOR lab into text classifier and compare baseline",
+    "completion_definition": "Neural gate passes and model is better",
+    "release_blocker": "Zenith/Apex neural only"
+  },
+  {
+    "phase_order": "5",
+    "phase_name": "Corpus Migration and Retrieval V6",
+    "main_goal": "Migrate monolith, split packs, activate V6",
+    "completion_definition": "Normal chat uses V6 and legacy read is zero",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "6",
+    "phase_name": "Verified Health Knowledge",
+    "main_goal": "Populate disease, medicine, herbal, interactions, labs and evidence",
+    "completion_definition": "Executable health knowledge gate passes",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "7",
+    "phase_name": "Edition Integration and Release",
+    "main_goal": "Resource, install/upgrade, edition benchmark and grand gate",
+    "completion_definition": "Grand gate passes",
+    "release_blocker": "Yes"
+  }
+]

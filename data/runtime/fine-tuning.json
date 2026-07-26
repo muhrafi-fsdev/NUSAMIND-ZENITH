@@ -1,0 +1,45 @@
+{
+  "version": "v12-fine-tuning-prep",
+  "createdAt": "2026-07-07T12:34:32.299866Z",
+  "purpose": "Menyiapkan data RAG menjadi format instruction tuning / LoRA / QLoRA tanpa langsung melatih model.",
+  "recommendedBaseModels": [
+    "qwen2.5:7b",
+    "qwen2.5-coder:7b",
+    "llama3.1:8b",
+    "mistral:7b"
+  ],
+  "notes": [
+    "Ini bukan fine-tuning bobot model langsung. Ini pipeline persiapan dataset yang bisa diekspor ke JSONL.",
+    "Data agama harus melalui review manual sebelum training agar tidak melatih jawaban menyesatkan."
+  ],
+  "schema": {
+    "instruction": "pertanyaan/user intent",
+    "input": "konteks opsional",
+    "output": "jawaban ideal",
+    "mode": "quran|universal|coding|workflow|companion",
+    "safety": "normal|religious_guarded|sensitive_general"
+  },
+  "samples": [
+    {
+      "instruction": "Jelaskan kenapa web Next.js blank putih",
+      "input": "User memakai bahasa santai dan tidak melampirkan error",
+      "output": "Cek console browser, terminal dev server, import component, use client, dan akses window/localStorage. Mulai dari error pertama, bukan menebak-nebak.",
+      "mode": "coding",
+      "safety": "normal"
+    },
+    {
+      "instruction": "Apa hukum meninggalkan sholat?",
+      "input": "Topik agama sensitif",
+      "output": "Sholat adalah kewajiban utama bagi Muslim. Jelaskan secara hati-hati, hindari vonis mutlak yang melampaui konteks, dan sarankan rujukan ustadz/ulama untuk detail fikih.",
+      "mode": "quran",
+      "safety": "religious_guarded"
+    },
+    {
+      "instruction": "Upgrade AI saya jangan nanggung",
+      "input": "User ingin roadmap implementasi",
+      "output": "Susun upgrade dari dataset, lexicon, retrieval, prompt, memory, evaluasi, feedback, vector index, monitoring, sampai deployment bertahap.",
+      "mode": "workflow",
+      "safety": "normal"
+    }
+  ]
+}

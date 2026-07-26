@@ -1,0 +1,12 @@
+﻿menu_order,menu_item,action_id,swift_behavior,zenith_behavior,apex_behavior,handler_or_api,expected_result,security_requirement
+1,Coverage Domain,knowledge_coverage,Ringkasan domain,Coverage dan score,Heatmap dan drill-down,GET /api/knowledge/coverage,"Coverage, verified ratio, gaps",Read-only; mask private domains
+2,Knowledge Gaps,knowledge_gaps,View top gaps,Filter dan detail,Analyze/prioritize/plan,GET /api/knowledge/gaps,Gap queue terurut,No raw personal prompts
+3,Import Source,knowledge_import,Tidak tersedia,Import standard file,Full import workflow,POST /api/knowledge/import,Import batch ID dan scan status,Permission; security scan; source rights
+4,Review Pending Data,knowledge_review,Tidak tersedia,View pending,Review/approve/reject recommendation,GET/POST /api/knowledge/review,Pending claims dan findings,Authorized reviewer only
+5,Conflicting Claims,knowledge_conflicts,View summary,Compare claims,Resolve/classify with evidence,GET /api/knowledge/conflicts,Conflict matrix,No automatic delete
+6,Deprecated Knowledge,knowledge_deprecated,View count,View records,Timeline/restore candidate,GET /api/knowledge/deprecated,Deprecated records dan replacements,Read-only unless authorized
+7,Rebuild Index,knowledge_reindex,Tidak tersedia,Domain-limited,Full/versioned rebuild,POST /api/knowledge/reindex,Index job dan manifest,Permission; resource budget; no concurrent activation
+8,Run Benchmark,knowledge_benchmark,Basic benchmark,Domain benchmark,Full expert benchmark,POST /api/knowledge/benchmark,Scorecard per domain/version,Sandbox/temp DB
+9,Rollback Batch,knowledge_rollback,Tidak tersedia,Request handoff,Authorized rollback,POST /api/knowledge/rollback,Rollback report dan new corpus version,High-risk confirmation and audit
+10,Export Health Report,knowledge_report,Summary CSV,Detailed report,Full report with recommendations,GET /api/knowledge/report,CSV/JSON health report,Mask private source details
+0,Kembali,back,Kembali,Kembali,Kembali,Local menu,Kembali tanpa perubahan,None

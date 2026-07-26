@@ -1,0 +1,65 @@
+[
+  {
+    "asset_category": "Domain/Subdomain",
+    "default_method": "Passive DNS and certificate data",
+    "active_validation": "Minimal DNS/HTTP after approval",
+    "authorization_required": "Yes for active checks",
+    "stored_evidence": "Source, first/last seen, ownership confidence",
+    "privacy_rule": "No unrelated domain enumeration",
+    "source_url": "https://github.com/redhuntlabs/Awesome-Asset-Discovery"
+  },
+  {
+    "asset_category": "IP/ASN",
+    "default_method": "WHOIS/RDAP and approved records",
+    "active_validation": "Low-rate validation after approval",
+    "authorization_required": "Yes",
+    "stored_evidence": "ASN, range, provenance",
+    "privacy_rule": "No broad public scanning",
+    "source_url": "https://github.com/redhuntlabs/Awesome-Asset-Discovery"
+  },
+  {
+    "asset_category": "Cloud Assets",
+    "default_method": "Owned account inventory and public references",
+    "active_validation": "Provider API only with permission",
+    "authorization_required": "Yes",
+    "stored_evidence": "Resource ID and exposure state",
+    "privacy_rule": "No bucket brute force",
+    "source_url": "https://github.com/redhuntlabs/Awesome-Asset-Discovery"
+  },
+  {
+    "asset_category": "Source Code Exposure",
+    "default_method": "Owned public repository metadata",
+    "active_validation": "No private access without credentials approval",
+    "authorization_required": "Yes",
+    "stored_evidence": "Redacted pattern and file reference",
+    "privacy_rule": "Never store raw secrets",
+    "source_url": "https://github.com/redhuntlabs/Awesome-Asset-Discovery"
+  },
+  {
+    "asset_category": "Internet Survey/Archives",
+    "default_method": "Read-only approved data source",
+    "active_validation": "None by default",
+    "authorization_required": "Scope ownership required",
+    "stored_evidence": "Timestamped source link",
+    "privacy_rule": "Respect source terms and retention",
+    "source_url": "https://github.com/redhuntlabs/Awesome-Asset-Discovery"
+  },
+  {
+    "asset_category": "Employee/Social Profiling",
+    "default_method": "Disabled",
+    "active_validation": "Not allowed by default",
+    "authorization_required": "Explicit legal/privacy approval",
+    "stored_evidence": "Minimal metadata only",
+    "privacy_rule": "Avoid individual profiling",
+    "source_url": "https://github.com/redhuntlabs/Awesome-Asset-Discovery"
+  },
+  {
+    "asset_category": "Data Leaks/Credentials",
+    "default_method": "Disabled ingestion",
+    "active_validation": "Not allowed",
+    "authorization_required": "Not applicable",
+    "stored_evidence": "Reference existence only when lawful",
+    "privacy_rule": "Do not collect leaked credentials",
+    "source_url": "https://github.com/redhuntlabs/Awesome-Asset-Discovery"
+  }
+]

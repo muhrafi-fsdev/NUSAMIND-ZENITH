@@ -1,0 +1,3 @@
+import fs from 'node:fs';import path from 'node:path';const audit=process.argv.includes('--audit');const names=new Set(['node_modules','.next','out','dist','build','coverage','__pycache__','.pytest_cache','.venv']);const suffixes=['.log','.tmp','.bak','.tsbuildinfo'];const found=[];
+const walk=d=>{for(const e of fs.readdirSync(d,{withFileTypes:true})){if(e.name==='.git')continue;const p=path.join(d,e.name);if(names.has(e.name)||suffixes.some(s=>e.name.endsWith(s))){found.push(p);if(!audit)fs.rmSync(p,{recursive:true,force:true});continue;}if(e.isDirectory())walk(p);}};walk('.');
+console.log(JSON.stringify({ok:!audit||found.length===0,release:'N1.0',mode:audit?'AUDIT':'CLEAN',found},null,2));if(audit&&found.length)process.exit(1);

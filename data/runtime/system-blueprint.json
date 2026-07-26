@@ -1,0 +1,270 @@
+[
+  {
+    "id": "step_1",
+    "title": "1. Perencanaan & Tujuan",
+    "objective": "Identifikasi masalah, use case, target pengguna, batasan, dan metrik keberhasilan sebelum membangun AI.",
+    "outputs": [
+      "Dokumen problem statement",
+      "Use case prioritas",
+      "Target pengguna dan scope",
+      "KPI awal seperti akurasi, relevansi, latensi, dan tingkat keberhasilan jawaban"
+    ],
+    "checklist": [
+      "Identifikasi masalah inti yang ingin diselesaikan AI.",
+      "Tentukan target AI: chatbot knowledge, assistant coding, AI edukasi, atau hybrid.",
+      "Definisikan metrik keberhasilan.",
+      "Tentukan batasan keamanan, privasi, dan scope jawaban."
+    ],
+    "metrics": [
+      "Problem clarity",
+      "KPI readiness",
+      "Risk coverage"
+    ],
+    "tools": [
+      "Notion/Markdown",
+      "Trello/Jira",
+      "Spreadsheet"
+    ],
+    "tags": [
+      "workflow",
+      "planning",
+      "use-case"
+    ]
+  },
+  {
+    "id": "step_2",
+    "title": "2. Pengumpulan & Persiapan Data",
+    "objective": "Kumpulkan data dari sumber relevan lalu bersihkan dan normalisasi agar siap dipakai untuk knowledge base dan evaluasi.",
+    "outputs": [
+      "Dataset bersih",
+      "Skema metadata",
+      "Shard dataset Quran dan Universal",
+      "Data source registry"
+    ],
+    "checklist": [
+      "Kumpulkan data dari website, PDF, Excel/CSV, database, dan dokumen internal.",
+      "Lakukan data cleaning: hapus duplikat, typo fatal, dan konten kosong.",
+      "Susun struktur data: pertanyaan-jawaban, artikel, metadata, kategori, sumber.",
+      "Normalisasi bahasa dan gaya jawaban."
+    ],
+    "metrics": [
+      "Coverage sumber",
+      "Duplication rate",
+      "Data cleanliness"
+    ],
+    "tools": [
+      "Python",
+      "Pandas",
+      "Custom parser",
+      "JSON schema"
+    ],
+    "tags": [
+      "workflow",
+      "data",
+      "preprocessing"
+    ]
+  },
+  {
+    "id": "step_3",
+    "title": "3. Knowledge Base & Retrieval",
+    "objective": "Bangun knowledge base terstruktur, indexing, dan retrieval pipeline untuk RAG yang stabil.",
+    "outputs": [
+      "Knowledge chunks",
+      "Search index",
+      "Hybrid retrieval",
+      "Metadata filter plan"
+    ],
+    "checklist": [
+      "Chunking dokumen secara terkontrol.",
+      "Siapkan embedding model lokal atau fallback lexical search.",
+      "Gunakan vector database opsional seperti FAISS/Chroma jika dibutuhkan.",
+      "Gabungkan keyword search, hybrid search, dan metadata filter."
+    ],
+    "metrics": [
+      "Retrieval precision",
+      "Retrieval recall",
+      "Top-k relevance"
+    ],
+    "tools": [
+      "FAISS",
+      "Chroma",
+      "JSON index",
+      "BM25-like lexical search"
+    ],
+    "tags": [
+      "workflow",
+      "rag",
+      "retrieval"
+    ]
+  },
+  {
+    "id": "step_4",
+    "title": "4. Mesin AI Lokal",
+    "objective": "Pilih dan konfigurasikan model lokal, prompt system, guardrails, serta inference settings sesuai hardware.",
+    "outputs": [
+      "Konfigurasi model",
+      "System prompt",
+      "Safety rules",
+      "Inference profile"
+    ],
+    "checklist": [
+      "Pilih model lokal sesuai hardware: 7B/8B/14B quantized.",
+      "Definisikan prompt system / system instruction.",
+      "Tambahkan guardrails / safety rules.",
+      "Tentukan context window, tokenizer, dan strategi inferensi."
+    ],
+    "metrics": [
+      "Response quality",
+      "Latency",
+      "Hallucination rate"
+    ],
+    "tools": [
+      "Ollama",
+      "llama.cpp",
+      "Hugging Face",
+      "Qwen/Mistral/Llama"
+    ],
+    "tags": [
+      "workflow",
+      "llm",
+      "local-model"
+    ]
+  },
+  {
+    "id": "step_5",
+    "title": "5. Alur Kerja Jawaban AI",
+    "objective": "Rancang pipeline jawaban AI dari intent detection sampai validator akhir agar hasilnya konsisten.",
+    "outputs": [
+      "Router intent",
+      "Memory system",
+      "Prompt assembler",
+      "Validator pipeline"
+    ],
+    "checklist": [
+      "Deteksi intent user.",
+      "Ambil memory percakapan.",
+      "Lakukan retrieval konteks dari knowledge base (RAG).",
+      "Gabungkan prompt + memory + konteks.",
+      "Generate jawaban dengan LLM lokal.",
+      "Lakukan validator/pemeriksa fakta & format."
+    ],
+    "metrics": [
+      "Answer relevance",
+      "Consistency",
+      "Format compliance"
+    ],
+    "tools": [
+      "Vercel AI SDK",
+      "Server-side tools",
+      "Custom validators"
+    ],
+    "tags": [
+      "workflow",
+      "answer-pipeline",
+      "memory"
+    ]
+  },
+  {
+    "id": "step_6",
+    "title": "6. Backend & Integrasi Sistem",
+    "objective": "Hubungkan frontend, backend API, model service, database, dan analitik secara modular.",
+    "outputs": [
+      "API routes",
+      "Session persistence",
+      "Memory storage",
+      "Health endpoints"
+    ],
+    "checklist": [
+      "Hubungkan frontend web/app ke backend API.",
+      "Sediakan service AI lokal terpisah jika perlu.",
+      "Gunakan database utama dan/atau penyimpanan file untuk session serta memory.",
+      "Tambahkan log & analytics."
+    ],
+    "metrics": [
+      "API stability",
+      "Error rate",
+      "Observability coverage"
+    ],
+    "tools": [
+      "Next.js",
+      "Node.js",
+      "PostgreSQL/MySQL/JSON",
+      "REST API"
+    ],
+    "tags": [
+      "workflow",
+      "backend",
+      "integration"
+    ]
+  },
+  {
+    "id": "step_7",
+    "title": "7. Evaluasi & Pengujian",
+    "objective": "Uji AI dengan pertanyaan umum, pertanyaan dataset, paraphrase, dan edge cases untuk mengukur kualitasnya.",
+    "outputs": [
+      "Test suite",
+      "Evaluation report",
+      "Failure analysis",
+      "Fix backlog"
+    ],
+    "checklist": [
+      "Test pertanyaan umum.",
+      "Test pertanyaan dari dataset.",
+      "Test pertanyaan mirip/paraphrase.",
+      "Test pertanyaan di luar data.",
+      "Test pertanyaan sensitif."
+    ],
+    "metrics": [
+      "Akurasi",
+      "Relevansi",
+      "Kejelasan",
+      "Anti-halusinasi",
+      "Kecepatan respon"
+    ],
+    "tools": [
+      "Manual QA",
+      "Scripted evaluation",
+      "Golden set"
+    ],
+    "tags": [
+      "workflow",
+      "evaluation",
+      "testing"
+    ]
+  },
+  {
+    "id": "step_8",
+    "title": "8. Deploy, Monitoring, dan Pengembangan Berkelanjutan",
+    "objective": "Deploy bertahap lalu monitor performa, kumpulkan feedback, dan iterasi sistem secara berkelanjutan.",
+    "outputs": [
+      "Deployment plan",
+      "Monitoring dashboard",
+      "Feedback loop",
+      "Improvement cycle"
+    ],
+    "checklist": [
+      "Deploy local/staging/server bertahap.",
+      "Pantau performa dan error.",
+      "Kumpulkan feedback user.",
+      "Perbaiki dataset, memory, prompt, retrieval, atau model.",
+      "Lakukan optimasi RAG dan fine-tuning bila diperlukan."
+    ],
+    "metrics": [
+      "Uptime",
+      "Feedback quality",
+      "Issue turnaround time",
+      "Continuous improvement velocity"
+    ],
+    "tools": [
+      "PM2/Docker",
+      "Log viewer",
+      "Analytics",
+      "Issue tracker"
+    ],
+    "tags": [
+      "workflow",
+      "deploy",
+      "monitoring"
+    ]
+  }
+]

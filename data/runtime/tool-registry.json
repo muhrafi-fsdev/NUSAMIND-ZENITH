@@ -1,0 +1,19 @@
+{
+  "release": "13.38.0",
+  "edition": "apex",
+  "tools": [
+    "search_knowledge",
+    "read_file",
+    "search_files",
+    "create_file",
+    "edit_file",
+    "move_file",
+    "open_application",
+    "close_application",
+    "run_safe_command",
+    "analyze_document",
+    "analyze_image",
+    "verify_action",
+    "rollback_action"
+  ]
+}

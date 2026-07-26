@@ -1,0 +1,15 @@
+﻿test_id,category,target_versions,test_prompt,required_behavior,forbidden_output,expected_format,criticality
+FMT-001,Anti-LaTeX,"Swift, Zenith, Apex",Hitung loss ratio jika net claim Rp400 miliar dan earned premium Rp750 miliar.,Hasil 53.33%; rumus plain text; status calculation verified.,"\frac, \text, \left, \right, $$",Loss Ratio = (400 / 750) x 100 = 53.33%,Critical
+FMT-002,Final Answer First,"Swift, Zenith, Apex",Berapa 18% dari Rp7.500.000?,Rp1.350.000 muncul di bagian paling atas.,Pembukaan panjang sebelum hasil,Hasil akhir: Rp1.350.000,High
+FMT-003,Missing Input,"Swift, Zenith, Apex",Hitung nilai klaim yang saya terima.,"Meminta limit, deductible, kerugian, dan data relevan.",Angka final yang dibuat-buat,Data yang dibutuhkan,Critical
+FMT-004,Locale,"Swift, Zenith, Apex","Hitung 2,5% dari Rp1.000.000.000.","Membaca 2,5% sebagai 0.025 dan menghasilkan Rp25.000.000.",Rp250.000.000 atau salah separator,Hasil akhir: Rp25.000.000,Critical
+FMT-005,Units,"Swift, Zenith, Apex","Ubah 2,5 Gbps menjadi Mbps.",Menjelaskan basis desimal dan menghasilkan 2.500 Mbps.,2.048 Mbps tanpa alasan basis biner,"2,5 Gbps = 2.500 Mbps",High
+FMT-006,Insurance Formula,"Zenith, Apex","Gross premium Rp900 miliar, ceded premium Rp150 miliar, gross claim Rp620 miliar, recovery Rp140 miliar, expense Rp210 miliar. Hitung net combined ratio.",Net premium 750; net claim 480; combined ratio 92%.,LaTeX mentah atau basis gross/net tertukar,"Net Premium, Net Claim, Loss Ratio, Expense Ratio, Combined Ratio",Critical
+FMT-007,Rounding,"Swift, Zenith, Apex",Hitung 1 dibagi 3 dalam persen.,33.33% dengan catatan pembulatan bila perlu.,33% tanpa kebijakan atau 0.333333333333 tanpa format,33.33%,Medium
+FMT-008,Terminal Width,"Zenith, Apex","Bandingkan empat skenario premi, klaim, expense, dan combined ratio.",Tabel compact atau vertical fallback pada terminal 80 karakter.,Tabel terpotong dan tidak terbaca,Terminal-safe comparison,High
+FMT-009,Explicit LaTeX,"Swift, Zenith, Apex",Berikan rumus kuadrat dalam format LaTeX.,LaTeX boleh ditampilkan karena diminta.,Menolak LaTeX meski diminta,x = \frac{-b \pm \sqrt{b^2-4ac}}{2a},Medium
+FMT-010,Confidence,"Swift, Zenith, Apex",Hitung hasil berdasarkan angka yang saya berikan dan beri akurasi.,"Gunakan status Verified Calculation/Simulation, bukan angka 95% dekoratif.",Akurasi: 95% tanpa dasar,Status perhitungan,Critical
+FMT-011,Engineering,"Zenith, Apex","Ptx 3 dBm, total redaman 28,4 dB. Hitung Prx.","Prx = 3 - 28,4 = -25,4 dBm.",Mengalikan dBm dengan dB atau unit salah,"Prx = -25,4 dBm",Critical
+FMT-012,Swift Concision,Swift,Berapa 12 x 17?,Jawab 204 secara langsung.,Penjelasan panjang atau formula LaTeX,204,Medium
+FMT-013,Zenith Steps,Zenith,"Hitung rata-rata 70, 80, 90, 100 dan jelaskan langkahnya.","Data, rumus, substitusi, hasil 85.",LaTeX mentah,Rata-rata = (70 + 80 + 90 + 100) / 4 = 85,High
+FMT-014,Apex Verification,Apex,Selesaikan x^2 - 5x + 6 = 0 dan verifikasi.,x=2 dan x=3; verifikasi substitusi.,Solusi tanpa pemeriksaan,"Hasil, metode, verifikasi",High

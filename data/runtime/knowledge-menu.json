@@ -1,0 +1,123 @@
+[
+  {
+    "menu_order": "1",
+    "menu_item": "Coverage Domain",
+    "action_id": "knowledge_coverage",
+    "swift_behavior": "Ringkasan domain",
+    "zenith_behavior": "Coverage dan score",
+    "apex_behavior": "Heatmap dan drill-down",
+    "handler_or_api": "GET /api/knowledge/coverage",
+    "expected_result": "Coverage, verified ratio, gaps",
+    "security_requirement": "Read-only; mask private domains"
+  },
+  {
+    "menu_order": "2",
+    "menu_item": "Knowledge Gaps",
+    "action_id": "knowledge_gaps",
+    "swift_behavior": "View top gaps",
+    "zenith_behavior": "Filter dan detail",
+    "apex_behavior": "Analyze/prioritize/plan",
+    "handler_or_api": "GET /api/knowledge/gaps",
+    "expected_result": "Gap queue terurut",
+    "security_requirement": "No raw personal prompts"
+  },
+  {
+    "menu_order": "3",
+    "menu_item": "Import Source",
+    "action_id": "knowledge_import",
+    "swift_behavior": "Tidak tersedia",
+    "zenith_behavior": "Import standard file",
+    "apex_behavior": "Full import workflow",
+    "handler_or_api": "POST /api/knowledge/import",
+    "expected_result": "Import batch ID dan scan status",
+    "security_requirement": "Permission; security scan; source rights"
+  },
+  {
+    "menu_order": "4",
+    "menu_item": "Review Pending Data",
+    "action_id": "knowledge_review",
+    "swift_behavior": "Tidak tersedia",
+    "zenith_behavior": "View pending",
+    "apex_behavior": "Review/approve/reject recommendation",
+    "handler_or_api": "GET/POST /api/knowledge/review",
+    "expected_result": "Pending claims dan findings",
+    "security_requirement": "Authorized reviewer only"
+  },
+  {
+    "menu_order": "5",
+    "menu_item": "Conflicting Claims",
+    "action_id": "knowledge_conflicts",
+    "swift_behavior": "View summary",
+    "zenith_behavior": "Compare claims",
+    "apex_behavior": "Resolve/classify with evidence",
+    "handler_or_api": "GET /api/knowledge/conflicts",
+    "expected_result": "Conflict matrix",
+    "security_requirement": "No automatic delete"
+  },
+  {
+    "menu_order": "6",
+    "menu_item": "Deprecated Knowledge",
+    "action_id": "knowledge_deprecated",
+    "swift_behavior": "View count",
+    "zenith_behavior": "View records",
+    "apex_behavior": "Timeline/restore candidate",
+    "handler_or_api": "GET /api/knowledge/deprecated",
+    "expected_result": "Deprecated records dan replacements",
+    "security_requirement": "Read-only unless authorized"
+  },
+  {
+    "menu_order": "7",
+    "menu_item": "Rebuild Index",
+    "action_id": "knowledge_reindex",
+    "swift_behavior": "Tidak tersedia",
+    "zenith_behavior": "Domain-limited",
+    "apex_behavior": "Full/versioned rebuild",
+    "handler_or_api": "POST /api/knowledge/reindex",
+    "expected_result": "Index job dan manifest",
+    "security_requirement": "Permission; resource budget; no concurrent activation"
+  },
+  {
+    "menu_order": "8",
+    "menu_item": "Run Benchmark",
+    "action_id": "knowledge_benchmark",
+    "swift_behavior": "Basic benchmark",
+    "zenith_behavior": "Domain benchmark",
+    "apex_behavior": "Full expert benchmark",
+    "handler_or_api": "POST /api/knowledge/benchmark",
+    "expected_result": "Scorecard per domain/version",
+    "security_requirement": "Sandbox/temp DB"
+  },
+  {
+    "menu_order": "9",
+    "menu_item": "Rollback Batch",
+    "action_id": "knowledge_rollback",
+    "swift_behavior": "Tidak tersedia",
+    "zenith_behavior": "Request handoff",
+    "apex_behavior": "Authorized rollback",
+    "handler_or_api": "POST /api/knowledge/rollback",
+    "expected_result": "Rollback report dan new corpus version",
+    "security_requirement": "High-risk confirmation and audit"
+  },
+  {
+    "menu_order": "10",
+    "menu_item": "Export Health Report",
+    "action_id": "knowledge_report",
+    "swift_behavior": "Summary CSV",
+    "zenith_behavior": "Detailed report",
+    "apex_behavior": "Full report with recommendations",
+    "handler_or_api": "GET /api/knowledge/report",
+    "expected_result": "CSV/JSON health report",
+    "security_requirement": "Mask private source details"
+  },
+  {
+    "menu_order": "0",
+    "menu_item": "Kembali",
+    "action_id": "back",
+    "swift_behavior": "Kembali",
+    "zenith_behavior": "Kembali",
+    "apex_behavior": "Kembali",
+    "handler_or_api": "Local menu",
+    "expected_result": "Kembali tanpa perubahan",
+    "security_requirement": "None"
+  }
+]

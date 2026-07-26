@@ -1,0 +1,1 @@
+import {spawnSync} from 'node:child_process';const steps=['release:check','eval:smoke','security:smoke','check','build'];for(const step of steps){console.log(`\n== npm run ${step} ==`);const r=spawnSync(process.platform==='win32'?'npm.cmd':'npm',['run',step],{stdio:'inherit'});if(r.status!==0)process.exit(r.status||1)}console.log('Release gate lulus.');

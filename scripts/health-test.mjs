@@ -1,0 +1,1 @@
+import fs from 'node:fs';const t=fs.readFileSync('lib/health-intel.ts','utf8');const required=['nyeri dada','sesak berat','overdosis','warfarin','diagnosisAllowed:false'];const missing=required.filter(x=>!t.includes(x));const result={ok:missing.length===0,missing};console.log(JSON.stringify(result,null,2));if(!result.ok)process.exit(1);

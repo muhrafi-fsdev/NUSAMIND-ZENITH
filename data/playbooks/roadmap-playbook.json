@@ -1,0 +1,1922 @@
+[
+  {
+    "id": "v13_3_playbook_km-001",
+    "title": "Playbook KM-001 - Sapaan",
+    "category": "Percakapan Dasar",
+    "keywords": [
+      "percakapan_dasar",
+      "sapaan",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "halo_apa_kabar",
+      "halo_apa_kabar_terima_kasih_pamit"
+    ],
+    "symptoms": [
+      "User bertanya seputar Sapaan",
+      "Pertanyaan mirip: Halo, apa kabar?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Percakapan Dasar",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan terlalu robotik atau terlalu alay"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Halo, apa kabar, terima kasih, pamit",
+      "Ikuti catatan pengembangan: Buat jawaban singkat, ramah, santai, dan tidak berlebihan",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-002",
+    "title": "Playbook KM-002 - Small Talk",
+    "category": "Percakapan Dasar",
+    "keywords": [
+      "percakapan_dasar",
+      "small_talk",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "aku_lagi_gabut_nih_ngobrol_dong",
+      "lagi_ngapain_cuaca_mood_cerita_singkat"
+    ],
+    "symptoms": [
+      "User bertanya seputar Small Talk",
+      "Pertanyaan mirip: Aku lagi gabut nih, ngobrol dong",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Percakapan Dasar",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan menyimpan informasi pribadi tanpa izin"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Lagi ngapain, cuaca, mood, cerita singkat",
+      "Ikuti catatan pengembangan: Respons harus natural, tidak terlalu panjang, dan bisa lanjut bertanya balik",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-003",
+    "title": "Playbook KM-003 - Empati Ringan",
+    "category": "Percakapan Dasar",
+    "keywords": [
+      "percakapan_dasar",
+      "empati_ringan",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "aku_lagi_capek_banget_hari_ini",
+      "capek_sedih_kecewa_gugup_magang_tidak_percaya_diri"
+    ],
+    "symptoms": [
+      "User bertanya seputar Empati Ringan",
+      "Pertanyaan mirip: Aku lagi capek banget hari ini",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Percakapan Dasar",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Untuk krisis berat, arahkan ke orang terpercaya atau bantuan profesional"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Capek, sedih, kecewa, gugup magang, tidak percaya diri",
+      "Ikuti catatan pengembangan: Jawaban harus menenangkan, realistis, dan tidak menggurui",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-004",
+    "title": "Playbook KM-004 - Klarifikasi",
+    "category": "Percakapan Dasar",
+    "keywords": [
+      "percakapan_dasar",
+      "klarifikasi",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "ini_gimana_ya",
+      "pertanyaan_ambigu_salah_ketik_konteks_kurang"
+    ],
+    "symptoms": [
+      "User bertanya seputar Klarifikasi",
+      "Pertanyaan mirip: Ini gimana ya?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Percakapan Dasar",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan terlalu sering bertanya balik sampai menghambat user"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Pertanyaan ambigu, salah ketik, konteks kurang",
+      "Ikuti catatan pengembangan: AI sebaiknya tetap memberi jawaban awal lalu minta detail jika perlu",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-005",
+    "title": "Playbook KM-005 - EYD dan Kalimat",
+    "category": "Bahasa Indonesia",
+    "keywords": [
+      "bahasa_indonesia",
+      "eyd_dan_kalimat",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "tolong_rapikan_kalimat_laporan_magang_ini",
+      "eyd_tanda_baca_kalimat_efektif_parafrase"
+    ],
+    "symptoms": [
+      "User bertanya seputar EYD dan Kalimat",
+      "Pertanyaan mirip: Tolong rapikan kalimat laporan magang ini",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Bahasa Indonesia",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan mengubah makna asli tanpa memberi catatan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: EYD, tanda baca, kalimat efektif, parafrase",
+      "Ikuti catatan pengembangan: Sediakan versi formal, semi-formal, dan santai",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-006",
+    "title": "Playbook KM-006 - Kosakata dan Istilah",
+    "category": "Bahasa Indonesia",
+    "keywords": [
+      "bahasa_indonesia",
+      "kosakata_dan_istilah",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "ambyar_itu_artinya_apa",
+      "sinonim_antonim_arti_kata_istilah_gaul"
+    ],
+    "symptoms": [
+      "User bertanya seputar Kosakata dan Istilah",
+      "Pertanyaan mirip: Ambyar itu artinya apa?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Bahasa Indonesia",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Hindari kata kasar atau hinaan sebagai respons default"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Sinonim, antonim, arti kata, istilah gaul",
+      "Ikuti catatan pengembangan: Tambahkan konteks penggunaan agar jawaban tidak kaku",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-007",
+    "title": "Playbook KM-007 - Geografi",
+    "category": "Pengetahuan Umum",
+    "keywords": [
+      "pengetahuan_umum",
+      "geografi",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "apa_itu_garis_khatulistiwa",
+      "benua_samudra_negara_ibu_kota_iklim_garis_khatulistiwa"
+    ],
+    "symptoms": [
+      "User bertanya seputar Geografi",
+      "Pertanyaan mirip: Apa itu garis khatulistiwa?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Pengetahuan Umum",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Untuk data terbaru seperti populasi, perlu update berkala"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Benua, samudra, negara, ibu kota, iklim, garis khatulistiwa",
+      "Ikuti catatan pengembangan: Pisahkan data stabil dan data yang bisa berubah seperti jumlah penduduk",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-008",
+    "title": "Playbook KM-008 - Sejarah",
+    "category": "Pengetahuan Umum",
+    "keywords": [
+      "pengetahuan_umum",
+      "sejarah",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "kenapa_indonesia_merdeka_tanggal_17_agustus_1945",
+      "kemerdekaan_indonesia_tokoh_nasional_revolusi_industri"
+    ],
+    "symptoms": [
+      "User bertanya seputar Sejarah",
+      "Pertanyaan mirip: Kenapa Indonesia merdeka tanggal 17 Agustus 1945?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Pengetahuan Umum",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Peristiwa kontroversial harus dijawab netral dan bersumber"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Kemerdekaan Indonesia, tokoh nasional, revolusi industri",
+      "Ikuti catatan pengembangan: Gunakan kronologi singkat dan hindari narasi terlalu politis",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-009",
+    "title": "Playbook KM-009 - Sains Dasar",
+    "category": "Pengetahuan Umum",
+    "keywords": [
+      "pengetahuan_umum",
+      "sains_dasar",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "kenapa_langit_berwarna_biru",
+      "gaya_listrik_sel_fotosintesis_atom_energi"
+    ],
+    "symptoms": [
+      "User bertanya seputar Sains Dasar",
+      "Pertanyaan mirip: Kenapa langit berwarna biru?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Pengetahuan Umum",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan memberi klaim ilmiah tanpa kepastian"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Gaya, listrik, sel, fotosintesis, atom, energi",
+      "Ikuti catatan pengembangan: Jawaban harus sederhana, bertahap, dan mudah dipahami",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-010",
+    "title": "Playbook KM-010 - Matematika Dasar",
+    "category": "Pengetahuan Umum",
+    "keywords": [
+      "pengetahuan_umum",
+      "matematika_dasar",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "07_40_sampai_17_10_itu_berapa_jam",
+      "persentase_rata_rata_konversi_satuan_logika_dasar"
+    ],
+    "symptoms": [
+      "User bertanya seputar Matematika Dasar",
+      "Pertanyaan mirip: 07.40 sampai 17.10 itu berapa jam?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Pengetahuan Umum",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Pastikan hasil hitungan diuji, jangan asal memberi angka"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Persentase, rata-rata, konversi satuan, logika dasar",
+      "Ikuti catatan pengembangan: Simpan pola perhitungan langkah demi langkah",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-011",
+    "title": "Playbook KM-011 - Budaya Lokal",
+    "category": "Indonesia dan Nusantara",
+    "keywords": [
+      "indonesia_dan_nusantara",
+      "budaya_lokal",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "apa_itu_gotong_royong",
+      "adat_bahasa_daerah_makanan_khas_kebiasaan_sosial"
+    ],
+    "symptoms": [
+      "User bertanya seputar Budaya Lokal",
+      "Pertanyaan mirip: Apa itu gotong royong?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Indonesia dan Nusantara",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan membuat stereotip suku/daerah"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Adat, bahasa daerah, makanan khas, kebiasaan sosial",
+      "Ikuti catatan pengembangan: Gunakan bahasa netral dan hormati keberagaman budaya",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-012",
+    "title": "Playbook KM-012 - Istilah Lokal dan Gaul",
+    "category": "Indonesia dan Nusantara",
+    "keywords": [
+      "indonesia_dan_nusantara",
+      "istilah_lokal_dan_gaul",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "mager_itu_maksudnya_apa",
+      "santuy_mager_gabut_ambyar_wak_tipis_tipis"
+    ],
+    "symptoms": [
+      "User bertanya seputar Istilah Lokal dan Gaul",
+      "Pertanyaan mirip: Mager itu maksudnya apa?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Indonesia dan Nusantara",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Hindari membalas dengan bahasa gaul berlebihan di konteks formal"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Santuy, mager, gabut, ambyar, wak, tipis-tipis",
+      "Ikuti catatan pengembangan: Tambahkan arti, konteks, dan contoh pemakaian",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-013",
+    "title": "Playbook KM-013 - Metadata Surah",
+    "category": "Agama dan Al-Qur'an",
+    "keywords": [
+      "agama_dan_al_qur_an",
+      "metadata_surah",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "surah_al_ikhlas_terdiri_dari_berapa_ayat",
+      "al_fatihah_al_ikhlas_yasin_al_baqarah"
+    ],
+    "symptoms": [
+      "User bertanya seputar Metadata Surah",
+      "Pertanyaan mirip: Surah Al-Ikhlas terdiri dari berapa ayat?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Agama dan Al-Qur'an",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan mengarang jumlah ayat atau nomor surah"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Al-Fatihah, Al-Ikhlas, Yasin, Al-Baqarah",
+      "Ikuti catatan pengembangan: Gunakan sumber yang jelas dan konsisten",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-014",
+    "title": "Playbook KM-014 - Ringkasan Kandungan Surah",
+    "category": "Agama dan Al-Qur'an",
+    "keywords": [
+      "agama_dan_al_qur_an",
+      "ringkasan_kandungan_surah",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "apa_isi_pokok_surah_al_fatihah",
+      "tema_utama_surah_pesan_moral_hikmah_umum"
+    ],
+    "symptoms": [
+      "User bertanya seputar Ringkasan Kandungan Surah",
+      "Pertanyaan mirip: Apa isi pokok Surah Al-Fatihah?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Agama dan Al-Qur'an",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan mengklaim tafsir pribadi sebagai kebenaran mutlak"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Tema utama surah, pesan moral, hikmah umum",
+      "Ikuti catatan pengembangan: Pisahkan ringkasan umum dan tafsir rinci",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-015",
+    "title": "Playbook KM-015 - Doa Harian",
+    "category": "Agama dan Al-Qur'an",
+    "keywords": [
+      "agama_dan_al_qur_an",
+      "doa_harian",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "doa_sebelum_belajar_apa",
+      "doa_belajar_makan_tidur_keluar_rumah_masuk_masjid"
+    ],
+    "symptoms": [
+      "User bertanya seputar Doa Harian",
+      "Pertanyaan mirip: Doa sebelum belajar apa?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Agama dan Al-Qur'an",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan membuat doa Arab palsu"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Doa belajar, makan, tidur, keluar rumah, masuk masjid",
+      "Ikuti catatan pengembangan: Sertakan Arab, latin, arti, dan sumber bila tersedia",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-016",
+    "title": "Playbook KM-016 - Akhlak dan Nasihat",
+    "category": "Agama dan Al-Qur'an",
+    "keywords": [
+      "agama_dan_al_qur_an",
+      "akhlak_dan_nasihat",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "aku_lagi_sedih_ada_nasihat_islam_yang_menenangkan",
+      "sabar_jujur_amanah_rendah_hati_bersyukur"
+    ],
+    "symptoms": [
+      "User bertanya seputar Akhlak dan Nasihat",
+      "Pertanyaan mirip: Aku lagi sedih, ada nasihat Islam yang menenangkan?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Agama dan Al-Qur'an",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan memberi vonis agama yang keras"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Sabar, jujur, amanah, rendah hati, bersyukur",
+      "Ikuti catatan pengembangan: Gunakan jawaban empatik dan sumber umum",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-017",
+    "title": "Playbook KM-017 - Ibadah Dasar",
+    "category": "Agama dan Al-Qur'an",
+    "keywords": [
+      "agama_dan_al_qur_an",
+      "ibadah_dasar",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "urutan_wudhu_yang_benar_bagaimana",
+      "wudhu_shalat_puasa_zakat_adab_ibadah"
+    ],
+    "symptoms": [
+      "User bertanya seputar Ibadah Dasar",
+      "Pertanyaan mirip: Urutan wudhu yang benar bagaimana?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Agama dan Al-Qur'an",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan memberi fatwa berat atau memaksakan satu pendapat"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Wudhu, shalat, puasa, zakat, adab ibadah",
+      "Ikuti catatan pengembangan: Jawab umum, sebutkan bahwa detail mazhab bisa berbeda",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-018",
+    "title": "Playbook KM-018 - Batasan Jawaban Agama",
+    "category": "Agama dan Al-Qur'an",
+    "keywords": [
+      "agama_dan_al_qur_an",
+      "batasan_jawaban_agama",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "apakah_ini_pasti_haram",
+      "fatwa_hukum_sensitif_tafsir_mendalam_klaim_dalil"
+    ],
+    "symptoms": [
+      "User bertanya seputar Batasan Jawaban Agama",
+      "Pertanyaan mirip: Apakah ini pasti haram?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Agama dan Al-Qur'an",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Topik agama sensitif wajib menyebut keterbatasan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Fatwa, hukum sensitif, tafsir mendalam, klaim dalil",
+      "Ikuti catatan pengembangan: Buat template jawaban hati-hati dan rujuk ke ahli jika perlu",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-019",
+    "title": "Playbook KM-019 - Dasar Komputer",
+    "category": "Teknologi",
+    "keywords": [
+      "teknologi",
+      "dasar_komputer",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "kenapa_ram_laptop_saya_penuh",
+      "cpu_ram_ssd_gpu_windows_driver"
+    ],
+    "symptoms": [
+      "User bertanya seputar Dasar Komputer",
+      "Pertanyaan mirip: Kenapa RAM laptop saya penuh?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Teknologi",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan menyarankan hapus file sistem sembarangan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: CPU, RAM, SSD, GPU, Windows, driver",
+      "Ikuti catatan pengembangan: Berikan troubleshooting bertahap dan aman",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-020",
+    "title": "Playbook KM-020 - Jaringan Komputer",
+    "category": "Teknologi",
+    "keywords": [
+      "teknologi",
+      "jaringan_komputer",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "apa_bedanya_router_dan_switch",
+      "ip_address_subnet_gateway_dns_lan_wan_vlan"
+    ],
+    "symptoms": [
+      "User bertanya seputar Jaringan Komputer",
+      "Pertanyaan mirip: Apa bedanya router dan switch?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Teknologi",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan memberi instruksi yang mengganggu jaringan orang lain"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: IP address, subnet, gateway, DNS, LAN, WAN, VLAN",
+      "Ikuti catatan pengembangan: Tambahkan contoh topologi sederhana",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-021",
+    "title": "Playbook KM-021 - Web Development",
+    "category": "Teknologi",
+    "keywords": [
+      "teknologi",
+      "web_development",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "kenapa_website_saya_database_connection_failed",
+      "frontend_backend_database_rest_api_cpanel_laragon"
+    ],
+    "symptoms": [
+      "User bertanya seputar Web Development",
+      "Pertanyaan mirip: Kenapa website saya database connection failed?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Teknologi",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan meminta atau menampilkan password database"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Frontend, backend, database, REST API, cPanel, Laragon",
+      "Ikuti catatan pengembangan: Jawaban harus debugging step-by-step",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-022",
+    "title": "Playbook KM-022 - Database",
+    "category": "Teknologi",
+    "keywords": [
+      "teknologi",
+      "database",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "cara_bikin_tabel_memory_ai_di_mysql_gimana",
+      "mysql_postgresql_tabel_foreign_key_query_select_insert"
+    ],
+    "symptoms": [
+      "User bertanya seputar Database",
+      "Pertanyaan mirip: Cara bikin tabel memory AI di MySQL gimana?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Teknologi",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Hati-hati pada query DELETE/DROP; beri backup warning"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: MySQL, PostgreSQL, tabel, foreign key, query SELECT/INSERT",
+      "Ikuti catatan pengembangan: Pisahkan SQL aman, migrasi, dan optimasi",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-023",
+    "title": "Playbook KM-023 - Cybersecurity Dasar",
+    "category": "Teknologi",
+    "keywords": [
+      "teknologi",
+      "cybersecurity_dasar",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "cara_tahu_link_phishing_bagaimana",
+      "password_phishing_malware_backup_2fa_keamanan_data"
+    ],
+    "symptoms": [
+      "User bertanya seputar Cybersecurity Dasar",
+      "Pertanyaan mirip: Cara tahu link phishing bagaimana?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Teknologi",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan memberi instruksi peretasan atau penyalahgunaan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Password, phishing, malware, backup, 2FA, keamanan data",
+      "Ikuti catatan pengembangan: Fokus defensif dan edukatif",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-024",
+    "title": "Playbook KM-024 - Konsep Dasar AI",
+    "category": "AI dan Machine Learning",
+    "keywords": [
+      "ai_dan_machine_learning",
+      "konsep_dasar_ai",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "dataset_itu_apa_dalam_ai",
+      "ai_ml_dataset_training_inference_model_prompt"
+    ],
+    "symptoms": [
+      "User bertanya seputar Konsep Dasar AI",
+      "Pertanyaan mirip: Dataset itu apa dalam AI?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: AI dan Machine Learning",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan menyebut AI sebagai benar-benar sadar atau punya perasaan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: AI, ML, dataset, training, inference, model, prompt",
+      "Ikuti catatan pengembangan: Gunakan analogi sederhana untuk pemula",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-025",
+    "title": "Playbook KM-025 - RAG dan Vector Database",
+    "category": "AI dan Machine Learning",
+    "keywords": [
+      "ai_dan_machine_learning",
+      "rag_dan_vector_database",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "bedanya_rag_dan_fine_tuning_apa",
+      "rag_embedding_faiss_chroma_semantic_search"
+    ],
+    "symptoms": [
+      "User bertanya seputar RAG dan Vector Database",
+      "Pertanyaan mirip: Bedanya RAG dan fine-tuning apa?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: AI dan Machine Learning",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan klaim RAG selalu 100 persen benar"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: RAG, embedding, FAISS, Chroma, semantic search",
+      "Ikuti catatan pengembangan: Tambahkan flow RAG dan contoh implementasi lokal",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-026",
+    "title": "Playbook KM-026 - Model Lokal",
+    "category": "AI dan Machine Learning",
+    "keywords": [
+      "ai_dan_machine_learning",
+      "model_lokal",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "model_lokal_apa_yang_cocok_untuk_rtx_4060",
+      "ollama_llama_cpp_gguf_quantization_vram"
+    ],
+    "symptoms": [
+      "User bertanya seputar Model Lokal",
+      "Pertanyaan mirip: Model lokal apa yang cocok untuk RTX 4060?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: AI dan Machine Learning",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Untuk info model terbaru harus ada mekanisme update"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Ollama, llama.cpp, GGUF, quantization, VRAM",
+      "Ikuti catatan pengembangan: Data model harus diupdate berkala karena cepat berubah",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-027",
+    "title": "Playbook KM-027 - Prompt Engineering",
+    "category": "AI dan Machine Learning",
+    "keywords": [
+      "ai_dan_machine_learning",
+      "prompt_engineering",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "kenapa_ai_saya_selalu_bilang_dari_data_yang_tersedia",
+      "system_prompt_instruction_few_shot_format_jawaban"
+    ],
+    "symptoms": [
+      "User bertanya seputar Prompt Engineering",
+      "Pertanyaan mirip: Kenapa AI saya selalu bilang dari data yang tersedia?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: AI dan Machine Learning",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Prompt tidak boleh memaksa AI menjawab jika data tidak cukup"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: System prompt, instruction, few-shot, format jawaban",
+      "Ikuti catatan pengembangan: Buat template prompt per mode: santai, formal, teknis, agama",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-028",
+    "title": "Playbook KM-028 - Memory AI",
+    "category": "AI dan Machine Learning",
+    "keywords": [
+      "ai_dan_machine_learning",
+      "memory_ai",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "cara_bikin_ai_ingat_percakapan_user_bagaimana",
+      "short_term_memory_session_summary_long_term_preference"
+    ],
+    "symptoms": [
+      "User bertanya seputar Memory AI",
+      "Pertanyaan mirip: Cara bikin AI ingat percakapan user bagaimana?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: AI dan Machine Learning",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan menyimpan data sensitif tanpa izin"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Short-term memory, session summary, long-term preference",
+      "Ikuti catatan pengembangan: Memory harus punya filter privasi dan tingkat kepentingan",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-029",
+    "title": "Playbook KM-029 - Evaluasi AI",
+    "category": "AI dan Machine Learning",
+    "keywords": [
+      "ai_dan_machine_learning",
+      "evaluasi_ai",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "bagaimana_cara_mengetes_ai_saya_sudah_bagus_atau_belum",
+      "test_set_akurasi_relevansi_anti_halusinasi_latency"
+    ],
+    "symptoms": [
+      "User bertanya seputar Evaluasi AI",
+      "Pertanyaan mirip: Bagaimana cara mengetes AI saya sudah bagus atau belum?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: AI dan Machine Learning",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan hanya menilai dari satu-dua contoh pertanyaan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Test set, akurasi, relevansi, anti-halusinasi, latency",
+      "Ikuti catatan pengembangan: Buat minimal 100-500 pertanyaan uji per kategori",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-030",
+    "title": "Playbook KM-030 - Fine-tuning",
+    "category": "AI dan Machine Learning",
+    "keywords": [
+      "ai_dan_machine_learning",
+      "fine_tuning",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "kapan_ai_perlu_fine_tuning",
+      "lora_qlora_peft_unsloth_dataset_instruction"
+    ],
+    "symptoms": [
+      "User bertanya seputar Fine-tuning",
+      "Pertanyaan mirip: Kapan AI perlu fine-tuning?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: AI dan Machine Learning",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Fine-tuning dataset kotor akan membuat model makin kacau"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: LoRA, QLoRA, PEFT, Unsloth, dataset instruction",
+      "Ikuti catatan pengembangan: Fine-tuning dilakukan setelah dataset bersih dan evaluasi jelas",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-031",
+    "title": "Playbook KM-031 - Laporan Akademik",
+    "category": "Akademik Mahasiswa",
+    "keywords": [
+      "akademik_mahasiswa",
+      "laporan_akademik",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "buatkan_latar_belakang_laporan_iot",
+      "latar_belakang_rumusan_masalah_tujuan_metode_kesimpulan"
+    ],
+    "symptoms": [
+      "User bertanya seputar Laporan Akademik",
+      "Pertanyaan mirip: Buatkan latar belakang laporan IoT",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Akademik Mahasiswa",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan membuat data pengujian palsu"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Latar belakang, rumusan masalah, tujuan, metode, kesimpulan",
+      "Ikuti catatan pengembangan: Bedakan template laporan, essay, dan jurnal",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-032",
+    "title": "Playbook KM-032 - Presentasi dan PPT",
+    "category": "Akademik Mahasiswa",
+    "keywords": [
+      "akademik_mahasiswa",
+      "presentasi_dan_ppt",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "buatkan_15_slide_dari_laporan_ini",
+      "struktur_slide_poin_penting_narasi_presentasi_desain"
+    ],
+    "symptoms": [
+      "User bertanya seputar Presentasi dan PPT",
+      "Pertanyaan mirip: Buatkan 15 slide dari laporan ini",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Akademik Mahasiswa",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan mengubah isi laporan tanpa alasan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Struktur slide, poin penting, narasi presentasi, desain",
+      "Ikuti catatan pengembangan: Buat mode ringkas, akademik, dan presentasi santai",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-033",
+    "title": "Playbook KM-033 - Kutipan dan Daftar Pustaka",
+    "category": "Akademik Mahasiswa",
+    "keywords": [
+      "akademik_mahasiswa",
+      "kutipan_dan_daftar_pustaka",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "cara_menulis_daftar_pustaka_dari_website_gimana",
+      "apa_ieee_kutipan_langsung_parafrase_sumber_valid"
+    ],
+    "symptoms": [
+      "User bertanya seputar Kutipan dan Daftar Pustaka",
+      "Pertanyaan mirip: Cara menulis daftar pustaka dari website gimana?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Akademik Mahasiswa",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan membuat sumber palsu"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: APA, IEEE, kutipan langsung, parafrase, sumber valid",
+      "Ikuti catatan pengembangan: Ajarkan format umum dan pentingnya sumber valid",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-034",
+    "title": "Playbook KM-034 - Logbook Magang",
+    "category": "Magang dan Dunia Kerja",
+    "keywords": [
+      "magang_dan_dunia_kerja",
+      "logbook_magang",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "rapikan_kalimat_logbook_magang_hari_ini",
+      "aktivitas_harian_diskusi_troubleshooting_observasi"
+    ],
+    "symptoms": [
+      "User bertanya seputar Logbook Magang",
+      "Pertanyaan mirip: Rapikan kalimat logbook magang hari ini",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Magang dan Dunia Kerja",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan menambah aktivitas yang tidak benar-benar dilakukan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Aktivitas harian, diskusi, troubleshooting, observasi",
+      "Ikuti catatan pengembangan: Sediakan versi singkat, formal, dan semi-formal",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-035",
+    "title": "Playbook KM-035 - IT Helpdesk",
+    "category": "Magang dan Dunia Kerja",
+    "keywords": [
+      "magang_dan_dunia_kerja",
+      "it_helpdesk",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "kalau_printer_tidak_bisa_print_harus_cek_apa_dulu",
+      "printer_jaringan_windows_email_remote_desktop_ticketing"
+    ],
+    "symptoms": [
+      "User bertanya seputar IT Helpdesk",
+      "Pertanyaan mirip: Kalau printer tidak bisa print harus cek apa dulu?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Magang dan Dunia Kerja",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan menyuruh akses data kantor tanpa izin"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Printer, jaringan, Windows, email, remote desktop, ticketing",
+      "Ikuti catatan pengembangan: Gunakan checklist troubleshooting aman",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-036",
+    "title": "Playbook KM-036 - Komunikasi Profesional",
+    "category": "Magang dan Dunia Kerja",
+    "keywords": [
+      "magang_dan_dunia_kerja",
+      "komunikasi_profesional",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "cara_chat_pembimbing_magang_kalau_belum_ada_tugas_gimana",
+      "izin_bertanya_follow_up_meminta_tugas_laporan_singkat"
+    ],
+    "symptoms": [
+      "User bertanya seputar Komunikasi Profesional",
+      "Pertanyaan mirip: Cara chat pembimbing magang kalau belum ada tugas gimana?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Magang dan Dunia Kerja",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan terlalu informal untuk konteks atasan/dosen"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Izin bertanya, follow-up, meminta tugas, laporan singkat",
+      "Ikuti catatan pengembangan: Sediakan tone sopan tapi tidak terlalu kaku",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-037",
+    "title": "Playbook KM-037 - Produktivitas",
+    "category": "Kehidupan Harian",
+    "keywords": [
+      "kehidupan_harian",
+      "produktivitas",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "cara_biar_fokus_belajar_gimana",
+      "to_do_list_prioritas_fokus_anti_malas_jadwal_belajar"
+    ],
+    "symptoms": [
+      "User bertanya seputar Produktivitas",
+      "Pertanyaan mirip: Cara biar fokus belajar gimana?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Kehidupan Harian",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan memberi jadwal terlalu berat atau tidak realistis"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: To-do list, prioritas, fokus, anti-malas, jadwal belajar",
+      "Ikuti catatan pengembangan: Berikan saran realistis dan mudah dilakukan",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-038",
+    "title": "Playbook KM-038 - Finansial Dasar",
+    "category": "Kehidupan Harian",
+    "keywords": [
+      "kehidupan_harian",
+      "finansial_dasar",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "cara_hemat_uang_jajan_gimana",
+      "menabung_uang_jajan_pengeluaran_harian_prioritas_belanja"
+    ],
+    "symptoms": [
+      "User bertanya seputar Finansial Dasar",
+      "Pertanyaan mirip: Cara hemat uang jajan gimana?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Kehidupan Harian",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan memberi rekomendasi investasi personal"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Menabung, uang jajan, pengeluaran harian, prioritas belanja",
+      "Ikuti catatan pengembangan: Fokus edukasi umum, bukan nasihat investasi spesifik",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-039",
+    "title": "Playbook KM-039 - Perawatan Perangkat",
+    "category": "Kehidupan Harian",
+    "keywords": [
+      "kehidupan_harian",
+      "perawatan_perangkat",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "apakah_laptop_boleh_ditutup_saat_pakai_monitor",
+      "laptop_panas_baterai_storage_monitor_windows_update"
+    ],
+    "symptoms": [
+      "User bertanya seputar Perawatan Perangkat",
+      "Pertanyaan mirip: Apakah laptop boleh ditutup saat pakai monitor?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Kehidupan Harian",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan menyarankan pembongkaran hardware tanpa kemampuan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Laptop panas, baterai, storage, monitor, Windows update",
+      "Ikuti catatan pengembangan: Sertakan risiko panas, power setting, dan ventilasi",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-040",
+    "title": "Playbook KM-040 - Makanan dan Bekal",
+    "category": "Kehidupan Harian",
+    "keywords": [
+      "kehidupan_harian",
+      "makanan_dan_bekal",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "bekal_simpel_buat_magang_apa",
+      "bekal_kantor_makan_hemat_menu_sederhana"
+    ],
+    "symptoms": [
+      "User bertanya seputar Makanan dan Bekal",
+      "Pertanyaan mirip: Bekal simpel buat magang apa?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Kehidupan Harian",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Hindari saran untuk alergi/penyakit tertentu tanpa peringatan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Bekal kantor, makan hemat, menu sederhana",
+      "Ikuti catatan pengembangan: Tambahkan opsi murah, praktis, dan tidak ribet",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-041",
+    "title": "Playbook KM-041 - Profil Produk",
+    "category": "Dokumentasi Website",
+    "keywords": [
+      "dokumentasi_website",
+      "profil_produk",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "nusamind_ai_itu_apa",
+      "nusamind_ai_al_qur_an_nusantara_kira_sheetformula"
+    ],
+    "symptoms": [
+      "User bertanya seputar Profil Produk",
+      "Pertanyaan mirip: NusaMind AI itu apa?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Dokumentasi Website",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan mengklaim fitur yang belum tersedia"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: NusaMind AI, Al-Qur'an Nusantara, KIRA, SheetFormula",
+      "Ikuti catatan pengembangan: Tulis profil singkat setiap project",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-042",
+    "title": "Playbook KM-042 - FAQ Fitur",
+    "category": "Dokumentasi Website",
+    "keywords": [
+      "dokumentasi_website",
+      "faq_fitur",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "cara_menggunakan_fitur_ai_di_website_ini_gimana",
+      "cara_chat_ai_cari_surah_cari_formula_simpan_progress"
+    ],
+    "symptoms": [
+      "User bertanya seputar FAQ Fitur",
+      "Pertanyaan mirip: Cara menggunakan fitur AI di website ini gimana?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Dokumentasi Website",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan memberi instruksi tombol yang tidak ada"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Cara chat AI, cari surah, cari formula, simpan progress",
+      "Ikuti catatan pengembangan: Buat FAQ per halaman dan per tombol penting",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-043",
+    "title": "Playbook KM-043 - Known Issues",
+    "category": "Dokumentasi Website",
+    "keywords": [
+      "dokumentasi_website",
+      "known_issues",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "kenapa_ai_tidak_menemukan_jawaban",
+      "database_error_fitur_tidak_muncul_search_tidak_akurat"
+    ],
+    "symptoms": [
+      "User bertanya seputar Known Issues",
+      "Pertanyaan mirip: Kenapa AI tidak menemukan jawaban?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Dokumentasi Website",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan menyalahkan user tanpa dasar"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Database error, fitur tidak muncul, search tidak akurat",
+      "Ikuti catatan pengembangan: Pisahkan bug aktif, bug selesai, dan solusi sementara",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-044",
+    "title": "Playbook KM-044 - Changelog",
+    "category": "Dokumentasi Website",
+    "keywords": [
+      "dokumentasi_website",
+      "changelog",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "apa_yang_baru_di_versi_ini",
+      "versi_ai_update_dataset_perbaikan_ui_perubahan_backend"
+    ],
+    "symptoms": [
+      "User bertanya seputar Changelog",
+      "Pertanyaan mirip: Apa yang baru di versi ini?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Dokumentasi Website",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan menyebut update yang belum dikerjakan sebagai sudah selesai"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Versi AI, update dataset, perbaikan UI, perubahan backend",
+      "Ikuti catatan pengembangan: Gunakan tanggal dan versi jelas",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-045",
+    "title": "Playbook KM-045 - Topik Sensitif",
+    "category": "Guardrail dan Keamanan",
+    "keywords": [
+      "guardrail_dan_keamanan",
+      "topik_sensitif",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "cara_membuat_wifi_jammer_gimana",
+      "peretasan_jamming_senjata_self_harm_data_pribadi_hukum_berat"
+    ],
+    "symptoms": [
+      "User bertanya seputar Topik Sensitif",
+      "Pertanyaan mirip: Cara membuat WiFi jammer gimana?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Guardrail dan Keamanan",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Kesalahan guardrail bisa membuat AI memberi instruksi berbahaya"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Peretasan, jamming, senjata, self-harm, data pribadi, hukum berat",
+      "Ikuti catatan pengembangan: Buat respons penolakan sopan dan alternatif aman",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-046",
+    "title": "Playbook KM-046 - Privasi User",
+    "category": "Guardrail dan Keamanan",
+    "keywords": [
+      "guardrail_dan_keamanan",
+      "privasi_user",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "ini_password_database_saya_simpan_ya",
+      "email_nomor_hp_password_alamat_data_kantor_token_api"
+    ],
+    "symptoms": [
+      "User bertanya seputar Privasi User",
+      "Pertanyaan mirip: Ini password database saya, simpan ya",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Guardrail dan Keamanan",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan log password/token ke database umum"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Email, nomor HP, password, alamat, data kantor, token API",
+      "Ikuti catatan pengembangan: Tolak menyimpan rahasia dan sarankan cara aman",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-047",
+    "title": "Playbook KM-047 - Data Cleaning",
+    "category": "Data Engineering AI",
+    "keywords": [
+      "data_engineering_ai",
+      "data_cleaning",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "kenapa_dataset_banyak_tapi_ai_masih_ngawur",
+      "duplikat_typo_data_konflik_kategori_kosong_jawaban_terlalu_pendek"
+    ],
+    "symptoms": [
+      "User bertanya seputar Data Cleaning",
+      "Pertanyaan mirip: Kenapa dataset banyak tapi AI masih ngawur?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Data Engineering AI",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Data kotor akan memperbesar halusinasi"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Duplikat, typo, data konflik, kategori kosong, jawaban terlalu pendek",
+      "Ikuti catatan pengembangan: Buat pipeline validasi dataset otomatis",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-048",
+    "title": "Playbook KM-048 - Chunking Dokumen",
+    "category": "Data Engineering AI",
+    "keywords": [
+      "data_engineering_ai",
+      "chunking_dokumen",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "chunk_dokumen_itu_buat_apa",
+      "chunk_size_overlap_judul_metadata_section_path"
+    ],
+    "symptoms": [
+      "User bertanya seputar Chunking Dokumen",
+      "Pertanyaan mirip: Chunk dokumen itu buat apa?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Data Engineering AI",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Chunk terlalu kecil kehilangan konteks; terlalu besar kurang relevan"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Chunk size, overlap, judul, metadata, section path",
+      "Ikuti catatan pengembangan: Chunk harus cukup kecil untuk relevansi tapi cukup besar untuk konteks",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-049",
+    "title": "Playbook KM-049 - Hybrid Search",
+    "category": "Data Engineering AI",
+    "keywords": [
+      "data_engineering_ai",
+      "hybrid_search",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "kenapa_ai_tidak_menemukan_jawaban_padahal_datanya_ada",
+      "bm25_vector_search_reranking_metadata_filter"
+    ],
+    "symptoms": [
+      "User bertanya seputar Hybrid Search",
+      "Pertanyaan mirip: Kenapa AI tidak menemukan jawaban padahal datanya ada?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Data Engineering AI",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Retrieval salah akan membuat jawaban salah"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: BM25, vector search, reranking, metadata filter",
+      "Ikuti catatan pengembangan: Gabungkan keyword search dan semantic search",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-050",
+    "title": "Playbook KM-050 - Log Percakapan",
+    "category": "Monitoring AI",
+    "keywords": [
+      "monitoring_ai",
+      "log_percakapan",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "pertanyaan_mana_yang_paling_sering_gagal_dijawab_ai",
+      "query_user_konteks_yang_diambil_jawaban_feedback_error"
+    ],
+    "symptoms": [
+      "User bertanya seputar Log Percakapan",
+      "Pertanyaan mirip: Pertanyaan mana yang paling sering gagal dijawab AI?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Monitoring AI",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan menyimpan password/token/chat sensitif tanpa masking"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Query user, konteks yang diambil, jawaban, feedback, error",
+      "Ikuti catatan pengembangan: Log harus aman dan tidak menyimpan data sensitif mentah",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-051",
+    "title": "Playbook KM-051 - Feedback User",
+    "category": "Monitoring AI",
+    "keywords": [
+      "monitoring_ai",
+      "feedback_user",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "jawaban_ini_salah_harusnya_begini",
+      "like_dislike_koreksi_jawaban_rating_alasan_feedback"
+    ],
+    "symptoms": [
+      "User bertanya seputar Feedback User",
+      "Pertanyaan mirip: Jawaban ini salah, harusnya begini",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Monitoring AI",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: User bisa memberi koreksi salah; perlu moderasi/validasi"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Like/dislike, koreksi jawaban, rating, alasan feedback",
+      "Ikuti catatan pengembangan: Feedback jangan langsung masuk knowledge base tanpa review",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-052",
+    "title": "Playbook KM-052 - Performance",
+    "category": "Monitoring AI",
+    "keywords": [
+      "monitoring_ai",
+      "performance",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "kenapa_ai_lokal_saya_lambat",
+      "latency_token_per_second_vram_ram_error_rate"
+    ],
+    "symptoms": [
+      "User bertanya seputar Performance",
+      "Pertanyaan mirip: Kenapa AI lokal saya lambat?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Monitoring AI",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan hanya optimasi cepat tapi mengorbankan akurasi"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Latency, token per second, VRAM, RAM, error rate",
+      "Ikuti catatan pengembangan: Catat model, ukuran konteks, dan hardware saat pengujian",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-053",
+    "title": "Playbook KM-053 - Santai",
+    "category": "Mode Jawaban",
+    "keywords": [
+      "mode_jawaban",
+      "santai",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "jelasin_rag_pake_bahasa_gampang_dong",
+      "bahasa_sehari_hari_tidak_terlalu_formal_tetap_sopan"
+    ],
+    "symptoms": [
+      "User bertanya seputar Santai",
+      "Pertanyaan mirip: Jelasin RAG pake bahasa gampang dong",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Mode Jawaban",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan sampai gaya santai membuat jawaban tidak serius untuk topik penting"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Bahasa sehari-hari, tidak terlalu formal, tetap sopan",
+      "Ikuti catatan pengembangan: Gunakan analogi, hindari jargon berat",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-054",
+    "title": "Playbook KM-054 - Teknis",
+    "category": "Mode Jawaban",
+    "keywords": [
+      "mode_jawaban",
+      "teknis",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "analisis_error_database_connection_failed",
+      "step_by_step_analisis_error_solusi_kode_arsitektur_sistem"
+    ],
+    "symptoms": [
+      "User bertanya seputar Teknis",
+      "Pertanyaan mirip: Analisis error database connection failed",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Mode Jawaban",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan mengarang file atau kode yang tidak ada"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Step-by-step, analisis error, solusi kode, arsitektur sistem",
+      "Ikuti catatan pengembangan: Gunakan struktur: penyebab, cara cek, solusi, pencegahan",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-055",
+    "title": "Playbook KM-055 - Akademik",
+    "category": "Mode Jawaban",
+    "keywords": [
+      "mode_jawaban",
+      "akademik",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "buat_jawaban_soal_ini_secara_ringkas_tapi_matematis",
+      "jawaban_soal_laporan_essay_pembahasan_matematis"
+    ],
+    "symptoms": [
+      "User bertanya seputar Akademik",
+      "Pertanyaan mirip: Buat jawaban soal ini secara ringkas tapi matematis",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Mode Jawaban",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan memberi jawaban salah dengan percaya diri"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Jawaban soal, laporan, essay, pembahasan matematis",
+      "Ikuti catatan pengembangan: Tambahkan format: Soal, Jawaban, Pembahasan",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-056",
+    "title": "Playbook KM-056 - Agama Aman",
+    "category": "Mode Jawaban",
+    "keywords": [
+      "mode_jawaban",
+      "agama_aman",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "apa_hukum_sesuatu_dalam_islam",
+      "dalil_tafsir_akhlak_ibadah_batasan_fatwa"
+    ],
+    "symptoms": [
+      "User bertanya seputar Agama Aman",
+      "Pertanyaan mirip: Apa hukum sesuatu dalam Islam?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Mode Jawaban",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Untuk fatwa spesifik, arahkan ke ustaz/ahli"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Dalil, tafsir, akhlak, ibadah, batasan fatwa",
+      "Ikuti catatan pengembangan: Sertakan sumber jika tersedia dan hindari klaim mutlak",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-057",
+    "title": "Playbook KM-057 - Sumber Terverifikasi",
+    "category": "Sumber Data",
+    "keywords": [
+      "sumber_data",
+      "sumber_terverifikasi",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "sumber_jawaban_ini_dari_mana",
+      "sumber_resmi_buku_dokumentasi_jurnal_dataset_internal"
+    ],
+    "symptoms": [
+      "User bertanya seputar Sumber Terverifikasi",
+      "Pertanyaan mirip: Sumber jawaban ini dari mana?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Sumber Data",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jangan membuat sumber palsu"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Sumber resmi, buku, dokumentasi, jurnal, dataset internal",
+      "Ikuti catatan pengembangan: Tambahkan kolom sumber dan tingkat kepercayaan di semua dataset",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-058",
+    "title": "Playbook KM-058 - Update Berkala",
+    "category": "Sumber Data",
+    "keywords": [
+      "sumber_data",
+      "update_berkala",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "windows_versi_terbaru_sekarang_apa",
+      "software_version_model_ai_harga_perangkat_aturan_terbaru"
+    ],
+    "symptoms": [
+      "User bertanya seputar Update Berkala",
+      "Pertanyaan mirip: Windows versi terbaru sekarang apa?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Sumber Data",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: AI lokal tanpa internet bisa usang untuk data terbaru"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Software version, model AI, harga perangkat, aturan terbaru",
+      "Ikuti catatan pengembangan: Pisahkan data stabil dan data dinamis",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-059",
+    "title": "Playbook KM-059 - Variasi Pertanyaan",
+    "category": "Dataset Quality",
+    "keywords": [
+      "dataset_quality",
+      "variasi_pertanyaan",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "surah_al_ikhlas_itu_bahas_apa_isi_pokok_al_ikhlas_apa",
+      "paraphrase_typo_bahasa_santai_sinonim"
+    ],
+    "symptoms": [
+      "User bertanya seputar Variasi Pertanyaan",
+      "Pertanyaan mirip: Surah Al-Ikhlas itu bahas apa? / Isi pokok Al-Ikhlas apa?",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Dataset Quality",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Variasi pertanyaan jangan mengubah intent asli"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Paraphrase, typo, bahasa santai, sinonim",
+      "Ikuti catatan pengembangan: Setiap jawaban penting minimal punya 3-5 variasi pertanyaan",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  },
+  {
+    "id": "v13_3_playbook_km-060",
+    "title": "Playbook KM-060 - Jawaban Ideal",
+    "category": "Dataset Quality",
+    "keywords": [
+      "dataset_quality",
+      "jawaban_ideal",
+      "roadmap_csv_v13_3",
+      "nusamind",
+      "knowledge_upgrade",
+      "jelaskan_secara_singkat_detail",
+      "jawaban_singkat_sedang_lengkap"
+    ],
+    "symptoms": [
+      "User bertanya seputar Jawaban Ideal",
+      "Pertanyaan mirip: Jelaskan secara singkat / detail",
+      "User meminta jawaban sesuai konteks dan tidak melebar"
+    ],
+    "diagnosis": [
+      "Identifikasi domain: Dataset Quality",
+      "Cek apakah user minta definisi, list, langkah, contoh, atau troubleshooting",
+      "Terapkan guardrail: Jawaban terlalu panjang bisa membuat user malas membaca"
+    ],
+    "fixes": [
+      "Jawab inti pertanyaan terlebih dahulu",
+      "Gunakan contoh topik: Jawaban singkat, sedang, lengkap",
+      "Ikuti catatan pengembangan: Sediakan variasi panjang jawaban sesuai kebutuhan user",
+      "Minta detail hanya jika benar-benar diperlukan"
+    ],
+    "source": "roadmap_pengetahuan_nusamind_ai.csv",
+    "confidence": 0.9
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "lab-001",
+    "name": "Hemoglobin",
+    "record_type": "medical_test",
+    "abnormal_not_diagnosis": true,
+    "unit_context_required": true,
+    "review_status": "needs_review"
+  },
+  {
+    "id": "lab-002",
+    "name": "Leukosit",
+    "record_type": "medical_test",
+    "abnormal_not_diagnosis": true,
+    "unit_context_required": true,
+    "review_status": "needs_review"
+  },
+  {
+    "id": "lab-003",
+    "name": "Trombosit",
+    "record_type": "medical_test",
+    "abnormal_not_diagnosis": true,
+    "unit_context_required": true,
+    "review_status": "needs_review"
+  },
+  {
+    "id": "lab-004",
+    "name": "Glukosa darah",
+    "record_type": "medical_test",
+    "abnormal_not_diagnosis": true,
+    "unit_context_required": true,
+    "review_status": "needs_review"
+  },
+  {
+    "id": "lab-005",
+    "name": "HbA1c",
+    "record_type": "medical_test",
+    "abnormal_not_diagnosis": true,
+    "unit_context_required": true,
+    "review_status": "needs_review"
+  },
+  {
+    "id": "lab-006",
+    "name": "Kreatinin",
+    "record_type": "medical_test",
+    "abnormal_not_diagnosis": true,
+    "unit_context_required": true,
+    "review_status": "needs_review"
+  },
+  {
+    "id": "lab-007",
+    "name": "eGFR",
+    "record_type": "medical_test",
+    "abnormal_not_diagnosis": true,
+    "unit_context_required": true,
+    "review_status": "needs_review"
+  },
+  {
+    "id": "lab-008",
+    "name": "AST",
+    "record_type": "medical_test",
+    "abnormal_not_diagnosis": true,
+    "unit_context_required": true,
+    "review_status": "needs_review"
+  },
+  {
+    "id": "lab-009",
+    "name": "ALT",
+    "record_type": "medical_test",
+    "abnormal_not_diagnosis": true,
+    "unit_context_required": true,
+    "review_status": "needs_review"
+  },
+  {
+    "id": "lab-010",
+    "name": "Bilirubin",
+    "record_type": "medical_test",
+    "abnormal_not_diagnosis": true,
+    "unit_context_required": true,
+    "review_status": "needs_review"
+  },
+  {
+    "id": "lab-011",
+    "name": "Natrium",
+    "record_type": "medical_test",
+    "abnormal_not_diagnosis": true,
+    "unit_context_required": true,
+    "review_status": "needs_review"
+  },
+  {
+    "id": "lab-012",
+    "name": "Kalium",
+    "record_type": "medical_test",
+    "abnormal_not_diagnosis": true,
+    "unit_context_required": true,
+    "review_status": "needs_review"
+  },
+  {
+    "id": "lab-013",
+    "name": "TSH",
+    "record_type": "medical_test",
+    "abnormal_not_diagnosis": true,
+    "unit_context_required": true,
+    "review_status": "needs_review"
+  },
+  {
+    "id": "lab-014",
+    "name": "Troponin",
+    "record_type": "medical_test",
+    "abnormal_not_diagnosis": true,
+    "unit_context_required": true,
+    "review_status": "needs_review"
+  },
+  {
+    "id": "lab-015",
+    "name": "D-dimer",
+    "record_type": "medical_test",
+    "abnormal_not_diagnosis": true,
+    "unit_context_required": true,
+    "review_status": "needs_review"
+  }
+]

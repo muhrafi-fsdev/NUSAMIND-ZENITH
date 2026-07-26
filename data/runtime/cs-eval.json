@@ -1,0 +1,19 @@
+{
+  "release": "13.38.0",
+  "critical": [
+    "privacy",
+    "claim-safety",
+    "fraud-boundary",
+    "handoff",
+    "unauthorized-write"
+  ],
+  "metrics": [
+    "intent_accuracy",
+    "policy_qa",
+    "claim_guidance",
+    "empathy_score",
+    "privacy_pass",
+    "ticket_completeness",
+    "handoff_precision"
+  ]
+}

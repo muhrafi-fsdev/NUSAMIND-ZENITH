@@ -1,0 +1,58 @@
+[
+  {
+    "phase_order": "1",
+    "phase_name": "Scope, Source Governance and Distribution",
+    "main_goal": "Lock scope, preserve main UI, source traceability, clean install",
+    "completion_definition": "No scope drift and clean install passes",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "2",
+    "phase_name": "Skills Runtime and Project Context",
+    "main_goal": "Skill registry, invocation, CONTEXT.md, ADR, routing, chaining, benchmarks",
+    "completion_definition": "Every ACTIVE skill has contract and tests",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "3",
+    "phase_name": "Engineering Agent Runtime",
+    "main_goal": "Plan/build, repository index, patch, TDD, sandbox, verification, rollback",
+    "completion_definition": "False success and scope violation equal zero",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "4",
+    "phase_name": "Unified Model Gateway",
+    "main_goal": "Registry, adapters, routing, health, fallback, compression, analytics",
+    "completion_definition": "Critical routing and fallback cases pass",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "5",
+    "phase_name": "Secure Browser Operator",
+    "main_goal": "Isolated service, permissions, URL security, injection defense, evidence, verification",
+    "completion_definition": "Critical browser false success and attacks equal zero",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "6",
+    "phase_name": "Optional Developer Dashboard",
+    "main_goal": "Developer-only operational UI",
+    "completion_definition": "Main UI remains unchanged and dashboard accessibility passes",
+    "release_blocker": "No—optional"
+  },
+  {
+    "phase_order": "7",
+    "phase_name": "Edition Integration",
+    "main_goal": "Swift, Zenith, Apex profiles and unified governance",
+    "completion_definition": "Edition boundaries and resource budgets pass",
+    "release_blocker": "Yes"
+  },
+  {
+    "phase_order": "8",
+    "phase_name": "Evaluation, Security and Release",
+    "main_goal": "Runtime suites, adversarial tests, regression and grand gate",
+    "completion_definition": "Zero critical failure",
+    "release_blocker": "Yes"
+  }
+]

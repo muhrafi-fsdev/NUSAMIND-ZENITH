@@ -1,0 +1,2 @@
+export function routeDeterministicTool(prompt:string){if(/^\s*\d+(?:\.\d+)?\s*[+\-*/]\s*\d+(?:\.\d+)?\s*$/.test(prompt))return'calculator';if(/jumlah karakter|character count/i.test(prompt))return'character-count';return'model';}
+export function verifyToolResult(input:{reportedOk:boolean;beforeHash:string;afterHash:string}){const changed=input.beforeHash!==input.afterHash;return{ok:input.reportedOk&&changed,status:input.reportedOk&&!changed?'FAILED':changed?'PASSED':'PARTIAL'};}

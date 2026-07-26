@@ -1,0 +1,2 @@
+import {gradeEvidence} from './evidence-grader-v2';
+export function synthesizeClinicalEvidence(records:Array<{title:string;finding:string;sourceType?:string;guideline?:boolean;systematicReview?:boolean;randomized?:boolean}>){const items=records.map(record=>({...record,grade:gradeEvidence(record)})).sort((a,b)=>b.grade.localeCompare(a.grade));return{summary:items.slice(0,5).map(x=>`${x.grade}: ${x.finding}`),conflicts:[],limitations:['Synthesis lokal bukan pengganti systematic review formal atau clinical guideline terbaru.'],items};}

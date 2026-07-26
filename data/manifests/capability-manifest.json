@@ -1,0 +1,1415 @@
+{
+  "schemaVersion": 1,
+  "release": "N1.0",
+  "edition": "zenith",
+  "capabilities": [
+    {
+      "id": "N1-MIG-001",
+      "name": "Reference Coverage Ledger V2",
+      "status": "ACTIVE",
+      "phase": "Phase 1 — Reference Gap Audit and Change Impact",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": []
+    },
+    {
+      "id": "N1-MIG-002",
+      "name": "Source Revision Pinning and Freshness Review",
+      "status": "ACTIVE",
+      "phase": "Phase 1 — Reference Gap Audit and Change Impact",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": []
+    },
+    {
+      "id": "N1-MIG-003",
+      "name": "Capability Dependency Blast-Radius Simulator",
+      "status": "BENCHMARKED",
+      "phase": "Phase 1 — Reference Gap Audit and Change Impact",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "V13.48 Capability Knowledge Graph"
+      ]
+    },
+    {
+      "id": "N1-MIG-004",
+      "name": "AI Runtime SLO and Incident Response",
+      "status": "BENCHMARKED",
+      "phase": "Phase 1 — Reference Gap Audit and Change Impact",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "V13.48 Observability",
+        "legacy legacy R13.49.1 baseline baseline Desktop Logs"
+      ]
+    },
+    {
+      "id": "N1-MIG-005",
+      "name": "Architecture Migration Codemods and Compatibility Shims",
+      "status": "BENCHMARKED",
+      "phase": "Phase 1 — Reference Gap Audit and Change Impact",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": []
+    },
+    {
+      "id": "N1-MIG-006",
+      "name": "n8n Exclusion Lock",
+      "status": "ACTIVE",
+      "phase": "Phase 1 — Reference Gap Audit and Change Impact",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": []
+    },
+    {
+      "id": "N1-MIG-007",
+      "name": "Automatic Reasoning and Tool-use Demonstration Runtime",
+      "status": "PROTOTYPE",
+      "phase": "Phase 2 — Prompt, Reasoning and Deep-Agent Completion",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Tool Registry",
+        "Expected-State Verification"
+      ]
+    },
+    {
+      "id": "N1-MIG-008",
+      "name": "Program-Aided Reasoning and Deterministic Verification",
+      "status": "ACTIVE",
+      "phase": "Phase 2 — Prompt, Reasoning and Deep-Agent Completion",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": []
+    },
+    {
+      "id": "N1-MIG-010",
+      "name": "Context Offloading and Working-Set Compiler",
+      "status": "BENCHMARKED",
+      "phase": "Phase 2 — Prompt, Reasoning and Deep-Agent Completion",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Unified Context Management",
+        "Artifact Memory"
+      ]
+    },
+    {
+      "id": "N1-MIG-011",
+      "name": "Prompt Capability Hub and Coverage Matrix",
+      "status": "ACTIVE",
+      "phase": "Phase 2 — Prompt, Reasoning and Deep-Agent Completion",
+      "risk": "High",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": []
+    },
+    {
+      "id": "N1-MIG-012",
+      "name": "Model Prompt Portability and Differential Testing",
+      "status": "BENCHMARKED",
+      "phase": "Phase 2 — Prompt, Reasoning and Deep-Agent Completion",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Model Gateway",
+        "Prompt Registry"
+      ]
+    },
+    {
+      "id": "N1-MIG-013",
+      "name": "Provenance-Safe Synthetic RAG Dataset Generator",
+      "status": "PROTOTYPE",
+      "phase": "Phase 2 — Prompt, Reasoning and Deep-Agent Completion",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Dataset Diversity Matrix",
+        "Claim–Evidence Verifier"
+      ]
+    },
+    {
+      "id": "N1-MIG-014",
+      "name": "Bias, Fairness and Representation Evaluation",
+      "status": "BENCHMARKED",
+      "phase": "Phase 2 — Prompt, Reasoning and Deep-Agent Completion",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": []
+    },
+    {
+      "id": "N1-MIG-015",
+      "name": "Counterfactual Workflow-versus-Agent Evaluator",
+      "status": "BENCHMARKED",
+      "phase": "Phase 2 — Prompt, Reasoning and Deep-Agent Completion",
+      "risk": "High",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Agent Pattern Router",
+        "Evaluation System"
+      ]
+    },
+    {
+      "id": "N1-MIG-017",
+      "name": "Quota-Aware Routing and Reset Forecast",
+      "status": "BENCHMARKED",
+      "phase": "Phase 3 — Model Gateway Quota, Account and Compatibility Completion",
+      "risk": "High",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Usage Analytics",
+        "Edition Budget"
+      ]
+    },
+    {
+      "id": "N1-MIG-018",
+      "name": "Provider Account Pool and Fair Load Balancing",
+      "status": "PROTOTYPE",
+      "phase": "Phase 3 — Model Gateway Quota, Account and Compatibility Completion",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Provider Registry",
+        "Secret Isolation"
+      ]
+    },
+    {
+      "id": "N1-MIG-019",
+      "name": "Credential Lifecycle, Revocation and Rotation",
+      "status": "ACTIVE",
+      "phase": "Phase 3 — Model Gateway Quota, Account and Compatibility Completion",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Local Runtime Secret Isolation"
+      ]
+    },
+    {
+      "id": "N1-MIG-020",
+      "name": "Custom Route Combination Registry",
+      "status": "ACTIVE",
+      "phase": "Phase 3 — Model Gateway Quota, Account and Compatibility Completion",
+      "risk": "High",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Quality-Aware Fallback Graph"
+      ]
+    },
+    {
+      "id": "N1-MIG-021",
+      "name": "Provider Conformance and Format Translation Suite",
+      "status": "ACTIVE",
+      "phase": "Phase 3 — Model Gateway Quota, Account and Compatibility Completion",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Model Format Adapters"
+      ]
+    },
+    {
+      "id": "N1-MIG-022",
+      "name": "Normalized Rate-Limit and Retry Policy",
+      "status": "ACTIVE",
+      "phase": "Phase 3 — Model Gateway Quota, Account and Compatibility Completion",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Health Monitor",
+        "Fallback Graph"
+      ]
+    },
+    {
+      "id": "N1-MIG-023",
+      "name": "Redacted Request Replay and Debugging",
+      "status": "BENCHMARKED",
+      "phase": "Phase 3 — Model Gateway Quota, Account and Compatibility Completion",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Unified Audit",
+        "Secret Isolation"
+      ]
+    },
+    {
+      "id": "N1-MIG-024",
+      "name": "Filter-Specific Fail-Open Tool Compression",
+      "status": "ACTIVE",
+      "phase": "Phase 3 — Model Gateway Quota, Account and Compatibility Completion",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Evidence-Preserving Tool Output Compression"
+      ]
+    },
+    {
+      "id": "N1-MIG-025",
+      "name": "Response Economy and Minimal-Diff Profiles",
+      "status": "BENCHMARKED",
+      "phase": "Phase 3 — Model Gateway Quota, Account and Compatibility Completion",
+      "risk": "High",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Prompt Router",
+        "Patch Engine"
+      ]
+    },
+    {
+      "id": "N1-MIG-026",
+      "name": "Encrypted Local Configuration Profiles",
+      "status": "PROTOTYPE",
+      "phase": "Phase 3 — Model Gateway Quota, Account and Compatibility Completion",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Credential Lifecycle",
+        "Combo Registry"
+      ]
+    },
+    {
+      "id": "N1-MIG-027",
+      "name": "AGENTS.md Project Initializer",
+      "status": "BENCHMARKED",
+      "phase": "Phase 4 — Engineering Intelligence, Sessions and Skill Workflows",
+      "risk": "High",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": []
+    },
+    {
+      "id": "N1-MIG-028",
+      "name": "Language Server Protocol Intelligence",
+      "status": "BENCHMARKED",
+      "phase": "Phase 4 — Engineering Intelligence, Sessions and Skill Workflows",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Repository Index",
+        "Sandboxed Command Runner"
+      ]
+    },
+    {
+      "id": "N1-MIG-029",
+      "name": "Formatter and Safe Code-Action Orchestrator",
+      "status": "BENCHMARKED",
+      "phase": "Phase 4 — Engineering Intelligence, Sessions and Skill Workflows",
+      "risk": "High",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "LSP Intelligence",
+        "Patch Engine"
+      ]
+    },
+    {
+      "id": "N1-MIG-030",
+      "name": "Multi-Session Workspace Isolation",
+      "status": "BENCHMARKED",
+      "phase": "Phase 4 — Engineering Intelligence, Sessions and Skill Workflows",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Checkpoint and Rollback"
+      ]
+    },
+    {
+      "id": "N1-MIG-031",
+      "name": "Session Fork, Compare and Select",
+      "status": "PROTOTYPE",
+      "phase": "Phase 4 — Engineering Intelligence, Sessions and Skill Workflows",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Multi-Session Isolation",
+        "Checkpoint"
+      ]
+    },
+    {
+      "id": "N1-MIG-032",
+      "name": "Redacted Session Export and Import",
+      "status": "ACTIVE",
+      "phase": "Phase 4 — Engineering Intelligence, Sessions and Skill Workflows",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Unified Audit",
+        "No Raw CoT"
+      ]
+    },
+    {
+      "id": "N1-MIG-033",
+      "name": "Custom Command Registry",
+      "status": "ACTIVE",
+      "phase": "Phase 4 — Engineering Intelligence, Sessions and Skill Workflows",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Skills Registry",
+        "Unified Permissions"
+      ]
+    },
+    {
+      "id": "N1-MIG-036",
+      "name": "Headless Local SDK and Server Mode",
+      "status": "PROTOTYPE",
+      "phase": "Phase 4 — Engineering Intelligence, Sessions and Skill Workflows",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Execution Envelope",
+        "Local Runtime Permissions"
+      ]
+    },
+    {
+      "id": "N1-MIG-037",
+      "name": "Issue Triage State Machine",
+      "status": "BENCHMARKED",
+      "phase": "Phase 4 — Engineering Intelligence, Sessions and Skill Workflows",
+      "risk": "High",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Create Tickets Skill",
+        "Audit"
+      ]
+    },
+    {
+      "id": "N1-MIG-038",
+      "name": "Spec-to-Ticket Blocking Graph",
+      "status": "BENCHMARKED",
+      "phase": "Phase 4 — Engineering Intelligence, Sessions and Skill Workflows",
+      "risk": "High",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Create Spec",
+        "Triage"
+      ]
+    },
+    {
+      "id": "N1-MIG-039",
+      "name": "Spec-to-Implementation Orchestrator",
+      "status": "BENCHMARKED",
+      "phase": "Phase 4 — Engineering Intelligence, Sessions and Skill Workflows",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Spec-to-Ticket Graph",
+        "TDD",
+        "Code Review"
+      ]
+    },
+    {
+      "id": "N1-MIG-041",
+      "name": "Throwaway Prototype Laboratory",
+      "status": "BENCHMARKED",
+      "phase": "Phase 4 — Engineering Intelligence, Sessions and Skill Workflows",
+      "risk": "High",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Sandboxed Command Runner",
+        "Artifact Memory"
+      ]
+    },
+    {
+      "id": "N1-MIG-042",
+      "name": "Codebase Architecture Deepening Report",
+      "status": "BENCHMARKED",
+      "phase": "Phase 4 — Engineering Intelligence, Sessions and Skill Workflows",
+      "risk": "High",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Capability Graph",
+        "Repository Index"
+      ]
+    },
+    {
+      "id": "N1-MIG-043",
+      "name": "Two-Axis Standards-versus-Spec Code Review",
+      "status": "BENCHMARKED",
+      "phase": "Phase 4 — Engineering Intelligence, Sessions and Skill Workflows",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Diff-Aware Review",
+        "Approved Spec"
+      ]
+    },
+    {
+      "id": "N1-MIG-044",
+      "name": "Background Primary-Source Research Artifact",
+      "status": "ACTIVE",
+      "phase": "Phase 4 — Engineering Intelligence, Sessions and Skill Workflows",
+      "risk": "High",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Primary Source Research",
+        "Artifact Memory"
+      ]
+    },
+    {
+      "id": "N1-MIG-046",
+      "name": "Schema-First Structured Browser Output",
+      "status": "ACTIVE",
+      "phase": "Phase 5 — Browser Intelligence, Profiles and Replay",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "DOM and Screenshot Evidence"
+      ]
+    },
+    {
+      "id": "N1-MIG-047",
+      "name": "Custom Browser Tool Extension Registry",
+      "status": "PROTOTYPE",
+      "phase": "Phase 5 — Browser Intelligence, Profiles and Replay",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Typed Browser Action Contract",
+        "Plugin SDK"
+      ]
+    },
+    {
+      "id": "N1-MIG-048",
+      "name": "Ephemeral Clone of Approved Browser Profile",
+      "status": "PROTOTYPE",
+      "phase": "Phase 5 — Browser Intelligence, Profiles and Replay",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Session Isolation",
+        "Credential Broker"
+      ]
+    },
+    {
+      "id": "N1-MIG-049",
+      "name": "Browser Task History, Resume and Replay",
+      "status": "BENCHMARKED",
+      "phase": "Phase 5 — Browser Intelligence, Profiles and Replay",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Expected-State Browser Verifier",
+        "Checkpoint"
+      ]
+    },
+    {
+      "id": "N1-MIG-050",
+      "name": "Browser Model Capability Profile and Router",
+      "status": "BENCHMARKED",
+      "phase": "Phase 5 — Browser Intelligence, Profiles and Replay",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Model Gateway",
+        "Browser Benchmark"
+      ]
+    },
+    {
+      "id": "N1-MIG-051",
+      "name": "DOM–Vision Locator Fusion",
+      "status": "PROTOTYPE",
+      "phase": "Phase 5 — Browser Intelligence, Profiles and Replay",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Vision Model Profile",
+        "Browser Evidence"
+      ]
+    },
+    {
+      "id": "N1-MIG-053",
+      "name": "Page Drift and Selector Resilience Detector",
+      "status": "ACTIVE",
+      "phase": "Phase 5 — Browser Intelligence, Profiles and Replay",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Browser History",
+        "DOM–Vision Fusion"
+      ]
+    },
+    {
+      "id": "N1-MIG-054",
+      "name": "Deterministic Local Browser Benchmark Harness",
+      "status": "ACTIVE",
+      "phase": "Phase 5 — Browser Intelligence, Profiles and Replay",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Browser Executable Benchmark"
+      ]
+    },
+    {
+      "id": "N1-MIG-055",
+      "name": "Browser Prohibited Production Features Gate",
+      "status": "ACTIVE",
+      "phase": "Phase 5 — Browser Intelligence, Profiles and Replay",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": []
+    },
+    {
+      "id": "N1-MIG-056",
+      "name": "Local Component Registry and Provenance",
+      "status": "ACTIVE",
+      "phase": "Phase 6 — Optional Developer UI Component Governance",
+      "risk": "High",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Optional Developer Dashboard"
+      ]
+    },
+    {
+      "id": "N1-MIG-057",
+      "name": "Design Token and Theme Isolation",
+      "status": "ACTIVE",
+      "phase": "Phase 6 — Optional Developer UI Component Governance",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Preserve Existing Main UI"
+      ]
+    },
+    {
+      "id": "N1-MIG-058",
+      "name": "Component Update Diff and Three-Way Merge",
+      "status": "PROTOTYPE",
+      "phase": "Phase 6 — Optional Developer UI Component Governance",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Local Component Registry"
+      ]
+    },
+    {
+      "id": "N1-MIG-059",
+      "name": "Large Audit Table Virtualization and Export",
+      "status": "BENCHMARKED",
+      "phase": "Phase 6 — Optional Developer UI Component Governance",
+      "risk": "High",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Unified Audit",
+        "Developer Dashboard"
+      ]
+    },
+    {
+      "id": "N1-MIG-060",
+      "name": "Form Schema, Validation and Safe Error Boundaries",
+      "status": "ACTIVE",
+      "phase": "Phase 6 — Optional Developer UI Component Governance",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Desktop Contracts",
+        "Permissions"
+      ]
+    },
+    {
+      "id": "N1-MIG-061",
+      "name": "Dashboard Accessibility Regression Matrix",
+      "status": "ACTIVE",
+      "phase": "Phase 6 — Optional Developer UI Component Governance",
+      "risk": "High",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Component Registry",
+        "Update Diff"
+      ]
+    },
+    {
+      "id": "N1-MIG-062",
+      "name": "Certification Objective and Career-Role Mapper",
+      "status": "BENCHMARKED",
+      "phase": "Phase 7 — Cybersecurity Curriculum and Defensive Project Completion",
+      "risk": "High",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Cybersecurity Curriculum"
+      ]
+    },
+    {
+      "id": "N1-MIG-063",
+      "name": "Spaced Repetition and Explain-Back Mentor Mode",
+      "status": "BENCHMARKED",
+      "phase": "Phase 7 — Cybersecurity Curriculum and Defensive Project Completion",
+      "risk": "Low",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Level Assessment",
+        "Learning Evidence"
+      ]
+    },
+    {
+      "id": "N1-MIG-064",
+      "name": "Incident Case Study and Tabletop Simulator",
+      "status": "PROTOTYPE",
+      "phase": "Phase 7 — Cybersecurity Curriculum and Defensive Project Completion",
+      "risk": "High",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Security Finding Contract"
+      ]
+    },
+    {
+      "id": "N1-MIG-065",
+      "name": "Cybersecurity Portfolio and Project Rubric",
+      "status": "ACTIVE",
+      "phase": "Phase 7 — Cybersecurity Curriculum and Defensive Project Completion",
+      "risk": "High",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Lab Report",
+        "Project Registry"
+      ]
+    },
+    {
+      "id": "N1-MIG-066",
+      "name": "Metadata Privacy Scrubber",
+      "status": "BENCHMARKED",
+      "phase": "Phase 7 — Cybersecurity Curriculum and Defensive Project Completion",
+      "risk": "High",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": []
+    },
+    {
+      "id": "N1-MIG-067",
+      "name": "Repository Secret Scanner with SARIF",
+      "status": "BENCHMARKED",
+      "phase": "Phase 7 — Cybersecurity Curriculum and Defensive Project Completion",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Secret Isolation",
+        "Finding Contract"
+      ]
+    },
+    {
+      "id": "N1-MIG-068",
+      "name": "SBOM Generator and CVE Matcher",
+      "status": "BENCHMARKED",
+      "phase": "Phase 7 — Cybersecurity Curriculum and Defensive Project Completion",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Dependency Integrity",
+        "Vulnerability Triage"
+      ]
+    },
+    {
+      "id": "N1-MIG-069",
+      "name": "Linux CIS and Persistence Audit Pack",
+      "status": "PROTOTYPE",
+      "phase": "Phase 7 — Cybersecurity Curriculum and Defensive Project Completion",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Secure Configuration Reviewer"
+      ]
+    },
+    {
+      "id": "N1-MIG-070",
+      "name": "Defensive DNS, Typosquat and Quishing Analysis",
+      "status": "BENCHMARKED",
+      "phase": "Phase 7 — Cybersecurity Curriculum and Defensive Project Completion",
+      "risk": "High",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Passive Asset Discovery"
+      ]
+    },
+    {
+      "id": "N1-MIG-071",
+      "name": "SSH Attack Detection and Safe Response Advisor",
+      "status": "BENCHMARKED",
+      "phase": "Phase 7 — Cybersecurity Curriculum and Defensive Project Completion",
+      "risk": "High",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Log and SIEM Analysis"
+      ]
+    },
+    {
+      "id": "N1-MIG-072",
+      "name": "Data Loss Prevention and Sensitive Data Classifier",
+      "status": "PROTOTYPE",
+      "phase": "Phase 7 — Cybersecurity Curriculum and Defensive Project Completion",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Privacy Gate",
+        "Local Model Route"
+      ]
+    },
+    {
+      "id": "N1-MIG-075",
+      "name": "Temporal, Entity and Leakage Guard",
+      "status": "ACTIVE",
+      "phase": "Phase 8 — Security ML and Authorized Attack-Surface Completion",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Cybersecurity ML Dataset Registry"
+      ]
+    },
+    {
+      "id": "N1-MIG-076",
+      "name": "Cost-Sensitive Security Metrics and Threshold Policy",
+      "status": "BENCHMARKED",
+      "phase": "Phase 8 — Security ML and Authorized Attack-Surface Completion",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Detection Model Registry"
+      ]
+    },
+    {
+      "id": "N1-MIG-078",
+      "name": "Analyst Feedback and Active-Learning Queue",
+      "status": "BENCHMARKED",
+      "phase": "Phase 8 — Security ML and Authorized Attack-Surface Completion",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Human-in-the-Loop Gate"
+      ]
+    },
+    {
+      "id": "N1-MIG-079",
+      "name": "Security Model Card and Deployment Card",
+      "status": "ACTIVE",
+      "phase": "Phase 8 — Security ML and Authorized Attack-Surface Completion",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Detection Model Registry",
+        "Robustness Tests"
+      ]
+    },
+    {
+      "id": "N1-MIG-081",
+      "name": "Mail Security Infrastructure Inventory",
+      "status": "BENCHMARKED",
+      "phase": "Phase 8 — Security ML and Authorized Attack-Surface Completion",
+      "risk": "High",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Asset Scope Registry"
+      ]
+    },
+    {
+      "id": "N1-MIG-082",
+      "name": "Third-Party SaaS and Supplier Dependency Graph",
+      "status": "PROTOTYPE",
+      "phase": "Phase 8 — Security ML and Authorized Attack-Surface Completion",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Asset Entity Resolution",
+        "Evidence Graph"
+      ]
+    },
+    {
+      "id": "N1-MIG-083",
+      "name": "Passive Technology and Certificate Lineage",
+      "status": "BENCHMARKED",
+      "phase": "Phase 8 — Security ML and Authorized Attack-Surface Completion",
+      "risk": "High",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Passive-First Discovery"
+      ]
+    },
+    {
+      "id": "N1-MIG-084",
+      "name": "Archived Asset and Internet-Survey Timeline",
+      "status": "PROTOTYPE",
+      "phase": "Phase 8 — Security ML and Authorized Attack-Surface Completion",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Attack Surface Change Detection"
+      ]
+    },
+    {
+      "id": "N1-MIG-085",
+      "name": "Asset Owner, Criticality and Remediation Workflow",
+      "status": "ACTIVE",
+      "phase": "Phase 8 — Security ML and Authorized Attack-Surface Completion",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Security Finding Contract",
+        "Change Detection"
+      ]
+    },
+    {
+      "id": "N1-MIG-087",
+      "name": "Zenith N1.0 Production Daily Profile",
+      "status": "BENCHMARKED",
+      "phase": "Phase 9 — Edition Integration, Regression and Release",
+      "risk": "Critical",
+      "editionScope": "Zenith",
+      "dependencies": [
+        "N1.0 Zenith modules"
+      ]
+    },
+    {
+      "id": "N1-MIG-089",
+      "name": "Reference Gap Completion Benchmark",
+      "status": "ACTIVE",
+      "phase": "Phase 9 — Edition Integration, Regression and Release",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "All phases"
+      ]
+    },
+    {
+      "id": "N1-MIG-090",
+      "name": "Web and CLI Runtime Compatibility Regression",
+      "status": "ACTIVE",
+      "phase": "Phase 9 — Edition Integration, Regression and Release",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "legacy legacy R13.49.1 baseline baseline Windows EXE Gate"
+      ]
+    },
+    {
+      "id": "N1-MIG-091",
+      "name": "Cross-Subsystem Adversarial and Privacy Suite",
+      "status": "ACTIVE",
+      "phase": "Phase 9 — Edition Integration, Regression and Release",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Plugin SDK",
+        "Protocol Adapters",
+        "Security ML",
+        "Browser Profiles"
+      ]
+    },
+    {
+      "id": "N1-MIG-092",
+      "name": "N1.0 Grand Reference-Completion Gate",
+      "status": "ACTIVE",
+      "phase": "Phase 9 — Edition Integration, Regression and Release",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "All N1.0 evaluation gates"
+      ]
+    },
+    {
+      "id": "N1-CORE-001",
+      "name": "Canonical N1.0 Release Identity",
+      "status": "ACTIVE",
+      "phase": "Phase 0 — N1.0 Versioning and Distribution Reset",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": []
+    },
+    {
+      "id": "N1-CORE-002",
+      "name": "Single Canonical Release Manifest",
+      "status": "ACTIVE",
+      "phase": "Phase 0 — N1.0 Versioning and Distribution Reset",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "N1-CORE-001"
+      ]
+    },
+    {
+      "id": "N1-CORE-003",
+      "name": "Legacy R13/V13 to N1.0 Migration Map",
+      "status": "BENCHMARKED",
+      "phase": "Phase 0 — N1.0 Versioning and Distribution Reset",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "N1-CORE-002"
+      ]
+    },
+    {
+      "id": "N1-CORE-004",
+      "name": "Stable Core API Namespace with Legacy Adapters",
+      "status": "BENCHMARKED",
+      "phase": "Phase 0 — N1.0 Versioning and Distribution Reset",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "N1-CORE-002"
+      ]
+    },
+    {
+      "id": "N1-CORE-005",
+      "name": "Edition Profile Drift Repair",
+      "status": "ACTIVE",
+      "phase": "Phase 0 — N1.0 Versioning and Distribution Reset",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "N1-CORE-002"
+      ]
+    },
+    {
+      "id": "N1-CORE-006",
+      "name": "Web and CLI Only Distribution Contract",
+      "status": "ACTIVE",
+      "phase": "Phase 0 — N1.0 Versioning and Distribution Reset",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": []
+    },
+    {
+      "id": "N1-CORE-007",
+      "name": "Windows EXE Cancellation Cleanup",
+      "status": "ACTIVE",
+      "phase": "Phase 0 — N1.0 Versioning and Distribution Reset",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "N1-CORE-006"
+      ]
+    },
+    {
+      "id": "N1-CORE-008",
+      "name": "n8n Postponement Lock N1",
+      "status": "ACTIVE",
+      "phase": "Phase 0 — N1.0 Versioning and Distribution Reset",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": []
+    },
+    {
+      "id": "N1-CORE-009",
+      "name": "Main UI Structural Checksum Lock",
+      "status": "ACTIVE",
+      "phase": "Phase 0 — N1.0 Versioning and Distribution Reset",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": []
+    },
+    {
+      "id": "N1-CORE-010",
+      "name": "Clean Install and Lean Distribution N1",
+      "status": "ACTIVE",
+      "phase": "Phase 0 — N1.0 Versioning and Distribution Reset",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": []
+    },
+    {
+      "id": "N1-INTEL-001",
+      "name": "Unified Cognitive Orchestrator",
+      "status": "BENCHMARKED",
+      "phase": "Phase 10 — Unified Intelligence Fabric",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Capability Graph",
+        "Skill Router",
+        "Model Gateway"
+      ]
+    },
+    {
+      "id": "N1-INTEL-002",
+      "name": "Adaptive Reasoning Portfolio",
+      "status": "BENCHMARKED",
+      "phase": "Phase 10 — Unified Intelligence Fabric",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "N1-INTEL-001"
+      ]
+    },
+    {
+      "id": "N1-INTEL-003",
+      "name": "Evidence Graph V2 and Claim Ledger",
+      "status": "ACTIVE",
+      "phase": "Phase 10 — Unified Intelligence Fabric",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Claim-Level Verification",
+        "Artifact Workspace"
+      ]
+    },
+    {
+      "id": "N1-INTEL-004",
+      "name": "Temporal Knowledge and Freshness Engine",
+      "status": "BENCHMARKED",
+      "phase": "Phase 10 — Unified Intelligence Fabric",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Evidence Graph V2"
+      ]
+    },
+    {
+      "id": "N1-INTEL-005",
+      "name": "Privacy-Aware Memory Consolidation",
+      "status": "ACTIVE",
+      "phase": "Phase 10 — Unified Intelligence Fabric",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Unified Memory Taxonomy"
+      ]
+    },
+    {
+      "id": "N1-INTEL-006",
+      "name": "Counterfactual and Causal Reasoning Sandbox",
+      "status": "PROTOTYPE",
+      "phase": "Phase 10 — Unified Intelligence Fabric",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Evidence Graph V2",
+        "Deterministic Tools"
+      ]
+    },
+    {
+      "id": "N1-INTEL-008",
+      "name": "Unified Uncertainty, Abstention and Escalation Layer",
+      "status": "ACTIVE",
+      "phase": "Phase 10 — Unified Intelligence Fabric",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Evidence Graph V2",
+        "Model Calibration"
+      ]
+    },
+    {
+      "id": "N1-INTEL-009",
+      "name": "Multilingual Prompt and Evaluation Parity",
+      "status": "BENCHMARKED",
+      "phase": "Phase 10 — Unified Intelligence Fabric",
+      "risk": "High",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Prompt Portability"
+      ]
+    },
+    {
+      "id": "N1-RAG-001",
+      "name": "Retrieval Planner N1",
+      "status": "BENCHMARKED",
+      "phase": "Phase 11 — Retrieval, Data and Knowledge Excellence",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Unified Retrieval"
+      ]
+    },
+    {
+      "id": "N1-RAG-002",
+      "name": "Cross-Artifact Entity Graph",
+      "status": "PROTOTYPE",
+      "phase": "Phase 11 — Retrieval, Data and Knowledge Excellence",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Evidence Graph V2"
+      ]
+    },
+    {
+      "id": "N1-RAG-003",
+      "name": "Dataset Lineage and Transformation Ledger",
+      "status": "ACTIVE",
+      "phase": "Phase 11 — Retrieval, Data and Knowledge Excellence",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Source Registry",
+        "Dataset Registry"
+      ]
+    },
+    {
+      "id": "N1-RAG-004",
+      "name": "Source Independence and Contradiction Clustering V2",
+      "status": "BENCHMARKED",
+      "phase": "Phase 11 — Retrieval, Data and Knowledge Excellence",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Evidence Graph V2"
+      ]
+    },
+    {
+      "id": "N1-RAG-005",
+      "name": "Structure-Aware Dynamic Chunking",
+      "status": "BENCHMARKED",
+      "phase": "Phase 11 — Retrieval, Data and Knowledge Excellence",
+      "risk": "High",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "File Parsers",
+        "Retrieval Planner"
+      ]
+    },
+    {
+      "id": "N1-RAG-006",
+      "name": "Query Difficulty and Depth Estimator",
+      "status": "BENCHMARKED",
+      "phase": "Phase 11 — Retrieval, Data and Knowledge Excellence",
+      "risk": "High",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Retrieval Planner N1"
+      ]
+    },
+    {
+      "id": "N1-RAG-007",
+      "name": "Knowledge Decay, Supersession and Revalidation",
+      "status": "ACTIVE",
+      "phase": "Phase 11 — Retrieval, Data and Knowledge Excellence",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Temporal Knowledge Engine",
+        "Source Pinning"
+      ]
+    },
+    {
+      "id": "N1-RAG-008",
+      "name": "Reusable Research Dossier",
+      "status": "ACTIVE",
+      "phase": "Phase 11 — Retrieval, Data and Knowledge Excellence",
+      "risk": "High",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Background Research Artifact",
+        "Evidence Graph V2"
+      ]
+    },
+    {
+      "id": "N1-ENG-001",
+      "name": "Semantic Code Graph and LSP Fusion",
+      "status": "BENCHMARKED",
+      "phase": "Phase 12 — Engineering Agent 2.0",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "LSP Intelligence",
+        "Repository Index"
+      ]
+    },
+    {
+      "id": "N1-ENG-002",
+      "name": "Test Impact Analysis and Minimal Test Selector",
+      "status": "BENCHMARKED",
+      "phase": "Phase 12 — Engineering Agent 2.0",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Semantic Code Graph"
+      ]
+    },
+    {
+      "id": "N1-ENG-003",
+      "name": "Git-Aware Change, Commit and Release Workflow",
+      "status": "PROTOTYPE",
+      "phase": "Phase 12 — Engineering Agent 2.0",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Patch Engine",
+        "Unified Permissions"
+      ]
+    },
+    {
+      "id": "N1-ENG-004",
+      "name": "Dependency Modernization and SBOM Advisor",
+      "status": "BENCHMARKED",
+      "phase": "Phase 12 — Engineering Agent 2.0",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "SBOM Generator",
+        "Test Impact Analysis"
+      ]
+    },
+    {
+      "id": "N1-ENG-006",
+      "name": "Automated Reproducer and Failure Minimizer",
+      "status": "BENCHMARKED",
+      "phase": "Phase 12 — Engineering Agent 2.0",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Structured Bug Diagnosis",
+        "Session Replay"
+      ]
+    },
+    {
+      "id": "N1-ENG-007",
+      "name": "Codebase Documentation Compiler",
+      "status": "BENCHMARKED",
+      "phase": "Phase 12 — Engineering Agent 2.0",
+      "risk": "High",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Semantic Code Graph",
+        "AGENTS.md Initializer"
+      ]
+    },
+    {
+      "id": "N1-ENG-008",
+      "name": "Verified Changelog and Release Notes Generator",
+      "status": "ACTIVE",
+      "phase": "Phase 12 — Engineering Agent 2.0",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Canonical Release Manifest",
+        "Git Workflow"
+      ]
+    },
+    {
+      "id": "N1-BROWSE-001",
+      "name": "Multi-Tab Evidence Research Workspace",
+      "status": "BENCHMARKED",
+      "phase": "Phase 13 — Browser and Multimodal Research 2.0",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Browser Worker Pool",
+        "Evidence Graph V2"
+      ]
+    },
+    {
+      "id": "N1-BROWSE-002",
+      "name": "Web-to-Dataset Pipeline with Field Evidence",
+      "status": "PROTOTYPE",
+      "phase": "Phase 13 — Browser and Multimodal Research 2.0",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Schema-First Browser Output",
+        "Dataset Lineage"
+      ]
+    },
+    {
+      "id": "N1-BROWSE-003",
+      "name": "Local Website Accessibility and Performance QA",
+      "status": "BENCHMARKED",
+      "phase": "Phase 13 — Browser and Multimodal Research 2.0",
+      "risk": "High",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Local Website QA",
+        "Deterministic Browser Harness"
+      ]
+    },
+    {
+      "id": "N1-BROWSE-004",
+      "name": "Browser Action Dry-Run Simulator",
+      "status": "PROTOTYPE",
+      "phase": "Phase 13 — Browser and Multimodal Research 2.0",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Page Drift Detector",
+        "Expected-State Verifier"
+      ]
+    },
+    {
+      "id": "N1-BROWSE-005",
+      "name": "Multimodal Claim Alignment",
+      "status": "BENCHMARKED",
+      "phase": "Phase 13 — Browser and Multimodal Research 2.0",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Evidence Graph V2",
+        "DOM–Vision Fusion"
+      ]
+    },
+    {
+      "id": "N1-CYBER-001",
+      "name": "Unified Security Control Graph",
+      "status": "ACTIVE",
+      "phase": "Phase 14 — Cybersecurity Fusion 2.0",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Security Finding Contract",
+        "Asset Lifecycle"
+      ]
+    },
+    {
+      "id": "N1-CYBER-002",
+      "name": "SOC Analyst Timeline Copilot",
+      "status": "BENCHMARKED",
+      "phase": "Phase 14 — Cybersecurity Fusion 2.0",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Log and SIEM Analysis",
+        "Security Control Graph"
+      ]
+    },
+    {
+      "id": "N1-CYBER-003",
+      "name": "PCAP and Network Flow Defensive Triage",
+      "status": "PROTOTYPE",
+      "phase": "Phase 14 — Cybersecurity Fusion 2.0",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "Security ML Models",
+        "Lab Isolation"
+      ]
+    },
+    {
+      "id": "N1-CYBER-004",
+      "name": "Defensive Phishing and Email Analyzer",
+      "status": "BENCHMARKED",
+      "phase": "Phase 14 — Cybersecurity Fusion 2.0",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "Mail Infrastructure",
+        "Domain Risk",
+        "Metadata Scrubber"
+      ]
+    },
+    {
+      "id": "N1-CYBER-005",
+      "name": "Software Supply-Chain Risk Correlation",
+      "status": "BENCHMARKED",
+      "phase": "Phase 14 — Cybersecurity Fusion 2.0",
+      "risk": "Critical",
+      "editionScope": "Zenith, Apex",
+      "dependencies": [
+        "SBOM/CVE",
+        "Secret Scanner",
+        "Source Pinning"
+      ]
+    },
+    {
+      "id": "N1-EVAL-001",
+      "name": "Variance-Reduced Multi-Pass Benchmark Orchestrator",
+      "status": "ACTIVE",
+      "phase": "Phase 15 — Production and Evaluation 2.0",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "All N1.0 benchmark suites"
+      ]
+    },
+    {
+      "id": "N1-EVAL-002",
+      "name": "N1.0 Readiness Scorecard and Grand Gate",
+      "status": "ACTIVE",
+      "phase": "Phase 15 — Production and Evaluation 2.0",
+      "risk": "Critical",
+      "editionScope": "Swift, Zenith, Apex",
+      "dependencies": [
+        "N1-EVAL-001",
+        "all N1.0 phases"
+      ]
+    }
+  ]
+}

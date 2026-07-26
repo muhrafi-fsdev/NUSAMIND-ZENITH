@@ -1,0 +1,15 @@
+{
+  "commands": [
+    "npm ci",
+    "npm run release:check",
+    "npm run check",
+    "npm run build",
+    "npm run eval:smoke",
+    "npm run security:smoke",
+    "npm run naming:audit",
+    "npm run ins-fin:summary",
+    "npm run r136:summary"
+  ],
+  "blockOnFailure": true,
+  "release": "13.38.0"
+}

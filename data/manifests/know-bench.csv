@@ -1,0 +1,21 @@
+﻿test_id,domain,difficulty,target_versions,test_prompt_or_condition,required_behavior,forbidden_behavior,criticality
+KB-001,General,Foundational,"Swift, Zenith, Apex",Jelaskan perbedaan cuaca dan iklim.,"Jawaban benar, Bahasa Indonesia, contoh jelas.",Mencampur cuaca dengan perubahan iklim.,Medium
+KB-002,Indonesia,Intermediate,"Zenith, Apex",Jelaskan struktur umum pendidikan tinggi Indonesia dan istilah SKS.,Konteks Indonesia dan istilah tepat.,Menggunakan sistem negara lain tanpa penjelasan.,High
+KB-003,Mathematics,Advanced,"Zenith, Apex",Selesaikan recurrence non-standar dan jelaskan metode.,Metode dan hasil terverifikasi.,Mengarang Master Theorem yang tidak berlaku.,Critical
+KB-004,Coding,Intermediate,"Zenith, Apex",Project Next.js gagal karena import/export mismatch.,Analisis source dan versi framework.,Jawaban generik tanpa membaca evidence.,High
+KB-005,Networking,Intermediate,"Swift, Zenith, Apex","Bedakan throughput, bandwidth, dan goodput.",Definisi dan contoh akurat.,Menyamakan ketiganya.,High
+KB-006,Telecom,Advanced,"Zenith, Apex",Hitung link budget dan validasi dB/dBm.,Unit dan formula benar.,Mengalikan dBm dengan dB.,Critical
+KB-007,IoT,Intermediate,"Zenith, Apex",Rancang fail-safe pompa ESP32 saat sensor error.,"State, safety, dan recovery jelas.",Pompa tetap menyala saat sensor gagal.,Critical
+KB-008,Data Engineering,Intermediate,"Zenith, Apex",Jelaskan bronze-silver-gold dan data quality gates.,Pipeline dan tujuan tiap layer benar.,Hanya definisi tanpa alur.,High
+KB-009,AI/Data,Advanced,Apex,"Bandingkan FTS5, embeddings, dan reranker untuk RAG.",Trade-off dan arsitektur grounded.,Mengklaim embedding selalu lebih baik.,High
+KB-010,Insurance,Advanced,"Zenith, Apex",Analisis combined ratio 108% tetapi laba bersih positif.,"Underwriting, investasi, reserve, sustainability.",Menyatakan perusahaan pasti sehat/tidak sehat.,Critical
+KB-011,Finance,Intermediate,"Zenith, Apex",Hitung margin dan jelaskan basis denominator.,Formula dan denominator benar.,Menggunakan denominator yang salah tanpa catatan.,Critical
+KB-012,Religion,Advanced,"Zenith, Apex",Bandingkan QS 2:256 dan ayat konflik.,"Context, scope, source, no false naskh.",Ayat/hadis/source palsu.,Critical
+KB-013,Customer Service,Intermediate,"Zenith, Apex",Pelanggan marah dan mengancam pengacara.,"Empati, status, handoff, no promise.",Menjanjikan klaim selesai.,Critical
+KB-014,Everyday,Foundational,"Swift, Zenith, Apex",Wi-Fi hanya bermasalah pada satu aplikasi.,Troubleshooting terurut dan aman.,Langsung reset sistem tanpa diagnosis.,High
+KB-015,Freshness,Advanced,"Zenith, Apex",File diunggah hari ini tetapi kontennya regulasi lama.,"Gunakan content/effective date, bukan upload date.",Menyebutnya terbaru karena metadata file.,Critical
+KB-016,Knowledge Gap,Expert,"Swift, Zenith, Apex",Tanyakan subdomain sangat niche dengan satu source lemah.,Deteksi gap dan tidak mengarang.,Confidence tinggi/claim unsupported.,Critical
+KB-017,Dedup,Expert,Apex,Tiga artikel menyalin satu sumber primer.,Lineage terdeteksi dan evidence tidak dihitung tiga.,Menganggap independen.,High
+KB-018,Conflict,Expert,Apex,Dua official source berbeda karena yurisdiksi.,Pisahkan jurisdiction dan scope.,Memilih satu secara universal.,Critical
+KB-019,Teaching,Intermediate,"Zenith, Apex",User salah paham korelasi dan kausalitas.,Deteksi miskonsepsi dan beri contoh.,Sekadar memberi definisi.,High
+KB-020,Rollback,System,Apex,Batch baru menurunkan benchmark finance 20%.,Block/rollback batch dan restore index.,Tetap aktif karena record lebih banyak.,Critical

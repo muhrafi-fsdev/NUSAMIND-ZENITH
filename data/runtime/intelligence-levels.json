@@ -1,0 +1,146 @@
+[
+  {
+    "level_id": "instant",
+    "name": "Instant",
+    "alias": [
+      "Cepat",
+      "Quick"
+    ],
+    "description": "Jawaban paling cepat, singkat, langsung inti.",
+    "best_for": [
+      "sapaan",
+      "definisi cepat",
+      "caption pendek",
+      "hitungan ringan",
+      "jawaban yes/no"
+    ],
+    "parameter_profile": {
+      "reasoning_depth": "low",
+      "retrieval_top_k": 3,
+      "verification_passes": 0,
+      "temperature": 0.25,
+      "max_tokens": 600
+    },
+    "prompt_rules": [
+      "jawab ringkas",
+      "jangan analisis panjang",
+      "beri inti dulu",
+      "minta detail jika ambigu"
+    ]
+  },
+  {
+    "level_id": "ordinary",
+    "name": "Ordinary",
+    "alias": [
+      "Santai",
+      "Normal"
+    ],
+    "description": "Jawaban harian yang natural, cukup jelas, tidak terlalu panjang.",
+    "best_for": [
+      "obrolan harian",
+      "makanan",
+      "caption",
+      "tempat hiburan",
+      "pertanyaan umum"
+    ],
+    "parameter_profile": {
+      "reasoning_depth": "standard",
+      "retrieval_top_k": 5,
+      "verification_passes": 1,
+      "temperature": 0.35,
+      "max_tokens": 1000
+    },
+    "prompt_rules": [
+      "bahasa santai",
+      "jawab sesuai pertanyaan",
+      "contoh seperlunya",
+      "hindari istilah berat"
+    ]
+  },
+  {
+    "level_id": "medium",
+    "name": "Medium",
+    "alias": [
+      "Seimbang"
+    ],
+    "description": "Seimbang antara kecepatan, akurasi, dan kedalaman.",
+    "best_for": [
+      "debugging ringan",
+      "tugas kuliah",
+      "penjelasan konsep",
+      "analisis dokumen pendek"
+    ],
+    "parameter_profile": {
+      "reasoning_depth": "medium",
+      "retrieval_top_k": 8,
+      "verification_passes": 1,
+      "temperature": 0.4,
+      "max_tokens": 1600
+    },
+    "prompt_rules": [
+      "beri langkah",
+      "jelaskan penyebab",
+      "validasi hasil",
+      "tampilkan asumsi singkat"
+    ]
+  },
+  {
+    "level_id": "high",
+    "name": "High",
+    "alias": [
+      "Analisis"
+    ],
+    "description": "Analisis lebih dalam untuk masalah kompleks.",
+    "best_for": [
+      "bug kompleks",
+      "arsitektur AI",
+      "database",
+      "networking",
+      "laporan akademik detail",
+      "root cause analysis"
+    ],
+    "parameter_profile": {
+      "reasoning_depth": "high",
+      "retrieval_top_k": 12,
+      "verification_passes": 2,
+      "temperature": 0.35,
+      "max_tokens": 2400
+    },
+    "prompt_rules": [
+      "analisis bertahap",
+      "bandingkan opsi",
+      "beri risiko",
+      "beri validasi dan checklist"
+    ]
+  },
+  {
+    "level_id": "thinking",
+    "name": "Thinking",
+    "alias": [
+      "Thingking",
+      "Deep Thinking"
+    ],
+    "description": "Penalaran mendalam untuk brainstorming besar dan kasus multi-step.",
+    "best_for": [
+      "brainstorming proyek",
+      "debugging sulit",
+      "perencanaan sistem",
+      "evaluasi AI",
+      "analisis dokumen panjang"
+    ],
+    "parameter_profile": {
+      "reasoning_depth": "deep",
+      "retrieval_top_k": 16,
+      "verification_passes": 3,
+      "temperature": 0.3,
+      "max_tokens": 3600
+    },
+    "prompt_rules": [
+      "pecah masalah",
+      "buat asumsi",
+      "buat alternatif",
+      "uji kelemahan",
+      "beri rekomendasi final"
+    ]
+  }
+]

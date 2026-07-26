@@ -1,0 +1,2 @@
+const RX=['warfarin','insulin','antibiotik','antidepresan','obat kejang','steroid','pengencer darah'];
+export function enforceDoseBoundary(text:string){const low=text.toLowerCase();const asksDose=/\b(dosis|berapa mg|berapa kali|minum berapa)\b/.test(low);const prescription=RX.some(x=>low.includes(x));return{blocked:asksDose&&prescription,asksDose,prescription,message:asksDose&&prescription?'Saya tidak dapat menetapkan dosis obat resep. Dosis harus ditentukan dokter/apoteker berdasarkan diagnosis, usia, berat badan, fungsi ginjal/hati, kehamilan, dan obat lain.':null};}
