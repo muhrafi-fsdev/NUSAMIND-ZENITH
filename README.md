@@ -3,17 +3,17 @@
 
   <br />
 
-  <img alt="Release" src="https://img.shields.io/badge/release-N1.2-0ea5e9?style=for-the-badge" />
+  <img alt="Release" src="https://img.shields.io/badge/release-N1.4-0ea5e9?style=for-the-badge" />
   <img alt="Edition" src="https://img.shields.io/badge/edition-Zenith-8b5cf6?style=for-the-badge" />
   <img alt="Node.js" src="https://img.shields.io/badge/Node.js-%E2%89%A522-22c55e?style=for-the-badge&logo=nodedotjs&logoColor=white" />
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-16-111827?style=for-the-badge&logo=nextdotjs&logoColor=white" />
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5-2563eb?style=for-the-badge&logo=typescript&logoColor=white" />
   <img alt="Local AI" src="https://img.shields.io/badge/AI-Local--First-14b8a6?style=for-the-badge" />
 
-  <h3>Asisten AI lokal seimbang dengan controlled coding agent, verifikasi berlapis, dan deployment preview/staging.</h3>
+  <h3>Asisten AI lokal seimbang dengan Qwen3 adaptif, jawaban akademik terstruktur, controlled coding agent, dan deployment preview/staging.</h3>
 
   <p>
-    <strong>Ollama + Qwen</strong> • <strong>Next.js</strong> • <strong>FastAPI ML Service</strong> •
+    <strong>Ollama + Qwen3</strong> • <strong>Next.js</strong> • <strong>FastAPI ML Service</strong> •
     <strong>Web lokal</strong> • <strong>PowerShell CLI</strong> • <strong>Bahasa Indonesia</strong>
   </p>
 </div>
@@ -22,18 +22,19 @@
 
 ## Tentang NusaMind Zenith
 
-**NusaMind Zenith N1.2** adalah edisi seimbang dari keluarga NusaMind AI. Zenith menggabungkan reasoning yang lebih mendalam dengan controlled build, exact patch, checkpoint, rollback, Git workflow terverifikasi, credential vault, trusted workspace, MCP quarantine, serta deployment preview dan staging.
+**NusaMind Zenith N1.4** adalah edisi seimbang dari keluarga NusaMind AI. Zenith menggabungkan reasoning adaptif, kualitas jawaban akademik, controlled build, exact patch, checkpoint, rollback, Git workflow terverifikasi, credential vault, trusted workspace, MCP quarantine, serta deployment preview dan staging.
 
-Release **N1.2 / 1.2.0** melanjutkan fondasi N1.0 dengan **Developer Intelligence N1.1** dan **Advanced Autonomy & Deployment N1.2**. Implementasi ditulis ulang untuk arsitektur NusaMind dan tidak menyalin source OpenCode secara mentah.
+Release **N1.4 / 1.4.0** melanjutkan fondasi N1.0 dengan **Developer Intelligence N1.1**, **Advanced Autonomy & Deployment N1.2**, **Answer Quality & Academic Response Engine N1.3**, serta **Adaptive Qwen3 Model Runtime N1.4**.
 
 > NusaMind AI dikembangkan oleh **Muhammad Rafi Priyo** sebagai proyek AI lokal, eksperimen engineering, dan portofolio pribadi. Tidak semua komponen dibuat oleh AI; sebagian dirancang, dikembangkan, diuji, diperbaiki, dan disempurnakan secara manual oleh developer.
 
 ## Karakteristik Zenith
 
-- **Seimbang:** reasoning, resource, dan kemampuan engineering berada di tengah antara Swift dan Apex.
+- **Seimbang:** reasoning, resource, kualitas jawaban, dan kemampuan engineering berada di tengah antara Swift dan Apex.
+- **Adaptive Qwen3:** model utama `qwen3:8b`, model coding `qwen2.5-coder:7b`, dan fallback `qwen2.5:7b`.
+- **Thinking adaptif:** aktif pada tugas menengah hingga berat, tetapi tidak dipaksakan untuk pertanyaan sederhana.
 - **Controlled build:** edit, exact patch, test, build, checkpoint, dan rollback melalui approval serta policy engine.
 - **Bounded autonomy:** maksimal 40 langkah, soft limit 20, runtime 90 menit, dan paralelisme maksimal 2.
-- **Verified Git workflow:** push normal dan force-with-lease melalui secret scan, verification evidence, serta remote backup.
 - **Preview dan staging deployment:** production deployment tetap tidak tersedia pada Zenith.
 - **Local-first:** Ollama, memory, corpus, dan layanan utama berjalan lokal.
 - **Web + CLI:** dapat digunakan melalui browser lokal atau PowerShell CLI.
@@ -59,6 +60,25 @@ Zenith mengaktifkan autonomy terkontrol untuk development dan staging:
 - Unverified MCP tetap quarantine dan hanya dapat berjalan melalui sandbox wrapper.
 - Deployment tersedia untuk `preview` dan `staging`; production tetap Apex-only.
 - Extended loop maksimal 40 langkah dengan emergency ceiling dan `.nusamind/STOP`.
+
+## Answer Quality & Academic Response Engine N1.3
+
+- Jawaban matematika, fisika, kimia, statistika, dan perhitungan mengikuti urutan **Diketahui → Konsep/Rumus → Penyelesaian → Jawaban akhir → Penjelasan singkat**.
+- Jawaban coding memakai tujuan solusi, kode lengkap, cara kerja, contoh input/output, serta edge case ketika relevan.
+- Hasil akhir dibuat tegas, tidak berulang, dan tidak menghilangkan langkah penting.
+- Code block dijaga tetap utuh dan diberi label bahasa yang sesuai.
+- Kedalaman jawaban menyesuaikan pertanyaan dan mode `direct`, `balanced`, `steps`, `detailed`, `academic`, atau `expert`.
+- Batas output default Zenith dinaikkan menjadi sekitar **5.200 token**.
+
+## Adaptive Qwen3 Model Runtime N1.4
+
+- Model utama Zenith dinaikkan menjadi `qwen3:8b`.
+- Jalur coding tetap memakai `qwen2.5-coder:7b` untuk stabilitas.
+- Fallback otomatis menggunakan `qwen2.5:7b` jika model utama tidak tersedia.
+- Thinking mode diaktifkan secara adaptif berdasarkan kesulitan tugas.
+- Runtime memeriksa model yang terpasang sebelum melakukan routing.
+- Context budget dibuat realistis agar tidak langsung membebani RAM dan VRAM.
+- Header respons menyediakan informasi model, jalur routing, fallback, dan status thinking.
 
 ## Fitur Utama
 
@@ -96,7 +116,11 @@ flowchart LR
     UI --> API[Next.js Local API]
     API --> ORCH[Zenith Cognitive Orchestrator]
 
-    ORCH --> MODEL[Ollama + Qwen]
+    ORCH --> ROUTER[Adaptive Model Router]
+    ROUTER --> GENERAL[Qwen3 8B]
+    ROUTER --> CODER[Qwen2.5 Coder 7B]
+    ROUTER --> FALLBACK[Qwen2.5 7B]
+
     ORCH --> DEV[Developer Intelligence]
     ORCH --> AUTO[Autonomy Policy Engine]
     ORCH --> RETRIEVAL[Retrieval Planner]
@@ -107,7 +131,9 @@ flowchart LR
     RETRIEVAL --> CORPUS[Local Corpus & Evidence]
     VERIFY --> OUTPUT[Validated Response]
     AUDIT --> OUTPUT
-    MODEL --> OUTPUT
+    GENERAL --> OUTPUT
+    CODER --> OUTPUT
+    FALLBACK --> OUTPUT
     MEMORY --> OUTPUT
 ```
 
@@ -150,8 +176,6 @@ Untuk coding assistant dan autonomy CLI:
 .\autonomy.bat
 ```
 
-Zenith mendukung controlled build dan repair. Seluruh tindakan sensitif harus melewati approval, policy, checkpoint, secret scan, serta verification evidence.
-
 ## API N1
 
 - `GET /api/n1/status`
@@ -167,22 +191,36 @@ Zenith mendukung controlled build dan repair. Seluruh tindakan sensitif harus me
 
 | Perintah | Fungsi |
 |---|---|
-| `.\ollama.bat` | Menyiapkan model Qwen pada Ollama |
+| `.\ollama.bat` | Menyiapkan Qwen3 8B, model coding, dan fallback pada Ollama |
 | `.\ml-setup.bat` | Membuat environment ML |
 | `.\ml-start.bat` | Menjalankan FastAPI ML Service |
 | `.\dev.bat` | Menjalankan backend dan Web UI |
 | `.\run-cli.bat` | Menjalankan CLI utama |
 | `.\code.bat` | Menjalankan coding assistant |
-| `.\autonomy.bat` | Membuka autonomy CLI Zenith untuk Git, vault, workspace, MCP, dan staging |
+| `.\autonomy.bat` | Membuka autonomy CLI Zenith |
+| `npm run answer:benchmark` | Benchmark kualitas jawaban N1.3 |
+| `npm run model:n14:benchmark` | Benchmark Adaptive Qwen3 Runtime N1.4 |
+| `npm run model:n14:status:live` | Memeriksa status model Ollama secara langsung |
+| `npm run developer:benchmark` | Benchmark Developer Intelligence |
+| `npm run autonomy:benchmark` | Benchmark policy autonomy |
 | `npm run check` | TypeScript validation |
 | `npm run build` | Production build |
-| `npm run gate` | N1 release gate |
-| `npm run developer:benchmark` | Benchmark Developer Intelligence |
-| `npm run autonomy:benchmark` | Benchmark policy N1.2 |
+| `npm run gate` | Release gate |
+
+## Konfigurasi Model
+
+```env
+OLLAMA_MODEL=qwen3:8b
+OLLAMA_CODER_MODEL=qwen2.5-coder:7b
+OLLAMA_FALLBACK_MODEL=qwen2.5:7b
+AI_MAX_OUTPUT_TOKENS=5200
+NUSAMIND_THINKING_MODE=adaptive
+NUSAMIND_RELEASE=N1.4
+```
 
 ## Konfigurasi Autonomy
 
-Buat `.env` dari `.env.example`, lalu ganti seluruh token default. Batas edisi ini adalah maksimal **40 langkah** autonomy. Nilai credential tidak boleh ditulis langsung di source atau README.
+Buat `.env` dari `.env.example`, lalu ganti seluruh token default.
 
 ```env
 AUTONOMY_AGENT_TOKEN=ganti-dengan-token-panjang-acak
@@ -197,6 +235,9 @@ NUSAMIND_DEPLOYMENT_ROLLBACK=true
 
 ```powershell
 npm ci
+npm run answer:benchmark
+npm run model:n14:benchmark
+npm run model:n14:status:live
 npm run check
 npm run build
 npm run gate
@@ -204,24 +245,27 @@ npm run developer:benchmark
 npm run autonomy:benchmark
 ```
 
-Jangan menyatakan deployment atau build berhasil tanpa output verifikasi nyata dari mesin yang menjalankannya.
+Jangan menyatakan deployment, build, atau model runtime berhasil tanpa output verifikasi nyata dari mesin yang menjalankannya.
 
 ## Batasan dan Keamanan
 
 - Zenith tidak mengizinkan autonomous production deployment.
 - Raw arbitrary shell tetap nonaktif; destructive action harus memakai typed controlled action.
 - Semua force push menggunakan `--force-with-lease` dan remote backup.
+- Qwen3 Coder 30B tidak menjadi default Zenith.
 - Windows EXE/Electron dibatalkan dan n8n masih ditunda.
-- Main UI tidak diubah pada update N1.2.
+- Main UI tidak diubah pada update N1.1 sampai N1.4.
 - Jangan commit `.env`, token, private key, database runtime, session, atau credential vault.
 - Jangan membuka endpoint autonomy langsung ke internet tanpa autentikasi, firewall, dan reverse proxy.
-- Kualitas reasoning tetap bergantung pada model, prompt, data, tool, dan hardware.
+- Kualitas reasoning tetap bergantung pada model, prompt, data, tool, context, dan hardware.
 
 Dokumentasi penting:
 
 - [`AGENTS.md`](AGENTS.md)
 - [`UPGRADE_REPORT.md`](UPGRADE_REPORT.md)
 - [`docs/autonomy-n1.2.md`](docs/autonomy-n1.2.md)
+- [`docs/answer-quality-n1.3.md`](docs/answer-quality-n1.3.md)
+- [`docs/model-runtime-n1.4.md`](docs/model-runtime-n1.4.md)
 - [`data/release/n1.2/manifest.json`](data/release/n1.2/manifest.json)
 
 ## Status Lisensi
@@ -238,5 +282,5 @@ Repository ini belum menetapkan lisensi open-source. Visibilitas publik di GitHu
 ---
 
 <div align="center">
-  <sub>NusaMind AI Zenith N1.2 — Local Intelligence, Controlled Autonomy</sub>
+  <sub>NusaMind AI Zenith N1.4 — Adaptive Intelligence, Controlled Engineering</sub>
 </div>

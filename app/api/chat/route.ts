@@ -5,7 +5,7 @@ import { detectIntent } from '@/lib/intent-router';
 import { checkRateLimit, getRateLimitKey } from '@/lib/rate-limit';
 import { appendMessage, autoExtractMemory, loadMemory, loadSession, normalizeSessionId, upsertMemory } from '@/lib/memory';
 import { appendInteractionLog } from '@/lib/monitoring';
-import { getModel } from '@/lib/model';
+import { resolveModelRuntime } from '@/lib/model';
 import { buildStructuredPrompt, buildSystemPrompt } from '@/lib/prompts';
 import { compilePrompt } from '@/lib/prompt-engine/registry';
 import { routePromptStrategy } from '@/lib/prompt-engine/strategy';
@@ -205,8 +205,10 @@ export async function POST(req: Request) {
     }),
   };
 
+  const modelRuntime = await resolveModelRuntime(intent, intelligenceLevel);
+
   const result = streamText({
-    model: getModel(intent),
+    model: modelRuntime.model,
     system: compiledPrompt.system,
     messages: [
       ...recentMessages,
@@ -216,7 +218,7 @@ export async function POST(req: Request) {
     stopWhen: stepCountIs(appConfig.maxSteps),
     temperature: intelligenceProfile.temperature ?? appConfig.temperature,
     maxOutputTokens: Math.min(7000, Math.max(appConfig.maxOutputTokens, intelligenceProfile.maxOutputTokens)),
-    providerOptions: appConfig.provider === 'ollama' ? { ollama: { num_ctx: 16384 } } : undefined,
+    providerOptions: modelRuntime.providerOptions,
     onFinish: async ({ text, response, usage, finishReason, steps }: { text?: string; response?: { messages?: unknown[] }; usage?: unknown; finishReason?: string; steps?: unknown[] }) => {
       const answer = formatFinalAnswer(cleanAnswer(text || ''), body.message, String(RELEASE.edition), body.answerMode);
       await evaluateAnswerWithMl(body.message, answer, sources.map((source) => source.text || source.title));
@@ -257,6 +259,10 @@ export async function POST(req: Request) {
   response.headers.set('x-nusamind-ml-status', mlAnalysis ? 'active' : 'fallback');
   response.headers.set('x-nusamind-prompt-strategy', promptStrategy.id);
   response.headers.set('x-nusamind-prompt-hash', compiledPrompt.hash.slice(0, 16));
+  response.headers.set('x-nusamind-model', modelRuntime.selectedModel);
+  response.headers.set('x-nusamind-model-route', String(modelRuntime.route));
+  response.headers.set('x-nusamind-model-fallback', String(modelRuntime.fallbackUsed));
+  response.headers.set('x-nusamind-thinking', String(modelRuntime.thinking));
   if (mlAnalysis) response.headers.set('x-nusamind-ml-domain', mlAnalysis.domain);
   return response;
 }

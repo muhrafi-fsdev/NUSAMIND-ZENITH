@@ -1,0 +1,66 @@
+{
+  "release": "N1.3",
+  "edition": "zenith",
+  "items": [
+    {
+      "id": "N13-AQ-001",
+      "feature": "Adaptive answer depth controller",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "N13-AQ-002",
+      "feature": "Academic formula response structure",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "N13-AQ-003",
+      "feature": "Final answer consistency guard",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "N13-AQ-004",
+      "feature": "Complete coding block policy",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "N13-AQ-005",
+      "feature": "Input/output example policy",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "N13-AQ-006",
+      "feature": "Edge case and complexity explanation",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "N13-AQ-007",
+      "feature": "Polynomial derivative deterministic engine",
+      "status": "BENCHMARKED"
+    },
+    {
+      "id": "N13-AQ-008",
+      "feature": "Basic arithmetic deterministic engine",
+      "status": "BENCHMARKED"
+    },
+    {
+      "id": "N13-AQ-009",
+      "feature": "Code block integrity guard",
+      "status": "BENCHMARKED"
+    },
+    {
+      "id": "N13-AQ-010",
+      "feature": "Natural non-dataset response style",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "N13-AQ-011",
+      "feature": "Repetition and padding suppression",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "N13-AQ-012",
+      "feature": "Edition-aware explanation depth",
+      "status": "ACTIVE"
+    }
+  ]
+}

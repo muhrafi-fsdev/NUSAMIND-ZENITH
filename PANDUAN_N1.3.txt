@@ -1,0 +1,17 @@
+PANDUAN NUSAMIND ZENITH N1.3
+=====================================
+
+Fokus update:
+- Jawaban rumus/angka lebih runtut dan memiliki jawaban akhir yang jelas.
+- Jawaban coding memakai kode lengkap, penjelasan, dan contoh input/output.
+- Kedalaman jawaban adaptif; tidak terlalu pendek dan tidak bertele-tele.
+- UI utama tidak diubah.
+
+Validasi:
+  npm run answer:status
+  npm run answer:benchmark
+  npm run check
+  npm run build
+
+Mode jawaban yang dapat digunakan:
+  direct / concise / balanced / steps / detailed / academic / expert / latex / copy

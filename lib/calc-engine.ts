@@ -1,6 +1,6 @@
 
 export type Edition = 'swift' | 'zenith' | 'apex';
-export type AnswerMode = 'auto' | 'direct' | 'steps' | 'expert' | 'plain' | 'markdown' | 'latex' | 'copy';
+export type AnswerMode = 'auto' | 'direct' | 'concise' | 'balanced' | 'steps' | 'detailed' | 'academic' | 'expert' | 'plain' | 'markdown' | 'latex' | 'copy';
 
 export type CalculationResult = {
   handled: true;
@@ -147,7 +147,7 @@ function statusLine(status: CalculationResult['status']) {
 
 function requestedMode(question: string, mode?: string): AnswerMode {
   const m = String(mode || 'auto').toLowerCase();
-  if (['direct', 'steps', 'expert', 'plain', 'markdown', 'latex', 'copy'].includes(m)) return m as AnswerMode;
+  if (['direct', 'concise', 'balanced', 'steps', 'detailed', 'academic', 'expert', 'plain', 'markdown', 'latex', 'copy'].includes(m)) return m as AnswerMode;
   if (/\b(langkah demi langkah|jelaskan langkah|step by step)\b/i.test(question)) return 'steps';
   if (/\b(mendalam|expert|sensitivity|sensitivitas|analisis lengkap)\b/i.test(question)) return 'expert';
   if (/\blatex\b/i.test(question)) return 'latex';
@@ -161,6 +161,8 @@ function renderAnswer(args: {
   result: string;
   formula?: string;
   substitution?: string;
+  known?: string[];
+  explanation?: string;
   notes?: string[];
   status: CalculationResult['status'];
   latex?: string;
@@ -168,17 +170,34 @@ function renderAnswer(args: {
   const mode = requestedMode(args.question, args.mode);
   if (mode === 'latex' && args.latex) return `${args.latex}\n\n${statusLine(args.status)}`;
 
-  const lines: string[] = [`Hasil akhir: ${args.result}`];
-  const showFormula = mode !== 'direct' || args.edition !== 'swift';
-  const showSteps = mode === 'steps' || mode === 'expert' || (mode === 'auto' && args.edition !== 'swift');
-  if (showFormula && args.formula) lines.push(`Rumus: ${args.formula}`);
-  if (showSteps && args.substitution) lines.push(`Substitusi: ${args.substitution}`);
-  if (args.notes?.length && (args.edition === 'apex' || mode === 'expert' || args.status !== 'verified')) {
-    lines.push('Catatan:');
-    for (const note of args.notes) lines.push(`- ${note}`);
+  const concise = mode === 'direct' || mode === 'concise';
+  const lines: string[] = [];
+  if (args.known?.length && !concise) {
+    lines.push('Diketahui:');
+    for (const item of args.known) lines.push(`- ${item}`);
+    lines.push('');
   }
+  if (args.formula) {
+    lines.push('Konsep/Rumus yang digunakan:');
+    lines.push(args.formula);
+    lines.push('');
+  }
+  if (args.substitution) {
+    lines.push('Penyelesaian:');
+    lines.push(args.substitution);
+    lines.push('');
+  }
+  lines.push('Jawaban akhir:');
+  lines.push(`[ ${args.result} ]`);
+  if (args.explanation || (args.notes?.length && !concise)) {
+    lines.push('');
+    lines.push('Penjelasan singkat:');
+    if (args.explanation) lines.push(args.explanation);
+    for (const note of args.notes || []) lines.push(`- ${note}`);
+  }
+  lines.push('');
   lines.push(statusLine(args.status));
-  return lines.join('\n');
+  return lines.join('\n').replace(/\n{3,}/g, '\n\n').trim();
 }
 
 function verified(answer: string, formulaId: string, domain: string, values?: Record<string, number | string>): CalculationResult {
@@ -202,6 +221,76 @@ function needsInput(answer: string, formulaId: string, domain: string): Calculat
     status: 'needs_input',
     confidence: { input: 'partial', formula: 'matched', verification: 'not_run' },
   };
+}
+
+function superscriptNumber(value: number) {
+  const map: Record<string, string> = { '0':'⁰','1':'¹','2':'²','3':'³','4':'⁴','5':'⁵','6':'⁶','7':'⁷','8':'⁸','9':'⁹','-':'⁻' };
+  return String(value).split('').map((x) => map[x] || x).join('');
+}
+
+function polynomialDerivative(question: string, edition: Edition, mode?: string): CalculationResult | null {
+  if (!/\b(turunan|diferensial|differentiate|derivative|f'\s*\()/i.test(question)) return null;
+  const normalized = question.replace(/[³]/g, '^3').replace(/[²]/g, '^2').replace(/[⁴]/g, '^4').replace(/−/g, '-');
+  const functionMatch = normalized.match(/f\s*\(\s*x\s*\)\s*=\s*([^?\n]+)/i);
+  const fromMatch = normalized.match(/\bdari\s+([^?\n]+)/i);
+  const rawExpression = functionMatch?.[1] || fromMatch?.[1];
+  if (!rawExpression) return null;
+  const expression = rawExpression.replace(/^f\s*\(\s*x\s*\)\s*=\s*/i, '').replace(/\s+/g, '').replace(/[.;]+$/g, '');
+  if (!/^[+\-]?\d*(?:\.\d+)?x(?:\^\d+)?(?:[+\-]\d*(?:\.\d+)?x(?:\^\d+)?|[+\-]\d+(?:\.\d+)?)*$/i.test(expression)) return null;
+  const terms = expression.match(/[+\-]?[^+\-]+/g) || [];
+  const derived: { coefficient: number; exponent: number }[] = [];
+  for (const rawTerm of terms) {
+    if (!/x/i.test(rawTerm)) continue;
+    const term = rawTerm.replace(/x/i, '');
+    const parts = term.split('^');
+    const coeffRaw = parts[0];
+    const coefficient = coeffRaw === '' || coeffRaw === '+' ? 1 : coeffRaw === '-' ? -1 : Number(coeffRaw);
+    const exponent = parts[1] ? Number(parts[1]) : 1;
+    if (!Number.isFinite(coefficient) || !Number.isInteger(exponent) || exponent < 1) return null;
+    derived.push({ coefficient: coefficient * exponent, exponent: exponent - 1 });
+  }
+  if (!derived.length) return null;
+  const derivative = derived.map((item, index) => {
+    const sign = item.coefficient < 0 ? '-' : index === 0 ? '' : '+';
+    const abs = Math.abs(item.coefficient);
+    const coefficient = abs === 1 && item.exponent > 0 ? '' : fmtNumber(abs, 6);
+    const variable = item.exponent === 0 ? '' : item.exponent === 1 ? 'x' : `x${superscriptNumber(item.exponent)}`;
+    return `${sign}${coefficient}${variable}`;
+  }).join('').replace(/\+\-/g, '-');
+  const steps = terms.filter((term) => /x/i.test(term)).map((term) => {
+    const clean = term.replace(/^\+/, '');
+    return `d/dx(${clean}) menggunakan d/dx(axⁿ) = a·n·xⁿ⁻¹`;
+  });
+  const answer = renderAnswer({
+    question, edition, mode,
+    result: `f'(x) = ${derivative}`,
+    formula: "d/dx(axⁿ) = a·n·xⁿ⁻¹ dan turunan konstanta = 0",
+    substitution: steps.join('\n'),
+    known: [`f(x) = ${expression.replace(/\^2/g, '²').replace(/\^3/g, '³').replace(/\^4/g, '⁴')}`],
+    explanation: 'Setiap pangkat dikalikan dengan koefisiennya, kemudian pangkat dikurangi satu. Konstanta hilang karena turunannya nol.',
+    status: 'verified',
+  });
+  return verified(answer, 'calculus-polynomial-derivative', 'calculus', { expression, derivative });
+}
+
+function basicArithmetic(question: string, edition: Edition, mode?: string): CalculationResult | null {
+  const normalized = question.trim().replace(/,/g, '.').replace(/×/g, '*').replace(/÷/g, '/');
+  const match = normalized.match(/(?:berapa|hitung|nilai)?\s*(-?\d+(?:\.\d+)?)\s*([+\-*/])\s*(-?\d+(?:\.\d+)?)\s*\??$/i);
+  if (!match) return null;
+  const a = Number(match[1]); const op = match[2]; const b = Number(match[3]);
+  if (!Number.isFinite(a) || !Number.isFinite(b) || (op === '/' && b === 0)) return null;
+  const result = op === '+' ? a + b : op === '-' ? a - b : op === '*' ? a * b : a / b;
+  const symbol = op === '*' ? '×' : op === '/' ? '÷' : op;
+  const answer = renderAnswer({
+    question, edition, mode,
+    result: fmtNumber(result, 6),
+    formula: `a ${symbol} b`,
+    substitution: `${fmtNumber(a, 6)} ${symbol} ${fmtNumber(b, 6)} = ${fmtNumber(result, 6)}`,
+    known: [`a = ${fmtNumber(a, 6)}`, `b = ${fmtNumber(b, 6)}`],
+    explanation: 'Operasi dilakukan langsung sesuai operator yang diberikan.',
+    status: 'verified',
+  });
+  return verified(answer, `math-basic-${op === '+' ? 'add' : op === '-' ? 'subtract' : op === '*' ? 'multiply' : 'divide'}`, 'math_basic', { a, b, result });
 }
 
 function quadratic(question: string, edition: Edition, mode?: string): CalculationResult | null {
@@ -367,6 +456,12 @@ export function tryBuildCalculationAnswer(question: string, editionInput: string
       return verified(answer, 'stat-mean', 'statistics', { count: values.length, mean: result });
     }
   }
+
+  const derivative = polynomialDerivative(q, edition, answerMode);
+  if (derivative) return derivative;
+
+  const arithmetic = basicArithmetic(q, edition, answerMode);
+  if (arithmetic) return arithmetic;
 
   const quad = quadratic(q, edition, answerMode);
   if (quad && (edition !== 'swift' || /\b(selesaikan|persamaan)\b/i.test(q))) return quad;

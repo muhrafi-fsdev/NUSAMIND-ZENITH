@@ -6,7 +6,7 @@ import { detectIntent } from '@/lib/intent-router';
 import { checkRateLimit, getRateLimitKey } from '@/lib/rate-limit';
 import { appendMessage, autoExtractMemory, loadMemory, loadSession, normalizeSessionId, upsertMemory } from '@/lib/memory';
 import { appendInteractionLog } from '@/lib/monitoring';
-import { getModel } from '@/lib/model';
+import { resolveModelRuntime } from '@/lib/model';
 import { buildStructuredPrompt, buildSystemPrompt } from '@/lib/prompts';
 import { compilePrompt } from '@/lib/prompt-engine/registry';
 import { routePromptStrategy } from '@/lib/prompt-engine/strategy';
@@ -167,7 +167,8 @@ export async function POST(req: Request) {
       sessionMode,
       religion,
       serviceIntent,
-      humanHandoffRecommended,
+      modelRuntime: { selectedModel: modelRuntime.selectedModel, requestedModel: modelRuntime.requestedModel, route: modelRuntime.route, fallbackUsed: modelRuntime.fallbackUsed, probeOk: modelRuntime.probeOk, thinking: modelRuntime.thinking },
+    humanHandoffRecommended,
       intelligenceLevel,
       confidence: financeLocal.result.confidence,
       reasons: [`${RELEASE.label} deterministic insurance calculator.`],
@@ -262,8 +263,10 @@ export async function POST(req: Request) {
     evidence: sources.map((source) => `${source.title}: ${source.text || ''}`),
   });
 
+  const modelRuntime = await resolveModelRuntime(intent, intelligenceLevel);
+
   const result = await generateText({
-    model: getModel(intent),
+    model: modelRuntime.model,
     system: compiledPrompt.system,
     messages: [
       ...recentMessages,
@@ -294,7 +297,7 @@ export async function POST(req: Request) {
     stopWhen: stepCountIs(appConfig.maxSteps),
     temperature: intelligenceProfile.temperature ?? appConfig.temperature,
     maxOutputTokens: Math.min(7000, Math.max(appConfig.maxOutputTokens, intelligenceProfile.maxOutputTokens)),
-    providerOptions: appConfig.provider === 'ollama' ? { ollama: { num_ctx: 16384 } } : undefined,
+    providerOptions: modelRuntime.providerOptions,
   });
 
   const formattedAnswer = formatFinalAnswer(formatDirectAccuracyAnswer(cleanAnswer(result.text || ''), { userMessage: body.message, mode: intent.mode, intelligenceLevel, edition: appConfig.edition, sourcesCount: sources.length }), body.message, String(RELEASE.edition), body.answerMode);
@@ -343,6 +346,7 @@ export async function POST(req: Request) {
     sessionContext: { activeTopic: updatedSession.activeTopic, messageCount: updatedSession.messages.length, hasLastOutput: Boolean(updatedSession.lastOutput), tasks: (updatedSession.pendingTasks || []).length, artifacts: (updatedSession.artifacts || []).length },
     sessionMode,
     serviceIntent,
+    modelRuntime: { selectedModel: modelRuntime.selectedModel, requestedModel: modelRuntime.requestedModel, route: modelRuntime.route, fallbackUsed: modelRuntime.fallbackUsed, probeOk: modelRuntime.probeOk, thinking: modelRuntime.thinking },
     humanHandoffRecommended,
   });
 }

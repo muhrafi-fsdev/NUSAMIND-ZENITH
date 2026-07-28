@@ -29,3 +29,21 @@ TypeScript, production build, source/policy checks, JSON naming, UI checksum, di
 ## N1.2 — Advanced Autonomy & Deployment
 
 NusaMind Zenith now includes controlled Git push, force-with-lease backup workflow, destructive-action gates, encrypted credential references, trusted multi-workspace access, MCP quarantine, deployment orchestration, and extended bounded autonomy. See `docs/autonomy-n1.2.md`.
+
+
+## N1.3 Answer Quality & Academic Response Engine
+
+- Adaptive depth per edition: detailed.
+- Formula/numeric answers use known data, formula, solution, final answer, and concise explanation.
+- Coding answers require complete fenced code, explanation, input/output example, and relevant edge cases.
+- Polynomial derivative and basic arithmetic deterministic handlers added.
+- Raw LaTeX remains opt-in; UI remains unchanged.
+
+## N1.4 Adaptive Qwen3 Model Runtime
+- Main model: `qwen3:8b`
+- Coding model: `qwen2.5-coder:7b`
+- Fallback: `qwen2.5:7b`
+- Heavy coder opt-in: `qwen3-coder:30b`
+- Thinking policy: `auto`
+- Installed-model probe and fallback routing added.
+- Main UI unchanged.

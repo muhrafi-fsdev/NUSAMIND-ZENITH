@@ -1,0 +1,10 @@
+NusaMind Zenith N1.4
+
+1. Jalankan ollama.bat untuk menarik model utama, coding, dan fallback.
+2. Jalankan ml-setup.bat sekali bila belum pernah.
+3. Jalankan ollama serve, ml-start.bat, lalu dev.bat.
+4. Uji: npm run model:n14:benchmark dan npm run model:n14:status:live.
+5. Main model: qwen3:8b
+6. Coding model: qwen2.5-coder:7b
+7. Fallback: qwen2.5:7b
+8. Heavy coder: qwen3-coder:30b (opsional, tidak aktif otomatis).

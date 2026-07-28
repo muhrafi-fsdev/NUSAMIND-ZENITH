@@ -124,6 +124,44 @@ export function wantsLatex(question: string, answerMode = '') {
   return /(?:format|gunakan|pakai|tampilkan|output).{0,28}latex|latex.{0,28}(?:format|gunakan|pakai|tampilkan|output)|\banswer_mode_latex\b/i.test(q);
 }
 
+function isCodingQuestion(question: string) {
+  return /\b(code|kode|coding|program|python|javascript|typescript|java|php|c\+\+|sql|html|css|react|next(?:\.js)?|node(?:\.js)?|function|class|algoritma|debug|error|bug)\b|```/i.test(question);
+}
+
+function hasStructuredAcademicAnswer(text: string) {
+  const hits = ['Diketahui', 'Konsep/Rumus', 'Penyelesaian', 'Jawaban akhir', 'Penjelasan singkat']
+    .filter((label) => new RegExp(`^\\s*(?:#{1,6}\\s*)?${label}\\s*:?`, 'im').test(text)).length;
+  return hits >= 2;
+}
+
+function hasBalancedCodeFence(text: string) {
+  return (text.match(/```/g) || []).length % 2 === 0;
+}
+
+function codingLanguage(question: string) {
+  if (/\bpython\b/i.test(question)) return 'python';
+  if (/\btypescript|\btsx\b/i.test(question)) return 'typescript';
+  if (/\bjavascript|\bnode(?:\.js)?|\breact\b/i.test(question)) return 'javascript';
+  if (/\bphp\b/i.test(question)) return 'php';
+  if (/\bjava\b/i.test(question)) return 'java';
+  if (/\bc\+\+|\bcpp\b/i.test(question)) return 'cpp';
+  if (/\bc#|\bcsharp\b/i.test(question)) return 'csharp';
+  if (/\bsql\b/i.test(question)) return 'sql';
+  if (/\bhtml\b/i.test(question)) return 'html';
+  if (/\bcss\b/i.test(question)) return 'css';
+  if (/\bbash|\bshell|\bpowershell\b/i.test(question)) return 'bash';
+  return 'text';
+}
+
+function normalizeCodingBlocks(text: string, question: string) {
+  if (!isCodingQuestion(question)) return text;
+  let output = text;
+  if (!hasBalancedCodeFence(output)) output = `${output.trim()}\n\n\`\`\``;
+  const language = codingLanguage(question);
+  output = output.replace(/```(?=\r?\n)/, `\`\`\`${language}`);
+  return output;
+}
+
 function formulaQuestion(question: string) {
   return /(?:hitung|berapa|rumus|persamaan|probabilitas|integral|turunan|matriks|daya|gain|ber|bandwidth|premi|klaim|rasio|persen|%|=|dibagi|dikali|rata-rata|mean)/i.test(question);
 }
@@ -179,7 +217,8 @@ function terminalSafeTables(text: string, width = 80) {
 }
 
 function directTrim(text: string, edition: string) {
-  const max = edition === 'swift' ? 8 : edition === 'zenith' ? 18 : 28;
+  if (text.includes('```') || hasStructuredAcademicAnswer(text)) return text;
+  const max = edition === 'swift' ? 16 : edition === 'zenith' ? 28 : 40;
   const lines = text.split(/\r?\n/);
   return lines.slice(0, Math.min(lines.length, max)).join('\n');
 }
@@ -189,24 +228,24 @@ export function formatFinalAnswer(answer: string, question = '', edition = 'swif
 
   let out = normalizeStatus(stripRawLatex(answer));
   const mode = String(answerMode || 'auto').toLowerCase();
+  out = normalizeCodingBlocks(out, question);
 
-  if (formulaQuestion(question)) {
+  if (formulaQuestion(question) && !hasStructuredAcademicAnswer(out)) {
     const result = findResultLine(out);
-    if (result && !/^\s*hasil akhir\s*:/i.test(out)) {
-      const clean = result.replace(/^(?:hasil akhir|hasil|jawaban|jadi|maka)\s*:?-?\s*/i, '');
-      out = `Hasil akhir: ${clean}\n\n${out}`;
+    if (result && !/^\s*(?:hasil akhir|jawaban akhir)\s*:/im.test(out)) {
+      const clean = result.replace(/^(?:hasil akhir|jawaban akhir|hasil|jawaban|jadi|maka)\s*:?-?\s*/i, '');
+      out = `Jawaban akhir: ${clean}\n\n${out}`;
     }
   }
 
-  if (mode === 'direct' || (mode === 'auto' && edition === 'swift' && formulaQuestion(question))) {
-    out = directTrim(out, edition);
-  }
+  const mayTrim = !isCodingQuestion(question) && !hasStructuredAcademicAnswer(out) && !/(steps|detailed|expert|academic|deep)/.test(mode);
+  if (mayTrim && mode === 'direct') out = directTrim(out, edition);
 
   if (mode === 'copy') {
     out = out.replace(/^#{1,6}\s+/gm, '').replace(/^\s*[-*]\s+/gm, '- ');
   }
 
-  out = terminalSafeTables(out, 80);
+  out = terminalSafeTables(out, 88);
   return out.replace(/\n{3,}/g, '\n\n').trim();
 }
 

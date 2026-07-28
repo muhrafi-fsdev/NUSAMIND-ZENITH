@@ -186,7 +186,7 @@ function estimateAccuracy(text: string, args: FormatDirectAccuracyArgs) {
 }
 
 function extractDirectMathAnswer(text: string, userMessage: string) {
-  if (!isMathQuestion(userMessage) || wantsDetail(userMessage)) return text;
+  if (!isMathQuestion(userMessage) || wantsDetail(userMessage) || /^(?:Diketahui|Konsep\/Rumus|Penyelesaian|Jawaban akhir)\s*:/im.test(text)) return text;
   const cleaned = cleanCliLatex(stripAccuracyLines(text));
   const lines = cleaned.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
   if (lines.length <= 3 && cleaned.length <= 360) return cleaned.replace(/^Jadi,?\s*/i, '');
@@ -200,7 +200,7 @@ function extractDirectMathAnswer(text: string, userMessage: string) {
 
 function compactIfNeeded(text: string, args: FormatDirectAccuracyArgs) {
   const tier = normalizeEditionTier(args.edition);
-  if (wantsDetail(args.userMessage) || text.includes('```')) return text;
+  if (wantsDetail(args.userMessage) || text.includes('```') || /^(?:Diketahui|Konsep\/Rumus|Penyelesaian|Jawaban akhir|Penjelasan singkat)\s*:/im.test(text)) return text;
   const limit = isMathQuestion(args.userMessage) ? 360 : basicIslamFactAnswer(args.userMessage) ? 520 : tier === 'flash' ? 560 : tier === 'lite' ? 760 : 920;
   if (text.length <= limit) return text;
   const paragraphs = text.split(/\n{2,}/);
@@ -214,17 +214,15 @@ export function buildDirectAnswerPolicyPrompt(edition: string, intelligenceLevel
   const level = intelligenceLevel || 'medium';
   return `
 Direct Answer Runtime Policy ${RELEASE.label}:
-- WAJIB jawab dalam Bahasa Indonesia. Jangan campur bahasa lain kecuali user meminta.
-- Direct-first: jawab inti dulu. Jangan tampilkan proses internal, RAG, retrieval, atau narasi validasi.
-- Lazy deep thinking: deep reasoning hanya jika user meminta detail atau pertanyaan memang kompleks.
-- Default jawaban singkat: Swift 1-3 baris, Zenith 1-5 baris, Apex 2-6 baris; /expand atau /deep boleh lebih panjang.
-- Untuk matematika/perhitungan pasti: hasil akhir saja atau langkah super pendek. Jangan sebut RAG/konteks/sumber.
-- Untuk CLI, pakai plain text: ∇f, λ, 1/2, x², e^(xz). Jangan tampilkan LaTeX mentah seperti \\frac, \\left, \\right, \\nabla, \\lambda.
-- Akhiri hanya dengan satu baris akurasi: "Akurasi: xx% — alasan singkat". Jangan akurasi dobel.
-- Fakta dasar Al-Qur’an/agama: jumlah surah, nama surah, Ayat Kursi, rukun Islam, rukun iman, tajwid dasar dijawab direct; boleh 100% jika pasti.
-- Jangan tulis "domain sensitif" untuk fakta dasar Islam/Al-Qur’an.
-- Tafsir, fatwa, hukum fikih rinci, medis, keuangan, hukum, cyber berisiko: jawab hati-hati dan beri rujukan ahli/sumber resmi.
-- Per-domain retrieval: ambil sumber relevan saja; jangan melebar ke domain lain.
+- WAJIB jawab dalam Bahasa Indonesia. Jangan campur bahasa lain kecuali pengguna meminta.
+- Direct-first berarti inti jawaban muncul lebih dahulu, bukan berarti semua jawaban dipotong menjadi 1-3 baris.
+- Gunakan kedalaman adaptif: pertanyaan sederhana ringkas; rumus, angka, fisika, kimia, dan coding harus cukup lengkap untuk dipahami dan diperiksa.
+- Untuk rumus/angka gunakan struktur N1.3: Diketahui, Konsep/Rumus, Penyelesaian, Jawaban akhir, dan Penjelasan singkat.
+- Untuk coding gunakan kode lengkap dalam fenced code block, lalu jelaskan alur, contoh input/output, dan edge case yang relevan.
+- Jangan tampilkan proses internal, RAG, retrieval, hidden reasoning, atau narasi validasi yang tidak berguna.
+- CLI memakai simbol plain text seperti ∇f, λ, 1/2, x², e^(xz). LaTeX mentah hanya bila diminta eksplisit.
+- Jangan memberi persentase akurasi dekoratif pada perhitungan deterministik. Gunakan status perhitungan/verifikasi yang jujur bila diperlukan.
+- Jangan mengulang hasil akhir atau kesimpulan.
 - Mode aktif: edition=${edition}; level=${level}.`;
 }
 
@@ -237,6 +235,8 @@ export function formatDirectAccuracyAnswer(answer: string, args: FormatDirectAcc
   text = cleanCliLatex(text);
   text = extractDirectMathAnswer(text, args.userMessage);
   text = compactIfNeeded(text, args);
+  const deterministicStructured = (isMathQuestion(args.userMessage) && /^(?:Diketahui|Konsep\/Rumus|Penyelesaian|Jawaban akhir)\s*:/im.test(text)) || (text.includes('```') && /\b(code|kode|coding|program|python|javascript|typescript|java|php|sql)\b/i.test(args.userMessage));
+  if (deterministicStructured) return text.trim();
   const acc = estimateAccuracy(text, args);
   return `${text.trim()}\n\nAkurasi: ${acc.score}% — ${acc.note}`.trim();
 }

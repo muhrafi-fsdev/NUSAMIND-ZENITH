@@ -1,8 +1,8 @@
 {
   "name": "nusamind-zenith",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "private": true,
-  "description": "NusaMind Zenith N1.2 Advanced Autonomy & Deployment for Zenith.",
+  "description": "NusaMind Zenith N1.4 Adaptive Qwen3 Model Runtime.",
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
@@ -11,7 +11,7 @@
     "check": "tsc --noEmit",
     "ai:status": "node scripts/ai-status.mjs",
     "ai:ollama": "node scripts/ollama-status.mjs",
-    "ai:pull:qwen": "ollama pull qwen2.5:7b",
+    "ai:pull:qwen": "ollama pull qwen3:8b",
     "ai:pull:coder": "ollama pull qwen2.5-coder:7b",
     "dataset:summary": "node scripts/data-summary.mjs",
     "workflow:summary": "node scripts/workflow.mjs",
@@ -70,7 +70,14 @@
     "developer:benchmark": "node scripts/eval-developer-intelligence.mjs",
     "developer:status": "node scripts/developer-status.mjs",
     "autonomy:benchmark": "node scripts/eval-autonomy-n1.2.mjs",
-    "autonomy:status": "node scripts/autonomy-status.mjs"
+    "autonomy:status": "node scripts/autonomy-status.mjs",
+    "answer:benchmark": "node scripts/eval-answer-quality-n1.3.mjs",
+    "answer:status": "node scripts/answer-quality-status.mjs",
+    "ai:pull:fallback": "ollama pull qwen2.5:7b",
+    "ai:pull:heavy-coder": "ollama pull qwen3-coder:30b",
+    "model:n14:status": "node scripts/model-runtime-status-n1.4.mjs",
+    "model:n14:status:live": "node scripts/model-runtime-status-n1.4.mjs --live",
+    "model:n14:benchmark": "node scripts/eval-model-runtime-n1.4.mjs"
   },
   "dependencies": {
     "@ai-sdk/openai": "4.0.11",

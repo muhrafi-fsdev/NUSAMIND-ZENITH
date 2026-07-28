@@ -1,17 +1,23 @@
 {
-  "release": "R13.47",
-  "model": "qwen2.5:7b",
+  "release": "N1.4",
+  "model": "qwen3:8b",
   "family": "Qwen",
   "status": "CONFIGURED",
-  "chatTemplate": "ollama-qwen",
-  "toolCallFormat": "json",
+  "chatTemplate": "ollama-qwen3",
+  "toolCallFormat": "native-function",
   "safeContextWindow": 16384,
-  "thinkingSupport": false,
+  "thinkingSupport": true,
+  "thinkingPolicy": "auto",
+  "coderModel": "qwen2.5-coder:7b",
+  "fallbackModel": "qwen2.5:7b",
+  "heavyCoderModel": "qwen3-coder:30b",
+  "heavyCoderEnabledByDefault": false,
   "quantization": "runtime-detected",
   "knownFailures": [
-    "invalid tool name",
-    "malformed JSON",
-    "context-position degradation"
+    "model-not-installed",
+    "thinking-leakage",
+    "resource-pressure",
+    "malformed-tool-call"
   ],
   "liveProfilePath": "storage/model-profiles/qwen-live.json"
 }

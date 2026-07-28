@@ -1,0 +1,32 @@
+{
+  "release": "N1.3",
+  "version": "1.3.0",
+  "edition": "zenith",
+  "name": "Answer Quality & Academic Response Engine",
+  "adaptiveDepth": true,
+  "defaultDepth": "detailed",
+  "minSections": 4,
+  "maxSections": 7,
+  "formulaStructure": [
+    "Diketahui",
+    "Konsep/Rumus yang digunakan",
+    "Penyelesaian",
+    "Jawaban akhir",
+    "Penjelasan singkat"
+  ],
+  "codingStructure": [
+    "Tujuan/inti solusi",
+    "Kode lengkap",
+    "Cara kerja",
+    "Contoh input/output",
+    "Catatan penting"
+  ],
+  "codingExplanation": "detailed",
+  "exampleBudget": 2,
+  "verificationPasses": 2,
+  "rawLatexDefault": false,
+  "datasetStyleDefault": false,
+  "completeCodeBlocksRequired": true,
+  "unitCheckRequired": true,
+  "noUiTouch": true
+}

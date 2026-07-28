@@ -1,0 +1,77 @@
+[
+  {
+    "id": "math-derivative",
+    "domain": "mathematics",
+    "question": "Cari turunan f(x)=x^3+2x^2-5x+7",
+    "mustContain": [
+      "Konsep/Rumus",
+      "Penyelesaian",
+      "Jawaban akhir"
+    ]
+  },
+  {
+    "id": "math-arithmetic",
+    "domain": "numeric",
+    "question": "Hitung 12 × 7",
+    "mustContain": [
+      "Penyelesaian",
+      "84"
+    ]
+  },
+  {
+    "id": "physics-force",
+    "domain": "physics",
+    "question": "Massa 5 kg dipercepat 2 m/s². Hitung gaya.",
+    "mustContain": [
+      "Diketahui",
+      "Rumus",
+      "N"
+    ]
+  },
+  {
+    "id": "chem-molarity",
+    "domain": "chemistry",
+    "question": "Hitung molaritas 0,5 mol dalam 2 L larutan.",
+    "mustContain": [
+      "Diketahui",
+      "Penyelesaian",
+      "mol/L"
+    ]
+  },
+  {
+    "id": "code-prime",
+    "domain": "coding",
+    "question": "Buat program Python cek bilangan prima",
+    "mustContain": [
+      "```python",
+      "Cara kerja",
+      "Contoh input/output"
+    ]
+  },
+  {
+    "id": "code-debug",
+    "domain": "coding",
+    "question": "Perbaiki error TypeScript dan jelaskan",
+    "mustContain": [
+      "```typescript",
+      "Cara kerja"
+    ]
+  },
+  {
+    "id": "simple-definition",
+    "domain": "general",
+    "question": "Apa itu API?",
+    "mustContain": [
+      "API"
+    ]
+  },
+  {
+    "id": "no-raw-latex",
+    "domain": "mathematics",
+    "question": "Hitung tanpa LaTeX",
+    "mustNotContain": [
+      "\\\\frac",
+      "$$"
+    ]
+  }
+]

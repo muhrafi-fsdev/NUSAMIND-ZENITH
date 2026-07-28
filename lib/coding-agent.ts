@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import { spawn, type ChildProcess } from 'node:child_process';
 import { generateText } from 'ai';
 import { z } from 'zod';
-import { getModel } from './model';
+import { resolveModelRuntime } from './model';
 
 const fileSchema = z.object({
   path: z.string().min(1).max(180),
@@ -302,12 +302,14 @@ export async function planCodingProject(input: { prompt: string; targetPath?: st
 
   let parsed: z.infer<typeof planSchema>;
   try {
+    const modelRuntime = await resolveModelRuntime({ mode: 'coding', confidence: 1, reasons: ['coding-agent'], safety: 'normal' }, 'high');
     const result = await generateText({
-      model: getModel({ mode: 'coding', confidence: 1, reasons: ['coding-agent'], safety: 'normal' }),
+      model: modelRuntime.model,
       system,
       prompt,
       temperature: 0.2,
       maxOutputTokens: 12_000,
+      providerOptions: modelRuntime.providerOptions,
     });
     parsed = planSchema.parse(JSON.parse(stripCodeFence(result.text)));
   } catch {
@@ -403,12 +405,14 @@ async function attemptRepair(job: CodingPlan, buildLog: string) {
     'Jangan mengubah file di luar project dan jangan menambahkan command shell.',
     'Schema: {"files":[{"path":"...","content":"..."}],"explanation":"..."}',
   ].join('\n');
+  const modelRuntime = await resolveModelRuntime({ mode: 'coding', confidence: 1, reasons: ['build-repair'], safety: 'normal' }, 'thinking');
   const result = await generateText({
-    model: getModel({ mode: 'coding', confidence: 1, reasons: ['build-repair'], safety: 'normal' }),
+    model: modelRuntime.model,
     system,
     prompt: `Framework: ${job.framework}\nError build:\n${buildLog.slice(-40_000)}\n\nFile project:\n${context}`,
     temperature: 0.1,
     maxOutputTokens: 10_000,
+    providerOptions: modelRuntime.providerOptions,
   });
   const patch = patchSchema.parse(JSON.parse(stripCodeFence(result.text)));
   for (const file of patch.files) {

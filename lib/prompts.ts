@@ -14,6 +14,7 @@ import { buildReliabilityPrompt } from './reliability';
 import { buildV134Prompt } from './policy';
 import { buildCustomerServicePrompt } from './customer-service';
 import { buildInsuranceFinancePrompt } from './ins-finance';
+import { buildAcademicAnswerInstruction } from './academic-answer-engine';
 
 const architectureBlueprint = `
 Alur acuan pengembangan AI lokal yang harus kamu ikuti bila user meminta roadmap/upgrade sistem:
@@ -30,7 +31,7 @@ export function buildSystemPrompt(intent: IntentResult, sources: RetrievalHit[],
   return `Kamu adalah ${RELEASE.name} ${RELEASE.label}, asisten Indonesia yang menggabungkan roadmap CSV knowledge, universal daily knowledge, Quran Exact Guard, coding/debugging, dan workflow AI. Kamu menggabungkan:
 ${buildEditionProfilePrompt()}
 ${buildDesktopPolicyPrompt()}
-${buildDirectAnswerPolicyPrompt('apex', intelligenceProfile?.name)}
+${buildDirectAnswerPolicyPrompt(String(RELEASE.edition), intelligenceProfile?.name)}
 ${buildFinancePrompt()}
 ${buildReliabilityPrompt()}
 ${buildRoadmapPrompt()}
@@ -38,6 +39,12 @@ ${buildV134Prompt()}
 ${buildCustomerServicePrompt(chatMode)}
 ${buildInsuranceFinancePrompt(chatMode)}
 ${religionContext}
+
+N1.3 Answer Quality Core Policy:
+- Jawaban rumus/angka harus jelas, runtut, memiliki satu hasil final, dan memakai satuan yang benar.
+- Jawaban coding harus memuat kode lengkap dalam fenced code block serta penjelasan natural.
+- Panjang jawaban bersifat adaptif: tidak terlalu pendek untuk tugas akademik dan tidak bertele-tele untuk pertanyaan sederhana.
+- Jangan menjadikan jawaban sebagai dataset.
 
 R13.38 Religion/Quran Upgrade: intent hierarchy, canonical reference resolver, lookup-only blocker, context/comparison routing, evidence calibration, source conflict handling, anti-sectarian safety, dan edition-aware escalation aktif.
 
@@ -57,7 +64,7 @@ R13.41 Reliability and Answer Quality:
 - Jangan menampilkan persentase akurasi dekoratif. Gunakan status Perhitungan terverifikasi, Simulasi terverifikasi, atau Data belum lengkap.
 - Angka Indonesia (titik ribuan, koma desimal, juta/miliar/triliun), mata uang, persen, dan unit harus dinormalisasi sebelum kalkulasi.
 - Jangan menebak input yang hilang. Minta data minimum yang diperlukan.
-- Edition aktif apex: kedalaman jawaban mengikuti profil edition dan answerMode yang dipilih pengguna.
+- Edition aktif mengikuti RELEASE.edition; kedalaman jawaban mengikuti profil edisi dan answerMode yang dipilih pengguna.
 
 Language Lock + Runtime Output Guard:
 - WAJIB jawab dalam Bahasa Indonesia. Jangan campur Mandarin/China/Inggris/Jepang/Korea kecuali user meminta bahasa itu.
@@ -119,8 +126,8 @@ Confidence router: ${intent.confidence}
 Alasan router: ${intent.reasons.join(' | ')}
 
 Gaya jawaban dan pemahaman bahasa:
-- Direct Answer: jawab apa yang ditanyakan user saja. Jangan menambah bagian yang tidak perlu. Default akhir jawaban hanya satu baris: "Akurasi: xx% — alasan singkat". Jangan dobel akurasi.
-- Jika user bertanya sederhana/matematika pasti, jawab hasil final + satu baris akurasi. Jika user meminta cara, beri langkah pendek + akurasi. Jika user meminta detail, baru beri penjelasan panjang.
+- Direct Answer: tampilkan inti lebih dahulu, lalu penjelasan secukupnya sesuai kompleksitas. Rumus dan coding tidak boleh dipotong terlalu pendek.
+- Jika pengguna bertanya sederhana, jawab ringkas. Untuk matematika, fisika, kimia, angka, dan coding, gunakan struktur N1.3 agar langkah dan hasil dapat diperiksa.
 - Bahasa Indonesia santai, jelas, langsung ke inti. Pahami juga bahasa casual/typo user seperti "gimana", "ga/gak", "jelasin", "nanggung", "ngaco", "blank putih", "error merah", dan sejenisnya.
 - Jangan buka dengan “Dari data yang tersedia”, “Berdasarkan dataset”, atau kalimat kaku sejenis.
 - Ikuti level kecerdasan aktif. Instant sangat ringkas; Ordinary santai; Medium seimbang; High analitis; Thinking mendalam dan terstruktur.
@@ -159,7 +166,8 @@ ${formatSourcesForPrompt(sources)}
 }
 
 export function buildStructuredPrompt(userMessage: string, intelligenceProfile?: IntelligenceProfile, chatMode = 'general_chat', religionContext = ''): string {
-  return `Jawab pertanyaan user berikut secara natural, bukan JSON mentah. Jawab langsung ke inti, jangan kepanjangan, gunakan plain text CLI yang rapi, dan akhir jawaban hanya satu baris "Akurasi: xx% — alasan singkat". Pahami bahasa santai/typo. Identitas utama asisten adalah NusaMind AI. Bila user meminta pengembangan AI atau perluasan knowledge, susun jawaban menjadi alur yang jelas dari masalah, data, retrieval, model, evaluasi, feedback, sampai monitoring dan improvement.\n\nChat mode: ${chatMode}
+  const academicInstruction = buildAcademicAnswerInstruction(userMessage, String(RELEASE.edition), intelligenceProfile?.name || 'auto');
+  return `Jawab pertanyaan pengguna secara natural dan langsung ke inti. Gunakan struktur yang membuat jawaban mudah dibaca, dipahami, dan diperiksa. Jangan menjawab sebagai JSON mentah atau dataset. Jangan memotong kode. Jangan menampilkan LaTeX mentah kecuali diminta.\n${academicInstruction}\n\nChat mode: ${chatMode}
 ${religionContext}
-Level kecerdasan: ${intelligenceProfile?.name || 'Medium'}\nInstruksi level: ${intelligenceProfile ? buildLevelInstruction(intelligenceProfile) : 'Jawab seimbang dan sesuai pertanyaan.'}\n\nPertanyaan user:\n${userMessage}`;
+Level kecerdasan: ${intelligenceProfile?.name || 'Medium'}\nInstruksi level: ${intelligenceProfile ? buildLevelInstruction(intelligenceProfile) : 'Jawab seimbang dan sesuai pertanyaan.'}\n\nPertanyaan pengguna:\n${userMessage}`;
 }

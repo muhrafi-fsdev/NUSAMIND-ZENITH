@@ -1,14 +1,14 @@
 {
   "profile": {
-    "model": "qwen2.5:7b",
+    "model": "qwen3:8b",
     "family": "Qwen",
-    "release": "R13.46",
-    "chatTemplate": "ollama-qwen-chat",
-    "toolCallFormat": "json-function",
+    "release": "N1.4",
+    "chatTemplate": "ollama-qwen3-chat",
+    "toolCallFormat": "native-function",
     "structuredOutput": "json-schema",
     "contextWindow": 16384,
-    "safeContextWindow": 12288,
-    "thinkingSupport": false,
+    "safeContextWindow": 16384,
+    "thinkingSupport": true,
     "temperatureByTask": {
       "direct": 0.15,
       "rag": 0.2,
@@ -25,14 +25,15 @@
     },
     "quantization": "runtime-detected",
     "resource": {
-      "ramGb": 4,
-      "vramGb": 4,
+      "ramGb": 16,
+      "vramGb": 8,
       "latencyTargetMs": 3500
     },
     "knownFailures": [
-      "Native thinking mode is not assumed for qwen2.5:7b.",
-      "Long-context reliability requires the needle benchmark.",
-      "Tool calls outside the allowlist are rejected."
+      "Thinking harus dipisahkan dari jawaban akhir.",
+      "Context tinggi dapat meningkatkan RAM/VRAM dan latensi.",
+      "Heavy coder hanya aktif melalui resource gate.",
+      "Tool call di luar allowlist tetap ditolak."
     ],
     "status": "CONFIGURED"
   },

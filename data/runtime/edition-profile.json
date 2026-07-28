@@ -1,6 +1,6 @@
 {
-  "release": "1.0.0",
-  "releaseLabel": "N1.0",
+  "release": "1.4.0",
+  "releaseLabel": "N1.4",
   "edition": "zenith",
   "editionName": "NusaMind Zenith",
   "description": "Balanced local intelligence with deeper reasoning, artifact research, approved engineering workflows, and defensive security analysis.",
@@ -12,8 +12,8 @@
     "vectorLiteStatusIndex": "6015588+"
   },
   "upgradeItems": 124,
-  "topCategoryCount": 1080,
-  "priorityNote": "N1.0: 124 upgrade items, all Top Category scores +900, main UI unchanged.",
+  "topCategoryCount": 1120,
+  "priorityNote": "N1.4: Qwen3 adaptive runtime, thinking policy, installed-model fallback, coder routing, UI unchanged.",
   "sourceManifest": "data/release/n1/upgrades.json",
   "noUiTouch": true,
   "namingConvention": {
@@ -66,7 +66,7 @@
     "tools": 10,
     "retries": 2,
     "elapsedMs": 11000,
-    "outputTokens": 4800,
+    "outputTokens": 5200,
     "ramMb": 6144
   },
   "v1347": {
@@ -93,7 +93,7 @@
     "architectureMigration": "compatibility-bridge"
   },
   "schemaVersion": 1,
-  "version": "1.0.0",
+  "version": "1.4.0",
   "lineage": [
     "R13.49.1 Cybersecurity-Only",
     "V13.49.2"
@@ -103,7 +103,7 @@
     "BENCHMARKED": 56,
     "PROTOTYPE": 21
   },
-  "topCategoryBoost": 900,
+  "topCategoryBoost": 1400,
   "windowsExe": false,
   "n8nIntegration": false,
   "features": {
@@ -113,5 +113,27 @@
     "browserWorkspace": true,
     "securityControlGraph": true,
     "longHorizonAgent": true
+  },
+  "answerQuality": {
+    "engine": "academic-response-v1",
+    "adaptiveDepth": true,
+    "defaultDepth": "detailed",
+    "formulaStructure": true,
+    "completeCodeBlocks": true,
+    "naturalStyle": true,
+    "verificationPasses": 2,
+    "noUiTouch": true
+  },
+  "modelRuntime": {
+    "engine": "qwen3-adaptive-v1",
+    "mainModel": "qwen3:8b",
+    "coderModel": "qwen2.5-coder:7b",
+    "fallbackModel": "qwen2.5:7b",
+    "heavyCoderModel": "qwen3-coder:30b",
+    "thinkingPolicy": "auto",
+    "contextWindow": 16384,
+    "coderContextWindow": 12288,
+    "installedModelProbe": true,
+    "noUiTouch": true
   }
 }

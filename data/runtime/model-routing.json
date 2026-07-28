@@ -1,0 +1,35 @@
+{
+  "release": "N1.4",
+  "version": "1.4.0",
+  "edition": "zenith",
+  "mainModel": "qwen3:8b",
+  "coderModel": "qwen2.5-coder:7b",
+  "fallbackModel": "qwen2.5:7b",
+  "heavyCoderModel": "qwen3-coder:30b",
+  "heavyCoderEnabledByDefault": false,
+  "thinkingPolicy": "auto",
+  "contextWindow": 16384,
+  "coderContextWindow": 12288,
+  "fallbackOrder": {
+    "general": [
+      "qwen3:8b",
+      "qwen2.5:7b"
+    ],
+    "coding": [
+      "qwen2.5-coder:7b",
+      "qwen3:8b",
+      "qwen2.5:7b"
+    ],
+    "heavyCoding": [
+      "qwen3-coder:30b",
+      "qwen2.5-coder:7b",
+      "qwen3:8b",
+      "qwen2.5:7b"
+    ]
+  },
+  "privacy": "local-first",
+  "thinkingExposure": "hidden-from-final-answer",
+  "probeCacheMs": 5000,
+  "probeTimeoutMs": 1400,
+  "noUiTouch": true
+}

@@ -4,7 +4,8 @@
     "version": "13.47.0",
     "task_type": "system",
     "model_compatibility": [
-      "qwen2.5"
+      "qwen2.5",
+      "qwen3"
     ],
     "editions": [
       "swift",
@@ -40,7 +41,8 @@
     "version": "13.47.0",
     "task_type": "direct",
     "model_compatibility": [
-      "qwen2.5"
+      "qwen2.5",
+      "qwen3"
     ],
     "editions": [
       "swift",
@@ -74,7 +76,8 @@
     "version": "13.47.0",
     "task_type": "rag",
     "model_compatibility": [
-      "qwen2.5"
+      "qwen2.5",
+      "qwen3"
     ],
     "editions": [
       "swift",
@@ -109,7 +112,8 @@
     "version": "13.47.0",
     "task_type": "workflow",
     "model_compatibility": [
-      "qwen2.5"
+      "qwen2.5",
+      "qwen3"
     ],
     "editions": [
       "swift",
@@ -143,7 +147,8 @@
     "version": "13.47.0",
     "task_type": "agent",
     "model_compatibility": [
-      "qwen2.5"
+      "qwen2.5",
+      "qwen3"
     ],
     "editions": [
       "zenith",
@@ -177,7 +182,8 @@
     "version": "13.47.0",
     "task_type": "meta",
     "model_compatibility": [
-      "qwen2.5"
+      "qwen2.5",
+      "qwen3"
     ],
     "editions": [
       "swift",
@@ -210,7 +216,8 @@
     "version": "13.47.0",
     "task_type": "reflexion",
     "model_compatibility": [
-      "qwen2.5"
+      "qwen2.5",
+      "qwen3"
     ],
     "editions": [
       "zenith",
@@ -243,7 +250,8 @@
     "version": "13.47.0",
     "task_type": "multimodal",
     "model_compatibility": [
-      "qwen2.5"
+      "qwen2.5",
+      "qwen3"
     ],
     "editions": [
       "zenith",

@@ -8,3 +8,8 @@
 - Agent, browser, engineering, and cybersecurity operations remain edition-bounded, permission-gated, audited, and verified.
 - ACTIVE means backed by runtime/configuration and release checks; PROTOTYPE is never promoted automatically.
 - Raw hidden chain-of-thought is not stored. Only concise decisions, evidence, and verified outcomes may be persisted.
+
+
+N1.3 adds adaptive academic and coding answer structures for zenith.
+
+N1.4 adds Qwen3 adaptive model routing for zenith: main=qwen3:8b, coder=qwen2.5-coder:7b, fallback=qwen2.5:7b, thinking=auto.
