@@ -3,11 +3,11 @@
 
   <br />
 
-  <img alt="Release" src="https://img.shields.io/badge/release-N1.4-0ea5e9?style=for-the-badge" />
+  <img alt="Release" src="https://img.shields.io/badge/release-N1.4.1-0ea5e9?style=for-the-badge" />
   <img alt="Edition" src="https://img.shields.io/badge/edition-Zenith-8b5cf6?style=for-the-badge" />
   <img alt="Node.js" src="https://img.shields.io/badge/Node.js-%E2%89%A522-22c55e?style=for-the-badge&logo=nodedotjs&logoColor=white" />
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-16-111827?style=for-the-badge&logo=nextdotjs&logoColor=white" />
-  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5-2563eb?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-7-2563eb?style=for-the-badge&logo=typescript&logoColor=white" />
   <img alt="Local AI" src="https://img.shields.io/badge/AI-Local--First-14b8a6?style=for-the-badge" />
 
   <h3>Asisten AI lokal seimbang dengan Qwen3 adaptif, jawaban akademik terstruktur, controlled coding agent, dan deployment preview/staging.</h3>
@@ -22,9 +22,9 @@
 
 ## Tentang NusaMind Zenith
 
-**NusaMind Zenith N1.4** adalah edisi seimbang dari keluarga NusaMind AI. Zenith menggabungkan reasoning adaptif, kualitas jawaban akademik, controlled build, exact patch, checkpoint, rollback, Git workflow terverifikasi, credential vault, trusted workspace, MCP quarantine, serta deployment preview dan staging.
+**NusaMind Zenith N1.4.1** adalah edisi seimbang dari keluarga NusaMind AI. Zenith menggabungkan reasoning adaptif, kualitas jawaban akademik, controlled build, exact patch, checkpoint, rollback, Git workflow terverifikasi, credential vault, trusted workspace, MCP quarantine, serta deployment preview dan staging.
 
-Release **N1.4 / 1.4.0** melanjutkan fondasi N1.0 dengan **Developer Intelligence N1.1**, **Advanced Autonomy & Deployment N1.2**, **Answer Quality & Academic Response Engine N1.3**, serta **Adaptive Qwen3 Model Runtime N1.4**.
+Release **N1.4.1 / 1.4.1** melanjutkan fondasi N1.0 dengan **Developer Intelligence N1.1**, **Advanced Autonomy & Deployment N1.2**, **Answer Quality & Academic Response Engine N1.3**, serta **Adaptive Qwen3 Model Runtime N1.4**.
 
 > NusaMind AI dikembangkan oleh **Muhammad Rafi Priyo** sebagai proyek AI lokal, eksperimen engineering, dan portofolio pribadi. Tidak semua komponen dibuat oleh AI; sebagian dirancang, dikembangkan, diuji, diperbaiki, dan disempurnakan secara manual oleh developer.
 
@@ -69,6 +69,15 @@ Zenith mengaktifkan autonomy terkontrol untuk development dan staging:
 - Code block dijaga tetap utuh dan diberi label bahasa yang sesuai.
 - Kedalaman jawaban menyesuaikan pertanyaan dan mode `direct`, `balanced`, `steps`, `detailed`, `academic`, atau `expert`.
 - Batas output default Zenith dinaikkan menjadi sekitar **5.200 token**.
+
+## Native TypeScript 7 Engineering Patch N1.4.1
+
+- TypeScript 7 native dijadikan jalur pemeriksaan utama untuk diagnostic dan typecheck.
+- Pemeriksaan kompatibilitas tetap tersedia melalui `npm run check:legacy`.
+- Pemeriksaan dua jalur tersedia melalui `npm run check:dual`.
+- Script `typescript-setup.bat` menyiapkan dependency dan benchmark migrasi.
+- Patch ini tidak mengubah model Qwen, batas output token, UI, ML Service, maupun kebijakan autonomy.
+- `package-lock.json` lama dihapus karena masih mengunci TypeScript 5; jalankan `npm install` untuk membuat lockfile N1.4.1 yang sesuai.
 
 ## Adaptive Qwen3 Model Runtime N1.4
 
@@ -282,5 +291,5 @@ Repository ini belum menetapkan lisensi open-source. Visibilitas publik di GitHu
 ---
 
 <div align="center">
-  <sub>NusaMind AI Zenith N1.4 — Adaptive Intelligence, Controlled Engineering</sub>
+  <sub>NusaMind AI Zenith N1.4.1 — Adaptive Intelligence, Controlled Engineering</sub>
 </div>

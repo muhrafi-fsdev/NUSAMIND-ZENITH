@@ -1,0 +1,11 @@
+{
+  "release": "N1.4.1",
+  "version": "1.4.1",
+  "edition": "zenith",
+  "type": "patch",
+  "primaryCompiler": "typescript@^7.0.2",
+  "compatibilityCompiler": "@typescript/typescript6@^6.0.2",
+  "uiChanged": false,
+  "modelRuntimeChanged": false,
+  "lockfilePolicy": "regenerate with npm install"
+}

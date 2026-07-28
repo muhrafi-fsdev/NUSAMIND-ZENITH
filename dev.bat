@@ -1,9 +1,9 @@
 @echo off
 setlocal
 cd /d "%~dp0"
-title NusaMind Zenith N1.0 - Development Server
+title NusaMind Zenith N1.4.1 - Development Server
 echo ==============================================
-echo NusaMind Zenith N1.0 - Next.js Dev
+echo NusaMind Zenith N1.4.1 - Next.js Dev
 echo ==============================================
 where node >nul 2>nul || (echo [ERROR] Node.js tidak ditemukan. Install Node.js 22 LTS.& pause& exit /b 1)
 where npm >nul 2>nul || (echo [ERROR] npm tidak ditemukan.& pause& exit /b 1)

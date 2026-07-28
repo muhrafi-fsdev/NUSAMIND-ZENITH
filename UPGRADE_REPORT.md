@@ -1,3 +1,12 @@
+# NusaMind Zenith N1.4.1 Upgrade Report
+
+## Patch
+
+- TypeScript 7 native sebagai compiler utama.
+- TypeScript 6 compatibility fallback.
+- Dual compiler validation.
+- Tidak ada perubahan UI atau model runtime.
+
 # NusaMind Zenith N1.0 Upgrade Report
 
 ## Applied scope
