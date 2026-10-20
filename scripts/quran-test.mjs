@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 const root = process.cwd();
-const quran = JSON.parse(await fs.readFile(path.join(root, 'data', 'quran', 'ayah-idx.json'), 'utf-8'));
+const quran = JSON.parse(await fs.readFile(path.join(root, 'data', 'quran', 'ayah-index.json'), 'utf-8'));
 const fatihah = quran.filter((a) => Number(a.suraId) === 1).sort((a, b) => Number(a.verseID) - Number(b.verseID));
 const text = fatihah.map((a) => `${a.verseID}. ${a.ayahText}\nLatin: ${a.readText}\nTerjemah: ${a.indoText}`).join('\n\n');
 const must = ['bismillāhir-raḥmānir-raḥīm', 'al-ḥamdu lillāhi rabbil', "iyyāka na'budu", 'ṣirāṭallażīna'];

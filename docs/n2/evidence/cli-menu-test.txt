@@ -1,0 +1,10 @@
+
+> nusamind-zenith@1.4.1 cli:menu:test
+> node scripts/cli-menu-test.mjs
+
+{
+  "ok": true,
+  "handlers": 9,
+  "registry": 7
+}
+

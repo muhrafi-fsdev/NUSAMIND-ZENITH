@@ -10,3 +10,5 @@
 *.jpeg binary
 *.ico binary
 *.pdf binary
+docs/n2/evidence/** -text
+docs/upgrade-n2/** -text

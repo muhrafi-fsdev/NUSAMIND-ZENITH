@@ -8,7 +8,7 @@ export const SESSION_DIR = path.join(STORAGE_DIR, 'sessions');
 export const MEMORY_DIR = path.join(STORAGE_DIR, 'memory');
 export const LOG_DIR = path.join(STORAGE_DIR, 'logs');
 
-const editionDefaults = RELEASE.edition === 'apex'
+const editionDefaults = String(RELEASE.edition) === 'apex'
   ? { level: 'thinking', maxSteps: 16, maxOutputTokens: 7000, model: 'qwen3:14b', coder: 'qwen2.5-coder:7b', fallback: 'qwen2.5:7b', heavyCoder: 'qwen3-coder:30b', thinking: 'auto', context: 16384, coderContext: 16384, description: 'Runtime expert dengan Qwen3 14B, adaptive thinking, coding fallback, dan heavy coder opsional.' }
   : RELEASE.edition === 'zenith'
     ? { level: 'high', maxSteps: 10, maxOutputTokens: 5200, model: 'qwen3:8b', coder: 'qwen2.5-coder:7b', fallback: 'qwen2.5:7b', heavyCoder: 'qwen3-coder:30b', thinking: 'auto', context: 16384, coderContext: 12288, description: 'Runtime seimbang dengan Qwen3 8B dan adaptive thinking untuk tugas kompleks.' }

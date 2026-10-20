@@ -1,0 +1,70 @@
+
+> nusamind-zenith@1.4.1 test:n2:http
+> node --import tsx --test tests/n2/http.integration.ts
+
+TAP version 13
+# Subtest: production HTTP: auth boundary and retained deterministic product flows
+    # Subtest: all private and mutating APIs reject forged localhost Host
+    ok 1 - all private and mutating APIs reject forged localhost Host
+      ---
+      duration_ms: 44.1105
+      type: 'test'
+      ...
+    # Subtest: valid credentials cannot bypass configured Origin
+    ok 2 - valid credentials cannot bypass configured Origin
+      ---
+      duration_ms: 1.7984
+      type: 'test'
+      ...
+    # Subtest: authenticated browser entry and developer plan remain available
+    ok 3 - authenticated browser entry and developer plan remain available
+      ---
+      duration_ms: 24.0504
+      type: 'test'
+      ...
+    # Subtest: unscoped legacy build and deployment fail closed
+    ok 4 - unscoped legacy build and deployment fail closed
+      ---
+      duration_ms: 46.2069
+      type: 'test'
+      ...
+    # Subtest: evaluation API reports unexecuted benchmarks honestly
+    ok 5 - evaluation API reports unexecuted benchmarks honestly
+      ---
+      duration_ms: 4.6373
+      type: 'test'
+      ...
+    # Subtest: Quran exact lookup still returns canonical source data
+    ok 6 - Quran exact lookup still returns canonical source data
+      ---
+      duration_ms: 44.0795
+      type: 'test'
+      ...
+    # Subtest: chat JSON retains the deterministic calculation path
+    ok 7 - chat JSON retains the deterministic calculation path
+      ---
+      duration_ms: 34.1508
+      type: 'test'
+      ...
+    # Subtest: CSV upload still produces real parsed evidence
+    ok 8 - CSV upload still produces real parsed evidence
+      ---
+      duration_ms: 12.4883
+      type: 'test'
+      ...
+    1..8
+ok 1 - production HTTP: auth boundary and retained deterministic product flows
+  ---
+  duration_ms: 3887.9707
+  type: 'test'
+  ...
+1..1
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5954.4857
+

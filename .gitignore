@@ -1,4 +1,5 @@
 node_modules
+.env
 .next
 .env.local
 .env*.local
@@ -25,6 +26,7 @@ dist/
 build/
 storage/*.db*
 storage/runtime/
+storage/n2-ui-results/
 
 .nusamind/vault.json
 .nusamind/mcp-registry.json
@@ -34,3 +36,4 @@ storage/runtime/
 .nusamind/backups/
 .nusamind/loops/
 .nusamind/STOP
+.nusamind/checkpoints/

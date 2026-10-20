@@ -52,7 +52,7 @@ async function loadSurahMeta(): Promise<SurahMeta[]> {
 
 async function loadTopicMap(): Promise<TopicMapItem[]> {
   if (topicMapCache) return topicMapCache;
-  topicMapCache = await safeJson<TopicMapItem[]>(path.join(DATA_DIR, 'quran/topic-map.json'), []);
+  topicMapCache = await safeJson<TopicMapItem[]>(path.join(DATA_DIR, 'quran/topic-index.json'), []);
   return topicMapCache;
 }
 

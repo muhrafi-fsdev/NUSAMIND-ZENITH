@@ -1,1 +1,20 @@
-import fs from 'node:fs';import os from 'node:os';import path from 'node:path';import {spawnSync} from 'node:child_process';const execute=process.argv.includes('--execute');const result={ok:fs.existsSync('package.json')&&fs.existsSync('package-lock.json')&&!fs.existsSync('node_modules'),mode:execute?'execute':'preflight',requirements:['Node.js >=22','npm ci','npm run check','npm run build','npm run benchmark:13.48']};if(execute){const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'nusamind-r1348-'));fs.cpSync(process.cwd(),tmp,{recursive:true,filter:s=>!s.includes('node_modules')&&!s.includes('.next')});const cmds=[['npm',['ci','--no-audit','--no-fund']],['npm',['run','check']],['npm',['run','build']]];result.steps=cmds.map(([c,a])=>{const r=spawnSync(c,a,{cwd:tmp,stdio:'inherit',shell:process.platform==='win32'});return{command:[c,...a].join(' '),status:r.status};});result.ok=result.steps.every(x=>x.status===0);}console.log(JSON.stringify(result,null,2));if(!result.ok)process.exit(1);
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import { spawnSync } from 'node:child_process';
+const execute = process.argv.includes('--execute');
+const result = { ok: fs.existsSync('package.json') && fs.existsSync('package-lock.json'), mode: execute ? 'execute' : 'preflight', requirements: ['Node.js >=22', 'npm ci --ignore-scripts', 'npm run gate:n2'], steps: [] };
+if (execute && result.ok) {
+  const temporary = fs.mkdtempSync(path.join(os.tmpdir(), 'nusamind-n2-cold-'));
+  const excluded = new Set(['node_modules', '.git', '.next', '.nusamind', 'storage', 'workspace', 'coverage']);
+  fs.cpSync(process.cwd(), temporary, { recursive: true, filter: source => !excluded.has(path.basename(source)) && (!/^\.env(?:\.|$)/.test(path.basename(source)) || path.basename(source) === '.env.example') });
+  for (const args of [['ci', '--ignore-scripts', '--no-audit', '--no-fund'], ['run', 'gate:n2']]) {
+    const command = ['npm', ...args].join(' ');
+    const run = spawnSync('npm', args, { cwd: temporary, stdio: 'inherit', shell: process.platform === 'win32', windowsHide: true });
+    result.steps.push({ command, status: run.status, error: run.error?.message });
+    if (run.status !== 0) { result.ok = false; break; }
+  }
+  result.evidenceDirectory = temporary;
+}
+console.log(JSON.stringify(result, null, 2));
+if (!result.ok) process.exit(1);

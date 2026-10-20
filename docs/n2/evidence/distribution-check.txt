@@ -1,0 +1,14 @@
+
+> nusamind-zenith@1.4.1 distribution:check
+> node scripts/validate-web-cli-distribution.mjs
+
+{
+  "ok": true,
+  "release": "N1.0",
+  "distribution": [
+    "WEB_LOCAL",
+    "CLI"
+  ],
+  "missing": []
+}
+

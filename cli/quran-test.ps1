@@ -11,6 +11,7 @@ function Post-Utf8Json {
   param([string]$Url, [hashtable]$Payload)
   $jsonBody = $Payload | ConvertTo-Json -Depth 12
   $client = [System.Net.Http.HttpClient]::new()
+  if ($env:ADMIN_TOKEN) { $client.DefaultRequestHeaders.Authorization = [System.Net.Http.Headers.AuthenticationHeaderValue]::new('Bearer', $env:ADMIN_TOKEN) }
   try {
     $content = [System.Net.Http.StringContent]::new($jsonBody, [System.Text.Encoding]::UTF8, "application/json")
     $response = $client.PostAsync($Url, $content).GetAwaiter().GetResult()

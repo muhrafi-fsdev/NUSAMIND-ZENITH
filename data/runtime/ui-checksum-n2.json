@@ -1,0 +1,7 @@
+{
+  "reason": "Reviewed N2 delta: Zenith labels, Next Link and authenticated dashboard status. ChatShell layout retained.",
+  "files": {
+    "app/page.tsx": "bd2068fc638f353db52552a2bb7b348f27dafbf7dc223f6b90664d0105beb7dc",
+    "app/dashboard/page.tsx": "0a5b284892377531af4c02c16d82f30d8d3d1e7335d2272e74195651357a8ba1"
+  }
+}

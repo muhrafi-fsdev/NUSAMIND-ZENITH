@@ -1,0 +1,12 @@
+
+> nusamind-zenith@1.4.1 check:lock
+> node scripts/check-dependencies.mjs
+
+{
+  "ok": true,
+  "lockfileVersion": 3,
+  "nameMatch": true,
+  "versionMatch": true,
+  "checksum": "bd35a5e1d92df2dc4da0dd1847a1b9b10cb26bdd034e081cf164d53b7ee7cd5c"
+}
+

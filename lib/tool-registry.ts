@@ -5,6 +5,8 @@ import { previewDesktopCommand, executeDesktopCommand } from './desktop-agent';
 import { securityStatus } from './security-center';
 import { inspectSqliteArtifact } from './sqlite-inspector';
 import { scanRepository } from './repo-threat';
+import { approvals, approvalHash, type ApprovalScope } from './action-approval';
+import { assertAllowedPath } from './path-policy';
 
 const registry = {
   'artifact.inspect': {
@@ -47,10 +49,17 @@ const registry = {
 export type ToolId = keyof typeof registry;
 export const toolIds = Object.keys(registry) as ToolId[];
 export function toolDefinition(id: ToolId) { return registry[id]; }
-export async function executeTypedTool(id: ToolId, args: unknown) {
+export async function executeTypedTool(id: ToolId, args: unknown, authorization?: { token: string; scope: ApprovalScope }) {
   const entry = registry[id];
+  if (!entry) throw new Error('UNKNOWN_TOOL');
   const parsed = entry.schema.safeParse(args);
   if (!parsed.success) throw new Error(`Argumen tool ${id} tidak valid: ${parsed.error.issues.map((issue) => issue.message).join('; ')}`);
+  if (id === 'desktop.execute') throw new Error('EXECUTION_REQUIRES_OS_SANDBOX');
+  if (entry.risk !== 'low') {
+    if (!authorization || authorization.scope.toolId !== id || authorization.scope.argsHash !== approvalHash(parsed.data)) throw new Error('BOUND_APPROVAL_REQUIRED');
+    approvals().consume(authorization.token, authorization.scope);
+  }
+  if (id === 'repo.scan') assertAllowedPath((parsed.data as { path: string }).path, { roots: [process.cwd()], allowMissing: false });
   const result = await (entry.execute as (value: never) => unknown)(parsed.data as never);
   return {
     toolId: id,

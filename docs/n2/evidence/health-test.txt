@@ -1,0 +1,14 @@
+
+> nusamind-zenith@1.4.1 health:test
+> node scripts/health-test.mjs
+
+{
+  "ok": false,
+  "missing": [
+    "nyeri dada",
+    "sesak berat",
+    "overdosis",
+    "diagnosisAllowed:false"
+  ]
+}
+

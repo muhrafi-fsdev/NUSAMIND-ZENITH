@@ -39,14 +39,14 @@ export function resolveThinking(modelName: string, intent: IntentResult, level: 
   if (!/^qwen3(?::|-)/i.test(modelName)) return false;
   if (appConfig.ollamaThinkingMode === 'off') return false;
   if (appConfig.ollamaThinkingMode === 'on') return true;
-  if (RELEASE.edition === 'swift') return false;
+  if (String(RELEASE.edition) === 'swift') return false;
   if (intent.mode === 'companion' || level === 'instant' || level === 'ordinary') return false;
   if (RELEASE.edition === 'zenith') return level === 'high' || level === 'thinking';
   return level === 'medium' || level === 'high' || level === 'thinking';
 }
 
 function desiredModel(intent: IntentResult, level: IntelligenceLevel | string) {
-  const heavyCoder = RELEASE.edition === 'apex' && appConfig.heavyCoderEnabled && intent.mode === 'coding' && level === 'thinking';
+  const heavyCoder = String(RELEASE.edition) === 'apex' && appConfig.heavyCoderEnabled && intent.mode === 'coding' && level === 'thinking';
   if (heavyCoder) return { name: appConfig.ollamaHeavyCoderModel, route: 'heavy-coding' as const };
   if (intent.mode === 'coding') return { name: appConfig.ollamaCoderModel, route: 'coding' as const };
   return { name: appConfig.ollamaModel, route: 'general' as const };

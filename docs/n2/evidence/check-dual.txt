@@ -1,0 +1,13 @@
+
+> nusamind-zenith@1.4.1 check:dual
+> npm run check && npm run check:legacy
+
+
+> nusamind-zenith@1.4.1 check
+> tsc --noEmit
+
+
+> nusamind-zenith@1.4.1 check:legacy
+> tsc6 --noEmit
+
+

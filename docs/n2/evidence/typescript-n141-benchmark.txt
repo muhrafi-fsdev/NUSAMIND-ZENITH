@@ -1,0 +1,14 @@
+
+> nusamind-zenith@1.4.1 typescript:n141:benchmark
+> node scripts/eval-typescript-n1.4.1.mjs
+
+PASS release version
+PASS native alias
+PASS compatibility alias
+PASS native check
+PASS legacy check
+PASS dual check
+PASS migration documentation
+PASS reproducible lock present
+RESULT 8/8
+

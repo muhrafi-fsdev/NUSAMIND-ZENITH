@@ -4,10 +4,15 @@
   "private": true,
   "description": "NusaMind Zenith N1.4 Adaptive Qwen3 Model Runtime.",
   "scripts": {
-    "dev": "next dev -p 3000",
+    "dev": "next dev --hostname 127.0.0.1 -p 3000",
     "build": "next build",
-    "start": "next start -p 3000",
-    "lint": "next lint",
+    "start": "next start --hostname 127.0.0.1 -p 3000",
+    "lint": "eslint .",
+    "test:n2": "node --import tsx --test tests/n2/*.test.ts",
+    "test:n2:http": "node --import tsx --test tests/n2/http.integration.ts",
+    "test:n2:ui": "playwright test",
+    "verify:n2": "node scripts/verify-n2.mjs",
+    "gate:n2": "npm run check:lock && npm run lint && npm run check:dual && npm run test:n2 && npm run cli:menu:test && npm run build",
     "check": "tsc --noEmit",
     "ai:status": "node scripts/ai-status.mjs",
     "ai:ollama": "node scripts/ollama-status.mjs",
@@ -86,22 +91,26 @@
   "dependencies": {
     "@ai-sdk/openai": "4.0.11",
     "ai": "7.0.22",
-    "next": "16.2.10",
+    "mammoth": "1.12.0",
+    "mysql2": "3.24.6",
+    "next": "16.4.2",
     "ollama-ai-provider-v2": "4.0.1",
+    "pdf-parse": "2.4.5",
     "react": "19.2.7",
     "react-dom": "19.2.7",
-    "zod": "4.4.3",
-    "pdf-parse": "2.4.5",
-    "mammoth": "1.12.0",
-    "xlsx": "0.18.5",
-    "mysql2": "3.22.6"
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
+    "zod": "4.4.3"
   },
   "devDependencies": {
+    "@playwright/test": "1.64.1",
     "@types/node": "26.1.1",
     "@types/react": "19.2.17",
     "@types/react-dom": "19.2.3",
-    "typescript": "npm:@typescript/typescript6@^6.0.2",
-    "@typescript/native": "npm:typescript@^7.0.2"
+    "@typescript/native": "npm:typescript@^7.0.2",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.2",
+    "tsx": "4.23.15",
+    "typescript": "npm:@typescript/typescript6@^6.0.2"
   },
   "engines": {
     "node": ">=22.0.0"

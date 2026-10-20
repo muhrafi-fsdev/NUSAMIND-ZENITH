@@ -1,0 +1,147 @@
+{
+  "at": "2026-10-20T12:55:51.060Z",
+  "node": "v22.21.1",
+  "platform": "win32",
+  "releaseStatus": "BLOCKED_NOT_N2_GA",
+  "results": [
+    {
+      "command": "npm run check:lock",
+      "status": "PASSED",
+      "exitCode": 0,
+      "elapsedMs": 3722,
+      "outputFile": "check-lock.txt",
+      "sha256": "e07a8c151f40e20ff6f09f70c124bf042642325e2355665b12aaa43fcaf9250c"
+    },
+    {
+      "command": "npm run lint",
+      "status": "PASSED",
+      "exitCode": 0,
+      "elapsedMs": 10733,
+      "outputFile": "lint.txt",
+      "sha256": "5512b6dca00819684a7f2e8c6b13bef9636ccb82240cb9e34ca6719ab3946f46"
+    },
+    {
+      "command": "npm run check:dual",
+      "status": "PASSED",
+      "exitCode": 0,
+      "elapsedMs": 14874,
+      "outputFile": "check-dual.txt",
+      "sha256": "9a40c164776d43631efa4d62ce40928bb97899219e2febb6d7ccbd897ddd32df"
+    },
+    {
+      "command": "npm run test:n2",
+      "status": "FAILED",
+      "exitCode": 1,
+      "elapsedMs": 26899,
+      "outputFile": "test-n2.txt",
+      "sha256": "c473ae4f5314577f6a10906a942490ff88f182012f956ddbfce5f5271b5baf67",
+      "refreshedAt": "2026-10-20T13:00:56.380Z"
+    },
+    {
+      "command": "npm run cli:menu:test",
+      "status": "PASSED",
+      "exitCode": 0,
+      "elapsedMs": 3710,
+      "outputFile": "cli-menu-test.txt",
+      "sha256": "6f2451dda54c0e4b54f8c3e3f1c2cde235e7b03cf66f2ed070beef5c4d182ff3",
+      "refreshedAt": "2026-10-20T13:01:00.092Z"
+    },
+    {
+      "command": "npm run quran:exact:test",
+      "status": "PASSED",
+      "exitCode": 0,
+      "elapsedMs": 4131,
+      "outputFile": "quran-exact-test.txt",
+      "sha256": "4234d99b709af3746b0adea658bb4b94a9831e09bade888d5eca5c2d7888065c"
+    },
+    {
+      "command": "npm run quran:db:test",
+      "status": "PASSED",
+      "exitCode": 0,
+      "elapsedMs": 3955,
+      "outputFile": "quran-db-test.txt",
+      "sha256": "6b80f07c7e24029d27cd5ff58fa80652b316b023238907f4f0e9066dd81d47f5"
+    },
+    {
+      "command": "npm run health:test",
+      "status": "FAILED",
+      "exitCode": 1,
+      "elapsedMs": 3514,
+      "outputFile": "health-test.txt",
+      "sha256": "d5c5e41111964547903cbee8807f7e0ded6a69a0846cf6c6a7c1517e9af1c65e"
+    },
+    {
+      "command": "npm run ui:check",
+      "status": "PASSED",
+      "exitCode": 0,
+      "elapsedMs": 3476,
+      "outputFile": "ui-check.txt",
+      "sha256": "6204472264442bebb0d02ee8546d4db86a89ceec0940dbeb2464e6276dadf93f"
+    },
+    {
+      "command": "npm run security:smoke",
+      "status": "PASSED",
+      "exitCode": 0,
+      "elapsedMs": 3798,
+      "outputFile": "security-smoke.txt",
+      "sha256": "e14a1f635d55180b44717a12db82eb1ca9e0e4d6596d129b01bb31d9d44dcd1c"
+    },
+    {
+      "command": "npm run distribution:check",
+      "status": "PASSED",
+      "exitCode": 0,
+      "elapsedMs": 3570,
+      "outputFile": "distribution-check.txt",
+      "sha256": "40424861e1cf343966c49d262a04f8e3eff2b35bfeac8d1e03e918c9c776a6d1"
+    },
+    {
+      "command": "npm run typescript:n141:benchmark",
+      "status": "PASSED",
+      "exitCode": 0,
+      "elapsedMs": 3862,
+      "outputFile": "typescript-n141-benchmark.txt",
+      "sha256": "67ce50e52e657cc4a2cf2ee8bd8fbd982b77b8d915ffe814f05d74703b5e1446"
+    },
+    {
+      "command": "npm run build",
+      "status": "PASSED",
+      "exitCode": 0,
+      "elapsedMs": 19399,
+      "outputFile": "build.txt",
+      "sha256": "f9908a47c26b61004beea6e500f47d650ed768d81ff226230472a09a759432fc"
+    },
+    {
+      "command": "npm run test:n2:http",
+      "status": "PASSED",
+      "exitCode": 0,
+      "elapsedMs": 11658,
+      "outputFile": "test-n2-http.txt",
+      "sha256": "367d847df43baf8bfd526972b3d19b0d5be79083a5588ecc58b62c15ce8ee7b3"
+    },
+    {
+      "command": "npm run test:n2:ui",
+      "status": "PASSED",
+      "exitCode": 0,
+      "elapsedMs": 14468,
+      "outputFile": "test-n2-ui.txt",
+      "sha256": "41f6a7b95cfa7972b69f56322c1489bad600eb5ca328f7f28627b20ac3574107"
+    },
+    {
+      "command": "npm run benchmark:n1",
+      "status": "NOT_RUN",
+      "exitCode": 2,
+      "elapsedMs": 7459,
+      "outputFile": "benchmark-n1.txt",
+      "sha256": "c0a33066434b0ca44b4782009c6001fbd11ca9d3a5c653e3a3fb613ccb6bab92"
+    },
+    {
+      "command": "npm audit --omit=dev --audit-level=high --json",
+      "status": "PASSED",
+      "exitCode": 0,
+      "elapsedMs": 4142,
+      "outputFile": "production-audit.txt",
+      "sha256": "027125554fd51d47306a3c64891ff17efad435121a43d6b2b8fb21e3ff814207"
+    }
+  ],
+  "refreshedAt": "2026-10-20T13:01:00.092Z"
+}

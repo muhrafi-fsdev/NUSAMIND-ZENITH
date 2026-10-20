@@ -1,15 +1,29 @@
-import { autonomyProfile, approvalPhrase, callMcpTool, deleteCredential, executeDeployment, executeDestructive, executeGitPush, externalExactReplace, inspectMcp, listCredentials, listDeployments, listMcp, listWorkspaces, planDeployment, planDestructive, planGitPush, registerDeployment, registerMcp, registerWorkspace, runExtendedLoop, storeCredential } from '@/packages/autonomy-engine';
-export const runtime='nodejs';export const dynamic='force-dynamic';
-function authorized(req:Request){const token=process.env.AUTONOMY_AGENT_TOKEN;const host=req.headers.get('host')||'';return token?req.headers.get('x-autonomy-token')===token:['localhost','127.0.0.1','[::1]'].some(x=>host.startsWith(x));}
-function workspace(body:Record<string,unknown>){return String(body.workspace||process.cwd());}
-export async function GET(){return Response.json({ok:true,release:'N1.2',name:'Advanced Autonomy & Deployment',profile:autonomyProfile(),security:{rawShell:false,secretsReturned:false,forceMode:'force-with-lease',unverifiedMcp:'sandbox-required'}});}
-export async function POST(req:Request){try{if(!authorized(req))return Response.json({ok:false,error:'LOCALHOST_OR_TOKEN_REQUIRED'},{status:403});const b=await req.json() as Record<string,any>,a=String(b.action||'status'),w=workspace(b);
-if(a==='approval-phrase')return Response.json({ok:true,phrase:approvalPhrase(b.context||{})});
-if(a==='git-plan')return Response.json({ok:true,plan:await planGitPush(w,b)});if(a==='git-push')return Response.json({ok:true,result:await executeGitPush(w,b)});
-if(a==='destructive-plan')return Response.json({ok:true,plan:await planDestructive(w,b.request)});if(a==='destructive-run')return Response.json({ok:true,result:await executeDestructive(w,b.request)});
-if(a==='credential-list')return Response.json({ok:true,credentials:await listCredentials(w)});if(a==='credential-set')return Response.json({ok:true,credential:await storeCredential(w,String(b.alias),String(b.value),Array.isArray(b.scopes)?b.scopes.map(String):[])});if(a==='credential-delete')return Response.json({ok:true,result:await deleteCredential(w,String(b.alias))});
-if(a==='workspace-list')return Response.json({ok:true,workspaces:await listWorkspaces(w)});if(a==='workspace-register')return Response.json({ok:true,item:await registerWorkspace(w,String(b.target),b.access==='read-write'?'read-write':'read-only')});if(a==='workspace-edit')return Response.json({ok:true,result:await externalExactReplace(w,String(b.file),String(b.find),String(b.replacement),b.approved===true)});
-if(a==='mcp-list')return Response.json({ok:true,servers:await listMcp(w)});if(a==='mcp-register')return Response.json({ok:true,server:await registerMcp(w,b.server)});if(a==='mcp-inspect')return Response.json({ok:true,inspection:await inspectMcp(w,String(b.id))});if(a==='mcp-call')return Response.json({ok:true,result:await callMcpTool(w,String(b.id),String(b.tool),b.arguments,b.approved===true)});
-if(a==='loop-run'){const steps=Array.isArray(b.steps)?b.steps:[];const result=await runExtendedLoop(w,steps,async(step,iteration)=>{if(step.action==='check-file'){const file=String((step.input as any)?.file||'');const exists=await import('node:fs').then(m=>m.existsSync(file));return{ok:exists,progress:iteration,fingerprint:`check-file:${file}:${exists}`};}if(step.action==='wait'){const ms=Math.min(5000,Math.max(0,Number((step.input as any)?.ms||0)));await new Promise(r=>setTimeout(r,ms));return{ok:true,progress:iteration,fingerprint:`wait:${ms}:${iteration}`};}return{ok:true,progress:iteration,output:step.input,fingerprint:`${step.action}:${iteration}`};},b.options);return Response.json({ok:true,result});}
-if(a==='deployment-list')return Response.json({ok:true,targets:await listDeployments(w)});if(a==='deployment-register')return Response.json({ok:true,target:await registerDeployment(w,b.target)});if(a==='deployment-plan')return Response.json({ok:true,plan:await planDeployment(w,String(b.id))});if(a==='deployment-run')return Response.json({ok:true,result:await executeDeployment(w,String(b.id),b)});
-return Response.json({ok:true,release:'N1.2',profile:autonomyProfile()});}catch(e){return Response.json({ok:false,error:e instanceof Error?e.message:String(e)},{status:422});}}
+import { autonomyProfile, approvalPhrase, listCredentials, listDeployments, listMcp, listWorkspaces, planDeployment, planDestructive, planGitPush } from '@/packages/autonomy-engine';
+import { authenticateRequest, authDenied } from '@/lib/api-auth';
+import { assertAllowedPath } from '@/lib/path-policy';
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+const blocked = new Set(['git-push', 'destructive-run', 'credential-set', 'credential-delete', 'workspace-register', 'workspace-edit', 'mcp-register', 'mcp-inspect', 'mcp-call', 'loop-run', 'deployment-register', 'deployment-run']);
+export async function GET() {
+  return Response.json({ ok: true, release: 'N1.2', profile: autonomyProfile(), security: { rawShell: false, secretsReturned: false, unverifiedMcp: 'DISABLED', legacyExecution: 'BLOCKED' } });
+}
+export async function POST(req: Request) {
+  if (!authenticateRequest(req, 'autonomy')) return authDenied();
+  try {
+    const b = await req.json();
+    const action = String(b.action || 'status');
+    const home = process.cwd();
+    if (b.workspace && assertAllowedPath(String(b.workspace), { roots: [home], allowMissing: false }) !== assertAllowedPath(home)) throw new Error('OWNER_WORKSPACE_REQUIRED');
+    if (blocked.has(action)) return Response.json({ ok: false, error: 'LEGACY_EXECUTION_BLOCKED', action, hint: 'Jalur ini menunggu sandbox, approval terikat payload, dan verifikasi server.' }, { status: 423 });
+    if (action === 'approval-phrase') return Response.json({ ok: true, phrase: approvalPhrase(b.context || {}), executable: false });
+    if (action === 'git-plan') return Response.json({ ok: true, plan: await planGitPush(home, b) });
+    if (action === 'destructive-plan') return Response.json({ ok: true, plan: await planDestructive(home, b.request) });
+    if (action === 'credential-list') return Response.json({ ok: true, credentials: await listCredentials(home) });
+    if (action === 'workspace-list') return Response.json({ ok: true, workspaces: await listWorkspaces(home) });
+    if (action === 'mcp-list') return Response.json({ ok: true, servers: (await listMcp(home)).map(s => ({ id: s.id, name: s.name, trust: s.trust, enabled: false })) });
+    if (action === 'deployment-list') return Response.json({ ok: true, targets: await listDeployments(home) });
+    if (action === 'deployment-plan') return Response.json({ ok: true, plan: await planDeployment(home, String(b.id)) });
+    if (action === 'status') return Response.json({ ok: true, release: 'N1.2', profile: autonomyProfile() });
+    return Response.json({ ok: false, error: 'UNKNOWN_ACTION' }, { status: 400 });
+  } catch (e) { return Response.json({ ok: false, error: e instanceof Error ? e.message : 'INVALID_REQUEST' }, { status: 422 }); }
+}

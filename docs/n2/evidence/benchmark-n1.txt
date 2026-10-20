@@ -1,0 +1,573 @@
+
+> nusamind-zenith@1.4.1 benchmark:n1
+> node scripts/eval-n1.mjs
+
+{
+  "ok": true,
+  "release": "N1.4",
+  "edition": "zenith",
+  "benchmarkType": "CONTRACT_AND_POLICY",
+  "total": 79,
+  "pass": 0,
+  "failed": 0,
+  "notRun": 79,
+  "status": "NOT_RUN",
+  "liveModelTests": "NOT_RUN",
+  "liveBrowserTests": "NOT_RUN",
+  "results": [
+    {
+      "testId": "N1-MIG-T001",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T002",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T003",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T004",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T005",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T007",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T008",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T009",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T010",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T011",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "High",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T012",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T013",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T014",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T015",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T016",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T017",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T020",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T021",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T022",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T023",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T024",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T025",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T026",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T027",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T028",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T029",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "High",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T030",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T031",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T032",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T033",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T035",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T036",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T038",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T039",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T040",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T041",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T042",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-MIG-T043",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T001",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T002",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T003",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T004",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T005",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T006",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T007",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T008",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T009",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T010",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T011",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T012",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T013",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T015",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T016",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "High",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T018",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T019",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T020",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T021",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T022",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T023",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T024",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "High",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T025",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T026",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T027",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T028",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T030",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "High",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T031",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T032",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T033",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T034",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T035",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T036",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T037",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T038",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T039",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T040",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T041",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T042",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T043",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    },
+    {
+      "testId": "N1-T044",
+      "status": "NOT_RUN",
+      "scope": "CONTRACT_AND_POLICY",
+      "criticality": "Critical",
+      "reason": "No execution evidence attached to this benchmark case."
+    }
+  ]
+}
+

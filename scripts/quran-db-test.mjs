@@ -1,8 +1,8 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 const root = process.cwd();
-const quran = JSON.parse(await fs.readFile(path.join(root, 'data', 'quran', 'ayah-idx.json'), 'utf-8'));
-const topics = JSON.parse(await fs.readFile(path.join(root, 'data', 'quran', 'topic-map.json'), 'utf-8'));
+const quran = JSON.parse(await fs.readFile(path.join(root, 'data', 'quran', 'ayah-index.json'), 'utf-8'));
+const topics = JSON.parse(await fs.readFile(path.join(root, 'data', 'quran', 'topic-index.json'), 'utf-8'));
 const sabar = topics.find((topic) => topic.id === 'sabar');
 const refs = new Set();
 for (const ref of sabar.refs) {

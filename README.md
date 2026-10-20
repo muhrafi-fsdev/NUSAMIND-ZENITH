@@ -1,3 +1,5 @@
+> **N2 foundation checkpoint, status BLOCKED:** baca [docs/n2/README.md](docs/n2/README.md) dan [panduan migrasi](docs/n2/MIGRATION.md) sebelum menjalankan. Auth sekarang wajib; executor lama yang belum aman diblokir. Ini belum release N2.0. `package-lock.json` wajib dipertahankan untuk `npm ci`.
+
 <div align="center">
   <img src="public/nusamind-logo.png" alt="NusaMind AI" width="720" />
 
@@ -77,7 +79,7 @@ Zenith mengaktifkan autonomy terkontrol untuk development dan staging:
 - Pemeriksaan dua jalur tersedia melalui `npm run check:dual`.
 - Script `typescript-setup.bat` menyiapkan dependency dan benchmark migrasi.
 - Patch ini tidak mengubah model Qwen, batas output token, UI, ML Service, maupun kebijakan autonomy.
-- `package-lock.json` lama dihapus karena masih mengunci TypeScript 5; jalankan `npm install` untuk membuat lockfile N1.4.1 yang sesuai.
+- Checkpoint fondasi N2 memulihkan `package-lock.json` yang sesuai; gunakan `npm ci --ignore-scripts`, jangan hapus lockfile mengikuti instruksi patch lama.
 
 ## Adaptive Qwen3 Model Runtime N1.4
 

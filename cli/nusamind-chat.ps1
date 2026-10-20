@@ -31,7 +31,7 @@ if (Test-Path -LiteralPath $DotEnvPath) {
 }
 
 $CliVersion = "R13.45"
-$ProfileName = "NusaMind Apex"
+$ProfileName = "NusaMind Zenith"
 $ChatMode = "general_chat"
 $InternalCsEnabled = ($env:NUSAMIND_INTERNAL_CS -eq "true")
 $script:AnswerFormat = "auto"
@@ -65,6 +65,7 @@ function Invoke-JsonRequest {
   $client = New-Object System.Net.WebClient
   $client.Encoding = [System.Text.Encoding]::UTF8
   $client.Headers.Add("Accept", "application/json")
+  if ($env:ADMIN_TOKEN) { $client.Headers.Add('Authorization', "Bearer $env:ADMIN_TOKEN") }
 
   try {
     if ($Body -ne $null) {
@@ -992,6 +993,7 @@ function Invoke-MultipartUpload {
     Write-Host '[1/5] Scanning file dan validasi ukuran...' -ForegroundColor DarkCyan
     Add-Type -AssemblyName System.Net.Http -ErrorAction SilentlyContinue
     $client=[System.Net.Http.HttpClient]::new();$content=[System.Net.Http.MultipartFormDataContent]::new()
+    if($env:ADMIN_TOKEN){$client.DefaultRequestHeaders.Authorization=[System.Net.Http.Headers.AuthenticationHeaderValue]::new('Bearer',$env:ADMIN_TOKEN)}
     $stream=[System.IO.File]::OpenRead($resolved);$fileContent=[System.Net.Http.StreamContent]::new($stream);$fileContent.Headers.ContentType=[System.Net.Http.Headers.MediaTypeHeaderValue]::Parse('application/octet-stream')
     $content.Add($fileContent,'file',$info.Name);$content.Add([System.Net.Http.StringContent]::new($Question),'question');$content.Add([System.Net.Http.StringContent]::new($script:SessionId),'sessionId');$content.Add([System.Net.Http.StringContent]::new($script:ChatMode),'mode');$content.Add([System.Net.Http.StringContent]::new($PrivateMode.ToString().ToLower()),'privateMode')
     Write-Host '[2/5] Uploading ke unified parser API...' -ForegroundColor DarkCyan

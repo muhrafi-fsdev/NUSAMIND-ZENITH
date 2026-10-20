@@ -1,0 +1,548 @@
+
+> nusamind-zenith@1.4.1 clean-install:run
+> node scripts/validate-clean-install.mjs --execute
+
+npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 420 packages in 21s
+
+> nusamind-zenith@1.4.1 gate:n2
+> npm run check:lock && npm run lint && npm run check:dual && npm run test:n2 && npm run cli:menu:test && npm run build
+
+
+> nusamind-zenith@1.4.1 check:lock
+> node scripts/check-dependencies.mjs
+
+{
+  "ok": true,
+  "lockfileVersion": 3,
+  "nameMatch": true,
+  "versionMatch": true,
+  "checksum": "bd35a5e1d92df2dc4da0dd1847a1b9b10cb26bdd034e081cf164d53b7ee7cd5c"
+}
+
+> nusamind-zenith@1.4.1 lint
+> eslint .
+
+
+C:\Users\MUHAMM~1\AppData\Local\Temp\nusamind-n2-cold-kZkcxx\components\ChatShell.tsx
+  144:5    warning  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\MUHAMM~1\AppData\Local\Temp\nusamind-n2-cold-kZkcxx\components\ChatShell.tsx:144:5
+  142 |   useEffect(() => {
+  143 |     const sid = getStoredSessionId();
+> 144 |     setSessionId(sid);
+      |     ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  145 |     const sessions = readSavedSessions();
+  146 |     setSavedSessions(sessions);
+  147 |     const restored = sessions.find((s) => s.sessionId === sid);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     react-hooks/set-state-in-effect
+  170:5    warning  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\MUHAMM~1\AppData\Local\Temp\nusamind-n2-cold-kZkcxx\components\ChatShell.tsx:170:5
+  168 |     const next = [item, ...sessions.filter((s) => s.sessionId !== sessionId)];
+  169 |     writeSavedSessions(next);
+> 170 |     setSavedSessions([...next].sort((a, b) => Number(b.pinned) - Number(a.pinned) || String(b.updatedAt).localeCompare(String(a.updatedAt))).slice(0, 40));
+      |     ^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  171 |   }, [messages, mode, intelligenceLevel, sessionId, pinnedCurrent, editionLabel]);
+  172 |
+  173 |   const hasConversation = messages.some((item) => item.role === 'user');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       react-hooks/set-state-in-effect
+  442:352  warning  Error: Cannot create components during render
+
+Components created during render will reset their state each time they are created. Declare components outside of render.
+
+C:\Users\MUHAMM~1\AppData\Local\Temp\nusamind-n2-cold-kZkcxx\components\ChatShell.tsx:442:352
+  440 |           )}
+  441 |
+> 442 |           {activePanel === 'history' && <section className="panel-view"><div className="panel-heading"><div><span className="eyebrow">Session Lokal</span><h1>Riwayat Percakapan</h1><p>Pilih session untuk melanjutkan percakapan sebelumnya.</p></div><button className="primary-button" onClick={resetSession}><Icon name="plus" />Chat Baru</button></div><SessionList items={savedSessions} emptyText="Belum ada riwayat percakapan." /></section>}
+      |                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^ This component is created during render
+  443 |
+  444 |           {activePanel === 'pinned' && <section className="panel-view"><div className="panel-heading"><div><span className="eyebrow">Favorit</span><h1>Sesi Dipin</h1><p>Session penting yang kamu tandai akan muncul di sini.</p></div></div><SessionList items={pinnedSessions} emptyText="Belum ada session yang dipin." /></section>}
+  445 |
+
+C:\Users\MUHAMM~1\AppData\Local\Temp\nusamind-n2-cold-kZkcxx\components\ChatShell.tsx:320:3
+  318 |   ];
+  319 |
+> 320 |   function SessionList({ items, emptyText }: { items: SavedSessionSummary[]; emptyText: string }) {
+      |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 321 |     if (!items.length) return <div className="empty-list"><Icon name="history" size={24} /><p>{emptyText}</p></div>;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 322 |     return (
+      …
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 334 |     );
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 335 |   }
+      | ^^^^ The component is created during render here
+  336 |
+  337 |   return (
+  338 |     <div className={`nm-app edition-${edition} ${sidebarCollapsed ? 'sidebar-is-collapsed' : ''}`}>  react-hooks/static-components
+  444:240  warning  Error: Cannot create components during render
+
+Components created during render will reset their state each time they are created. Declare components outside of render.
+
+C:\Users\MUHAMM~1\AppData\Local\Temp\nusamind-n2-cold-kZkcxx\components\ChatShell.tsx:444:240
+  442 |           {activePanel === 'history' && <section className="panel-view"><div className="panel-heading"><div><span className="eyebrow">Session Lokal</span><h1>Riwayat Percakapan</h1><p>Pilih session untuk melanjutkan percakapan sebelumnya.</p></div><button className="primary-button" onClick={resetSession}><Icon name="plus" />Chat Baru</button></div><SessionList items={savedSessions} emptyText="Belum ada riwayat percakapan." /></section>}
+  443 |
+> 444 |           {activePanel === 'pinned' && <section className="panel-view"><div className="panel-heading"><div><span className="eyebrow">Favorit</span><h1>Sesi Dipin</h1><p>Session penting yang kamu tandai akan muncul di sini.</p></div></div><SessionList items={pinnedSessions} emptyText="Belum ada session yang dipin." /></section>}
+      |                                                                                                                                                                                                                                                ^^^^^^^^^^^ This component is created during render
+  445 |
+  446 |           {activePanel === 'upload' && (
+  447 |             <section className="panel-view narrow-panel">
+
+C:\Users\MUHAMM~1\AppData\Local\Temp\nusamind-n2-cold-kZkcxx\components\ChatShell.tsx:320:3
+  318 |   ];
+  319 |
+> 320 |   function SessionList({ items, emptyText }: { items: SavedSessionSummary[]; emptyText: string }) {
+      |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 321 |     if (!items.length) return <div className="empty-list"><Icon name="history" size={24} /><p>{emptyText}</p></div>;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 322 |     return (
+      …
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 334 |     );
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 335 |   }
+      | ^^^^ The component is created during render here
+  336 |
+  337 |   return (
+  338 |     <div className={`nm-app edition-${edition} ${sidebarCollapsed ? 'sidebar-is-collapsed' : ''}`}>                            react-hooks/static-components
+
+✖ 4 problems (0 errors, 4 warnings)
+
+
+> nusamind-zenith@1.4.1 check:dual
+> npm run check && npm run check:legacy
+
+
+> nusamind-zenith@1.4.1 check
+> tsc --noEmit
+
+
+> nusamind-zenith@1.4.1 check:legacy
+> tsc6 --noEmit
+
+
+> nusamind-zenith@1.4.1 test:n2
+> node --import tsx --test tests/n2/*.test.ts
+
+TAP version 13
+# Subtest: Host localhost does not authorize developer, autonomy or coding plan/job
+ok 1 - Host localhost does not authorize developer, autonomy or coding plan/job
+  ---
+  duration_ms: 13.8889
+  type: 'test'
+  ...
+# Subtest: quarantined MCP inspection cannot execute even a supplied wrapper
+ok 2 - quarantined MCP inspection cannot execute even a supplied wrapper
+  ---
+  duration_ms: 19.6555
+  type: 'test'
+  ...
+# Subtest: trusted workspace cannot escape through a symlink or junction
+ok 3 - trusted workspace cannot escape through a symlink or junction
+  ---
+  duration_ms: 8.8616
+  type: 'test'
+  ...
+# Subtest: benchmarks without execution evidence never pass
+ok 4 - benchmarks without execution evidence never pass
+  ---
+  duration_ms: 0.2334
+  type: 'test'
+  ...
+# Subtest: browser preflight rejects private, mapped and IP literal destinations
+ok 5 - browser preflight rejects private, mapped and IP literal destinations
+  ---
+  duration_ms: 3.613
+  type: 'test'
+  ...
+# Subtest: shipped canonical Quran files support exact surah and topic lookup
+ok 6 - shipped canonical Quran files support exact surah and topic lookup
+  ---
+  duration_ms: 81.9669
+  type: 'test'
+  ...
+# (node:17272) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: strong server credentials required; placeholder and wrong credentials denied
+ok 7 - strong server credentials required; placeholder and wrong credentials denied
+  ---
+  duration_ms: 14.1536
+  type: 'test'
+  ...
+# Subtest: CSRF origin is bound to server configuration, never Host or forwarded headers
+ok 8 - CSRF origin is bound to server configuration, never Host or forwarded headers
+  ---
+  duration_ms: 1.1447
+  type: 'test'
+  ...
+# Subtest: rate identity is stable across arbitrary sessionIds and forged IP headers
+ok 9 - rate identity is stable across arbitrary sessionIds and forged IP headers
+  ---
+  duration_ms: 0.3031
+  type: 'test'
+  ...
+# Subtest: role token is restricted to its endpoint
+ok 10 - role token is restricted to its endpoint
+  ---
+  duration_ms: 0.3
+  type: 'test'
+  ...
+# Subtest: durable approval expires, cannot replay, and binds every scope field
+ok 11 - durable approval expires, cannot replay, and binds every scope field
+  ---
+  duration_ms: 47.8952
+  type: 'test'
+  ...
+# Subtest: typed dispatcher denies medium and high calls without bound approval
+ok 12 - typed dispatcher denies medium and high calls without bound approval
+  ---
+  duration_ms: 1.7376
+  type: 'test'
+  ...
+# Subtest: legacy caller booleans cannot authorize an unsafe executor
+ok 13 - legacy caller booleans cannot authorize an unsafe executor
+  ---
+  duration_ms: 3.0297
+  type: 'test'
+  ...
+# Subtest: absolute external and parent traversal paths cannot become workspace roots
+ok 14 - absolute external and parent traversal paths cannot become workspace roots
+  ---
+  duration_ms: 2.2366
+  type: 'test'
+  ...
+# Subtest: untrusted workspace and prompt text cannot extend owner permissions
+ok 15 - untrusted workspace and prompt text cannot extend owner permissions
+  ---
+  duration_ms: 1.2232
+  type: 'test'
+  ...
+# Subtest: minimal worker environment omits application and provider secrets
+ok 16 - minimal worker environment omits application and provider secrets
+  ---
+  duration_ms: 0.4405
+  type: 'test'
+  ...
+# Subtest: timeout ends a process before its delayed side effect
+ok 17 - timeout ends a process before its delayed side effect
+  ---
+  duration_ms: 3018.9029
+  type: 'test'
+  ...
+# Subtest: process-tree stop kills a live parent and grandchild after readiness
+ok 18 - process-tree stop kills a live parent and grandchild after readiness
+  ---
+  duration_ms: 4064.0674
+  type: 'test'
+  ...
+# Subtest: process cancellation aborts and output capture remains bounded
+ok 19 - process cancellation aborts and output capture remains bounded
+  ---
+  duration_ms: 4211.2228
+  type: 'test'
+  ...
+# Subtest: tool timeout aborts cooperative operation and exact verifier rejects prefix matches
+ok 20 - tool timeout aborts cooperative operation and exact verifier rejects prefix matches
+  ---
+  duration_ms: 22.5328
+  type: 'test'
+  ...
+# Subtest: Windows reports exited-parent cleanup failure instead of claiming orphan isolation
+ok 21 - Windows reports exited-parent cleanup failure instead of claiming orphan isolation
+  ---
+  duration_ms: 4037.0463
+  type: 'test'
+  ...
+# (node:35940) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: patched SheetJS still parses an actual XLSX workbook through the upload analyzer
+ok 22 - patched SheetJS still parses an actual XLSX workbook through the upload analyzer
+  ---
+  duration_ms: 46.1337
+  type: 'test'
+  ...
+# Subtest: secrets found after spreadsheet decompression are quarantined and masked
+ok 23 - secrets found after spreadsheet decompression are quarantined and masked
+  ---
+  duration_ms: 10.0361
+  type: 'test'
+  ...
+1..23
+# tests 23
+# suites 0
+# pass 23
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 27015.2652
+
+> nusamind-zenith@1.4.1 cli:menu:test
+> node scripts/cli-menu-test.mjs
+
+{
+  "ok": true,
+  "handlers": 9,
+  "registry": 7
+}
+
+> nusamind-zenith@1.4.1 build
+> next build
+
+▲ Next.js 16.4.2 (Turbopack)
+✓ Running next.config.mjs took 52ms
+- Experiments (use with caution):
+  · cpus: 2
+  · serverActions
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 3.1s
+  Running TypeScript ...
+  Finished TypeScript in 10.6s ...
+  Collecting page data using 2 workers ...
+(node:21164) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:26376) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+  Generating static pages using 2 workers (0/7) ...
+  Generating static pages using 2 workers (1/7) 
+  Generating static pages using 2 workers (3/7) 
+  Generating static pages using 2 workers (5/7) 
+✓ Generating static pages using 2 workers (7/7) in 175ms
+Turbopack build encountered 4 warnings:
+./lib/coding-agent.ts:394:29
+Warning: Dynamic filesystem access causes tracing of the whole project
+  392 |   for (const relative of candidates) {
+  393 |     try {
+> 394 |       const content = await fs.readFile(path.join(projectPath, relative), 'utf8');
+      |                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  395 |       chunks.push(`FILE: ${relative}\n${content.slice(0, 30_000)}`);
+  396 |     } catch { /* optional */ }
+  397 |   }
+
+Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+This can slow down deployments or lead to failures when size limits are exceeded.
+To resolve this, you can
+- make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+- only use them in development, or
+- opt out by adding an ignore comment to the highlighted call: fs.readFile(/*turbopackIgnore: true*/ ...), or
+- remove them.
+
+Import traces:
+  #1 [App Route]:
+    ./lib/coding-agent.ts
+    ./app/api/coding/route.ts
+
+  #2 [App Route]:
+    ./lib/coding-agent.ts
+    ./lib/desktop-agent.ts
+    ./app/api/desktop/route.ts
+
+
+./lib/coding-agent.ts:394:41
+Warning: Dynamic filesystem access causes tracing of the whole project
+  392 |   for (const relative of candidates) {
+  393 |     try {
+> 394 |       const content = await fs.readFile(path.join(projectPath, relative), 'utf8');
+      |                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  395 |       chunks.push(`FILE: ${relative}\n${content.slice(0, 30_000)}`);
+  396 |     } catch { /* optional */ }
+  397 |   }
+
+Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+This can slow down deployments or lead to failures when size limits are exceeded.
+To resolve this, you can
+- make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+- only use them in development, or
+- opt out by adding an ignore comment to the highlighted call: path.join(/*turbopackIgnore: true*/ ...), or
+- remove them.
+
+Import traces:
+  #1 [App Route]:
+    ./lib/coding-agent.ts
+    ./app/api/coding/route.ts
+
+  #2 [App Route]:
+    ./lib/coding-agent.ts
+    ./lib/desktop-agent.ts
+    ./app/api/desktop/route.ts
+
+
+./lib/desktop-agent.ts:27:202
+Warning: Dynamic filesystem access causes tracing of the whole project
+  25 | ...et);const result=await atomicWriteFile(target,content,{append:mode==='append',expectedH...
+  26 | ...idFile(source);validFile(target);const result=await atomicMoveFile(source,target,expect...
+> 27 | ...t child=spawn(item.exe,item.args,{shell:false,detached:true,windowsHide:false});child.u...
+     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  28 | ...process.platform!=='win32')throw new Error('App close hanya tersedia di Windows.');cons...
+  29 | ...id};}
+  30 | ...
+
+Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+  Finalizing page optimization ...
+This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+This can slow down deployments or lead to failures when size limits are exceeded.
+To resolve this, you can
+- make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+- only use them in development, or
+- opt out by adding an ignore comment to the highlighted call: child_process.spawn(/*turbopackIgnore: true*/ ...), or
+- remove them.
+
+Import trace:
+  App Route:
+    ./lib/desktop-agent.ts
+    ./app/api/desktop/route.ts
+
+
+./lib/vision.ts:3:407
+Warning: Dynamic filesystem access causes tracing of the whole project
+  1 | ...
+  2 | ...
+> 3 | ...ild=spawn(process.env.TESSERACT_BIN||'tesseract',args,{shell:false,windowsHide:true});le...
+    |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | ...
+
+Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+This can slow down deployments or lead to failures when size limits are exceeded.
+To resolve this, you can
+- make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+- only use them in development, or
+- opt out by adding an ignore comment to the highlighted call: child_process.spawn(/*turbopackIgnore: true*/ ...), or
+- remove them.
+
+Import traces:
+  #1 [App Route]:
+    ./lib/vision.ts
+    ./lib/desktop-agent.ts
+    ./app/api/desktop/route.ts
+
+  #2 [App Route]:
+    ./lib/vision.ts
+    ./lib/file-analyzer.ts
+    ./app/api/upload/analyze/route.ts
+
+
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /api/admin/reindex
+├ ƒ /api/artifact/evidence
+├ ƒ /api/artifact/sqlite
+├ ƒ /api/chat
+├ ƒ /api/chat-json
+├ ƒ /api/code/index
+├ ƒ /api/coding
+├ ƒ /api/core/evaluate
+├ ƒ /api/core/status
+├ ƒ /api/desktop
+├ ƒ /api/evaluate
+├ ƒ /api/evaluate/run
+├ ƒ /api/feedback
+├ ƒ /api/health
+├ ƒ /api/insurance-finance
+├ ƒ /api/knowledge/benchmark
+├ ƒ /api/knowledge/conflicts
+├ ƒ /api/knowledge/deprecated
+├ ƒ /api/knowledge/gaps
+├ ƒ /api/knowledge/import
+├ ƒ /api/knowledge/reindex
+├ ƒ /api/knowledge/report
+├ ƒ /api/knowledge/review
+├ ƒ /api/knowledge/rollback
+├ ƒ /api/knowledge/status
+├ ƒ /api/memory
+├ ƒ /api/ml
+├ ƒ /api/monitoring
+├ ƒ /api/n1/answer-quality
+├ ƒ /api/n1/autonomy
+├ ƒ /api/n1/developer
+├ ƒ /api/n1/evaluate
+├ ƒ /api/n1/orchestrate
+├ ƒ /api/n1/status
+├ ƒ /api/neural
+├ ƒ /api/quran/exact
+├ ƒ /api/reliability/status
+├ ƒ /api/religion/compare
+├ ƒ /api/religion/status
+├ ƒ /api/security/emergency
+├ ƒ /api/security/events
+├ ƒ /api/security/permissions
+├ ƒ /api/security/quarantine
+├ ƒ /api/security/replay
+├ ƒ /api/security/repo-scan
+├ ƒ /api/security/status
+├ ƒ /api/sessions
+├ ƒ /api/status
+├ ƒ /api/upload/analyze
+├ ƒ /api/upload/artifacts
+├ ƒ /api/upload/status
+├ ƒ /api/v10/cyber
+├ ƒ /api/v10/evaluate
+├ ƒ /api/v10/status
+├ ƒ /api/v1345/status
+├ ƒ /api/v2/plan
+├ ƒ /api/v2/status
+├ ƒ /api/v3/migrate
+├ ƒ /api/v3/retrieval
+├ ƒ /api/v3/status
+├ ƒ /api/v4/status
+├ ƒ /api/v6/retrieval
+├ ƒ /api/v6/status
+├ ƒ /api/v7/evaluate
+├ ƒ /api/v7/retrieval
+├ ƒ /api/v7/status
+├ ƒ /api/v8/evaluate
+├ ƒ /api/v8/graph
+├ ƒ /api/v8/status
+├ ƒ /api/v9/browser
+├ ƒ /api/v9/evaluate
+├ ƒ /api/v9/models
+├ ƒ /api/v9/skills
+├ ƒ /api/v9/status
+├ ƒ /api/workflow
+├ ƒ /api/workflow/tool
+└ ƒ /dashboard
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+{
+  "ok": true,
+  "mode": "execute",
+  "requirements": [
+    "Node.js >=22",
+    "npm ci --ignore-scripts",
+    "npm run gate:n2"
+  ],
+  "steps": [
+    {
+      "command": "npm ci --ignore-scripts --no-audit --no-fund",
+      "status": 0
+    },
+    {
+      "command": "npm run gate:n2",
+      "status": 0
+    }
+  ],
+  "evidenceDirectory": "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\nusamind-n2-cold-kZkcxx"
+}
