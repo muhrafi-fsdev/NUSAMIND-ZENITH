@@ -1,0 +1,14 @@
+
+> nusamind-zenith@1.4.1 quran:db:test
+> node scripts/quran-db-test.mjs
+
+{
+  test: 'quran-topic-sabar-database-guard',
+  rows: 10,
+  dataSource: 'quran-static.json fallback / optional Laragon MySQL compatible',
+  missingRefs: [],
+  containsSabaBug: false,
+  hasSabarTerm: true,
+  passed: true
+}
+

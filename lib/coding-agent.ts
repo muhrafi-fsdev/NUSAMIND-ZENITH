@@ -4,6 +4,8 @@ import { spawn, type ChildProcess } from 'node:child_process';
 import { generateText } from 'ai';
 import { z } from 'zod';
 import { resolveModelRuntime } from './model';
+import { assertAllowedPath, isPathInside } from './path-policy';
+import { isProtectedPath } from '../packages/developer-intelligence';
 
 const fileSchema = z.object({
   path: z.string().min(1).max(180),
@@ -51,8 +53,8 @@ const activeProcesses = new Map<string, ChildProcess>();
 type CodingEdition = 'swift' | 'zenith' | 'apex';
 
 function codingEdition(): CodingEdition {
-  const value = String(process.env.NUSAMIND_EDITION || process.env.CODING_AGENT_TIER || 'apex').toLowerCase();
-  return value === 'swift' || value === 'zenith' ? value : 'apex';
+  const value = String(process.env.NUSAMIND_EDITION || process.env.CODING_AGENT_TIER || 'zenith').toLowerCase();
+  return value === 'swift' || value === 'apex' ? value : 'zenith';
 }
 
 function codingPolicy() {
@@ -97,12 +99,12 @@ function normalizePath(value: string) {
 }
 
 function inside(candidate: string, root = workspaceRoot()) {
-  const target = normalizePath(candidate);
-  const base = normalizePath(root);
-  return target === base || target.startsWith(base + path.sep);
+  try { return isPathInside(assertAllowedPath(candidate, { roots: [root] }), assertAllowedPath(root, { roots: [root] })); }
+  catch { return false; }
 }
 
 function safeRelative(relativePath: string) {
+  if (path.isAbsolute(relativePath) || /^[a-z]:/i.test(relativePath) || isProtectedPath(relativePath)) throw new Error('PROTECTED_OR_ABSOLUTE_PATH');
   const clean = relativePath.replace(/\\/g, '/').replace(/^\/+/, '');
   if (!clean || clean.includes('\0')) throw new Error('Nama file tidak valid.');
   const parts = clean.split('/');
@@ -256,7 +258,9 @@ export async function codingStatus() {
   const files = await fs.readdir(jobsDir).catch(() => [] as string[]);
   const policy = codingPolicy();
   return {
-    enabled: codingEnabled(),
+    enabled: false,
+    configured: codingEnabled(),
+    executionStatus: 'BLOCKED_PENDING_SANDBOX_AND_BOUND_APPROVAL',
     confirmationRequired: confirmationRequired(),
     workspace: workspaceRoot(),
     edition: policy.edition,
@@ -265,11 +269,9 @@ export async function codingStatus() {
     maxFiles: maxFiles(),
     maxSteps: maxSteps(),
     supportedFrameworks: policy.supportedFrameworks,
-    canRunCommands: policy.canRunCommands,
-    autoRepair: policy.autoRepair,
-    actions: policy.canRunCommands
-      ? ['plan', 'create', 'apply', 'build', 'start', 'rollback', 'logs', 'stop']
-      : ['plan', 'create', 'apply', 'rollback', 'logs'],
+    canRunCommands: false,
+    autoRepair: false,
+    actions: ['status', 'plan', 'job', 'logs', 'stop'],
   };
 }
 

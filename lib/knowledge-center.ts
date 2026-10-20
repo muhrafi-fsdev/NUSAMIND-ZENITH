@@ -1,4 +1,5 @@
 import crypto from 'node:crypto';
+import { authenticateRequest } from './api-auth';
 import fs from 'node:fs';
 import path from 'node:path';
 import { getDatabase } from './db.ts';
@@ -384,8 +385,4 @@ export function knowledgeActionCapabilities() {
   return {ok:true,release:RELEASE.label,edition:ed,mode:ed==='swift'?'quick-domain':ed==='zenith'?'bounded-synthesis':'expert-graph',menu};
 }
 
-export function authorizeKnowledgeWrite(request: Request) {
-  const expected=String(process.env.KNOWLEDGE_CONTROL_TOKEN||''); const supplied=String(request.headers.get('x-knowledge-token')||''); const host=String(request.headers.get('host')||'').toLowerCase();
-  const local=host.startsWith('localhost')||host.startsWith('127.0.0.1')||host.startsWith('[::1]');
-  return expected?supplied===expected:local;
-}
+export function authorizeKnowledgeWrite(request: Request) { return Boolean(authenticateRequest(request, 'knowledge')); }

@@ -3,6 +3,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { autonomyProfile, EDITION, isCriticalPath } from './policy';
 import { appendAudit } from './audit';
+import { assertAllowedPath } from '../../lib/path-policy';
 export type WorkspaceAccess='read-only'|'read-write';
 export type TrustedWorkspace={id:string;path:string;access:WorkspaceAccess;createdAt:string};
 const registryPath=(home:string)=>path.join(path.resolve(home),'.nusamind','trusted-workspaces.json');
@@ -19,13 +20,13 @@ export async function registerWorkspace(home:string,target:string,access:Workspa
 export async function listWorkspaces(home:string){return load(home);}
 export async function resolveTrustedTarget(home:string,target:string,write=false){
   const resolved=path.resolve(target); if(isCriticalPath(resolved)) throw new Error('CRITICAL_PATH_DENIED');
-  const root=path.resolve(home); if(resolved===root||resolved.startsWith(root+path.sep)) return {root,relative:path.relative(root,resolved),access:'read-write' as const};
+  const root=assertAllowedPath(home,{roots:[home],allowMissing:false}); if(resolved===path.resolve(home)||resolved.startsWith(path.resolve(home)+path.sep)) { const canonical=assertAllowedPath(resolved,{roots:[root],allowMissing:true}); return {root,relative:path.relative(root,canonical),access:'read-write' as const}; }
   const items=await load(home); const match=items.sort((a,b)=>b.path.length-a.path.length).find(x=>resolved===x.path||resolved.startsWith(x.path+path.sep));
-  if(!match) throw new Error('UNTRUSTED_EXTERNAL_WORKSPACE'); if(write&&match.access!=='read-write') throw new Error('WORKSPACE_READ_ONLY'); return {root:match.path,relative:path.relative(match.path,resolved),access:match.access};
+  if(!match) throw new Error('UNTRUSTED_EXTERNAL_WORKSPACE'); if(write&&match.access!=='read-write') throw new Error('WORKSPACE_READ_ONLY'); const canonical=assertAllowedPath(resolved,{roots:[match.path],allowMissing:true}); return {root:match.path,relative:path.relative(match.path,canonical),access:match.access};
 }
 export async function externalExactReplace(home:string,file:string,find:string,replacement:string,approved:boolean){
   if(!autonomyProfile().externalWrite)throw new Error('EDITION_READ_ONLY');
-  if(!approved) throw new Error('APPROVAL_REQUIRED'); const target=await resolveTrustedTarget(home,file,true); const current=await fs.readFile(file,'utf8');
+  if(!approved) throw new Error('APPROVAL_REQUIRED'); const target=await resolveTrustedTarget(home,file,true); file=path.join(target.root,target.relative); const current=await fs.readFile(file,'utf8');
   const count=current.split(find).length-1; if(count!==1) throw new Error(count===0?'EXACT_TEXT_NOT_FOUND':'EXACT_TEXT_NOT_UNIQUE');
   const backup=path.join(path.resolve(home),'.nusamind','backups',`external_${Date.now()}`,target.relative); await fs.mkdir(path.dirname(backup),{recursive:true}); await fs.copyFile(file,backup);
   await fs.writeFile(file,current.replace(find,replacement),'utf8'); await appendAudit(home,{at:new Date().toISOString(),edition:EDITION,action:'external-exact-replace',status:'SUCCEEDED',workspace:path.resolve(home),subject:file,details:{backup}});

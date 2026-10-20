@@ -9,7 +9,7 @@ const checks = [
   ["legacy check", pkg.scripts?.["check:legacy"] === "tsc6 --noEmit"],
   ["dual check", Boolean(pkg.scripts?.["check:dual"])],
   ["migration documentation", fs.existsSync("docs/typescript-7-n1.4.1.md")],
-  ["stale lock removed", !fs.existsSync("package-lock.json")],
+  ["reproducible lock present", fs.existsSync("package-lock.json") && JSON.parse(fs.readFileSync("package-lock.json", "utf8")).lockfileVersion >= 3],
 ];
 for (const [name, pass] of checks) console.log(`${pass ? "PASS" : "FAIL"} ${name}`);
 const failed = checks.filter(([, pass]) => !pass);

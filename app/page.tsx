@@ -1,5 +1,6 @@
 import { ChatShell } from '@/components/ChatShell';
+import { RELEASE } from '@/lib/release';
 
 export default function HomePage() {
-  return <ChatShell edition="apex" editionLabel="Apex" version="R13.38" tagline="Asisten AI performa tinggi Anda siap membantu pekerjaan kompleks dan terstruktur." />;
+  return <ChatShell edition={RELEASE.edition} editionLabel="Zenith" version={RELEASE.label} tagline="Asisten AI lokal untuk percakapan, riset, dan pengembangan terkontrol." />;
 }

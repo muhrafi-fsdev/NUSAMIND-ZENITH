@@ -7,7 +7,7 @@ export type DeveloperMode = 'ASK' | 'PLAN' | 'BUILD' | 'REVIEW' | 'REPAIR';
 export type PermissionDecision = 'ALLOW' | 'ASK' | 'DENY' | 'READ_ONLY' | 'SANDBOX_ONLY' | 'ALLOW_ONCE' | 'ALLOW_SESSION';
 export type ToolName = 'read-file'|'list-files'|'glob-files'|'grep-code'|'git-status'|'git-diff'|'lsp-diagnostics'|'run-typecheck'|'run-tests'|'run-build'|'apply-exact-patch'|'rollback-patch';
 
-const EDITION = process.env.NUSAMIND_EDITION as Edition || 'zenith';
+const EDITION: Edition = process.env.NUSAMIND_EDITION === 'apex' || process.env.NUSAMIND_EDITION === 'swift' ? process.env.NUSAMIND_EDITION : 'zenith';
 const modes: Record<Edition, DeveloperMode[]> = {
   swift: ['ASK','PLAN','REVIEW'],
   zenith: ['ASK','PLAN','BUILD','REVIEW','REPAIR'],
@@ -43,7 +43,7 @@ export function permissionFor(input:{edition?:Edition;mode:DeveloperMode;tool:To
   if (input.command && destructive.test(input.command)) return {decision:'DENY' as PermissionDecision,reason:'DESTRUCTIVE_COMMAND'};
   if (['ASK','PLAN','REVIEW'].includes(input.mode) && ['apply-exact-patch','rollback-patch'].includes(input.tool)) return {decision:'DENY' as PermissionDecision,reason:'READ_ONLY_MODE'};
   if (!p.write && ['apply-exact-patch','rollback-patch'].includes(input.tool)) return {decision:'DENY' as PermissionDecision,reason:'SWIFT_READ_ONLY'};
-  if (input.command && safeCommands.some(rx=>rx.test(input.command))) return {decision:'ALLOW' as PermissionDecision,reason:'SAFE_COMMAND_ALLOWLIST'};
+  if (input.command && safeCommands.some(rx=>rx.test(input.command!))) return {decision:'ALLOW' as PermissionDecision,reason:'SAFE_COMMAND_ALLOWLIST'};
   if (['apply-exact-patch','rollback-patch','run-build','run-tests'].includes(input.tool)) return input.approved?{decision:'ALLOW_ONCE' as PermissionDecision,reason:'USER_APPROVED'}:{decision:'ASK' as PermissionDecision,reason:'APPROVAL_REQUIRED'};
   return {decision:'ALLOW' as PermissionDecision,reason:'READ_OR_DIAGNOSTIC_TOOL'};
 }

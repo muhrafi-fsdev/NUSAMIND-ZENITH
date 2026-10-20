@@ -11,34 +11,27 @@ import {
   stopCodingProject,
   type CodingFramework,
 } from '@/lib/coding-agent';
+import { authenticateRequest, authDenied } from '@/lib/api-auth';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
-
-function authorized(request: Request) {
-  const expected = process.env.CODING_AGENT_TOKEN || process.env.DESKTOP_CONTROL_TOKEN;
-  if (expected) return request.headers.get('x-coding-token') === expected || request.headers.get('x-desktop-token') === expected;
-  const host = request.headers.get('host') || '';
-  return host.startsWith('localhost') || host.startsWith('127.0.0.1');
-}
 
 function text(value: unknown) {
   return typeof value === 'string' ? value.trim() : '';
 }
 
-export async function GET() {
+export async function GET(request: Request) {
+  if (!authenticateRequest(request, 'coding')) return authDenied();
   return Response.json({ ok: true, ...(await codingStatus()) });
 }
 
 export async function POST(request: Request) {
+  if (!authenticateRequest(request, 'coding')) return authDenied();
   let action = 'status';
   try {
     const body = await request.json() as Record<string, unknown>;
     action = text(body.action) || 'status';
-    const protectedActions = ['create', 'apply', 'build', 'start', 'stop', 'rollback', 'logs'];
-    if (protectedActions.includes(action) && !authorized(request)) {
-      return Response.json({ ok: false, action, error: 'Coding endpoint hanya untuk localhost atau token yang valid.' }, { status: 403 });
-    }
+    if (['create', 'apply', 'build', 'start', 'rollback'].includes(action)) return Response.json({ ok: false, error: 'LEGACY_EXECUTION_BLOCKED', hint: 'Executor lama belum memiliki sandbox dan approval yang terikat payload.' }, { status: 423 });
     if (action === 'status') return Response.json({ ok: true, ...(await codingStatus()) });
     if (action === 'plan') return Response.json({ ok: true, job: await planCodingProject({ prompt: text(body.prompt), targetPath: text(body.targetPath) || undefined, projectName: text(body.projectName) || undefined, framework: body.framework as CodingFramework | undefined }) });
     if (action === 'create') return Response.json({ ok: true, ...(await createCodingProject({ prompt: text(body.prompt), targetPath: text(body.targetPath) || undefined, projectName: text(body.projectName) || undefined, framework: body.framework as CodingFramework | undefined, confirmed: body.confirmed === true, install: body.install !== false, build: body.build !== false, start: body.start === true, port: Number(body.port || 3100) })) });

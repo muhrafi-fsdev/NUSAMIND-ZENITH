@@ -1,7 +1,10 @@
+import Link from 'next/link';
+import { headers } from 'next/headers';
 async function getStatus() {
   const base = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
   try {
-    const res = await fetch(`${base}/api/status`, { cache: 'no-store' });
+    const incoming = await headers();
+    const res = await fetch(`${base}/api/status`, { cache: 'no-store', headers: { authorization: incoming.get('authorization') || '' } });
     return res.json();
   } catch {
     return null;
@@ -34,20 +37,20 @@ export default async function DashboardPage() {
   ];
 
   return (
-    <main className="dashboard-shell edition-apex">
+    <main className="dashboard-shell edition-zenith">
       <div className="dashboard-inner">
         <div className="dashboard-topbar">
           <div className="dashboard-brand">
             <div className="brand-mark"><LeafMark /></div>
-            <div><strong>NusaMind AI</strong><span>Edisi Apex • R13.38</span></div>
+            <div><strong>NusaMind AI</strong><span>Edisi Zenith • N1.4.1</span></div>
           </div>
-          <a className="dashboard-back" href="/">← Kembali ke Chat</a>
+          <Link className="dashboard-back" href="/">← Kembali ke Chat</Link>
         </div>
 
         <section className="dashboard-hero">
           <div>
             <span className="eyebrow">Dashboard Lokal</span>
-            <h1>Status NusaMind Apex</h1>
+            <h1>Status NusaMind Zenith</h1>
             <p>Performa tinggi untuk pekerjaan kompleks. Semua angka di halaman ini berasal dari endpoint status yang sudah ada.</p>
           </div>
           <div className="health-card">

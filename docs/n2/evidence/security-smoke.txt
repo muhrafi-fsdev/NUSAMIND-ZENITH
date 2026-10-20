@@ -1,0 +1,6 @@
+
+> nusamind-zenith@1.4.1 security:smoke
+> node scripts/security.mjs
+
+Security smoke lulus.
+

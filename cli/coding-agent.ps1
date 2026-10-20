@@ -25,6 +25,7 @@ function Invoke-CodingRequest {
   param([hashtable]$Payload)
   try {
     $headers = @{}
+    if ($env:ADMIN_TOKEN) { $headers['Authorization'] = "Bearer $env:ADMIN_TOKEN" }
     $token = Read-EnvValue "CODING_AGENT_TOKEN"
     if ([string]::IsNullOrWhiteSpace($token)) { $token = Read-EnvValue "DESKTOP_CONTROL_TOKEN" }
     if (![string]::IsNullOrWhiteSpace($token)) { $headers["x-coding-token"] = $token }

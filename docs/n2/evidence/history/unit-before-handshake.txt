@@ -1,0 +1,168 @@
+
+> nusamind-zenith@1.4.1 test:n2
+> node --import tsx --test tests/n2/*.test.ts
+
+TAP version 13
+# Subtest: Host localhost does not authorize developer, autonomy or coding plan/job
+ok 1 - Host localhost does not authorize developer, autonomy or coding plan/job
+  ---
+  duration_ms: 15.8499
+  type: 'test'
+  ...
+# Subtest: quarantined MCP inspection cannot execute even a supplied wrapper
+ok 2 - quarantined MCP inspection cannot execute even a supplied wrapper
+  ---
+  duration_ms: 16.508
+  type: 'test'
+  ...
+# Subtest: trusted workspace cannot escape through a symlink or junction
+ok 3 - trusted workspace cannot escape through a symlink or junction
+  ---
+  duration_ms: 7.1739
+  type: 'test'
+  ...
+# Subtest: benchmarks without execution evidence never pass
+ok 4 - benchmarks without execution evidence never pass
+  ---
+  duration_ms: 0.2228
+  type: 'test'
+  ...
+# Subtest: browser preflight rejects private, mapped and IP literal destinations
+ok 5 - browser preflight rejects private, mapped and IP literal destinations
+  ---
+  duration_ms: 3.6806
+  type: 'test'
+  ...
+# Subtest: shipped canonical Quran files support exact surah and topic lookup
+ok 6 - shipped canonical Quran files support exact surah and topic lookup
+  ---
+  duration_ms: 50.7103
+  type: 'test'
+  ...
+# (node:33888) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: strong server credentials required; placeholder and wrong credentials denied
+ok 7 - strong server credentials required; placeholder and wrong credentials denied
+  ---
+  duration_ms: 18.4244
+  type: 'test'
+  ...
+# Subtest: CSRF origin is bound to server configuration, never Host or forwarded headers
+ok 8 - CSRF origin is bound to server configuration, never Host or forwarded headers
+  ---
+  duration_ms: 1.5235
+  type: 'test'
+  ...
+# Subtest: rate identity is stable across arbitrary sessionIds and forged IP headers
+ok 9 - rate identity is stable across arbitrary sessionIds and forged IP headers
+  ---
+  duration_ms: 0.3852
+  type: 'test'
+  ...
+# Subtest: role token is restricted to its endpoint
+ok 10 - role token is restricted to its endpoint
+  ---
+  duration_ms: 0.4016
+  type: 'test'
+  ...
+# Subtest: durable approval expires, cannot replay, and binds every scope field
+ok 11 - durable approval expires, cannot replay, and binds every scope field
+  ---
+  duration_ms: 45.47
+  type: 'test'
+  ...
+# Subtest: typed dispatcher denies medium and high calls without bound approval
+ok 12 - typed dispatcher denies medium and high calls without bound approval
+  ---
+  duration_ms: 2.4535
+  type: 'test'
+  ...
+# Subtest: legacy caller booleans cannot authorize an unsafe executor
+ok 13 - legacy caller booleans cannot authorize an unsafe executor
+  ---
+  duration_ms: 3.976
+  type: 'test'
+  ...
+# Subtest: absolute external and parent traversal paths cannot become workspace roots
+ok 14 - absolute external and parent traversal paths cannot become workspace roots
+  ---
+  duration_ms: 1.756
+  type: 'test'
+  ...
+# Subtest: untrusted workspace and prompt text cannot extend owner permissions
+ok 15 - untrusted workspace and prompt text cannot extend owner permissions
+  ---
+  duration_ms: 1.2367
+  type: 'test'
+  ...
+# Subtest: minimal worker environment omits application and provider secrets
+ok 16 - minimal worker environment omits application and provider secrets
+  ---
+  duration_ms: 0.5482
+  type: 'test'
+  ...
+# Subtest: timeout kills real child and grandchild before they can write
+not ok 17 - timeout kills real child and grandchild before they can write
+  ---
+  duration_ms: 7510.1334
+  type: 'test'
+  location: 'C:\\Users\\Muhammad Rafi Priyo\\Documents\\Codex\\2026-10-20\\files-mentioned-by-the-user-nusamind\\work\\NUSAMIND-ZENITH\\tests\\n2\\security.test.ts:2:8242'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+    
+      assert.ok(pid > 0)
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (C:\Users\Muhammad Rafi Priyo\Documents\Codex\2026-10-20\files-mentioned-by-the-user-nusamind\work\NUSAMIND-ZENITH\tests\n2\security.test.ts:100:12)
+    process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: process cancellation aborts and output capture remains bounded
+ok 18 - process cancellation aborts and output capture remains bounded
+  ---
+  duration_ms: 3982.9259
+  type: 'test'
+  ...
+# Subtest: tool timeout aborts cooperative operation and exact verifier rejects prefix matches
+ok 19 - tool timeout aborts cooperative operation and exact verifier rejects prefix matches
+  ---
+  duration_ms: 21.6804
+  type: 'test'
+  ...
+# Subtest: Windows reports exited-parent cleanup failure instead of claiming orphan isolation
+ok 20 - Windows reports exited-parent cleanup failure instead of claiming orphan isolation
+  ---
+  duration_ms: 4130.5073
+  type: 'test'
+  ...
+# (node:31756) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: patched SheetJS still parses an actual XLSX workbook through the upload analyzer
+ok 21 - patched SheetJS still parses an actual XLSX workbook through the upload analyzer
+  ---
+  duration_ms: 62.4585
+  type: 'test'
+  ...
+# Subtest: secrets found after spreadsheet decompression are quarantined and masked
+ok 22 - secrets found after spreadsheet decompression are quarantined and masked
+  ---
+  duration_ms: 10.7459
+  type: 'test'
+  ...
+1..22
+# tests 22
+# suites 0
+# pass 21
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 23195.4615
+

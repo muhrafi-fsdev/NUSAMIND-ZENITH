@@ -1,9 +1,10 @@
 import { createHmac, randomUUID, timingSafeEqual } from 'node:crypto';
 import { getDatabase } from './db';
+import { strongToken, tokenEquals } from './api-auth';
 
 export type PermissionScope = 'desktop.execute'|'desktop.write'|'desktop.app'|'security.manage'|'artifact.delete'|'quarantine.release'|'tool.execute'|'sqlite.inspect'|'repo.scan';
 export type TokenPayload = { id:string; scope:PermissionScope[]; exp:number; roots?:string[]; actions?:string[] };
-const secret = () => process.env.DESKTOP_CONTROL_TOKEN || process.env.NUSAMIND_SECURITY_TOKEN || '';
+const secret = () => [process.env.DESKTOP_CONTROL_TOKEN, process.env.NUSAMIND_SECURITY_TOKEN].find(strongToken) || '';
 const encode = (value:Buffer|string) => Buffer.from(value).toString('base64url');
 const now = () => new Date().toISOString();
 
@@ -32,4 +33,4 @@ export function verifyPermissionToken(token:string|undefined, required:Permissio
 }
 export function listPermissionTokens(limit=100){return getDatabase().prepare('SELECT id,scope,expires_at,constraints_json,status,created_at FROM permission_tokens ORDER BY created_at DESC LIMIT ?').all(Math.max(1,Math.min(limit,500)));}
 export function revokePermissionToken(id:string){const result=getDatabase().prepare("UPDATE permission_tokens SET status='revoked' WHERE id=?").run(id);return result.changes>0;}
-export function masterTokenValid(value:string|undefined){const expected=secret();if(!expected||!value)return false;const a=Buffer.from(value);const b=Buffer.from(expected);return a.length===b.length&&timingSafeEqual(a,b);}
+export function masterTokenValid(value:string|undefined){return tokenEquals(value,secret());}

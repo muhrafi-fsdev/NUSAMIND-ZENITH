@@ -1,0 +1,12 @@
+
+> nusamind-zenith@1.4.1 quran:exact:test
+> node scripts/quran-test.mjs
+
+{
+  surah: 'Al-Fatihah',
+  ayahCount: 7,
+  missing: [],
+  forbidden: [],
+  passed: true
+}
+

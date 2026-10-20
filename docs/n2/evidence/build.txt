@@ -1,0 +1,229 @@
+
+> nusamind-zenith@1.4.1 build
+> next build
+
+▲ Next.js 16.4.2 (Turbopack)
+✓ Running next.config.mjs took 36ms
+- Experiments (use with caution):
+  · cpus: 2
+  · serverActions
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 2.3s
+  Running TypeScript ...
+  Finished TypeScript in 6.9s ...
+  Collecting page data using 2 workers ...
+  Generating static pages using 2 workers (0/7) ...
+  Generating static pages using 2 workers (1/7) 
+  Generating static pages using 2 workers (3/7) 
+  Generating static pages using 2 workers (5/7) 
+✓ Generating static pages using 2 workers (7/7) in 199ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /api/admin/reindex
+├ ƒ /api/artifact/evidence
+├ ƒ /api/artifact/sqlite
+├ ƒ /api/chat
+├ ƒ /api/chat-json
+├ ƒ /api/code/index
+├ ƒ /api/coding
+├ ƒ /api/core/evaluate
+├ ƒ /api/core/status
+├ ƒ /api/desktop
+├ ƒ /api/evaluate
+├ ƒ /api/evaluate/run
+├ ƒ /api/feedback
+├ ƒ /api/health
+├ ƒ /api/insurance-finance
+├ ƒ /api/knowledge/benchmark
+├ ƒ /api/knowledge/conflicts
+├ ƒ /api/knowledge/deprecated
+├ ƒ /api/knowledge/gaps
+├ ƒ /api/knowledge/import
+├ ƒ /api/knowledge/reindex
+├ ƒ /api/knowledge/report
+├ ƒ /api/knowledge/review
+├ ƒ /api/knowledge/rollback
+├ ƒ /api/knowledge/status
+├ ƒ /api/memory
+├ ƒ /api/ml
+├ ƒ /api/monitoring
+├ ƒ /api/n1/answer-quality
+├ ƒ /api/n1/autonomy
+├ ƒ /api/n1/developer
+├ ƒ /api/n1/evaluate
+├ ƒ /api/n1/orchestrate
+├ ƒ /api/n1/status
+├ ƒ /api/neural
+├ ƒ /api/quran/exact
+├ ƒ /api/reliability/status
+├ ƒ /api/religion/compare
+├ ƒ /api/religion/status
+├ ƒ /api/security/emergency
+├ ƒ /api/security/events
+├ ƒ /api/security/permissions
+├ ƒ /api/security/quarantine
+├ ƒ /api/security/replay
+├ ƒ /api/security/repo-scan
+├ ƒ /api/security/status
+├ ƒ /api/sessions
+├ ƒ /api/status
+├ ƒ /api/upload/analyze
+├ ƒ /api/upload/artifacts
+├ ƒ /api/upload/status
+├ ƒ /api/v10/cyber
+├ ƒ /api/v10/evaluate
+├ ƒ /api/v10/status
+├ ƒ /api/v1345/status
+├ ƒ /api/v2/plan
+├ ƒ /api/v2/status
+├ ƒ /api/v3/migrate
+├ ƒ /api/v3/retrieval
+├ ƒ /api/v3/status
+├ ƒ /api/v4/status
+├ ƒ /api/v6/retrieval
+├ ƒ /api/v6/status
+├ ƒ /api/v7/evaluate
+├ ƒ /api/v7/retrieval
+├ ƒ /api/v7/status
+├ ƒ /api/v8/evaluate
+├ ƒ /api/v8/graph
+├ ƒ /api/v8/status
+├ ƒ /api/v9/browser
+├ ƒ /api/v9/evaluate
+├ ƒ /api/v9/models
+├ ƒ /api/v9/skills
+├ ƒ /api/v9/status
+├ ƒ /api/workflow
+├ ƒ /api/workflow/tool
+└ ƒ /dashboard
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+
+(node:9676) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3188) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Turbopack build encountered 4 warnings:
+./lib/coding-agent.ts:394:29
+Warning: Dynamic filesystem access causes tracing of the whole project
+  392 |   for (const relative of candidates) {
+  393 |     try {
+> 394 |       const content = await fs.readFile(path.join(projectPath, relative), 'utf8');
+      |                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  395 |       chunks.push(`FILE: ${relative}\n${content.slice(0, 30_000)}`);
+  396 |     } catch { /* optional */ }
+  397 |   }
+
+Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+This can slow down deployments or lead to failures when size limits are exceeded.
+To resolve this, you can
+- make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+- only use them in development, or
+- opt out by adding an ignore comment to the highlighted call: fs.readFile(/*turbopackIgnore: true*/ ...), or
+- remove them.
+
+Import traces:
+  #1 [App Route]:
+    ./lib/coding-agent.ts
+    ./app/api/coding/route.ts
+
+  #2 [App Route]:
+    ./lib/coding-agent.ts
+    ./lib/desktop-agent.ts
+    ./app/api/desktop/route.ts
+
+
+./lib/coding-agent.ts:394:41
+Warning: Dynamic filesystem access causes tracing of the whole project
+  392 |   for (const relative of candidates) {
+  393 |     try {
+> 394 |       const content = await fs.readFile(path.join(projectPath, relative), 'utf8');
+      |                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  395 |       chunks.push(`FILE: ${relative}\n${content.slice(0, 30_000)}`);
+  396 |     } catch { /* optional */ }
+  397 |   }
+
+Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+This can slow down deployments or lead to failures when size limits are exceeded.
+To resolve this, you can
+- make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+- only use them in development, or
+- opt out by adding an ignore comment to the highlighted call: path.join(/*turbopackIgnore: true*/ ...), or
+- remove them.
+
+Import traces:
+  #1 [App Route]:
+    ./lib/coding-agent.ts
+    ./app/api/coding/route.ts
+
+  #2 [App Route]:
+    ./lib/coding-agent.ts
+    ./lib/desktop-agent.ts
+    ./app/api/desktop/route.ts
+
+
+./lib/desktop-agent.ts:27:202
+Warning: Dynamic filesystem access causes tracing of the whole project
+  25 | ...et);const result=await atomicWriteFile(target,content,{append:mode==='append',expectedH...
+  26 | ...idFile(source);validFile(target);const result=await atomicMoveFile(source,target,expect...
+> 27 | ...t child=spawn(item.exe,item.args,{shell:false,detached:true,windowsHide:false});child.u...
+     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  28 | ...process.platform!=='win32')throw new Error('App close hanya tersedia di Windows.');cons...
+  29 | ...id};}
+  30 | ...
+
+Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+This can slow down deployments or lead to failures when size limits are exceeded.
+To resolve this, you can
+- make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+- only use them in development, or
+- opt out by adding an ignore comment to the highlighted call: child_process.spawn(/*turbopackIgnore: true*/ ...), or
+- remove them.
+
+Import trace:
+  App Route:
+    ./lib/desktop-agent.ts
+    ./app/api/desktop/route.ts
+
+
+./lib/vision.ts:3:407
+Warning: Dynamic filesystem access causes tracing of the whole project
+  1 | ...
+  2 | ...
+> 3 | ...ild=spawn(process.env.TESSERACT_BIN||'tesseract',args,{shell:false,windowsHide:true});le...
+    |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | ...
+
+Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+This can slow down deployments or lead to failures when size limits are exceeded.
+To resolve this, you can
+- make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+- only use them in development, or
+- opt out by adding an ignore comment to the highlighted call: child_process.spawn(/*turbopackIgnore: true*/ ...), or
+- remove them.
+
+Import traces:
+  #1 [App Route]:
+    ./lib/vision.ts
+    ./lib/desktop-agent.ts
+    ./app/api/desktop/route.ts
+
+  #2 [App Route]:
+    ./lib/vision.ts
+    ./lib/file-analyzer.ts
+    ./app/api/upload/analyze/route.ts
+
+

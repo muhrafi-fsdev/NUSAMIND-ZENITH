@@ -1,7 +1,8 @@
 import path from 'node:path';
 import type { ApprovalContext, Capability, Edition, VerificationEvidence } from './types';
 
-export const EDITION = (process.env.NUSAMIND_EDITION || 'swift') as Edition;
+const requestedEdition = process.env.NUSAMIND_EDITION;
+export const EDITION: Edition = requestedEdition === 'apex' || requestedEdition === 'swift' ? requestedEdition : 'zenith';
 export const protectedBranches = new Set(['main','master','production','release','stable']);
 const profiles = {
   swift: { executePush:false, forcePush:false, destructive:false, credentialWrite:false, externalWrite:false, mcpCall:false, deploy:['preview'], autoDeploy:false, softSteps:6, hardSteps:10, maxRuntimeMinutes:30, maxParallel:1 },

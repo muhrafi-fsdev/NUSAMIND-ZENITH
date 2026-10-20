@@ -16,7 +16,7 @@ let expansionCache: RetrievalHit[] | null = null;
 let fullSurahCache: RetrievalHit[] | null = null;
 
 const EXCLUDED_DYNAMIC_JSON = new Set([
-  'core/universal.json','language/core.json','quran/ayah-idx.json','quran/surahs.json',
+  'core/universal.json','language/core.json','quran/ayah-index.json','quran/surahs.json',
   'quran/chunks.json','quran/docs.json','quran/search.json','quran/doa.json','quran/dzikir.json',
   'core/site.json','runtime/blueprint.json','quran/training.json',
   'runtime/profile.json','runtime/perf.json','runtime/answers.json','runtime/release.json',
@@ -183,13 +183,13 @@ async function loadSiteKnowledge(): Promise<RetrievalHit[]> {
 
 async function loadAyahKnowledge(): Promise<RetrievalHit[]> {
   if (ayahCache) return ayahCache;
-  const ayahs = await safeJson<any[]>(path.join(DATA_DIR, 'quran/ayah-idx.json'), []);
+  const ayahs = await safeJson<any[]>(path.join(DATA_DIR, 'quran/ayah-index.json'), []);
   ayahCache = ayahs.map((ayah) => ({
     id: `ayah_${ayah.suraId}_${ayah.verseID}`,
     title: `QS ${ayah.suraId}:${ayah.verseID}`,
     category: 'Ayat Al-Qur\'an',
     text: [ayah.ayahText, ayah.readText, ayah.indoText].filter(Boolean).join('\n'),
-    source: `quran/ayah-idx.json QS ${ayah.suraId}:${ayah.verseID}`,
+    source: `quran/ayah-index.json QS ${ayah.suraId}:${ayah.verseID}`,
     tags: ['quran', 'ayat', `surah-${ayah.suraId}`],
     score: 0,
   })).filter((item) => item.text.length > 8);

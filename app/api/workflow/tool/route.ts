@@ -3,6 +3,8 @@ import { editionProfile } from '@/lib/edition-profile';
 import { masterTokenValid, verifyPermissionToken } from '@/lib/perm-token';
 import { recordSecurityEvent } from '@/lib/security-center';
 import { saveReplay } from '@/lib/replay';
+import { authenticateRequest, appOrigin } from '@/lib/api-auth';
+import { approvalHash } from '@/lib/action-approval';
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
@@ -21,7 +23,12 @@ export async function POST(request: Request) {
   if (!master && !scoped) return Response.json({ ok: false, error: 'Token tool.execute wajib.' }, { status: 403 });
   if (entry.risk === 'high' && !master) return Response.json({ ok: false, error: 'Tool berisiko tinggi memerlukan master token.' }, { status: 403 });
   try {
-    const output = await executeTypedTool(body.toolId, body.args || {});
+    const auth = authenticateRequest(request, 'desktop');
+    if (!auth) return Response.json({ ok: false, error: 'AUTH_REQUIRED' }, { status: 403 });
+    const output = await executeTypedTool(body.toolId, body.args || {}, {
+      token: request.headers.get('x-action-approval') || '',
+      scope: { identity: auth.identity, runId: request.headers.get('x-run-id') || '', toolId: body.toolId, argsHash: approvalHash(body.args || {}), origin: appOrigin(), workspace: process.cwd() },
+    });
     const replay = saveReplay({ route: '/api/workflow/tool', toolId: body.toolId, args: body.args }, output);
     recordSecurityEvent('tool.execute', 'ok', { toolId: body.toolId, risk: entry.risk, replayId: replay.id });
     return Response.json({ ok: true, checkpoint: replay.checksum, replayId: replay.id, ...output });

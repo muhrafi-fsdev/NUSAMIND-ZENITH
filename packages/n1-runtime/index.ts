@@ -18,6 +18,6 @@ export function routeN1Request(message:string){
 }
 export function n1ContractEvaluation(){
   const tests=benchmarks as Array<Record<string,string>>;
-  const results=tests.map(t=>({testId:t.test_id,status:'PASS',scope:'CONTRACT_AND_POLICY',criticality:t.criticality}));
-  return {total:results.length,pass:results.length,failed:0,liveModelTests:'NOT_RUN',liveBrowserTests:'NOT_RUN',results};
+  const results=tests.map(t=>({testId:t.test_id,status:'NOT_RUN',scope:'CONTRACT_AND_POLICY',criticality:t.criticality,reason:'No execution evidence attached to this benchmark case.'}));
+  return {total:results.length,pass:0,failed:0,notRun:results.length,status:'NOT_RUN',liveModelTests:'NOT_RUN',liveBrowserTests:'NOT_RUN',results};
 }

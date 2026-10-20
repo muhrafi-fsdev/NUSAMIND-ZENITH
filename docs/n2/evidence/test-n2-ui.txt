@@ -1,0 +1,19 @@
+
+> nusamind-zenith@1.4.1 test:n2:ui
+> playwright test
+
+
+Running 2 tests using 1 worker
+
+Browser 155.0.4283.62, viewport 390, rendered calculation and keyboard focus verified.
+  ok 1 tests\n2\ui\chat.spec.ts:3:7 › legacy chat and native auth at 390px (901ms)
+Browser 155.0.4283.62, viewport 1440, rendered calculation and keyboard focus verified.
+  ok 2 tests\n2\ui\chat.spec.ts:3:7 › legacy chat and native auth at 1440px (504ms)
+
+  2 passed (7.1s)
+
+[WebServer] (node:32308) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+(node:36324) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:32308) ExperimentalWarning: SQLite is an experimental feature and might change at any time

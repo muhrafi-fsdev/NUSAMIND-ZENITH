@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // TypeScript is enforced by `npm run check` before build in the R13.46 release gate.
-  typescript: { ignoreBuildErrors: true },
+  turbopack: { root: process.cwd() },
+  outputFileTracingRoot: process.cwd(),
   experimental: {
     cpus: 2,
     workerThreads: false,

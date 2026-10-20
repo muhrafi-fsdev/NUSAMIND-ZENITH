@@ -29,10 +29,10 @@ function normalizeRow(row: Record<string, unknown>): AyahRow | null {
 }
 
 async function loadFromStaticJson(warning?: string): Promise<QuranDataSource> {
-  const rows = await safeJson<AyahRow[]>(path.join(DATA_DIR, 'quran/ayah-idx.json'), []);
+  const rows = await safeJson<AyahRow[]>(path.join(DATA_DIR, 'quran/ayah-index.json'), []);
   return {
     rows: rows.map((row) => normalizeRow(row as unknown as Record<string, unknown>)).filter(Boolean) as AyahRow[],
-    source: 'quran/ayah-idx.json',
+    source: 'quran/ayah-index.json',
     warning,
   };
 }
@@ -84,7 +84,7 @@ async function loadFromMysql(): Promise<QuranDataSource | null> {
     return {
       rows: [],
       source: 'mysql:quran-db',
-      warning: `Gagal membaca database Al-Qur'an Laragon/MySQL: ${error instanceof Error ? error.message : String(error)}. Fallback ke quran/ayah-idx.json.`,
+      warning: `Gagal membaca database Al-Qur'an Laragon/MySQL: ${error instanceof Error ? error.message : String(error)}. Fallback ke quran/ayah-index.json.`,
     };
   }
 }
