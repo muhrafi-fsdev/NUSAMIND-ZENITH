@@ -1,4 +1,4 @@
-export type AcademicDomain = 'mathematics' | 'physics' | 'chemistry' | 'numeric' | 'coding' | 'general';
+export type AcademicDomain = 'mathematics' | 'physics' | 'chemistry' | 'numeric' | 'coding' | 'research' | 'general';
 export type AnswerDepth = 'concise' | 'balanced' | 'detailed' | 'expert';
 
 export type AcademicAnswerProfile = {
@@ -7,6 +7,7 @@ export type AcademicAnswerProfile = {
   deterministic: boolean;
   requiresFormulaStructure: boolean;
   requiresCodeBlock: boolean;
+  requiresResearchStructure: boolean;
   requestedLanguage?: string;
 };
 
@@ -14,6 +15,20 @@ const codingPattern = /\b(code|kode|coding|program|programming|python|javascript
 const physicsPattern = /\b(fisika|gaya|massa|percepatan|kecepatan|momentum|energi|daya|tegangan|arus|hambatan|frekuensi|gelombang|gravitasi|torsi|kinematika|newton|joule|watt|volt|ampere|ohm)\b/i;
 const chemistryPattern = /\b(kimia|mol|molar|molaritas|stoikiometri|reaksi|asam|basa|ph|atom|molekul|unsur|senyawa|oksidasi|reduksi|entalpi|kesetimbangan|konsentrasi)\b/i;
 const mathematicsPattern = /[∫√πλθ∞Σ∑∂]|\b(matematika|hitung|rumus|persamaan|fungsi|turunan|integral|limit|matriks|determinan|vektor|probabilitas|statistika|aljabar|trigonometri|logaritma|gradien|eigen|deret|faktorkan|sederhanakan)\b/i;
+const researchBriefPattern = /\b(laporan|brief|memo|rekomendasi|keputusan|apakah (?:saya|kami|kita|perusahaan|toko|klien)|bolehkah|wajibkah|berhak|layakkah|memenuhi syarat)\b/i;
+const researchDomainPattern = /\b(regulasi|peraturan|undang-undang|pasal|kepatuhan|compliance|pajak|ppn|pph|hukum|putusan|yurisprudensi|kontrak|klausul|pelabelan|sertifikasi|kompensasi|perizinan|lisensi|audit|gdpr|hipaa|investasi|due diligence)\b/i;
+const researchSourcePattern = /\b(sumber|sitasi|kutip|referensi|dasar hukum|sumber primer|dokumen resmi)\b/i;
+
+/** Brief riset: butuh sinyal domain (hukum/pajak/regulasi) DAN sinyal brief atau permintaan sumber, agar hitungan biasa tidak ikut terbawa. */
+export function isResearchBrief(question: string) {
+  const q = String(question || '');
+  if (q.length < 60) return false;
+  const brief = researchBriefPattern.test(q);
+  const domain = researchDomainPattern.test(q);
+  const source = researchSourcePattern.test(q);
+  return domain && (brief || source);
+}
+
 const numericPattern = /(?:\d[\d.,]*\s*[+\-*/×÷=^%]|[+\-*/×÷=^%]\s*\d)|\b(berapa|nilai|total|rata-rata|persen|rasio|konversi)\b/i;
 
 function explicitDepth(question: string, answerMode = ''): AnswerDepth | null {
@@ -29,6 +44,7 @@ export function classifyAcademicRequest(question: string, edition = 'swift', ans
   const q = String(question || '');
   let domain: AcademicDomain = 'general';
   if (codingPattern.test(q)) domain = 'coding';
+  else if (isResearchBrief(q)) domain = 'research';
   else if (physicsPattern.test(q)) domain = 'physics';
   else if (chemistryPattern.test(q)) domain = 'chemistry';
   else if (mathematicsPattern.test(q)) domain = 'mathematics';
@@ -39,9 +55,10 @@ export function classifyAcademicRequest(question: string, edition = 'swift', ans
   return {
     domain,
     depth,
-    deterministic: domain !== 'general' && (domain !== 'coding' || /\b(output|hasil|trace|kompleksitas|benar|salah|error)\b/i.test(q)),
+    deterministic: domain !== 'general' && domain !== 'research' && (domain !== 'coding' || /\b(output|hasil|trace|kompleksitas|benar|salah|error)\b/i.test(q)),
     requiresFormulaStructure: ['mathematics', 'physics', 'chemistry', 'numeric'].includes(domain),
     requiresCodeBlock: domain === 'coding',
+    requiresResearchStructure: domain === 'research',
   };
 }
 
@@ -83,6 +100,25 @@ ${extra}
 Jangan memotong kode, jangan menaruh kode panjang sebagai teks biasa, dan jangan mengaku sudah menjalankan kode bila belum benar-benar diuji.`;
 }
 
+function researchInstruction(depth: AnswerDepth) {
+  const detail = depth === 'concise'
+    ? 'Ringkas tiap bagian menjadi satu sampai dua kalimat.'
+    : depth === 'balanced'
+      ? 'Beri alasan singkat untuk tiap temuan utama.'
+      : depth === 'detailed'
+        ? 'Uraikan dasar tiap temuan, perhitungan lengkap, dan konflik antar sumber bila ada.'
+        : 'Bandingkan interpretasi alternatif, uraikan risiko, dan tunjukkan apa yang akan mengubah kesimpulan.';
+  return `
+FORMAT WAJIB UNTUK BRIEF RISET/REGULASI/HUKUM/PAJAK:
+1. Keputusan/jawaban inti — satu sampai tiga kalimat yang langsung dapat ditindaklanjuti oleh penanya.
+2. Dasar dan sumber — daftarkan tiap temuan beserta sumbernya. Hanya sebut sumber yang benar-benar ada di konteks retrieval atau lampiran pengguna. Jangan mengarang nomor pasal, putusan, URL, tanggal, atau kutipan. Bila sumber primer tidak tersedia, tulis "belum terverifikasi" dan sebutkan sumber primer apa yang perlu diperiksa.
+3. Perhitungan — tampilkan aritmetika langkah demi langkah memakai angka dari brief atau lampiran, lengkap dengan satuan dan pembulatan. Lewati bagian ini bila tidak ada angka.
+4. Asumsi dan batasan — tulis asumsi, yurisdiksi, tanggal berlaku aturan, dan hal yang tidak dapat dipastikan.
+5. Langkah berikutnya — tindakan konkret yang dapat dilakukan penanya.
+${detail}
+NusaMind berjalan lokal dan tidak mengakses web secara langsung; jangan menyiratkan bahwa sumber sudah dicek ke situs resmi bila tidak. Untuk hukum, pajak, atau keuangan dengan risiko material, sebutkan bahwa jawaban ini bukan nasihat profesional.`;
+}
+
 export function buildAcademicAnswerInstruction(question: string, edition = 'swift', answerMode = 'auto') {
   const profile = classifyAcademicRequest(question, edition, answerMode);
   const base = `
@@ -95,6 +131,7 @@ N1.3 Answer Quality & Academic Response Engine:
 - Profil aktif: domain=${profile.domain}; depth=${profile.depth}; edition=${edition}.`;
   if (profile.requiresFormulaStructure) return base + formulaInstruction(profile.depth);
   if (profile.requiresCodeBlock) return base + codingInstruction(profile.depth);
+  if (profile.requiresResearchStructure) return base + researchInstruction(profile.depth);
   return base + '\nUntuk pertanyaan umum, jawab inti lebih dulu, lalu detail pendukung secukupnya.';
 }
 
@@ -105,6 +142,7 @@ export function answerQualityStatus(edition = 'swift') {
     adaptiveDepth: true,
     formulaStructure: ['Diketahui', 'Konsep/Rumus', 'Penyelesaian', 'Jawaban akhir', 'Penjelasan singkat'],
     codingStructure: ['Tujuan', 'Kode lengkap', 'Cara kerja', 'Contoh input/output', 'Catatan penting'],
+    researchStructure: ['Keputusan inti', 'Dasar dan sumber', 'Perhitungan', 'Asumsi dan batasan', 'Langkah berikutnya'],
     rawLatexDefault: false,
     datasetStyleDefault: false,
   };

@@ -205,8 +205,14 @@ function terminalSafeTables(text: string, width = 80) {
     table = [];
   };
 
+  let fenced = false;
   for (const line of lines) {
-    if (line.includes('|') && line.split('|').length >= 3) table.push(line);
+    if (/^\s*(`{3,}|~{3,})/.test(line)) {
+      flush();
+      fenced = !fenced;
+      output.push(line);
+    } else if (fenced) output.push(line);
+    else if (line.includes('|') && line.split('|').length >= 3) table.push(line);
     else {
       flush();
       output.push(line);

@@ -1,6 +1,6 @@
 {
   "format": "nusamind-suite-capability-map-v1",
-  "release": "N1.4.2",
+  "release": "N1.5",
   "edition": "zenith",
   "statusValues": {
     "SUPPORTED_UNMEASURED": "Kode dan model mendukung jenis pekerjaan ini, tetapi belum pernah diukur pada suite.",
@@ -10,7 +10,7 @@
   "measurement": {
     "liveBenchmark": "NOT_RUN",
     "scoreClaimed": null,
-    "note": "Peta ini audit kode statis pada rilis N1.4.2, bukan hasil benchmark. Tidak ada skor yang boleh dikutip dari berkas ini."
+    "note": "Peta ini audit kode statis pada rilis N1.5, bukan hasil benchmark. Tidak ada skor yang boleh dikutip dari berkas ini."
   },
   "suites": [
     {
@@ -66,11 +66,13 @@
       "status": "PARTIAL",
       "evidence": [
         "lib/file-analyzer.ts membaca CSV, XLSX, JSON, dan format tabel lain pada unggahan.",
-        "lib/calc-engine.ts menangani hitungan deterministik dasar."
+        "lib/table-engine.ts (N1.5): konversi CSV/TSV/JSON/JSONL/Markdown/HTML, deteksi runtutan pertumbuhan berturut-turut dengan tanggal berformat campuran, dan pemetaan kolom berdasarkan kemiripan nilai. Dipasang di lib/calc-engine.ts sehingga kedua rute chat memakainya.",
+        "Handler menolak (null) bila parse ambigu, sehingga model yang menjawab; asumsi seperti urutan dd/mm ditulis di jawaban."
       ],
       "gaps": [
-        "Tidak ditemukan handler tabel untuk join kolom terobfuskasi, konversi format (CSV/TSV/JSON/JSONL/Markdown/HTML), atau deteksi runtutan pertumbuhan.",
-        "Perilaku saat ini bergantung pada model, bukan hasil deterministik."
+        "Handler diuji pada 37 kasus buatan sendiri (data/benchmarks/table-engine-cases.json), bukan pada suite Data Analysis.",
+        "Input yang bukan tabel bersih (tabel tertanam dalam prosa, kolom tanpa pola) tetap dijawab model.",
+        "Arti \"N berturut-turut\" (N kenaikan vs N titik data) ditampilkan dua-duanya karena sumbernya tidak mendefinisikan."
       ]
     },
     {
@@ -78,11 +80,13 @@
       "status": "PARTIAL",
       "evidence": [
         "Retrieval lokal dan evidence graph (lib/retrieval-v6.ts, lib/evidence-graph-v3.ts, lib/search.ts hybrid search atas corpus lokal).",
-        "Registry riset (lib/research/registry.ts) hanya mengelola status aktivasi topik riset."
+        "Registry riset (lib/research/registry.ts) hanya mengelola status aktivasi topik riset.",
+        "lib/academic-answer-engine.ts (N1.5): kerangka laporan untuk brief hukum/pajak/regulasi (keputusan inti, dasar dan sumber, perhitungan, asumsi, langkah berikutnya) dengan larangan mengarang pasal, URL, atau kutipan."
       ],
       "gaps": [
         "Tidak ditemukan pencarian web langsung ke sumber primer.",
-        "Sitasi bersumber bergantung pada corpus lokal yang tidak diperbarui otomatis."
+        "Sitasi bersumber bergantung pada corpus lokal yang tidak diperbarui otomatis.",
+        "Kerangka laporan adalah instruksi prompt; kepatuhan model terhadapnya belum diukur."
       ]
     },
     {

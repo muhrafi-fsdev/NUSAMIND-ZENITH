@@ -1,6 +1,6 @@
 {
-  "release": "1.4.2",
-  "releaseLabel": "N1.4.2",
+  "release": "1.5.0",
+  "releaseLabel": "N1.5",
   "edition": "zenith",
   "editionName": "NusaMind Zenith",
   "description": "Balanced local intelligence with deeper reasoning, artifact research, approved engineering workflows, and defensive security analysis.",
@@ -93,7 +93,7 @@
     "architectureMigration": "compatibility-bridge"
   },
   "schemaVersion": 1,
-  "version": "1.4.2",
+  "version": "1.5.0",
   "lineage": [
     "R13.49.1 Cybersecurity-Only",
     "V13.49.2"

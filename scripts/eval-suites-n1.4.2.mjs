@@ -17,7 +17,7 @@ const fullySplit = taxonomy.suites.filter((s) => s.subcategories.every((x) => Nu
 const partlySplit = taxonomy.suites.filter((s) => !fullySplit.includes(s));
 
 const checks = {
-  version: /^1\.4\.\d+$/.test(pkg.version) && pkg.version !== '1.4.0' && pkg.version !== '1.4.1',
+  version: (([a, b, c]) => a === 1 && (b > 4 || (b === 4 && c >= 2)))(pkg.version.split('.').map(Number)),
   sevenSuites: taxonomy.suites.length === 7 && ids.every((id) => byId[id]),
   suiteCounts: ids.every((id) => byId[id]?.count === expected[id]),
   subcategoryCountsSum: fullySplit.every((s) => s.subcategories.reduce((sum, x) => sum + x.count, 0) === s.count),

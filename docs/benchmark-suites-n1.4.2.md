@@ -36,8 +36,8 @@ Implementasi ada di `lib/suite-scoring.ts` dan diuji perilakunya oleh `npm run s
 | Reasoning | SUPPORTED_UNMEASURED | `qwen3:8b` dengan thinking adaptif |
 | Agentic | PARTIAL | Extended loop terbatas; belum ada bukti ketahanan lintas giliran |
 | Coding | PARTIAL | Developer Intelligence ada; belum dievaluasi pada bug repositori besar |
-| Data Analysis | PARTIAL | Pembaca tabel ada; tidak ada handler join, reformat, atau runtutan |
-| Research | PARTIAL | Retrieval lokal ada; tidak ada pencarian web langsung |
+| Data Analysis | PARTIAL | N1.4.2: hanya pembaca tabel. Sejak N1.5 ada handler konversi, runtutan, dan pemetaan kolom (lihat `docs/table-engine-n1.5.md`) |
+| Research | PARTIAL | Retrieval lokal ada; tidak ada pencarian web langsung. Sejak N1.5 ada kerangka laporan bersumber |
 | Browser Use | NOT_SUPPORTED | Tidak ada jalur screenshot, eksekutor browser, dan host lokal diblokir kebijakan |
 | Design | NOT_SUPPORTED | Tidak ada penghasil DOCX, PDF, atau PPTX |
 

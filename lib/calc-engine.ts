@@ -1,4 +1,6 @@
 
+import { tryBuildTableAnswer } from './table-engine';
+
 export type Edition = 'swift' | 'zenith' | 'apex';
 export type AnswerMode = 'auto' | 'direct' | 'concise' | 'balanced' | 'steps' | 'detailed' | 'academic' | 'expert' | 'plain' | 'markdown' | 'latex' | 'copy';
 
@@ -323,6 +325,9 @@ export function tryBuildCalculationAnswer(question: string, editionInput: string
   const edition = (['swift', 'zenith', 'apex'].includes(editionInput) ? editionInput : 'swift') as Edition;
   const q = question.trim();
   const lower = q.toLowerCase();
+
+  const tableAnswer = tryBuildTableAnswer(q);
+  if (tableAnswer) return tableAnswer;
 
   if (/\b(rumus kuadrat|quadratic formula)\b/i.test(q) && /\blatex\b/i.test(q)) {
     return verified('x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n\nStatus: Formula referensi', 'alg-quadratic-ref', 'algebra');

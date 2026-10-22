@@ -5,7 +5,18 @@
     "title": "Tujuh Suite Evaluasi Model: Gambaran Umum",
     "category": "Benchmark Suites",
     "text": "Suite evaluasi yang dirujuk NusaMind terdiri dari tujuh: Agentic (18 task), Reasoning (202 pertanyaan), Coding (29 task), Browser Use (25 task), Data Analysis (150 pertanyaan), Research (22 task), dan Design (25 task). Reasoning dan Data Analysis dihitung per pertanyaan dan tidak agentic: tanpa tool, satu jawaban per pertanyaan. Lima suite lain dihitung per task. Daftar ini diberikan pengembang dan asal-usulnya belum diverifikasi; sebutkan itu bila dikutip.",
-    "tags": ["benchmark", "suite", "evaluasi", "agentic", "reasoning", "coding", "browser use", "data analysis", "research", "design"],
+    "tags": [
+      "benchmark",
+      "suite",
+      "evaluasi",
+      "agentic",
+      "reasoning",
+      "coding",
+      "browser use",
+      "data analysis",
+      "research",
+      "design"
+    ],
     "source": "user-provided; provenance unverified (data/benchmarks/suite-taxonomy.json)",
     "confidence": 0.8
   },
@@ -15,7 +26,16 @@
     "title": "Suite Agentic",
     "category": "Benchmark Suites",
     "text": "Agentic: 18 task pekerjaan berjalan lama, tempat keputusan awal harus bertahan sampai giliran, bulan, atau test case berikutnya. Subkategori: Finance & Compliance Apps (4) untuk payroll, anggaran dewan, klaim pajak amal, dan bukti audit; Operations & Commerce Apps (4) untuk tiket teater, sewa peralatan, ketertelusuran stok, dan catatan lokasi limbah; Long-Run Operations (3) yaitu simulasi bulan rilis data, penutupan penagihan, dan tiket perubahan; Systems Engineering (3) yaitu compiler dari spesifikasi, simulator fisika numerik, dan armada layanan; Performance Optimisation (4) yaitu compiler lebih cepat dan jadwal workshop lebih rapat. Penilaian oleh skrip terhadap data referensi tersembunyi, program uji tersembunyi, atau hasil simulasi.",
-    "tags": ["benchmark", "agentic", "long-run", "finance", "compliance", "operations", "compiler", "performance"],
+    "tags": [
+      "benchmark",
+      "agentic",
+      "long-run",
+      "finance",
+      "compliance",
+      "operations",
+      "compiler",
+      "performance"
+    ],
     "source": "user-provided; provenance unverified (data/benchmarks/suite-taxonomy.json)",
     "confidence": 0.8
   },
@@ -25,7 +45,14 @@
     "title": "Suite Reasoning",
     "category": "Benchmark Suites",
     "text": "Reasoning: 202 pertanyaan singkat tentang logika, spasial, dan theory of mind, masing-masing dengan satu jawaban benar. Subkategori: Theory of mind (melacak siapa tahu atau meyakini apa), Zebra puzzles (menyimpulkan atribut dari petunjuk yang saling mengunci), Spatial (bentuk dan posisi 2D dan 3D), Logic with navigation (siapa yang jujur dari rantai pernyataan). Jawaban dicek terhadap ground truth. Rincian jumlah per subkategori belum diketahui.",
-    "tags": ["benchmark", "reasoning", "theory of mind", "zebra puzzle", "spatial", "logika"],
+    "tags": [
+      "benchmark",
+      "reasoning",
+      "theory of mind",
+      "zebra puzzle",
+      "spatial",
+      "logika"
+    ],
     "source": "user-provided; provenance unverified (data/benchmarks/suite-taxonomy.json)",
     "confidence": 0.8
   },
@@ -35,7 +62,16 @@
     "title": "Suite Coding",
     "category": "Benchmark Suites",
     "text": "Coding: 29 task memperbaiki bug nyata di codebase produksi besar yang dibekukan pada snapshot tetap. Setiap task adalah bug yang diperbaiki pull request nyata yang di-merge; model menerima laporan bug dan repositori. Subkategori: LLM API Integration (4), Agent Loop (5), Billing & Limits (4), Cloud Infrastructure (6), Product & UX (6), Memory & Tools (4). Hidden test memeriksa perbaikan; perbaikan yang merusak perilaku yang ada mendapat skor 0, sehingga patch harus minimal dan tidak melebar.",
-    "tags": ["benchmark", "coding", "bug fix", "hidden test", "llm api", "agent loop", "billing", "cloud"],
+    "tags": [
+      "benchmark",
+      "coding",
+      "bug fix",
+      "hidden test",
+      "llm api",
+      "agent loop",
+      "billing",
+      "cloud"
+    ],
     "source": "user-provided; provenance unverified (data/benchmarks/suite-taxonomy.json)",
     "confidence": 0.8
   },
@@ -45,7 +81,15 @@
     "title": "Suite Browser Use",
     "category": "Benchmark Suites",
     "text": "Browser Use: 25 task multi-langkah di aplikasi web yang berjalan (toko online, papan proyek, penjadwal janji temu, buku besar pengeluaran, helpdesk, dan wiki) melalui browser sungguhan yang dilihat model lewat screenshot. Subkategori: Data Aggregation (7), Sequential Planning (4), Analysis-Driven Action (6), Structural Integrity (5), Constraint Adherence (3). Jawaban dan data akhir aplikasi dicek terhadap hasil yang diharapkan; skor adalah persentase task lulus. Model yang tidak dapat mengambil screenshot mendapat skor 0.",
-    "tags": ["benchmark", "browser use", "screenshot", "web app", "aggregation", "planning", "constraint"],
+    "tags": [
+      "benchmark",
+      "browser use",
+      "screenshot",
+      "web app",
+      "aggregation",
+      "planning",
+      "constraint"
+    ],
     "source": "user-provided; provenance unverified (data/benchmarks/suite-taxonomy.json)",
     "confidence": 0.8
   },
@@ -55,7 +99,18 @@
     "title": "Suite Data Analysis",
     "category": "Benchmark Suites",
     "text": "Data Analysis: 150 pertanyaan analisis data singkat pada tabel kecil dengan satu jawaban benar, tanpa tool. Subkategori: Consecutive events (temukan entitas dengan runtutan pertumbuhan berurutan pada nilai bertanggal berformat campuran), Table join (petakan kolom tabel pertama ke tabel kedua yang nama kolomnya terobfuskasi), Table reformat (konversi antara CSV, TSV, JSON, JSONL, Markdown, dan HTML). Jawaban dicek terhadap ground truth, jadi hasil harus tepat, bukan sekadar masuk akal.",
-    "tags": ["benchmark", "data analysis", "tabel", "csv", "tsv", "json", "jsonl", "markdown", "html", "join"],
+    "tags": [
+      "benchmark",
+      "data analysis",
+      "tabel",
+      "csv",
+      "tsv",
+      "json",
+      "jsonl",
+      "markdown",
+      "html",
+      "join"
+    ],
     "source": "user-provided; provenance unverified (data/benchmarks/suite-taxonomy.json)",
     "confidence": 0.8
   },
@@ -65,7 +120,16 @@
     "title": "Suite Research",
     "category": "Benchmark Suites",
     "text": "Research: 22 brief terbuka yang dijawab dengan riset dan laporan bersumber. Setiap brief datang dari tokoh bernama dalam situasi tertentu (pemilik toko, kepala kepatuhan, komite investasi), sering dengan file terlampir, dan meminta keputusan atau jawaban yang dapat ditindaklanjuti. Subkategori: Regulatory & Compliance (7), Legal (4), Tax & Finance (5), Strategy (3), Science & Evidence (3). Laporan dinilai terhadap rubrik khusus task: sumber primer, otoritas yang dikutip, dan aritmetika yang ditunjukkan.",
-    "tags": ["benchmark", "research", "regulatory", "legal", "pajak", "strategi", "sumber primer", "laporan"],
+    "tags": [
+      "benchmark",
+      "research",
+      "regulatory",
+      "legal",
+      "pajak",
+      "strategi",
+      "sumber primer",
+      "laporan"
+    ],
     "source": "user-provided; provenance unverified (data/benchmarks/suite-taxonomy.json)",
     "confidence": 0.8
   },
@@ -75,7 +139,15 @@
     "title": "Suite Design",
     "category": "Benchmark Suites",
     "text": "Design: 25 task membuat atau mengolah ulang dokumen jadi sesuai brief. Subkategori: Documents (DOCX) 5 task, PDF 8 task (laporan tahunan, lembar merek, buku panduan, menu, poster, galeri, serta rebrand atau restyle PDF), dan Presentations (PPT) 12 task (talk, laporan status RAG, grafik di slide, penerapan merek, desain ulang, pemangkasan atau lokalisasi deck, brief kabur). File hasil dirender lalu dinilai lewat pemeriksaan visual dan struktural terhadap brief.",
-    "tags": ["benchmark", "design", "docx", "pdf", "pptx", "slide", "dokumen"],
+    "tags": [
+      "benchmark",
+      "design",
+      "docx",
+      "pdf",
+      "pptx",
+      "slide",
+      "dokumen"
+    ],
     "source": "user-provided; provenance unverified (data/benchmarks/suite-taxonomy.json)",
     "confidence": 0.8
   },
@@ -85,7 +157,14 @@
     "title": "Aturan Perhitungan Skor Suite",
     "category": "Benchmark Suites",
     "text": "Skor tiap task 0 sampai 100. Skor suite adalah rata-rata semua task atau pertanyaannya, bukan rata-rata subkategori. Task yang tidak terukur karena galat harness atau provider (dan gagal lagi pada satu rerun) dihitung 0 dan tidak dibuang dari rata-rata. Setiap suite dijalankan satu kali per model pada pengaturan effort tertinggi yang didukung. Pengecualian subkategori: Data Analysis dan Reasoning memakai rata-rata berbobot sama antar subkategori; Design, Research, Browser Use, Coding, dan Agentic memakai rata-rata per task. Skor subkategori antar suite tidak dapat dibandingkan langsung.",
-    "tags": ["benchmark", "skor", "scoring", "rata-rata", "tidak terukur", "subkategori"],
+    "tags": [
+      "benchmark",
+      "skor",
+      "scoring",
+      "rata-rata",
+      "tidak terukur",
+      "subkategori"
+    ],
     "source": "user-provided; provenance unverified (data/benchmarks/scoring-method.json)",
     "confidence": 0.8
   },
@@ -95,7 +174,14 @@
     "title": "Cara Membaca Skor Overall dan Sel Kosong",
     "category": "Benchmark Suites",
     "text": "Overall adalah rata-rata suite yang punya skor untuk model itu, dan tiap suite berbobot sama. Sel kosong (strip) berarti suite masih berjalan atau dijalankan ulang dan tidak ikut dihitung. Label n/a berarti model sengaja dikecualikan dari suite. Model yang kekurangan input yang dibutuhkan suite, misalnya model teks pada Browser Use yang bekerja lewat screenshot, tidak n/a melainkan mendapat skor 0 karena memang tidak bisa mengerjakannya.",
-    "tags": ["benchmark", "overall", "n/a", "sel kosong", "browser use", "model teks"],
+    "tags": [
+      "benchmark",
+      "overall",
+      "n/a",
+      "sel kosong",
+      "browser use",
+      "model teks"
+    ],
     "source": "user-provided; provenance unverified (data/benchmarks/scoring-method.json)",
     "confidence": 0.8
   },
@@ -105,7 +191,15 @@
     "title": "Metrik Biaya per Task dan per Task Sukses",
     "category": "Benchmark Suites",
     "text": "Biaya per task menghitung setiap panggilan model yang diuji dengan harga list provider dan input ter-cache pada tarif cache; tidak termasuk keadaan awal tetap sebagian task dan panggilan bantu harness. Lintas suite, biaya per task adalah total biaya dibagi total task, bukan rata-rata biaya per suite. Task Agentic memakai puluhan panggilan berkonteks panjang sehingga jauh lebih mahal; menyertakan banyak pertanyaan Data Analysis dan Reasoning menurunkan angka keseluruhan. Biaya per task sukses = (biaya per task dibagi skor) kali 100, jadi kegagalan dan nilai parsial menaikkannya. Zenith berjalan lokal di Ollama tanpa harga list, sehingga biaya USD tidak berlaku; laporkan token, latensi, serta RAM/VRAM sebagai gantinya.",
-    "tags": ["benchmark", "biaya", "cost", "cost per task", "token", "ollama", "lokal"],
+    "tags": [
+      "benchmark",
+      "biaya",
+      "cost",
+      "cost per task",
+      "token",
+      "ollama",
+      "lokal"
+    ],
     "source": "user-provided; provenance unverified (data/benchmarks/scoring-method.json)",
     "confidence": 0.8
   },
@@ -114,8 +208,16 @@
     "type": "universal",
     "title": "Kemampuan Zenith terhadap Tujuh Suite (Audit Kode, Belum Diukur)",
     "category": "Benchmark Suites",
-    "text": "Audit kode statis N1.4.2, bukan hasil benchmark. Reasoning: SUPPORTED_UNMEASURED. Agentic, Coding, Data Analysis, dan Research: PARTIAL. Browser Use dan Design: NOT_SUPPORTED, karena tidak ada jalur screenshot ke model teks, eksekutor browser, atau penghasil DOCX, PDF, dan PPTX. Benchmark live berstatus NOT_RUN dan tidak ada skor yang boleh diklaim. Rincian bukti dan celah ada di data/runtime/suite-capability-map.json.",
-    "tags": ["benchmark", "zenith", "kemampuan", "capability", "audit", "not run", "tidak ada klaim skor"],
+    "text": "Audit kode statis N1.5, bukan hasil benchmark. Reasoning: SUPPORTED_UNMEASURED. Agentic, Coding, Data Analysis, dan Research: PARTIAL. Data Analysis kini punya handler deterministik untuk konversi tabel, runtutan pertumbuhan, dan pemetaan kolom yang menolak bila ambigu; Research punya kerangka laporan yang melarang sumber karangan; keduanya belum diukur pada suite. Browser Use dan Design: NOT_SUPPORTED, karena tidak ada jalur screenshot ke model teks, eksekutor browser, atau penghasil DOCX, PDF, dan PPTX. Benchmark live berstatus NOT_RUN dan tidak ada skor yang boleh diklaim. Rincian bukti dan celah ada di data/runtime/suite-capability-map.json.",
+    "tags": [
+      "benchmark",
+      "zenith",
+      "kemampuan",
+      "capability",
+      "audit",
+      "not run",
+      "tidak ada klaim skor"
+    ],
     "source": "data/runtime/suite-capability-map.json",
     "confidence": 0.85
   }

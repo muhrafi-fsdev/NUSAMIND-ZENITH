@@ -10,7 +10,7 @@ const env=read('.env.example');
 const routing=json('data/runtime/model-routing.json');
 const prompts=json('data/runtime/prompt-registry.json');
 const tests={
- release:/^1\.4\.\d+$/.test(pkg.version),
+ release:/^1\.(?:[4-9]|\d{2,})\.\d+$/.test(pkg.version),
  qwen3Main:String(routing.mainModel).startsWith('qwen3:'),
  coderConfigured:Boolean(routing.coderModel),
  fallbackConfigured:Boolean(routing.fallbackModel),

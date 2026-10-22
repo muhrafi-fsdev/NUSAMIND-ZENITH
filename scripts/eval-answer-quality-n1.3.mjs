@@ -7,7 +7,7 @@ const prompts = read('lib/prompts.ts');
 const pkg = JSON.parse(read('package.json'));
 const profile = JSON.parse(read('data/runtime/answer-quality-profile.json'));
 const cases = [
-  ['version', /^1\.(3|4)\.\d+$/.test(pkg.version)],
+  ['version', /^1\.(?:[3-9]|\d{2,})\.\d+$/.test(pkg.version)],
   ['engine exists', engine.includes('buildAcademicAnswerInstruction')],
   ['math known section', engine.includes('Diketahui')],
   ['formula section', engine.includes('Konsep/Rumus')],
