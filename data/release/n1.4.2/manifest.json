@@ -1,0 +1,24 @@
+{
+  "release": "N1.4.2",
+  "version": "1.4.2",
+  "edition": "zenith",
+  "type": "patch",
+  "title": "Suite Knowledge & Evaluation Map",
+  "addedData": [
+    "data/benchmarks/suite-taxonomy.json",
+    "data/benchmarks/scoring-method.json",
+    "data/knowledge/benchmark-suites.json",
+    "data/runtime/suite-capability-map.json"
+  ],
+  "addedCode": [
+    "lib/suite-scoring.ts",
+    "scripts/eval-suites-n1.4.2.mjs",
+    "scripts/suite-status-n1.4.2.mjs"
+  ],
+  "sourceProvenance": "user-provided, UNVERIFIED",
+  "uiChanged": false,
+  "modelRuntimeChanged": false,
+  "answerBehaviorChanged": false,
+  "liveSuiteBenchmark": "NOT_RUN",
+  "scoreClaimed": null
+}

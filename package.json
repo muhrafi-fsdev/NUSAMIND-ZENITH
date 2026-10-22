@@ -1,6 +1,6 @@
 {
   "name": "nusamind-zenith",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "private": true,
   "description": "NusaMind Zenith N1.4 Adaptive Qwen3 Model Runtime.",
   "scripts": {
@@ -81,7 +81,9 @@
     "check:legacy": "tsc6 --noEmit",
     "check:dual": "npm run check && npm run check:legacy",
     "typescript:n141:status": "node scripts/typescript-status-n1.4.1.mjs",
-    "typescript:n141:benchmark": "node scripts/eval-typescript-n1.4.1.mjs"
+    "typescript:n141:benchmark": "node scripts/eval-typescript-n1.4.1.mjs",
+    "suites:n142:status": "node scripts/suite-status-n1.4.2.mjs",
+    "suites:n142:benchmark": "node scripts/eval-suites-n1.4.2.mjs"
   },
   "dependencies": {
     "@ai-sdk/openai": "4.0.11",

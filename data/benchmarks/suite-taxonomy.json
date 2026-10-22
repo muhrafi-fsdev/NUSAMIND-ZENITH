@@ -1,0 +1,138 @@
+{
+  "format": "nusamind-suite-taxonomy-v1",
+  "release": "N1.4.2",
+  "provenance": {
+    "origin": "user-provided",
+    "verification": "UNVERIFIED",
+    "note": "Diberikan langsung oleh pengembang. Penerbit, URL, dan tanggal snapshot belum diketahui. Jangan dikutip sebagai sumber eksternal sebelum asal-usulnya dikonfirmasi."
+  },
+  "totals": {
+    "suites": 7,
+    "agenticTasks": 18,
+    "unitNote": "Reasoning dan Data Analysis dihitung per pertanyaan, suite lain per task."
+  },
+  "suites": [
+    {
+      "id": "agentic",
+      "name": "Agentic",
+      "unit": "task",
+      "count": 18,
+      "tooling": "agentic",
+      "summary": "Pekerjaan berjalan lama; keputusan awal harus tetap benar sampai giliran, bulan, atau test case berikutnya.",
+      "grading": "Dinilai skrip terhadap data referensi tersembunyi, program uji tersembunyi, atau hasil simulasi.",
+      "subcategories": [
+        { "name": "Finance & Compliance Apps", "count": 4, "description": "Mengambil alih aplikasi payroll, anggaran dewan, klaim pajak amal, atau bukti audit; angka dan jejak kertas harus benar saat aturan berubah." },
+        { "name": "Operations & Commerce Apps", "count": 4, "description": "Mengambil alih aplikasi tiket teater, sewa peralatan, ketertelusuran stok, atau catatan lokasi limbah; tetap benar saat bisnis berubah." },
+        { "name": "Long-Run Operations", "count": 3, "description": "Menjalankan codebase melalui simulasi rilis data, penutupan penagihan, dan tiket perubahan berbulan-bulan; jalan pintas awal muncul belakangan." },
+        { "name": "Systems Engineering", "count": 3, "description": "Membangun compiler dari spesifikasi tertulis, memperbaiki simulator fisika numerik, dan menjaga armada layanan lewat aliran insiden." },
+        { "name": "Performance Optimisation", "count": 4, "description": "Membuat compiler yang ada menghasilkan kode lebih cepat dan jadwal workshop lebih rapat; dinilai dari hasil terukur." }
+      ]
+    },
+    {
+      "id": "reasoning",
+      "name": "Reasoning",
+      "unit": "question",
+      "count": 202,
+      "tooling": "none",
+      "summary": "Pertanyaan logika, spasial, dan theory-of-mind yang singkat dengan satu jawaban benar. Bukan agentic: tanpa tool, satu jawaban per pertanyaan.",
+      "grading": "Jawaban dicek terhadap ground truth.",
+      "subcategories": [
+        { "name": "Theory of mind", "count": null, "description": "Melacak siapa tahu atau meyakini apa dalam cerita pendek." },
+        { "name": "Zebra puzzles", "count": null, "description": "Menyimpulkan siapa memiliki atribut apa dari petunjuk yang saling mengunci." },
+        { "name": "Spatial", "count": null, "description": "Bernalar tentang bentuk dan posisi dalam 2D dan 3D." },
+        { "name": "Logic with navigation", "count": null, "description": "Menentukan siapa yang jujur dari rantai pernyataan." }
+      ],
+      "subcategoryCountNote": "Sumber menampilkan angka 1 per subkategori sehingga tidak dapat dijumlahkan menjadi 202. Pecahan per subkategori belum diketahui."
+    },
+    {
+      "id": "coding",
+      "name": "Coding",
+      "unit": "task",
+      "count": 29,
+      "tooling": "repository",
+      "summary": "Memperbaiki bug nyata di codebase produksi besar yang dibekukan pada snapshot tetap. Setiap task adalah bug yang diperbaiki oleh pull request yang benar-benar di-merge; model menerima laporan bug dan repositori.",
+      "grading": "Hidden test memeriksa perbaikan; perbaikan yang merusak perilaku yang sudah ada mendapat skor 0.",
+      "subcategories": [
+        { "name": "LLM API Integration", "count": 4, "description": "Format wire provider serta penanganan request/response." },
+        { "name": "Agent Loop", "count": 5, "description": "Alur kontrol runtime agent." },
+        { "name": "Billing & Limits", "count": 4, "description": "Metering, kuota, dan penegakan batas." },
+        { "name": "Cloud Infrastructure", "count": 6, "description": "Penyimpanan, komputasi, dan plumbing layanan cloud." },
+        { "name": "Product & UX", "count": 6, "description": "Perilaku produk yang dihadapi pengguna." },
+        { "name": "Memory & Tools", "count": 4, "description": "Penanganan memori dan integrasi tool." }
+      ],
+      "examples": [
+        "Menghentikan credit throttle menghitung ganda pemakaian",
+        "Menjaga indeks memori dalam urutan stabil",
+        "Menormalkan konten gambar untuk API provider",
+        "Menolak bucket penyimpanan bersama pada konektor cloud"
+      ]
+    },
+    {
+      "id": "browser-use",
+      "name": "Browser Use",
+      "unit": "task",
+      "count": 25,
+      "tooling": "browser-screenshot",
+      "summary": "Menyelesaikan pekerjaan multi-langkah di aplikasi web yang berjalan melalui browser sungguhan yang dilihat model lewat screenshot. Aplikasinya: toko online, papan proyek, penjadwal janji temu, buku besar pengeluaran, helpdesk dukungan, dan wiki.",
+      "grading": "Jawaban dan data akhir aplikasi dicek terhadap hasil yang diharapkan; skor adalah persentase task yang lulus. Model yang tidak dapat mengambil screenshot tidak bisa mengerjakan task ini dan mendapat skor 0.",
+      "requiresVision": true,
+      "subcategories": [
+        { "name": "Data Aggregation", "count": 7, "description": "Rekap yang mengharuskan setiap record dibaca, misalnya total kategori atau beban kerja lintas banyak halaman." },
+        { "name": "Sequential Planning", "count": 4, "description": "Rencana yang bergantung urutan, misalnya beberapa pesanan dengan batasan bersama atau menjadwal ulang janji temu sehari." },
+        { "name": "Analysis-Driven Action", "count": 6, "description": "Menghitung hasil dari data lalu bertindak, misalnya menandai dan mengkategorikan ulang transaksi menurut aturan." },
+        { "name": "Structural Integrity", "count": 5, "description": "Perubahan yang harus menjaga struktur, misalnya menggabungkan tiket duplikat atau memindah subpohon halaman beserta tautannya." },
+        { "name": "Constraint Adherence", "count": 3, "description": "Input yang tepat dan menolak tindakan yang tidak diizinkan aplikasi." }
+      ]
+    },
+    {
+      "id": "data-analysis",
+      "name": "Data Analysis",
+      "unit": "question",
+      "count": 150,
+      "tooling": "none",
+      "summary": "Pertanyaan analisis data singkat pada tabel kecil dengan satu jawaban benar. Bukan agentic: tanpa tool, satu jawaban per pertanyaan.",
+      "grading": "Jawaban dicek terhadap ground truth.",
+      "subcategories": [
+        { "name": "Consecutive events", "count": null, "description": "Dari tabel kecil bernilai bertanggal dengan format campuran, temukan entitas yang mengalami runtutan pertumbuhan berurutan." },
+        { "name": "Table join", "count": null, "description": "Dari dua tabel, salah satunya dengan nama kolom terobfuskasi, petakan kolom tabel pertama ke tabel kedua." },
+        { "name": "Table reformat", "count": null, "description": "Mengonversi tabel antara CSV, TSV, JSON, JSONL, Markdown, dan HTML." }
+      ],
+      "subcategoryCountNote": "Sumber menampilkan angka 1 per subkategori sehingga tidak dapat dijumlahkan menjadi 150. Pecahan per subkategori belum diketahui."
+    },
+    {
+      "id": "research",
+      "name": "Research",
+      "unit": "task",
+      "count": 22,
+      "tooling": "web-research",
+      "summary": "Menjawab brief terbuka dengan riset lalu menulis laporan bersumber. Setiap brief berasal dari tokoh bernama dalam situasi tertentu (pemilik toko, kepala kepatuhan, komite investasi), sering dengan file terlampir, dan meminta keputusan atau jawaban yang bisa ditindaklanjuti.",
+      "grading": "Laporan dinilai terhadap rubrik khusus task.",
+      "subcategories": [
+        { "name": "Regulatory & Compliance", "count": 7, "description": "Aturan, pelaporan, dan pertanyaan kepatuhan yang dijawab dari sumber primer." },
+        { "name": "Legal", "count": 4, "description": "Undang-undang, putusan, dan pertanyaan kontrak dengan otoritas yang dikutip." },
+        { "name": "Tax & Finance", "count": 5, "description": "Aturan pajak dan angka keuangan dengan aritmetika yang ditunjukkan." },
+        { "name": "Strategy", "count": 3, "description": "Analisis pasar dan kompetitor dengan bukti bersumber." },
+        { "name": "Science & Evidence", "count": 3, "description": "Pertanyaan ilmiah dan empiris yang ditimbang pada bukti terbit." }
+      ],
+      "examples": [
+        "Menentukan gangguan penerbangan mana dalam log klaim yang berhak atas kompensasi",
+        "Memeriksa kemasan baru terhadap aturan pelabelan organik",
+        "Menelusuri publikasi mana yang menghasilkan tiap angka dalam memo investasi"
+      ]
+    },
+    {
+      "id": "design",
+      "name": "Design",
+      "unit": "task",
+      "count": 25,
+      "tooling": "file-generation",
+      "summary": "Membuat atau mengolah ulang dokumen jadi sesuai brief: dokumen Word, PDF, dan slide deck.",
+      "grading": "File hasil dirender dan dinilai lewat pemeriksaan visual dan struktural terhadap brief.",
+      "subcategories": [
+        { "name": "Documents (DOCX)", "count": 5, "description": "Mengubah gaya dokumen yang ada, mengubah catatan Markdown menjadi dokumen terformat, menata one-pager, mendesain ulang dokumen." },
+        { "name": "PDF", "count": 8, "description": "Laporan tahunan, lembar merek, buku panduan, menu, poster, galeri, serta rebrand atau restyle PDF yang ada." },
+        { "name": "Presentations (PPT)", "count": 12, "description": "Menyusun presentasi atau laporan status (RAG), membuat grafik di slide, menerapkan merek, mendesain ulang, memangkas atau melokalkan deck, dan bekerja dari brief yang kabur." }
+      ]
+    }
+  ]
+}

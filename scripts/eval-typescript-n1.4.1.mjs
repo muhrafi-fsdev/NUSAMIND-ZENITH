@@ -2,7 +2,7 @@ import fs from "node:fs";
 import { spawnSync } from "node:child_process";
 const pkg = JSON.parse(fs.readFileSync("package.json", "utf8"));
 const checks = [
-  ["release version", pkg.version === "1.4.1"],
+  ["release version", /^1\.4\.[1-9]\d*$/.test(pkg.version)],
   ["native alias", String(pkg.devDependencies?.["@typescript/native"] || "").includes("typescript@^7.0.2")],
   ["compatibility alias", String(pkg.devDependencies?.typescript || "").includes("@typescript/typescript6")],
   ["native check", pkg.scripts?.check === "tsc --noEmit"],

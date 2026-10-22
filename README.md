@@ -3,7 +3,7 @@
 
   <br />
 
-  <img alt="Release" src="https://img.shields.io/badge/release-N1.4.1-0ea5e9?style=for-the-badge" />
+  <img alt="Release" src="https://img.shields.io/badge/release-N1.4.2-0ea5e9?style=for-the-badge" />
   <img alt="Edition" src="https://img.shields.io/badge/edition-Zenith-8b5cf6?style=for-the-badge" />
   <img alt="Node.js" src="https://img.shields.io/badge/Node.js-%E2%89%A522-22c55e?style=for-the-badge&logo=nodedotjs&logoColor=white" />
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-16-111827?style=for-the-badge&logo=nextdotjs&logoColor=white" />
@@ -69,6 +69,15 @@ Zenith mengaktifkan autonomy terkontrol untuk development dan staging:
 - Code block dijaga tetap utuh dan diberi label bahasa yang sesuai.
 - Kedalaman jawaban menyesuaikan pertanyaan dan mode `direct`, `balanced`, `steps`, `detailed`, `academic`, atau `expert`.
 - Batas output default Zenith dinaikkan menjadi sekitar **5.200 token**.
+
+## Suite Knowledge & Evaluation Map N1.4.2
+
+- Pengetahuan tujuh suite evaluasi: Agentic (18), Reasoning (202), Coding (29), Browser Use (25), Data Analysis (150), Research (22), dan Design (25).
+- Aturan skor tersedia sebagai data dan sebagai kode: task tidak terukur bernilai 0, overall adalah rata-rata suite yang punya skor, dan biaya per task dihitung dari total.
+- Peta kemampuan Zenith per suite berasal dari audit kode, bukan benchmark. **Benchmark live: `NOT_RUN`, tidak ada skor yang diklaim.**
+- Browser Use dan Design saat ini `NOT_SUPPORTED` (tidak ada jalur screenshot dan tidak ada penghasil DOCX/PDF/PPTX).
+- Sumber taksonomi diberikan pengembang dan belum diverifikasi; rincian di [`docs/benchmark-suites-n1.4.2.md`](docs/benchmark-suites-n1.4.2.md).
+- Tidak mengubah UI, model Qwen, atau perilaku jawaban.
 
 ## Native TypeScript 7 Engineering Patch N1.4.1
 
@@ -210,6 +219,8 @@ Untuk coding assistant dan autonomy CLI:
 | `npm run answer:benchmark` | Benchmark kualitas jawaban N1.3 |
 | `npm run model:n14:benchmark` | Benchmark Adaptive Qwen3 Runtime N1.4 |
 | `npm run model:n14:status:live` | Memeriksa status model Ollama secara langsung |
+| `npm run suites:n142:status` | Ringkasan tujuh suite dan status kemampuan Zenith |
+| `npm run suites:n142:benchmark` | Validasi data suite dan aturan skor N1.4.2 |
 | `npm run developer:benchmark` | Benchmark Developer Intelligence |
 | `npm run autonomy:benchmark` | Benchmark policy autonomy |
 | `npm run check` | TypeScript validation |
@@ -275,6 +286,7 @@ Dokumentasi penting:
 - [`docs/autonomy-n1.2.md`](docs/autonomy-n1.2.md)
 - [`docs/answer-quality-n1.3.md`](docs/answer-quality-n1.3.md)
 - [`docs/model-runtime-n1.4.md`](docs/model-runtime-n1.4.md)
+- [`docs/benchmark-suites-n1.4.2.md`](docs/benchmark-suites-n1.4.2.md)
 - [`data/release/n1.2/manifest.json`](data/release/n1.2/manifest.json)
 
 ## Status Lisensi
@@ -291,5 +303,5 @@ Repository ini belum menetapkan lisensi open-source. Visibilitas publik di GitHu
 ---
 
 <div align="center">
-  <sub>NusaMind AI Zenith N1.4.1 — Adaptive Intelligence, Controlled Engineering</sub>
+  <sub>NusaMind AI Zenith N1.4.2 — Adaptive Intelligence, Controlled Engineering</sub>
 </div>

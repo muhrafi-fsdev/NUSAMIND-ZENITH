@@ -1,3 +1,19 @@
+# NusaMind Zenith N1.4.2 Upgrade Report
+
+## Patch
+
+- Pengetahuan tujuh suite evaluasi (Agentic, Reasoning, Coding, Browser Use, Data Analysis, Research, Design) beserta aturan skor dan biayanya.
+- Peta kemampuan Zenith per suite berbasis audit kode statis.
+- Modul `lib/suite-scoring.ts` dan benchmark `npm run suites:n142:benchmark`.
+- Sinkronisasi metadata rilis dengan `package.json` dan benchmark N1.3/N1.4/N1.4.1 diterima untuk seluruh garis patch.
+- Tidak ada perubahan UI, runtime model, atau perilaku jawaban.
+
+## Batas validasi
+
+- Sumber taksonomi diberikan pengembang dan belum diverifikasi.
+- Benchmark suite live: `NOT_RUN`. Tidak ada skor yang diklaim.
+- Browser Use dan Design berstatus `NOT_SUPPORTED`; lihat `docs/benchmark-suites-n1.4.2.md`.
+
 # NusaMind Zenith N1.4.1 Upgrade Report
 
 ## Patch
