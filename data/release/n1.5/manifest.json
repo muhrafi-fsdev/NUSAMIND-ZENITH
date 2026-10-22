@@ -1,0 +1,26 @@
+{
+  "release": "N1.5",
+  "version": "1.5.0",
+  "edition": "zenith",
+  "type": "minor",
+  "title": "Table Intelligence & Research Brief Structure",
+  "addedCode": [
+    "lib/table-engine.ts",
+    "scripts/eval-table-engine-n1.5.mjs"
+  ],
+  "changedCode": [
+    "lib/calc-engine.ts",
+    "lib/academic-answer-engine.ts",
+    "lib/answer-format.ts"
+  ],
+  "addedData": [
+    "data/benchmarks/table-engine-cases.json"
+  ],
+  "deterministicHandlers": ["table-reformat", "table-consecutive-growth", "table-column-mapping"],
+  "declinePolicy": "Handler mengembalikan null bila parse ambigu sehingga model yang menjawab.",
+  "uiChanged": false,
+  "modelRuntimeChanged": false,
+  "answerBehaviorChanged": true,
+  "liveSuiteBenchmark": "NOT_RUN",
+  "scoreClaimed": null
+}

@@ -1,3 +1,36 @@
+# NusaMind Zenith N1.5 Upgrade Report
+
+## Minor
+
+- Handler tabel deterministik (`lib/table-engine.ts`): konversi CSV/TSV/JSON/JSONL/Markdown/HTML, runtutan pertumbuhan berturut-turut dengan tanggal berformat campuran, dan pemetaan kolom berdasarkan kemiripan nilai.
+- Handler menolak (null) bila parse ambigu; asumsi ditulis di jawaban.
+- Kerangka laporan riset untuk brief hukum, pajak, dan regulasi, dengan larangan mengarang sumber.
+- Perbaikan `terminalSafeTables`: blok kode berpagar tidak lagi diubah menjadi daftar.
+- `npm run table:n15:benchmark`: 37 kasus engine, 7 kasus klasifikasi, dan uji integrasi.
+- README diperbarui; berkas panduan dan placeholder usang dihapus.
+
+## Batas validasi
+
+- Kasus uji buatan sendiri; benchmark suite live `NOT_RUN`, tidak ada skor yang diklaim.
+- Kepatuhan model terhadap kerangka riset adalah instruksi prompt dan belum diukur.
+- `npm run check`, `build`, dan `gate` belum dijalankan di lingkungan pengembangan ini karena dependency belum terpasang.
+
+# NusaMind Zenith N1.4.2 Upgrade Report
+
+## Patch
+
+- Pengetahuan tujuh suite evaluasi (Agentic, Reasoning, Coding, Browser Use, Data Analysis, Research, Design) beserta aturan skor dan biayanya.
+- Peta kemampuan Zenith per suite berbasis audit kode statis.
+- Modul `lib/suite-scoring.ts` dan benchmark `npm run suites:n142:benchmark`.
+- Sinkronisasi metadata rilis dengan `package.json` dan benchmark N1.3/N1.4/N1.4.1 diterima untuk seluruh garis patch.
+- Tidak ada perubahan UI, runtime model, atau perilaku jawaban.
+
+## Batas validasi
+
+- Sumber taksonomi diberikan pengembang dan belum diverifikasi.
+- Benchmark suite live: `NOT_RUN`. Tidak ada skor yang diklaim.
+- Browser Use dan Design berstatus `NOT_SUPPORTED`; lihat `docs/benchmark-suites-n1.4.2.md`.
+
 # NusaMind Zenith N1.4.1 Upgrade Report
 
 ## Patch

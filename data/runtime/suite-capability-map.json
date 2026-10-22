@@ -1,0 +1,105 @@
+{
+  "format": "nusamind-suite-capability-map-v1",
+  "release": "N1.5",
+  "edition": "zenith",
+  "statusValues": {
+    "SUPPORTED_UNMEASURED": "Kode dan model mendukung jenis pekerjaan ini, tetapi belum pernah diukur pada suite.",
+    "PARTIAL": "Sebagian kemampuan ada di kode; ada celah yang disebut eksplisit.",
+    "NOT_SUPPORTED": "Tidak ditemukan kemampuan yang dibutuhkan suite pada kode atau model default."
+  },
+  "measurement": {
+    "liveBenchmark": "NOT_RUN",
+    "scoreClaimed": null,
+    "note": "Peta ini audit kode statis pada rilis N1.5, bukan hasil benchmark. Tidak ada skor yang boleh dikutip dari berkas ini."
+  },
+  "suites": [
+    {
+      "id": "agentic",
+      "status": "PARTIAL",
+      "evidence": [
+        "Extended loop terbatas (README dan AGENTS.md N1.2): maksimal 40 langkah, soft limit 20, runtime 90 menit, kill switch .nusamind/STOP.",
+        "data/runtime/policy-config.json: maxSteps default 12."
+      ],
+      "gaps": [
+        "Belum ada bukti ketahanan keputusan lintas giliran/bulan simulasi.",
+        "Model utama qwen3:8b dengan konteks 16384 token membatasi pekerjaan konteks panjang."
+      ]
+    },
+    {
+      "id": "reasoning",
+      "status": "SUPPORTED_UNMEASURED",
+      "evidence": [
+        "Model utama qwen3:8b dengan thinking adaptif (data/runtime/model-routing.json, thinkingPolicy auto).",
+        "Suite ini tanpa tool sehingga tidak membutuhkan kemampuan tambahan."
+      ],
+      "gaps": [
+        "Belum ada pengukuran akurasi pada puzzle theory of mind, zebra, spasial, atau logika kebenaran."
+      ]
+    },
+    {
+      "id": "coding",
+      "status": "PARTIAL",
+      "evidence": [
+        "Developer Intelligence N1.1: mode ASK/PLAN/BUILD/REVIEW/REPAIR, exact patch, checkpoint, rollback, typecheck/test/build (README).",
+        "lib/coding-agent.ts: pembuat scaffold static/next/vite."
+      ],
+      "gaps": [
+        "Belum ada evaluasi perbaikan bug pada repositori produksi besar dengan hidden test.",
+        "Model coding qwen2.5-coder:7b berukuran kecil untuk codebase besar."
+      ]
+    },
+    {
+      "id": "browser-use",
+      "status": "NOT_SUPPORTED",
+      "evidence": [
+        "packages/browser-operator/index.ts hanya berisi lapisan kebijakan (validasi URL, deteksi injeksi); tidak ditemukan eksekutor browser.",
+        "validateUrl memblokir host privat dan localhost, sehingga aplikasi web uji lokal tidak dapat dijangkau.",
+        "lib/model.ts tidak memuat input gambar; qwen3:8b dan qwen2.5-coder:7b adalah model teks."
+      ],
+      "gaps": [
+        "Tidak ada jalur screenshot ke model.",
+        "Aturan suite memberi skor 0 untuk model yang tidak dapat mengambil screenshot."
+      ]
+    },
+    {
+      "id": "data-analysis",
+      "status": "PARTIAL",
+      "evidence": [
+        "lib/file-analyzer.ts membaca CSV, XLSX, JSON, dan format tabel lain pada unggahan.",
+        "lib/table-engine.ts (N1.5): konversi CSV/TSV/JSON/JSONL/Markdown/HTML, deteksi runtutan pertumbuhan berturut-turut dengan tanggal berformat campuran, dan pemetaan kolom berdasarkan kemiripan nilai. Dipasang di lib/calc-engine.ts sehingga kedua rute chat memakainya.",
+        "Handler menolak (null) bila parse ambigu, sehingga model yang menjawab; asumsi seperti urutan dd/mm ditulis di jawaban."
+      ],
+      "gaps": [
+        "Handler diuji pada 37 kasus buatan sendiri (data/benchmarks/table-engine-cases.json), bukan pada suite Data Analysis.",
+        "Input yang bukan tabel bersih (tabel tertanam dalam prosa, kolom tanpa pola) tetap dijawab model.",
+        "Arti \"N berturut-turut\" (N kenaikan vs N titik data) ditampilkan dua-duanya karena sumbernya tidak mendefinisikan."
+      ]
+    },
+    {
+      "id": "research",
+      "status": "PARTIAL",
+      "evidence": [
+        "Retrieval lokal dan evidence graph (lib/retrieval-v6.ts, lib/evidence-graph-v3.ts, lib/search.ts hybrid search atas corpus lokal).",
+        "Registry riset (lib/research/registry.ts) hanya mengelola status aktivasi topik riset.",
+        "lib/academic-answer-engine.ts (N1.5): kerangka laporan untuk brief hukum/pajak/regulasi (keputusan inti, dasar dan sumber, perhitungan, asumsi, langkah berikutnya) dengan larangan mengarang pasal, URL, atau kutipan."
+      ],
+      "gaps": [
+        "Tidak ditemukan pencarian web langsung ke sumber primer.",
+        "Sitasi bersumber bergantung pada corpus lokal yang tidak diperbarui otomatis.",
+        "Kerangka laporan adalah instruksi prompt; kepatuhan model terhadapnya belum diukur."
+      ]
+    },
+    {
+      "id": "design",
+      "status": "NOT_SUPPORTED",
+      "evidence": [
+        "Pembaca dokumen ada (mammoth untuk DOCX, pdf-parse untuk PDF, xlsx).",
+        "lib/artifacts.ts tidak memuat pembuat DOCX, PDF, atau PPTX."
+      ],
+      "gaps": [
+        "Tidak ada penghasil file DOCX, PDF, atau PPTX terformat.",
+        "Tidak ada perender untuk pemeriksaan visual hasil."
+      ]
+    }
+  ]
+}

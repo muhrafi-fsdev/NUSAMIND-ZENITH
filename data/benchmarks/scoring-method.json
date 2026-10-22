@@ -1,0 +1,42 @@
+{
+  "format": "nusamind-scoring-method-v1",
+  "release": "N1.4.2",
+  "provenance": {
+    "origin": "user-provided",
+    "verification": "UNVERIFIED"
+  },
+  "taskScore": { "min": 0, "max": 100 },
+  "suiteScore": {
+    "rule": "mean-over-all-tasks",
+    "note": "Skor suite adalah rata-rata skor semua task atau pertanyaannya, bukan rata-rata skor subkategori."
+  },
+  "unmeasuredTask": {
+    "scoredAs": 0,
+    "excludedFromMean": false,
+    "note": "Task yang tidak terukur (galat harness atau provider, dan gagal lagi pada satu rerun) dihitung 0, sama seperti task gagal."
+  },
+  "runs": "single-run-per-suite",
+  "effort": "highest-supported-effort-setting",
+  "subcategoryScore": {
+    "equalWeightMeanOfSubcategories": ["data-analysis", "reasoning"],
+    "meanOverTasks": ["design", "research", "browser-use", "coding", "agentic"],
+    "note": "Skor subkategori dari suite yang berbeda tidak dapat dibandingkan langsung. Tanda strip berarti belum ada skor."
+  },
+  "overall": {
+    "rule": "mean-of-suites-with-a-score",
+    "suiteWeight": "equal",
+    "blank": "Suite sedang berjalan atau dijalankan ulang; tidak ikut dihitung.",
+    "notApplicable": "Model sengaja dikecualikan dari suite; tidak ikut dihitung.",
+    "missingRequiredInput": "Model tanpa input yang dibutuhkan suite (misalnya model teks pada Browser Use) bukan n/a melainkan skor 0."
+  },
+  "cost": {
+    "pricing": "provider-list-rates-with-cached-input-at-cached-rate",
+    "includes": "setiap panggilan model yang diuji selama run",
+    "excludes": ["keadaan awal tetap yang dibawa sebagian task", "panggilan bantu milik harness"],
+    "costPerTask": "total biaya / total task pada suite yang dipilih",
+    "costPerTaskNote": "Bukan rata-rata biaya per suite. Task Agentic memakai puluhan panggilan konteks panjang sehingga jauh lebih mahal daripada pertanyaan satu jawaban; menyertakan banyak pertanyaan Data Analysis dan Reasoning menurunkan biaya per task keseluruhan.",
+    "costPerSuccessfulTask": "(biaya per task / skor) x 100",
+    "costPerSuccessfulTaskNote": "Kegagalan dan nilai parsial menaikkan angka ini. Bila skor 0 hasilnya tidak terdefinisi.",
+    "localRuntimeNote": "Zenith berjalan lokal di Ollama tanpa harga list API, sehingga biaya dalam USD tidak berlaku. Gunakan token, latensi, dan RAM/VRAM sebagai pengganti yang jujur."
+  }
+}

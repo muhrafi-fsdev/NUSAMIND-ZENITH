@@ -1,0 +1,736 @@
+{
+  "format": "nusamind-table-engine-cases-v1",
+  "release": "N1.5.0",
+  "note": "Ekspektasi diturunkan manual dari definisi masalah, bukan dari keluaran kode.",
+  "cases": [
+    {
+      "id": "csv-to-json-column-typing",
+      "kind": "reformat",
+      "question": [
+        "Ubah ke JSON:",
+        "id,nama,skor,kode",
+        "1,Ani,90.5,007",
+        "2,\"Budi, S.\",80,12"
+      ],
+      "expect": {
+        "formulaId": "table-reformat-csv-json",
+        "json": [
+          {
+            "id": 1,
+            "nama": "Ani",
+            "skor": 90.5,
+            "kode": "007"
+          },
+          {
+            "id": 2,
+            "nama": "Budi, S.",
+            "skor": 80,
+            "kode": "12"
+          }
+        ]
+      }
+    },
+    {
+      "id": "json-to-csv-null-and-quote",
+      "kind": "reformat",
+      "question": [
+        "Convert this to CSV",
+        "```json",
+        "[{\"a\":1,\"b\":\"x,y\"},{\"a\":2,\"b\":null}]",
+        "```"
+      ],
+      "expect": {
+        "formulaId": "table-reformat-json-csv",
+        "fence": {
+          "lang": "csv",
+          "lines": [
+            "a,b",
+            "1,\"x,y\"",
+            "2,"
+          ]
+        }
+      }
+    },
+    {
+      "id": "csv-to-tsv",
+      "kind": "reformat",
+      "question": [
+        "Konversi ke TSV:",
+        "kota,populasi",
+        "Jakarta,10562088",
+        "Bandung,2444160"
+      ],
+      "expect": {
+        "formulaId": "table-reformat-csv-tsv",
+        "fence": {
+          "lang": "tsv",
+          "lines": [
+            "kota\tpopulasi",
+            "Jakarta\t10562088",
+            "Bandung\t2444160"
+          ]
+        }
+      }
+    },
+    {
+      "id": "tsv-to-markdown",
+      "kind": "reformat",
+      "question": [
+        "Ubah ke Markdown",
+        "nama\tumur",
+        "Ani\t30",
+        "Budi\t25"
+      ],
+      "expect": {
+        "formulaId": "table-reformat-tsv-markdown",
+        "fence": {
+          "lang": "markdown",
+          "lines": [
+            "| nama | umur |",
+            "| --- | --- |",
+            "| Ani | 30 |",
+            "| Budi | 25 |"
+          ]
+        }
+      }
+    },
+    {
+      "id": "markdown-to-html-escapes",
+      "kind": "reformat",
+      "question": [
+        "Ubah ke HTML",
+        "| a | b |",
+        "| --- | --- |",
+        "| 1 | x&y |"
+      ],
+      "expect": {
+        "formulaId": "table-reformat-markdown-html",
+        "fence": {
+          "lang": "html",
+          "lines": [
+            "<table>",
+            "  <thead>",
+            "    <tr><th>a</th><th>b</th></tr>",
+            "  </thead>",
+            "  <tbody>",
+            "    <tr><td>1</td><td>x&amp;y</td></tr>",
+            "  </tbody>",
+            "</table>"
+          ]
+        }
+      }
+    },
+    {
+      "id": "html-after-instruction-to-jsonl",
+      "kind": "reformat",
+      "question": [
+        "Ubah ke JSONL:",
+        "<table><tr><th>id</th><th>nama</th></tr><tr><td>1</td><td>Ani</td></tr><tr><td>2</td><td>Budi &amp; Co</td></tr></table>"
+      ],
+      "expect": {
+        "formulaId": "table-reformat-html-jsonl",
+        "fence": {
+          "lang": "jsonl",
+          "lines": [
+            "{\"id\":1,\"nama\":\"Ani\"}",
+            "{\"id\":2,\"nama\":\"Budi & Co\"}"
+          ]
+        }
+      }
+    },
+    {
+      "id": "jsonl-to-csv",
+      "kind": "reformat",
+      "question": [
+        "Konversi ke CSV",
+        "{\"x\":1,\"y\":\"a\"}",
+        "{\"x\":2,\"y\":\"b\"}"
+      ],
+      "expect": {
+        "formulaId": "table-reformat-jsonl-csv",
+        "fence": {
+          "lang": "csv",
+          "lines": [
+            "x,y",
+            "1,a",
+            "2,b"
+          ]
+        }
+      }
+    },
+    {
+      "id": "wide-markdown-survives-formatter",
+      "kind": "reformat",
+      "question": [
+        "Konversi ke Markdown:",
+        "nama,alamat,keterangan",
+        "Ani,Jalan Merdeka Nomor 123 Bandung Jawa Barat,Pelanggan prioritas dengan riwayat pembelian lengkap",
+        "Budi,Jalan Sudirman 45,Baru"
+      ],
+      "expect": {
+        "formulaId": "table-reformat-csv-markdown",
+        "formatterKeeps": true,
+        "fence": {
+          "lang": "markdown",
+          "lines": [
+            "| nama | alamat | keterangan |",
+            "| --- | --- | --- |",
+            "| Ani | Jalan Merdeka Nomor 123 Bandung Jawa Barat | Pelanggan prioritas dengan riwayat pembelian lengkap |",
+            "| Budi | Jalan Sudirman 45 | Baru |"
+          ]
+        }
+      }
+    },
+    {
+      "id": "quoted-newline-to-tsv-flattened",
+      "kind": "reformat",
+      "question": [
+        "Ubah ke TSV",
+        "```csv",
+        "a,b",
+        "1,\"baris1",
+        "baris2\"",
+        "```"
+      ],
+      "expect": {
+        "formulaId": "table-reformat-csv-tsv",
+        "fence": {
+          "lang": "tsv",
+          "lines": [
+            "a\tb",
+            "1\tbaris1 baris2"
+          ]
+        }
+      }
+    },
+    {
+      "id": "target-named-before-source",
+      "kind": "reformat",
+      "question": [
+        "Ubah ke CSV dari format JSON",
+        "```",
+        "[{\"a\":1,\"b\":2}]",
+        "```"
+      ],
+      "expect": {
+        "formulaId": "table-reformat-json-csv",
+        "fence": {
+          "lang": "csv",
+          "lines": [
+            "a,b",
+            "1,2"
+          ]
+        }
+      }
+    },
+    {
+      "id": "semicolon-csv-to-json",
+      "kind": "reformat",
+      "question": [
+        "Ubah ke JSON:",
+        "nama;harga",
+        "Teh;5000",
+        "Kopi;12000"
+      ],
+      "expect": {
+        "formulaId": "table-reformat-csv-json",
+        "json": [
+          {
+            "nama": "Teh",
+            "harga": 5000
+          },
+          {
+            "nama": "Kopi",
+            "harga": 12000
+          }
+        ]
+      }
+    },
+    {
+      "id": "json-to-markdown-keeps-types-as-text",
+      "kind": "reformat",
+      "question": [
+        "Ubah ke Markdown",
+        "```json",
+        "[{\"id\":1,\"aktif\":true,\"nilai\":null}]",
+        "```"
+      ],
+      "expect": {
+        "formulaId": "table-reformat-json-markdown",
+        "fence": {
+          "lang": "markdown",
+          "lines": [
+            "| id | aktif | nilai |",
+            "| --- | --- | --- |",
+            "| 1 | true |  |"
+          ]
+        }
+      }
+    },
+    {
+      "id": "declines-extra-task",
+      "kind": "declined",
+      "question": [
+        "Filter baris dengan skor > 80 lalu ubah ke JSON:",
+        "id,skor",
+        "1,90",
+        "2,70"
+      ],
+      "expect": {}
+    },
+    {
+      "id": "declines-single-line",
+      "kind": "declined",
+      "question": [
+        "ubah ke json: a,b 1,2"
+      ],
+      "expect": {}
+    },
+    {
+      "id": "declines-same-format",
+      "kind": "declined",
+      "question": [
+        "Ubah ke CSV:",
+        "a,b",
+        "1,2"
+      ],
+      "expect": {}
+    },
+    {
+      "id": "declines-no-convert-verb",
+      "kind": "declined",
+      "question": [
+        "Berapa banyak baris pada data ke JSON berikut:",
+        "a,b",
+        "1,2",
+        "3,4"
+      ],
+      "expect": {}
+    },
+    {
+      "id": "declines-ragged-rows",
+      "kind": "declined",
+      "question": [
+        "Ubah ke JSON:",
+        "a,b",
+        "1,2,3"
+      ],
+      "expect": {}
+    },
+    {
+      "id": "declines-numeric-headers-for-json",
+      "kind": "declined",
+      "question": [
+        "Ubah ke JSON:",
+        "1,2",
+        "a,b"
+      ],
+      "expect": {}
+    },
+    {
+      "id": "declines-duplicate-headers",
+      "kind": "declined",
+      "question": [
+        "Ubah ke JSON:",
+        "a,a",
+        "1,2"
+      ],
+      "expect": {}
+    },
+    {
+      "id": "declines-prose-without-table",
+      "kind": "declined",
+      "question": [
+        "Tolong ubah ke JSON, ya.",
+        "Terima kasih banyak.",
+        "Salam."
+      ],
+      "expect": {}
+    },
+    {
+      "id": "declines-unclosed-quote",
+      "kind": "declined",
+      "question": [
+        "Ubah ke JSON:",
+        "a,b",
+        "1,\"x"
+      ],
+      "expect": {}
+    },
+    {
+      "id": "growth-basic-with-ambiguous-dates",
+      "kind": "growth",
+      "question": [
+        "Temukan entitas dengan pertumbuhan 3 kali berturut-turut.",
+        "entitas,tanggal,nilai",
+        "A,2024-01-01,10",
+        "A,2024-02-01,12",
+        "A,2024-03-01,15",
+        "A,2024-04-01,20",
+        "B,01/01/2024,5",
+        "B,02/01/2024,6",
+        "B,03/01/2024,4",
+        "B,04/01/2024,9"
+      ],
+      "expect": {
+        "formulaId": "table-consecutive-growth",
+        "contains": [
+          "| A | 3 | 4 |",
+          "| B | 1 | 2 |",
+          "Jawaban akhir (≥ 3 kenaikan berturut-turut): A",
+          "Jika yang dimaksud 3 titik data berurutan (setara 2 kenaikan): A",
+          "dibaca sebagai hari/bulan/tahun"
+        ]
+      }
+    },
+    {
+      "id": "growth-mixed-formats-unsorted",
+      "kind": "growth",
+      "question": [
+        "Entitas mana yang tumbuh minimal 3 kali berturut-turut?",
+        "entitas,tanggal,nilai",
+        "P,15/04/2024,4",
+        "Q,2024-03-10,6",
+        "P,\"March 20, 2024\",2",
+        "Q,2024-01-10,5",
+        "P,5 Maret 2024,1",
+        "Q,2024-02-10,5",
+        "P,2024-04-02,3"
+      ],
+      "expect": {
+        "formulaId": "table-consecutive-growth",
+        "contains": [
+          "| P | 3 | 4 |",
+          "| Q | 1 | 2 |",
+          "Jawaban akhir (≥ 3 kenaikan berturut-turut): P"
+        ],
+        "notContains": [
+          "ambigu",
+          "dibaca sebagai hari"
+        ]
+      }
+    },
+    {
+      "id": "growth-number-word-indonesian",
+      "kind": "growth",
+      "question": [
+        "Siapa saja yang tumbuh tiga periode berturut-turut?",
+        "entitas,tanggal,nilai",
+        "A,2024-01-01,10",
+        "A,2024-02-01,12",
+        "A,2024-03-01,15",
+        "A,2024-04-01,20",
+        "B,01/01/2024,5",
+        "B,02/01/2024,6",
+        "B,03/01/2024,4",
+        "B,04/01/2024,9"
+      ],
+      "expect": {
+        "formulaId": "table-consecutive-growth",
+        "contains": [
+          "Jawaban akhir (≥ 3 kenaikan berturut-turut): A"
+        ]
+      }
+    },
+    {
+      "id": "growth-english-at-least-two",
+      "kind": "growth",
+      "question": [
+        "Which entities show at least 2 consecutive growth steps?",
+        "entitas,tanggal,nilai",
+        "A,2024-01-01,10",
+        "A,2024-02-01,12",
+        "A,2024-03-01,15",
+        "A,2024-04-01,20",
+        "B,01/01/2024,5",
+        "B,02/01/2024,6",
+        "B,03/01/2024,4",
+        "B,04/01/2024,9"
+      ],
+      "expect": {
+        "formulaId": "table-consecutive-growth",
+        "contains": [
+          "Jawaban akhir (≥ 2 kenaikan berturut-turut): A",
+          "(setara 1 kenaikan): A, B"
+        ]
+      }
+    },
+    {
+      "id": "growth-default-threshold-is-disclosed",
+      "kind": "growth",
+      "question": [
+        "Temukan entitas dengan pertumbuhan berturut-turut.",
+        "entitas,tanggal,nilai",
+        "A,2024-01-01,10",
+        "A,2024-02-01,12",
+        "A,2024-03-01,15",
+        "A,2024-04-01,20",
+        "B,01/01/2024,5",
+        "B,02/01/2024,6",
+        "B,03/01/2024,4",
+        "B,04/01/2024,9"
+      ],
+      "expect": {
+        "formulaId": "table-consecutive-growth",
+        "contains": [
+          "ambang bawaan karena jumlah tidak disebut"
+        ]
+      }
+    },
+    {
+      "id": "growth-month-first-proven-by-day-25",
+      "kind": "growth",
+      "question": [
+        "Entitas mana yang naik 2 kali berturut-turut?",
+        "entitas,tanggal,nilai",
+        "X,03/25/2024,1",
+        "X,04/25/2024,2",
+        "X,05/25/2024,3"
+      ],
+      "expect": {
+        "formulaId": "table-consecutive-growth",
+        "contains": [
+          "| X | 2 | 3 |",
+          "Jawaban akhir (≥ 2 kenaikan berturut-turut): X"
+        ],
+        "notContains": [
+          "dibaca sebagai hari/bulan/tahun"
+        ]
+      }
+    },
+    {
+      "id": "growth-value-column-chosen-by-mention",
+      "kind": "growth",
+      "question": [
+        "Siapa yang pertumbuhan omzet 2 kali berturut-turut?",
+        "entitas,tanggal,omzet,laba",
+        "A,2024-01-01,1,3",
+        "A,2024-02-01,2,2",
+        "A,2024-03-01,3,1"
+      ],
+      "expect": {
+        "formulaId": "table-consecutive-growth",
+        "contains": [
+          "nilai = omzet",
+          "| A | 2 | 3 |"
+        ]
+      }
+    },
+    {
+      "id": "growth-declines-ambiguous-value-column",
+      "kind": "declined",
+      "question": [
+        "Siapa yang naik 2 kali berturut-turut?",
+        "entitas,tanggal,omzet,laba",
+        "A,2024-01-01,1,3",
+        "A,2024-02-01,2,2",
+        "A,2024-03-01,3,1"
+      ],
+      "expect": {}
+    },
+    {
+      "id": "growth-declines-duplicate-date",
+      "kind": "declined",
+      "question": [
+        "Siapa yang naik 2 kali berturut-turut?",
+        "entitas,tanggal,nilai",
+        "A,2024-01-01,1",
+        "A,2024-01-01,2",
+        "A,2024-02-01,3"
+      ],
+      "expect": {}
+    },
+    {
+      "id": "growth-declines-conflicting-date-order",
+      "kind": "declined",
+      "question": [
+        "Siapa yang naik 2 kali berturut-turut?",
+        "entitas,tanggal,nilai",
+        "A,25/01/2024,1",
+        "A,01/25/2024,2",
+        "A,02/10/2024,3"
+      ],
+      "expect": {}
+    },
+    {
+      "id": "mapping-obfuscated-names",
+      "kind": "mapping",
+      "question": [
+        "Petakan kolom tabel pertama ke tabel kedua.",
+        "",
+        "c1,c2,c3",
+        "A1,10,2024-01-05",
+        "B2,20,2024-02-10",
+        "C3,30,2024-03-15",
+        "",
+        "kode,jumlah,tanggal",
+        "A1,10,2024-01-05",
+        "B2,20,2024-02-10",
+        "C3,30,2024-03-15",
+        "D4,40,2024-04-20"
+      ],
+      "expect": {
+        "formulaId": "table-column-mapping",
+        "status": "simulation",
+        "contains": [
+          "- c1 → kode",
+          "- c2 → jumlah",
+          "- c3 → tanggal"
+        ],
+        "notContains": [
+          "tanpa pasangan"
+        ]
+      }
+    },
+    {
+      "id": "mapping-reports-unmatched-second-column",
+      "kind": "mapping",
+      "question": [
+        "Cocokkan kolom tabel pertama dengan tabel kedua",
+        "```csv",
+        "c1,c2",
+        "A1,10",
+        "B2,20",
+        "C3,30",
+        "```",
+        "```csv",
+        "kode,jumlah,catatan",
+        "A1,10,x",
+        "B2,20,y",
+        "C3,30,z",
+        "D4,40,w",
+        "```"
+      ],
+      "expect": {
+        "formulaId": "table-column-mapping",
+        "contains": [
+          "- c1 → kode",
+          "- c2 → jumlah",
+          "Kolom tabel kedua tanpa pasangan: catatan"
+        ]
+      }
+    },
+    {
+      "id": "mapping-declines-identical-columns",
+      "kind": "declined",
+      "question": [
+        "Petakan kolom tabel pertama ke tabel kedua.",
+        "",
+        "p,q",
+        "1,1",
+        "2,2",
+        "3,3",
+        "",
+        "a,b",
+        "1,1",
+        "2,2",
+        "3,3"
+      ],
+      "expect": {}
+    },
+    {
+      "id": "mapping-declines-first-wider-than-second",
+      "kind": "declined",
+      "question": [
+        "Petakan kolom tabel pertama ke tabel kedua.",
+        "",
+        "p,q,r",
+        "1,a,x",
+        "2,b,y",
+        "",
+        "a,b",
+        "1,a",
+        "2,b"
+      ],
+      "expect": {}
+    },
+    {
+      "id": "mapping-declines-disjoint-values",
+      "kind": "declined",
+      "question": [
+        "Petakan kolom tabel pertama ke tabel kedua.",
+        "",
+        "p,q",
+        "apel,jeruk",
+        "mangga,durian",
+        "",
+        "a,b",
+        "1,2",
+        "3,4"
+      ],
+      "expect": {}
+    },
+    {
+      "id": "html-invalid-entity-kept-literal",
+      "kind": "reformat",
+      "question": [
+        "Ubah ke CSV",
+        "<table><tr><th>a</th><th>b</th></tr><tr><td>&#99999999;</td><td>x&#65;</td></tr></table>"
+      ],
+      "expect": {
+        "formulaId": "table-reformat-html-csv",
+        "fence": {
+          "lang": "csv",
+          "lines": [
+            "a,b",
+            "&#99999999;,xA"
+          ]
+        }
+      }
+    }
+  ],
+  "research": [
+    {
+      "id": "tax-vat-with-sources",
+      "research": true,
+      "question": "Saya pemilik toko online. Apakah saya wajib memungut PPN dan apa dasar hukumnya? Tolong sertakan sumber peraturan resminya."
+    },
+    {
+      "id": "organic-label-compliance",
+      "research": true,
+      "question": "Sebagai kepala kepatuhan, saya perlu laporan apakah kemasan baru memenuhi aturan pelabelan organik, lengkap dengan sumber primer."
+    },
+    {
+      "id": "plain-tax-arithmetic",
+      "research": false,
+      "question": "Hitung pajak 11% dari 2.000.000"
+    },
+    {
+      "id": "short-definition",
+      "research": false,
+      "question": "Apa itu pajak?"
+    },
+    {
+      "id": "derivative",
+      "research": false,
+      "question": "Cari turunan f(x)=x^3+2x^2-5x+7"
+    },
+    {
+      "id": "coding-wins-over-research",
+      "research": false,
+      "question": "Buat program Python untuk menghitung pajak penghasilan berdasarkan pasal tertentu dan sumber data CSV"
+    },
+    {
+      "id": "physics",
+      "research": false,
+      "question": "Massa 5 kg dipercepat 2 m/s². Hitung gaya."
+    }
+  ],
+  "integration": [
+    {
+      "id": "arithmetic-still-handled",
+      "question": "Hitung 12 × 7",
+      "handled": true,
+      "contains": [
+        "84"
+      ],
+      "domainNot": "table"
+    },
+    {
+      "id": "table-routed-through-calc-engine",
+      "question": "Ubah ke JSON:\nid,nama\n1,Ani\n2,Budi",
+      "handled": true,
+      "domain": "table"
+    }
+  ]
+}
