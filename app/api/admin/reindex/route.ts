@@ -1,4 +1,5 @@
 import path from 'node:path';
+import { timingSafeEqual } from 'node:crypto';
 import { DATA_DIR } from '@/lib/config';
 import { buildVectorLiteDoc, saveVectorLiteIndex } from '@/lib/vector-lite';
 import { safeJson } from '@/lib/util';
@@ -28,12 +29,26 @@ async function collectDocs() {
   return docs.map(buildVectorLiteDoc);
 }
 
-export async function POST(req: Request) {
-  const adminToken = process.env.ADMIN_TOKEN;
-  if (adminToken) {
-    const token = req.headers.get('x-admin-token');
-    if (token !== adminToken) return Response.json({ ok: false, error: 'UNAUTHORIZED' }, { status: 401 });
+// Nilai contoh dari .env.example dan docker-compose.yml; diketahui publik sehingga tidak boleh melindungi produksi.
+const PUBLIC_PLACEHOLDER_TOKENS = new Set(['change-this-local-admin-token']);
+
+function checkAdminToken(req: Request): { ok: true } | { ok: false; status: number; error: string } {
+  const expected = process.env.ADMIN_TOKEN || '';
+  const production = process.env.NODE_ENV === 'production';
+  // Produksi gagal tertutup: tanpa token sungguhan endpoint ini tidak boleh dapat dipanggil siapa pun.
+  if (production && (expected === '' || PUBLIC_PLACEHOLDER_TOKENS.has(expected))) {
+    return { ok: false, status: 503, error: 'ADMIN_TOKEN_NOT_CONFIGURED' };
   }
+  if (expected === '') return { ok: true };
+  const provided = Buffer.from(req.headers.get('x-admin-token') || '');
+  const wanted = Buffer.from(expected);
+  if (provided.length !== wanted.length || !timingSafeEqual(provided, wanted)) return { ok: false, status: 401, error: 'UNAUTHORIZED' };
+  return { ok: true };
+}
+
+export async function POST(req: Request) {
+  const auth = checkAdminToken(req);
+  if (!auth.ok) return Response.json({ ok: false, error: auth.error }, { status: auth.status });
   const docs = await collectDocs();
   await saveVectorLiteIndex(docs);
   return Response.json({ ok: true, indexedDocs: docs.length, index: 'storage/index/hybrid-vector-lite-index.json' });
