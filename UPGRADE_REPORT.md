@@ -1,3 +1,20 @@
+# NusaMind Zenith N1.5 Upgrade Report
+
+## Minor
+
+- Handler tabel deterministik (`lib/table-engine.ts`): konversi CSV/TSV/JSON/JSONL/Markdown/HTML, runtutan pertumbuhan berturut-turut dengan tanggal berformat campuran, dan pemetaan kolom berdasarkan kemiripan nilai.
+- Handler menolak (null) bila parse ambigu; asumsi ditulis di jawaban.
+- Kerangka laporan riset untuk brief hukum, pajak, dan regulasi, dengan larangan mengarang sumber.
+- Perbaikan `terminalSafeTables`: blok kode berpagar tidak lagi diubah menjadi daftar.
+- `npm run table:n15:benchmark`: 37 kasus engine, 7 kasus klasifikasi, dan uji integrasi.
+- README diperbarui; berkas panduan dan placeholder usang dihapus.
+
+## Batas validasi
+
+- Kasus uji buatan sendiri; benchmark suite live `NOT_RUN`, tidak ada skor yang diklaim.
+- Kepatuhan model terhadap kerangka riset adalah instruksi prompt dan belum diukur.
+- `npm run check`, `build`, dan `gate` belum dijalankan di lingkungan pengembangan ini karena dependency belum terpasang.
+
 # NusaMind Zenith N1.4.2 Upgrade Report
 
 ## Patch

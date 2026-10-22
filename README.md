@@ -3,14 +3,14 @@
 
   <br />
 
-  <img alt="Release" src="https://img.shields.io/badge/release-N1.4.2-0ea5e9?style=for-the-badge" />
+  <img alt="Release" src="https://img.shields.io/badge/release-N1.5-0ea5e9?style=for-the-badge" />
   <img alt="Edition" src="https://img.shields.io/badge/edition-Zenith-8b5cf6?style=for-the-badge" />
   <img alt="Node.js" src="https://img.shields.io/badge/Node.js-%E2%89%A522-22c55e?style=for-the-badge&logo=nodedotjs&logoColor=white" />
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-16-111827?style=for-the-badge&logo=nextdotjs&logoColor=white" />
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-7-2563eb?style=for-the-badge&logo=typescript&logoColor=white" />
   <img alt="Local AI" src="https://img.shields.io/badge/AI-Local--First-14b8a6?style=for-the-badge" />
 
-  <h3>Asisten AI lokal seimbang dengan Qwen3 adaptif, jawaban akademik terstruktur, controlled coding agent, dan deployment preview/staging.</h3>
+  <h3>Asisten AI lokal seimbang: Qwen3 adaptif, jawaban akademik terstruktur, handler tabel deterministik, controlled coding agent, dan deployment preview/staging.</h3>
 
   <p>
     <strong>Ollama + Qwen3</strong> • <strong>Next.js</strong> • <strong>FastAPI ML Service</strong> •
@@ -22,9 +22,9 @@
 
 ## Tentang NusaMind Zenith
 
-**NusaMind Zenith N1.4.1** adalah edisi seimbang dari keluarga NusaMind AI. Zenith menggabungkan reasoning adaptif, kualitas jawaban akademik, controlled build, exact patch, checkpoint, rollback, Git workflow terverifikasi, credential vault, trusted workspace, MCP quarantine, serta deployment preview dan staging.
+**NusaMind Zenith N1.5** adalah edisi seimbang dari keluarga NusaMind AI. Zenith menggabungkan reasoning adaptif, kualitas jawaban akademik, controlled build, exact patch, checkpoint, rollback, Git workflow terverifikasi, credential vault, trusted workspace, MCP quarantine, serta deployment preview dan staging.
 
-Release **N1.4.1 / 1.4.1** melanjutkan fondasi N1.0 dengan **Developer Intelligence N1.1**, **Advanced Autonomy & Deployment N1.2**, **Answer Quality & Academic Response Engine N1.3**, serta **Adaptive Qwen3 Model Runtime N1.4**.
+Release **N1.5 / 1.5.0** melanjutkan fondasi N1.0 dengan **Developer Intelligence N1.1**, **Advanced Autonomy & Deployment N1.2**, **Answer Quality & Academic Response Engine N1.3**, **Adaptive Qwen3 Model Runtime N1.4**, patch **TypeScript 7 N1.4.1**, **Suite Knowledge N1.4.2**, dan **Table Intelligence N1.5**.
 
 > NusaMind AI dikembangkan oleh **Muhammad Rafi Priyo** sebagai proyek AI lokal, eksperimen engineering, dan portofolio pribadi. Tidak semua komponen dibuat oleh AI; sebagian dirancang, dikembangkan, diuji, diperbaiki, dan disempurnakan secara manual oleh developer.
 
@@ -69,6 +69,17 @@ Zenith mengaktifkan autonomy terkontrol untuk development dan staging:
 - Code block dijaga tetap utuh dan diberi label bahasa yang sesuai.
 - Kedalaman jawaban menyesuaikan pertanyaan dan mode `direct`, `balanced`, `steps`, `detailed`, `academic`, atau `expert`.
 - Batas output default Zenith dinaikkan menjadi sekitar **5.200 token**.
+
+## Table Intelligence & Research Brief N1.5
+
+- **Konversi tabel deterministik** antara CSV, TSV, JSON, JSONL, Markdown, dan HTML. Hasilnya tepat dan konsisten, bukan hasil tebakan model.
+- **Runtutan pertumbuhan berturut-turut** dari data bertanggal berformat campuran (ISO, `dd/mm/yyyy`, nama bulan Indonesia dan Inggris). Asumsi seperti urutan hari/bulan ditulis di jawaban.
+- **Pemetaan kolom** antar dua tabel berdasarkan kemiripan nilai, termasuk saat nama kolom diobfuskasi.
+- **Menolak bila ambigu.** Handler mengembalikan kendali ke model alih-alih memberi jawaban deterministik yang salah.
+- **Kerangka laporan riset** untuk brief hukum, pajak, dan regulasi: keputusan inti, dasar dan sumber, perhitungan, asumsi, langkah berikutnya. Tidak boleh mengarang pasal, URL, atau kutipan.
+- **Perbaikan formatter:** tabel Markdown lebar di dalam blok kode tidak lagi dirusak menjadi daftar `Kolom: nilai`.
+- Diuji pada 37 kasus engine, 7 kasus klasifikasi, dan uji integrasi (`npm run table:n15:benchmark`). Kasus uji buatan sendiri; **benchmark suite live: `NOT_RUN`, tidak ada skor yang diklaim.**
+- Tidak mengubah UI maupun model Qwen. Rincian di [`docs/table-engine-n1.5.md`](docs/table-engine-n1.5.md).
 
 ## Suite Knowledge & Evaluation Map N1.4.2
 
@@ -219,6 +230,7 @@ Untuk coding assistant dan autonomy CLI:
 | `npm run answer:benchmark` | Benchmark kualitas jawaban N1.3 |
 | `npm run model:n14:benchmark` | Benchmark Adaptive Qwen3 Runtime N1.4 |
 | `npm run model:n14:status:live` | Memeriksa status model Ollama secara langsung |
+| `npm run table:n15:benchmark` | Benchmark handler tabel dan kerangka riset N1.5 |
 | `npm run suites:n142:status` | Ringkasan tujuh suite dan status kemampuan Zenith |
 | `npm run suites:n142:benchmark` | Validasi data suite dan aturan skor N1.4.2 |
 | `npm run developer:benchmark` | Benchmark Developer Intelligence |
@@ -235,7 +247,7 @@ OLLAMA_CODER_MODEL=qwen2.5-coder:7b
 OLLAMA_FALLBACK_MODEL=qwen2.5:7b
 AI_MAX_OUTPUT_TOKENS=5200
 NUSAMIND_THINKING_MODE=adaptive
-NUSAMIND_RELEASE=N1.4
+NUSAMIND_RELEASE=N1.5
 ```
 
 ## Konfigurasi Autonomy
@@ -251,6 +263,16 @@ NUSAMIND_MCP_QUARANTINE=true
 NUSAMIND_DEPLOYMENT_ROLLBACK=true
 ```
 
+Buat `NUSAMIND_VAULT_KEY` (base64, 32 byte) melalui PowerShell:
+
+```powershell
+$b = New-Object byte[] 32
+[Security.Cryptography.RandomNumberGenerator]::Fill($b)
+[Convert]::ToBase64String($b)
+```
+
+Endpoint autonomy: `http://localhost:3000/api/n1/autonomy`. Eksekusi memerlukan header `x-autonomy-token`. Kill switch loop agent: buat file `.nusamind/STOP`.
+
 ## Validasi Release
 
 ```powershell
@@ -258,6 +280,8 @@ npm ci
 npm run answer:benchmark
 npm run model:n14:benchmark
 npm run model:n14:status:live
+npm run table:n15:benchmark
+npm run suites:n142:benchmark
 npm run check
 npm run build
 npm run gate
@@ -274,7 +298,7 @@ Jangan menyatakan deployment, build, atau model runtime berhasil tanpa output ve
 - Semua force push menggunakan `--force-with-lease` dan remote backup.
 - Qwen3 Coder 30B tidak menjadi default Zenith.
 - Windows EXE/Electron dibatalkan dan n8n masih ditunda.
-- Main UI tidak diubah pada update N1.1 sampai N1.4.
+- Main UI tidak diubah pada update N1.1 sampai N1.5.
 - Jangan commit `.env`, token, private key, database runtime, session, atau credential vault.
 - Jangan membuka endpoint autonomy langsung ke internet tanpa autentikasi, firewall, dan reverse proxy.
 - Kualitas reasoning tetap bergantung pada model, prompt, data, tool, context, dan hardware.
@@ -287,6 +311,7 @@ Dokumentasi penting:
 - [`docs/answer-quality-n1.3.md`](docs/answer-quality-n1.3.md)
 - [`docs/model-runtime-n1.4.md`](docs/model-runtime-n1.4.md)
 - [`docs/benchmark-suites-n1.4.2.md`](docs/benchmark-suites-n1.4.2.md)
+- [`docs/table-engine-n1.5.md`](docs/table-engine-n1.5.md)
 - [`data/release/n1.2/manifest.json`](data/release/n1.2/manifest.json)
 
 ## Status Lisensi
@@ -303,5 +328,5 @@ Repository ini belum menetapkan lisensi open-source. Visibilitas publik di GitHu
 ---
 
 <div align="center">
-  <sub>NusaMind AI Zenith N1.4.2 — Adaptive Intelligence, Controlled Engineering</sub>
+  <sub>NusaMind AI Zenith N1.5 — Adaptive Intelligence, Controlled Engineering</sub>
 </div>
