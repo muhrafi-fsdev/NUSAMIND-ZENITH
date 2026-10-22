@@ -1,0 +1,298 @@
+[
+  {
+    "id": "n151_owasp_top10_2025",
+    "type": "universal",
+    "title": "OWASP Top 10:2025 (edisi yang berlaku)",
+    "category": "Cybersecurity Partner",
+    "text": "Edisi OWASP Top 10 terbaru adalah 2025; edisi 2021 sudah digantikan. Daftar: A01 Broken Access Control (SSRF kini digabung ke kategori ini), A02 Security Misconfiguration, A03 Software Supply Chain Failures (perluasan dari Vulnerable and Outdated Components), A04 Cryptographic Failures, A05 Injection, A06 Insecure Design, A07 Authentication Failures, A08 Software or Data Integrity Failures, A09 Security Logging & Alerting Failures, A10 Mishandling of Exceptional Conditions (kategori baru: penanganan error yang salah, logika yang gagal terbuka). Saat memetakan temuan, pakai nama edisi 2025 dan jangan mencampurnya dengan nomor 2021.",
+    "tags": [
+      "cybersecurity",
+      "keamanan",
+      "n1.5.1",
+      "owasp",
+      "top10",
+      "2025",
+      "kategori"
+    ],
+    "source": "OWASP Top 10:2025, https://owasp.org/Top10/2025/ (diverifikasi 2026-10-22)",
+    "confidence": 0.93
+  },
+  {
+    "id": "n151_cwe_cheatsheet",
+    "type": "universal",
+    "title": "Pemetaan CWE yang sering dipakai (judul resmi)",
+    "category": "Cybersecurity Partner",
+    "text": "CWE-22 Path Traversal; CWE-78 OS Command Injection; CWE-79 Cross-site Scripting; CWE-89 SQL Injection; CWE-94 Code Injection; CWE-95 Eval Injection; CWE-200 Exposure of Sensitive Information to an Unauthorized Actor; CWE-208 Observable Timing Discrepancy; CWE-209 Generation of Error Message Containing Sensitive Information; CWE-250 Execution with Unnecessary Privileges; CWE-295 Improper Certificate Validation; CWE-306 Missing Authentication for Critical Function; CWE-319 Cleartext Transmission of Sensitive Information; CWE-321 Use of Hard-coded Cryptographic Key; CWE-327 Use of a Broken or Risky Cryptographic Algorithm; CWE-328 Use of Weak Hash; CWE-338 Use of Cryptographically Weak PRNG; CWE-489 Active Debug Code; CWE-494 Download of Code Without Integrity Check; CWE-502 Deserialization of Untrusted Data; CWE-532 Insertion of Sensitive Information into Log File; CWE-548 Exposure of Information Through Directory Listing; CWE-614 Sensitive Cookie Without Secure Attribute; CWE-732 Incorrect Permission Assignment for Critical Resource; CWE-798 Use of Hard-coded Credentials; CWE-829 Inclusion of Functionality from Untrusted Control Sphere; CWE-918 Server-Side Request Forgery; CWE-942 Permissive Cross-domain Security Policy; CWE-1004 Sensitive Cookie Without HttpOnly Flag; CWE-1321 Prototype Pollution. Catatan: CWE-16 adalah kategori yang tidak boleh dipakai untuk pemetaan kerentanan.",
+    "tags": [
+      "cybersecurity",
+      "keamanan",
+      "n1.5.1",
+      "cwe",
+      "mitre",
+      "pemetaan"
+    ],
+    "source": "MITRE CWE v4.20, https://cwe.mitre.org/ (diverifikasi 2026-10-22: tiap judul dicocokkan satu per satu)",
+    "confidence": 0.95
+  },
+  {
+    "id": "n151_vulnerability_assessment_process",
+    "type": "universal",
+    "title": "Proses asesmen kerentanan dan ruang lingkupnya",
+    "category": "Cybersecurity Partner",
+    "text": "NIST SP 800-115 (2008) adalah panduan untuk merencanakan dan menjalankan pengujian serta pemeriksaan keamanan teknis, menganalisis temuan, dan menyusun strategi mitigasi; ia dipakai untuk menemukan kerentanan pada sistem atau jaringan dan memverifikasi kepatuhan terhadap kebijakan. Alur praktis: (1) tentukan ruang lingkup dan otorisasi tertulis (aset apa, kapan, batasan), (2) kumpulkan informasi pasif dan inventaris, (3) telaah konfigurasi dan kode, (4) validasi kerentanan secara terkontrol di lingkungan milik sendiri atau berizin, (5) nilai dampak dan prioritaskan, (6) laporkan dengan bukti dan langkah perbaikan, (7) uji ulang setelah perbaikan. Dokumentasikan asumsi dan apa yang tidak diuji.",
+    "tags": [
+      "cybersecurity",
+      "keamanan",
+      "n1.5.1",
+      "asesmen",
+      "nist",
+      "800-115",
+      "scope",
+      "otorisasi"
+    ],
+    "source": "NIST SP 800-115, https://csrc.nist.gov/pubs/sp/800/115/final (abstrak diverifikasi 2026-10-22); rincian alur adalah praktik umum",
+    "confidence": 0.85
+  },
+  {
+    "id": "n151_threat_modeling_stride",
+    "type": "universal",
+    "title": "Pemodelan ancaman dengan STRIDE",
+    "category": "Cybersecurity Partner",
+    "text": "STRIDE menelaah tiap komponen dan aliran data terhadap enam jenis ancaman: Spoofing (menyamar), Tampering (mengubah data), Repudiation (menyangkal tindakan), Information disclosure (kebocoran), Denial of service, dan Elevation of privilege. Langkah: gambar diagram aliran data dan batas kepercayaan, daftarkan aset, terapkan STRIDE pada setiap elemen yang melintasi batas kepercayaan, catat mitigasi yang sudah ada, nilai risiko (kemungkinan x dampak), lalu tentukan tindakan: mitigasi, transfer, terima, atau hindari. Perbarui model saat arsitektur berubah.",
+    "tags": [
+      "cybersecurity",
+      "keamanan",
+      "n1.5.1",
+      "stride",
+      "threat model",
+      "arsitektur",
+      "risiko"
+    ],
+    "source": "pengetahuan praktisi umum; belum diverifikasi ke sumber primer pada sesi ini",
+    "confidence": 0.8
+  },
+  {
+    "id": "n151_secure_code_review",
+    "type": "universal",
+    "title": "Daftar periksa review kode yang aman",
+    "category": "Cybersecurity Partner",
+    "text": "Telaah berurutan: (1) setiap titik masuk data (request, berkas, env, pesan antrean) dan apakah divalidasi dengan skema; (2) otorisasi di sisi server pada setiap aksi, bukan hanya di UI (IDOR); (3) query berparameter dan tidak ada penyambungan string ke SQL atau shell; (4) path berkas dibatasi ke root yang diizinkan setelah realpath; (5) URL keluar divalidasi dengan allowlist (SSRF); (6) rahasia hanya dari lingkungan atau secret manager, tidak ada di repo atau log; (7) kriptografi memakai pustaka standar, AES-GCM, hash kata sandi argon2id/bcrypt/scrypt, acak dari crypto; (8) gagal tertutup: tanpa konfigurasi autentikasi, tolak, jangan buka; (9) pesan error generik ke klien, detail di log; (10) dependensi di-pin dan dipindai. Tandai tiap temuan dengan bukti baris dan cara memverifikasi perbaikan.",
+    "tags": [
+      "cybersecurity",
+      "keamanan",
+      "n1.5.1",
+      "code review",
+      "secure coding",
+      "checklist",
+      "asvs"
+    ],
+    "source": "pengetahuan praktisi umum; belum diverifikasi ke sumber primer pada sesi ini",
+    "confidence": 0.8
+  },
+  {
+    "id": "n151_web_security_headers",
+    "type": "universal",
+    "title": "Header keamanan HTTP dan jebakannya",
+    "category": "Cybersecurity Partner",
+    "text": "Header dasar yang aman diaktifkan hampir di mana saja: X-Content-Type-Options: nosniff, Referrer-Policy: strict-origin-when-cross-origin, dan pembatasan framing lewat Content-Security-Policy frame-ancestors atau X-Frame-Options. Content-Security-Policy paling bernilai melawan XSS tetapi bisa merusak skrip inline; mulai dengan Content-Security-Policy-Report-Only, kumpulkan pelanggaran, lalu perketat (nonce atau hash). Strict-Transport-Security hanya bermakna lewat HTTPS; pasang di reverse proxy HTTPS dan hati-hati dengan includeSubDomains dan preload karena sulit dibatalkan, serta jangan mengaktifkannya untuk host pengembangan bersama (localhost) tanpa memahami dampaknya. Matikan X-Powered-By.",
+    "tags": [
+      "cybersecurity",
+      "keamanan",
+      "n1.5.1",
+      "headers",
+      "csp",
+      "hsts",
+      "nextjs",
+      "xss"
+    ],
+    "source": "pengetahuan praktisi umum; belum diverifikasi ke sumber primer pada sesi ini",
+    "confidence": 0.8
+  },
+  {
+    "id": "n151_secrets_management",
+    "type": "universal",
+    "title": "Manajemen rahasia dan respons saat bocor",
+    "category": "Cybersecurity Partner",
+    "text": "Pencegahan: rahasia tidak pernah di repositori; .env harus ada di .gitignore sebelum dibuat; sediakan .env.example berisi placeholder; muat dari variabel lingkungan atau secret manager; beri hak minimum dan umur pendek; aktifkan secret scanning dan pre-commit hook. Bila rahasia bocor: (1) cabut atau rotasi di penyedia sekarang, karena menghapus commit tidak cukup, (2) tentukan jendela paparan dan periksa log pemakaian kredensial itu, (3) bersihkan riwayat git (git filter-repo) dan paksa semua clone memperbarui, (4) cari tahu bagaimana bocornya dan tutup jalurnya, (5) catat sebagai insiden. Nilai placeholder publik seperti change-this-... bukan rahasia dan tidak boleh dipakai di produksi; sistem harus gagal tertutup bila nilainya belum diganti.",
+    "tags": [
+      "cybersecurity",
+      "keamanan",
+      "n1.5.1",
+      "secrets",
+      "env",
+      "rotasi",
+      "kebocoran",
+      "gitignore"
+    ],
+    "source": "pengetahuan praktisi umum; belum diverifikasi ke sumber primer pada sesi ini",
+    "confidence": 0.82
+  },
+  {
+    "id": "n151_nodejs_next_hardening",
+    "type": "universal",
+    "title": "Hardening aplikasi Node.js dan Next.js",
+    "category": "Cybersecurity Partner",
+    "text": "Gunakan execFile atau spawn dengan array argumen, bukan exec dengan string; jangan eval atau new Function; query berparameter; bandingkan token dengan crypto.timingSafeEqual setelah memeriksa panjang; endpoint admin gagal tertutup bila token belum dikonfigurasi dan menolak nilai placeholder; batasi path berkas dengan path.resolve lalu pastikan diawali root (periksa realpath untuk symlink); validasi input dengan zod; pembatas laju pada endpoint mahal atau sensitif; cookie sesi httpOnly, secure, sameSite; matikan poweredByHeader; npm ci di CI dan pertimbangkan --ignore-scripts; commit lockfile; jangan menaruh rahasia pada variabel NEXT_PUBLIC_ karena masuk ke bundel klien; jangan kirim stack trace ke klien.",
+    "tags": [
+      "cybersecurity",
+      "keamanan",
+      "n1.5.1",
+      "nodejs",
+      "nextjs",
+      "express",
+      "hardening",
+      "typescript"
+    ],
+    "source": "pengetahuan praktisi umum; belum diverifikasi ke sumber primer pada sesi ini",
+    "confidence": 0.82
+  },
+  {
+    "id": "n151_docker_hardening",
+    "type": "universal",
+    "title": "Hardening Docker dan Compose",
+    "category": "Cybersecurity Partner",
+    "text": "Image: pin tag versi atau digest, bukan latest; multi-stage dan base minimal; jalankan sebagai pengguna non-root (USER); jangan taruh rahasia di ENV, ARG, atau layer (pakai BuildKit secret mounts); hindari ADD dari URL dan curl | sh. Runtime: no-new-privileges, cap_drop: ALL lalu cap_add seperlunya, filesystem read-only bila memungkinkan, jangan privileged, jangan memasang /var/run/docker.sock, jangan network_mode: host, ikat port ke 127.0.0.1 kecuali memang perlu publik, dan jangan mempublikasikan port basis data. Bila volume bind menolak tulis setelah beralih ke non-root, sesuaikan kepemilikan direktori host, bukan kembali ke root.",
+    "tags": [
+      "cybersecurity",
+      "keamanan",
+      "n1.5.1",
+      "docker",
+      "compose",
+      "container",
+      "hardening"
+    ],
+    "source": "pengetahuan praktisi umum; belum diverifikasi ke sumber primer pada sesi ini",
+    "confidence": 0.82
+  },
+  {
+    "id": "n151_linux_ssh_hardening",
+    "type": "universal",
+    "title": "Hardening Linux dan SSH",
+    "category": "Cybersecurity Partner",
+    "text": "SSH: PasswordAuthentication no dengan kunci publik, PermitRootLogin no, PermitEmptyPasswords no, batasi pengguna (AllowUsers atau AllowGroups), fail2ban atau pembatas laju. Sebelum menutup sesi yang sedang berjalan, uji login baru di sesi kedua agar tidak terkunci. Sistem: firewall default deny dengan hanya port yang perlu, pembaruan keamanan otomatis, sudo dengan hak minimum, akun layanan tanpa shell, izin berkas 640/750 (bukan 777), log terpusat dan auditd untuk perubahan sensitif, serta cadangan yang diuji pemulihannya dan tidak dapat ditulis ulang dari host produksi.",
+    "tags": [
+      "cybersecurity",
+      "keamanan",
+      "n1.5.1",
+      "linux",
+      "ssh",
+      "sshd",
+      "firewall",
+      "hardening"
+    ],
+    "source": "pengetahuan praktisi umum; belum diverifikasi ke sumber primer pada sesi ini",
+    "confidence": 0.82
+  },
+  {
+    "id": "n151_windows_hardening",
+    "type": "universal",
+    "title": "Dasar hardening Windows dan PowerShell",
+    "category": "Cybersecurity Partner",
+    "text": "Pakai akun standar untuk kerja harian dan admin hanya saat perlu; aktifkan Microsoft Defender, SmartScreen, BitLocker, dan pembaruan otomatis; matikan layanan dan fitur yang tidak dipakai. PowerShell: aktifkan Script Block Logging dan Module Logging untuk deteksi, dan pahami execution policy: ia bukan batas keamanan yang kuat, dan RemoteSigned memblokir skrip yang membawa Mark-of-the-Web (misalnya hasil unduhan ZIP) sehingga peluncur .bat sering memakai Bypass. Untuk peluncur lokal yang berisi skrip Anda sendiri itu dapat diterima, tetapi jangan memakai Bypass untuk menjalankan skrip dari sumber yang tidak Anda tinjau.",
+    "tags": [
+      "cybersecurity",
+      "keamanan",
+      "n1.5.1",
+      "windows",
+      "powershell",
+      "defender",
+      "execution policy",
+      "hardening"
+    ],
+    "source": "pengetahuan praktisi umum; belum diverifikasi ke sumber primer pada sesi ini",
+    "confidence": 0.78
+  },
+  {
+    "id": "n151_incident_response_phases",
+    "type": "universal",
+    "title": "Fase respons insiden",
+    "category": "Cybersecurity Partner",
+    "text": "Kerangka umum NIST SP 800-61 (Rev. 2, 2012; periksa revisi terbaru) memakai fase: Preparation; Detection and Analysis; Containment, Eradication, and Recovery; dan Post-Incident Activity. Praktisnya: siapkan kontak dan runbook sebelum insiden; tentukan apakah kejadian benar insiden, cakupan, dan dampaknya dengan bukti (jangan menimpa log); batasi kerusakan dengan mengisolasi host atau mencabut kredensial tanpa menghapus bukti; hilangkan penyebab dan pulihkan dari sumber bersih yang terverifikasi; lalu tulis tinjauan tanpa menyalahkan, perbaiki akar masalah, dan perbarui deteksi. Catat waktu dan tindakan sepanjang jalan.",
+    "tags": [
+      "cybersecurity",
+      "keamanan",
+      "n1.5.1",
+      "incident response",
+      "nist",
+      "800-61",
+      "forensik",
+      "containment"
+    ],
+    "source": "NIST SP 800-61 (struktur fase dari pengetahuan umum; belum diverifikasi ke dokumen pada sesi ini)",
+    "confidence": 0.75
+  },
+  {
+    "id": "n151_supply_chain_security",
+    "type": "universal",
+    "title": "Keamanan rantai pasok perangkat lunak",
+    "category": "Cybersecurity Partner",
+    "text": "OWASP 2025 menempatkan Software Supply Chain Failures di A03. Praktik: commit lockfile dan pakai npm ci; pin versi dependensi dan hindari latest, wildcard, serta dependensi dari URL atau repositori git; pin GitHub Actions pihak ketiga ke SHA commit penuh; tinjau skrip preinstall, install, dan postinstall serta pertimbangkan --ignore-scripts; pindai kerentanan dengan npm audit atau OSV-Scanner (butuh jaringan); hasilkan SBOM; aktifkan 2FA dan provenance di registry; batasi izin GITHUB_TOKEN per job; jangan memakai pull_request_target untuk menjalankan kode dari fork.",
+    "tags": [
+      "cybersecurity",
+      "keamanan",
+      "n1.5.1",
+      "supply chain",
+      "npm",
+      "dependency",
+      "sbom",
+      "github actions"
+    ],
+    "source": "OWASP Top 10:2025 A03 (nama kategori diverifikasi 2026-10-22); praktiknya adalah pengetahuan umum",
+    "confidence": 0.82
+  },
+  {
+    "id": "n151_logging_and_detection",
+    "type": "universal",
+    "title": "Logging dan deteksi yang berguna",
+    "category": "Cybersecurity Partner",
+    "text": "OWASP 2025 menamai A09 Security Logging & Alerting Failures: log tanpa peringatan nyaris tidak berguna. Catat kejadian autentikasi (berhasil dan gagal), perubahan hak akses, aksi admin, akses ke data sensitif, dan error validasi yang berulang, dengan waktu, identitas, dan sumber. Jangan mencatat kata sandi, token, atau data pribadi berlebih; redaksi nilai sensitif. Kirim ke penyimpanan terpisah yang tidak dapat diubah dari host sumber, tentukan retensi, dan buat peringatan untuk pola nyata seperti lonjakan login gagal atau pemakaian token admin dari alamat baru.",
+    "tags": [
+      "cybersecurity",
+      "keamanan",
+      "n1.5.1",
+      "logging",
+      "deteksi",
+      "siem",
+      "a09"
+    ],
+    "source": "OWASP Top 10:2025 A09 (nama diverifikasi 2026-10-22); praktiknya adalah pengetahuan umum",
+    "confidence": 0.82
+  },
+  {
+    "id": "n151_using_nusamind_audit",
+    "type": "universal",
+    "title": "Memakai NusaMind Security Audit",
+    "category": "Cybersecurity Partner",
+    "text": "Audit statis pasif atas kode dan konfigurasi milik Anda. CLI: npm run security:audit -- [path] --format markdown|json|sarif --out laporan.md --fail-on high. API: POST /api/n1/security dengan token repo.scan. Cakupan: JavaScript/TypeScript, Python, shell, PowerShell, batch, Dockerfile, Compose, GitHub Actions, nginx, sshd_config, package.json, next.config, dan rute API Next.js. Tidak menjalankan kode, tidak mengakses jaringan, tidak mengikuti symlink, dan tidak membaca .env asli (hanya memeriksa keberadaannya dan apakah .gitignore mencakupnya). Nilai rahasia disamarkan di laporan. Penanda nusamind-audit-ignore menekan temuan dan setiap penekanan dilaporkan. Format SARIF 2.1.0 dapat diunggah ke GitHub code scanning. Hasilnya petunjuk, bukan bukti: lakukan triase tiap temuan.",
+    "tags": [
+      "cybersecurity",
+      "keamanan",
+      "n1.5.1",
+      "audit",
+      "sarif",
+      "cli",
+      "triase",
+      "nusamind"
+    ],
+    "source": "dokumentasi NusaMind N1.5.1 (docs/security-partner-n1.5.1.md); SARIF: OASIS 2.1.0 (https://docs.oasis-open.org/sarif/sarif/v2.1.0/sarif-v2.1.0.html, diverifikasi 2026-10-22)",
+    "confidence": 0.9
+  },
+  {
+    "id": "n151_false_positive_triage",
+    "type": "universal",
+    "title": "Cara melakukan triase temuan pemindai",
+    "category": "Cybersecurity Partner",
+    "text": "Untuk tiap temuan tanyakan: (1) apakah baris itu benar-benar kode yang dieksekusi, atau string, komentar, atau contoh; (2) dari mana nilai yang berbahaya berasal, apakah dapat dikendalikan penyerang; (3) apakah ada mitigasi di tempat lain (validasi, root containment, allowlist); (4) siapa yang dapat menjangkau kode ini dan apa dampaknya. Contoh nyata dari audit repo ini: RegExp.exec bukan exec shell; DownloadString yang hanya membaca respons bukan eksekusi; interpolasi klausa SQL tetap yang dibuat kode sendiri adalah false positive tetapi pantas diverifikasi; sebaliknya server statis yang memakai decodeURIComponent lalu path.join dan readFile terbukti dapat diakses lewat /..%2f dan merupakan celah nyata. Buktikan dengan uji sebelum dan sesudah perbaikan, bukan hanya membaca kode.",
+    "tags": [
+      "cybersecurity",
+      "keamanan",
+      "n1.5.1",
+      "triase",
+      "false positive",
+      "verifikasi",
+      "bukti"
+    ],
+    "source": "hasil audit NusaMind terhadap repositori ini, 2026-10-22",
+    "confidence": 0.88
+  }
+]

@@ -1,0 +1,1191 @@
+{
+  "format": "nusamind-security-audit-cases-v1",
+  "release": "N1.5.1",
+  "note": "Ekspektasi diturunkan manual dari definisi aturan dan makna kerentanan, bukan dari keluaran kode. Rahasia uji dibangun saat runtime.",
+  "snippets": [
+    {
+      "id": "js-cmd-template",
+      "file": "a.ts",
+      "code": [
+        "const out = execSync(`git log ${branch}`);"
+      ],
+      "expect": [
+        "js-command-injection"
+      ]
+    },
+    {
+      "id": "js-cmd-concat",
+      "file": "a.ts",
+      "code": [
+        "exec('ls ' + dir, cb);"
+      ],
+      "expect": [
+        "js-command-injection"
+      ]
+    },
+    {
+      "id": "js-cmd-variable",
+      "file": "a.ts",
+      "code": [
+        "execSync(cmd);"
+      ],
+      "expect": [
+        "js-command-injection"
+      ]
+    },
+    {
+      "id": "js-cmd-safe",
+      "file": "a.ts",
+      "code": [
+        "const m = /a(b)/.exec(text);",
+        "execFile('git', ['log', branch]);",
+        "execSync('git status');"
+      ],
+      "expect": []
+    },
+    {
+      "id": "js-eval",
+      "file": "a.ts",
+      "code": [
+        "const r = eval(userCode);",
+        "const f = new Function('a', body);"
+      ],
+      "expect": [
+        "js-eval"
+      ],
+      "counts": {
+        "js-eval": 2
+      }
+    },
+    {
+      "id": "js-eval-safe",
+      "file": "a.ts",
+      "code": [
+        "obj.eval(x);",
+        "evaluate(y);",
+        "// eval(z) is dangerous"
+      ],
+      "expect": []
+    },
+    {
+      "id": "js-sqli-request-input",
+      "file": "a.ts",
+      "code": [
+        "db.query(`SELECT * FROM users WHERE id = ${req.params.id}`);"
+      ],
+      "expect": [
+        "js-sql-injection"
+      ],
+      "severity": {
+        "js-sql-injection": "high"
+      },
+      "confidence": {
+        "js-sql-injection": "high"
+      }
+    },
+    {
+      "id": "js-sqli-fixed-fragment",
+      "file": "a.ts",
+      "code": [
+        "db.prepare(`SELECT id FROM t ${filter}`).all();"
+      ],
+      "expect": [
+        "js-sql-injection"
+      ],
+      "severity": {
+        "js-sql-injection": "medium"
+      },
+      "confidence": {
+        "js-sql-injection": "low"
+      }
+    },
+    {
+      "id": "js-sqli-safe",
+      "file": "a.ts",
+      "code": [
+        "db.query('SELECT * FROM users WHERE id = ?', [id]);"
+      ],
+      "expect": []
+    },
+    {
+      "id": "js-xss",
+      "file": "a.tsx",
+      "code": [
+        "el.innerHTML = userInput;",
+        "return <div dangerouslySetInnerHTML={{ __html: html }} />;"
+      ],
+      "expect": [
+        "js-xss-sink"
+      ],
+      "counts": {
+        "js-xss-sink": 2
+      }
+    },
+    {
+      "id": "js-xss-safe",
+      "file": "a.ts",
+      "code": [
+        "el.textContent = x; if (a.innerHTML === b) {}"
+      ],
+      "expect": []
+    },
+    {
+      "id": "js-tls-off",
+      "file": "a.ts",
+      "code": [
+        "new https.Agent({ rejectUnauthorized: false });",
+        "process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';"
+      ],
+      "expect": [
+        "js-tls-verification-off"
+      ],
+      "counts": {
+        "js-tls-verification-off": 2
+      }
+    },
+    {
+      "id": "js-hash-security-context",
+      "file": "a.ts",
+      "code": [
+        "const h = crypto.createHash('md5').update(password).digest('hex');"
+      ],
+      "expect": [
+        "js-weak-hash"
+      ],
+      "severity": {
+        "js-weak-hash": "medium"
+      }
+    },
+    {
+      "id": "js-hash-id-context",
+      "file": "a.ts",
+      "code": [
+        "const id = createHash('sha1').update(name).digest('hex');"
+      ],
+      "expect": [
+        "js-weak-hash"
+      ],
+      "severity": {
+        "js-weak-hash": "low"
+      }
+    },
+    {
+      "id": "js-cipher",
+      "file": "a.ts",
+      "code": [
+        "crypto.createCipher('aes-256-cbc', key);",
+        "createCipheriv('aes-256-ecb', key, null);"
+      ],
+      "expect": [
+        "js-weak-cipher"
+      ],
+      "counts": {
+        "js-weak-cipher": 2
+      }
+    },
+    {
+      "id": "js-cipher-safe",
+      "file": "a.ts",
+      "code": [
+        "createCipheriv('aes-256-gcm', key, iv);"
+      ],
+      "expect": []
+    },
+    {
+      "id": "js-random-token",
+      "file": "a.ts",
+      "code": [
+        "const token = Math.random().toString(36);"
+      ],
+      "expect": [
+        "js-insecure-random"
+      ]
+    },
+    {
+      "id": "js-random-benign",
+      "file": "a.ts",
+      "code": [
+        "const x = Math.random();"
+      ],
+      "expect": []
+    },
+    {
+      "id": "js-cors-wildcard",
+      "file": "a.ts",
+      "code": [
+        "res.setHeader('Access-Control-Allow-Origin', '*');"
+      ],
+      "expect": [
+        "js-cors-wildcard"
+      ]
+    },
+    {
+      "id": "js-cors-specific",
+      "file": "a.ts",
+      "code": [
+        "res.setHeader('Access-Control-Allow-Origin', origin);"
+      ],
+      "expect": []
+    },
+    {
+      "id": "js-cookie-flags",
+      "file": "a.ts",
+      "code": [
+        "cookies.set('s', v, { httpOnly: false, secure: false });"
+      ],
+      "expect": [
+        "js-cookie-httponly-off",
+        "js-cookie-secure-off"
+      ]
+    },
+    {
+      "id": "js-path-traversal",
+      "file": "a.ts",
+      "code": [
+        "fs.readFile(path.join(root, req.query.file), cb);"
+      ],
+      "expect": [
+        "js-path-traversal"
+      ]
+    },
+    {
+      "id": "js-path-safe",
+      "file": "a.ts",
+      "code": [
+        "fs.readFileSync('config.json');",
+        "fs.readFile(safeJoin(root, req.query.file), cb);"
+      ],
+      "expect": []
+    },
+    {
+      "id": "js-ssrf",
+      "file": "a.ts",
+      "code": [
+        "const r = await fetch(req.body.url);"
+      ],
+      "expect": [
+        "js-ssrf"
+      ]
+    },
+    {
+      "id": "js-ssrf-safe",
+      "file": "a.ts",
+      "code": [
+        "fetch('/api/x', { method: 'POST', body: JSON.stringify(data) });",
+        "fetch(`${base}/api/tags`);"
+      ],
+      "expect": []
+    },
+    {
+      "id": "js-cleartext-http",
+      "file": "a.ts",
+      "code": [
+        "await fetch('http://example.com/api');"
+      ],
+      "expect": [
+        "js-cleartext-http"
+      ]
+    },
+    {
+      "id": "js-cleartext-local",
+      "file": "a.ts",
+      "code": [
+        "await fetch('http://localhost:3000/x');"
+      ],
+      "expect": []
+    },
+    {
+      "id": "js-public-env-secret",
+      "file": "a.ts",
+      "code": [
+        "const k = process.env.NEXT_PUBLIC_API_SECRET;"
+      ],
+      "expect": [
+        "js-public-env-secret"
+      ]
+    },
+    {
+      "id": "js-error-stack-leak",
+      "file": "a.ts",
+      "code": [
+        "return Response.json({ error: err.stack });"
+      ],
+      "expect": [
+        "js-error-detail-leak"
+      ]
+    },
+    {
+      "id": "js-log-credential",
+      "file": "a.ts",
+      "code": [
+        "console.log('login', password);"
+      ],
+      "expect": [
+        "js-sensitive-log"
+      ]
+    },
+    {
+      "id": "js-log-message-only",
+      "file": "a.ts",
+      "code": [
+        "console.log('password reset sent');"
+      ],
+      "expect": []
+    },
+    {
+      "id": "js-timing-compare",
+      "file": "a.ts",
+      "code": [
+        "if (token !== adminToken) return;"
+      ],
+      "expect": [
+        "js-secret-timing-compare"
+      ]
+    },
+    {
+      "id": "js-timing-safe",
+      "file": "a.ts",
+      "code": [
+        "if (token !== undefined) {}",
+        "if (token === '') {}",
+        "timingSafeEqual(a, b);"
+      ],
+      "expect": []
+    },
+    {
+      "id": "js-proto-write",
+      "file": "a.ts",
+      "code": [
+        "obj.__proto__ = payload;"
+      ],
+      "expect": [
+        "js-prototype-pollution"
+      ]
+    },
+    {
+      "id": "js-shell-true",
+      "file": "a.ts",
+      "code": [
+        "spawn(cmd, args, { shell: true });"
+      ],
+      "expect": [
+        "js-shell-true"
+      ]
+    },
+    {
+      "id": "js-comments-ignored",
+      "file": "a.ts",
+      "code": [
+        "// eval(x) is dangerous",
+        "/* exec(`rm ${x}`) */",
+        " * eval(y)"
+      ],
+      "expect": []
+    },
+    {
+      "id": "py-eval-exec",
+      "file": "a.py",
+      "code": [
+        "result = eval(user_input)",
+        "exec(code)"
+      ],
+      "expect": [
+        "py-eval-exec"
+      ],
+      "counts": {
+        "py-eval-exec": 2
+      }
+    },
+    {
+      "id": "py-deserialization",
+      "file": "a.py",
+      "code": [
+        "data = pickle.loads(blob)",
+        "cfg = yaml.load(f)"
+      ],
+      "expect": [
+        "py-unsafe-deserialization"
+      ],
+      "counts": {
+        "py-unsafe-deserialization": 2
+      }
+    },
+    {
+      "id": "py-deserialization-safe",
+      "file": "a.py",
+      "code": [
+        "cfg = yaml.safe_load(f)",
+        "cfg = yaml.load(f, Loader=yaml.SafeLoader)"
+      ],
+      "expect": []
+    },
+    {
+      "id": "py-command",
+      "file": "a.py",
+      "code": [
+        "subprocess.run(cmd, shell=True)",
+        "os.system(cmd)"
+      ],
+      "expect": [
+        "py-command-injection"
+      ],
+      "counts": {
+        "py-command-injection": 2
+      }
+    },
+    {
+      "id": "py-sql-fstring",
+      "file": "a.py",
+      "code": [
+        "cursor.execute(f\"SELECT * FROM t WHERE id={i}\")"
+      ],
+      "expect": [
+        "py-sql-injection"
+      ]
+    },
+    {
+      "id": "py-sql-param",
+      "file": "a.py",
+      "code": [
+        "cursor.execute(\"SELECT * FROM t WHERE id=%s\", (i,))"
+      ],
+      "expect": []
+    },
+    {
+      "id": "py-tls-off",
+      "file": "a.py",
+      "code": [
+        "requests.get(url, verify=False)"
+      ],
+      "expect": [
+        "py-tls-verification-off"
+      ]
+    },
+    {
+      "id": "py-hash-id",
+      "file": "a.py",
+      "code": [
+        "d = hashlib.md5(data)"
+      ],
+      "expect": [
+        "py-weak-hash"
+      ],
+      "severity": {
+        "py-weak-hash": "low"
+      }
+    },
+    {
+      "id": "py-debug",
+      "file": "a.py",
+      "code": [
+        "app.run(debug=True)"
+      ],
+      "expect": [
+        "py-debug-enabled"
+      ]
+    },
+    {
+      "id": "py-cors",
+      "file": "a.py",
+      "code": [
+        "app.add_middleware(CORSMiddleware, allow_origins=[\"*\"])"
+      ],
+      "expect": [
+        "py-cors-wildcard"
+      ]
+    },
+    {
+      "id": "py-random-token",
+      "file": "a.py",
+      "code": [
+        "t = random.choice(token_chars)"
+      ],
+      "expect": [
+        "py-insecure-random"
+      ]
+    },
+    {
+      "id": "py-comment-ignored",
+      "file": "a.py",
+      "code": [
+        "# eval(x) would be unsafe"
+      ],
+      "expect": []
+    },
+    {
+      "id": "sh-pipe-to-shell",
+      "file": "a.sh",
+      "code": [
+        "curl -fsSL https://example.com/i.sh | sh",
+        "wget -qO- https://example.com/i.sh | sudo bash"
+      ],
+      "expect": [
+        "shell-pipe-to-shell"
+      ],
+      "counts": {
+        "shell-pipe-to-shell": 2
+      }
+    },
+    {
+      "id": "sh-chmod-777",
+      "file": "a.sh",
+      "code": [
+        "chmod 777 /var/www",
+        "chmod -R 777 /opt/x"
+      ],
+      "expect": [
+        "shell-world-writable"
+      ],
+      "counts": {
+        "shell-world-writable": 2
+      }
+    },
+    {
+      "id": "ps-iex",
+      "file": "a.ps1",
+      "code": [
+        "Invoke-Expression $cmd",
+        "iex (New-Object Net.WebClient).DownloadString($u)"
+      ],
+      "expect": [
+        "ps-invoke-expression"
+      ],
+      "counts": {
+        "ps-invoke-expression": 2
+      }
+    },
+    {
+      "id": "ps-download-only",
+      "file": "a.ps1",
+      "code": [
+        "$raw = $client.DownloadString($Url)"
+      ],
+      "expect": []
+    },
+    {
+      "id": "bat-exec-policy-bypass",
+      "file": "a.bat",
+      "code": [
+        "powershell -NoProfile -ExecutionPolicy Bypass -File x.ps1"
+      ],
+      "expect": [
+        "ps-execution-policy-bypass"
+      ]
+    },
+    {
+      "id": "docker-bad",
+      "file": "Dockerfile",
+      "code": [
+        "FROM node:latest",
+        "ADD https://example.com/a.tar /tmp/",
+        "ENV API_TOKEN=abc123def456",
+        "RUN chmod 777 /app",
+        "CMD [\"node\",\"a.js\"]"
+      ],
+      "expect": [
+        "docker-runs-as-root",
+        "docker-unpinned-base",
+        "docker-add-remote-url",
+        "docker-secret-in-env",
+        "shell-world-writable"
+      ]
+    },
+    {
+      "id": "docker-good",
+      "file": "Dockerfile",
+      "code": [
+        "FROM node:22-alpine AS build",
+        "RUN npm ci",
+        "FROM node:22-alpine",
+        "RUN adduser -D app",
+        "USER app",
+        "CMD [\"node\",\"a.js\"]"
+      ],
+      "expect": []
+    },
+    {
+      "id": "docker-stage-reference",
+      "file": "Dockerfile",
+      "code": [
+        "FROM node:22 AS base",
+        "FROM base AS final",
+        "USER app"
+      ],
+      "expect": []
+    },
+    {
+      "id": "compose-bad",
+      "file": "docker-compose.yml",
+      "code": [
+        "services:",
+        "  db:",
+        "    image: postgres:16",
+        "    privileged: true",
+        "    network_mode: host",
+        "    ports:",
+        "      - \"5432:5432\"",
+        "    volumes:",
+        "      - /var/run/docker.sock:/var/run/docker.sock",
+        "    environment:",
+        "      DB_PASSWORD: change-this-local-admin-token",
+        "  web:",
+        "    ports:",
+        "      - \"8080:80\""
+      ],
+      "expect": [
+        "compose-privileged",
+        "compose-docker-socket",
+        "compose-host-network",
+        "compose-db-port-public",
+        "compose-default-credential",
+        "compose-port-all-interfaces"
+      ]
+    },
+    {
+      "id": "compose-good",
+      "file": "docker-compose.yml",
+      "code": [
+        "services:",
+        "  web:",
+        "    ports:",
+        "      - \"127.0.0.1:8080:80\"",
+        "    environment:",
+        "      DB_PASSWORD: ${DB_PASSWORD:?required}"
+      ],
+      "expect": []
+    },
+    {
+      "id": "workflow-bad",
+      "file": ".github/workflows/ci.yml",
+      "code": [
+        "on:",
+        "  pull_request_target:",
+        "permissions: write-all",
+        "jobs:",
+        "  x:",
+        "    steps:",
+        "      - uses: some-org/action@v1",
+        "      - run: echo \"${{ github.event.pull_request.title }}\""
+      ],
+      "expect": [
+        "ci-pull-request-target",
+        "ci-write-all",
+        "ci-unpinned-action",
+        "ci-script-injection"
+      ]
+    },
+    {
+      "id": "workflow-good",
+      "file": ".github/workflows/ci.yml",
+      "code": [
+        "on: push",
+        "permissions:",
+        "  contents: read",
+        "jobs:",
+        "  x:",
+        "    steps:",
+        "      - uses: actions/checkout@v4",
+        "      - uses: org/act@0123456789abcdef0123456789abcdef01234567",
+        "      - run: echo \"$TITLE\"",
+        "        env:",
+        "          TITLE: ${{ github.event.pull_request.title }}"
+      ],
+      "expect": []
+    },
+    {
+      "id": "nginx-bad",
+      "file": "nginx.conf",
+      "code": [
+        "autoindex on;",
+        "ssl_protocols TLSv1 TLSv1.1 TLSv1.2;",
+        "server_tokens on;"
+      ],
+      "expect": [
+        "nginx-autoindex",
+        "nginx-legacy-tls",
+        "nginx-server-tokens"
+      ]
+    },
+    {
+      "id": "nginx-good",
+      "file": "nginx.conf",
+      "code": [
+        "autoindex off;",
+        "ssl_protocols TLSv1.2 TLSv1.3;",
+        "server_tokens off;"
+      ],
+      "expect": []
+    },
+    {
+      "id": "sshd-bad",
+      "file": "sshd_config",
+      "code": [
+        "PermitRootLogin yes",
+        "PasswordAuthentication yes",
+        "PermitEmptyPasswords yes"
+      ],
+      "expect": [
+        "sshd-root-login",
+        "sshd-password-auth",
+        "sshd-empty-passwords"
+      ],
+      "severity": {
+        "sshd-empty-passwords": "critical"
+      }
+    },
+    {
+      "id": "sshd-good",
+      "file": "sshd_config",
+      "code": [
+        "PermitRootLogin no",
+        "#PermitRootLogin yes",
+        "PasswordAuthentication no"
+      ],
+      "expect": []
+    },
+    {
+      "id": "package-bad",
+      "file": "package.json",
+      "code": [
+        "{",
+        "  \"name\": \"x\",",
+        "  \"scripts\": { \"postinstall\": \"node setup.js\" },",
+        "  \"dependencies\": { \"a\": \"latest\", \"b\": \"*\", \"c\": \"github:user/repo\", \"d\": \"1.2.3\" }",
+        "}"
+      ],
+      "expect": [
+        "pkg-unpinned-latest",
+        "pkg-url-dependency",
+        "pkg-install-script"
+      ],
+      "counts": {
+        "pkg-unpinned-latest": 2,
+        "pkg-url-dependency": 1,
+        "pkg-install-script": 1
+      }
+    },
+    {
+      "id": "package-good",
+      "file": "package.json",
+      "code": [
+        "{",
+        "  \"name\": \"x\",",
+        "  \"dependencies\": { \"a\": \"1.0.0\", \"b\": \"^2.0.0\" }",
+        "}"
+      ],
+      "expect": []
+    },
+    {
+      "id": "next-config-bad",
+      "file": "next.config.mjs",
+      "code": [
+        "const nextConfig = { reactStrictMode: true };",
+        "export default nextConfig;"
+      ],
+      "expect": [
+        "next-missing-security-headers",
+        "next-powered-by-header"
+      ],
+      "severity": {
+        "next-missing-security-headers": "medium"
+      }
+    },
+    {
+      "id": "next-config-good",
+      "file": "next.config.mjs",
+      "code": [
+        "const h = ['Content-Security-Policy','X-Frame-Options','X-Content-Type-Options','Strict-Transport-Security','Referrer-Policy'];",
+        "export default { poweredByHeader: false, async headers() { return [{ source: '/:path*', headers: h }]; } };"
+      ],
+      "expect": []
+    },
+    {
+      "id": "api-route-no-auth",
+      "file": "app/api/x/route.ts",
+      "code": [
+        "export async function POST(req: Request) {",
+        "  return Response.json({ ok: true });",
+        "}"
+      ],
+      "expect": [
+        "api-route-no-visible-auth"
+      ]
+    },
+    {
+      "id": "api-route-with-token",
+      "file": "app/api/x/route.ts",
+      "code": [
+        "export async function POST(req: Request) {",
+        "  const token = req.headers.get('x-token');",
+        "  return Response.json({ ok: Boolean(token) });",
+        "}"
+      ],
+      "expect": []
+    },
+    {
+      "id": "api-route-get-only",
+      "file": "app/api/x/route.ts",
+      "code": [
+        "export async function GET() {",
+        "  return Response.json({ ok: true });",
+        "}"
+      ],
+      "expect": []
+    },
+    {
+      "id": "secret-aws-key",
+      "file": "a.ts",
+      "code": [
+        "const k = '{{AWS}}';"
+      ],
+      "expect": [
+        "secret-provider-token"
+      ],
+      "severity": {
+        "secret-provider-token": "critical"
+      },
+      "mustNotLeak": [
+        "{{AWS}}"
+      ]
+    },
+    {
+      "id": "secret-github-token",
+      "file": "a.py",
+      "code": [
+        "TOKEN = \"{{GHP}}\""
+      ],
+      "expect": [
+        "secret-provider-token"
+      ],
+      "mustNotLeak": [
+        "{{GHP}}"
+      ]
+    },
+    {
+      "id": "secret-private-key",
+      "file": "a.txt",
+      "code": [
+        "{{PEM}}"
+      ],
+      "expect": [
+        "secret-private-key"
+      ],
+      "severity": {
+        "secret-private-key": "critical"
+      }
+    },
+    {
+      "id": "secret-assigned-literal",
+      "file": "a.ts",
+      "code": [
+        "const apiKey = \"Zx9fQ2mK7vLp3Rt8Ws\";"
+      ],
+      "expect": [
+        "secret-assigned-credential"
+      ],
+      "mustNotLeak": [
+        "Zx9fQ2mK7vLp3Rt8Ws"
+      ]
+    },
+    {
+      "id": "secret-placeholders-ignored",
+      "file": "a.ts",
+      "code": [
+        "const apiKey = \"your_api_key_here\";",
+        "const password = \"changeme123\";",
+        "const password = process.env.PASSWORD;",
+        "const secret = \"password\";"
+      ],
+      "expect": []
+    },
+    {
+      "id": "secret-env-example",
+      "file": "/.env.example",
+      "code": [
+        "AWS_KEY={{AWS}}",
+        "TOKEN=ganti-dengan-token-panjang-acak"
+      ],
+      "expect": [
+        "secret-provider-token"
+      ],
+      "counts": {
+        "secret-provider-token": 1
+      },
+      "mustNotLeak": [
+        "{{AWS}}"
+      ]
+    },
+    {
+      "id": "secret-in-comment-still-flagged",
+      "file": "a.ts",
+      "code": [
+        "// {{AWS}}"
+      ],
+      "expect": [
+        "secret-provider-token"
+      ],
+      "mustNotLeak": [
+        "{{AWS}}"
+      ]
+    },
+    {
+      "id": "secret-jwt",
+      "file": "a.ts",
+      "code": [
+        "const t = \"{{JWT}}\";"
+      ],
+      "expect": [
+        "secret-jwt"
+      ],
+      "mustNotLeak": [
+        "{{JWT}}"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-missing-lockfile-and-env-ignore",
+      "files": {
+        "package.json": "{\"name\":\"x\",\"dependencies\":{\"a\":\"latest\"}}",
+        ".env.example": "K=1\n",
+        ".gitignore": "node_modules\n"
+      },
+      "expect": [
+        "proj-no-lockfile",
+        "proj-env-not-ignored",
+        "pkg-unpinned-latest"
+      ],
+      "severity": {
+        "proj-env-not-ignored": "medium"
+      }
+    },
+    {
+      "id": "proj-clean",
+      "files": {
+        "package.json": "{\"name\":\"x\",\"dependencies\":{\"a\":\"1.0.0\"}}",
+        "package-lock.json": "{}",
+        ".env.example": "K=1\n",
+        ".gitignore": ".env\nnode_modules\n"
+      },
+      "forbid": [
+        "proj-no-lockfile",
+        "proj-env-not-ignored",
+        "pkg-unpinned-latest"
+      ]
+    },
+    {
+      "id": "proj-real-env-never-read",
+      "files": {
+        ".env": "CANARY=ZZ_canary_do_not_read_123\n",
+        ".env.example": "K=1\n",
+        ".gitignore": "node_modules\n"
+      },
+      "expect": [
+        "proj-env-not-ignored"
+      ],
+      "severity": {
+        "proj-env-not-ignored": "high"
+      },
+      "mustNotLeak": [
+        "ZZ_canary_do_not_read_123"
+      ],
+      "skipped": {
+        "envFile": 1
+      }
+    },
+    {
+      "id": "proj-gitignore-wildcard-with-negation",
+      "files": {
+        ".env.example": "K=1\n",
+        ".gitignore": ".env*\n!.env.example\n"
+      },
+      "forbid": [
+        "proj-env-not-ignored"
+      ]
+    },
+    {
+      "id": "proj-gitignore-pattern-does-not-cover",
+      "files": {
+        ".env.example": "K=1\n",
+        ".gitignore": ".env.*\n"
+      },
+      "expect": [
+        "proj-env-not-ignored"
+      ]
+    },
+    {
+      "id": "proj-no-gitignore-in-git-repo",
+      "files": {
+        ".env.example": "K=1\n",
+        ".git/HEAD": "ref: refs/heads/main\n"
+      },
+      "expect": [
+        "proj-env-not-ignored"
+      ]
+    },
+    {
+      "id": "proj-not-a-git-repo-no-judgement",
+      "files": {
+        ".env.example": "K=1\n"
+      },
+      "forbid": [
+        "proj-env-not-ignored"
+      ]
+    },
+    {
+      "id": "proj-node-modules-skipped",
+      "files": {
+        "node_modules/x/a.js": "eval(userInput);\n",
+        "src/ok.js": "const a = 1;\n"
+      },
+      "forbid": [
+        "js-eval"
+      ],
+      "skippedAtLeast": {
+        "ignoredDir": 1
+      }
+    },
+    {
+      "id": "proj-suppressions-are-reported",
+      "files": {
+        "s.js": "// nusamind-audit-ignore-file: contoh\neval(x);\n",
+        "t.js": "eval(y); // nusamind-audit-ignore\n",
+        "u.js": "// nusamind-audit-ignore-next-line\neval(z);\n",
+        "v.js": "eval(w);\n"
+      },
+      "expectCounts": {
+        "js-eval": 1
+      },
+      "suppressedAtLeast": 3,
+      "markdownContains": [
+        "Penekanan"
+      ]
+    },
+    {
+      "id": "proj-file-limit-truncates",
+      "files": {
+        "a1.js": "x\n",
+        "a2.js": "x\n",
+        "a3.js": "x\n",
+        "a4.js": "x\n",
+        "a5.js": "x\n"
+      },
+      "options": {
+        "maxFiles": 2
+      },
+      "truncated": true,
+      "filesScanned": 2
+    },
+    {
+      "id": "proj-large-file-skipped",
+      "files": {
+        "big.js": "eval(x);\n//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n"
+      },
+      "options": {
+        "maxFileBytes": 200
+      },
+      "forbid": [
+        "js-eval"
+      ],
+      "skippedAtLeast": {
+        "tooLarge": 1
+      }
+    },
+    {
+      "id": "proj-symlink-not-followed",
+      "files": {
+        "src/ok.js": "const a = 1;\n"
+      },
+      "symlinkTo": {
+        "outside/bad.js": "eval(x);\n"
+      },
+      "forbid": [
+        "js-eval"
+      ],
+      "skippedAtLeast": {
+        "symlink": 1
+      }
+    }
+  ],
+  "context": [
+    {
+      "id": "security-question-activates",
+      "message": "Bagaimana cara mencegah SQL injection di Express?",
+      "active": true,
+      "contains": [
+        "Security Partner",
+        "CWE",
+        "OWASP Top 10:2025"
+      ],
+      "notContains": [
+        "HASIL PEMINDAI"
+      ]
+    },
+    {
+      "id": "unrelated-question-inactive",
+      "message": "Berikan resep nasi goreng sederhana",
+      "active": false
+    },
+    {
+      "id": "general-coding-not-security",
+      "message": "Buat fungsi Python untuk menjumlahkan dua angka",
+      "active": false
+    },
+    {
+      "id": "code-review-includes-scanner-results",
+      "message": [
+        "Cek celah keamanan kode ini:",
+        "```js",
+        "el.innerHTML = x;",
+        "```"
+      ],
+      "active": true,
+      "contains": [
+        "HASIL PEMINDAI ATURAN STATIS",
+        "js-xss-sink",
+        "baris 1"
+      ]
+    },
+    {
+      "id": "clean-code-says-not-proof",
+      "message": [
+        "Apakah kode ini aman?",
+        "```js",
+        "const a = 1 + 2;",
+        "```"
+      ],
+      "active": true,
+      "contains": [
+        "bukan bukti kode aman"
+      ],
+      "notContains": [
+        "HASIL PEMINDAI ATURAN STATIS"
+      ]
+    },
+    {
+      "id": "scanner-context-never-echoes-secret",
+      "message": [
+        "Periksa keamanan konfigurasi ini:",
+        "```js",
+        "const k = '{{AWS}}';",
+        "```"
+      ],
+      "active": true,
+      "contains": [
+        "secret-provider-token"
+      ],
+      "mustNotLeak": [
+        "{{AWS}}"
+      ]
+    },
+    {
+      "id": "never-refuses-by-itself",
+      "message": "Jelaskan cara kerja serangan XSS dan cara menguji aplikasi saya sendiri terhadapnya",
+      "active": true,
+      "notContains": [
+        "tidak dapat membantu",
+        "menolak"
+      ]
+    }
+  ]
+}

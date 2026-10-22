@@ -3,14 +3,14 @@
 
   <br />
 
-  <img alt="Release" src="https://img.shields.io/badge/release-N1.5-0ea5e9?style=for-the-badge" />
+  <img alt="Release" src="https://img.shields.io/badge/release-N1.5.1-0ea5e9?style=for-the-badge" />
   <img alt="Edition" src="https://img.shields.io/badge/edition-Zenith-8b5cf6?style=for-the-badge" />
   <img alt="Node.js" src="https://img.shields.io/badge/Node.js-%E2%89%A522-22c55e?style=for-the-badge&logo=nodedotjs&logoColor=white" />
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-16-111827?style=for-the-badge&logo=nextdotjs&logoColor=white" />
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-7-2563eb?style=for-the-badge&logo=typescript&logoColor=white" />
   <img alt="Local AI" src="https://img.shields.io/badge/AI-Local--First-14b8a6?style=for-the-badge" />
 
-  <h3>Asisten AI lokal seimbang: Qwen3 adaptif, jawaban akademik terstruktur, handler tabel deterministik, controlled coding agent, dan deployment preview/staging.</h3>
+  <h3>Asisten AI lokal seimbang: Qwen3 adaptif, mitra keamanan defensif, handler tabel deterministik, controlled coding agent, dan deployment preview/staging.</h3>
 
   <p>
     <strong>Ollama + Qwen3</strong> • <strong>Next.js</strong> • <strong>FastAPI ML Service</strong> •
@@ -22,9 +22,9 @@
 
 ## Tentang NusaMind Zenith
 
-**NusaMind Zenith N1.5** adalah edisi seimbang dari keluarga NusaMind AI. Zenith menggabungkan reasoning adaptif, kualitas jawaban akademik, controlled build, exact patch, checkpoint, rollback, Git workflow terverifikasi, credential vault, trusted workspace, MCP quarantine, serta deployment preview dan staging.
+**NusaMind Zenith N1.5.1** adalah edisi seimbang dari keluarga NusaMind AI. Zenith menggabungkan reasoning adaptif, kualitas jawaban akademik, controlled build, exact patch, checkpoint, rollback, Git workflow terverifikasi, credential vault, trusted workspace, MCP quarantine, serta deployment preview dan staging.
 
-Release **N1.5 / 1.5.0** melanjutkan fondasi N1.0 dengan **Developer Intelligence N1.1**, **Advanced Autonomy & Deployment N1.2**, **Answer Quality & Academic Response Engine N1.3**, **Adaptive Qwen3 Model Runtime N1.4**, patch **TypeScript 7 N1.4.1**, **Suite Knowledge N1.4.2**, dan **Table Intelligence N1.5**.
+Release **N1.5.1 / 1.5.1** melanjutkan fondasi N1.0 dengan **Developer Intelligence N1.1**, **Advanced Autonomy & Deployment N1.2**, **Answer Quality & Academic Response Engine N1.3**, **Adaptive Qwen3 Model Runtime N1.4**, patch **TypeScript 7 N1.4.1**, **Suite Knowledge N1.4.2**, **Table Intelligence N1.5**, dan **Defensive Security Partner N1.5.1**.
 
 > NusaMind AI dikembangkan oleh **Muhammad Rafi Priyo** sebagai proyek AI lokal, eksperimen engineering, dan portofolio pribadi. Tidak semua komponen dibuat oleh AI; sebagian dirancang, dikembangkan, diuji, diperbaiki, dan disempurnakan secara manual oleh developer.
 
@@ -69,6 +69,18 @@ Zenith mengaktifkan autonomy terkontrol untuk development dan staging:
 - Code block dijaga tetap utuh dan diberi label bahasa yang sesuai.
 - Kedalaman jawaban menyesuaikan pertanyaan dan mode `direct`, `balanced`, `steps`, `detailed`, `academic`, atau `expert`.
 - Batas output default Zenith dinaikkan menjadi sekitar **5.200 token**.
+
+## Defensive Security Partner N1.5.1
+
+NusaMind kini dapat menjadi mitra keamanan yang mencari celah pada sistem **milik Anda** dan membantu memperbaikinya.
+
+- **Pemindai statis pasif** dengan 56 aturan untuk JavaScript/TypeScript, Python, shell, PowerShell, batch, Dockerfile, Compose, GitHub Actions, nginx, `sshd_config`, `package.json`, `next.config`, rute API Next.js, dan rahasia tertanam. Tiap temuan membawa lokasi, bukti, alasan, perbaikan, CWE, dan kategori **OWASP Top 10:2025**.
+- **Laporan** Markdown, JSON, dan SARIF 2.1.0 (siap untuk GitHub code scanning): `npm run security:audit -- . --format sarif`. Tersedia juga lewat `POST /api/n1/security` dengan token `repo.scan`.
+- **Mitra di chat:** pertanyaan keamanan (threat modeling, review kode, hardening, respons insiden, kriptografi) dijawab dengan alur kerja praktisi, dan kode yang Anda tempel ikut dipindai sebagai petunjuk. Tidak ada penolakan berbasis kata kunci.
+- **Aman secara desain:** tidak menjalankan kode yang dipindai, tidak mengakses jaringan, tidak mengikuti symlink, tidak membaca `.env` asli, menyamarkan nilai rahasia, dan melaporkan setiap penekanan temuan.
+- **Dogfood:** audit pada repo ini menemukan dan memperbaiki `.env` yang belum di-gitignore, path traversal pada server statis hasil generate (dibuktikan sebelum dan sesudah), endpoint reindex yang terbuka saat token kosong, dan security headers dasar.
+- **Jujur soal batas:** berbasis pola sehingga ada false positive dan negative, tanpa pemeriksaan CVE (gunakan `npm audit`), dan tanpa uji dinamis. Tidak adanya temuan bukan bukti aman.
+- Diuji dengan 79 kasus snippet, 12 proyek sintetis, dan 7 kasus chat (`npm run security:audit:benchmark`). Rincian dan usulan patch Docker di [`docs/security-partner-n1.5.1.md`](docs/security-partner-n1.5.1.md).
 
 ## Table Intelligence & Research Brief N1.5
 
@@ -230,6 +242,8 @@ Untuk coding assistant dan autonomy CLI:
 | `npm run answer:benchmark` | Benchmark kualitas jawaban N1.3 |
 | `npm run model:n14:benchmark` | Benchmark Adaptive Qwen3 Runtime N1.4 |
 | `npm run model:n14:status:live` | Memeriksa status model Ollama secara langsung |
+| `npm run security:audit` | Audit keamanan statis pasif untuk kode dan konfigurasi |
+| `npm run security:audit:benchmark` | Benchmark pemindai dan mitra keamanan N1.5.1 |
 | `npm run table:n15:benchmark` | Benchmark handler tabel dan kerangka riset N1.5 |
 | `npm run suites:n142:status` | Ringkasan tujuh suite dan status kemampuan Zenith |
 | `npm run suites:n142:benchmark` | Validasi data suite dan aturan skor N1.4.2 |
@@ -281,6 +295,7 @@ npm run answer:benchmark
 npm run model:n14:benchmark
 npm run model:n14:status:live
 npm run table:n15:benchmark
+npm run security:audit:benchmark
 npm run suites:n142:benchmark
 npm run check
 npm run build
@@ -298,7 +313,7 @@ Jangan menyatakan deployment, build, atau model runtime berhasil tanpa output ve
 - Semua force push menggunakan `--force-with-lease` dan remote backup.
 - Qwen3 Coder 30B tidak menjadi default Zenith.
 - Windows EXE/Electron dibatalkan dan n8n masih ditunda.
-- Main UI tidak diubah pada update N1.1 sampai N1.5.
+- Main UI tidak diubah pada update N1.1 sampai N1.5.1.
 - Jangan commit `.env`, token, private key, database runtime, session, atau credential vault.
 - Jangan membuka endpoint autonomy langsung ke internet tanpa autentikasi, firewall, dan reverse proxy.
 - Kualitas reasoning tetap bergantung pada model, prompt, data, tool, context, dan hardware.
@@ -312,6 +327,7 @@ Dokumentasi penting:
 - [`docs/model-runtime-n1.4.md`](docs/model-runtime-n1.4.md)
 - [`docs/benchmark-suites-n1.4.2.md`](docs/benchmark-suites-n1.4.2.md)
 - [`docs/table-engine-n1.5.md`](docs/table-engine-n1.5.md)
+- [`docs/security-partner-n1.5.1.md`](docs/security-partner-n1.5.1.md)
 - [`data/release/n1.2/manifest.json`](data/release/n1.2/manifest.json)
 
 ## Status Lisensi
@@ -328,5 +344,5 @@ Repository ini belum menetapkan lisensi open-source. Visibilitas publik di GitHu
 ---
 
 <div align="center">
-  <sub>NusaMind AI Zenith N1.5 — Adaptive Intelligence, Controlled Engineering</sub>
+  <sub>NusaMind AI Zenith N1.5.1 — Adaptive Intelligence, Controlled Engineering</sub>
 </div>

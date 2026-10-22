@@ -240,7 +240,7 @@ export const LINE_RULES: LineRule[] = [
     kinds: CODE,
     pattern: /\b(?:fs(?:\.promises)?\.|fsp\.)?(?:readFile|readFileSync|writeFile|writeFileSync|createReadStream|createWriteStream|unlink|unlinkSync|rm|rmSync|readdir|readdirSync|copyFile|rename)\s*\(/,
     check: (line) => REQUEST_INPUT.test(line),
-    unless: /assertAllowedPath|safeJoin|isSafeUploadName|resolveTrustedTarget|basename\(/,
+    unless: /assertAllowedPath|safeJoin|isSafeUploadName|resolveTrustedTarget|basename\(|\.startsWith\(\s*[\w.]*root/,
     why: 'Path yang berasal dari permintaan dapat memuat ../ atau path absolut sehingga membaca atau menimpa berkas di luar folder yang diizinkan.',
     fix: 'Normalisasi dengan path.resolve lalu pastikan hasilnya berada di dalam root yang diizinkan (realpath), atau terima hanya nama berkas dari allowlist.',
   },
@@ -432,6 +432,8 @@ export const LINE_RULES: LineRule[] = [
   {
     id: 'ci-script-injection', title: 'Data event GitHub disisipkan ke langkah run', severity: 'high', confidence: 'medium', cwe: 94, owasp: OWASP.A05,
     kinds: ['workflow'], pattern: /\$\{\{\s*github\.(?:event\.(?:issue|pull_request|comment|review|head_commit|commits|workflow_run\.head_branch)|head_ref)[^}]*\}\}/,
+    // Penugasan env/with berbentuk "KEY: ${{ ... }}" adalah mitigasi yang dianjurkan, bukan injeksi.
+    unless: /^\s*(?:-\s*)?(?!run\s*:)[A-Za-z_][\w-]*\s*:\s*["']?\$\{\{/,
     why: 'Judul PR, nama branch, atau isi komentar dikendalikan penyerang; bila langsung disisipkan ke skrip shell, perintahnya ikut dieksekusi.',
     fix: 'Teruskan nilai lewat env: dan rujuk sebagai "$NAMA" di dalam skrip, jangan interpolasi ${{ }} langsung di run.',
   },

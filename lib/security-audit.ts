@@ -275,8 +275,11 @@ export function auditText(relPath: string, text: string, kindsOverride?: FileKin
     if (line.length > MAX_LINE) return;
     const comment = isCommentLine(line, kinds);
     const suppressed = IGNORE_LINE.test(line) || (i > 0 && IGNORE_NEXT.test(lines[i - 1]));
+    let strongSecret = false;
     for (const rule of rules) {
       if (comment && !rule.id.startsWith('secret-')) continue;
+      // Satu rahasia dilaporkan sekali: aturan generik dilewati bila aturan spesifik sudah cocok pada baris yang sama.
+      if (strongSecret && (rule.id === 'secret-assigned-credential' || rule.id === 'secret-jwt')) continue;
       const m = rule.pattern.exec(line);
       if (!m) continue;
       if (rule.unless?.test(line)) continue;
@@ -286,6 +289,7 @@ export function auditText(relPath: string, text: string, kindsOverride?: FileKin
         continue;
       }
       findings.push(makeFinding({ ...rule, ...(rule.adjust?.(line, m) ?? {}) }, file, i + 1, line));
+      if (rule.id === 'secret-private-key' || rule.id === 'secret-provider-token') strongSecret = true;
     }
   });
   return [...findings, ...fileLevelFindings(file, text, kinds)];

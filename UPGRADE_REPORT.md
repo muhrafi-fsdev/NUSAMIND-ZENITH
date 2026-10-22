@@ -1,3 +1,19 @@
+# NusaMind Zenith N1.5.1 Upgrade Report
+
+## Patch
+
+- Pemindai keamanan statis pasif (`lib/security-audit.ts`, 56 aturan) untuk kode dan konfigurasi milik pengguna, dengan klasifikasi CWE dan OWASP Top 10:2025, laporan Markdown/JSON/SARIF, CLI (`npm run security:audit`), dan API (`/api/n1/security`).
+- Mitra keamanan di chat: konteks praktisi untuk pertanyaan keamanan dan pemindaian kode yang ditempel, tanpa penolakan berbasis kata kunci.
+- Basis pengetahuan keamanan (16 rekaman) dengan label sumber yang jujur.
+- Perbaikan celah nyata hasil audit repo ini: `.env` kini diabaikan git, path traversal pada server statis hasil generate, endpoint reindex gagal tertutup dengan perbandingan token konstan-waktu, dan security headers dasar.
+- Tidak ada perubahan UI atau runtime model.
+
+## Batas validasi
+
+- Pemindai berbasis pola: ada false positive dan false negative; tidak ada pemeriksaan CVE dan uji dinamis.
+- Usulan patch Dockerfile dan docker-compose belum diterapkan karena tidak dapat diuji di lingkungan pengembangan ini.
+- `npm run check`, `build`, dan `gate` belum dijalankan karena dependency belum terpasang.
+
 # NusaMind Zenith N1.5 Upgrade Report
 
 ## Minor
