@@ -1,4 +1,5 @@
 import { streamText, tool, stepCountIs } from 'ai';
+import { buildSecurityPartnerContext } from '@/lib/cyber-partner';
 import { z } from 'zod';
 import { appConfig } from '@/lib/config';
 import { detectIntent } from '@/lib/intent-router';
@@ -57,7 +58,8 @@ export async function POST(req: Request) {
   const mlContext = buildMlContext(mlAnalysis);
   const healthAnalysis = analyzeHealthRequest(body.message);
   const healthContext = buildHealthContext(healthAnalysis);
-  const combinedDomainContext = [religionContext, mlContext, healthContext].filter(Boolean).join('\n\n');
+  const securityContext = buildSecurityPartnerContext(body.message).context;
+  const combinedDomainContext = [religionContext, mlContext, healthContext, securityContext].filter(Boolean).join('\n\n');
   const emergencyHealthAnswer = buildEmergencyHealthAnswer(healthAnalysis);
   if (emergencyHealthAnswer) {
     const answer = formatFinalAnswer(emergencyHealthAnswer, body.message, String(RELEASE.edition), body.answerMode);

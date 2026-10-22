@@ -17,3 +17,5 @@ N1.4 adds Qwen3 adaptive model routing for zenith: main=qwen3:8b, coder=qwen2.5-
 N1.4.2 adds seven-suite evaluation knowledge, scoring rules, and a code-audited capability map for zenith. Source is user-provided and unverified; live suite benchmark is NOT_RUN and no score is claimed.
 
 N1.5 adds deterministic table handlers (reformat, consecutive growth, column mapping) that decline when ambiguous, plus a sourced-report structure for legal/tax/regulatory briefs. UI and model runtime unchanged; live suite benchmark is NOT_RUN.
+
+N1.5.1 adds a passive, read-only security audit engine and a defensive security-partner context for zenith. It never executes scanned code, never touches the network, and never reads real .env files. Findings are hints, not proof of safety.

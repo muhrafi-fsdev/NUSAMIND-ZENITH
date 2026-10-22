@@ -1,0 +1,43 @@
+{
+  "release": "N1.5.1",
+  "version": "1.5.1",
+  "edition": "zenith",
+  "type": "patch",
+  "title": "Defensive Security Partner",
+  "addedCode": [
+    "lib/security-audit-rules.ts",
+    "lib/security-audit.ts",
+    "lib/cyber-partner.ts",
+    "app/api/n1/security/route.ts",
+    "scripts/security-audit-n1.5.1.mjs",
+    "scripts/eval-security-audit-n1.5.1.mjs"
+  ],
+  "changedCode": [
+    "app/api/chat/route.ts",
+    "app/api/chat-json/route.ts",
+    "app/api/admin/reindex/route.ts",
+    "lib/coding-agent.ts",
+    "next.config.mjs",
+    ".gitignore"
+  ],
+  "addedData": [
+    "data/benchmarks/security-audit-cases.json",
+    "data/knowledge/security-partner.json"
+  ],
+  "securityFixes": [
+    "gitignore-env",
+    "admin-reindex-fail-closed-and-constant-time-compare",
+    "generated-static-server-path-traversal",
+    "baseline-security-headers"
+  ],
+  "activeScanning": false,
+  "networkAccess": false,
+  "autonomousExploitation": false,
+  "executesScannedCode": false,
+  "readsRealEnvFiles": false,
+  "uiChanged": false,
+  "modelRuntimeChanged": false,
+  "answerBehaviorChanged": true,
+  "liveSuiteBenchmark": "NOT_RUN",
+  "scoreClaimed": null
+}
