@@ -1,0 +1,439 @@
+{
+  "format": "nusamind-context-cases-v1",
+  "release": "N1.6.0",
+  "note": "Ekspektasi diturunkan dengan tangan dari rumus KV = 2 x layer x kvHead x headDim x 2 byte x faktor kuantisasi dan dari definisi fitur, bukan dari keluaran kode.",
+  "kvBytesPerTokenF16": {
+    "qwen3:8b": 147456,
+    "qwen3:4b-q4_K_M": 147456,
+    "qwen3:1.7b": 114688,
+    "qwen3:0.6b": 114688,
+    "qwen2.5-coder:7b": 57344,
+    "qwen2.5-coder:3b": 36864,
+    "qwen2.5-coder:1.5b": 28672,
+    "qwen2.5:7b": 57344
+  },
+  "kvTypeBytes": [
+    {
+      "model": "qwen3:1.7b",
+      "kv": "q8_0",
+      "expect": 57344
+    },
+    {
+      "model": "qwen3:1.7b",
+      "kv": "q4_0",
+      "expect": 28672
+    }
+  ],
+  "memory": {
+    "model": "qwen3:1.7b",
+    "context": 4096,
+    "kv": "q8_0",
+    "expectTotalMinMB": 1984.8,
+    "expectTotalMaxMB": 1985.0
+  },
+  "maxContext": [
+    {
+      "model": "qwen3:1.7b",
+      "kv": "q8_0",
+      "budgetMB": 2000,
+      "expect": 4352
+    },
+    {
+      "model": "qwen3:1.7b",
+      "kv": "f16",
+      "budgetMB": 2000,
+      "expect": 2048
+    },
+    {
+      "model": "qwen3:1.7b",
+      "kv": "q4_0",
+      "budgetMB": 2000,
+      "expect": 8704
+    },
+    {
+      "model": "qwen3:1.7b",
+      "kv": "q8_0",
+      "budgetMB": 1700,
+      "expect": 0
+    },
+    {
+      "model": "qwen2.5-coder:1.5b",
+      "kv": "f16",
+      "budgetMB": 2000,
+      "expect": 23040
+    },
+    {
+      "model": "qwen3:0.6b",
+      "kv": "q8_0",
+      "budgetMB": 100000,
+      "expect": 40960
+    }
+  ],
+  "kvGiB": [
+    {
+      "model": "qwen3:1.7b",
+      "kv": "f16",
+      "tokens": 1000000,
+      "expect": 106.81,
+      "tolerance": 0.01
+    },
+    {
+      "model": "qwen3:1.7b",
+      "kv": "q8_0",
+      "tokens": 1000000,
+      "expect": 53.41,
+      "tolerance": 0.01
+    },
+    {
+      "model": "qwen3:4b-q4_K_M",
+      "kv": "f16",
+      "tokens": 1000000,
+      "expect": 137.33,
+      "tolerance": 0.01
+    }
+  ],
+  "profileMutations": [
+    {
+      "id": "context-over-model-limit",
+      "path": [
+        "profiles",
+        "4gb",
+        "contextTokens"
+      ],
+      "value": 50000,
+      "expect": "melebihi batas posisi"
+    },
+    {
+      "id": "model-too-big-for-ram",
+      "path": [
+        "profiles",
+        "4gb",
+        "models",
+        "main"
+      ],
+      "value": "qwen3:8b",
+      "expect": "memerlukan"
+    },
+    {
+      "id": "unknown-model",
+      "path": [
+        "profiles",
+        "4gb",
+        "models",
+        "fallback"
+      ],
+      "value": "qwen3:99b",
+      "expect": "tidak punya entri arsitektur"
+    },
+    {
+      "id": "reserve-not-below-context",
+      "path": [
+        "profiles",
+        "4gb",
+        "reserveOutputTokens"
+      ],
+      "value": 5000,
+      "expect": "reserveOutputTokens >= contextTokens"
+    },
+    {
+      "id": "negative-budget",
+      "path": [
+        "profiles",
+        "4gb",
+        "budgets",
+        "sourcesTokens"
+      ],
+      "value": -1,
+      "expect": "budgets.sourcesTokens harus positif"
+    },
+    {
+      "id": "unknown-kv-type",
+      "path": [
+        "profiles",
+        "4gb",
+        "kvCacheType"
+      ],
+      "value": "q2_0",
+      "expect": "tidak dikenal"
+    },
+    {
+      "id": "safety-below-one",
+      "path": [
+        "profiles",
+        "4gb",
+        "tokenSafetyFactor"
+      ],
+      "value": 0.8,
+      "expect": "tokenSafetyFactor harus >= 1"
+    },
+    {
+      "id": "unknown-default",
+      "path": [
+        "default"
+      ],
+      "value": "nope",
+      "expect": "profil bawaan"
+    },
+    {
+      "id": "output-over-reserve",
+      "path": [
+        "profiles",
+        "4gb",
+        "maxOutputTokens"
+      ],
+      "value": 2000,
+      "expect": "maxOutputTokens melebihi cadangan"
+    },
+    {
+      "id": "fixed-budgets-exceed-context",
+      "path": [
+        "profiles",
+        "4gb",
+        "budgets",
+        "systemTokens"
+      ],
+      "value": 3500,
+      "expect": "anggaran sistem"
+    }
+  ],
+  "profileSelection": [
+    {
+      "requested": null,
+      "name": "4gb",
+      "warning": false
+    },
+    {
+      "requested": "8GB",
+      "name": "8gb",
+      "warning": false
+    },
+    {
+      "requested": " 16gb ",
+      "name": "16gb",
+      "warning": false
+    },
+    {
+      "requested": "xyz",
+      "name": "4gb",
+      "warning": true
+    },
+    {
+      "requested": "",
+      "name": "4gb",
+      "warning": false
+    }
+  ],
+  "facts": {
+    "messages": [
+      "Halo, tolong jelaskan Docker compose.",
+      "Nama saya Rafi dan proyek saya bernama NusaMind. Deadline proyek tanggal 30 November. Saya lebih suka jawaban singkat.",
+      "Saya sedang butuh penjelasan yang lengkap mengenai CORS.",
+      "Selalu pakai TypeScript untuk kode saya, jangan pernah pakai var.",
+      "Saya menggunakan Windows 11.",
+      "Nama saya Budi dan token saya {{GHP}}."
+    ],
+    "limit5": [
+      "Nama saya Rafi dan proyek saya bernama NusaMind.",
+      "Deadline proyek tanggal 30 November.",
+      "Saya lebih suka jawaban singkat.",
+      "Saya menggunakan Windows 11.",
+      "Nama saya Budi dan token saya [REDACTED:github-token]."
+    ],
+    "limit2": [
+      "Nama saya Rafi dan proyek saya bernama NusaMind.",
+      "Nama saya Budi dan token saya [REDACTED:github-token]."
+    ]
+  },
+  "recall": {
+    "corpus": [
+      {
+        "role": "user",
+        "content": "Bagaimana setting timeout pada ingress kubernetes agar tidak 504?"
+      },
+      {
+        "role": "assistant",
+        "content": "Atur annotation proxy-read-timeout di ingress kubernetes menjadi 120 detik, lalu apply ulang manifest."
+      },
+      {
+        "role": "user",
+        "content": "Resep rendang daging sapi yang empuk dan bumbu lengkap"
+      },
+      {
+        "role": "assistant",
+        "content": "Rendang butuh santan, cabai, lengkuas, dan dimasak sekitar empat jam sampai kering."
+      },
+      {
+        "role": "user",
+        "content": "Jadwal olahraga mingguan untuk pemula"
+      }
+    ],
+    "queries": [
+      {
+        "q": "timeout ingress kubernetes",
+        "hits": 2,
+        "mustContainAny": [
+          "kubernetes"
+        ],
+        "mustNotContain": [
+          "rendang",
+          "olahraga"
+        ]
+      },
+      {
+        "q": "kubernetes",
+        "hits": 2,
+        "mustContainAny": [
+          "kubernetes"
+        ],
+        "mustNotContain": [
+          "rendang"
+        ]
+      },
+      {
+        "q": "resep rendang",
+        "hits": 2,
+        "mustContainAny": [
+          "rendang"
+        ],
+        "mustNotContain": [
+          "kubernetes"
+        ]
+      },
+      {
+        "q": "cuaca hari ini bandung",
+        "hits": 0
+      },
+      {
+        "q": "jadwal kereta jakarta bandung",
+        "hits": 0,
+        "note": "hanya 1 dari 4 kata ('jadwal') cocok; syarat minimal ceil(4/2)=2"
+      },
+      {
+        "q": "jadwal olahraga bandung kota",
+        "hits": 1,
+        "mustContainAny": [
+          "olahraga"
+        ],
+        "mustNotContain": [
+          "kubernetes",
+          "rendang"
+        ],
+        "note": "2 dari 4 kata cocok ('jadwal','olahraga') -> memenuhi ceil(4/2)=2"
+      },
+      {
+        "q": "sebuah kata yang tidak ada",
+        "hits": 0
+      },
+      {
+        "q": "",
+        "hits": 0
+      }
+    ]
+  },
+  "configProfiles": [
+    {
+      "id": "default-is-4gb",
+      "env": {},
+      "expect": {
+        "name": "4gb",
+        "ollamaModel": "qwen3:1.7b",
+        "ollamaCoderModel": "qwen2.5-coder:1.5b",
+        "ollamaFallbackModel": "qwen3:0.6b",
+        "ollamaContextWindow": 4096,
+        "ollamaCoderContextWindow": 4096,
+        "ollamaThinkingMode": "off",
+        "maxSteps": 3,
+        "toolsEnabled": false,
+        "maxOutputTokens": 1024
+      }
+    },
+    {
+      "id": "16gb-restores-n14-behaviour",
+      "env": {
+        "NUSAMIND_HARDWARE_PROFILE": "16gb"
+      },
+      "expect": {
+        "name": "16gb",
+        "ollamaModel": "qwen3:8b",
+        "ollamaCoderModel": "qwen2.5-coder:7b",
+        "ollamaFallbackModel": "qwen2.5:7b",
+        "ollamaContextWindow": 16384,
+        "ollamaCoderContextWindow": 12288,
+        "ollamaThinkingMode": "auto",
+        "maxSteps": 10,
+        "toolsEnabled": true,
+        "maxOutputTokens": 5200
+      }
+    },
+    {
+      "id": "8gb",
+      "env": {
+        "NUSAMIND_HARDWARE_PROFILE": "8gb"
+      },
+      "expect": {
+        "name": "8gb",
+        "ollamaModel": "qwen3:4b-q4_K_M",
+        "ollamaContextWindow": 8192,
+        "toolsEnabled": true
+      }
+    },
+    {
+      "id": "env-overrides-model",
+      "env": {
+        "OLLAMA_MODEL": "custom:1b"
+      },
+      "expect": {
+        "name": "4gb",
+        "ollamaModel": "custom:1b",
+        "ollamaContextWindow": 4096
+      }
+    },
+    {
+      "id": "env-overrides-context",
+      "env": {
+        "OLLAMA_NUM_CTX": "2048"
+      },
+      "expect": {
+        "ollamaContextWindow": 2048
+      }
+    },
+    {
+      "id": "env-enables-tools-on-4gb",
+      "env": {
+        "AI_ENABLE_TOOLS": "true"
+      },
+      "expect": {
+        "toolsEnabled": true
+      }
+    },
+    {
+      "id": "env-disables-tools-on-16gb",
+      "env": {
+        "NUSAMIND_HARDWARE_PROFILE": "16gb",
+        "AI_ENABLE_TOOLS": "false"
+      },
+      "expect": {
+        "toolsEnabled": false
+      }
+    },
+    {
+      "id": "unknown-profile-falls-back-with-warning",
+      "env": {
+        "NUSAMIND_HARDWARE_PROFILE": "xyz"
+      },
+      "expect": {
+        "name": "4gb",
+        "warning": true
+      }
+    }
+  ],
+  "compactCoreMustContain": [
+    "Bahasa Indonesia",
+    "mengarang",
+    "Al-Qur'an",
+    "bukan diagnosis",
+    "destruktif",
+    "fenced code block",
+    "evidence"
+  ]
+}
