@@ -1,0 +1,236 @@
+{
+  "format": "nusamind-hardware-profiles-v1",
+  "release": "N1.6.0",
+  "default": "4gb",
+  "verifiedOn": "2026-10-23",
+  "sources": [
+    {
+      "what": "Arsitektur model (layer, KV head, head_dim, posisi maksimum)",
+      "where": "config.json resmi di huggingface.co/Qwen/<model> (Qwen3-8B, Qwen3-4B, Qwen3-1.7B, Qwen3-0.6B, Qwen2.5-Coder-1.5B/3B/7B-Instruct, Qwen2.5-7B-Instruct)",
+      "verified": "2026-10-23"
+    },
+    {
+      "what": "Ukuran bobot terkuantisasi per tag",
+      "where": "ollama.com/library/qwen3/tags dan ollama.com/library/qwen2.5-coder/tags",
+      "verified": "2026-10-23"
+    },
+    {
+      "what": "Variabel server, default konteks 4096, KV cache f16/q8_0/q4_0 (butuh flash attention)",
+      "where": "docs.ollama.com/faq dan docs.ollama.com/context-length",
+      "verified": "2026-10-23"
+    }
+  ],
+  "assumptions": [
+    "runtimeOverheadMB (buffer komputasi dan overhead runtime) adalah asumsi perencanaan, bukan hasil pengukuran. Ukur pada mesin Anda dengan `ollama ps`.",
+    "Pada mesin 4 GB, sistem operasi dan aplikasi lain diasumsikan memakai 1,5 sampai 2 GB sehingga yang tersedia untuk Ollama sekitar 2 GB.",
+    "Tag qwen3:4b-q4_K_M diasumsikan varian hybrid thinking asli (ukuran 2,6 GB, konteks 40K); verifikasi dengan `ollama show`. Tag qwen3:4b tanpa sufiks kini menunjuk varian 2507 thinking-only 256K sehingga tidak dipakai di sini.",
+    "Ukuran qwen2.5:7b (4,7 GB) belum diverifikasi pada halaman tags."
+  ],
+  "runtimeOverheadMB": 350,
+  "kvTypes": {
+    "f16": {
+      "factor": 1.0,
+      "note": "presisi tinggi, bawaan Ollama"
+    },
+    "q8_0": {
+      "factor": 0.5,
+      "note": "sekitar 1/2 memori f16 dengan kehilangan presisi sangat kecil (dokumentasi Ollama)"
+    },
+    "q4_0": {
+      "factor": 0.25,
+      "note": "sekitar 1/4 memori f16 dengan kehilangan presisi kecil sampai sedang, lebih terasa pada konteks besar dan model GQA tinggi (dokumentasi Ollama)"
+    }
+  },
+  "architectures": {
+    "qwen3:8b": {
+      "layers": 36,
+      "kvHeads": 8,
+      "headDim": 128,
+      "maxPositions": 40960,
+      "weightsMB": 5200,
+      "weightsVerified": true,
+      "hf": "Qwen/Qwen3-8B"
+    },
+    "qwen3:4b-q4_K_M": {
+      "layers": 36,
+      "kvHeads": 8,
+      "headDim": 128,
+      "maxPositions": 40960,
+      "weightsMB": 2600,
+      "weightsVerified": true,
+      "hf": "Qwen/Qwen3-4B"
+    },
+    "qwen3:1.7b": {
+      "layers": 28,
+      "kvHeads": 8,
+      "headDim": 128,
+      "maxPositions": 40960,
+      "weightsMB": 1400,
+      "weightsVerified": true,
+      "hf": "Qwen/Qwen3-1.7B"
+    },
+    "qwen3:0.6b": {
+      "layers": 28,
+      "kvHeads": 8,
+      "headDim": 128,
+      "maxPositions": 40960,
+      "weightsMB": 523,
+      "weightsVerified": true,
+      "hf": "Qwen/Qwen3-0.6B"
+    },
+    "qwen2.5-coder:7b": {
+      "layers": 28,
+      "kvHeads": 4,
+      "headDim": 128,
+      "maxPositions": 32768,
+      "weightsMB": 4700,
+      "weightsVerified": true,
+      "hf": "Qwen/Qwen2.5-Coder-7B-Instruct"
+    },
+    "qwen2.5-coder:3b": {
+      "layers": 36,
+      "kvHeads": 2,
+      "headDim": 128,
+      "maxPositions": 32768,
+      "weightsMB": 1900,
+      "weightsVerified": true,
+      "hf": "Qwen/Qwen2.5-Coder-3B-Instruct"
+    },
+    "qwen2.5-coder:1.5b": {
+      "layers": 28,
+      "kvHeads": 2,
+      "headDim": 128,
+      "maxPositions": 32768,
+      "weightsMB": 986,
+      "weightsVerified": true,
+      "hf": "Qwen/Qwen2.5-Coder-1.5B-Instruct"
+    },
+    "qwen2.5:7b": {
+      "layers": 28,
+      "kvHeads": 4,
+      "headDim": 128,
+      "maxPositions": 32768,
+      "weightsMB": 4700,
+      "weightsVerified": false,
+      "hf": "Qwen/Qwen2.5-7B-Instruct"
+    }
+  },
+  "profiles": {
+    "4gb": {
+      "label": "4 GB RAM (kompak)",
+      "ramGB": 4,
+      "models": {
+        "main": "qwen3:1.7b",
+        "coder": "qwen2.5-coder:1.5b",
+        "fallback": "qwen3:0.6b"
+      },
+      "thinking": "off",
+      "contextTokens": 4096,
+      "coderContextTokens": 4096,
+      "reserveOutputTokens": 1024,
+      "maxOutputTokens": 1024,
+      "enforceOutputCap": true,
+      "maxSteps": 3,
+      "toolsEnabled": false,
+      "compactPrompt": true,
+      "kvCacheType": "q8_0",
+      "ollamaServerEnv": {
+        "OLLAMA_FLASH_ATTENTION": "1",
+        "OLLAMA_KV_CACHE_TYPE": "q8_0",
+        "OLLAMA_NUM_PARALLEL": "1",
+        "OLLAMA_MAX_LOADED_MODELS": "1",
+        "OLLAMA_CONTEXT_LENGTH": "4096"
+      },
+      "budgets": {
+        "systemTokens": 1400,
+        "sourcesTokens": 600,
+        "memoryItems": 6,
+        "sessionBlockChars": 700,
+        "digestTokens": 300,
+        "recallTokens": 250,
+        "minHistoryTokens": 300,
+        "perMessageMaxChars": 900,
+        "olderMessageMaxChars": 360,
+        "blockSize": 4,
+        "minVerbatimMessages": 2
+      },
+      "tokenSafetyFactor": 1.15
+    },
+    "8gb": {
+      "label": "8 GB RAM (seimbang)",
+      "ramGB": 8,
+      "models": {
+        "main": "qwen3:4b-q4_K_M",
+        "coder": "qwen2.5-coder:3b",
+        "fallback": "qwen3:1.7b"
+      },
+      "thinking": "auto",
+      "contextTokens": 8192,
+      "coderContextTokens": 8192,
+      "reserveOutputTokens": 1536,
+      "maxOutputTokens": 1536,
+      "enforceOutputCap": true,
+      "maxSteps": 5,
+      "toolsEnabled": true,
+      "compactPrompt": true,
+      "kvCacheType": "q8_0",
+      "ollamaServerEnv": {
+        "OLLAMA_FLASH_ATTENTION": "1",
+        "OLLAMA_KV_CACHE_TYPE": "q8_0",
+        "OLLAMA_NUM_PARALLEL": "1",
+        "OLLAMA_MAX_LOADED_MODELS": "1",
+        "OLLAMA_CONTEXT_LENGTH": "8192"
+      },
+      "budgets": {
+        "systemTokens": 2200,
+        "sourcesTokens": 1400,
+        "memoryItems": 8,
+        "sessionBlockChars": 1100,
+        "digestTokens": 500,
+        "recallTokens": 400,
+        "minHistoryTokens": 600,
+        "perMessageMaxChars": 1400,
+        "olderMessageMaxChars": 500,
+        "blockSize": 6,
+        "minVerbatimMessages": 2
+      },
+      "tokenSafetyFactor": 1.15
+    },
+    "16gb": {
+      "label": "16 GB RAM (penuh, perilaku N1.4)",
+      "ramGB": 16,
+      "models": {
+        "main": "qwen3:8b",
+        "coder": "qwen2.5-coder:7b",
+        "fallback": "qwen2.5:7b"
+      },
+      "thinking": "auto",
+      "contextTokens": 16384,
+      "coderContextTokens": 12288,
+      "reserveOutputTokens": 2600,
+      "maxOutputTokens": 5200,
+      "enforceOutputCap": false,
+      "maxSteps": 10,
+      "toolsEnabled": true,
+      "compactPrompt": false,
+      "kvCacheType": "f16",
+      "ollamaServerEnv": {
+        "OLLAMA_NUM_PARALLEL": "1"
+      },
+      "budgets": {
+        "systemTokens": 9500,
+        "sourcesTokens": 3000,
+        "memoryItems": 12,
+        "sessionBlockChars": 3000,
+        "digestTokens": 800,
+        "recallTokens": 600,
+        "minHistoryTokens": 1500,
+        "perMessageMaxChars": 1800,
+        "olderMessageMaxChars": 900,
+        "blockSize": 4,
+        "minVerbatimMessages": 4
+      },
+      "tokenSafetyFactor": 1.1
+    }
+  }
+}

@@ -106,6 +106,8 @@ export interface SessionState {
     updatedAt: string;
   };
   messages: ChatMessage[];
+  /** Jumlah seluruh pesan sesi di database; dapat lebih besar dari messages.length bila hanya jendela terbaru yang dimuat. */
+  totalMessages?: number;
 }
 
 export interface MemoryRecord {

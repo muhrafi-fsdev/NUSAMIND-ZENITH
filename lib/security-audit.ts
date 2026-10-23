@@ -357,7 +357,7 @@ function projectLevelFindings(root: string, entries: Set<string>): Finding[] {
   const realEnv = [...entries].find((e) => isRealEnvFile(e.toLowerCase()) && e.toLowerCase() === '.env');
   if (hasEnvExample || realEnv) {
     let gitignore: string | null = null;
-    try { gitignore = fs.readFileSync(path.join(root, '.gitignore'), 'utf8'); } catch { gitignore = null; }
+    try { gitignore = fs.readFileSync(path.join(/*turbopackIgnore: true*/ root, '.gitignore'), 'utf8'); } catch { gitignore = null; }
     const covered = gitignore !== null && gitignoreCovers(gitignore, '.env');
     if (!covered && (entries.has('.git') || gitignore !== null)) {
       out.push(makeFinding({
@@ -376,7 +376,7 @@ export function auditDirectory(root: string, options: AuditOptions = {}): AuditR
   const maxFiles = options.maxFiles ?? 3000;
   const maxFileBytes = options.maxFileBytes ?? 1_000_000;
   const maxDepth = options.maxDepth ?? 25;
-  const base = path.resolve(root);
+  const base = path.resolve(/*turbopackIgnore: true*/ root);
   const coverage = emptyCoverage();
   const findings: Finding[] = [];
   const suppressions: Suppression[] = [];
@@ -385,11 +385,11 @@ export function auditDirectory(root: string, options: AuditOptions = {}): AuditR
   const walk = (dir: string, depth: number) => {
     if (depth > maxDepth || coverage.truncated) return;
     let entries: fs.Dirent[];
-    try { entries = fs.readdirSync(dir, { withFileTypes: true }); } catch { return; }
+    try { entries = fs.readdirSync(/*turbopackIgnore: true*/ dir, { withFileTypes: true }); } catch { return; }
     entries.sort((a, b) => a.name.localeCompare(b.name));
     for (const entry of entries) {
       if (coverage.truncated) return;
-      const full = path.join(dir, entry.name);
+      const full = path.join(/*turbopackIgnore: true*/ dir, entry.name);
       const rel = path.relative(base, full).replace(/\\/g, '/');
       if (depth === 0) rootEntries.add(entry.name);
       if (entry.isSymbolicLink()) { coverage.skipped.symlink += 1; continue; }
@@ -404,10 +404,10 @@ export function auditDirectory(root: string, options: AuditOptions = {}): AuditR
       if (!kinds.length) { coverage.skipped.unsupported += 1; continue; }
       if (coverage.filesScanned >= maxFiles) { coverage.truncated = true; return; }
       let size = 0;
-      try { size = fs.statSync(full).size; } catch { continue; }
+      try { size = fs.statSync(/*turbopackIgnore: true*/ full).size; } catch { continue; }
       if (size > maxFileBytes) { coverage.skipped.tooLarge += 1; continue; }
       let buffer: Buffer;
-      try { buffer = fs.readFileSync(full); } catch { continue; }
+      try { buffer = fs.readFileSync(/*turbopackIgnore: true*/ full); } catch { continue; }
       if (buffer.subarray(0, 8000).includes(0)) { coverage.skipped.binary += 1; continue; }
       const text = buffer.toString('utf8');
       coverage.filesScanned += 1;

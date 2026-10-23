@@ -1,6 +1,7 @@
 import { z } from 'zod';
 import { listSessions, loadSession, normalizeSessionId, updateSessionMeta } from '@/lib/memory';
 import { normalizeIntelligenceLevel } from '@/lib/intelligence-level';
+import { RECENT_WINDOW } from '@/lib/session-continuity';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -16,7 +17,7 @@ const patchSchema = z.object({
 export async function GET(req: Request) {
   const url = new URL(req.url);
   const sessionId = url.searchParams.get('sessionId');
-  if (sessionId) return Response.json({ ok: true, session: await loadSession(normalizeSessionId(sessionId)) });
+  if (sessionId) return Response.json({ ok: true, session: await loadSession(normalizeSessionId(sessionId), RECENT_WINDOW) });
   return Response.json({ ok: true, sessions: await listSessions() });
 }
 

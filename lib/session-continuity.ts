@@ -10,6 +10,9 @@ const CONTINUATION_PATTERNS = [
   /^revisi/, /^perbaiki/, /^upgrade lagi/, /^tambahkan/, /^tambahin/, /^lanjutkan/,
 ];
 
+/** Jalur chat hanya membutuhkan pesan terbaru; seluruh riwayat tetap ada di SQLite dan dicari lewat recall. */
+export const RECENT_WINDOW = 200;
+
 const TASK_PATTERNS = /(buatkan|jadikan|generate|upgrade|perbaiki|revisi|analisis|bersihkan|clean|export|ubah|tambahkan|tambahin|lanjutkan|susun|rancang|debug|fix)/i;
 const ARTIFACT_PATTERN = /([\w\-.() ]+\.(?:csv|json|txt|md|pdf|docx|xlsx|pptx|zip|png|jpg|jpeg|webp|ts|tsx|js|jsx|py|php|sql|html|css))/gi;
 
@@ -77,7 +80,7 @@ function extractArtifacts(text: string) {
 }
 
 export async function updateSessionAfterUser(sessionId: string, userMessage: string): Promise<SessionState> {
-  const session = ensureContinuityFields(await loadSession(sessionId));
+  const session = ensureContinuityFields(await loadSession(sessionId, RECENT_WINDOW));
   const previousTopic = session.activeTopic || '';
   const isContinuation = looksLikeContinuation(userMessage);
   const similarity = previousTopic ? topicSimilarity(previousTopic, userMessage) : 0;
@@ -118,8 +121,8 @@ export async function updateSessionAfterUser(sessionId: string, userMessage: str
   session.artifacts = session.artifacts!.slice(-40);
 
   session.contextHealth = {
-    messageCount: session.messages.length,
-    summaryAgeMessages: Math.max(0, session.messages.length % 6),
+    messageCount: session.totalMessages ?? session.messages.length,
+    summaryAgeMessages: Math.max(0, (session.totalMessages ?? session.messages.length) % 6),
     hasLastOutput: Boolean(session.lastOutput?.content),
     hasActiveTopic: Boolean(session.activeTopic),
     updatedAt: nowIso(),
@@ -130,7 +133,7 @@ export async function updateSessionAfterUser(sessionId: string, userMessage: str
 }
 
 export async function updateSessionAfterAssistant(sessionId: string, answer: string, sources: RetrievalHit[] = []): Promise<SessionState> {
-  const session = ensureContinuityFields(await loadSession(sessionId));
+  const session = ensureContinuityFields(await loadSession(sessionId, RECENT_WINDOW));
   session.lastOutput = { id: createId('output'), content: clampText(answer, 2200), createdAt: nowIso() };
   for (const name of extractArtifacts(answer)) {
     if (!session.artifacts!.some((artifact) => artifact.name === name)) {
@@ -145,7 +148,7 @@ export async function updateSessionAfterAssistant(sessionId: string, answer: str
   }
   maybeAddTimeline(session, 'assistant_answer', `Output disimpan. Sources=${sources.length}.`);
   session.contextHealth = {
-    messageCount: session.messages.length,
+    messageCount: session.totalMessages ?? session.messages.length,
     summaryAgeMessages: 0,
     hasLastOutput: Boolean(session.lastOutput?.content),
     hasActiveTopic: Boolean(session.activeTopic),
@@ -202,7 +205,7 @@ export async function handleSessionCommand(sessionId: string, rawMessage: string
   const [cmdRaw, ...rest] = raw.split(/\s+/);
   const cmd = cmdRaw.toLowerCase();
   const args = rest.join(' ').trim();
-  const session = ensureContinuityFields(await loadSession(sessionId));
+  const session = ensureContinuityFields(await loadSession(sessionId, RECENT_WINDOW));
 
   if (cmd === '/version' || cmd === '/profile') {
     return { handled: true, answer: buildEditionCommandAnswer() };
@@ -278,7 +281,7 @@ export async function handleSessionCommand(sessionId: string, rawMessage: string
       `Topik aktif: ${session.activeTopic || '-'}`,
       `Pinned: ${session.pinned ? 'ya' : 'tidak'}`,
       `Private: ${session.privateMode ? 'ON' : 'OFF'}`,
-      `Pesan tersimpan: ${session.messages.length}`,
+      `Pesan tersimpan: ${session.totalMessages ?? session.messages.length}`,
       `Task aktif: ${(session.pendingTasks || []).filter((task) => task.status !== 'archived').length}`,
       `Artifact: ${(session.artifacts || []).length}`,
     ].join('\n') };
@@ -337,7 +340,7 @@ export async function handleSessionCommand(sessionId: string, rawMessage: string
       `- Active topic: ${session.activeTopic ? 'OK' : 'belum ada'}`,
       `- Summary: ${session.summary ? 'OK' : 'belum ada'}`,
       `- Last output: ${session.lastOutput ? 'OK' : 'belum ada'}`,
-      `- Message window: ${session.messages.length}/160 tersimpan`,
+      `- Pesan tersimpan: ${session.totalMessages ?? session.messages.length} (jendela aktif memuat ${session.messages.length} terbaru)`,
       `- Pins: ${(session.contextPins || []).length}`,
       `- Tasks: ${(session.pendingTasks || []).length}`,
       `- Artifacts: ${(session.artifacts || []).length}`,

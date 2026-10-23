@@ -7,13 +7,12 @@ import { checkRateLimit, getRateLimitKey } from '@/lib/rate-limit';
 import { appendMessage, autoExtractMemory, loadMemory, loadSession, normalizeSessionId, upsertMemory } from '@/lib/memory';
 import { appendInteractionLog } from '@/lib/monitoring';
 import { resolveModelRuntime } from '@/lib/model';
-import { buildStructuredPrompt, buildSystemPrompt } from '@/lib/prompts';
-import { compilePrompt } from '@/lib/prompt-engine/registry';
+import { prepareChatContext, recordUsage } from '@/lib/chat-context';
 import { routePromptStrategy } from '@/lib/prompt-engine/strategy';
 import { cleanAnswer } from '@/lib/safety';
 import { buildExactQuranAnswer } from '@/lib/quran-exact';
 import { getIntelligenceProfile, normalizeIntelligenceLevel } from '@/lib/intelligence-level';
-import { buildRetrievalQuery, buildSessionContextBlock, getRecentMessagesForPrompt, handleSessionCommand, updateSessionAfterAssistant, updateSessionAfterUser } from '@/lib/session-continuity';
+import { buildRetrievalQuery, buildSessionContextBlock, RECENT_WINDOW, handleSessionCommand, updateSessionAfterAssistant, updateSessionAfterUser } from '@/lib/session-continuity';
 import type { AssistantMode, IntelligenceProfile } from '@/lib/types';
 import { normalizeChatMode } from '@/lib/customer-service';
 import { analyzeReligionRequest, buildReligionPrompt } from '@/lib/religion';
@@ -109,7 +108,7 @@ export async function POST(req: Request) {
     });
   }
 
-  const preSession = await loadSession(sessionId);
+  const preSession = await loadSession(sessionId, RECENT_WINDOW);
   const retrievalQuery = buildRetrievalQuery(body.message, preSession);
   const exactQuran = await buildExactQuranAnswer(body.message);
   const exactAllowed = Boolean(exactQuran && (!religion.active || religion.allowExactLookup));
@@ -154,8 +153,7 @@ export async function POST(req: Request) {
     return textResponse(answer, { 'x-quran-ai-session-id': sessionId, 'x-quran-ai-mode': 'quran', 'x-quran-ai-confidence': '1', 'x-nusamind-intelligence-level': intelligenceLevel });
   }
 
-  const session = await loadSession(sessionId);
-  const recentMessages = getRecentMessagesForPrompt(session, intelligenceProfile);
+  const session = await loadSession(sessionId, RECENT_WINDOW);
   const sessionContextBlock = buildSessionContextBlock(session, memory);
 
   const promptStrategy = routePromptStrategy({
@@ -166,13 +164,21 @@ export async function POST(req: Request) {
     toolTask: /jalankan|eksekusi|buat file|ubah file|deploy|install|agent/i.test(body.message),
     deepResearch: /riset mendalam|deep research|multi-source|lintas sumber/i.test(body.message),
   });
-  const compiledPrompt = compilePrompt({
-    edition: String(RELEASE.edition),
+  const prepared = prepareChatContext({
+    sessionId,
+    session,
+    userMessage: body.message,
+    recallQuery: retrievalQuery,
+    intent,
+    intelligenceProfile,
+    memory,
+    sources,
+    sessionContextBlock,
+    chatMode: sessionMode,
+    domainContext: combinedDomainContext,
     taskType: promptStrategy.id === 'PS-RAG' ? 'rag' : promptStrategy.id === 'PS-REACT' ? 'agent' : promptStrategy.id === 'PS-CHAIN' ? 'workflow' : 'direct',
-    baseSystem: buildSystemPrompt(intent, sources, memory, intelligenceProfile, sessionContextBlock, sessionMode, combinedDomainContext),
-    baseUser: buildStructuredPrompt(body.message, intelligenceProfile, sessionMode, combinedDomainContext),
     strategy: promptStrategy.id,
-    evidence: sources.map((source) => `${source.title}: ${source.text || ''}`),
+    requestedMaxOutputTokens: Math.min(7000, Math.max(appConfig.maxOutputTokens, intelligenceProfile.maxOutputTokens)),
   });
 
   const tools = {
@@ -211,17 +217,15 @@ export async function POST(req: Request) {
 
   const result = streamText({
     model: modelRuntime.model,
-    system: compiledPrompt.system,
-    messages: [
-      ...recentMessages,
-      { role: 'user', content: compiledPrompt.user },
-    ],
+    system: prepared.system,
+    messages: prepared.messages,
     tools: appConfig.toolsEnabled ? tools : undefined,
     stopWhen: stepCountIs(appConfig.maxSteps),
     temperature: intelligenceProfile.temperature ?? appConfig.temperature,
-    maxOutputTokens: Math.min(7000, Math.max(appConfig.maxOutputTokens, intelligenceProfile.maxOutputTokens)),
+    maxOutputTokens: prepared.maxOutputTokens,
     providerOptions: modelRuntime.providerOptions,
     onFinish: async ({ text, response, usage, finishReason, steps }: { text?: string; response?: { messages?: unknown[] }; usage?: unknown; finishReason?: string; steps?: unknown[] }) => {
+      recordUsage(prepared, usage);
       const answer = formatFinalAnswer(cleanAnswer(text || ''), body.message, String(RELEASE.edition), body.answerMode);
       await evaluateAnswerWithMl(body.message, answer, sources.map((source) => source.text || source.title));
       await appendMessage(sessionId, {
@@ -260,11 +264,13 @@ export async function POST(req: Request) {
   response.headers.set('x-nusamind-session-continuity', 'v13.20');
   response.headers.set('x-nusamind-ml-status', mlAnalysis ? 'active' : 'fallback');
   response.headers.set('x-nusamind-prompt-strategy', promptStrategy.id);
-  response.headers.set('x-nusamind-prompt-hash', compiledPrompt.hash.slice(0, 16));
+  response.headers.set('x-nusamind-prompt-hash', prepared.promptHash.slice(0, 16));
   response.headers.set('x-nusamind-model', modelRuntime.selectedModel);
   response.headers.set('x-nusamind-model-route', String(modelRuntime.route));
   response.headers.set('x-nusamind-model-fallback', String(modelRuntime.fallbackUsed));
   response.headers.set('x-nusamind-thinking', String(modelRuntime.thinking));
+  response.headers.set('x-nusamind-hardware-profile', prepared.profile);
+  response.headers.set('x-nusamind-context', `${prepared.report.tokens.total}/${prepared.report.inputBudget} fits=${prepared.report.fits} evicted=${prepared.report.history.evictedMessages} recall=${prepared.report.history.recallHits}`);
   if (mlAnalysis) response.headers.set('x-nusamind-ml-domain', mlAnalysis.domain);
   return response;
 }

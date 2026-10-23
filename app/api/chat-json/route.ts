@@ -8,14 +8,13 @@ import { checkRateLimit, getRateLimitKey } from '@/lib/rate-limit';
 import { appendMessage, autoExtractMemory, loadMemory, loadSession, normalizeSessionId, upsertMemory } from '@/lib/memory';
 import { appendInteractionLog } from '@/lib/monitoring';
 import { resolveModelRuntime } from '@/lib/model';
-import { buildStructuredPrompt, buildSystemPrompt } from '@/lib/prompts';
-import { compilePrompt } from '@/lib/prompt-engine/registry';
+import { prepareChatContext, recordUsage } from '@/lib/chat-context';
 import { routePromptStrategy } from '@/lib/prompt-engine/strategy';
 import { cleanAnswer } from '@/lib/safety';
 import { buildFastLocalAnswer, formatDirectAccuracyAnswer } from '@/lib/direct-answer-policy';
 import { buildExactQuranAnswer } from '@/lib/quran-exact';
 import { getIntelligenceProfile, normalizeIntelligenceLevel } from '@/lib/intelligence-level';
-import { buildRetrievalQuery, buildSessionContextBlock, getRecentMessagesForPrompt, handleSessionCommand, updateSessionAfterAssistant, updateSessionAfterUser } from '@/lib/session-continuity';
+import { buildRetrievalQuery, buildSessionContextBlock, RECENT_WINDOW, handleSessionCommand, updateSessionAfterAssistant, updateSessionAfterUser } from '@/lib/session-continuity';
 import type { AssistantMode, IntelligenceProfile, RetrievalHit } from '@/lib/types';
 import { classifyServiceIntent, normalizeChatMode, requiresHumanHandoff } from '@/lib/customer-service';
 import { tryBuildInsuranceFinanceAnswer } from '@/lib/ins-finance';
@@ -133,7 +132,7 @@ export async function POST(req: Request) {
       calculation: calculationLocal,
       sessionContext: {
         activeTopic: updatedSession.activeTopic,
-        messageCount: updatedSession.messages.length,
+        messageCount: (updatedSession.totalMessages ?? updatedSession.messages.length),
         hasLastOutput: Boolean(updatedSession.lastOutput),
       },
     });
@@ -169,7 +168,7 @@ export async function POST(req: Request) {
       sessionMode,
       religion,
       serviceIntent,
-      modelRuntime: { selectedModel: modelRuntime.selectedModel, requestedModel: modelRuntime.requestedModel, route: modelRuntime.route, fallbackUsed: modelRuntime.fallbackUsed, probeOk: modelRuntime.probeOk, thinking: modelRuntime.thinking },
+      modelRuntime: { selectedModel: 'deterministic', requestedModel: 'deterministic', route: 'local', fallbackUsed: false, probeOk: true, thinking: false },
     humanHandoffRecommended,
       intelligenceLevel,
       confidence: financeLocal.result.confidence,
@@ -182,7 +181,7 @@ export async function POST(req: Request) {
       finance: financeLocal.result,
       sessionContext: {
         activeTopic: updatedSession.activeTopic,
-        messageCount: updatedSession.messages.length,
+        messageCount: (updatedSession.totalMessages ?? updatedSession.messages.length),
         hasLastOutput: Boolean(updatedSession.lastOutput),
       },
     });
@@ -195,10 +194,10 @@ export async function POST(req: Request) {
     await appendMessage(sessionId, { role: 'assistant', content: answer, mode: body.mode, intelligenceLevel, intent, sources: [] });
     const updatedSession = await updateSessionAfterAssistant(sessionId, answer, []);
     await appendInteractionLog({ sessionId, route: '/api/chat-json', mode: `fast-local-${fastLocal.tag}`, messageLength: body.message.length, sources: 0, finishReason: fastLocal.tag, steps: 0, latencyMs: Date.now() - startedAt });
-    return jsonUtf8({ ok: true, sessionId, answer, mode: intent.mode, sessionMode, serviceIntent, humanHandoffRecommended, intelligenceLevel, confidence: 1, reasons: [`${RELEASE.label} ${fastLocal.tag} answered without heavy retrieval/model.`], safety: 'normal', sources: [], usage: null, finishReason: fastLocal.tag, steps: 0, sessionContext: { activeTopic: updatedSession.activeTopic, messageCount: updatedSession.messages.length, hasLastOutput: Boolean(updatedSession.lastOutput) } });
+    return jsonUtf8({ ok: true, sessionId, answer, mode: intent.mode, sessionMode, serviceIntent, humanHandoffRecommended, intelligenceLevel, confidence: 1, reasons: [`${RELEASE.label} ${fastLocal.tag} answered without heavy retrieval/model.`], safety: 'normal', sources: [], usage: null, finishReason: fastLocal.tag, steps: 0, sessionContext: { activeTopic: updatedSession.activeTopic, messageCount: (updatedSession.totalMessages ?? updatedSession.messages.length), hasLastOutput: Boolean(updatedSession.lastOutput) } });
   }
 
-  const preSession = await loadSession(sessionId);
+  const preSession = await loadSession(sessionId, RECENT_WINDOW);
   const retrievalQuery = buildRetrievalQuery(body.message, preSession);
   const exactQuran = await buildExactQuranAnswer(body.message);
   const exactAllowed = Boolean(exactQuran && (!religion.active || religion.allowExactLookup));
@@ -240,12 +239,11 @@ export async function POST(req: Request) {
       usage: null,
       finishReason: `exact_quran_${exactQuran.guardType}_guard`,
       steps: 0,
-      sessionContext: { activeTopic: continuitySession.activeTopic, hasLastOutput: Boolean(continuitySession.lastOutput), messageCount: continuitySession.messages.length },
+      sessionContext: { activeTopic: continuitySession.activeTopic, hasLastOutput: Boolean(continuitySession.lastOutput), messageCount: (continuitySession.totalMessages ?? continuitySession.messages.length) },
     });
   }
 
-  const session = await loadSession(sessionId);
-  const recentMessages = getRecentMessagesForPrompt(session, intelligenceProfile);
+  const session = await loadSession(sessionId, RECENT_WINDOW);
   const sessionContextBlock = buildSessionContextBlock(session, memory);
 
   const promptStrategy = routePromptStrategy({
@@ -256,24 +254,29 @@ export async function POST(req: Request) {
     toolTask: /jalankan|eksekusi|buat file|ubah file|deploy|install|agent/i.test(body.message),
     deepResearch: /riset mendalam|deep research|multi-source|lintas sumber/i.test(body.message),
   });
-  const compiledPrompt = compilePrompt({
-    edition: String(RELEASE.edition),
+  const prepared = prepareChatContext({
+    sessionId,
+    session,
+    userMessage: body.message,
+    recallQuery: buildRetrievalQuery(body.message, preSession),
+    intent,
+    intelligenceProfile,
+    memory,
+    sources,
+    sessionContextBlock,
+    chatMode: sessionMode,
+    domainContext: combinedDomainContext,
     taskType: promptStrategy.id === 'PS-RAG' ? 'rag' : promptStrategy.id === 'PS-REACT' ? 'agent' : promptStrategy.id === 'PS-CHAIN' ? 'workflow' : 'direct',
-    baseSystem: buildSystemPrompt(intent, sources, memory, intelligenceProfile, sessionContextBlock, sessionMode, combinedDomainContext),
-    baseUser: buildStructuredPrompt(body.message, intelligenceProfile, sessionMode, combinedDomainContext),
     strategy: promptStrategy.id,
-    evidence: sources.map((source) => `${source.title}: ${source.text || ''}`),
+    requestedMaxOutputTokens: Math.min(7000, Math.max(appConfig.maxOutputTokens, intelligenceProfile.maxOutputTokens)),
   });
 
   const modelRuntime = await resolveModelRuntime(intent, intelligenceLevel);
 
   const result = await generateText({
     model: modelRuntime.model,
-    system: compiledPrompt.system,
-    messages: [
-      ...recentMessages,
-      { role: 'user', content: compiledPrompt.user },
-    ],
+    system: prepared.system,
+    messages: prepared.messages,
     tools: appConfig.toolsEnabled ? {
       searchQuranKnowledge: tool({
         description: 'Cari konteks lokal Al-Qur\'an dan tema Islam.',
@@ -298,9 +301,10 @@ export async function POST(req: Request) {
     } : undefined,
     stopWhen: stepCountIs(appConfig.maxSteps),
     temperature: intelligenceProfile.temperature ?? appConfig.temperature,
-    maxOutputTokens: Math.min(7000, Math.max(appConfig.maxOutputTokens, intelligenceProfile.maxOutputTokens)),
+    maxOutputTokens: prepared.maxOutputTokens,
     providerOptions: modelRuntime.providerOptions,
   });
+  recordUsage(prepared, result.usage);
 
   const formattedAnswer = formatFinalAnswer(formatDirectAccuracyAnswer(cleanAnswer(result.text || ''), { userMessage: body.message, mode: intent.mode, intelligenceLevel, edition: appConfig.edition, sourcesCount: sources.length }), body.message, String(RELEASE.edition), body.answerMode);
   const reliable = finalizeReliableAnswer({
@@ -338,16 +342,17 @@ export async function POST(req: Request) {
     reasons: intent.reasons,
     safety: intent.safety,
     promptStrategy,
-    promptHash: compiledPrompt.hash.slice(0, 16),
+    promptHash: prepared.promptHash.slice(0, 16),
     sources: publicSources(sources),
     usage: result.usage,
     finishReason: result.finishReason,
     steps: result.steps?.length || 0,
     reliability: reliable.reliability,
     ml: { analysis: mlAnalysis, evaluation: mlEvaluation },
-    sessionContext: { activeTopic: updatedSession.activeTopic, messageCount: updatedSession.messages.length, hasLastOutput: Boolean(updatedSession.lastOutput), tasks: (updatedSession.pendingTasks || []).length, artifacts: (updatedSession.artifacts || []).length },
+    sessionContext: { activeTopic: updatedSession.activeTopic, messageCount: (updatedSession.totalMessages ?? updatedSession.messages.length), hasLastOutput: Boolean(updatedSession.lastOutput), tasks: (updatedSession.pendingTasks || []).length, artifacts: (updatedSession.artifacts || []).length },
     sessionMode,
     serviceIntent,
+    context: { profile: prepared.profile, tokens: prepared.report.tokens, inputBudget: prepared.report.inputBudget, fits: prepared.report.fits, trimmed: prepared.report.trimmed, evictedMessages: prepared.report.history.evictedMessages, recallHits: prepared.report.history.recallHits },
     modelRuntime: { selectedModel: modelRuntime.selectedModel, requestedModel: modelRuntime.requestedModel, route: modelRuntime.route, fallbackUsed: modelRuntime.fallbackUsed, probeOk: modelRuntime.probeOk, thinking: modelRuntime.thinking },
     humanHandoffRecommended,
   });

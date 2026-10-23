@@ -1,5 +1,8 @@
 import { RELEASE } from './release';
 import path from 'node:path';
+import hardwareProfiles from '@/data/runtime/hardware-profiles.json';
+import { getProfile } from './context-budget';
+import type { HardwareProfilesFile } from './context-budget';
 
 export const ROOT_DIR = process.cwd();
 export const DATA_DIR = path.join(ROOT_DIR, 'data');
@@ -13,6 +16,16 @@ const editionDefaults = RELEASE.edition === 'apex'
   : RELEASE.edition === 'zenith'
     ? { level: 'high', maxSteps: 10, maxOutputTokens: 5200, model: 'qwen3:8b', coder: 'qwen2.5-coder:7b', fallback: 'qwen2.5:7b', heavyCoder: 'qwen3-coder:30b', thinking: 'auto', context: 16384, coderContext: 12288, description: 'Runtime seimbang dengan Qwen3 8B dan adaptive thinking untuk tugas kompleks.' }
     : { level: 'ordinary', maxSteps: 5, maxOutputTokens: 3000, model: 'qwen3:4b', coder: 'qwen2.5-coder:7b', fallback: 'qwen2.5:7b', heavyCoder: 'qwen3-coder:30b', thinking: 'off', context: 8192, coderContext: 8192, description: 'Runtime cepat dengan Qwen3 4B, coding model khusus, dan fallback lokal.' };
+
+// Profil perangkat keras (NUSAMIND_HARDWARE_PROFILE=4gb|8gb|16gb) menentukan model, konteks, keluaran, langkah, dan alat bawaan.
+// Variabel lingkungan seperti OLLAMA_MODEL atau OLLAMA_NUM_CTX tetap menimpa nilai profil.
+const hardware = getProfile(hardwareProfiles as unknown as HardwareProfilesFile, process.env.NUSAMIND_HARDWARE_PROFILE);
+const hw = hardware.profile;
+const profileDefaults = {
+  model: hw.models.main, coder: hw.models.coder, fallback: hw.models.fallback, thinking: hw.thinking,
+  context: hw.contextTokens, coderContext: hw.coderContextTokens, maxOutputTokens: hw.maxOutputTokens, maxSteps: hw.maxSteps,
+};
+Object.assign(editionDefaults, profileDefaults);
 
 const thinkingMode = String(process.env.OLLAMA_THINKING_MODE || editionDefaults.thinking).toLowerCase();
 
@@ -40,6 +53,7 @@ export const appConfig = {
   temperature: Number(process.env.AI_TEMPERATURE || 0.28),
   maxOutputTokens: Number(process.env.AI_MAX_OUTPUT_TOKENS || editionDefaults.maxOutputTokens),
   memoryEnabled: (process.env.AI_MEMORY_ENABLED || 'true') !== 'false',
-  toolsEnabled: (process.env.AI_ENABLE_TOOLS || 'true') !== 'false',
+  toolsEnabled: process.env.AI_ENABLE_TOOLS !== undefined ? process.env.AI_ENABLE_TOOLS !== 'false' : hw.toolsEnabled,
+  hardware: { name: hardware.name, warning: hardware.warning, profile: hw },
   streamingEnabled: (process.env.AI_ENABLE_STREAMING || 'true') !== 'false',
 };

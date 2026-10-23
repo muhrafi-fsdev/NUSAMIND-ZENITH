@@ -38,8 +38,8 @@ export async function POST(request: Request) {
   try {
     const body = (await request.json().catch(() => ({}))) as { path?: string; format?: string };
     const format = FORMATS.has(String(body.format)) ? String(body.format) : 'json';
-    const home = fs.realpathSync(process.cwd());
-    const target = fs.realpathSync(path.resolve(home, body.path || '.'));
+    const home = fs.realpathSync(/*turbopackIgnore: true*/ process.cwd());
+    const target = fs.realpathSync(path.resolve(/*turbopackIgnore: true*/ home, body.path || '.'));
     if (!fs.statSync(target).isDirectory()) return Response.json({ ok: false, error: 'PATH_MUST_BE_DIRECTORY' }, { status: 400 });
     await resolveTrustedTarget(home, target);
 

@@ -1,35 +1,37 @@
 {
-  "release": "N1.4",
-  "version": "1.4.0",
+  "release": "N1.6",
+  "version": "1.6.0",
   "edition": "zenith",
-  "mainModel": "qwen3:8b",
-  "coderModel": "qwen2.5-coder:7b",
-  "fallbackModel": "qwen2.5:7b",
+  "mainModel": "qwen3:1.7b",
+  "coderModel": "qwen2.5-coder:1.5b",
+  "fallbackModel": "qwen3:0.6b",
   "heavyCoderModel": "qwen3-coder:30b",
   "heavyCoderEnabledByDefault": false,
-  "thinkingPolicy": "auto",
-  "contextWindow": 16384,
-  "coderContextWindow": 12288,
+  "thinkingPolicy": "off",
+  "contextWindow": 4096,
+  "coderContextWindow": 4096,
   "fallbackOrder": {
     "general": [
-      "qwen3:8b",
-      "qwen2.5:7b"
+      "qwen3:1.7b",
+      "qwen3:0.6b"
     ],
     "coding": [
-      "qwen2.5-coder:7b",
-      "qwen3:8b",
-      "qwen2.5:7b"
+      "qwen2.5-coder:1.5b",
+      "qwen3:1.7b",
+      "qwen3:0.6b"
     ],
     "heavyCoding": [
       "qwen3-coder:30b",
-      "qwen2.5-coder:7b",
-      "qwen3:8b",
-      "qwen2.5:7b"
+      "qwen2.5-coder:1.5b",
+      "qwen3:1.7b",
+      "qwen3:0.6b"
     ]
   },
   "privacy": "local-first",
   "thinkingExposure": "hidden-from-final-answer",
   "probeCacheMs": 5000,
   "probeTimeoutMs": 1400,
-  "noUiTouch": true
+  "noUiTouch": true,
+  "hardwareProfile": "4gb",
+  "profilesFile": "data/runtime/hardware-profiles.json"
 }
