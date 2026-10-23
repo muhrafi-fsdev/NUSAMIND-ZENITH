@@ -1,0 +1,59 @@
+{
+  "release": "N1.6",
+  "version": "1.6.0",
+  "edition": "zenith",
+  "type": "minor",
+  "title": "Compact Context dan Profil Perangkat Keras 4 GB",
+  "addedCode": [
+    "lib/context-budget.ts",
+    "lib/context-compactor.ts",
+    "lib/context-engine.ts",
+    "lib/compact-prompt.ts",
+    "lib/chat-context.ts",
+    "scripts/context-status-n1.6.mjs",
+    "scripts/eval-context-n1.6.mjs",
+    "ollama-4gb.bat"
+  ],
+  "changedCode": [
+    "app/api/chat/route.ts",
+    "app/api/chat-json/route.ts",
+    "app/api/sessions/route.ts",
+    "app/api/n1/security/route.ts",
+    "lib/config.ts",
+    "lib/memory.ts",
+    "lib/repos.ts",
+    "lib/session-continuity.ts",
+    "lib/security-audit.ts",
+    "lib/types.ts",
+    "lib/release.ts"
+  ],
+  "addedData": [
+    "data/runtime/hardware-profiles.json",
+    "data/benchmarks/context-cases.json",
+    "data/knowledge/context-compaction.json"
+  ],
+  "changedData": [
+    "data/runtime/model-routing.json",
+    "data/runtime/edition-profile.json",
+    ".env.example"
+  ],
+  "defaultProfile": "4gb",
+  "activeWindowTokens": 4096,
+  "archiveStorage": "SQLite (tabel messages), dicari ulang per pertanyaan; model tidak pernah melihat seluruh arsip sekaligus",
+  "fixes": [
+    "saveSession dan updateSessionMeta tidak lagi menghapus pesan lama di atas 160 dari database",
+    "GET /api/sessions dan muat sesi di jalur chat memakai jendela terbaru, bukan seluruh riwayat",
+    "bug urutan inisialisasi modelRuntime pada jalur finance lokal di chat-json"
+  ],
+  "knownLimits": [
+    "jendela aktif jutaan token tidak mungkin pada 4 GB: KV cache qwen3:1.7b f16 untuk 1 juta token sekitar 106,81 GiB",
+    "angka memori adalah perkiraan; overhead runtime 350 MB adalah asumsi, ukur dengan ollama ps",
+    "model kecil menurunkan kualitas penalaran; tools dan agent dinonaktifkan di profil 4gb",
+    "ollama-4gb.bat belum diuji di Windows dan perangkat 4 GB nyata"
+  ],
+  "uiChanged": false,
+  "modelRuntimeChanged": true,
+  "answerBehaviorChanged": true,
+  "liveSuiteBenchmark": "NOT_RUN",
+  "scoreClaimed": null
+}

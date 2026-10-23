@@ -1,0 +1,84 @@
+[
+  {
+    "id": "n16_active_window_vs_archive",
+    "type": "universal",
+    "title": "Berapa token konteks yang bisa aktif di profil 4 GB NusaMind",
+    "category": "Compact Context",
+    "text": "Pada profil 4gb jendela konteks aktif adalah 4.096 token (dengan KV cache q8_0 konteks maksimum yang muat pada anggaran model sekitar 2.000 MB adalah 4.352 token). Jutaan token tidak mungkin aktif sekaligus di mesin 4 GB: KV cache qwen3:1.7b memakai 114.688 byte per token pada f16, sehingga 1 juta token memerlukan sekitar 106,81 GiB (f16), 53,41 GiB (q8_0), atau 26,70 GiB (q4_0), belum termasuk bobot model. Yang mendukung jutaan token adalah arsip: seluruh riwayat disimpan di SQLite dan hanya potongan relevan yang dipanggil ulang ke jendela aktif, sehingga model tidak pernah melihat seluruh arsip sekaligus.",
+    "tags": [
+      "konteks",
+      "token",
+      "4gb",
+      "kv cache",
+      "arsip",
+      "n1.6"
+    ],
+    "source": "Dihitung dari arsitektur qwen3:1.7b (28 layer, 8 KV head, head_dim 128); lihat data/runtime/hardware-profiles.json dan npm run context:n16:status",
+    "confidence": 0.9
+  },
+  {
+    "id": "n16_kv_cache_formula",
+    "type": "universal",
+    "title": "Rumus memori KV cache untuk memperkirakan panjang konteks",
+    "category": "Compact Context",
+    "text": "Byte KV cache per token = 2 (key dan value) x jumlah layer x jumlah KV head x head_dim x 2 byte (f16) x faktor kuantisasi (f16 1,0; q8_0 0,5; q4_0 0,25). Memori total kira-kira bobot model + KV cache + overhead runtime. Contoh qwen3:1.7b pada 4.096 token dengan q8_0: sekitar 1.400 MB bobot + 235 MB KV + 350 MB overhead (asumsi) = sekitar 1.985 MB. Angka ini perkiraan perencanaan; pemakaian nyata diukur dengan perintah ollama ps.",
+    "tags": [
+      "kv cache",
+      "memori",
+      "rumus",
+      "ollama",
+      "n1.6"
+    ],
+    "source": "Turunan dari struktur transformer dengan grouped-query attention; parameter model dari config.json masing-masing model; overhead 350 MB adalah asumsi NusaMind",
+    "confidence": 0.85
+  },
+  {
+    "id": "n16_compaction_method",
+    "type": "universal",
+    "title": "Cara kompaksi konteks NusaMind N1.6",
+    "category": "Compact Context",
+    "text": "Kompaksi bersifat deterministik dan tanpa panggilan model tambahan. Pesan terbaru dikirim apa adanya; pesan yang lebih lama diganti ringkasan ekstraktif (kalimat yang dipilih, bukan ditulis ulang oleh model) dan fakta berbobot seperti identitas, preferensi, dan tenggat. Batas pemangkasan digeser per blok pesan agar awalan prompt stabil dan cache prompt Ollama dapat dipakai ulang. Pertanyaan baru dicocokkan dengan arsip memakai pencarian kata kunci BM25; hasilnya ditaruh di pesan pengguna terakhir, bukan di prompt sistem. Rahasia yang terdeteksi disamarkan sebelum masuk ringkasan. Karena ekstraktif, nuansa percakapan lama bisa hilang: pencarian kata kunci tidak menangkap sinonim.",
+    "tags": [
+      "kompaksi",
+      "konteks",
+      "recall",
+      "bm25",
+      "n1.6"
+    ],
+    "source": "Desain NusaMind N1.6; perilaku diuji oleh npm run context:n16:benchmark (kasus buatan sendiri)",
+    "confidence": 0.85
+  },
+  {
+    "id": "n16_profile_switch",
+    "type": "universal",
+    "title": "Memilih dan mengembalikan profil perangkat keras NusaMind",
+    "category": "Compact Context",
+    "text": "Profil dipilih dengan NUSAMIND_HARDWARE_PROFILE di .env: 4gb (bawaan), 8gb, atau 16gb. Profil 16gb mengembalikan perilaku N1.4 (qwen3:8b, konteks 16.384, tools aktif, prompt penuh). Variabel lingkungan lama seperti OLLAMA_MODEL, OLLAMA_NUM_CTX, AI_MAX_STEPS, AI_MAX_OUTPUT_TOKENS, dan AI_ENABLE_TOOLS menimpa profil; .env lama yang masih berisi nilai 16 GB akan membatalkan profil 4gb tanpa peringatan, jadi hapus atau komentari baris itu. Variabel server Ollama (OLLAMA_KV_CACHE_TYPE, OLLAMA_FLASH_ATTENTION, OLLAMA_NUM_PARALLEL, OLLAMA_MAX_LOADED_MODELS, OLLAMA_CONTEXT_LENGTH) berlaku di server Ollama, bukan di aplikasi, sehingga ollama-4gb.bat menyetelnya.",
+    "tags": [
+      "profil",
+      "hardware",
+      "4gb",
+      "16gb",
+      "env",
+      "n1.6"
+    ],
+    "source": "data/runtime/hardware-profiles.json dan lib/config.ts",
+    "confidence": 0.95
+  },
+  {
+    "id": "n16_small_model_tradeoff",
+    "type": "universal",
+    "title": "Batas kualitas model kecil pada profil 4 GB",
+    "category": "Compact Context",
+    "text": "Model 1,7 miliar parameter jauh lebih lemah daripada 8 miliar dalam penalaran multi-langkah, matematika panjang, dan coding kompleks; kompaksi tidak mengubah hal itu. Profil 4gb menonaktifkan tools dan agent secara bawaan karena dokumentasi Ollama menyarankan konteks setidaknya 64.000 token untuk tugas agen dan coding tools, sedangkan jendela 4gb hanya 4.096. Kualitas jawaban pada profil 4gb belum diukur dengan suite live (status NOT_RUN); gunakan profil 8gb atau 16gb bila RAM memungkinkan.",
+    "tags": [
+      "model kecil",
+      "kualitas",
+      "agent",
+      "tools",
+      "n1.6"
+    ],
+    "source": "Dokumentasi Ollama tentang context length (docs.ollama.com/context-length); keterbatasan model kecil adalah penilaian umum, bukan hasil ukur NusaMind",
+    "confidence": 0.8
+  }
+]

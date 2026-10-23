@@ -3,14 +3,14 @@
 
   <br />
 
-  <img alt="Release" src="https://img.shields.io/badge/release-N1.5.1-0ea5e9?style=for-the-badge" />
+  <img alt="Release" src="https://img.shields.io/badge/release-N1.6-0ea5e9?style=for-the-badge" />
   <img alt="Edition" src="https://img.shields.io/badge/edition-Zenith-8b5cf6?style=for-the-badge" />
   <img alt="Node.js" src="https://img.shields.io/badge/Node.js-%E2%89%A522-22c55e?style=for-the-badge&logo=nodedotjs&logoColor=white" />
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-16-111827?style=for-the-badge&logo=nextdotjs&logoColor=white" />
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-7-2563eb?style=for-the-badge&logo=typescript&logoColor=white" />
   <img alt="Local AI" src="https://img.shields.io/badge/AI-Local--First-14b8a6?style=for-the-badge" />
 
-  <h3>Asisten AI lokal seimbang: Qwen3 adaptif, mitra keamanan defensif, handler tabel deterministik, controlled coding agent, dan deployment preview/staging.</h3>
+  <h3>Asisten AI lokal seimbang yang kini berjalan di profil 4 GB: konteks ringkas, Qwen3 adaptif, mitra keamanan defensif, handler tabel deterministik, controlled coding agent, dan deployment preview/staging.</h3>
 
   <p>
     <strong>Ollama + Qwen3</strong> • <strong>Next.js</strong> • <strong>FastAPI ML Service</strong> •
@@ -22,9 +22,9 @@
 
 ## Tentang NusaMind Zenith
 
-**NusaMind Zenith N1.5.1** adalah edisi seimbang dari keluarga NusaMind AI. Zenith menggabungkan reasoning adaptif, kualitas jawaban akademik, controlled build, exact patch, checkpoint, rollback, Git workflow terverifikasi, credential vault, trusted workspace, MCP quarantine, serta deployment preview dan staging.
+**NusaMind Zenith N1.6** adalah edisi seimbang dari keluarga NusaMind AI. Zenith menggabungkan reasoning adaptif, kualitas jawaban akademik, controlled build, exact patch, checkpoint, rollback, Git workflow terverifikasi, credential vault, trusted workspace, MCP quarantine, serta deployment preview dan staging.
 
-Release **N1.5.1 / 1.5.1** melanjutkan fondasi N1.0 dengan **Developer Intelligence N1.1**, **Advanced Autonomy & Deployment N1.2**, **Answer Quality & Academic Response Engine N1.3**, **Adaptive Qwen3 Model Runtime N1.4**, patch **TypeScript 7 N1.4.1**, **Suite Knowledge N1.4.2**, **Table Intelligence N1.5**, dan **Defensive Security Partner N1.5.1**.
+Release **N1.6 / 1.6.0** melanjutkan fondasi N1.0 dengan **Developer Intelligence N1.1**, **Advanced Autonomy & Deployment N1.2**, **Answer Quality & Academic Response Engine N1.3**, **Adaptive Qwen3 Model Runtime N1.4**, patch **TypeScript 7 N1.4.1**, **Suite Knowledge N1.4.2**, **Table Intelligence N1.5**, **Defensive Security Partner N1.5.1**, dan **Compact Context & profil 4 GB N1.6**.
 
 > NusaMind AI dikembangkan oleh **Muhammad Rafi Priyo** sebagai proyek AI lokal, eksperimen engineering, dan portofolio pribadi. Tidak semua komponen dibuat oleh AI; sebagian dirancang, dikembangkan, diuji, diperbaiki, dan disempurnakan secara manual oleh developer.
 
@@ -69,6 +69,19 @@ Zenith mengaktifkan autonomy terkontrol untuk development dan staging:
 - Code block dijaga tetap utuh dan diberi label bahasa yang sesuai.
 - Kedalaman jawaban menyesuaikan pertanyaan dan mode `direct`, `balanced`, `steps`, `detailed`, `academic`, atau `expert`.
 - Batas output default Zenith dinaikkan menjadi sekitar **5.200 token**.
+
+## Compact Context & Profil 4 GB N1.6
+
+Profil bawaan kini `4gb`: model kecil, jendela konteks aktif **4.096 token**, dan kompaksi riwayat agar pemrosesan lebih cepat di mesin dengan RAM terbatas.
+
+- **Berapa juta token?** Aktif sekaligus: 4.096. Tersimpan dan bisa dicari ulang: jutaan token di SQLite. Jutaan token aktif di mesin 4 GB tidak mungkin: KV cache `qwen3:1.7b` untuk 1 juta token sekitar **106,81 GiB** (f16), belum termasuk bobot model. Hitungannya ada di [`docs/compact-context-n1.6.md`](docs/compact-context-n1.6.md) dan `npm run context:n16:status`.
+- **Kompaksi deterministik** tanpa panggilan model tambahan: pesan terbaru verbatim, ringkasan ekstraktif untuk yang lama, fakta berbobot, dan recall arsip berbasis BM25 yang menaruh hasilnya di pesan terakhir agar cache prompt Ollama tetap terpakai.
+- **Prompt ringkas** (±330 token inti aturan menggantikan ±4.700 token); aturan keselamatan dan kejujuran dipertahankan.
+- **Tiga profil** lewat `NUSAMIND_HARDWARE_PROFILE`: `4gb` (bawaan), `8gb`, `16gb` (perilaku N1.4 penuh). Jalankan `.\ollama-4gb.bat` untuk profil bawaan.
+- **Perbaikan:** `saveSession` tidak lagi menghapus pesan di atas 160 dari database, sehingga arsip tetap utuh.
+- **Batas yang jujur:** model 1,7B lebih lemah dari 8B dan kualitasnya belum diukur dengan suite live; tools/agent nonaktif di `4gb`; recall berbasis kata kunci tidak menangkap sinonim; angka memori adalah perkiraan, ukur dengan `ollama ps`; `ollama-4gb.bat` belum diuji di Windows.
+- **Peringatan `.env` lama:** baris `OLLAMA_MODEL`, `OLLAMA_NUM_CTX`, `AI_MAX_STEPS`, dan sejenisnya menimpa profil. Hapus atau komentari bila `.env` dibuat dari versi lama.
+- Diuji dengan `npm run context:n16:benchmark` (matematika anggaran, validasi profil, properti kompaktor, SQLite dengan arsip ±1,27 juta token, konfigurasi per profil).
 
 ## Defensive Security Partner N1.5.1
 
@@ -183,7 +196,7 @@ flowchart LR
 - Windows 10 atau Windows 11.
 - Node.js **22 atau lebih baru**.
 - npm, Python 3, Ollama, dan PowerShell.
-- RAM minimal yang disarankan: **16 GB**.
+- RAM: profil bawaan `4gb` berjalan pada mesin **4 GB** (minimum, sempit bila banyak aplikasi terbuka); pakai `8gb` atau `16gb` bila RAM lebih besar. Lihat [`docs/compact-context-n1.6.md`](docs/compact-context-n1.6.md).
 - Storage yang cukup untuk model Ollama dan corpus lokal.
 
 ## Instalasi
@@ -232,7 +245,8 @@ Untuk coding assistant dan autonomy CLI:
 
 | Perintah | Fungsi |
 |---|---|
-| `.\ollama.bat` | Menyiapkan Qwen3 8B, model coding, dan fallback pada Ollama |
+| `.\ollama-4gb.bat` | Menjalankan Ollama untuk profil 4 GB dan menarik modelnya |
+| `.\ollama.bat` | Menyiapkan Qwen3 8B, model coding, dan fallback pada Ollama (profil 16gb) |
 | `.\ml-setup.bat` | Membuat environment ML |
 | `.\ml-start.bat` | Menjalankan FastAPI ML Service |
 | `.\dev.bat` | Menjalankan backend dan Web UI |
@@ -242,6 +256,8 @@ Untuk coding assistant dan autonomy CLI:
 | `npm run answer:benchmark` | Benchmark kualitas jawaban N1.3 |
 | `npm run model:n14:benchmark` | Benchmark Adaptive Qwen3 Runtime N1.4 |
 | `npm run model:n14:status:live` | Memeriksa status model Ollama secara langsung |
+| `npm run context:n16:status` | Tabel memori per profil dan KV cache per jumlah token |
+| `npm run context:n16:benchmark` | Benchmark kompaksi konteks dan profil perangkat keras N1.6 |
 | `npm run security:audit` | Audit keamanan statis pasif untuk kode dan konfigurasi |
 | `npm run security:audit:benchmark` | Benchmark pemindai dan mitra keamanan N1.5.1 |
 | `npm run table:n15:benchmark` | Benchmark handler tabel dan kerangka riset N1.5 |
@@ -255,14 +271,19 @@ Untuk coding assistant dan autonomy CLI:
 
 ## Konfigurasi Model
 
+Model, konteks, dan batas keluaran ditentukan oleh profil perangkat keras:
+
 ```env
-OLLAMA_MODEL=qwen3:8b
-OLLAMA_CODER_MODEL=qwen2.5-coder:7b
-OLLAMA_FALLBACK_MODEL=qwen2.5:7b
-AI_MAX_OUTPUT_TOKENS=5200
-NUSAMIND_THINKING_MODE=adaptive
-NUSAMIND_RELEASE=N1.5
+NUSAMIND_HARDWARE_PROFILE=4gb   # 4gb (bawaan) | 8gb | 16gb
 ```
+
+| Profil | Model utama | Model coding | Konteks |
+|---|---|---|---:|
+| `4gb` | qwen3:1.7b | qwen2.5-coder:1.5b | 4.096 |
+| `8gb` | qwen3:4b-q4_K_M | qwen2.5-coder:3b | 8.192 |
+| `16gb` | qwen3:8b | qwen2.5-coder:7b | 16.384 |
+
+Variabel `OLLAMA_MODEL`, `OLLAMA_CODER_MODEL`, `OLLAMA_FALLBACK_MODEL`, `OLLAMA_THINKING_MODE`, `OLLAMA_NUM_CTX`, `OLLAMA_CODER_NUM_CTX`, `AI_MAX_STEPS`, `AI_MAX_OUTPUT_TOKENS`, dan `AI_ENABLE_TOOLS` bersifat opsional dan **menimpa** profil.
 
 ## Konfigurasi Autonomy
 
@@ -296,6 +317,7 @@ npm run model:n14:benchmark
 npm run model:n14:status:live
 npm run table:n15:benchmark
 npm run security:audit:benchmark
+npm run context:n16:benchmark
 npm run suites:n142:benchmark
 npm run check
 npm run build
@@ -313,7 +335,8 @@ Jangan menyatakan deployment, build, atau model runtime berhasil tanpa output ve
 - Semua force push menggunakan `--force-with-lease` dan remote backup.
 - Qwen3 Coder 30B tidak menjadi default Zenith.
 - Windows EXE/Electron dibatalkan dan n8n masih ditunda.
-- Main UI tidak diubah pada update N1.1 sampai N1.5.1.
+- Main UI tidak diubah pada update N1.1 sampai N1.6.
+- Jendela konteks aktif 4.096 token pada profil bawaan; riwayat lebih panjang dicari ulang dari arsip, bukan dibaca seluruhnya oleh model.
 - Jangan commit `.env`, token, private key, database runtime, session, atau credential vault.
 - Jangan membuka endpoint autonomy langsung ke internet tanpa autentikasi, firewall, dan reverse proxy.
 - Kualitas reasoning tetap bergantung pada model, prompt, data, tool, context, dan hardware.
@@ -344,5 +367,5 @@ Repository ini belum menetapkan lisensi open-source. Visibilitas publik di GitHu
 ---
 
 <div align="center">
-  <sub>NusaMind AI Zenith N1.5.1 — Adaptive Intelligence, Controlled Engineering</sub>
+  <sub>NusaMind AI Zenith N1.6 — Adaptive Intelligence, Controlled Engineering</sub>
 </div>

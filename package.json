@@ -1,8 +1,8 @@
 {
   "name": "nusamind-zenith",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "private": true,
-  "description": "NusaMind Zenith N1.5.1 Defensive Security Partner, Table Intelligence, Adaptive Qwen3 Runtime, and Controlled Engineering.",
+  "description": "NusaMind Zenith N1.6 Compact Context for 4 GB machines, Defensive Security Partner, Table Intelligence, Adaptive Qwen3 Runtime, and Controlled Engineering.",
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
@@ -86,7 +86,9 @@
     "suites:n142:benchmark": "node scripts/eval-suites-n1.4.2.mjs",
     "table:n15:benchmark": "node scripts/eval-table-engine-n1.5.mjs",
     "security:audit": "node scripts/security-audit-n1.5.1.mjs",
-    "security:audit:benchmark": "node scripts/eval-security-audit-n1.5.1.mjs"
+    "security:audit:benchmark": "node scripts/eval-security-audit-n1.5.1.mjs",
+    "context:n16:status": "node scripts/context-status-n1.6.mjs",
+    "context:n16:benchmark": "node scripts/eval-context-n1.6.mjs"
   },
   "dependencies": {
     "@ai-sdk/openai": "4.0.11",

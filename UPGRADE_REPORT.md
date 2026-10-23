@@ -1,3 +1,21 @@
+# NusaMind Zenith N1.6 Upgrade Report
+
+## Minor
+
+- Profil perangkat keras (`data/runtime/hardware-profiles.json`, `lib/context-budget.ts`): `4gb` (bawaan), `8gb`, `16gb`; validasi anggaran memori dari rumus KV cache.
+- Kompaksi konteks deterministik (`lib/context-compactor.ts`, `lib/context-engine.ts`): pesan terbaru verbatim, ringkasan ekstraktif, fakta berbobot, recall arsip BM25, pemangkasan per blok agar cache prompt stabil, dan jaminan muat dalam `num_ctx`.
+- Prompt ringkas (`lib/compact-prompt.ts`) menggantikan prompt penuh pada profil kecil; aturan keselamatan dipertahankan.
+- Database sebagai arsip: pesan lama tidak lagi dihapus (`saveSession` sebelumnya memangkas ke 160); jalur panas memuat jendela 200 pesan terbaru; pencarian arsip lewat SQLite dengan LIKE ber-escape.
+- `ollama-4gb.bat`, `npm run context:n16:status`, `npm run context:n16:benchmark`, `docs/compact-context-n1.6.md`.
+- Perbaikan: inisialisasi `modelRuntime` pada jalur finance lokal `chat-json`.
+- Jawaban atas "berapa juta token": aktif 4.096; arsip jutaan token tersimpan dan dicari ulang; jutaan token aktif di 4 GB memerlukan sekitar 106,81 GiB KV cache (f16) untuk `qwen3:1.7b`.
+
+## Batas validasi
+
+- Model dan kualitas jawaban profil `4gb` belum diukur dengan model sungguhan; benchmark suite live `NOT_RUN`, tidak ada skor yang diklaim.
+- Overhead runtime 350 MB adalah asumsi; belum diukur dengan `ollama ps` di perangkat 4 GB nyata. `ollama-4gb.bat` belum diuji di Windows.
+- Perilaku UI tidak diubah.
+
 # NusaMind Zenith N1.5.1 Upgrade Report
 
 ## Patch

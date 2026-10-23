@@ -19,3 +19,5 @@ N1.4.2 adds seven-suite evaluation knowledge, scoring rules, and a code-audited 
 N1.5 adds deterministic table handlers (reformat, consecutive growth, column mapping) that decline when ambiguous, plus a sourced-report structure for legal/tax/regulatory briefs. UI and model runtime unchanged; live suite benchmark is NOT_RUN.
 
 N1.5.1 adds a passive, read-only security audit engine and a defensive security-partner context for zenith. It never executes scanned code, never touches the network, and never reads real .env files. Findings are hints, not proof of safety.
+
+N1.6 adds hardware profiles (default 4gb: qwen3:1.7b, 4096-token active window), deterministic context compaction, and a SQLite message archive that is searched per question instead of being read whole. Millions of tokens are stored, not active; model quality at 4gb is unmeasured and the live suite benchmark is NOT_RUN.
